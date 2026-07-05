@@ -1,11 +1,11 @@
 ---
 name: Series A Readiness
-description: Audits whether a seed-stage company clears the Series A bar — benchmark metrics, narrative, team, and data room — and produces a red/yellow/green readiness scorecard with a 90-day gap-closing plan. Use when a founder asks "am I ready for Series A", "what metrics do I need to raise an A", "what goes in a Series A data room", "should I raise now or wait two quarters", or is deciding when to open an A process. Do NOT use for a general pre-pitch hygiene check at any stage — use fundraise-readiness-audit instead — or for choosing which round to raise at all — use fundraising-stage-selector instead.
+description: Audits whether a seed-stage company clears the Series A bar - benchmark metrics, narrative, team, and data room - and produces a red/yellow/green readiness scorecard with a 90-day gap-closing plan. Use when a founder asks "am I ready for Series A", "what metrics do I need to raise an A", "what goes in a Series A data room", "should I raise now or wait two quarters", or is deciding when to open an A process. Do NOT use for a general pre-pitch hygiene check at any stage - use fundraise-readiness-audit instead - or for choosing which round to raise at all - use fundraising-stage-selector instead.
 ---
 
 # Series A Readiness
 
-The Series A bar is repeatability, not just traction. Seed proved someone wants the product; the A proves a scalable, predictable engine. The costly mistake this skill prevents: opening a process one quarter early, before the metrics support the story — that burns the exact investors you want, and word travels, so the only reset is waiting. This skill audits readiness across four pillars, builds the data room, and returns a go / fix-first / wait verdict with the milestones that would flip each red pillar green.
+The Series A bar is repeatability, not just traction. Seed proved someone wants the product; the A proves a scalable, predictable engine. The costly mistake this skill prevents: opening a process one quarter early, before the metrics support the story - that burns the exact investors you want, and word travels, so the only reset is waiting. This skill audits readiness across four pillars, builds the data room, and returns a go / fix-first / wait verdict with the milestones that would flip each red pillar green.
 
 This is the Series-A-specific bar. For a stage-agnostic check of whether any raise will survive first meetings and diligence hygiene, use fundraise-readiness-audit; run that first, then this skill applies the A-specific benchmarks on top.
 
@@ -13,7 +13,7 @@ This is the Series-A-specific bar. For a stage-agnostic check of whether any rai
 
 ### Step 1: Gather inputs
 
-Collect before scoring. Label any unreconciled number a guess and reconcile it to the bank or the billing system before it enters the scorecard — investors will.
+Collect before scoring. Label any unreconciled number a guess and reconcile it to the bank or the billing system before it enters the scorecard - investors will.
 
 1. ARR (or revenue run-rate) now, 12 months ago, and monthly for the trailing 12 months.
 2. Net revenue retention, gross margin, CAC payback by channel, burn, and months of runway.
@@ -42,7 +42,7 @@ Red if the story is "the same thing but bigger" with no insight, or if the ask d
 
 ### Step 4: Score the Team pillar
 
-- Key leadership gaps identified and either filled or covered by a credible, named hiring plan — investors fund the team that scales the engine, not just the founders. Pair with fundraise-team-hiring.
+- Key leadership gaps identified and either filled or covered by a credible, named hiring plan - investors fund the team that scales the engine, not just the founders. Pair with fundraise-team-hiring.
 - Demonstrated ability to recruit above your weight (at least one hire the company "shouldn't have gotten").
 
 Red if sales is entirely founder-dependent with no repeatable motion and no plan to build one.
@@ -65,20 +65,20 @@ Red if the books do not close monthly or a data room would take weeks rather tha
 - Raise from strength: 6-9 months of runway remaining and an up-and-to-the-right trend when the process opens. Opening with under 6 months of runway reads as desperation and prices accordingly.
 - Relationships with target funds should be warming 2-3 quarters before the raise so the process opens warm, not cold.
 
-Verdict rule: any red pillar means fix-first or wait — never "test the market" with a known red. All green or one yellow with trajectory: go.
+Verdict rule: any red pillar means fix-first or wait - never "test the market" with a known red. All green or one yellow with trajectory: go.
 
 ## Worked artifact: filled scorecard
 
 ```
-SERIES A READINESS SCORECARD — Acme Data, B2B SaaS
+SERIES A READINESS SCORECARD - Acme Data, B2B SaaS
 
 METRICS      YELLOW  ARR $1.6M (in band); growth 2.4x YoY (in band);
-                     NRR 108% (pass); payback 21 months (RED component —
+                     NRR 108% (pass); payback 21 months (RED component -
                      over 18; improving from 26 two quarters ago)
 NARRATIVE    GREEN   Insight: mid-market teams buy compliance as workflow,
                      not audit; wedge (SOC 2 automation) at 70% win rate
 TEAM         YELLOW  No VP Sales; founder closes 80% of revenue; two
-                     candidates in final stage — plan credible, unproven
+                     candidates in final stage - plan credible, unproven
 DATA ROOM    GREEN   Books close by day 8 monthly; index 90% populated
 
 VERDICT: FIX-FIRST. Open in ~1 quarter, gated on:
@@ -94,15 +94,15 @@ Produce three artifacts: the readiness scorecard across the four pillars with re
 
 ## Do NOT
 
-- Do not open a process with a red pillar hoping to fix it mid-raise — investors compare notes, and a burned first impression cannot be re-run.
+- Do not open a process with a red pillar hoping to fix it mid-raise - investors compare notes, and a burned first impression cannot be re-run.
 - Do not score growth on one great month; the bar is consistency across quarters.
-- Do not present growth without efficiency — a great top line with ugly payback is the most common Series A pass reason.
+- Do not present growth without efficiency - a great top line with ugly payback is the most common Series A pass reason.
 - Do not lean on a single acquisition channel that has already saturated; show the second channel working or budgeted.
 - Do not let a messy cap table or unsigned IP assignments surface first in diligence; they are cheap to fix now and round-killing later.
 
 ## Quality bar
 
-- Every metric in the scorecard reconciles to the bank or billing system — no slide-only numbers.
+- Every metric in the scorecard reconciles to the bank or billing system - no slide-only numbers.
 - Each pillar rating cites specific evidence, not vibes.
 - The 90-day plan has one owner and one measurable exit criterion per gap.
 - The verdict follows the rule: any red means fix-first or wait.

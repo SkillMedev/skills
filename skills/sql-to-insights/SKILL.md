@@ -1,11 +1,11 @@
 ---
 name: SQL to Insights
-description: Turns SQL query results into a decision-ready business narrative — headline finding, drivers, recommendation — plus the right chart choice for the data shape. Use when someone asks "what does this data actually mean", "summarize these query results for the exec team", "what chart should I use for this", or pastes a result set and wants the so-what for a non-technical audience. Do NOT use to diagnose or speed up the query itself — use sql-query-optimizer instead; do NOT use to build a full multi-part narrative presentation around an analysis — use data-story instead; do NOT use for open-ended exploration of an unfamiliar dataset — use eda-playbook instead.
+description: Turns SQL query results into a decision-ready business narrative - headline finding, drivers, recommendation - plus the right chart choice for the data shape. Use when someone asks "what does this data actually mean", "summarize these query results for the exec team", "what chart should I use for this", or pastes a result set and wants the so-what for a non-technical audience. Do NOT use to diagnose or speed up the query itself - use sql-query-optimizer instead; do NOT use to build a full multi-part narrative presentation around an analysis - use data-story instead; do NOT use for open-ended exploration of an unfamiliar dataset - use eda-playbook instead.
 ---
 
 # SQL to Insights
 
-Turn rows and columns into something a decision-maker can act on. The costly failure mode is a "summary" that restates the numbers the stakeholder can already see, buries the one finding that matters under six that do not, or implies causation the data cannot support — all of which erode trust in every future readout.
+Turn rows and columns into something a decision-maker can act on. The costly failure mode is a "summary" that restates the numbers the stakeholder can already see, buries the one finding that matters under six that do not, or implies causation the data cannot support - all of which erode trust in every future readout.
 
 ## Operating procedure
 
@@ -33,7 +33,7 @@ Identify three things: the headline number, the trend or comparison that gives i
 
 Apply these thresholds before writing a word:
 
-- **Sample size**: call out any segment with n < 30, or any percentage computed on a base under ~100 — a 40% change on 12 events is noise until proven otherwise.
+- **Sample size**: call out any segment with n < 30, or any percentage computed on a base under ~100 - a 40% change on 12 events is noise until proven otherwise.
 - **Concentration**: if the top 3 accounts/segments/SKUs explain more than half of a change, say "concentrated and fragile" explicitly; it changes the recommendation.
 - **Data quality**: a single-period spike more than ~3x the trailing average, exact duplicates, or suspiciously round numbers are more likely pipeline artifacts than real changes. Flag as "verify before acting."
 - **Noise floor**: do not narrate a movement smaller than the metric's normal period-to-period wobble; call it flat.
@@ -45,9 +45,9 @@ Apply these thresholds before writing a word:
 Use this structure, in this order:
 
 - **Headline** (1 sentence, bolded): the single most important finding, with the number in it.
-- **Context** (1–2 sentences): the trend or comparison that makes it meaningful.
-- **Drivers** (bullets): what is pushing the number — segments, periods, outliers — ranked by contribution.
-- **Recommendation** (1–2 sentences): what to do or look at next, tied to the decision from Step 2.
+- **Context** (1-2 sentences): the trend or comparison that makes it meaningful.
+- **Drivers** (bullets): what is pushing the number - segments, periods, outliers - ranked by contribution.
+- **Recommendation** (1-2 sentences): what to do or look at next, tied to the decision from Step 2.
 
 ### Step 6: Recommend the visualization
 
@@ -82,7 +82,7 @@ Produce a narrative block (headline, context, drivers, recommendation) sized for
 ## Do NOT
 
 - Do NOT lead with methodology or the query; the stakeholder reads the first sentence and maybe the second.
-- Do NOT average averages or report percentages without their denominators — both silently misweight segments.
+- Do NOT average averages or report percentages without their denominators - both silently misweight segments.
 - Do NOT present a spike as a finding before ruling out the data-quality explanations in Step 4.
 - Do NOT recommend a chart by habit; a KPI-vs-target result needs a big number with a delta, not a line chart.
 - Do NOT soften a bad number with hedging; state it plainly and put the judgment in the recommendation.

@@ -1,11 +1,11 @@
 ---
 name: Terraform Expert
-description: Writes safe, modular, idiomatic Terraform — remote state layout, module structure, plan-review discipline, version pinning, and blast-radius control. Use when someone asks "structure my Terraform repo", "how should I split state between environments", "terraform plan wants to destroy and recreate my database", "should I use count or for_each", or "how do I import existing infrastructure". Do NOT use for CI pipeline authoring in GitHub Actions — use github-actions instead; for Kubernetes manifests the infrastructure hosts, use kubernetes-basics; for managing app secrets outside IaC, use secrets-hygiene.
+description: Writes safe, modular, idiomatic Terraform - remote state layout, module structure, plan-review discipline, version pinning, and blast-radius control. Use when someone asks "structure my Terraform repo", "how should I split state between environments", "terraform plan wants to destroy and recreate my database", "should I use count or for_each", or "how do I import existing infrastructure". Do NOT use for CI pipeline authoring in GitHub Actions - use github-actions instead; for Kubernetes manifests the infrastructure hosts, use kubernetes-basics; for managing app secrets outside IaC, use secrets-hygiene.
 ---
 
 # Terraform Expert
 
-The costly failure mode in Terraform is not syntax — it is an unreviewed apply that destroys a production database because a rename read as destroy-and-recreate, or two engineers corrupting shared state because it lived on a laptop. This skill structures Terraform so every change is a reviewed plan with a known blast radius, and state is a locked, encrypted, per-environment artifact.
+The costly failure mode in Terraform is not syntax - it is an unreviewed apply that destroys a production database because a rename read as destroy-and-recreate, or two engineers corrupting shared state because it lived on a laptop. This skill structures Terraform so every change is a reviewed plan with a known blast radius, and state is a locked, encrypted, per-environment artifact.
 
 ## Operating procedure
 
@@ -14,15 +14,15 @@ State comes first because everything else is recoverable from code; state is not
 ### Step 1: Gather inputs
 
 1. Cloud and providers in play, and whether infrastructure already exists (import path) or is greenfield.
-2. Environments — dev/staging/prod at minimum? Any per-region splits?
-3. Team size and apply model — local applies, CI-driven, or Terraform Cloud? Default for more than one engineer: CI-driven with plan output posted to the PR.
-4. Criticality tiers — which resources are irreplaceable (databases, DNS zones, KMS keys)? These get `prevent_destroy`.
+2. Environments - dev/staging/prod at minimum? Any per-region splits?
+3. Team size and apply model - local applies, CI-driven, or Terraform Cloud? Default for more than one engineer: CI-driven with plan output posted to the PR.
+4. Criticality tiers - which resources are irreplaceable (databases, DNS zones, KMS keys)? These get `prevent_destroy`.
 
 ### Step 2: Set up state before writing resources
 
-- Remote backend always — S3 + DynamoDB locking, GCS, or Terraform Cloud. Local state for shared infrastructure guarantees eventual corruption or loss.
+- Remote backend always - S3 + DynamoDB locking, GCS, or Terraform Cloud. Local state for shared infrastructure guarantees eventual corruption or loss.
 - One state file per environment. Never share state across environments: a bad apply in dev must be physically unable to touch prod.
-- State stores secrets and all attribute values in plaintext — encrypt the backend at rest and restrict read access as tightly as the secrets it holds.
+- State stores secrets and all attribute values in plaintext - encrypt the backend at rest and restrict read access as tightly as the secrets it holds.
 - Never edit state by hand. Refactors use `terraform state mv`; adopting existing infrastructure uses `import` (or import blocks). A hand-edited state file diverges from reality silently.
 
 ### Step 3: Lay out the repository
@@ -35,7 +35,7 @@ modules/                    # reusable building blocks, no env-specific values
     outputs.tf              # what consumers may depend on
   ecs-service/
     ...
-environments/               # thin per-env roots — wiring only
+environments/               # thin per-env roots - wiring only
   dev/
     main.tf                 # module calls + env values
     backend.tf              # this env's state config
@@ -48,7 +48,7 @@ Rules the skeleton encodes:
 
 - Environments are thin: they call modules and pass variables. If an environment root contains a raw `resource` block, that resource belongs in a module.
 - A module hardcodes zero environment values; everything env-specific arrives via `variables.tf`.
-- Modules expose only deliberate `outputs.tf` — consumers depending on undeclared internals break on refactor.
+- Modules expose only deliberate `outputs.tf` - consumers depending on undeclared internals break on refactor.
 
 ### Step 4: Write idiomatic resources
 
@@ -70,17 +70,17 @@ resource "aws_instance" "app" {
 ```
 
 - `for_each` over `count` whenever items have stable identities. With `count`, deleting item 0 renumbers every following item and Terraform destroys and recreates all of them.
-- Tag everything through one `common_tags` local — untagged resources are unattributable in the bill and invisible to cleanup.
+- Tag everything through one `common_tags` local - untagged resources are unattributable in the bill and invisible to cleanup.
 - Mark sensitive outputs `sensitive = true`.
 - Secrets come from a secrets manager via data sources; never hardcode them (they land in state and git either way, but hardcoding puts them in both).
 
 ### Step 5: Pin versions and enforce plan review
 
 - Pin providers and modules with `~>` constraints and commit `.terraform.lock.hcl`. An unpinned provider means every teammate and CI run can resolve different code.
-- Every apply is preceded by a `terraform plan` reviewed by a human — in a PR for teams. The review question is always: does the plan contain any `destroy` or `replace` you did not intend?
+- Every apply is preceded by a `terraform plan` reviewed by a human - in a PR for teams. The review question is always: does the plan contain any `destroy` or `replace` you did not intend?
 - `lifecycle { prevent_destroy = true }` on every Step 1 irreplaceable resource. It turns a catastrophic apply into an explicit error.
 
-### Step 6: Operate — upgrades, drift, blast radius
+### Step 6: Operate - upgrades, drift, blast radius
 
 - Provider upgrades: one minor version at a time, read the upgrade guide, plan in dev first. A plan full of forced replacements after a bump means stop and read, not apply.
 - Drift: run plan on a schedule (daily in CI is a reasonable default); reconcile manual console changes back into code or revert them. Unreconciled drift compounds until plans become unreadable.
@@ -88,7 +88,7 @@ resource "aws_instance" "app" {
 
 ## Worked contrast
 
-Bad — environment root that will drift from staging within a month:
+Bad - environment root that will drift from staging within a month:
 
 ```hcl
 # environments/prod/main.tf
@@ -99,7 +99,7 @@ resource "aws_instance" "app" {          # raw resource in an env root
 }
 ```
 
-Good — the same intent through the module contract:
+Good - the same intent through the module contract:
 
 ```hcl
 # environments/prod/main.tf
@@ -118,12 +118,12 @@ Produce a Terraform setup containing: the remote backend configuration with lock
 
 ## Do NOT
 
-- Do not keep shared state locally or share one state file across environments — the failure is corruption or cross-env damage, and both are unrecoverable by git.
+- Do not keep shared state locally or share one state file across environments - the failure is corruption or cross-env damage, and both are unrecoverable by git.
 - Do not apply without a reviewed plan; the plan is the only thing standing between a rename and a destroyed database.
-- Do not use `count` for collections with identity — removals renumber and recreate everything after them.
+- Do not use `count` for collections with identity - removals renumber and recreate everything after them.
 - Do not hand-edit state; use `state mv` and `import`.
 - Do not leave providers unpinned or the lockfile uncommitted.
-- Do not put raw resources in environment roots — that is how prod and staging quietly diverge.
+- Do not put raw resources in environment roots - that is how prod and staging quietly diverge.
 
 ## Quality bar
 

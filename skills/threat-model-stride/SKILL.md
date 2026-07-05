@@ -1,11 +1,11 @@
 ---
 name: Threat Model STRIDE
-description: Applies STRIDE threat modeling to a feature or system design and produces a prioritized threat table with concrete mitigations ranked by exploitability and impact. Use when someone asks "threat model this feature", "what could go wrong with this design", "is this integration safe to build", or is reviewing auth flows, new data stores, webhook receivers, file uploads, or external integrations before the code is written. Do NOT use for prioritizing scanner or pentest findings on already-shipped code — use vulnerability-triage instead; for line-by-line security review of written code, use secure-code-review.
+description: Applies STRIDE threat modeling to a feature or system design and produces a prioritized threat table with concrete mitigations ranked by exploitability and impact. Use when someone asks "threat model this feature", "what could go wrong with this design", "is this integration safe to build", or is reviewing auth flows, new data stores, webhook receivers, file uploads, or external integrations before the code is written. Do NOT use for prioritizing scanner or pentest findings on already-shipped code - use vulnerability-triage instead; for line-by-line security review of written code, use secure-code-review.
 ---
 
 # Threat Model STRIDE
 
-A threat found at design review costs a paragraph in a doc; the same threat found in production costs an incident, a credential rotation, and sometimes a disclosure. STRIDE catches whole classes of flaws — spoofed callers, tamperable payloads, privilege leaks — before there is code to review. Apply it to any feature touching auth, data storage, external calls, or privilege changes; skip it and the same flaws surface later in secure-code-review or, worse, in vulnerability-triage.
+A threat found at design review costs a paragraph in a doc; the same threat found in production costs an incident, a credential rotation, and sometimes a disclosure. STRIDE catches whole classes of flaws - spoofed callers, tamperable payloads, privilege leaks - before there is code to review. Apply it to any feature touching auth, data storage, external calls, or privilege changes; skip it and the same flaws surface later in secure-code-review or, worse, in vulnerability-triage.
 
 ## Operating procedure
 
@@ -24,7 +24,7 @@ Collect these before modeling. Where the user cannot answer, use the default and
 
 ### Step 2: Map the data flow in prose
 
-Establish a minimal data-flow diagram in prose: name every actor, every trust boundary (browser/server, service/DB, internal/external network), and every data asset with its sensitivity tier. Do not proceed until boundaries are explicit — vague scope produces vague threats.
+Establish a minimal data-flow diagram in prose: name every actor, every trust boundary (browser/server, service/DB, internal/external network), and every data asset with its sensitivity tier. Do not proceed until boundaries are explicit - vague scope produces vague threats.
 
 ### Step 3: Apply STRIDE per boundary-crossing component
 
@@ -44,13 +44,13 @@ Score each threat on two axes only.
 - Exploitability: 3 = triggerable by an anonymous internet user with public tooling; 2 = requires an authenticated low-privilege account or nontrivial setup; 1 = requires insider access, physical access, or chaining other flaws.
 - Impact: 3 = credential theft, remote code execution, regulated-data exposure, or full account takeover; 2 = single-user data exposure or degraded service; 1 = marginal information or brief nuisance.
 
-Severity = the sum: 6 is Critical, 5 is High, 4 is Medium, 3 or below is Low. Drop Low findings from the table unless they chain into a higher-severity path — a padded table trains reviewers to skim.
+Severity = the sum: 6 is Critical, 5 is High, 4 is Medium, 3 or below is Low. Drop Low findings from the table unless they chain into a higher-severity path - a padded table trains reviewers to skim.
 
 ### Step 5: Recommend one concrete control per Critical and High
 
-- Prefer existing platform primitives (JWT validation middleware, ORM parameterization, IAM roles) over custom code — custom security code is new attack surface.
+- Prefer existing platform primitives (JWT validation middleware, ORM parameterization, IAM roles) over custom code - custom security code is new attack surface.
 - Specify the control, not the category: "add HMAC-SHA256 signature on the webhook payload, verified before parsing", not "add integrity check".
-- Flag any mitigation requiring a schema change or new dependency — those need separate review.
+- Flag any mitigation requiring a schema change or new dependency - those need separate review.
 
 ### Step 6: Produce the threat table
 
@@ -65,7 +65,7 @@ Feature: users upload invoice PDFs; the app generates share links that expire af
 | Spoofing | Share endpoint | Attacker enumerates link tokens to read other users' invoices | Critical (E3+I3) | 128-bit CSPRNG tokens, constant-time comparison, rate limit 10 req/min per IP | Platform |
 | Elevation of Privilege | Storage access | A link grants access to the whole bucket prefix, not one object | Critical (E3+I3) | Scope the signed credential to a single object key; deny listing | Platform |
 | Information Disclosure | Expired links | Storage URL exposed in the redirect outlives the 7-day expiry | High (E3+I2) | Proxy bytes through the API, or signed URLs with TTL at or below link expiry | Platform |
-| Tampering | Upload handler | Uploaded "PDF" is HTML/JS served inline — stored XSS on the share domain | High (E2+I3) | Validate magic bytes; serve with Content-Disposition attachment from a sandboxed domain | App |
+| Tampering | Upload handler | Uploaded "PDF" is HTML/JS served inline - stored XSS on the share domain | High (E2+I3) | Validate magic bytes; serve with Content-Disposition attachment from a sandboxed domain | App |
 | Denial of Service | Upload handler | Unbounded upload size exhausts storage and memory | Medium (E2+I2) | 10 MB size cap, per-user daily quota, streaming writes | App |
 | Repudiation | Share creation | User denies having shared an invoice externally | Medium (E2+I2) | Log actor ID, timestamp, and link scope on creation | App |
 
@@ -75,11 +75,11 @@ Produce a threat model containing: the prose data-flow summary with named trust 
 
 ## Do NOT
 
-- Do not enumerate threats before trust boundaries are explicit — every vague threat traces back to a vague boundary.
+- Do not enumerate threats before trust boundaries are explicit - every vague threat traces back to a vague boundary.
 - Do not recommend a category instead of a control; a finding nobody can turn into a ticket does not get fixed.
 - Do not custom-build what a platform primitive already provides.
 - Do not pad the table with Low findings; include a Low only when it chains into a higher-severity path.
-- Do not treat a STRIDE pass on a design as clearance for the implementation — pair with secure-code-review once code exists, because STRIDE cannot see injection bugs or missing ownership checks.
+- Do not treat a STRIDE pass on a design as clearance for the implementation - pair with secure-code-review once code exists, because STRIDE cannot see injection bugs or missing ownership checks.
 
 ## Quality bar
 
@@ -91,4 +91,4 @@ Produce a threat model containing: the prose data-flow summary with named trust 
 
 ## Escalation
 
-Route implementation review of written code to secure-code-review, prioritization of already-discovered vulnerabilities to vulnerability-triage, and any credential exposure found during modeling to secrets-hygiene. For regulated data (PCI, HIPAA), bring in a qualified security engineer or assessor — this skill structures the analysis; it does not replace a formal assessment.
+Route implementation review of written code to secure-code-review, prioritization of already-discovered vulnerabilities to vulnerability-triage, and any credential exposure found during modeling to secrets-hygiene. For regulated data (PCI, HIPAA), bring in a qualified security engineer or assessor - this skill structures the analysis; it does not replace a formal assessment.

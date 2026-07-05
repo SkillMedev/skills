@@ -1,11 +1,11 @@
 ---
 name: Feature Engineering
-description: Designs ML features with leakage-safe pipelines, correct categorical encoding by cardinality, numeric transforms, and validation that a feature earns its place. Use when someone asks "how should I encode this high-cardinality column", "why does my model score great offline and fail in production", "what features should I build from this table", or "should I scale these inputs". Do NOT use for building the serving infrastructure that stores and versions features across models — use feature-store-design instead; for detecting when live feature distributions shift after deployment — use data-drift-monitor instead; for initial dataset exploration and profiling — use eda-playbook instead.
+description: Designs ML features with leakage-safe pipelines, correct categorical encoding by cardinality, numeric transforms, and validation that a feature earns its place. Use when someone asks "how should I encode this high-cardinality column", "why does my model score great offline and fail in production", "what features should I build from this table", or "should I scale these inputs". Do NOT use for building the serving infrastructure that stores and versions features across models - use feature-store-design instead; for detecting when live feature distributions shift after deployment - use data-drift-monitor instead; for initial dataset exploration and profiling - use eda-playbook instead.
 ---
 
 # Feature Engineering
 
-Most "amazing offline, useless in production" models are not modeling failures — they are leakage failures introduced during feature engineering. This skill builds features that improve cross-validated performance without smuggling the target into the inputs, and rejects features that only look good because they cheated.
+Most "amazing offline, useless in production" models are not modeling failures - they are leakage failures introduced during feature engineering. This skill builds features that improve cross-validated performance without smuggling the target into the inputs, and rejects features that only look good because they cheated.
 
 ## Operating procedure
 
@@ -16,9 +16,9 @@ Leakage prevention comes first because every later step (encoding, aggregation, 
 Collect before writing transforms; label unknowns as guesses.
 
 1. Prediction task and the exact prediction time: what is known at the moment the model must predict? Everything else is off-limits.
-2. Target definition and how it was produced — features derived from the same process as the label are proxy-leakage suspects.
+2. Target definition and how it was produced - features derived from the same process as the label are proxy-leakage suspects.
 3. Data shape: row count, column list with dtypes, entity keys, and whether rows have a time dimension.
-4. Model family (linear, tree ensemble, neural) — it determines which transforms are necessary and which are wasted work.
+4. Model family (linear, tree ensemble, neural) - it determines which transforms are necessary and which are wasted work.
 5. Serving constraints: will these features be computable at inference time with the same code and latency budget?
 
 ### Step 2: Lock the leakage rules
@@ -44,17 +44,17 @@ If any transform lives outside the pipeline, assume it leaks until proven otherw
 
 ### Step 3: Encode categoricals by cardinality
 
-Pick the encoder from the category count — this is a lookup, not a debate:
+Pick the encoder from the category count - this is a lookup, not a debate:
 
 - Up to ~15 categories: one-hot. Safe for any model.
 - ~15-50 categories: one-hot still works for tree ensembles; for linear models watch the coefficient count.
-- 50+ categories: target/mean encoding, computed strictly with out-of-fold means — in-fold target encoding is the single most common leakage bug in tabular ML. Add smoothing toward the global mean for categories with fewer than ~20 rows.
+- 50+ categories: target/mean encoding, computed strictly with out-of-fold means - in-fold target encoding is the single most common leakage bug in tabular ML. Add smoothing toward the global mean for categories with fewer than ~20 rows.
 - 10,000+ categories (user IDs, URLs): hashing encoder when memory matters, or entity embeddings.
 - Ordinal encoding only when categories have a true order (S < M < L), never as a memory shortcut.
 
 ### Step 4: Transform numerics
 
-- Scale (standardize or min-max) for distance- and gradient-based models; tree ensembles do not need it — skip the work.
+- Scale (standardize or min-max) for distance- and gradient-based models; tree ensembles do not need it - skip the work.
 - Apply log or Box-Cox to skewed positive features; a rule of thumb trigger is |skewness| > 1.
 - Bin into quantiles when the relationship is non-monotonic and the model is linear.
 
@@ -62,12 +62,12 @@ Pick the encoder from the category count — this is a lookup, not a debate:
 
 - Ratios and differences encode domain meaning cheaply: price per unit, days since last event.
 - Polynomial or explicit interaction terms help linear models capture combined effects.
-- Group-by aggregations (mean, count, std per entity) are the highest-value tabular features — and must be computed out-of-fold or over past-only windows, or they leak.
+- Group-by aggregations (mean, count, std per entity) are the highest-value tabular features - and must be computed out-of-fold or over past-only windows, or they leak.
 - Datetime: extract hour, day of week, month, is_weekend, plus cyclical sine/cosine encodings for periodic values, and elapsed-time features like days since signup.
 
 ### Step 6: Handle missing values
 
-- Add a binary missing-indicator before imputing when the null rate exceeds ~5% — missingness is often informative.
+- Add a binary missing-indicator before imputing when the null rate exceeds ~5% - missingness is often informative.
 - Impute numerics with median, categoricals with a dedicated "missing" category.
 - Avoid mean imputation on skewed data.
 - A feature over ~60% missing rarely earns its place unless the missingness itself predicts; test the indicator alone first.
@@ -76,12 +76,12 @@ Pick the encoder from the category count — this is a lookup, not a debate:
 
 - Remove near-constant features (over ~99% a single value) and one of any pair with |correlation| > 0.95.
 - Use permutation importance or SHAP rather than raw model importances, which inflate high-cardinality features.
-- A feature ships only if it improves the cross-validated metric, not training fit. Suspicious rule: any single new feature that jumps AUC by more than ~0.05 is a leakage suspect first and a triumph second — audit its availability at prediction time before celebrating.
+- A feature ships only if it improves the cross-validated metric, not training fit. Suspicious rule: any single new feature that jumps AUC by more than ~0.05 is a leakage suspect first and a triumph second - audit its availability at prediction time before celebrating.
 - Keep a feature catalog documenting source, transformation, and refresh cadence; when features are shared across models, graduate to feature-store-design.
 
 ## Worked artifact: leakage contrast pair
 
-Bad — target encoding fit on the full dataset before the split:
+Bad - target encoding fit on the full dataset before the split:
 
 ```python
 means = df.groupby("merchant_id")["is_fraud"].mean()   # sees test-set labels
@@ -89,7 +89,7 @@ df["merchant_te"] = df["merchant_id"].map(means)
 X_train, X_test = train_test_split(df)                  # too late: already leaked
 ```
 
-Good — out-of-fold target encoding, so each row's encoding never saw its own label:
+Good - out-of-fold target encoding, so each row's encoding never saw its own label:
 
 ```python
 from sklearn.model_selection import KFold
@@ -111,7 +111,7 @@ Produce a feature specification containing: the prediction-time definition, the 
 ## Do NOT
 
 - Do not fit any transformer outside the cross-validation loop; the pipeline is the guardrail, not a style preference.
-- Do not target-encode with in-fold means — it is leakage even when the code looks innocent.
+- Do not target-encode with in-fold means - it is leakage even when the code looks innocent.
 - Do not scale features for tree ensembles or skip scaling for linear/kNN/neural models; match transform to model family.
 - Do not trust raw impurity-based importances; they overrate high-cardinality columns.
 - Do not keep a feature because it is clever; keep it because the cross-validated metric moved.

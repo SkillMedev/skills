@@ -1,6 +1,6 @@
 ---
 name: Redline Annotation
-description: Produces precise redline annotations — spacing, sizing, type, color, radius, z-order, and behavior notes in a consistent, scannable notation — that engineers can build from without asking questions. Use when someone asks "redline this screen", "spec this component", "annotate the spacing for handoff", or is preparing design files for development. Do NOT use for the overall handoff document with flows, edge cases, and acceptance criteria — use design-handoff-doc instead; for animation timing and easing, use motion-spec; for breakpoint behavior, use responsive-spec.
+description: Produces precise redline annotations - spacing, sizing, type, color, radius, z-order, and behavior notes in a consistent, scannable notation - that engineers can build from without asking questions. Use when someone asks "redline this screen", "spec this component", "annotate the spacing for handoff", or is preparing design files for development. Do NOT use for the overall handoff document with flows, edge cases, and acceptance criteria - use design-handoff-doc instead; for animation timing and easing, use motion-spec; for breakpoint behavior, use responsive-spec.
 ---
 
 # Redline Annotation
@@ -21,14 +21,14 @@ Fix a compact notation before annotating and include it as a legend in the file.
 
 ### Step 3: Annotate the always-list
 
-- Spacing: all padding, margin, and gap values in pixels — or the token name if a token system exists. Internal padding as "p: 12 16" (top/bottom left/right), all four values if asymmetric. Draw a gap arrow between siblings and label the value.
+- Spacing: all padding, margin, and gap values in pixels - or the token name if a token system exists. Internal padding as "p: 12 16" (top/bottom left/right), all four values if asymmetric. Draw a gap arrow between siblings and label the value.
 - Sizing: width, height, and min/max constraints for every non-trivially-sized element. For auto widths, state "grows to fill container" vs. "shrinks to content".
 - Type: font family, weight, size, line-height, letter-spacing, and color for every text style not covered by a named style.
 - Color: token name first; raw hex only if no token exists. Include opacity when not 100%.
 - Corner radius: per-corner values when they differ (top-left: 8, top-right: 8, bottom: 0).
 - Z-order relationships for overlapping elements ("dropdown sits above modal overlay").
 
-Never annotate only half of a symmetrical component — annotate fully so there is no ambiguity.
+Never annotate only half of a symmetrical component - annotate fully so there is no ambiguity.
 
 ### Step 4: Annotate behavior
 
@@ -41,9 +41,9 @@ Anything a developer cannot infer from a static frame:
 
 ### Step 5: Skip what is already specified
 
-- Values defined in a shared style or component the engineer can inspect — do not re-document every token.
-- Structural markup and class names — annotate intent, not implementation; implementation is the engineer's domain.
-- Every pixel that conforms to the stated grid convention — the grid is the rule, redlines mark the exceptions.
+- Values defined in a shared style or component the engineer can inspect - do not re-document every token.
+- Structural markup and class names - annotate intent, not implementation; implementation is the engineer's domain.
+- Every pixel that conforms to the stated grid convention - the grid is the rule, redlines mark the exceptions.
 
 ### Step 6: Final delivery pass
 
@@ -52,7 +52,7 @@ Run the quality bar below before handing off.
 ## Worked example
 
 ```
-REDLINE CONVENTION + EXAMPLE — "Project card" component
+REDLINE CONVENTION + EXAMPLE - "Project card" component
 
 Legend
   p: 12 16          padding, top/bottom left/right (4 values if asymmetric)
@@ -87,11 +87,11 @@ Produce an annotated file or spec sheet containing: the notation legend, complet
 
 ## Do NOT
 
-- Do not annotate half a component and let symmetry be assumed — assumed symmetry is where 2px bugs live.
+- Do not annotate half a component and let symmetry be assumed - assumed symmetry is where 2px bugs live.
 - Do not write raw hex when a token exists; raw values silently fork the design system.
 - Do not re-document the entire token library; engineers with system access need exceptions, not an echo.
-- Do not annotate class names or markup structure — prescribing implementation creates friction and goes stale.
-- Do not leave states unannotated because "hover is obvious" — the exact target color and duration are never obvious.
+- Do not annotate class names or markup structure - prescribing implementation creates friction and goes stale.
+- Do not leave states unannotated because "hover is obvious" - the exact target color and duration are never obvious.
 
 ## Quality bar
 

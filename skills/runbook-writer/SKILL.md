@@ -27,7 +27,7 @@ List each alert that fires for this service. For each:
 Numbered, runnable steps. Each step must be executable in under 2 minutes.
 
 1. Check service health endpoint and current error rate dashboard link.
-2. Check dependency health (upstream/downstream) — list the specific dashboards or commands.
+2. Check dependency health (upstream/downstream) - list the specific dashboards or commands.
 3. Check recent deploys: confirm or rule out a code change as cause.
 4. Check resource saturation: CPU, memory, disk, connection pool exhaustion.
 5. Check logs for the first occurrence of the error pattern.
@@ -58,18 +58,18 @@ The difference between a paragraph and a procedure:
 
 Bad: "Check if the database is healthy and connections are okay."
 
-Good: "Run `kubectl -n payments exec deploy/api -- pg_isready -h db.payments.internal -p 5432`. Expect `accepting connections`. If it fails or times out, skip to Mitigation 3 (fail over to replica — requires IC approval) and page #db-oncall. If it succeeds, check pool saturation on the [connections dashboard](https://grafana.internal/d/db-pool): above 90% used, go to Mitigation 2 (scale out API pods)."
+Good: "Run `kubectl -n payments exec deploy/api -- pg_isready -h db.payments.internal -p 5432`. Expect `accepting connections`. If it fails or times out, skip to Mitigation 3 (fail over to replica - requires IC approval) and page #db-oncall. If it succeeds, check pool saturation on the [connections dashboard](https://grafana.internal/d/db-pool): above 90% used, go to Mitigation 2 (scale out API pods)."
 
 The good version names the exact command, the expected output, the decision threshold, and what to do on both branches. A step without a failure branch is a step that stalls the incident.
 
 ## Deliverable
 
-Produce one runbook document per service, versioned alongside the service's code, containing exactly the six sections above — with real dashboard URLs, executable command patterns, named escalation contacts (Slack handles or PagerDuty policies), and a risk label on every mitigation. Someone who has never operated the service should be able to execute it end to end without asking a question in chat.
+Produce one runbook document per service, versioned alongside the service's code, containing exactly the six sections above - with real dashboard URLs, executable command patterns, named escalation contacts (Slack handles or PagerDuty policies), and a risk label on every mitigation. Someone who has never operated the service should be able to execute it end to end without asking a question in chat.
 
 ## Quality bar
 
 - Every diagnostic step is executable in under 2 minutes and states its expected output.
-- Every step that can fail says what to do when it fails — no dead ends.
+- Every step that can fail says what to do when it fails - no dead ends.
 - Every mitigation carries a speed bracket (fast/medium/slow) and a risk label (Low/Medium/High).
 - All links resolve and all commands are copy-pasteable; nothing requires the reader to invent a placeholder.
 - The runbook lives in version control with the service, not in a wiki page nobody updates.

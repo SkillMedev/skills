@@ -1,6 +1,6 @@
 ---
 name: Content Brief
-description: Builds an SEO content brief a writer can execute without guesswork — primary and semantic keywords, search intent, recommended format matched to the SERP, title, H1, meta description, a full H2/H3 outline, word-count guidance derived from ranking pages, internal links with anchors, featured-snippet opportunities, CTA, and the content gap competitors miss. Use when someone says "create a brief for this keyword", "what should this article cover to rank", "outline a page targeting X", or is handing work to a content writer. Do NOT use for grouping keywords into a site-wide topic plan — use keyword-cluster-builder instead — or for optimizing an already-written page — use seo-optimizer instead.
+description: Builds an SEO content brief a writer can execute without guesswork - primary and semantic keywords, search intent, recommended format matched to the SERP, title, H1, meta description, a full H2/H3 outline, word-count guidance derived from ranking pages, internal links with anchors, featured-snippet opportunities, CTA, and the content gap competitors miss. Use when someone says "create a brief for this keyword", "what should this article cover to rank", "outline a page targeting X", or is handing work to a content writer. Do NOT use for grouping keywords into a site-wide topic plan - use keyword-cluster-builder instead - or for optimizing an already-written page - use seo-optimizer instead.
 ---
 
 # Content Brief
@@ -10,30 +10,30 @@ You create the brief a writer follows to produce a page that ranks in search and
 ## Process
 
 1. Gather: target keyword, the business goal of the page, the audience, and any competing URLs ranking now.
-2. Determine search intent (below) — everything flows from it.
+2. Determine search intent (below) - everything flows from it.
 3. Build the brief.
 
 ## Brief components
 
-1. **Primary keyword** — the exact phrase to target.
-2. **Secondary / semantic keywords** — 5-15 related terms and entities to cover (the topic's vocabulary). These help relevance, not just repetition.
-3. **Search intent** — informational, commercial, transactional, or navigational. This dictates format and depth.
-4. **Target audience and their knowledge level** — beginner vs. expert changes everything.
-5. **Recommended format** — listicle, how-to guide, comparison, definition + deep dive. Match what already ranks unless you can do better.
-6. **Title and H1** — compelling, includes the keyword naturally.
-7. **Meta description** — under 155 chars, includes keyword, written to earn the click.
-8. **Outline** — full H2/H3 structure. This is the core of the brief.
-9. **Target word count** — based on what ranking pages do, not an arbitrary number.
-10. **Internal links** — specific existing pages to link to, with anchor suggestions.
-11. **External / authority references** — types of sources to cite.
-12. **Featured-snippet opportunity** — if a definition, list, or table could win position zero, specify it.
-13. **Call to action** — what the reader should do next.
+1. **Primary keyword** - the exact phrase to target.
+2. **Secondary / semantic keywords** - 5-15 related terms and entities to cover (the topic's vocabulary). These help relevance, not just repetition.
+3. **Search intent** - informational, commercial, transactional, or navigational. This dictates format and depth.
+4. **Target audience and their knowledge level** - beginner vs. expert changes everything.
+5. **Recommended format** - listicle, how-to guide, comparison, definition + deep dive. Match what already ranks unless you can do better.
+6. **Title and H1** - compelling, includes the keyword naturally.
+7. **Meta description** - under 155 chars, includes keyword, written to earn the click.
+8. **Outline** - full H2/H3 structure. This is the core of the brief.
+9. **Target word count** - based on what ranking pages do, not an arbitrary number.
+10. **Internal links** - specific existing pages to link to, with anchor suggestions.
+11. **External / authority references** - types of sources to cite.
+12. **Featured-snippet opportunity** - if a definition, list, or table could win position zero, specify it.
+13. **Call to action** - what the reader should do next.
 
 ## Determining intent
 
 Look at what currently ranks for the keyword:
-- Mostly guides? Informational — write to teach.
-- Product/category pages? Commercial/transactional — write to convert.
+- Mostly guides? Informational - write to teach.
+- Product/category pages? Commercial/transactional - write to convert.
 - Match the dominant format. Fighting intent rarely ranks.
 
 ## Outline quality
@@ -50,10 +50,10 @@ Look at what currently ranks for the keyword:
 
 ## Anti-patterns
 
-- Keyword stuffing instructions — write for humans, optimize lightly.
+- Keyword stuffing instructions - write for humans, optimize lightly.
 - Ignoring intent and forcing a format.
 - Outlines that just restate competitors instead of filling gaps they miss.
 
 ## Output
 
-Deliver the complete brief. Highlight the content gap — what the top-ranking pages fail to cover that this piece should — because that's the page's best shot at outranking them.
+Deliver the complete brief. Highlight the content gap - what the top-ranking pages fail to cover that this piece should - because that's the page's best shot at outranking them.

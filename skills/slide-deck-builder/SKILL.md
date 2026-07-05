@@ -1,6 +1,6 @@
 ---
 name: Slide Deck Builder
-description: Structure a persuasive slide deck — narrative arc, one-idea-per-slide discipline, and headlines written as takeaways not labels. Use when building any presentation that must move an audience to a decision.
+description: Structure a persuasive slide deck - narrative arc, one-idea-per-slide discipline, and headlines written as takeaways not labels. Use when building any presentation that must move an audience to a decision.
 ---
 
 # Slide Deck Builder
@@ -19,25 +19,25 @@ That gap is the deck's job. Every slide serves the journey across it. A deck tha
 ## Narrative arc
 
 Default structure for a decision-driving deck:
-- Situation — shared context the audience already holds as true
-- Complication — what changed or what is broken; the tension
-- Resolution — the proposed path forward
-- Proof — evidence the resolution works
-- Ask — the specific decision or action requested
+- Situation - shared context the audience already holds as true
+- Complication - what changed or what is broken; the tension
+- Resolution - the proposed path forward
+- Proof - evidence the resolution works
+- Ask - the specific decision or action requested
 
 Never start with the ask. Never bury the complication in slide 9.
 
-Size the deck to the meeting: budget roughly 2 minutes of talk time per slide, so a 30-minute decision meeting supports 10-15 slides — anything past that is appendix material.
+Size the deck to the meeting: budget roughly 2 minutes of talk time per slide, so a 30-minute decision meeting supports 10-15 slides - anything past that is appendix material.
 
 ## One idea per slide
 
 If a slide requires a sub-bullet to be understood, it has two ideas. Split it. The test: cover the body and read only the headline. If the point still lands, the slide is right. If the body is doing the work, the headline is wrong.
 
-Do not use slides as documents. If content requires more than 40 words to be understood, it belongs in an appendix or a leave-behind — not on a live slide.
+Do not use slides as documents. If content requires more than 40 words to be understood, it belongs in an appendix or a leave-behind - not on a live slide.
 
 ## Headlines as takeaways
 
-Every headline should be a complete, opinionated sentence — not a topic label — and short enough to read in one glance (about 12 words is the ceiling).
+Every headline should be a complete, opinionated sentence - not a topic label - and short enough to read in one glance (about 12 words is the ceiling).
 
 - Wrong: 'Market Analysis'
 - Right: 'The market is growing 3x faster than our current capacity'
@@ -48,7 +48,7 @@ A reader who only reads headlines should get the whole argument. If the headline
 
 The fastest structural check is reading only the headlines aloud.
 
-Bad (topic labels — no argument):
+Bad (topic labels - no argument):
 1. Background
 2. Market Overview
 3. Our Product
@@ -62,7 +62,7 @@ Good (each headline a claim, and the sequence is the argument):
 4. Rolling it out company-wide costs $200k and pays back in under two quarters
 5. We're asking for approval to start the rollout next sprint
 
-Read the bad chain and you learn nothing. Read the good chain and you could make the decision without seeing a single slide body — which is exactly the standard.
+Read the bad chain and you learn nothing. Read the good chain and you could make the decision without seeing a single slide body - which is exactly the standard.
 
 ## Slides to audit before finalizing
 
@@ -81,13 +81,13 @@ Read the bad chain and you learn nothing. Read the good chain and you could make
 
 ## Do NOT
 
-- Do not open the slide tool before the headline chain is written — building slides first locks in a structure the argument then has to fight.
+- Do not open the slide tool before the headline chain is written - building slides first locks in a structure the argument then has to fight.
 - Do not paste dense tables or full paragraphs from the source document onto live slides; excerpt the one number or claim that matters and move the rest to the appendix.
-- Do not soften or hide the ask to seem less presumptuous — an audience that cannot tell what you want will decide nothing.
+- Do not soften or hide the ask to seem less presumptuous - an audience that cannot tell what you want will decide nothing.
 - Do not write bullets you intend to read aloud verbatim; the slide supports the talk, it is not the script.
-- Do not let appendix content creep into the main flow "just in case someone asks" — that is what the appendix is for.
+- Do not let appendix content creep into the main flow "just in case someone asks" - that is what the appendix is for.
 - Do not reuse a deck built for one audience on another; the spine questions have different answers, so the deck must too.
 
 ## Escape hatches
 
-For conference talks, lead with the resolution — audiences came to learn, not to be convinced. For investor decks, follow the problem / solution / traction / team / ask sequence. For board updates, lead with the decision needed; context comes after.
+For conference talks, lead with the resolution - audiences came to learn, not to be convinced. For investor decks, follow the problem / solution / traction / team / ask sequence. For board updates, lead with the decision needed; context comes after.

@@ -43,7 +43,7 @@ decision path.
 
 - **Free, general-purpose, fast** -> **Unsplash, Pexels, Pixabay.** Huge free
   catalogs, generous licenses, no cost. Trade-off: the popular shots are heavily
-  reused — a first-page result on these platforms can have hundreds of thousands
+  reused - a first-page result on these platforms can have hundreds of thousands
   of downloads, which is exactly why it reads as "stock". Best for blogs, side
   projects, MVPs, and backgrounds. Pexels and Pixabay also carry free stock *video*.
 - **Curated / authentic / premium-but-affordable** -> **Stocksy, Stills, Death to
@@ -81,7 +81,7 @@ Search like a photo editor, not like Google.
   try "whiteboard sketching", "two people reviewing a screen", "office hallway".
   The strongest shot is often one query sideways from the obvious one. Run at
   least 3 query variants before settling, and scroll past the first page or two
-  of results on free libraries — that is where the least-reused shots live.
+  of results on free libraries - that is where the least-reused shots live.
 - **Match orientation to placement up front** - a wide hero needs landscape with
   negative space on one side for text; a phone splash needs portrait. Filter for
   it rather than cropping a square later.
@@ -108,7 +108,7 @@ For each shortlisted image, check, in order:
 
 Produce a shortlist of 3-8 candidate images, each with: the source URL, the
 library and license type, resolution and orientation, and any editorial-only or
-release-required flag — plus the one-line brief and the queries that produced
+release-required flag - plus the one-line brief and the queries that produced
 the set, so the search can be re-run or extended. Hand the shortlist to
 image-license-rights before anything ships commercially.
 
@@ -123,19 +123,19 @@ image-license-rights before anything ships commercially.
 
 ## Do NOT
 
-- Do not grab the top first-page result on a free library — the most-downloaded
+- Do not grab the top first-page result on a free library - the most-downloaded
   shots are the most reused, and readers have seen them on ten other sites.
-- Do not search abstract nouns ("success", "innovation", "growth") — they return
+- Do not search abstract nouns ("success", "innovation", "growth") - they return
   the platform's worst cliches; translate the concept into a photographable scene
   first.
 - Do not use editorial-archive images (Getty editorial, AP, Reuters) in ads,
-  landing pages, or anything commercial — editorial-use-only is a legal line,
+  landing pages, or anything commercial - editorial-use-only is a legal line,
   not a suggestion.
-- Do not crop your way out of a wrong orientation — a square chopped into a wide
+- Do not crop your way out of a wrong orientation - a square chopped into a wide
   hero loses composition and resolution; filter for the right orientation at
   search time.
-- Do not assume "free" means release-free — free libraries frequently host
+- Do not assume "free" means release-free - free libraries frequently host
   images of identifiable people and logos with no model or property release
   attached.
-- Do not ship a finalist without its source URL and license type recorded — an
+- Do not ship a finalist without its source URL and license type recorded - an
   untraceable image is an unlicensable image.

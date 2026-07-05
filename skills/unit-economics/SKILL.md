@@ -1,11 +1,11 @@
 ---
 name: Unit Economics
-description: Compute CAC, contribution margin, LTV, LTV:CAC, and payback with honest definitions, a runnable calculator, and a verdict on whether each customer makes money. Use when someone asks "what's my CAC", "is my LTV:CAC healthy", "how long is my payback period", "can I afford to spend more on ads", or before scaling acquisition spend. Do NOT use for gym-specific front-end economics and Client-Financed Acquisition — use gym-money-model instead; for multi-year revenue projections and MRR bridges use revenue-modeling; for cohort-level retention and growth diagnosis use growth-accounting.
+description: Compute CAC, contribution margin, LTV, LTV:CAC, and payback with honest definitions, a runnable calculator, and a verdict on whether each customer makes money. Use when someone asks "what's my CAC", "is my LTV:CAC healthy", "how long is my payback period", "can I afford to spend more on ads", or before scaling acquisition spend. Do NOT use for gym-specific front-end economics and Client-Financed Acquisition - use gym-money-model instead; for multi-year revenue projections and MRR bridges use revenue-modeling; for cohort-level retention and growth diagnosis use growth-accounting.
 ---
 
 # Unit Economics
 
-Unit economics answer one question: does each customer make money, and how fast? Get the definitions wrong and you will scale a business that loses money faster the more it grows — the most expensive spreadsheet error a founder can make, because the flattering version of CAC and LTV looks fine right up until the cash runs out. This skill enforces honest math.
+Unit economics answer one question: does each customer make money, and how fast? Get the definitions wrong and you will scale a business that loses money faster the more it grows - the most expensive spreadsheet error a founder can make, because the flattering version of CAC and LTV looks fine right up until the cash runs out. This skill enforces honest math.
 
 ## Operating procedure
 
@@ -15,7 +15,7 @@ Work in order: definitions first, blended numbers second, segmented numbers thir
 
 Collect for a single recent period (a month or quarter). If a number is a guess, label it a guess and refine later.
 
-1. Fully-loaded sales and marketing spend for the period: salaries, tools, ad spend, commissions — not ad spend alone. The most common mistake is counting ad spend only and ignoring people.
+1. Fully-loaded sales and marketing spend for the period: salaries, tools, ad spend, commissions - not ad spend alone. The most common mistake is counting ad spend only and ignoring people.
 2. New customers acquired in the same period. Same-period matching keeps CAC honest; for long sales cycles, lag spend by the average cycle length and note the adjustment.
 3. ARPA: average monthly revenue per account.
 4. Variable cost to serve one customer per month: hosting, payment fees, support, third-party APIs. Not rent, not R&D.
@@ -25,23 +25,23 @@ Collect for a single recent period (a month or quarter). If a number is a guess,
 ### Step 2: Compute the four core metrics
 
 - CAC = fully-loaded S&M spend / new customers in the same period.
-- Contribution margin = revenue per customer minus the variable cost to serve them. This is the real margin that funds CAC and overhead — not gross revenue.
-- LTV = (ARPA x gross margin %) / monthly churn rate — equivalently, monthly contribution x average lifetime in months. Use gross margin, never raw revenue. Cap the lifetime horizon at 3 years (36 months) for credibility; infinite-life LTV math flatters early-stage churn, where a 1% churn estimate implies a fantasy 100-month customer.
-- Payback period = CAC / monthly contribution margin per customer. The number of months to earn back acquisition cost — the metric investors trust most because it is hard to fake.
+- Contribution margin = revenue per customer minus the variable cost to serve them. This is the real margin that funds CAC and overhead - not gross revenue.
+- LTV = (ARPA x gross margin %) / monthly churn rate - equivalently, monthly contribution x average lifetime in months. Use gross margin, never raw revenue. Cap the lifetime horizon at 3 years (36 months) for credibility; infinite-life LTV math flatters early-stage churn, where a 1% churn estimate implies a fantasy 100-month customer.
+- Payback period = CAC / monthly contribution margin per customer. The number of months to earn back acquisition cost - the metric investors trust most because it is hard to fake.
 
 ### Step 3: Read against the benchmarks
 
-- LTV:CAC — 3:1 or better is healthy. Below 1:1 the business loses money on every customer; between 1:1 and 3:1 it is fragile; above 5:1 it is likely underinvesting in growth and could acquire faster.
-- Payback — under 12 months for SMB, under 18–24 months for enterprise. A 30-month payback is a financing problem even if LTV:CAC looks fine, because someone has to fund the gap.
-- Contribution margin — 70%+ for software; structurally lower for usage-heavy or services-heavy models. Below 50% for a pure software product, investigate cost to serve before anything else.
+- LTV:CAC - 3:1 or better is healthy. Below 1:1 the business loses money on every customer; between 1:1 and 3:1 it is fragile; above 5:1 it is likely underinvesting in growth and could acquire faster.
+- Payback - under 12 months for SMB, under 18-24 months for enterprise. A 30-month payback is a financing problem even if LTV:CAC looks fine, because someone has to fund the gap.
+- Contribution margin - 70%+ for software; structurally lower for usage-heavy or services-heavy models. Below 50% for a pure software product, investigate cost to serve before anything else.
 
 ### Step 4: Segment before concluding
 
 Blended unit economics hide the truth: a great SMB segment can mask a brutal enterprise one, or vice versa. Recompute by:
 
-- Acquisition channel — paid vs organic CAC differ wildly, and blending them makes paid look safer than it is.
+- Acquisition channel - paid vs organic CAC differ wildly, and blending them makes paid look safer than it is.
 - Customer segment or size.
-- Cohort — newer cohorts may churn differently, and the blended churn rate lags reality.
+- Cohort - newer cohorts may churn differently, and the blended churn rate lags reality.
 
 The verdict applies per segment. "Scale spend" can be simultaneously right for organic SMB and wrong for paid enterprise.
 
@@ -49,11 +49,11 @@ The verdict applies per segment. "Scale spend" can be simultaneously right for o
 
 To improve LTV:CAC, in order of usual leverage:
 
-1. Reduce churn — the single biggest LTV lever; it compounds, and it also signals product truth.
-2. Expand revenue — upsell and net revenue retention above 100%.
-3. Raise prices — direct margin, and the most under-tested lever (pair with pricing-strategy).
-4. Lower CAC — shift to compounding channels, improve conversion.
-5. Improve gross margin — renegotiate infrastructure, automate support.
+1. Reduce churn - the single biggest LTV lever; it compounds, and it also signals product truth.
+2. Expand revenue - upsell and net revenue retention above 100%.
+3. Raise prices - direct margin, and the most under-tested lever (pair with pricing-strategy).
+4. Lower CAC - shift to compounding channels, improve conversion.
+5. Improve gross margin - renegotiate infrastructure, automate support.
 
 Recommend the top three for this business ranked by expected impact on payback period, each with the specific metric it moves.
 
@@ -80,11 +80,11 @@ function model(i) {
   const ltv = contribution * lifetimeMonths
   const ltvToCac = ltv / cac
   const paybackMonths = cac / contribution
-  let verdict = 'HEALTHY — scale with confidence'
-  if (ltvToCac < 1) verdict = 'LOSING MONEY PER CUSTOMER — stop scaling'
-  else if (ltvToCac < 3) verdict = 'FRAGILE — fix a lever before scaling'
-  else if (paybackMonths > 12) verdict = 'CASH-CONSTRAINED — LTV fine, payback too slow'
-  else if (ltvToCac > 5) verdict = 'HEALTHY — possibly underinvesting in growth'
+  let verdict = 'HEALTHY - scale with confidence'
+  if (ltvToCac < 1) verdict = 'LOSING MONEY PER CUSTOMER - stop scaling'
+  else if (ltvToCac < 3) verdict = 'FRAGILE - fix a lever before scaling'
+  else if (paybackMonths > 12) verdict = 'CASH-CONSTRAINED - LTV fine, payback too slow'
+  else if (ltvToCac > 5) verdict = 'HEALTHY - possibly underinvesting in growth'
   return { cac, contribution, contributionMarginPct, lifetimeMonths, ltv, ltvToCac, paybackMonths, verdict }
 }
 
@@ -110,14 +110,14 @@ Lifetime used (months, capped): 36.0
 LTV (contribution, capped):     $7380.00
 LTV:CAC:                        4.92:1
 Payback (months):               7.3
-Verdict:                        HEALTHY — scale with confidence
+Verdict:                        HEALTHY - scale with confidence
 ```
 
-Read it: $60k of fully-loaded spend bought 40 customers, so each cost $1,500. Each contributes $205/month after cost to serve (82% margin — healthy for software). Churn of 2.5%/month implies a 40-month lifetime, capped at 36 for credibility, giving a $7,380 LTV. The ratio is 4.92:1 and spend comes back in 7.3 months — inside the 12-month SMB bar. This business can scale acquisition; at nearly 5:1 it may even be underspending.
+Read it: $60k of fully-loaded spend bought 40 customers, so each cost $1,500. Each contributes $205/month after cost to serve (82% margin - healthy for software). Churn of 2.5%/month implies a 40-month lifetime, capped at 36 for credibility, giving a $7,380 LTV. The ratio is 4.92:1 and spend comes back in 7.3 months - inside the 12-month SMB bar. This business can scale acquisition; at nearly 5:1 it may even be underspending.
 
 ## Deliverable
 
-Produce a unit economics model containing: CAC, contribution margin, LTV, LTV:CAC, and payback — computed blended and split by at least channel and segment — a verdict per segment against the benchmarks, and the top three improvement levers ranked by expected impact on payback period. Include the filled calculator inputs so the model reruns as numbers change.
+Produce a unit economics model containing: CAC, contribution margin, LTV, LTV:CAC, and payback - computed blended and split by at least channel and segment - a verdict per segment against the benchmarks, and the top three improvement levers ranked by expected impact on payback period. Include the filled calculator inputs so the model reruns as numbers change.
 
 ## Do NOT
 
@@ -125,7 +125,7 @@ Produce a unit economics model containing: CAC, contribution margin, LTV, LTV:CA
 - Do not exclude fully-loaded headcount from CAC; ad-spend-only CAC understates cost by 2x or more for any team with salespeople.
 - Do not average across segments that should be separated; blended numbers are where bad segments hide.
 - Do not run uncapped LTV math on early-stage churn data; cap at 36 months.
-- Do not ignore time value — a 30-month payback is a financing problem even when LTV:CAC clears 3:1.
+- Do not ignore time value - a 30-month payback is a financing problem even when LTV:CAC clears 3:1.
 - Do not treat a healthy blended ratio as permission to scale every channel; the verdict is per segment.
 
 ## Quality bar

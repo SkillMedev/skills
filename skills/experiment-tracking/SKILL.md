@@ -1,11 +1,11 @@
 ---
 name: Experiment Tracking
-description: Sets up disciplined ML experiment tracking — run logging schemas, artifact versioning, naming conventions, and reproducibility standards — and produces the run-record template a team actually follows. Use when someone asks "how should we track our ML experiments", "why can't we reproduce this result", "how do I set up MLflow or W&B for the team", or is bootstrapping a new ML project. Do NOT use for analyzing product A/B tests — use ab-test-analyzer instead; for monitoring deployed models use data-drift-monitor; for judging whether a trained model is good enough to ship use model-evaluation-report.
+description: Sets up disciplined ML experiment tracking - run logging schemas, artifact versioning, naming conventions, and reproducibility standards - and produces the run-record template a team actually follows. Use when someone asks "how should we track our ML experiments", "why can't we reproduce this result", "how do I set up MLflow or W&B for the team", or is bootstrapping a new ML project. Do NOT use for analyzing product A/B tests - use ab-test-analyzer instead; for monitoring deployed models use data-drift-monitor; for judging whether a trained model is good enough to ship use model-evaluation-report.
 ---
 
 # Experiment Tracking
 
-An experiment no one can reproduce is a result no one can trust. Disciplined tracking is not overhead — it is the minimum viable scientific practice for ML, and the alternative is a promoted model whose provenance nobody can reconstruct when it misbehaves in production. This skill installs the logging schema, naming discipline, and promotion workflow that make every run auditable.
+An experiment no one can reproduce is a result no one can trust. Disciplined tracking is not overhead - it is the minimum viable scientific practice for ML, and the alternative is a promoted model whose provenance nobody can reconstruct when it misbehaves in production. This skill installs the logging schema, naming discipline, and promotion workflow that make every run auditable.
 
 ## Operating procedure
 
@@ -17,7 +17,7 @@ Collect these before touching tooling. Where the answer is unknown, record the d
 
 1. Team size and collaboration need. Default: solo or small team.
 2. Existing tooling, if any (MLflow, Weights and Biases, homegrown spreadsheets).
-3. Where artifacts live today (local disk, S3, GCS) — shared object storage is required for teams.
+3. Where artifacts live today (local disk, S3, GCS) - shared object storage is required for teams.
 4. Model iteration style: iterative training with epochs (deep learning) or single-fit (trees, linear models). This decides whether per-epoch curves are logged.
 5. The promotion decision this tracking must serve: what metric, on what test set, decides whether a model ships.
 
@@ -25,7 +25,7 @@ Tooling default: MLflow for self-hosted setups; Weights and Biases when the team
 
 ### Step 2: Define the run logging schema
 
-Inconsistent logging is as bad as no logging. Every run logs all of the following — automate the scaffold, because a run that requires manual logging steps will be logged inconsistently.
+Inconsistent logging is as bad as no logging. Every run logs all of the following - automate the scaffold, because a run that requires manual logging steps will be logged inconsistently.
 
 - Hyperparameters: every value, including defaults. Do not rely on code to reconstruct them.
 - Dataset: name, version or content hash, split sizes, and any sampling applied.
@@ -37,7 +37,7 @@ Inconsistent logging is as bad as no logging. Every run logs all of the followin
 
 ### Step 3: Impose naming and organization
 
-Naming is the index — garbage names make the tracker useless.
+Naming is the index - garbage names make the tracker useless.
 
 - Run name format: project/hypothesis/variant, for example churn/feature-selection/drop-low-variance.
 - Never reuse a run name. Each run is immutable once logged; a "fixed" run is a new run.
@@ -46,7 +46,7 @@ Naming is the index — garbage names make the tracker useless.
 
 ### Step 4: Enforce the reproducibility standard
 
-A run is reproducible only if re-executing it lands within metric tolerance. Set the tolerance explicitly — 0.5 percent relative difference on the primary metric is a reasonable default for seeded runs; anything looser than 2 percent means the run is effectively non-deterministic and the causes (unseeded ops, nondeterministic GPU kernels, unstable data ordering) must be found.
+A run is reproducible only if re-executing it lands within metric tolerance. Set the tolerance explicitly - 0.5 percent relative difference on the primary metric is a reasonable default for seeded runs; anything looser than 2 percent means the run is effectively non-deterministic and the causes (unseeded ops, nondeterministic GPU kernels, unstable data ordering) must be found.
 
 - Dataset splits must be deterministic. Prefer hash-based splitting (hash a stable ID into buckets) over random splits, because it survives dataset growth.
 - Spot-check reproducibility by re-running the current top experiment from scratch at least quarterly. If it fails tolerance, treat it as an incident, not an inconvenience.
@@ -55,7 +55,7 @@ A run is reproducible only if re-executing it lands within metric tolerance. Set
 
 Tracking only has value if it drives decisions.
 
-- Define the promotion criterion before any experiment starts — metric, test set, and threshold. Deciding after seeing results is p-hacking with extra steps.
+- Define the promotion criterion before any experiment starts - metric, test set, and threshold. Deciding after seeing results is p-hacking with extra steps.
 - Compare runs only on the same held-out test set. Changing the test set resets every comparison to zero.
 - Record why each run was rejected. Negative results are data; a tracker full of unexplained dead runs teaches nothing.
 - Link every promoted model artifact back to the exact run that produced it, so production incidents trace to a commit, a dataset hash, and a seed in one click.
@@ -77,8 +77,8 @@ TAGS: dataset=[FILL] model-family=[FILL] outcome=[promoted|rejected|inconclusive
 REJECTION REASON (if rejected): [FILL: one sentence]
 ```
 
-Bad run name: "final_model_v2_new_ACTUALLY_FINAL" — no hypothesis, no lineage, invites reuse.
-Good run name: "churn/feature-selection/drop-low-variance" — the tracker becomes browsable by question asked.
+Bad run name: "final_model_v2_new_ACTUALLY_FINAL" - no hypothesis, no lineage, invites reuse.
+Good run name: "churn/feature-selection/drop-low-variance" - the tracker becomes browsable by question asked.
 
 ## Deliverable
 
@@ -86,7 +86,7 @@ Produce a tracking setup document containing: the chosen tool and storage config
 
 ## Do NOT
 
-- Do not log only the hyperparameters that changed — defaults drift between library versions and silently change results.
+- Do not log only the hyperparameters that changed - defaults drift between library versions and silently change results.
 - Do not allow dirty-working-tree runs by default; the commit SHA becomes a lie.
 - Do not organize experiments by date or person; hypotheses are the unit of learning.
 - Do not choose the promotion metric after seeing the leaderboard.

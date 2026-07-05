@@ -1,11 +1,11 @@
 ---
 name: Model Card Writer
-description: Produces a complete model card — intended use, training data provenance, evaluation results with slices, limitations, and usage guidance — for any model shared beyond its team or affecting people. Use when someone asks "write a model card", "document this model before release", "what should our model documentation include", or is preparing a model for deployment, handoff, or external publication. Do NOT use for producing the underlying evaluation numbers — use model-evaluation-report instead; for ongoing production monitoring plans use data-drift-monitor.
+description: Produces a complete model card - intended use, training data provenance, evaluation results with slices, limitations, and usage guidance - for any model shared beyond its team or affecting people. Use when someone asks "write a model card", "document this model before release", "what should our model documentation include", or is preparing a model for deployment, handoff, or external publication. Do NOT use for producing the underlying evaluation numbers - use model-evaluation-report instead; for ongoing production monitoring plans use data-drift-monitor.
 ---
 
 # Model Card Writer
 
-A model card is the contract between the team that built a model and the people who will use or be affected by it. It documents not just what the model does but what it must not be used for — and the cost of skipping it is a model quietly repurposed for a use case it was never validated on, discovered only after harm. This skill produces a card a consumer can act on, not a compliance checkbox.
+A model card is the contract between the team that built a model and the people who will use or be affected by it. It documents not just what the model does but what it must not be used for - and the cost of skipping it is a model quietly repurposed for a use case it was never validated on, discovered only after harm. This skill produces a card a consumer can act on, not a compliance checkbox.
 
 ## Operating procedure
 
@@ -17,14 +17,14 @@ Collect before writing; label anything unverified as a guess and chase it before
 
 1. Model name, version, and owning team or contact.
 2. Architecture family in plain language (gradient boosted trees, transformer, logistic regression).
-3. The evaluation report — if none exists, stop and produce one via model-evaluation-report first; a card without real numbers is fiction.
+3. The evaluation report - if none exists, stop and produce one via model-evaluation-report first; a card without real numbers is fiction.
 4. Training data sources, collection method, time range, and geographic/demographic scope.
 5. Who consumes the model: internal team, other teams, external users, or the public. External sharing raises the honesty bar on every section.
 
 ### Step 2: Model overview and intended use
 
 - Model name, version, release identifier, architecture family, owning team.
-- Intended use cases as specific, bounded statements: "ranks support tickets by predicted resolution time for internal triage" — not "helps with support".
+- Intended use cases as specific, bounded statements: "ranks support tickets by predicted resolution time for internal triage" - not "helps with support".
 - Out-of-scope uses as an explicit list. This is the highest-leverage section of the card: every use case not validated in evaluation belongs here by default.
 
 ### Step 3: Training data
@@ -47,7 +47,7 @@ Pull from the evaluation report; report failures alongside wins.
 
 ### Step 5: Limitations and risks
 
-This section requires more honesty than most teams are comfortable with — write it anyway.
+This section requires more honesty than most teams are comfortable with - write it anyway.
 
 - Performance degradation conditions: distribution shifts, edge cases, adversarial inputs.
 - Misuse potential and the mitigations in place.
@@ -85,23 +85,23 @@ OUT-OF-SCOPE USES (not validated; do not deploy for these)
 - Any customer-facing display of predicted resolution time.
 - Non-English tickets (training data 97% English; measured PR-AUC drops
   from 0.61 to 0.38 on the Spanish slice, n = 412).
-- Automated ticket closure or SLA commitments — the model ranks, humans decide.
+- Automated ticket closure or SLA commitments - the model ranks, humans decide.
 - Agent performance evaluation. Predictions correlate with ticket difficulty,
   not agent skill; using them for reviews would penalize agents assigned
   hard queues.
 ```
 
-Bad intended-use line: "This model helps prioritize support work." (Unbounded — permits every misuse above.)
-Good: the block above — each permitted use is bounded, each exclusion cites the evidence or the mechanism of harm.
+Bad intended-use line: "This model helps prioritize support work." (Unbounded - permits every misuse above.)
+Good: the block above - each permitted use is bounded, each exclusion cites the evidence or the mechanism of harm.
 
 ## Deliverable
 
-Produce a model card containing seven sections: overview and intended use with an explicit out-of-scope list, training data provenance with known gaps, evaluation results with slices and baselines, limitations and risks, usage guidance with thresholds and monitoring triggers, version policy, and a maintenance commitment — stored alongside the model artifact.
+Produce a model card containing seven sections: overview and intended use with an explicit out-of-scope list, training data provenance with known gaps, evaluation results with slices and baselines, limitations and risks, usage guidance with thresholds and monitoring triggers, version policy, and a maintenance commitment - stored alongside the model artifact.
 
 ## Do NOT
 
 - Do not write the card before the evaluation exists; numbers first, narrative second.
-- Do not leave out-of-scope uses implicit — unlisted uses will happen, and the card is the only artifact that could have prevented them.
+- Do not leave out-of-scope uses implicit - unlisted uses will happen, and the card is the only artifact that could have prevented them.
 - Do not copy aggregate metrics without slices; the groups the model fails are exactly what consumers need to know.
 - Do not include training-record specifics or PII under the banner of transparency.
 - Do not publish a card with an empty or boilerplate limitations section; it destroys the credibility of every other section.
@@ -112,4 +112,4 @@ The card ships only when: a reader outside the team could decide whether their u
 
 ## Escalation
 
-Model cards for models affecting credit, employment, housing, healthcare, or other regulated decisions may carry legal disclosure obligations — involve counsel or the compliance function before external publication; this skill is documentation practice, not legal advice.
+Model cards for models affecting credit, employment, housing, healthcare, or other regulated decisions may carry legal disclosure obligations - involve counsel or the compliance function before external publication; this skill is documentation practice, not legal advice.

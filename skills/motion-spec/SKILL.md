@@ -1,6 +1,6 @@
 ---
 name: Motion Spec
-description: Specifies animation and motion precisely — duration, easing curve, trigger, and intent — for accurate engineer implementation. Use when handing off transitions, micro-interactions, or loading states.
+description: Specifies animation and motion precisely - duration, easing curve, trigger, and intent - for accurate engineer implementation. Use when handing off transitions, micro-interactions, or loading states.
 ---
 
 # Motion Spec
@@ -14,7 +14,7 @@ For every animated element, document:
 2. Trigger: the event that starts the animation (e.g. 'user clicks confirm', 'data fetch resolves', 'component mounts').
 3. Duration: in milliseconds. Do not use vague terms like 'fast' or 'subtle'.
 4. Easing: the named curve or cubic-bezier values (e.g. 'ease-out', 'cubic-bezier(0.4, 0, 0.2, 1)'). Note if the design tool curve must be converted.
-5. Intent: one sentence on why the motion exists — it guides engineers when they must adapt the spec to constraints.
+5. Intent: one sentence on why the motion exists - it guides engineers when they must adapt the spec to constraints.
 
 ## Standard Duration Reference
 
@@ -45,7 +45,7 @@ When multiple elements animate together:
 Every motion spec must include a reduced-motion variant:
 - State which animations are removed entirely vs. replaced with an instant state change vs. reduced in duration.
 - Default: respect 'prefers-reduced-motion: reduce' by removing decorative motion and collapsing durations to 0ms for essential transitions.
-- Mark any animation that conveys information (not just decoration) — these must have a non-motion fallback.
+- Mark any animation that conveys information (not just decoration) - these must have a non-motion fallback.
 
 ## Deliverable
 
@@ -53,7 +53,7 @@ Produce a motion spec table with one row per animated element containing all fiv
 
 ## Quality bar
 
-- Every animation carries all five fields — no missing durations, unnamed curves, or absent intent lines.
+- Every animation carries all five fields - no missing durations, unnamed curves, or absent intent lines.
 - Easings follow the enter/exit/reposition conventions, or the spec states why they deviate.
 - Multi-element sequences list explicit offsets in milliseconds, not "slightly after."
 - Every row has a defined reduced-motion behavior.
@@ -61,9 +61,9 @@ Produce a motion spec table with one row per animated element containing all fiv
 
 ## Do NOT
 
-- Do not spec durations as adjectives ('quick', 'snappy', 'subtle') — engineers cannot implement adjectives, and each will guess a different number.
-- Do not use ease-in for entrances or linear easing for anything except continuous motion like spinners — ease-in entrances feel sluggish and linear UI motion feels mechanical.
-- Do not spec animation on layout-triggering properties (width, height, top/left) when transform and opacity achieve the same effect — layout animation drops frames on low-end devices.
-- Do not stack stagger delays until a routine UI sequence exceeds ~1 second total — orchestration that delays the user's next action stops feeling polished and starts feeling slow.
-- Do not point engineers at a design-tool prototype as the spec — playback speed and curves differ from the export; hand over the actual millisecond and bezier values.
-- Do not ship a spec without the reduced-motion variant — retrofitting it later produces inconsistent behavior across components.
+- Do not spec durations as adjectives ('quick', 'snappy', 'subtle') - engineers cannot implement adjectives, and each will guess a different number.
+- Do not use ease-in for entrances or linear easing for anything except continuous motion like spinners - ease-in entrances feel sluggish and linear UI motion feels mechanical.
+- Do not spec animation on layout-triggering properties (width, height, top/left) when transform and opacity achieve the same effect - layout animation drops frames on low-end devices.
+- Do not stack stagger delays until a routine UI sequence exceeds ~1 second total - orchestration that delays the user's next action stops feeling polished and starts feeling slow.
+- Do not point engineers at a design-tool prototype as the spec - playback speed and curves differ from the export; hand over the actual millisecond and bezier values.
+- Do not ship a spec without the reduced-motion variant - retrofitting it later produces inconsistent behavior across components.

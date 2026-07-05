@@ -1,6 +1,6 @@
 ---
 name: Test Data Builder
-description: Builds realistic domain fixtures, factories, and edge-case datasets with the builder pattern and valid defaults, so each test owns exactly the data it asserts on. Use when someone asks "how should I set up test data", "my fixtures broke half the suite", "make a factory for this model", "why is this test flaky only in CI", or a test needs domain objects, seed data, or boundary inputs. Do NOT use when a test needs to fake a network call, database client, clock, or third-party SDK — use mock-stub-designer instead; do NOT use for designing the assertions or test cases themselves — use tdd-expert instead.
+description: Builds realistic domain fixtures, factories, and edge-case datasets with the builder pattern and valid defaults, so each test owns exactly the data it asserts on. Use when someone asks "how should I set up test data", "my fixtures broke half the suite", "make a factory for this model", "why is this test flaky only in CI", or a test needs domain objects, seed data, or boundary inputs. Do NOT use when a test needs to fake a network call, database client, clock, or third-party SDK - use mock-stub-designer instead; do NOT use for designing the assertions or test cases themselves - use tdd-expert instead.
 ---
 
 # Test Data Builder
@@ -18,17 +18,17 @@ Collect before writing a factory. Defaults in parentheses; label guesses as gues
 1. The domain object(s) under test and their required fields.
 2. The stack's factory library (FactoryBot for Ruby, Fishery or test-data-bot for TypeScript, factory_boy for Python, Bogus/AutoFixture for .NET; default: hand-rolled builder if none exists).
 3. Whether tests touch a real database, and the isolation mechanism available (per-test transaction rollback preferred).
-4. The invariants a "valid" object must satisfy — validations, foreign keys, non-null constraints.
+4. The invariants a "valid" object must satisfy - validations, foreign keys, non-null constraints.
 
 ### Step 2: Build per test, never share a global fixture
 
-Construct the objects each test needs inside that test via a factory or builder (FactoryBot, Fishery, test-data-bot, Mother objects). Do not load one static fixture file for the suite — shared mutable fixtures silently couple tests, and the coupling only surfaces as ordering-dependent flakes.
+Construct the objects each test needs inside that test via a factory or builder (FactoryBot, Fishery, test-data-bot, Mother objects). Do not load one static fixture file for the suite - shared mutable fixtures silently couple tests, and the coupling only surfaces as ordering-dependent flakes.
 
 ### Step 3: Expose a builder with valid defaults; override only what the test cares about
 
 Write `aUser().withRole('admin').build()` so the override is the test's documentation and the reader ignores the irrelevant fields. Defaults must always produce a valid, persistable object: when a new required field is added to the schema, set it once in the factory and zero unrelated tests break.
 
-Bad — the reader cannot tell which of nine fields the test is actually about, and the next required field breaks this test and forty like it:
+Bad - the reader cannot tell which of nine fields the test is actually about, and the next required field breaks this test and forty like it:
 
 ```typescript
 const user = new User({
@@ -39,10 +39,10 @@ const user = new User({
 expect(canDeleteWorkspace(user)).toBe(true)
 ```
 
-Good — one override, and it is the point of the test:
+Good - one override, and it is the point of the test:
 
 ```typescript
-// user-builder.ts — valid defaults live in exactly one place
+// user-builder.ts - valid defaults live in exactly one place
 export const aUser = () => {
   let attrs: UserAttrs = {
     id: seq(), name: faker.person.fullName(),
@@ -69,11 +69,11 @@ Use Faker (Faker, faker.js, Bogus) for names, emails, and addresses so fixtures 
 
 ### Step 5: Build the inputs that break code
 
-Deliberately construct: empty strings, unicode and emoji, very long strings, leading/trailing whitespace, nulls, zero, negative numbers, max integers, timezone-boundary dates, and duplicate keys. For ranges, always build the boundary value and the just-over-boundary value — off-by-one bugs live exactly there. Name each edge-case test after the boundary it exercises. For input spaces too large to enumerate, reach for property-based generators (Hypothesis, fast-check) instead of hand-picking.
+Deliberately construct: empty strings, unicode and emoji, very long strings, leading/trailing whitespace, nulls, zero, negative numbers, max integers, timezone-boundary dates, and duplicate keys. For ranges, always build the boundary value and the just-over-boundary value - off-by-one bugs live exactly there. Name each edge-case test after the boundary it exercises. For input spaces too large to enumerate, reach for property-based generators (Hypothesis, fast-check) instead of hand-picking.
 
 ### Step 6: Keep persistence cheap and isolated
 
-Build in memory by default; only persist (`create` vs `build`) when the test needs a real row. Wrap DB-touching tests in a transaction rolled back per test so factories never leak state between tests. Do not rely on sequences or global counters surviving across tests — the suite must pass in any order and in parallel.
+Build in memory by default; only persist (`create` vs `build`) when the test needs a real row. Wrap DB-touching tests in a transaction rolled back per test so factories never leak state between tests. Do not rely on sequences or global counters surviving across tests - the suite must pass in any order and in parallel.
 
 ## Deliverable
 
@@ -81,10 +81,10 @@ Produce, for each domain object under test: a builder or factory whose bare defa
 
 ## Do NOT
 
-- Do not build elaborate object graphs a test never asserts on — every extra field is a false signal about what the test checks.
+- Do not build elaborate object graphs a test never asserts on - every extra field is a false signal about what the test checks.
 - Do not wrap a one-field value object in a builder; a literal is clearer than ceremony.
-- Do not let a builder reach across the boundary to fake network, DB clients, clocks, or third-party SDKs — that is mock-stub-designer's job, and mixing the two makes builders untestable.
-- Do not seed randomness from the wall clock or leave it unseeded in CI — an unreproducible flake costs more than the realism buys.
+- Do not let a builder reach across the boundary to fake network, DB clients, clocks, or third-party SDKs - that is mock-stub-designer's job, and mixing the two makes builders untestable.
+- Do not seed randomness from the wall clock or leave it unseeded in CI - an unreproducible flake costs more than the realism buys.
 - Do not "fix" a broken shared fixture by adding another record to it; migrate the affected tests to builders instead.
 
 ## Quality bar

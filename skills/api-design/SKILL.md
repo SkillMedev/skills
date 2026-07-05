@@ -1,11 +1,11 @@
 ---
 name: REST API Design
-description: Designs REST API surfaces — resource naming, HTTP method and status-code semantics, error shapes, pagination, and filtering — and delivers an endpoint spec a consumer can build against without asking questions. Use when someone asks "how should I name this endpoint", "what status code should this return", "should this be PUT or PATCH", "how do I paginate this list", or is reviewing an API before it ships to external consumers. Do NOT use for planning breaking-change rollouts and deprecation windows — use api-versioning-strategist instead; for GraphQL type and resolver design — use graphql-schema instead; for generating client SDKs from an existing spec — use api-client-generator instead; for designing inbound webhook endpoints — use webhook-receiver-hardener instead.
+description: Designs REST API surfaces - resource naming, HTTP method and status-code semantics, error shapes, pagination, and filtering - and delivers an endpoint spec a consumer can build against without asking questions. Use when someone asks "how should I name this endpoint", "what status code should this return", "should this be PUT or PATCH", "how do I paginate this list", or is reviewing an API before it ships to external consumers. Do NOT use for planning breaking-change rollouts and deprecation windows - use api-versioning-strategist instead; for GraphQL type and resolver design - use graphql-schema instead; for generating client SDKs from an existing spec - use api-client-generator instead; for designing inbound webhook endpoints - use webhook-receiver-hardener instead.
 ---
 
 # REST API Design
 
-APIs are products: the consumer's mental model, not your database schema, decides the shape. The costly mistake this skill prevents is shipping an inconsistent surface — mixed naming, wrong status codes, offset pagination on a growing table — that every consumer then hardcodes around, making it effectively unfixable once integrated.
+APIs are products: the consumer's mental model, not your database schema, decides the shape. The costly mistake this skill prevents is shipping an inconsistent surface - mixed naming, wrong status codes, offset pagination on a growing table - that every consumer then hardcodes around, making it effectively unfixable once integrated.
 
 ## Operating procedure
 
@@ -15,7 +15,7 @@ Work in this order. Resources come before methods because method semantics depen
 
 Collect before designing. Label any assumption as a guess.
 
-1. The consumers: internal services, first-party clients, or external developers. External consumers raise the consistency bar — default to external if unknown.
+1. The consumers: internal services, first-party clients, or external developers. External consumers raise the consistency bar - default to external if unknown.
 2. The core nouns of the domain and which ones own which (drives nesting).
 3. Expected collection sizes and growth. A list that can exceed ~10,000 rows rules out offset pagination.
 4. Read/write ratio and latency expectations per endpoint.
@@ -24,18 +24,18 @@ Collect before designing. Label any assumption as a guess.
 ### Step 2: name resources
 
 - Plural nouns: /users, /orders, /products.
-- Nest one level for ownership: /users/{id}/orders. Do not nest deeper than two levels — flatten with filters instead (/orders?user_id=... beats /users/{id}/orders/{oid}/items/{iid}).
+- Nest one level for ownership: /users/{id}/orders. Do not nest deeper than two levels - flatten with filters instead (/orders?user_id=... beats /users/{id}/orders/{oid}/items/{iid}).
 - No verbs in paths; the HTTP method is the verb. For genuine actions that fit no CRUD verb (e.g. sending an invoice), model a subresource POST: POST /invoices/{id}/send-attempts.
-- Consistent case: kebab-case for multi-word path segments, snake_case for JSON fields — pick once, apply everywhere.
+- Consistent case: kebab-case for multi-word path segments, snake_case for JSON fields - pick once, apply everywhere.
 
 ### Step 3: assign methods and status codes
 
 - GET: read, idempotent, no request body. 200 with body.
 - POST: create. Return 201 plus a Location header pointing at the new resource. Return the created representation in the body so the client skips a follow-up GET.
 - PUT: full replace, idempotent. Missing fields mean "clear", not "keep".
-- PATCH: partial update (JSON Merge Patch or JSON Patch — state which in the spec).
-- DELETE: remove, idempotent, returns 204. Deleting an already-deleted resource returns 204 or 404 — pick one and document it.
-- Errors: 400 for malformed input, 401 for missing/invalid credentials, 403 for valid credentials without permission, 404 for absent resources (also use 404 instead of 403 when revealing existence is a leak), 409 for state conflicts, 422 for well-formed but semantically invalid input, 429 for rate limits (with Retry-After), 500 for server faults — never expose stack traces or internal identifiers.
+- PATCH: partial update (JSON Merge Patch or JSON Patch - state which in the spec).
+- DELETE: remove, idempotent, returns 204. Deleting an already-deleted resource returns 204 or 404 - pick one and document it.
+- Errors: 400 for malformed input, 401 for missing/invalid credentials, 403 for valid credentials without permission, 404 for absent resources (also use 404 instead of 403 when revealing existence is a leak), 409 for state conflicts, 422 for well-formed but semantically invalid input, 429 for rate limits (with Retry-After), 500 for server faults - never expose stack traces or internal identifiers.
 
 ### Step 4: fix the error contract
 
@@ -54,7 +54,7 @@ The request_id must be logged server-side so support can correlate. Human messag
 
 ### Step 5: fix pagination and filtering
 
-- Cursor-based pagination for any collection that grows: return an opaque cursor and has_more flag. Offset pagination is acceptable only for small, bounded, admin-facing lists — it degrades linearly and skips/duplicates rows under concurrent writes.
+- Cursor-based pagination for any collection that grows: return an opaque cursor and has_more flag. Offset pagination is acceptable only for small, bounded, admin-facing lists - it degrades linearly and skips/duplicates rows under concurrent writes.
 - Default page size 25, maximum 100. Reject page sizes above the max with 400, do not silently clamp.
 - Filtering and sorting via query params: ?status=active&sort=created_at:desc. Document which fields are filterable; reject unknown filter params with 400 rather than ignoring them (silent ignoring hides client bugs).
 
@@ -91,11 +91,11 @@ Produce an endpoint spec containing: the resource table (path, methods, status c
 
 ## Do NOT
 
-- Do not mirror the database schema in the API — consumers get coupled to internals you will want to change.
+- Do not mirror the database schema in the API - consumers get coupled to internals you will want to change.
 - Do not return 200 for failures with an error body; clients and monitoring both key off status codes.
-- Do not use offset pagination on unbounded collections — it duplicates and skips rows under writes and degrades linearly.
+- Do not use offset pagination on unbounded collections - it duplicates and skips rows under writes and degrades linearly.
 - Do not nest paths deeper than two levels; deep nesting encodes one access path and forbids all others.
-- Do not silently ignore unknown query parameters — a typoed filter that returns unfiltered data is a data-leak class bug.
+- Do not silently ignore unknown query parameters - a typoed filter that returns unfiltered data is a data-leak class bug.
 
 ## Quality bar
 

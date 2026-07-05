@@ -1,6 +1,6 @@
 ---
 name: grand-slam-offer-builder
-description: Build or sharpen a gym's core offer into a one-page canvas — Value-Equation score, problem-to-solution stack, scarcity/urgency/bonus amplifiers, and a MAGIC name — so the right prospect feels stupid saying no. Use when an owner says "build my offer", "my offer isn't converting", "what should I include", "make my offer irresistible", "design my challenge offer", or "name my program". Do NOT use when the task is choosing the price point or writing guarantee language — use gym-pricing-and-guarantees instead; do NOT use when the task is the day-by-day run-of-show for a challenge — use gym-transformation-challenge instead.
+description: Build or sharpen a gym's core offer into a one-page canvas - Value-Equation score, problem-to-solution stack, scarcity/urgency/bonus amplifiers, and a MAGIC name - so the right prospect feels stupid saying no. Use when an owner says "build my offer", "my offer isn't converting", "what should I include", "make my offer irresistible", "design my challenge offer", or "name my program". Do NOT use when the task is choosing the price point or writing guarantee language - use gym-pricing-and-guarantees instead; do NOT use when the task is the day-by-day run-of-show for a challenge - use gym-transformation-challenge instead.
 ---
 
 # Grand Slam Offer Builder
@@ -11,13 +11,13 @@ Turn a gym's front-end challenge and core membership into offers so strong the r
 
 Run these steps in order. Do not skip the Value-Equation score; it tells you what to fix first.
 
-1. **Score the current offer on the Value Equation.** Value rises with the dream outcome and the prospect's belief they will reach it, and falls with the time and effort it costs: `Value = (Dream Outcome x Perceived Likelihood) / (Time Delay x Effort and Sacrifice)`. Rate the offer 1-10 (10 = best) on four levers: Dream outcome (how badly they want the result), Perceived likelihood (how believable the result is for them), Speed (how fast results feel — inverse of time delay), Ease (how little effort it demands — inverse of effort). Run `value_score.js` (below). It multiplies the four and names the lowest lever. Fix that lever first: the equation is multiplicative, so the weakest lever caps the whole offer no matter how strong the others are. See references/value-equation for how to raise each one.
+1. **Score the current offer on the Value Equation.** Value rises with the dream outcome and the prospect's belief they will reach it, and falls with the time and effort it costs: `Value = (Dream Outcome x Perceived Likelihood) / (Time Delay x Effort and Sacrifice)`. Rate the offer 1-10 (10 = best) on four levers: Dream outcome (how badly they want the result), Perceived likelihood (how believable the result is for them), Speed (how fast results feel - inverse of time delay), Ease (how little effort it demands - inverse of effort). Run `value_score.js` (below). It multiplies the four and names the lowest lever. Fix that lever first: the equation is multiplicative, so the weakest lever caps the whole offer no matter how strong the others are. See references/value-equation for how to raise each one.
 
 2. **Build the offer from problems, not features.** Name the dream outcome in the prospect's own words ("drop two dress sizes before the wedding and keep it off"). List every problem on the path (no time, no idea what to eat, intimidated by the gym floor, tried before and quit, no accountability). Turn each problem into a solution stated as the thing you provide ("no idea what to eat" → "a done-for-you meal plan with a swap list"). Choose a delivery vehicle for each (group session, 1:1 check-in, app, printed guide, private community, text support) that fits the value and your cost to deliver. Trim and stack: cut anything low-value or expensive, then stack the survivors into one offer that reads as overwhelming value for the price. See references/offer-construction for full worked examples on both the challenge and the membership.
 
 3. **Enhance with the four amplifiers, only after the core stack is strong.** They multiply a good offer and do nothing for a weak one. Scarcity: a real capacity limit ("20 challengers per cohort because that is what our coaches can serve well"). Urgency: a real deadline ("cohort starts the 6th; doors close the 3rd"). Bonuses: extra wins that each remove a specific objection, each with a name and a stated value. Guarantee: hand off to gym-pricing-and-guarantees to choose the type and write the language, then drop the result into the canvas guarantee slot.
 
-4. **Name the offer with MAGIC.** Pick the clearest two or three elements — you rarely need all five: Magnetic reason why (the hook or occasion: "Summer Shred", "New Year"), Avatar (who it is for: "Busy Moms", "Men Over 40"), Goal (the outcome: "Drop a Dress Size", "First Pull-Up"), Interval (the time frame: "6-Week", "28-Day"), Container word (the format: "Challenge", "Project", "Bootcamp", "Intensive"). See references/naming-magic for 15 worked gym names.
+4. **Name the offer with MAGIC.** Pick the clearest two or three elements - you rarely need all five: Magnetic reason why (the hook or occasion: "Summer Shred", "New Year"), Avatar (who it is for: "Busy Moms", "Men Over 40"), Goal (the outcome: "Drop a Dress Size", "First Pull-Up"), Interval (the time frame: "6-Week", "28-Day"), Container word (the format: "Challenge", "Project", "Bootcamp", "Intensive"). See references/naming-magic for 15 worked gym names.
 
 5. **Fill the offer canvas.** Complete the one-page canvas below. That is the deliverable the owner takes to their designer, landing page, and sales team.
 
@@ -33,10 +33,10 @@ Run these steps in order. Do not skip the Value-Equation score; it tells you wha
 ## Do NOT
 
 - Do not start from features or a list of what the gym does; start from the outcome and work backward through obstacles.
-- Do not add bonuses, scarcity, or urgency to prop up a weak core stack — fix the lowest lever first.
+- Do not add bonuses, scarcity, or urgency to prop up a weak core stack - fix the lowest lever first.
 - Do not fake scarcity or urgency; a deadline you do not hold trains prospects to ignore you.
 - Do not promise unsafe or unbelievable speed; engineer a believable fast first win instead.
-- Do not set the price or draft the guarantee text here — defer both to gym-pricing-and-guarantees.
+- Do not set the price or draft the guarantee text here - defer both to gym-pricing-and-guarantees.
 
 ## Calculator
 

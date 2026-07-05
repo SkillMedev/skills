@@ -1,11 +1,11 @@
 ---
 name: Color Accessibility
-description: Audits and repairs color palettes against WCAG contrast thresholds — 4.5:1 for body text, 3:1 for large text and UI components, 7:1 for AAA — and makes them safe for color-blind users, delivering a verified pairing table. Use when someone asks "does this color pass contrast", "make my brand color accessible", "is this palette color-blind safe", "why did my contrast check fail", or is remediating color findings from an audit. Do NOT use to invent a brand palette from scratch — use color-palette-builder instead; for a full accessibility review beyond color, use accessibility-audit.
+description: Audits and repairs color palettes against WCAG contrast thresholds - 4.5:1 for body text, 3:1 for large text and UI components, 7:1 for AAA - and makes them safe for color-blind users, delivering a verified pairing table. Use when someone asks "does this color pass contrast", "make my brand color accessible", "is this palette color-blind safe", "why did my contrast check fail", or is remediating color findings from an audit. Do NOT use to invent a brand palette from scratch - use color-palette-builder instead; for a full accessibility review beyond color, use accessibility-audit.
 ---
 
 # Color Accessibility
 
-A palette that fails contrast ships a product that a measurable slice of users cannot read: low-vision users lose the text, and roughly 8% of men (and about 0.5% of women) with red-green color blindness lose any meaning carried by hue alone. The costly mistake this skill prevents is approving colors that look fine on a designer's bright monitor and fail on real screens, in sunlight, and in audits — forcing a token-system rework after components already reference the broken values.
+A palette that fails contrast ships a product that a measurable slice of users cannot read: low-vision users lose the text, and roughly 8% of men (and about 0.5% of women) with red-green color blindness lose any meaning carried by hue alone. The costly mistake this skill prevents is approving colors that look fine on a designer's bright monitor and fail on real screens, in sunlight, and in audits - forcing a token-system rework after components already reference the broken values.
 
 ## Operating procedure
 
@@ -16,7 +16,7 @@ Work the steps in order: pairings must be enumerated before ratios are computed,
 Collect before starting. Label any assumed value as a guess.
 
 1. Brand and functional colors as hex values (primary, semantic red/green/yellow, neutrals).
-2. Every background surface they sit on — including dark mode surfaces if one exists.
+2. Every background surface they sit on - including dark mode surfaces if one exists.
 3. Target conformance: default to WCAG AA. Use AAA (7:1 body, 4.5:1 large) for reading-heavy products, older audiences, or contractual/regulated requirements.
 4. Whether text ever sits over images or gradients.
 5. Existing token names, so fixes land as token updates, not one-off overrides.
@@ -30,13 +30,13 @@ Contrast is a property of a pair, never of a color. List every combination actua
 - Body text (under 24px, or under 19px bold): **4.5:1** minimum (AA). AAA: **7:1**.
 - Large text (at least 24px, or at least 19px bold): **3:1** (AA). AAA: **4.5:1**.
 - UI components, icons, and focus indicators: **3:1** against adjacent colors.
-- Test the actual pairing as rendered — including text over images and hover states, not just the token sheet.
+- Test the actual pairing as rendered - including text over images and hover states, not just the token sheet.
 
 Run the calculator below on every pair from Step 2 and record pass/fail per threshold.
 
 ### Step 4: Fix failures by adjusting lightness, not hue
 
-Contrast ratio is computed from relative luminance, which lightness moves and hue barely does — so darkening or lightening preserves brand identity while fixing the number. If the brand color cannot reach 4.5:1 on its main surface without becoming unrecognizable, keep it for large text and UI components (3:1) and mint a darker "text-safe" variant of the same hue for body copy.
+Contrast ratio is computed from relative luminance, which lightness moves and hue barely does - so darkening or lightening preserves brand identity while fixing the number. If the brand color cannot reach 4.5:1 on its main surface without becoming unrecognizable, keep it for large text and UI components (3:1) and mint a darker "text-safe" variant of the same hue for body copy.
 
 ### Step 5: Remove color-only meaning
 
@@ -44,16 +44,16 @@ Color must never be the sole carrier of information. Concrete alternatives:
 
 - Error states: red **plus** an icon **plus** text ("Email is required"), never a red border alone.
 - Links in body text: underline or another non-color cue, not blue alone.
-- Charts: differentiate series by shape, position, pattern, or direct labels — not hue alone.
+- Charts: differentiate series by shape, position, pattern, or direct labels - not hue alone.
 - Status dots: pair with a text label or distinct icon per status.
 
 ### Step 6: Simulate color blindness
 
-Check the palette under deuteranopia, protanopia, and tritanopia simulation. Red/green must never be the only distinction between two meanings — prefer blue/orange when two hues must contrast. If two adjacent chart series or statuses become indistinguishable in simulation, apply a Step 5 alternative.
+Check the palette under deuteranopia, protanopia, and tritanopia simulation. Red/green must never be the only distinction between two meanings - prefer blue/orange when two hues must contrast. If two adjacent chart series or statuses become indistinguishable in simulation, apply a Step 5 alternative.
 
 ### Step 7: Re-check dark mode
 
-Dark mode is a separate set of pairings, not an inversion. Verify every pair again on dark surfaces, avoid pure white text on pure black (halation for astigmatic users — slightly desaturated off-white on a dark gray surface reads better), and confirm focus rings still clear 3:1 on the dark background.
+Dark mode is a separate set of pairings, not an inversion. Verify every pair again on dark surfaces, avoid pure white text on pure black (halation for astigmatic users - slightly desaturated off-white on a dark gray surface reads better), and confirm focus rings still clear 3:1 on the dark background.
 
 Finally, verify focus indicators meet 3:1 and check disabled states: WCAG exempts disabled controls from contrast minimums, but any disabled text the user must still read (a pre-filled locked value) should stay legible.
 
@@ -103,7 +103,7 @@ for (const [fg, bg, label] of pairs) {
 #666666 on #FFFFFF  5.74:1  AA body  (GOOD caption gray)
 ```
 
-Read it: primary and secondary text clear 4.5:1 with room; the link blue passes body text so no underline-only compromise is forced; the border gray at 3.03:1 is legal for UI components but must never carry text. The fail/pass pair shows the fix pattern — same neutral hue, lightness dropped from #999999 (2.85:1, fails everything) to #666666 (5.74:1, passes AA body).
+Read it: primary and secondary text clear 4.5:1 with room; the link blue passes body text so no underline-only compromise is forced; the border gray at 3.03:1 is legal for UI components but must never carry text. The fail/pass pair shows the fix pattern - same neutral hue, lightness dropped from #999999 (2.85:1, fails everything) to #666666 (5.74:1, passes AA body).
 
 ## Deliverable
 
@@ -111,15 +111,15 @@ Produce a contrast report containing: the full pairing table with computed ratio
 
 ## Do NOT
 
-- Do not check tokens in isolation — a color has no contrast ratio; only a pair does, and the failure hides in the pairing you skipped.
-- Do not fix failures by nudging hue — hue barely moves luminance, so the ratio stays broken while the brand drifts.
-- Do not rely on the AA minimum for thin or light font weights at small sizes — a 4.5:1 hairline font is legal and still hard to read; add margin.
-- Do not treat dark mode as an automatic inversion — it has its own pairings and its own failures.
-- Do not use red/green as the only distinction between two meanings — 8% of men cannot separate them.
+- Do not check tokens in isolation - a color has no contrast ratio; only a pair does, and the failure hides in the pairing you skipped.
+- Do not fix failures by nudging hue - hue barely moves luminance, so the ratio stays broken while the brand drifts.
+- Do not rely on the AA minimum for thin or light font weights at small sizes - a 4.5:1 hairline font is legal and still hard to read; add margin.
+- Do not treat dark mode as an automatic inversion - it has its own pairings and its own failures.
+- Do not use red/green as the only distinction between two meanings - 8% of men cannot separate them.
 
 ## Quality bar
 
-- Every rendered pairing appears in the table with a computed ratio — no "looks fine" entries.
+- Every rendered pairing appears in the table with a computed ratio - no "looks fine" entries.
 - Every body-text pair is at or above 4.5:1 (7:1 if AAA was the target); every UI component and focus indicator at or above 3:1.
 - Every meaning carried by color has a named non-color cue.
 - The palette survives deuteranopia, protanopia, and tritanopia simulation with all distinctions intact.
@@ -127,4 +127,4 @@ Produce a contrast report containing: the full pairing table with computed ratio
 
 ## Escalation
 
-When conformance is contractual or regulated (government procurement, healthcare, education), pass results to a qualified accessibility specialist for formal conformance claims — this skill produces engineering evidence, not a legal audit. For accessibility issues beyond color (semantics, keyboard, screen readers), route to accessibility-audit. To design the palette itself before auditing it, pair with color-palette-builder.
+When conformance is contractual or regulated (government procurement, healthcare, education), pass results to a qualified accessibility specialist for formal conformance claims - this skill produces engineering evidence, not a legal audit. For accessibility issues beyond color (semantics, keyboard, screen readers), route to accessibility-audit. To design the palette itself before auditing it, pair with color-palette-builder.

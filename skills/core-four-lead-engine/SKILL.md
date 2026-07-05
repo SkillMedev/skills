@@ -1,6 +1,6 @@
 ---
 name: core-four-lead-engine
-description: Pick the lead channels that fit a gym's stage, back daily activity out of a member goal, and build a 30-day lead plan across the Core Four (warm outreach, content, cold outreach, paid ads). Use when a gym owner says "I need more leads", "how do I get members", "what marketing should I do", "build a lead plan", "warm/cold outreach", or "what's a lead magnet". Do NOT use when the owner wants other people to bring in members (referrals, affiliate partners, agencies, employees) — use referral-and-affiliate-system instead; for paid-ad creative and budget depth, hand off to gym-meta-ads-funnel.
+description: Pick the lead channels that fit a gym's stage, back daily activity out of a member goal, and build a 30-day lead plan across the Core Four (warm outreach, content, cold outreach, paid ads). Use when a gym owner says "I need more leads", "how do I get members", "what marketing should I do", "build a lead plan", "warm/cold outreach", or "what's a lead magnet". Do NOT use when the owner wants other people to bring in members (referrals, affiliate partners, agencies, employees) - use referral-and-affiliate-system instead; for paid-ad creative and budget depth, hand off to gym-meta-ads-funnel.
 ---
 
 # Core Four Lead Engine
@@ -11,11 +11,11 @@ There are only four ways to let people know about the gym, mapped by who you con
 
 ## Workflow
 
-1. **Pick the starting channel by audience and budget.** Start where the gym has an unfair advantage. Existing audience (email list, social following, past members): start with warm outreach and content — free, fast, highest conversion. Money but no audience: start with paid ads against a front-end offer — buys reach now. Neither: start with cold outreach and content — costs time, not money, and builds the audience the other channels need. Pick one or two channels the owner can run daily without fail; add more later.
+1. **Pick the starting channel by audience and budget.** Start where the gym has an unfair advantage. Existing audience (email list, social following, past members): start with warm outreach and content - free, fast, highest conversion. Money but no audience: start with paid ads against a front-end offer - buys reach now. Neither: start with cold outreach and content - costs time, not money, and builds the audience the other channels need. Pick one or two channels the owner can run daily without fail; add more later.
 
 2. **Set the volume math.** Back daily activity out of the member goal. The funnel runs reach to lead to booked to show to close. Decide the goal and the conversion rates, then run `lead_volume.js` to compute leads needed and daily activity per channel. See `references/volume-math` for estimating each rate. The point is to make the goal concrete: "8 warm conversations and 21 cold outreaches a day" is a plan; "get more members" is not.
 
-3. **Run each channel with a protected daily minimum.** Each channel works only with consistent volume. Warm outreach: message people who know you with a genuine check-in, then a soft offer — minimum is a fixed number of conversations a day. Content: post on a fixed cadence, each piece showing a problem the gym solves and a transformation — minimum is a cadence you never miss. Cold outreach: reach local strangers with a relevant opener and a free lead magnet — minimum is a fixed number of new outreaches a day. Paid ads: a daily budget against the front-end offer — hand off to gym-meta-ads-funnel for creative and budget.
+3. **Run each channel with a protected daily minimum.** Each channel works only with consistent volume. Warm outreach: message people who know you with a genuine check-in, then a soft offer - minimum is a fixed number of conversations a day. Content: post on a fixed cadence, each piece showing a problem the gym solves and a transformation - minimum is a cadence you never miss. Cold outreach: reach local strangers with a relevant opener and a free lead magnet - minimum is a fixed number of new outreaches a day. Paid ads: a daily budget against the front-end offer - hand off to gym-meta-ads-funnel for creative and budget.
 
 4. **Use a lead magnet to convert attention into leads.** Cold and content traffic does not buy yet. Offer something valuable and free or cheap that reveals the problem the paid offer solves: a free body-composition scan reveals the gap; a macro calculator reveals the prospect has been guessing. A good lead magnet solves one narrow problem completely and makes the next step obvious. See `references/lead-magnet-design`.
 
@@ -30,10 +30,10 @@ There are only four ways to let people know about the gym, mapped by who you con
 
 ## Do NOT
 
-- Do not run all four channels at once from a standing start — none will get the volume it needs.
+- Do not run all four channels at once from a standing start - none will get the volume it needs.
 - Do not pitch the membership in cold or content traffic; lead with the lead magnet.
 - Do not skip the math and set activity by feel; the daily count is the whole point.
-- Do not build a referral or affiliate program here — that is getting others to sell for you; use referral-and-affiliate-system.
+- Do not build a referral or affiliate program here - that is getting others to sell for you; use referral-and-affiliate-system.
 
 ## Calculator
 

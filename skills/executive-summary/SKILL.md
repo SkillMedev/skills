@@ -1,6 +1,6 @@
 ---
 name: Executive Summary
-description: Compresses long reports, memos, and analyses into a decision-ready one-page summary (250-350 words) — bottom line up front, 3-5 evidence-backed key findings, a specific owned-and-dated recommendation, risks with mitigations, and the exact decision or resource being requested — plus a separate list of unverifiable claims to probe. Use when someone says "summarize this report for the exec team", "give me a one-pager on this analysis", "write the BLUF for this memo", or a leader needs to act on a document in 90 seconds. Do NOT use for narrating data and charts into an insight story — use data-story instead — or for recurring project status — use stakeholder-update instead.
+description: Compresses long reports, memos, and analyses into a decision-ready one-page summary (250-350 words) - bottom line up front, 3-5 evidence-backed key findings, a specific owned-and-dated recommendation, risks with mitigations, and the exact decision or resource being requested - plus a separate list of unverifiable claims to probe. Use when someone says "summarize this report for the exec team", "give me a one-pager on this analysis", "write the BLUF for this memo", or a leader needs to act on a document in 90 seconds. Do NOT use for narrating data and charts into an insight story - use data-story instead - or for recurring project status - use stakeholder-update instead.
 ---
 
 # Executive Summary
@@ -19,11 +19,11 @@ Executives read to decide, not to learn. Lead with the conclusion. Everything el
 
 ## Structure (one page, in this order)
 
-1. **Bottom line up front (BLUF)** — 1-2 sentences. The conclusion and what you're asking for.
-2. **Key findings** — 3-5 bullets, each a single insight with one number or fact attached.
-3. **Recommendation** — what to do, who owns it, by when.
-4. **Risks / trade-offs** — 2-3 bullets. What could go wrong and the mitigation.
-5. **What we need from you** — the specific decision, approval, or resource.
+1. **Bottom line up front (BLUF)** - 1-2 sentences. The conclusion and what you're asking for.
+2. **Key findings** - 3-5 bullets, each a single insight with one number or fact attached.
+3. **Recommendation** - what to do, who owns it, by when.
+4. **Risks / trade-offs** - 2-3 bullets. What could go wrong and the mitigation.
+5. **What we need from you** - the specific decision, approval, or resource.
 
 ## Rules
 

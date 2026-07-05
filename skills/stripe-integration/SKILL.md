@@ -1,6 +1,6 @@
 ---
 name: Stripe Expert
-description: Implements Stripe payments, subscriptions, and webhooks so billing state stays correct — Checkout Sessions, signature-verified idempotent webhook handlers, dunning, and SCA handling. Use when someone asks "add Stripe subscriptions to my app", "why is my webhook signature verification failing", "my database says subscribed but Stripe says canceled", "how do I avoid double-charging on retries", or "how should I handle failed payments". Do NOT use for choosing price points, tiers, or packaging — use saas-pricing instead; for general-purpose webhook receiver hardening beyond Stripe, use webhook-receiver-hardener; for idempotency patterns outside payments, use idempotency-enforcer.
+description: Implements Stripe payments, subscriptions, and webhooks so billing state stays correct - Checkout Sessions, signature-verified idempotent webhook handlers, dunning, and SCA handling. Use when someone asks "add Stripe subscriptions to my app", "why is my webhook signature verification failing", "my database says subscribed but Stripe says canceled", "how do I avoid double-charging on retries", or "how should I handle failed payments". Do NOT use for choosing price points, tiers, or packaging - use saas-pricing instead; for general-purpose webhook receiver hardening beyond Stripe, use webhook-receiver-hardener; for idempotency patterns outside payments, use idempotency-enforcer.
 ---
 
 # Stripe Expert
@@ -9,20 +9,20 @@ Billing bugs are the most expensive class of bug: an unverified webhook is an op
 
 ## Core principle
 
-Stripe is the source of truth for billing state. Your database is a mirror, updated only by verified webhooks. Never grant access from a client-side success callback or redirect — the redirect can be spoofed, dropped, or replayed; the webhook cannot.
+Stripe is the source of truth for billing state. Your database is a mirror, updated only by verified webhooks. Never grant access from a client-side success callback or redirect - the redirect can be spoofed, dropped, or replayed; the webhook cannot.
 
 ## Operating procedure
 
 ### Step 1: Gather inputs
 
-1. Billing model — one-time purchase, flat subscription, per-seat, or usage-based? Default for SaaS: flat subscription via Checkout.
-2. Existing user model — is there a `stripe_customer_id` column? One Stripe customer per user, created lazily on first purchase.
-3. Access-gating point — the exact code path that checks "is this user paid?". It must read your mirrored subscription status, nowhere else.
-4. Dunning policy — how many days of grace on `past_due` before access is cut? Default: 7 days with email notices.
+1. Billing model - one-time purchase, flat subscription, per-seat, or usage-based? Default for SaaS: flat subscription via Checkout.
+2. Existing user model - is there a `stripe_customer_id` column? One Stripe customer per user, created lazily on first purchase.
+3. Access-gating point - the exact code path that checks "is this user paid?". It must read your mirrored subscription status, nowhere else.
+4. Dunning policy - how many days of grace on `past_due` before access is cut? Default: 7 days with email notices.
 
 ### Step 2: Build the purchase flow (Checkout)
 
-1. Create the Checkout Session server-side. Never trust amounts or price IDs from the client — accept only an internal plan identifier and resolve the Stripe price ID server-side.
+1. Create the Checkout Session server-side. Never trust amounts or price IDs from the client - accept only an internal plan identifier and resolve the Stripe price ID server-side.
 2. Redirect the customer to the hosted page.
 3. Treat the success page as UI only ("thanks, your access is activating"). Entitlement flips when the webhook lands, typically within seconds.
 
@@ -42,13 +42,13 @@ Pass an `Idempotency-Key` on every create request (sessions, charges, customers)
 
 Every item is mandatory; each one missing is a specific production incident.
 
-- [ ] Signature verified with `stripe.webhooks.constructEvent(rawBody, sig, endpointSecret)` — reject with 400 on failure. Skipping this lets anyone POST fake payment events.
-- [ ] Raw request body used for verification. Body-parsing middleware (e.g. `express.json()`) mutates bytes and breaks the signature — exempt the webhook route.
+- [ ] Signature verified with `stripe.webhooks.constructEvent(rawBody, sig, endpointSecret)` - reject with 400 on failure. Skipping this lets anyone POST fake payment events.
+- [ ] Raw request body used for verification. Body-parsing middleware (e.g. `express.json()`) mutates bytes and breaks the signature - exempt the webhook route.
 - [ ] Idempotent: store processed `event.id`s (unique-constrained table) and skip duplicates. Stripe delivers at-least-once; without this, a redelivery double-provisions.
-- [ ] Returns 2xx within a few seconds; heavy work (emails, provisioning) goes to a queue. Stripe retries non-2xx responses for up to ~3 days with exponential backoff — a slow handler turns retries into a duplicate storm.
+- [ ] Returns 2xx within a few seconds; heavy work (emails, provisioning) goes to a queue. Stripe retries non-2xx responses for up to ~3 days with exponential backoff - a slow handler turns retries into a duplicate storm.
 - [ ] Handles out-of-order delivery: apply the event's data (or re-fetch the object from the API) rather than assuming events arrive in sequence.
 - [ ] Minimum event set handled: `checkout.session.completed`, `customer.subscription.updated`, `customer.subscription.deleted`, `invoice.payment_failed`.
-- [ ] Unhandled event types return 200, not 500 — otherwise Stripe retries events you never intended to process.
+- [ ] Unhandled event types return 200, not 500 - otherwise Stripe retries events you never intended to process.
 
 ### Step 4: Mirror subscription state
 
@@ -56,9 +56,9 @@ On each subscription event, upsert one row per user: `stripe_customer_id`, `stri
 
 ### Step 5: Handle failure and lifecycle paths
 
-- `invoice.payment_failed`: start dunning — notify the user, keep access through the grace window, cut on expiry or `subscription.deleted`.
-- Declines: catch `StripeCardError` and surface a friendly message. Retry only transient errors (network, 5xx, rate limit); never auto-retry a card decline — that is card-testing behavior and triggers fraud flags.
-- SCA/3DS: with Payment Intents, handle `requires_action` by completing authentication client-side. Checkout handles this for you — one more reason to prefer it.
+- `invoice.payment_failed`: start dunning - notify the user, keep access through the grace window, cut on expiry or `subscription.deleted`.
+- Declines: catch `StripeCardError` and surface a friendly message. Retry only transient errors (network, 5xx, rate limit); never auto-retry a card decline - that is card-testing behavior and triggers fraud flags.
+- SCA/3DS: with Payment Intents, handle `requires_action` by completing authentication client-side. Checkout handles this for you - one more reason to prefer it.
 - Plan changes: decide proration explicitly (`proration_behavior`) and communicate the resulting invoice line to the user before confirming.
 - Trials: handle `customer.subscription.trial_will_end` (fires 3 days before) to warn the user before the first charge.
 
@@ -68,7 +68,7 @@ Run `stripe listen --forward-to localhost:PORT/webhook` and use test-mode keys. 
 
 ## Worked contrast
 
-Bad — grants access from the redirect:
+Bad - grants access from the redirect:
 
 ```ts
 // success page handler
@@ -78,7 +78,7 @@ app.get('/success', async (req, res) => {
 });
 ```
 
-Good — grants access from the verified, idempotent webhook:
+Good - grants access from the verified, idempotent webhook:
 
 ```ts
 app.post('/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
@@ -103,12 +103,12 @@ Produce a working integration containing: the server-side Checkout Session endpo
 
 ## Do NOT
 
-- Do not gate access on the success redirect — it is spoofable and unreliable; only the verified webhook flips entitlement.
-- Do not parse the webhook body before signature verification — verification fails on mutated bytes and you will "fix" it by disabling verification.
-- Do not process an event ID twice — at-least-once delivery guarantees you will eventually receive duplicates.
-- Do not trust price IDs or amounts from the client — a tampered request buys the enterprise plan at the hobby price.
+- Do not gate access on the success redirect - it is spoofable and unreliable; only the verified webhook flips entitlement.
+- Do not parse the webhook body before signature verification - verification fails on mutated bytes and you will "fix" it by disabling verification.
+- Do not process an event ID twice - at-least-once delivery guarantees you will eventually receive duplicates.
+- Do not trust price IDs or amounts from the client - a tampered request buys the enterprise plan at the hobby price.
 - Do not auto-retry card declines or create more than one Stripe customer per user.
-- Do not do slow work inline in the handler — return 2xx fast, queue the rest.
+- Do not do slow work inline in the handler - return 2xx fast, queue the rest.
 
 ## Quality bar
 
@@ -120,4 +120,4 @@ Produce a working integration containing: the server-side Checkout Session endpo
 
 ## Escalation
 
-This skill covers integration mechanics, not pricing strategy — route tier and packaging questions to saas-pricing. Tax registration, revenue recognition, and regulated money-movement (marketplaces holding funds, Connect platform liability) warrant a payments-savvy accountant or lawyer, not just Stripe defaults.
+This skill covers integration mechanics, not pricing strategy - route tier and packaging questions to saas-pricing. Tax registration, revenue recognition, and regulated money-movement (marketplaces holding funds, Connect platform liability) warrant a payments-savvy accountant or lawyer, not just Stripe defaults.

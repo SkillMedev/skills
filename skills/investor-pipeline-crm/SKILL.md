@@ -19,12 +19,12 @@ the operating system for the live raise, from first email to signed term sheet
 
 Track every investor through one funnel:
 
-1. **Intro requested** — warm path in motion.
-2. **First meeting** — partner pitch done.
-3. **Second / partner meeting** — deeper dive, more of the firm involved.
-4. **Diligence** — data room shared ([[data-room-builder]]).
-5. **Term sheet** — offer in hand.
-6. **Closed / Passed** — record the reason on every pass.
+1. **Intro requested** - warm path in motion.
+2. **First meeting** - partner pitch done.
+3. **Second / partner meeting** - deeper dive, more of the firm involved.
+4. **Diligence** - data room shared ([[data-room-builder]]).
+5. **Term sheet** - offer in hand.
+6. **Closed / Passed** - record the reason on every pass.
 
 For each: name, partner, source/referrer, stage, last touch, next step + date,
 temperature, and notes. A spreadsheet is enough; the discipline matters, not the
@@ -43,7 +43,7 @@ Competitive tension is real leverage, but only the truthful kind survives
 diligence and reference calls between investors (they talk):
 
 - When one fund leans in, let the others know there is genuine interest and a
-  timeline — never a fake competing term sheet.
+  timeline - never a fake competing term sheet.
 - Move the whole pipeline forward together so interest compounds into a window.
 - Tighten cadence as temperature rises: same-day replies, fast next steps.
 
@@ -52,7 +52,7 @@ diligence and reference calls between investors (they talk):
 - Every meeting ends with an agreed, dated next step. No next step = a soft pass;
   treat it as one.
 - Follow up within 24 hours with the one new thing that advances the decision.
-- Send a brief weekly "raise momentum" note to warm-but-undecided investors —
+- Send a brief weekly "raise momentum" note to warm-but-undecided investors -
   new metric, new logo, new commitment. Reuse the discipline of
   [[investor-update-writer]].
 - Log every pass reason. Three passes naming the same gap is a signal to fix the

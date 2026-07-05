@@ -1,6 +1,6 @@
 ---
 name: Revenue Modeling
-description: Builds SaaS revenue models — a reconciling MRR/ARR bridge, cohort retention forecasting, a driver tree from leads to new ARR, and base/upside/downside scenarios. Use when someone asks "model my ARR for next year", "what will MRR be if churn doubles", "build a revenue forecast for the board", "why doesn't my MRR bridge tie out", or "what NRR do we need to hit our plan". Do NOT use for sizing the market opportunity — use market-sizing instead; for CAC, LTV, and payback analysis use unit-economics; for a full P&L or headcount-driven operating model use fpa-model; for cash timing and runway use cash-flow-forecast.
+description: Builds SaaS revenue models - a reconciling MRR/ARR bridge, cohort retention forecasting, a driver tree from leads to new ARR, and base/upside/downside scenarios. Use when someone asks "model my ARR for next year", "what will MRR be if churn doubles", "build a revenue forecast for the board", "why doesn't my MRR bridge tie out", or "what NRR do we need to hit our plan". Do NOT use for sizing the market opportunity - use market-sizing instead; for CAC, LTV, and payback analysis use unit-economics; for a full P&L or headcount-driven operating model use fpa-model; for cash timing and runway use cash-flow-forecast.
 ---
 
 # Revenue Modeling
@@ -15,11 +15,11 @@ Steps run in this order because the bridge defines the accounting, the drivers f
 
 Collect, and label every unsourced number a guess:
 
-- Beginning MRR (or ARR) and customer count, tied to the billing system or GL — not a spreadsheet someone remembers.
+- Beginning MRR (or ARR) and customer count, tied to the billing system or GL - not a spreadsheet someone remembers.
 - Trailing 6-12 months of the bridge components: new, expansion, reactivation, contraction, churned MRR.
 - Funnel history: leads (or pipeline created), lead→opportunity rate, opportunity→win rate, average deal size (ACV).
 - Cohort retention: revenue retained by acquisition month at months 1, 3, 6, 12. If unavailable, start with logo churn and note the model is weaker for it.
-- Billing mix (annual prepay vs monthly) — needed later to separate bookings, billings, and recognized revenue.
+- Billing mix (annual prepay vs monthly) - needed later to separate bookings, billings, and recognized revenue.
 
 Defaults when history is thin: mid-market SaaS commonly sees 15-30% lead→opp, 15-25% opp→win, and 2-4% monthly gross revenue churn for SMB versus 0.5-1.5% for enterprise. Use these only as placeholders and say so.
 
@@ -36,13 +36,13 @@ Ending MRR = Beginning MRR
            - Churned MRR      (cancellations)
 ```
 
-Validate every period: components must sum exactly to the change in MRR, and the bridge must reconcile against the general ledger. If it is off by even 1%, find the leak before forecasting — the usual suspects are mid-period upgrades booked as new, or reactivations netted into churn.
+Validate every period: components must sum exactly to the change in MRR, and the bridge must reconcile against the general ledger. If it is off by even 1%, find the leak before forecasting - the usual suspects are mid-period upgrades booked as new, or reactivations netted into churn.
 
 ### Step 3: compute the key rates
 
 - Gross revenue churn = (churned + contraction MRR) / beginning MRR.
 - Net revenue retention (NRR) = (beginning + expansion − contraction − churned) / beginning. NRR above 100% means the existing base grows with zero new logos; durable public-SaaS benchmarks cluster at 100-120%, with under 90% a red flag for the model's whole premise.
-- Logo churn = customers lost / customers at start. Track it separately from revenue churn — losing many small logos and one big logo look identical in revenue terms but demand different fixes.
+- Logo churn = customers lost / customers at start. Track it separately from revenue churn - losing many small logos and one big logo look identical in revenue terms but demand different fixes.
 
 ### Step 4: build the driver tree for new revenue
 
@@ -59,7 +59,7 @@ New ARR
 New MRR = leads × lead_to_opp × opp_to_win × avg_deal_size / 12
 ```
 
-Procedure: (1) list the leaves; (2) assign each an owner and a historical baseline; (3) check the tree multiplies back to actual new MRR for the trailing two quarters — if it misses by more than 10%, a driver is mis-measured; (4) forecast each leaf, not the product. This is what connects marketing spend and sales capacity to the revenue line.
+Procedure: (1) list the leaves; (2) assign each an owner and a historical baseline; (3) check the tree multiplies back to actual new MRR for the trailing two quarters - if it misses by more than 10%, a driver is mis-measured; (4) forecast each leaf, not the product. This is what connects marketing spend and sales capacity to the revenue line.
 
 ### Step 5: forecast the existing base with cohorts
 
@@ -71,17 +71,17 @@ For each acquisition cohort:
 Total MRR_t = Σ cohort revenue_t + new cohorts from the driver tree
 ```
 
-Fit the retention curve from historical cohorts. Do not assume linear decay — SaaS retention curves flatten after months 3-6, and a linear assumption understates long-run revenue badly.
+Fit the retention curve from historical cohorts. Do not assume linear decay - SaaS retention curves flatten after months 3-6, and a linear assumption understates long-run revenue badly.
 
 ### Step 6: run scenarios
 
-Build base, upside, and downside by flexing win rate, churn, expansion, and ACV — one inputs sheet, scenarios one toggle away (structure it with spreadsheet-model-builder). Add a 2D sensitivity grid: NRR on one axis, new-logo growth on the other, ending ARR in the cells. Stress-test the downside explicitly: what happens to the plan if churn doubles.
+Build base, upside, and downside by flexing win rate, churn, expansion, and ACV - one inputs sheet, scenarios one toggle away (structure it with spreadsheet-model-builder). Add a 2D sensitivity grid: NRR on one axis, new-logo growth on the other, ending ARR in the cells. Stress-test the downside explicitly: what happens to the plan if churn doubles.
 
 ### Step 7: connect to cash and economics
 
 - ARR = MRR × 12.
-- Keep bookings, billings, and recognized revenue separate — annual-prepay bookings inflate cash today but recognize monthly. Hand cash timing to cash-flow-forecast.
-- CAC payback = CAC / (ARPA × gross margin); LTV:CAC should exceed 3. The full treatment lives in unit-economics — reference it, do not rebuild it here.
+- Keep bookings, billings, and recognized revenue separate - annual-prepay bookings inflate cash today but recognize monthly. Hand cash timing to cash-flow-forecast.
+- CAC payback = CAC / (ARPA × gross margin); LTV:CAC should exceed 3. The full treatment lives in unit-economics - reference it, do not rebuild it here.
 
 ## Worked example: one quarter of the ARR model
 
@@ -132,7 +132,7 @@ NRR (annualized):     106.1%
 Ending customers:     235
 ```
 
-Read it: 900 leads at 20% and 22% conversion yield ~40 logos at $14k ACV — $554k of new ARR. The base contributes $108k expansion against $72k churn, an annualized NRR of 106%. Ending ARR of $2.99M is 25% quarterly growth, and the bridge decomposition shows 84% of it comes from new logos — so the plan lives or dies on the funnel, not retention.
+Read it: 900 leads at 20% and 22% conversion yield ~40 logos at $14k ACV - $554k of new ARR. The base contributes $108k expansion against $72k churn, an annualized NRR of 106%. Ending ARR of $2.99M is 25% quarterly growth, and the bridge decomposition shows 84% of it comes from new logos - so the plan lives or dies on the funnel, not retention.
 
 ## Deliverable
 
@@ -140,9 +140,9 @@ Produce a revenue model workbook (or script) containing: a monthly or quarterly 
 
 ## Do NOT
 
-- Do not forecast with a single blended growth rate — it cannot be diagnosed when it misses and no one owns it.
+- Do not forecast with a single blended growth rate - it cannot be diagnosed when it misses and no one owns it.
 - Do not let the bridge fail to reconcile "for now"; every downstream number inherits the error.
-- Do not blend contraction into churn or reactivation into new — the fixes for each are different teams.
+- Do not blend contraction into churn or reactivation into new - the fixes for each are different teams.
 - Do not treat bookings as revenue; annual prepay makes them wildly different in-quarter.
 - Do not assume linear retention decay; fit the curve from real cohorts.
 - Do not bury assumptions inside formulas; every input lives on the inputs sheet with a source note.

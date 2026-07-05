@@ -1,6 +1,6 @@
 ---
 name: agency-positioning
-description: Reposition a generalist agency around a vertical or service specialization, write the "we're the agency that X for Y" statement, and design a paid-audit entry offer backed by aligned case studies. Use when an agency owner says "we do everything for everyone and it's killing our pricing", "should we niche down", "prospects can't tell us apart from every other agency", or "how do we productize the front of our funnel". Do NOT use for writing a one-line positioning statement for a product or startup — use positioning-statement instead.
+description: Reposition a generalist agency around a vertical or service specialization, write the "we're the agency that X for Y" statement, and design a paid-audit entry offer backed by aligned case studies. Use when an agency owner says "we do everything for everyone and it's killing our pricing", "should we niche down", "prospects can't tell us apart from every other agency", or "how do we productize the front of our funnel". Do NOT use for writing a one-line positioning statement for a product or startup - use positioning-statement instead.
 ---
 
 # Agency Positioning
@@ -11,13 +11,13 @@ Work the example agency throughout: Northbeam Digital, an 8-person marketing age
 
 ## Operating procedure
 
-Follow the steps in order. The client-base audit comes first because the right specialization is almost always already hiding in the current book of business — you pick the niche you can prove, not the one that sounds best.
+Follow the steps in order. The client-base audit comes first because the right specialization is almost always already hiding in the current book of business - you pick the niche you can prove, not the one that sounds best.
 
 ### Step 1: Audit the current client base
 
-Pull per-client margin and revenue from retainer-economics-calculator (install that skill first — its margin numbers drive this decision). For each of the clients, record: vertical, primary service consumed, gross margin, retainer size, and whether the team likes the work. If margin data is a guess, label it a guess.
+Pull per-client margin and revenue from retainer-economics-calculator (install that skill first - its margin numbers drive this decision). For each of the clients, record: vertical, primary service consumed, gross margin, retainer size, and whether the team likes the work. If margin data is a guess, label it a guess.
 
-Northbeam's audit shows the pattern: its four highest-margin clients (Bluepine Outdoors, Onyx Fitness, Pillar Home, Verra Health — all at or near the 62 percent target) are consumer brands buying paid acquisition. Its two worst (Kettleworks at 24 percent, Delta Freight at 33 percent) are odd-fit clients buying grab-bag services.
+Northbeam's audit shows the pattern: its four highest-margin clients (Bluepine Outdoors, Onyx Fitness, Pillar Home, Verra Health - all at or near the 62 percent target) are consumer brands buying paid acquisition. Its two worst (Kettleworks at 24 percent, Delta Freight at 33 percent) are odd-fit clients buying grab-bag services.
 
 ### Step 2: Choose vertical or service specialization
 
@@ -43,7 +43,7 @@ The front door is a paid audit, not a free proposal. Free proposals are unpaid c
 
 - Scope: fixed deliverable, fixed price, fixed 2-week turnaround. No customization.
 - Price: 2-5 percent of the first-year retainer value. Northbeam's average retainer is $6,500/month ($78k/year), so its audit is priced at $2,500.
-- Deliverable: a findings document plus a prioritized 90-day plan, where the plan's first phase maps exactly onto the agency's core retainer. To produce the audit itself, use paid-acquisition-audit for paid channels or seo-optimizer for organic — this skill designs the offer, not the analysis.
+- Deliverable: a findings document plus a prioritized 90-day plan, where the plan's first phase maps exactly onto the agency's core retainer. To produce the audit itself, use paid-acquisition-audit for paid channels or seo-optimizer for organic - this skill designs the offer, not the analysis.
 - Conversion target: 30-50 percent of paid audits should convert to a retainer within 60 days. Below 30 percent, the audit is attracting the wrong buyers or the plan is not landing on the retainer; fix the qualification questions before cutting the price.
 
 ### Step 5: Align the proof
@@ -63,11 +63,11 @@ A one-page positioning brief: the chosen specialization with the margin evidence
 
 ## Do NOT
 
-- Do not pick a niche the client list cannot evidence — a claimed specialty with zero matching case studies reads as a lie in the first sales call.
+- Do not pick a niche the client list cannot evidence - a claimed specialty with zero matching case studies reads as a lie in the first sales call.
 - Do not keep serving everyone while the website claims a niche; misfit clients drag margin (Northbeam's two worst-margin clients are both off-niche) and pollute the proof base.
-- Do not make the audit free or "credited back" by default — crediting is a concession to deploy in negotiation, not the list price.
+- Do not make the audit free or "credited back" by default - crediting is a concession to deploy in negotiation, not the list price.
 - Do not niche by company size alone ("we serve SMBs"); size is a qualifier, not a position.
-- Do not rebrand before the entry offer and case studies are ready — positioning shipped in pieces converts nothing.
+- Do not rebrand before the entry offer and case studies are ready - positioning shipped in pieces converts nothing.
 
 ## Quality bar
 
@@ -78,4 +78,4 @@ A one-page positioning brief: the chosen specialization with the margin evidence
 
 ## Escalation and neighbors
 
-Install retainer-economics-calculator first; its per-client margins are the evidence base here. Once positioning is set, the audit itself is produced with paid-acquisition-audit or seo-optimizer, and won retainers flow into client-comms-cadence for the communication contract. Firing off-niche clients is a margin decision — run it through retainer-economics-calculator's fire-or-fix threshold, not through sentiment.
+Install retainer-economics-calculator first; its per-client margins are the evidence base here. Once positioning is set, the audit itself is produced with paid-acquisition-audit or seo-optimizer, and won retainers flow into client-comms-cadence for the communication contract. Firing off-niche clients is a margin decision - run it through retainer-economics-calculator's fire-or-fix threshold, not through sentiment.

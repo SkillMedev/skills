@@ -1,20 +1,20 @@
 ---
 name: Stock Photo APIs
-description: Integrates the Unsplash, Pexels, and Pixabay APIs in code — auth, search endpoints, rate limits, attribution, hotlinking versus caching rules, and the compliance obligations that get apps deactivated when skipped. Use when someone says "integrate the Unsplash API", "pull images from Pexels in my app", "build an image picker on a stock photo API", "how do I trigger the Unsplash download endpoint", or is wiring stock imagery into a CMS, blog pipeline, or placeholder service. Do NOT use to choose a source by hand or write a search brief — use stock-photo-finder instead; do NOT use to decide whether a license permits a use or a release is needed — use image-license-rights instead; do NOT use to art-direct results — use visual-asset-curation instead.
+description: Integrates the Unsplash, Pexels, and Pixabay APIs in code - auth, search endpoints, rate limits, attribution, hotlinking versus caching rules, and the compliance obligations that get apps deactivated when skipped. Use when someone says "integrate the Unsplash API", "pull images from Pexels in my app", "build an image picker on a stock photo API", "how do I trigger the Unsplash download endpoint", or is wiring stock imagery into a CMS, blog pipeline, or placeholder service. Do NOT use to choose a source by hand or write a search brief - use stock-photo-finder instead; do NOT use to decide whether a license permits a use or a release is needed - use image-license-rights instead; do NOT use to art-direct results - use visual-asset-curation instead.
 ---
 # Stock Photo APIs
 
-Wire stock imagery into a product through the three main free APIs — Unsplash, Pexels, Pixabay — without tripping the compliance rules that get API keys revoked. The fetch is trivial; the contractual obligations (Unsplash's download-endpoint trigger, Pixabay's mandatory caching, attribution everywhere) are the actual work, and skipping them is the #1 reason apps get deactivated.
+Wire stock imagery into a product through the three main free APIs - Unsplash, Pexels, Pixabay - without tripping the compliance rules that get API keys revoked. The fetch is trivial; the contractual obligations (Unsplash's download-endpoint trigger, Pixabay's mandatory caching, attribution everywhere) are the actual work, and skipping them is the #1 reason apps get deactivated.
 
 ## Operating procedure
 
 ### Step 1: Gather inputs
 
-- Is the need dynamic, repeated, or in-product? For a one-off hero image, download it by hand — an API key is overkill.
+- Is the need dynamic, repeated, or in-product? For a one-off hero image, download it by hand - an API key is overkill.
 - Which provider(s), or should the integration abstract over all three? (Choosing a source for a specific image is stock-photo-finder's job.)
 - Expected request volume, to check against the rate-limit table.
-- Where images will render (client hotlink vs server cache) — this decides between Unsplash's hotlink rule and Pixabay's cache rule.
-- Whether anything commercial ships — a human owns that license call via image-license-rights.
+- Where images will render (client hotlink vs server cache) - this decides between Unsplash's hotlink rule and Pixabay's cache rule.
+- Whether anything commercial ships - a human owns that license call via image-license-rights.
 
 ### Step 2: Pick against the provider quick reference
 
@@ -24,7 +24,7 @@ Wire stock imagery into a product through the three main free APIs — Unsplash,
 | Pexels | Authorization: API_KEY | GET /v1/search | 200 req/hr, 20,000 req/mo default | Show Pexels + photographer attribution; do not build a Pexels clone; respect the X-Ratelimit-* response headers |
 | Pixabay | ?key=API_KEY query param | GET /api/ | ~100 req/min | Must cache/download images to your own server per their terms rather than permanently hotlinking; cache API responses ~24h |
 
-These are the documented defaults — confirm current limits and terms in each provider's live docs before shipping, since providers revise them.
+These are the documented defaults - confirm current limits and terms in each provider's live docs before shipping, since providers revise them.
 
 ### Step 3: Implement the compliant flow (Unsplash worked example)
 
@@ -62,17 +62,17 @@ function attribution(photo: { user: { name: string; links: { html: string } } })
 
 ### Step 4: Run the compliance checklist
 
-- Keys are secret and server-side. Never ship an access/secret key in client JS — proxy through a backend or serverless function.
+- Keys are secret and server-side. Never ship an access/secret key in client JS - proxy through a backend or serverless function.
 - Unsplash: hotlink urls, fire download_location on use, attribute with UTM links. Demo apps stay capped at 50 req/hr until production approval.
 - Pexels: render the required Pexels + photographer attribution; do not replicate Pexels as a product.
 - Pixabay: download/cache images to your server; cache API responses ~24h; do not permanently hotlink.
-- Rate limits: read the response headers (X-Ratelimit-Remaining and friends), back off on 429, and cache search results so one query is not re-fetched on every render — pair with rate-limit-handler for the backoff design.
+- Rate limits: read the response headers (X-Ratelimit-Remaining and friends), back off on 429, and cache search results so one query is not re-fetched on every render - pair with rate-limit-handler for the backoff design.
 - License still applies. The API grants no rights it does not have: identifiable people/brands and editorial-only assets remain image-license-rights territory. Surface that to whoever publishes the result.
 
 ### Step 5: Build for robustness
 
 - Wrap calls with timeouts, retry-with-backoff on 429/5xx, and a graceful empty state for zero results.
-- Persist provider, photo ID, photographer name, profile URL, and attribution HTML alongside any stored image — needed to render credit and answer later license questions.
+- Persist provider, photo ID, photographer name, profile URL, and attribution HTML alongside any stored image - needed to render credit and answer later license questions.
 - Normalize the providers behind one internal interface (`searchImages(query): Promise<Image[]>`) so callers never depend on a provider's response shape, and a provider swap is one adapter.
 
 ## Deliverable
@@ -82,11 +82,11 @@ Produce a working integration containing: the server-side proxy with secret key 
 ## Do NOT
 
 - Do not ship API keys in client-side code.
-- Do not skip Unsplash's download_location trigger or its UTM attribution — the enforcement is real.
-- Do not rehost Unsplash images (hotlink their urls) and do not permanently hotlink Pixabay images (cache them) — the two rules are opposites; applying the wrong one violates the terms.
-- Do not hammer search on every page render — cache results and honor rate-limit headers.
+- Do not skip Unsplash's download_location trigger or its UTM attribution - the enforcement is real.
+- Do not rehost Unsplash images (hotlink their urls) and do not permanently hotlink Pixabay images (cache them) - the two rules are opposites; applying the wrong one violates the terms.
+- Do not hammer search on every page render - cache results and honor rate-limit headers.
 - Do not treat API access as a license opinion; anything commercial with identifiable people or brands goes through image-license-rights.
-- Do not hand-pick images or write search briefs here — that is stock-photo-finder.
+- Do not hand-pick images or write search briefs here - that is stock-photo-finder.
 
 ## Quality bar
 

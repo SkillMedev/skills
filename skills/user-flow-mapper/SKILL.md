@@ -1,11 +1,11 @@
 ---
 name: User Flow Mapper
-description: Maps a feature's complete user flow in text notation — happy path first, then decision branches, error and empty states with recovery, edge cases, and re-engagement — and flags the top risks before design or build. Use when someone asks "map the user flow for onboarding", "what error states are we missing", "diagram the signup flow", or is scoping any multi-step feature. Do NOT use for screen-level interaction and component behavior specs — use prototype-spec instead; for cross-channel customer stages spanning weeks or months, use lifecycle-journey-map.
+description: Maps a feature's complete user flow in text notation - happy path first, then decision branches, error and empty states with recovery, edge cases, and re-engagement - and flags the top risks before design or build. Use when someone asks "map the user flow for onboarding", "what error states are we missing", "diagram the signup flow", or is scoping any multi-step feature. Do NOT use for screen-level interaction and component behavior specs - use prototype-spec instead; for cross-channel customer stages spanning weeks or months, use lifecycle-journey-map.
 ---
 
 # User Flow Mapper
 
-Map a feature's full flow before design or build, surfacing the error and empty states teams usually discover in week three of implementation — when each one costs a redesign instead of a diagram edit. The output is a text-notation map any teammate can read in a ticket, not a diagram tool artifact that rots.
+Map a feature's full flow before design or build, surfacing the error and empty states teams usually discover in week three of implementation - when each one costs a redesign instead of a diagram edit. The output is a text-notation map any teammate can read in a ticket, not a diagram tool artifact that rots.
 
 ## Operating procedure
 
@@ -15,13 +15,13 @@ Order matters: the happy path is the spine everything else hangs from, so branch
 
 Collect three things (ask for whatever is missing; defaults below are guesses to confirm):
 
-- **Entry points** — every way a user arrives: deep link, nav, notification, search. Default guess: primary nav only.
-- **Goal** — the single outcome that means success. One goal per map; two goals means two maps.
-- **Actors and pre-conditions** — who, with what permissions and prior state (logged in? verified? first-time?).
+- **Entry points** - every way a user arrives: deep link, nav, notification, search. Default guess: primary nav only.
+- **Goal** - the single outcome that means success. One goal per map; two goals means two maps.
+- **Actors and pre-conditions** - who, with what permissions and prior state (logged in? verified? first-time?).
 
 ### Step 2: Map the happy path first
 
-List the minimal sequence from entry to goal when everything works. Use verb-led step names: "Enter email", "Verify code", "Set password". Keep it linear — no branches yet. **Red line: a happy path longer than 7 steps needs a consolidation pass before continuing**; either merge steps or split the feature, because every step past seven compounds drop-off and multiplies the error surface you are about to map.
+List the minimal sequence from entry to goal when everything works. Use verb-led step names: "Enter email", "Verify code", "Set password". Keep it linear - no branches yet. **Red line: a happy path longer than 7 steps needs a consolidation pass before continuing**; either merge steps or split the feature, because every step past seven compounds drop-off and multiplies the error surface you are about to map.
 
 ### Step 3: Branch the decision points
 
@@ -31,15 +31,15 @@ At each step ask: what can the user choose, and what can the system decide here?
 - Permission checks (allowed / denied)
 - Existence checks (new / returning, exists / not found)
 
-**Red line: more than 3 decision points before the user's first value moment is a friction flag** — note it for the design team even if the flow is otherwise correct.
+**Red line: more than 3 decision points before the user's first value moment is a friction flag** - note it for the design team even if the flow is otherwise correct.
 
 ### Step 4: Enumerate error states
 
-For every step that can fail, define three things — an error without all three is unmapped:
+For every step that can fail, define three things - an error without all three is unmapped:
 
-- **Trigger** — what causes it.
-- **Message** — what the user sees (blame-free, actionable).
-- **Recovery** — the path back to the happy path. A dead-end error is a defect in the map.
+- **Trigger** - what causes it.
+- **Message** - what the user sees (blame-free, actionable).
+- **Recovery** - the path back to the happy path. A dead-end error is a defect in the map.
 
 Cover at minimum: network failure, timeout, server error, invalid input, and permission denial.
 
@@ -47,7 +47,7 @@ Cover at minimum: network failure, timeout, server error, invalid input, and per
 
 Walk every step against this list:
 
-- Empty states (no data yet) and overflow states (too much data) — **every list or collection in the flow gets an explicit empty branch**, no exceptions.
+- Empty states (no data yet) and overflow states (too much data) - **every list or collection in the flow gets an explicit empty branch**, no exceptions.
 - Slow connection / partial load.
 - Interrupted flow (user leaves and returns mid-flow).
 - Concurrent edits or stale data.
@@ -59,9 +59,9 @@ Walk every step against this list:
 
 A flow doesn't end at the goal:
 
-- **Success exit** — what's next: confirmation, next action, or dead end?
-- **Abandonment** — if the user drops, what brings them back (email, push, saved progress)?
-- **Loops** — can they repeat the flow easily?
+- **Success exit** - what's next: confirmation, next action, or dead end?
+- **Abandonment** - if the user drops, what brings them back (email, push, saved progress)?
+- **Loops** - can they repeat the flow easily?
 
 ### Step 7: Notate and flag risks
 
@@ -104,9 +104,9 @@ Actors: existing account holder, logged out, may be unverified
    Loop: settings page offers change-password without email round-trip
 
 TOP RISKS
-1. Step 2 email deliverability — highest drop-off; monitor send-to-click rate.
-2. Expired-link path (2) — most common support ticket; resend must be one tap.
-3. Step 3 policy rejections — show rules before first attempt, not after failure.
+1. Step 2 email deliverability - highest drop-off; monitor send-to-click rate.
+2. Expired-link path (2) - most common support ticket; resend must be one tap.
+3. Step 3 policy rejections - show rules before first attempt, not after failure.
 ```
 
 Happy path is 4 steps (under the 7-step red line), one decision before value, every error has a recovery.
@@ -118,7 +118,7 @@ Produce a text-notation flow map covering: framing (entry points, goal, actors),
 ## Do NOT
 
 - Do not map branches before the happy path exists; they attach to nothing.
-- Do not write an error without a recovery path — dead ends are the defect this skill exists to catch.
+- Do not write an error without a recovery path - dead ends are the defect this skill exists to catch.
 - Do not skip empty states on collections because "there will always be data"; there is never data on day one.
 - Do not blame the user in error messages ("Invalid input" → "That email needs an @").
 - Do not accept a happy path over 7 steps without a consolidation pass, or two goals in one map.
@@ -129,7 +129,7 @@ Produce a text-notation flow map covering: framing (entry points, goal, actors),
 - Every step verb-led and numbered; every decision lists all outcomes, happy branch first.
 - The five minimum failure modes (network, timeout, server error, invalid input, permission denial) each appear or are explicitly ruled out.
 - Every `!` error line ends in a recovery; every collection has an `[EMPTY]` branch.
-- Red lines checked: happy path ≤7 steps, ≤3 decisions before first value — violations flagged, not hidden.
+- Red lines checked: happy path ≤7 steps, ≤3 decisions before first value - violations flagged, not hidden.
 - Top three risks named with a reason each.
 
 When the map is approved and screens need interaction-level specification, hand off to prototype-spec.

@@ -1,11 +1,11 @@
 ---
 name: Data Quality Framework
-description: Designs layered data quality checks across completeness, validity, consistency, uniqueness, timeliness, and accuracy, with severity tiers, freshness SLAs, and anomaly baselines wired into dbt and CI. Use when someone asks "how do I stop bad data reaching dashboards", "set up dbt tests for this model", "our pipeline loaded duplicate rows again", "what data quality checks should this table have", or "how fresh does this source need to be". Do NOT use for detecting distribution drift in ML features and predictions — use data-drift-monitor instead; for one-off exploration and profiling of a new dataset — use eda-playbook instead; for infrastructure and application telemetry — use observability-stack instead; for removing personal data from datasets — use pii-scrubber instead.
+description: Designs layered data quality checks across completeness, validity, consistency, uniqueness, timeliness, and accuracy, with severity tiers, freshness SLAs, and anomaly baselines wired into dbt and CI. Use when someone asks "how do I stop bad data reaching dashboards", "set up dbt tests for this model", "our pipeline loaded duplicate rows again", "what data quality checks should this table have", or "how fresh does this source need to be". Do NOT use for detecting distribution drift in ML features and predictions - use data-drift-monitor instead; for one-off exploration and profiling of a new dataset - use eda-playbook instead; for infrastructure and application telemetry - use observability-stack instead; for removing personal data from datasets - use pii-scrubber instead.
 ---
 
 # Data Quality Framework
 
-Bad data costs most when it is discovered by the consumer — an executive quoting a dashboard built on a half-loaded table, or a model trained on duplicated rows. The costly mistake this skill prevents is the all-or-nothing test suite: either no checks, or hundreds of untiered checks that page someone nightly until they are all silenced. The output is a small, tiered check suite where every failure has a defined severity and action.
+Bad data costs most when it is discovered by the consumer - an executive quoting a dashboard built on a half-loaded table, or a model trained on duplicated rows. The costly mistake this skill prevents is the all-or-nothing test suite: either no checks, or hundreds of untiered checks that page someone nightly until they are all silenced. The output is a small, tiered check suite where every failure has a defined severity and action.
 
 ## Operating procedure
 
@@ -17,7 +17,7 @@ Severity tiering (Step 3) comes before implementation because a check without a 
 2. Load cadence and expected arrival time per source.
 3. Business rules that define a valid row (status enums, amount ranges, referential links).
 4. Where checks will run: dbt is the default assumption below; the structure ports to any framework.
-5. An owner per dataset. If none exists, assigning one is Step 1, not an afterthought — an unowned failing test is noise by definition.
+5. An owner per dataset. If none exists, assigning one is Step 1, not an afterthought - an unowned failing test is noise by definition.
 
 ### Step 2: Map checks to the six dimensions
 
@@ -26,13 +26,13 @@ Severity tiering (Step 3) comes before implementation because a check without a 
 3. Consistency: values agree across tables and over time.
 4. Uniqueness: keys are not duplicated.
 5. Timeliness: data lands within the expected SLA.
-6. Accuracy: values reflect the real-world entity — hardest to test automatically; approximate with reconciliation against a trusted system (e.g. warehouse revenue vs the billing system, alert beyond 1% divergence).
+6. Accuracy: values reflect the real-world entity - hardest to test automatically; approximate with reconciliation against a trusted system (e.g. warehouse revenue vs the billing system, alert beyond 1% divergence).
 
 Every table gets, at minimum: unique + not_null on the primary key, freshness on its source, and one row-count anomaly check. Add business-rule checks only where a failure has a named consequence.
 
 ### Step 3: Tier severities with concrete red lines
 
-- ERROR (block the pipeline): primary key nulls or duplicates — the red line is zero, not "low"; referential integrity breaks; row count deviating more than ±50% from the trailing 4-week same-weekday average; source freshness beyond the error SLA.
+- ERROR (block the pipeline): primary key nulls or duplicates - the red line is zero, not "low"; referential integrity breaks; row count deviating more than ±50% from the trailing 4-week same-weekday average; source freshness beyond the error SLA.
 - WARN (alert, do not block): null rate on a non-key column jumping more than 5 percentage points day-over-day or drifting more than 3 standard deviations from its 28-day baseline; row count deviating ±30%; accepted-values violations under 0.5% of rows.
 - INFO (dashboard only): slow-moving distribution changes worth a look during review.
 
@@ -92,7 +92,7 @@ Static thresholds miss slow rot. Track per table, trended daily against a rollin
 ### Step 7: Operationalize
 
 - Run tests in CI on every pull request against a sample; full suites on schedule after each load, failing the pipeline on ERRORs.
-- Route alerts to a channel with the failing table, the check, and example failing rows — an alert that requires a query to understand gets ignored.
+- Route alerts to a channel with the failing table, the check, and example failing rows - an alert that requires a query to understand gets ignored.
 - Maintain a dashboard of pass rates per source; report quality SLAs to stakeholders.
 - Treat recurring failures as incidents with root-cause analysis, not noise to silence. A test muted more than twice is either mis-tiered or exposing a real upstream defect.
 
@@ -118,7 +118,7 @@ Produce a data quality specification containing: the scoped tables with owners, 
 
 - Do not ship untiered checks; a suite where everything pages is a suite where nothing does.
 - Do not set freshness SLAs by habit; derive warn/error from when consumers make decisions.
-- Do not tolerate any duplicate or null primary keys "temporarily" — key corruption multiplies through every join.
+- Do not tolerate any duplicate or null primary keys "temporarily" - key corruption multiplies through every join.
 - Do not silence a recurring failure; mute-count above two means re-tier it or fix the source.
 - Do not start with the whole warehouse; instrument the tables behind the top dashboards and models first.
 

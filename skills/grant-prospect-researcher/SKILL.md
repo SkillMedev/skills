@@ -1,6 +1,6 @@
 ---
 name: grant-prospect-researcher
-description: Finds and qualifies foundation funders for a nonprofit by fit-scoring prospects on mission alignment, typical grant size, geographic focus, and past-grantee similarity, reading the funder's 990 for real priorities and median grant size, and sizing the pipeline at 4-5x the annual grant goal. Use when a nonprofit leader says "find foundations that would fund us", "is this funder worth applying to", "how many grants do we need in the pipeline", or "what does this funder's 990 tell us". Do NOT use for B2B sales prospect lists — use prospect-list-builder instead — and do NOT use for startup investor research — use investor-targeting instead.
+description: Finds and qualifies foundation funders for a nonprofit by fit-scoring prospects on mission alignment, typical grant size, geographic focus, and past-grantee similarity, reading the funder's 990 for real priorities and median grant size, and sizing the pipeline at 4-5x the annual grant goal. Use when a nonprofit leader says "find foundations that would fund us", "is this funder worth applying to", "how many grants do we need in the pipeline", or "what does this funder's 990 tell us". Do NOT use for B2B sales prospect lists - use prospect-list-builder instead - and do NOT use for startup investor research - use investor-targeting instead.
 ---
 
 # Grant Prospect Researcher
@@ -17,7 +17,7 @@ Follow the steps in order. Pipeline sizing comes first because it tells you how 
 
 Pipeline sizing rests on one practitioner number, defined here and cited by nonprofit-board-pack: well-fit prospects win at roughly 20-30 percent, so the pipeline of submitted asks must total 4-5x the grant goal.
 
-Bright Futures math: goal $180,000. Pipeline target at 4.5x is $810,000 in qualified asks. At an average ask of $45,000, that means 16-20 qualified prospects. At a 20-30 percent win rate, expect 4-6 awards — which covers the goal. A pipeline covering less than 4x the goal is a plan to miss it.
+Bright Futures math: goal $180,000. Pipeline target at 4.5x is $810,000 in qualified asks. At an average ask of $45,000, that means 16-20 qualified prospects. At a 20-30 percent win rate, expect 4-6 awards - which covers the goal. A pipeline covering less than 4x the goal is a plan to miss it.
 
 Check capacity against the math: a 3-staff organization can realistically produce 1-2 LOIs per month plus 3-5 full proposals per year. If the pipeline needs more applications than staff can write, raise the average ask size rather than the application count.
 
@@ -29,8 +29,8 @@ Sources, cheapest first: the grantee lists (Schedule I or Part XV) of funders wh
 
 A funder's website says what it wants to be; its 990-PF says what it actually pays for. Pull the two most recent filings (free on ProPublica Nonprofit Explorer) and read in this order:
 
-1. Part XV, grants paid. This is the ground truth. List every grantee and amount. Compute the median grant, not the mean — one flagship $500,000 grant makes the mean useless.
-2. Grantee similarity. Does any grantee look like you — similar budget size, similar program, same county or state? A funder with no grantee under $1 million in budget rarely starts with one.
+1. Part XV, grants paid. This is the ground truth. List every grantee and amount. Compute the median grant, not the mean - one flagship $500,000 grant makes the mean useless.
+2. Grantee similarity. Does any grantee look like you - similar budget size, similar program, same county or state? A funder with no grantee under $1 million in budget rarely starts with one.
 3. Stated guidelines versus actual grants. Real priorities are the grants-paid list. A funder whose website says "education" but whose grants are 80 percent hospital capital campaigns is a hospital funder.
 4. Part XV line 2: does it accept unsolicited applications? "Preselected organizations only" plus no board connection means disqualify, whatever the mission fit.
 5. Assets and payout. Private foundations must distribute roughly 5 percent of assets annually; assets times 0.05 approximates yearly giving capacity.
@@ -51,7 +51,7 @@ Thresholds: 11-15 pursue, 8-10 watch (revisit when something changes), 7 or belo
 
 ### Step 5: Apply disqualification discipline
 
-Disqualify fast and in writing, one line of reason each. Automatic kills regardless of mission fit: no unsolicited applications and no connection; median grant below 50 percent of your minimum useful ask; no grantee in your state within three years. Concentration check: no single funder should carry more than 15-20 percent of your annual budget. Bright Futures' $75,000 ask is 18 percent of $420,000 — at the ceiling, acceptable once, but do not stack two funders at that weight.
+Disqualify fast and in writing, one line of reason each. Automatic kills regardless of mission fit: no unsolicited applications and no connection; median grant below 50 percent of your minimum useful ask; no grantee in your state within three years. Concentration check: no single funder should carry more than 15-20 percent of your annual budget. Bright Futures' $75,000 ask is 18 percent of $420,000 - at the ceiling, acceptable once, but do not stack two funders at that weight.
 
 ### Step 6: Tier, calendar, and hand off
 
@@ -64,13 +64,13 @@ Annual budget, grant-revenue goal, program area and population served, geography
 ## Worked artifact: Bright Futures prospect-scoring table
 
 ```
-GRANT PROSPECT SCORES — Bright Futures Tutoring
+GRANT PROSPECT SCORES - Bright Futures Tutoring
 Goal $180,000 | Pipeline target $810,000 (4.5x) | Ask band $30k-$90k
 
 Funder                        Mission Size Geo Similar Access TOTAL Verdict
 Hearthstone Foundation           3     3    3     2      2     13   PURSUE
   990: median grant $60k; 4 youth-ed grantees in county; accepts LOIs.
-  $75k ask = 125% of median — inside the 50-150% band.
+  $75k ask = 125% of median - inside the 50-150% band.
 National STEM Futures Fund       2     0    0     1      3      6   DISQUALIFY
   990: median grant $250k; zero grantees in state; funds $5M+ orgs.
 Riverton Community Foundation    3     2    3     3      0     11→9 WATCH
@@ -86,7 +86,7 @@ A scored prospect table like the one above covering every raw-list name, pipelin
 
 - Do not score a funder on its website language; the grants-paid list is the funder's real behavior.
 - Do not use the mean grant size; one outlier grant distorts it. Median only.
-- Do not keep "maybe someday" prospects in the pursue tier — pipeline coverage becomes fiction, and nonprofit-board-pack reports that fiction to the board.
+- Do not keep "maybe someday" prospects in the pursue tier - pipeline coverage becomes fiction, and nonprofit-board-pack reports that fiction to the board.
 - Do not apply to a poor-fit funder because its deadline is convenient; a rushed application to the wrong funder costs the same staff-weeks as a strong one to the right funder.
 - Do not let one funder exceed 20 percent of the budget without a board-visible concentration note.
 

@@ -1,10 +1,10 @@
 ---
 name: Mock Stub Designer
-description: Designs the minimal set of test doubles for a unit or integration test and decides, per dependency, whether to stub, fake, spy, mock, or exercise the real thing. Use when someone asks "should I mock this", "how do I test code that calls Stripe or S3 or the clock", "why do our tests pass while production is broken", or when a test touches an HTTP API, payment or email/SMS SDK, database, filesystem, system clock, or randomness. Do NOT use for fabricating valid domain fixture data (a User with defaults, an Order with line items) — use test-data-builder instead; for driving a red-green implementation loop, use tdd-expert.
+description: Designs the minimal set of test doubles for a unit or integration test and decides, per dependency, whether to stub, fake, spy, mock, or exercise the real thing. Use when someone asks "should I mock this", "how do I test code that calls Stripe or S3 or the clock", "why do our tests pass while production is broken", or when a test touches an HTTP API, payment or email/SMS SDK, database, filesystem, system clock, or randomness. Do NOT use for fabricating valid domain fixture data (a User with defaults, an Order with line items) - use test-data-builder instead; for driving a red-green implementation loop, use tdd-expert.
 ---
 # Mock Stub Designer
 
-A test double exists to make a test fast, deterministic, and focused — never to mock everything in sight. Over-mocking yields tautological tests that pass against a broken system because they only verify the mocks. This skill decides, per dependency, the weakest double that still isolates the boundary, so the test exercises real behavior everywhere else.
+A test double exists to make a test fast, deterministic, and focused - never to mock everything in sight. Over-mocking yields tautological tests that pass against a broken system because they only verify the mocks. This skill decides, per dependency, the weakest double that still isolates the boundary, so the test exercises real behavior everywhere else.
 
 ## Operating procedure
 
@@ -17,11 +17,11 @@ Collect before designing anything:
 3. Language and test stack (this picks the wire-interception tool: nock or msw for JS, WireMock for JVM, VCR-style cassettes for Ruby/Python, responses/respx for Python).
 4. Whether a sandbox environment exists for the critical integration backstop.
 
-If the dependency list is unknown, trace the code first — guessing the boundary list is how internal collaborators end up mocked.
+If the dependency list is unknown, trace the code first - guessing the boundary list is how internal collaborators end up mocked.
 
 ### Step 2: Classify each dependency
 
-For each dependency: external boundary you do not own (third-party HTTP, payment/email/SMS SDK, clock, randomness, filesystem, network) versus your own code (domain objects, pure functions, cheap deterministic collaborators). Double only the boundaries you do not own or cannot control. Use the real thing for your own domain objects — mocking them turns the test into a tautology.
+For each dependency: external boundary you do not own (third-party HTTP, payment/email/SMS SDK, clock, randomness, filesystem, network) versus your own code (domain objects, pure functions, cheap deterministic collaborators). Double only the boundaries you do not own or cannot control. Use the real thing for your own domain objects - mocking them turns the test into a tautology.
 
 ### Step 3: Pick the weakest double that works
 
@@ -30,12 +30,12 @@ Apply this decision table top to bottom; stop at the first row that fits.
 | Double | What it is | Use when | Red flag |
 |---|---|---|---|
 | Real | The actual collaborator | Your own code: domain objects, pure functions, fast deterministic classes | Mocking these tests nothing |
-| Stub | Canned answers to queries, no assertions | The dependency only supplies data the test needs | Asserting on stub calls — that makes it a mock |
-| Fake | Working lightweight implementation (in-memory repository, SQLite) | Many tests need a behaving dependency with state | The fake drifting from the real contract — pin it with a shared contract test |
+| Stub | Canned answers to queries, no assertions | The dependency only supplies data the test needs | Asserting on stub calls - that makes it a mock |
+| Fake | Working lightweight implementation (in-memory repository, SQLite) | Many tests need a behaving dependency with state | The fake drifting from the real contract - pin it with a shared contract test |
 | Spy | Records calls on the real object | Verify a side effect happened without replacing behavior | Asserting internal call sequences |
 | Mock | Pre-programmed interaction expectations | The interaction IS the contract: charge exactly once, emit the audit event, send exactly one email | Any interaction assertion where the call is an implementation detail |
 
-Thresholds: if a single test needs more than 3 doubles, the design is too coupled — report that as the finding rather than papering over it. A fake earns its maintenance cost when 3 or more tests reuse it; below that, stub inline. Allow at most one interaction assertion per test, on the one call that is the contract.
+Thresholds: if a single test needs more than 3 doubles, the design is too coupled - report that as the finding rather than papering over it. A fake earns its maintenance cost when 3 or more tests reuse it; below that, stub inline. Allow at most one interaction assertion per test, on the one call that is the contract.
 
 ### Step 4: Intercept HTTP at the wire, not your client
 
@@ -53,7 +53,7 @@ For each critical integration (payments, primary datastore), retain at least one
 
 Scenario: `OrderService.place(order)` charges a payment gateway over HTTPS and saves via `OrderRepository`.
 
-Bad — tautological, refactor-hostile:
+Bad - tautological, refactor-hostile:
 
 ```python
 def test_place_order_bad():
@@ -70,7 +70,7 @@ def test_place_order_bad():
 
 Every assertion checks the mocks' own wiring. Serialization, URL building, and Order's real total logic are untested; renaming an internal method breaks the test while a broken system still passes it.
 
-Good — real domain, fake state, wire-level stub, one interaction assertion:
+Good - real domain, fake state, wire-level stub, one interaction assertion:
 
 ```python
 def test_place_order_good(responses_mock):
@@ -101,9 +101,9 @@ Produce a double design for the test: a table of every dependency with its class
 
 ## Do NOT
 
-- Do NOT mock the unit under test's own domain objects, pure functions, or cheap deterministic collaborators — use them for real.
+- Do NOT mock the unit under test's own domain objects, pure functions, or cheap deterministic collaborators - use them for real.
 - Do NOT assert call counts or argument order for harmless internal calls; that breaks on every refactor while catching nothing.
-- Do NOT mock three layers deep. If you must, the design is too coupled — report that as the finding instead of papering over it with doubles.
+- Do NOT mock three layers deep. If you must, the design is too coupled - report that as the finding instead of papering over it with doubles.
 - Do NOT skip the wire layer by mocking your HTTP client; you lose coverage of serialization and URL building.
-- Do NOT let cassettes and fakes drift — refresh recordings on a schedule and pin fakes with contract tests.
-- Do NOT use this skill for fabricating valid domain or fixture data (a User with defaults, an Order with line items) — use test-data-builder. This skill decides whether and how to fake a dependency, not how to construct domain values.
+- Do NOT let cassettes and fakes drift - refresh recordings on a schedule and pin fakes with contract tests.
+- Do NOT use this skill for fabricating valid domain or fixture data (a User with defaults, an Order with line items) - use test-data-builder. This skill decides whether and how to fake a dependency, not how to construct domain values.

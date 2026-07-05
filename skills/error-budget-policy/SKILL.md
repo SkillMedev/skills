@@ -63,7 +63,7 @@ Produce a written error budget policy document containing: the SLO and window pe
 
 ## Quality bar
 
-- Every state boundary is a number, not an adjective — "below 20%" not "getting low."
+- Every state boundary is a number, not an adjective - "below 20%" not "getting low."
 - Each state names an automatic behavior a team can execute without a manager's decision.
 - Burn-rate alerts exist for fast, medium, and slow burns, each routed to page or ticket.
 - The policy is signed by both engineering and product before it gates anything.

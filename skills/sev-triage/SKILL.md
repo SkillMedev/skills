@@ -9,10 +9,10 @@ Severity is a paging decision, not a feelings meter. Assign the highest SEV that
 
 ## Severity Definitions
 
-- SEV1 — Revenue-impacting or total service loss. More than 5% of users cannot complete a critical flow. Data loss or breach possible. Page IC + engineering lead + exec on-call immediately.
-- SEV2 — Significant degradation. Core feature broken for a subset, elevated error rate above SLO breach threshold, or a workaround exists but is unacceptable long-term. Page IC + team on-call within 5 minutes.
-- SEV3 — Partial or minor degradation. Non-critical feature affected, SLO still within budget, no customer escalations yet. Ticket created, team notified async, fix before next business day.
-- SEV4 — Cosmetic or edge case. No user impact, caught proactively. Ticket only.
+- SEV1 - Revenue-impacting or total service loss. More than 5% of users cannot complete a critical flow. Data loss or breach possible. Page IC + engineering lead + exec on-call immediately.
+- SEV2 - Significant degradation. Core feature broken for a subset, elevated error rate above SLO breach threshold, or a workaround exists but is unacceptable long-term. Page IC + team on-call within 5 minutes.
+- SEV3 - Partial or minor degradation. Non-critical feature affected, SLO still within budget, no customer escalations yet. Ticket created, team notified async, fix before next business day.
+- SEV4 - Cosmetic or edge case. No user impact, caught proactively. Ticket only.
 
 ## Signal Checklist
 
@@ -39,21 +39,21 @@ Answer these to land on a SEV. First 'yes' that matches wins.
 
 ## Worked example: making the call
 
-Bad: "Checkout seems broken for some users. Feels like a SEV3 — I'll dig into the cause first and page someone if it turns out to be serious."
+Bad: "Checkout seems broken for some users. Feels like a SEV3 - I'll dig into the cause first and page someone if it turns out to be serious."
 
-Good: "Checkout error rate at 12% for the last 15 minutes (SLO threshold: 1%). Payment flow broken -> signal 1 -> SEV1. Paged IC, service owner, and on-call SRE at 14:32; war room open. Blast radius estimate: ~12% of checkout attempts, growth unclear. Cause unknown — irrelevant to the SEV. Re-triage at 15:00."
+Good: "Checkout error rate at 12% for the last 15 minutes (SLO threshold: 1%). Payment flow broken -> signal 1 -> SEV1. Paged IC, service owner, and on-call SRE at 14:32; war room open. Blast radius estimate: ~12% of checkout attempts, growth unclear. Cause unknown - irrelevant to the SEV. Re-triage at 15:00."
 
-The bad version inverts the order (cause before severity), hedges on a broken payment flow, and delays paging. The good version cites the signal that set the level, pages immediately, records blast radius, and schedules the re-triage — all before anyone knows why it broke.
+The bad version inverts the order (cause before severity), hedges on a broken payment flow, and delays paging. The good version cites the signal that set the level, pages immediately, records blast radius, and schedules the re-triage - all before anyone knows why it broke.
 
 ## Deliverable
 
-Produce a triage record — posted to the incident channel or ticket — containing: the assigned SEV, a one-line justification naming the checklist signal that set it, the blast radius estimate (percentage of users or requests), who was paged and when, and the scheduled re-triage time. The record is what lets the next responder trust the level instead of re-deriving it.
+Produce a triage record - posted to the incident channel or ticket - containing: the assigned SEV, a one-line justification naming the checklist signal that set it, the blast radius estimate (percentage of users or requests), who was paged and when, and the scheduled re-triage time. The record is what lets the next responder trust the level instead of re-deriving it.
 
 ## Quality bar
 
 - The SEV was assigned from impact signals before any root-cause investigation began.
 - The justification names a specific checklist signal, not a gut feel.
-- Paging happened on assignment, not after confirmation — a potential SEV1 pages on one data point.
+- Paging happened on assignment, not after confirmation - a potential SEV1 pages on one data point.
 - A re-triage time is set (every 30 minutes) and the level moves with the evidence, both up and down.
 
 ## Do / Don't

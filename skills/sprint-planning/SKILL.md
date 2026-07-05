@@ -1,6 +1,6 @@
 ---
 name: Sprint Planning
-description: Facilitates sprint planning end to end — backlog refinement checks against a Definition of Ready, a one-sentence sprint goal, capacity math from velocity and PTO, story selection and team commitment, task breakdown, and flagged risks with owners. Use when a team asks "plan our next sprint", "how much should we commit to", "write a sprint goal", or keeps blowing sprint forecasts. Do NOT use for running the retrospective after the sprint ends — use sprint-retro-facilitator instead.
+description: Facilitates sprint planning end to end - backlog refinement checks against a Definition of Ready, a one-sentence sprint goal, capacity math from velocity and PTO, story selection and team commitment, task breakdown, and flagged risks with owners. Use when a team asks "plan our next sprint", "how much should we commit to", "write a sprint goal", or keeps blowing sprint forecasts. Do NOT use for running the retrospective after the sprint ends - use sprint-retro-facilitator instead.
 ---
 
 # Sprint Planning
@@ -21,14 +21,14 @@ Going into planning with an unrefined backlog is the #1 cause of bad sprints.
 
 ## Step 1: Set the sprint goal
 
-Start with a single **sprint goal** — a one-sentence objective the sprint serves
+Start with a single **sprint goal** - a one-sentence objective the sprint serves
 (e.g. "Users can reset their password end to end"). The goal:
 - Gives coherence and a reason to say no to scope creep.
 - Lets the team make trade-offs mid-sprint without re-planning.
 
 ## Step 2: Determine capacity
 
-Don't plan to 100% — plan to realistic capacity:
+Don't plan to 100% - plan to realistic capacity:
 
 ```
 For each member:
@@ -45,7 +45,7 @@ anchor for how much to pull in. Adjust for capacity changes this sprint.
 
 - Pull stories from the top of the refined backlog until you reach capacity/velocity.
 - For each, the team confirms it understands the work and acceptance criteria.
-- The team **commits** to a forecast it believes is achievable — commitment is the team's,
+- The team **commits** to a forecast it believes is achievable - commitment is the team's,
   not imposed. Leave a small buffer for the unexpected.
 
 ## Step 4: Break down into tasks
@@ -57,7 +57,7 @@ For committed stories, decompose into tasks (the "how"):
 ## Step 5: Flag risks and dependencies
 
 Explicitly call out:
-- **Dependencies** on other teams / external inputs — and their status.
+- **Dependencies** on other teams / external inputs - and their status.
 - **Unknowns** that could blow up estimates.
 - **Single points of failure** (only one person can do X).
 
@@ -75,7 +75,7 @@ discovered on day 8 are fire drills.
 
 ## Anti-patterns
 
-- Planning to maximum capacity with no buffer — one surprise sinks the sprint.
-- Committing to unrefined stories — they expand and derail the plan.
-- A manager dictating scope — kills ownership and accuracy.
-- No sprint goal — the sprint becomes a disconnected task list with no way to prioritize.
+- Planning to maximum capacity with no buffer - one surprise sinks the sprint.
+- Committing to unrefined stories - they expand and derail the plan.
+- A manager dictating scope - kills ownership and accuracy.
+- No sprint goal - the sprint becomes a disconnected task list with no way to prioritize.

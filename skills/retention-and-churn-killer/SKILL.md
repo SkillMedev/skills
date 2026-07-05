@@ -1,6 +1,6 @@
 ---
 name: retention-and-churn-killer
-description: Build a gym member-retention system — a first-100-days onboarding sprint, results-tracking cadence, attendance-based churn-save triggers, win-back sequences, and a churn-impact calculator. Use when a gym owner says members are quitting, retention is weak, onboarding is ad hoc, a member wants to cancel, or they want to win back cancelled members ("reduce churn", "first 100 days", "save a member", "win back"). Do NOT use for general SaaS or subscription churn analysis — use churn-reduction instead; do NOT model CAC/LTV economics here — use gym-money-model.
+description: Build a gym member-retention system - a first-100-days onboarding sprint, results-tracking cadence, attendance-based churn-save triggers, win-back sequences, and a churn-impact calculator. Use when a gym owner says members are quitting, retention is weak, onboarding is ad hoc, a member wants to cancel, or they want to win back cancelled members ("reduce churn", "first 100 days", "save a member", "win back"). Do NOT use for general SaaS or subscription churn analysis - use churn-reduction instead; do NOT model CAC/LTV economics here - use gym-money-model.
 ---
 
 # Retention and Churn Killer
@@ -18,9 +18,9 @@ Early usage predicts tenure: the more a member trains in their first month, the 
 1. Day 0: send a welcome message, book the first session, send the plan.
 2. First session: run a baseline scan, confirm the goal, deliver one guaranteed early win. The member should leave proud they came.
 3. Week 1: get three sessions booked and attended, introduce them to the group, surface one measurable result. Frequency builds the habit.
-4. Day 7, 14, 30 check-ins: a short, specific coach conversation about progress and obstacles — never a vague "how's it going."
+4. Day 7, 14, 30 check-ins: a short, specific coach conversation about progress and obstacles - never a vague "how's it going."
 5. Day 30: review a visible, measured result. This converts a trial mindset into a member mindset.
-6. Day 60–100: re-scan, celebrate the trend, set the next goal so the member always has a reason to keep going.
+6. Day 60-100: re-scan, celebrate the trend, set the next goal so the member always has a reason to keep going.
 
 ### Step 2: Track and show results
 
@@ -34,7 +34,7 @@ Members churn when they stop feeling the outcome they bought.
 
 Most members signal before they quit. Build the triggers below and the save play in save-and-winback-scripts.
 
-1. Attendance trigger: no visit in 7–10 days fires a save outreach. Earlier is better — a member who has drifted two weeks is half gone.
+1. Attendance trigger: no visit in 7-10 days fires a save outreach. Earlier is better - a member who has drifted two weeks is half gone.
 2. Run the save conversation warm and curious, not desperate: find what changed, remove the obstacle, rebook the next session on the spot. Usually it is a schedule change or life event, not the gym.
 3. For the other leading signals (missed check-ins, stalled results, life events, payment failures), apply the matching intervention in churn-signals below.
 
@@ -54,13 +54,13 @@ Run churn_model.js to show what a small churn improvement is worth in retained m
 
 - Every onboarding and check-in milestone has a named owner and a date, not just an intention.
 - A churn save fires from an objective trigger (days since last visit), not a coach's gut feeling.
-- Every retention claim made to the owner is backed by the calculator's numbers using their real member count, churn rate, and dues — not generic percentages.
+- Every retention claim made to the owner is backed by the calculator's numbers using their real member count, churn rate, and dues - not generic percentages.
 
 ## Do NOT
 
-- Do NOT lead retention with discounts or freezes before fixing onboarding and results delivery — price cuts retain the wrong members and erode margin.
+- Do NOT lead retention with discounts or freezes before fixing onboarding and results delivery - price cuts retain the wrong members and erode margin.
 - Do NOT wait for a cancellation request to act; by then the member has usually already decided. Act on the attendance trigger.
-- Do NOT run a desperate or guilt-based save conversation — it confirms the member's instinct to leave.
+- Do NOT run a desperate or guilt-based save conversation - it confirms the member's instinct to leave.
 - Do NOT model CAC, LTV-to-CAC, or whether growth pays for itself here; that is gym-money-model's job.
 - Do NOT apply this to non-gym subscription or SaaS churn; use churn-reduction.
 
@@ -114,7 +114,7 @@ Annual revenue kept:    $5,724
 LTV per member:         $2,650 -> $3,975
 ```
 
-Read it: dropping monthly churn from 6 to 4 percent stretches average tenure from 17 to 25 months. On 150 members that keeps 3 members and $477 every month — about $5,700 a year — and raises each member's lifetime value by over $1,300. That return usually beats spending the same effort on more ads, which is why retention is a growth lever, not just a defense.
+Read it: dropping monthly churn from 6 to 4 percent stretches average tenure from 17 to 25 months. On 150 members that keeps 3 members and $477 every month - about $5,700 a year - and raises each member's lifetime value by over $1,300. That return usually beats spending the same effort on more ads, which is why retention is a growth lever, not just a defense.
 
 ## Template: onboarding-runbook
 
@@ -159,10 +159,10 @@ WIN-BACK (already cancelled)
 
 Leading indicators and the intervention for each:
 
-- Attendance drop. The clearest signal: no visit in 7–10 days. Intervention: a warm save outreach and a fast rebook.
+- Attendance drop. The clearest signal: no visit in 7-10 days. Intervention: a warm save outreach and a fast rebook.
 - Missed check-ins or ghosted messages. Intervention: switch channel (call instead of text) and ask directly, "what changed?"
 - Stalled results. A member not seeing progress will quit. Intervention: a coach resets the plan and finds a fresh win.
-- Life events (new job, baby, injury, move). Intervention: offer flexibility — a hold option instead of a cancel, or a modified plan. Often saves a member who would otherwise quit outright.
+- Life events (new job, baby, injury, move). Intervention: offer flexibility - a hold option instead of a cancel, or a modified plan. Often saves a member who would otherwise quit outright.
 - Payment failures. Intervention: a prompt, friendly fix before it becomes a silent cancel.
 
 The save conversation is curious, not desperate: find what changed, remove the obstacle, book the next session. Most "I want to quit" conversations are really "something got in the way," and the gym can fix the something.

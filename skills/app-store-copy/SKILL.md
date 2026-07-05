@@ -1,6 +1,6 @@
 ---
 name: App Store Copy
-description: Writes App Store and Play Store listing copy to platform-specific rules — iOS name, subtitle, and hidden keyword field; Android title, short description, and keyword-woven full description — delivering every field with character counts, a ranked keyword list, and title options to A/B test. Use when someone asks "write our app store description", "optimize our ASO keywords", "why isn't our app ranking in the App Store", or is preparing a listing for launch. Do NOT use for optimizing Amazon product listings — use amazon-listing-optimizer instead; for release notes and submission prep, use app-store-release-prep.
+description: Writes App Store and Play Store listing copy to platform-specific rules - iOS name, subtitle, and hidden keyword field; Android title, short description, and keyword-woven full description - delivering every field with character counts, a ranked keyword list, and title options to A/B test. Use when someone asks "write our app store description", "optimize our ASO keywords", "why isn't our app ranking in the App Store", or is preparing a listing for launch. Do NOT use for optimizing Amazon product listings - use amazon-listing-optimizer instead; for release notes and submission prep, use app-store-release-prep.
 ---
 
 # App Store Copy
@@ -25,13 +25,13 @@ You write store listing copy that ranks in App Store / Play Store search AND con
 
 - **Title** (30 chars): brand + keyword. Indexed and heavily weighted.
 - **Short description** (80 chars): indexed, shown prominently. Hook + keyword.
-- **Full description** (4000 chars): indexed for Play search — keyword placement matters here (unlike iOS). Use keywords naturally a handful of times.
+- **Full description** (4000 chars): indexed for Play search - keyword placement matters here (unlike iOS). Use keywords naturally a handful of times.
 
 ## Description structure (both platforms)
 
-1. **First 1-2 lines**: the hook — most users only see these before "more." Lead with the core benefit, not a feature list.
+1. **First 1-2 lines**: the hook - most users only see these before "more." Lead with the core benefit, not a feature list.
 2. **Social proof** (if any): awards, downloads, ratings, notable press.
-3. **Feature/benefit bullets**: lead each with the benefit, name the feature second. "Never lose a thought — capture notes offline and sync everywhere."
+3. **Feature/benefit bullets**: lead each with the benefit, name the feature second. "Never lose a thought - capture notes offline and sync everywhere."
 4. **Use cases**: who it's for and when they'd reach for it.
 5. **Close**: a download nudge and any free-tier/trial mention.
 
@@ -41,7 +41,7 @@ You write store listing copy that ranks in App Store / Play Store search AND con
 - Prioritize relevance + reasonable volume + achievable difficulty.
 - iOS: don't waste the 100-char field on words already in name/subtitle (they're indexed once).
 - Android: weave keywords into the full description naturally; avoid stuffing (it's penalized and reads badly).
-- Single words combine — iOS builds phrases from your keyword set, so include the components.
+- Single words combine - iOS builds phrases from your keyword set, so include the components.
 
 ## Conversion rules
 

@@ -1,6 +1,6 @@
 ---
 name: SaaS Pricing Model
-description: Designs a SaaS pricing model — the value metric, three-tier packaging with feature gates, list prices, annual discount, and a built-in expansion path targeting net revenue retention — delivered as a pricing page spec. Use when a founder asks "how should we price our SaaS", "per seat or usage-based", "what features go in each tier", or is building or overhauling a pricing page. Do NOT use for pricing strategy outside SaaS packaging — use pricing-strategy instead; for the upsell motion after pricing exists, use expansion-revenue.
+description: Designs a SaaS pricing model - the value metric, three-tier packaging with feature gates, list prices, annual discount, and a built-in expansion path targeting net revenue retention - delivered as a pricing page spec. Use when a founder asks "how should we price our SaaS", "per seat or usage-based", "what features go in each tier", or is building or overhauling a pricing page. Do NOT use for pricing strategy outside SaaS packaging - use pricing-strategy instead; for the upsell motion after pricing exists, use expansion-revenue.
 ---
 
 # SaaS Pricing Model
@@ -11,7 +11,7 @@ designs pricing that aligns what you charge with the value you create.
 
 ## Step 1: Choose the Value Metric
 
-The value metric is the unit you charge by — seats, events, GB, transactions.
+The value metric is the unit you charge by - seats, events, GB, transactions.
 A good value metric:
 
 - Scales with the value the customer receives.
@@ -24,7 +24,7 @@ hurts predictability. Hybrid (platform fee + usage) is increasingly standard.
 ## Step 2: Package into Tiers
 
 Use three tiers as the default. The middle tier should be the one you want most
-customers to choose — anchor it with a deliberately under-featured low tier and
+customers to choose - anchor it with a deliberately under-featured low tier and
 a premium high tier.
 
 - **Good**: removes friction for the self-serve buyer; gates the features that
@@ -56,7 +56,7 @@ expansion in from the start:
 ## Validation
 
 - Run the "too cheap / too expensive" Van Westendorp survey on real prospects.
-- Check that fewer than ~20% of deals close without a single objection — if
+- Check that fewer than ~20% of deals close without a single objection - if
   nobody balks, you are underpriced.
 - Test price increases on new logos first; never surprise existing customers.
 
@@ -64,7 +64,7 @@ expansion in from the start:
 
 - Charging by a metric the customer wants to minimize (e.g. per-API-call when
   they want fewer calls).
-- Too many tiers — analysis paralysis kills conversion.
+- Too many tiers - analysis paralysis kills conversion.
 - Grandfathering forever; build price-increase rights into contracts.
 
 ## Deliverable

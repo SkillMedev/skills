@@ -1,6 +1,6 @@
 ---
 name: Contract Test Writer
-description: Writes consumer-driven contract tests at service and API boundaries — Pact consumer tests, provider verification, broker publishing, and can-i-deploy gates — so an incompatible change fails a build instead of breaking integrations in production. Use when someone asks "how do I stop the backend breaking my client", "set up Pact between these services", "a renamed field broke a consumer that unit tests passed", or two separately deployed services must stay in sync. Do NOT use for designing a new API contract from scratch or reviewing its design — use api-design instead; do NOT use for end-to-end user-journey tests — use e2e-scenario-author instead; do NOT use for calls inside a single deployable — write a unit test.
+description: Writes consumer-driven contract tests at service and API boundaries - Pact consumer tests, provider verification, broker publishing, and can-i-deploy gates - so an incompatible change fails a build instead of breaking integrations in production. Use when someone asks "how do I stop the backend breaking my client", "set up Pact between these services", "a renamed field broke a consumer that unit tests passed", or two separately deployed services must stay in sync. Do NOT use for designing a new API contract from scratch or reviewing its design - use api-design instead; do NOT use for end-to-end user-journey tests - use e2e-scenario-author instead; do NOT use for calls inside a single deployable - write a unit test.
 ---
 
 # Contract Test Writer
@@ -13,8 +13,8 @@ The consumer-driven order is the point: the consumer declares what it needs firs
 
 ### Step 1: Gather inputs
 
-1. The boundary: consumer name, provider name, and the calls in play. Confirm it is a real network boundary you do not control end-to-end (cross-service call, client-to-API). For an internal function call inside one deployable, stop — write a unit test instead.
-2. The fields the consumer actually reads from each response — from the consumer's code, not the provider's docs.
+1. The boundary: consumer name, provider name, and the calls in play. Confirm it is a real network boundary you do not control end-to-end (cross-service call, client-to-API). For an internal function call inside one deployable, stop - write a unit test instead.
+2. The fields the consumer actually reads from each response - from the consumer's code, not the provider's docs.
 3. Broker availability: Pact Broker or PactFlow URL and write credentials (default: recommend standing one up; pacts committed to a repo go stale silently).
 4. The environments where consumer versions run (prod, staging), for can-i-deploy.
 
@@ -22,13 +22,13 @@ Label as a guess any field list not confirmed against consumer source.
 
 ### Step 2: Write the consumer test against a mock provider
 
-Declare only the request shape and the exact response fields the consumer reads — never the provider's full schema. Over-specifying makes the provider brittle to harmless additions. The consumer-driven rule: a field enters the contract only when a consumer consumes it.
+Declare only the request shape and the exact response fields the consumer reads - never the provider's full schema. Over-specifying makes the provider brittle to harmless additions. The consumer-driven rule: a field enters the contract only when a consumer consumes it.
 
 ### Step 3: Match on type and shape, not literal values
 
-Use matchers: `like()` for scalars, `eachLike()` for arrays, `term()`/regex for patterns. Pin a literal only when it is semantically part of the contract — an enum member, a specific status code.
+Use matchers: `like()` for scalars, `eachLike()` for arrays, `term()`/regex for patterns. Pin a literal only when it is semantically part of the contract - an enum member, a specific status code.
 
-Bad — pinned fixture values plus fields the consumer never reads; harmless data changes now break the build:
+Bad - pinned fixture values plus fields the consumer never reads; harmless data changes now break the build:
 
 ```javascript
 .willRespondWith({
@@ -40,7 +40,7 @@ Bad — pinned fixture values plus fields the consumer never reads; harmless dat
 })
 ```
 
-Good — matchers for shape, literals only where meaning lives, only consumed fields:
+Good - matchers for shape, literals only where meaning lives, only consumed fields:
 
 ```javascript
 .willRespondWith({
@@ -67,7 +67,7 @@ In the provider's own test suite, replay the pact against the real provider: sta
 
 ### Step 7: Gate deploys with can-i-deploy
 
-Run can-i-deploy against the consumer versions actually running in each target environment — not just the latest pact on main. Older consumer versions still deployed are still contracts in force; a provider change compatible with main but not with the version running in prod is still a production break.
+Run can-i-deploy against the consumer versions actually running in each target environment - not just the latest pact on main. Older consumer versions still deployed are still contracts in force; a provider change compatible with main but not with the version running in prod is still a production break.
 
 ## Deliverable
 
@@ -75,16 +75,16 @@ Produce: (A) consumer tests emitting a pact whose every field is traceable to a 
 
 ## Do NOT
 
-- Do not assert exact field values that are not part of the contract — it produces false breaks on harmless data changes, and false breaks teach teams to ignore the gate.
-- Do not include unread response fields just because the provider returns them — every extra field is a freedom the provider loses for nothing.
-- Do not verify business correctness, performance, or auth flows here — keep logic in unit tests and critical journeys in a thin E2E layer; a contract test asserts shape compatibility only.
-- Do not write contract tests for calls inside a single deployable — the compiler and unit tests already cover that boundary.
+- Do not assert exact field values that are not part of the contract - it produces false breaks on harmless data changes, and false breaks teach teams to ignore the gate.
+- Do not include unread response fields just because the provider returns them - every extra field is a freedom the provider loses for nothing.
+- Do not verify business correctness, performance, or auth flows here - keep logic in unit tests and critical journeys in a thin E2E layer; a contract test asserts shape compatibility only.
+- Do not write contract tests for calls inside a single deployable - the compiler and unit tests already cover that boundary.
 - Do not gate deploys against only the latest pact when older consumer versions are still running in an environment.
-- Do not let the provider team write the "consumer" test from their own schema — that inverts consumer-driven and re-creates the original blindness.
+- Do not let the provider team write the "consumer" test from their own schema - that inverts consumer-driven and re-creates the original blindness.
 
 ## Quality bar
 
-- The contract contains only fields the consumer consumes — nothing the provider happens to return.
+- The contract contains only fields the consumer consumes - nothing the provider happens to return.
 - Matchers everywhere except deliberately pinned enums and status codes; zero coupling to fixture values.
 - Provider verification runs in the provider's pipeline and a deliberately renamed field demonstrably fails it.
 - Provider states are coarse and shared; can-i-deploy checks every deployed consumer version, not just main.

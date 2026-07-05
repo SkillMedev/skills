@@ -9,7 +9,7 @@ Raw CSAT scores tell you that something is wrong. Verbatim comments tell you wha
 
 ## Data preparation
 
-Before analyzing, filter the dataset: remove blank verbatims, remove comments that mention only a specific agent by name (these are agent-performance signals, not product/process signals), and separate detractor verbatims (score 0-6 on NPS, 1-3 on CSAT) from promoter verbatims. Analyze detractors first — they drive churn.
+Before analyzing, filter the dataset: remove blank verbatims, remove comments that mention only a specific agent by name (these are agent-performance signals, not product/process signals), and separate detractor verbatims (score 0-6 on NPS, 1-3 on CSAT) from promoter verbatims. Analyze detractors first - they drive churn.
 
 ## Coding scheme
 
@@ -21,7 +21,7 @@ After coding, calculate two numbers for each theme: frequency (what percentage o
 
 ## Presenting findings
 
-Report findings as: the top three to five themes by priority, with verbatim examples for each, a proposed fix or owner for each theme, and a success metric (what does a fixed version look like in the data). Avoid reporting a theme without a proposed action — analysis without a recommendation is noise.
+Report findings as: the top three to five themes by priority, with verbatim examples for each, a proposed fix or owner for each theme, and a success metric (what does a fixed version look like in the data). Avoid reporting a theme without a proposed action - analysis without a recommendation is noise.
 
 ## Thresholds that signal urgency
 
@@ -33,15 +33,15 @@ Produce a root-cause report containing: the coded verbatim dataset (every commen
 
 ## What to avoid
 
-- Do not present word clouds — they conflate frequency with font size and obscure causality.
+- Do not present word clouds - they conflate frequency with font size and obscure causality.
 - Do not conflate correlation with causation; a theme appearing alongside low scores does not prove it caused the low score without further validation.
 - Do not analyze fewer than 30 verbatims; sample size below that produces unreliable theme distributions.
-- Do not pool detractor and promoter comments into one analysis — the same theme (e.g. pricing) means different things in each population.
+- Do not pool detractor and promoter comments into one analysis - the same theme (e.g. pricing) means different things in each population.
 - Do not report a theme supported by fewer than 5 verbatims as a trend; call it an edge case and monitor it.
 
 ## Quality bar
 
-- Every theme is scored on both frequency and impact — never prioritized on mention count alone.
+- Every theme is scored on both frequency and impact - never prioritized on mention count alone.
 - Each reported theme carries a proposed action, an owner, and a success metric, not just a description.
 - Detractors and promoters are analyzed separately, and the escalation thresholds (15% of detractors in 30 days, theme CSAT below 2.5/5) are checked explicitly.
 - Verbatim examples are quoted, not paraphrased, so the reader can audit the coding.

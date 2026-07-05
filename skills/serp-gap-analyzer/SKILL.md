@@ -1,11 +1,11 @@
 ---
 name: SERP Gap Analyzer
-description: Compares a draft or outline against the pages already ranking for its target query and outputs the missing subtopics, entities, and questions as a prioritized gap table — each gap classified must-have, differentiator, or skip. Use when someone asks "compare my draft against the top ranking pages", "what is my draft missing compared to the pages that rank", "run a content gap analysis on my draft", or has a target query plus 3-5 ranking URLs and wants to close coverage gaps before publishing. Do NOT use for a page that already ranks and is decaying over time — use content-refresh-auditor. Do NOT use for rewriting sections into citable answer blocks for AI engines or featured snippets — use aeo-answer-blockifier. Do NOT use for grouping a keyword list into page-level topics — use keyword-cluster-builder.
+description: Compares a draft or outline against the pages already ranking for its target query and outputs the missing subtopics, entities, and questions as a prioritized gap table - each gap classified must-have, differentiator, or skip. Use when someone asks "compare my draft against the top ranking pages", "what is my draft missing compared to the pages that rank", "run a content gap analysis on my draft", or has a target query plus 3-5 ranking URLs and wants to close coverage gaps before publishing. Do NOT use for a page that already ranks and is decaying over time - use content-refresh-auditor. Do NOT use for rewriting sections into citable answer blocks for AI engines or featured snippets - use aeo-answer-blockifier. Do NOT use for grouping a keyword list into page-level topics - use keyword-cluster-builder.
 ---
 
 # SERP Gap Analyzer
 
-Compare a draft against the pages that already rank for its target query and report which subtopics, entities, and questions it omits — ranked by whether closing each gap is worth it. The costly mistake this prevents is publishing a page that reads well but silently skips the coverage the query demands, then wondering why it stalls on page two: the ranking pages collectively define what "complete" means for this query, and a draft that ignores that consensus competes blind.
+Compare a draft against the pages that already rank for its target query and report which subtopics, entities, and questions it omits - ranked by whether closing each gap is worth it. The costly mistake this prevents is publishing a page that reads well but silently skips the coverage the query demands, then wondering why it stalls on page two: the ranking pages collectively define what "complete" means for this query, and a draft that ignores that consensus competes blind.
 
 ## Operating procedure
 
@@ -13,7 +13,7 @@ Order matters: the coverage map (step 2) feeds entity and question extraction, a
 
 ### Step 1: gather inputs
 
-Collect before analyzing. If the ranking URLs are not supplied, ask for them — never invent rankings or competitor content.
+Collect before analyzing. If the ranking URLs are not supplied, ask for them - never invent rankings or competitor content.
 
 - The target query (one query; a second query means a second analysis).
 - The draft or its outline. An outline is acceptable; depth assessment (step 5) will be presence-only.
@@ -26,23 +26,23 @@ Pull the H2/H3 outline from each ranking URL. Aggregate into one master subtopic
 
 ### Step 3: extract entities and salient terms
 
-List the named entities competitors reference — tools, standards, people, brands, specs, related concepts. Flag entities present across multiple competitors but absent from the draft. Topical depth comes from the right co-occurring entities, not keyword density.
+List the named entities competitors reference - tools, standards, people, brands, specs, related concepts. Flag entities present across multiple competitors but absent from the draft. Topical depth comes from the right co-occurring entities, not keyword density.
 
 ### Step 4: mine the questions
 
-Collect People Also Ask entries, FAQ blocks, and question-form subheads across the ranking pages. Each is a query the draft could also satisfy. Flag questions no competitor answers well — those are the strongest additions, because they win coverage no ranking page currently owns.
+Collect People Also Ask entries, FAQ blocks, and question-form subheads across the ranking pages. Each is a query the draft could also satisfy. Flag questions no competitor answers well - those are the strongest additions, because they win coverage no ranking page currently owns.
 
 ### Step 5: assess depth, not just presence
 
-For subtopics the draft already touches, compare treatment depth against competitors. Rule of thumb: if the median competitor gives a subtopic several hundred words or a dedicated section and the draft gives it a sentence, that is a depth gap even though the topic "appears". Note format gaps too — comparison tables, step lists, or original data competitors use and the draft lacks.
+For subtopics the draft already touches, compare treatment depth against competitors. Rule of thumb: if the median competitor gives a subtopic several hundred words or a dedicated section and the draft gives it a sentence, that is a depth gap even though the topic "appears". Note format gaps too - comparison tables, step lists, or original data competitors use and the draft lacks.
 
 ### Step 6: classify every gap and prioritize
 
 Label each gap exactly one of:
 
-- **must-have** — majority consensus AND on-intent. Not closing it caps the page.
-- **differentiator** — covered by one or zero competitors but adds unique, on-intent value (especially unanswered questions from step 4).
-- **skip** — off-intent, tangent, or affiliate filler, regardless of who covers it.
+- **must-have** - majority consensus AND on-intent. Not closing it caps the page.
+- **differentiator** - covered by one or zero competitors but adds unique, on-intent value (especially unanswered questions from step 4).
+- **skip** - off-intent, tangent, or affiliate filler, regardless of who covers it.
 
 Order the output: must-haves first (presence gaps before depth gaps), then the two or three highest-value differentiators. Everything else is explicitly skipped with a reason.
 
@@ -75,12 +75,12 @@ Filled example rows for the query "cold brew ratio":
 
 ## Deliverable
 
-Produce the filled gap table plus an ordered action list ("add X, deepen Y, answer Z") where every action names the gap, its class, its competitor source, and the concrete change — not a description of competitor pages.
+Produce the filled gap table plus an ordered action list ("add X, deepen Y, answer Z") where every action names the gap, its class, its competitor source, and the concrete change - not a description of competitor pages.
 
 ## Do NOT
 
 - Do not duplicate competitor structure verbatim; matching every heading produces a derivative page that adds nothing and gives the engine no reason to prefer it.
-- Do not pad to hit a word count — length is a symptom of coverage, not a goal.
+- Do not pad to hit a word count - length is a symptom of coverage, not a goal.
 - Do not recommend closing gaps that serve a different intent than the target query; an off-intent section dilutes relevance even when a competitor has it.
 - Do not analyze from memory. Every gap must cite a specific supplied URL; if the URLs were not provided, stop and ask.
 - Do not treat a one-competitor topic as table stakes; consensus is a count, not a feeling.

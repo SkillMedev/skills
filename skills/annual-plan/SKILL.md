@@ -1,6 +1,6 @@
 ---
 name: Annual Planning
-description: Runs an annual planning cycle end to end — strategic reflection, 3-5 company priorities with explicit not-doing decisions, cascaded OKRs reconciled between top-down framing and bottom-up team plans, resource allocation with named trade-offs, a quarterly review cadence, and the CEO narrative memo. Use when a leader asks "run our annual planning", "set next year's company priorities", "our planning is just a budget exercise", or needs to turn a leadership offsite into a committed plan. Do NOT use for writing a single team's quarterly OKRs — use okr-builder instead; for a product-specific roadmap, use product-roadmap.
+description: Runs an annual planning cycle end to end - strategic reflection, 3-5 company priorities with explicit not-doing decisions, cascaded OKRs reconciled between top-down framing and bottom-up team plans, resource allocation with named trade-offs, a quarterly review cadence, and the CEO narrative memo. Use when a leader asks "run our annual planning", "set next year's company priorities", "our planning is just a budget exercise", or needs to turn a leadership offsite into a committed plan. Do NOT use for writing a single team's quarterly OKRs - use okr-builder instead; for a product-specific roadmap, use product-roadmap.
 ---
 
 # Annual Planning
@@ -35,12 +35,12 @@ A typical 6-8 week cycle:
    until it is realistic.
 5. **Finalize and communicate**: lock OKRs, budget, and the CEO memo.
 
-The bottom-up step matters — plans imposed top-down get compliance, not
+The bottom-up step matters - plans imposed top-down get compliance, not
 commitment.
 
 ## Setting OKRs
 
-- **Objectives**: qualitative, ambitious, memorable — what we want to achieve.
+- **Objectives**: qualitative, ambitious, memorable - what we want to achieve.
 - **Key Results**: measurable outcomes that prove the objective, not a task
   list. "Ship feature X" is a task; "Increase activation to 40%" is a KR.
 - Limit to 3-5 objectives at the company level; more means no focus.
@@ -52,7 +52,7 @@ commitment.
 - Allocate people and budget to the priorities deliberately; if everything is
   funded, nothing is prioritized.
 - Run the trade-offs explicitly: to fund priority A, what gets cut or delayed?
-- Leave slack — a fully-committed plan has no room for the year's surprises.
+- Leave slack - a fully-committed plan has no room for the year's surprises.
 
 ## The CEO Memo
 
@@ -69,7 +69,7 @@ the reference all year.
 ## Keeping It Alive
 
 - Review OKRs quarterly; grade them honestly and re-plan as reality shifts.
-- Make priorities visible — the plan should be referenced in everyday
+- Make priorities visible - the plan should be referenced in everyday
   decisions, not filed away.
 
 ## Anti-Patterns

@@ -1,19 +1,19 @@
 ---
 name: Rubric Builder
-description: Builds grading rubrics — analytic, holistic, or single-point — with criteria traced to learning objectives, 3-5 performance levels, observable behavior in every cell, and defensible weighting. Use when someone asks "make a rubric for this essay", "how should I grade this project", "turn these objectives into scoring criteria", or "my rubric feels vague, fix it". Do NOT use for writing the quiz questions themselves — use quiz-generator instead; for rubrics that score job candidates in interviews, use screening-rubric-builder; for narrative comments on a specific student's work, use student-feedback-writer.
+description: Builds grading rubrics - analytic, holistic, or single-point - with criteria traced to learning objectives, 3-5 performance levels, observable behavior in every cell, and defensible weighting. Use when someone asks "make a rubric for this essay", "how should I grade this project", "turn these objectives into scoring criteria", or "my rubric feels vague, fix it". Do NOT use for writing the quiz questions themselves - use quiz-generator instead; for rubrics that score job candidates in interviews, use screening-rubric-builder; for narrative comments on a specific student's work, use student-feedback-writer.
 ---
 
 # Rubric Builder
 
-A rubric does two jobs: it tells students exactly what mastery looks like before they begin, and it gives teachers a consistent, defensible standard when scoring. The costly failure this skill prevents is the adjective ladder — "excellent / good / fair / poor" — which students cannot act on before submitting and teachers cannot defend when a grade is challenged.
+A rubric does two jobs: it tells students exactly what mastery looks like before they begin, and it gives teachers a consistent, defensible standard when scoring. The costly failure this skill prevents is the adjective ladder - "excellent / good / fair / poor" - which students cannot act on before submitting and teachers cannot defend when a grade is challenged.
 
 ## Operating procedure
 
 ### Step 1: Gather inputs
 
-1. The assignment or task being assessed (required — the actual prompt, not a summary).
+1. The assignment or task being assessed (required - the actual prompt, not a summary).
 2. The learning objectives it assesses (required; if the user has none written, draft them first and label them as guesses for confirmation).
-3. Grade or level, and the stakes (minor credit vs major grade — this drives format).
+3. Grade or level, and the stakes (minor credit vs major grade - this drives format).
 4. Point total, if the gradebook requires one (default: 100).
 5. Whether a student-facing version is needed (default: offer one).
 
@@ -29,15 +29,15 @@ List the objectives, then derive one criterion per objective or per cluster of t
 
 ### Step 4: Set the performance levels
 
-3-5 levels; four is the standard: Exceeds Expectations, Meets Expectations, Approaching Expectations, Does Not Yet Meet Expectations. Three levels work for simple tasks. Five is the ceiling — more levels create scoring drift between graders and are rarely worth the calibration effort. Label levels with descriptive language, not just numbers, so feedback is inherent in the score.
+3-5 levels; four is the standard: Exceeds Expectations, Meets Expectations, Approaching Expectations, Does Not Yet Meet Expectations. Three levels work for simple tasks. Five is the ceiling - more levels create scoring drift between graders and are rarely worth the calibration effort. Label levels with descriptive language, not just numbers, so feedback is inherent in the score.
 
-### Step 5: Write descriptors — proficient first, observable only
+### Step 5: Write descriptors - proficient first, observable only
 
-Write the Meets Expectations cell first for each criterion, then adjust up and down. Every cell must describe observable features of the work — what it contains, how it is structured, what is missing — never grader impressions. Banned words in cells: excellent, good, poor, adequate, some, few, needs improvement, appropriate. Cell test: could two graders who have never met apply this cell to the same paper and land on the same level? Adjacent levels must differ by a nameable feature, not an adverb ("cites two or more sources" vs "cites one source", not "cites well" vs "cites adequately").
+Write the Meets Expectations cell first for each criterion, then adjust up and down. Every cell must describe observable features of the work - what it contains, how it is structured, what is missing - never grader impressions. Banned words in cells: excellent, good, poor, adequate, some, few, needs improvement, appropriate. Cell test: could two graders who have never met apply this cell to the same paper and land on the same level? Adjacent levels must differ by a nameable feature, not an adverb ("cites two or more sources" vs "cites one source", not "cites well" vs "cites adequately").
 
 ### Step 6: Weight the criteria
 
-Assign points or percentages reflecting each criterion's importance to the objectives — the central skill should carry the most weight (typically 30-40% of total), mechanics rarely more than 10-15%. Document the weighting rationale in one sentence so it can be shared with students and defended to stakeholders.
+Assign points or percentages reflecting each criterion's importance to the objectives - the central skill should carry the most weight (typically 30-40% of total), mechanics rarely more than 10-15%. Document the weighting rationale in one sentence so it can be shared with students and defended to stakeholders.
 
 ### Step 7: Calibrate before use
 
@@ -48,12 +48,12 @@ Score one strong, one middling, and one weak sample (real or imagined) against t
 Copy and replace the [FILL] fields.
 
 ```
-RUBRIC — [FILL: assignment] — [FILL: total points]
+RUBRIC - [FILL: assignment] - [FILL: total points]
 Assesses objectives: [FILL: list]
 Weighting rationale: [FILL: one sentence]
 
 | Criterion (weight)        | Exceeds (pts)          | Meets (pts)            | Approaching (pts)      | Not Yet (pts)          |
-| [FILL: criterion 1] ([FILL]%) | [FILL: observable features beyond proficient] | [FILL: observable features of proficiency — write this cell FIRST] | [FILL: named gap vs Meets] | [FILL: what is absent] |
+| [FILL: criterion 1] ([FILL]%) | [FILL: observable features beyond proficient] | [FILL: observable features of proficiency - write this cell FIRST] | [FILL: named gap vs Meets] | [FILL: what is absent] |
 | [FILL: criterion 2] ([FILL]%) | [FILL]             | [FILL]                 | [FILL]                 | [FILL]                 |
 | [FILL: criterion 3] ([FILL]%) | [FILL]             | [FILL]                 | [FILL]                 | [FILL]                 |
 | TOTAL                     |                        |                        |                        | [FILL] pts             |
@@ -65,7 +65,7 @@ Example of a filled cell pair (essay, criterion "Use of evidence", Meets vs Appr
 
 ## Deliverable
 
-Produce the rubric as a table — rows are criteria, columns are performance levels — with point values per cell, a total-points row, a header naming the assignment and the objectives assessed, and the one-sentence weighting rationale. Offer a student-facing plain-language version.
+Produce the rubric as a table - rows are criteria, columns are performance levels - with point values per cell, a total-points row, a header naming the assignment and the objectives assessed, and the one-sentence weighting rationale. Offer a student-facing plain-language version.
 
 ## Do NOT
 

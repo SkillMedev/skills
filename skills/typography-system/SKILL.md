@@ -1,39 +1,39 @@
 ---
 name: Typography System
-description: Chooses and pairs typefaces and builds a modular type scale — ratio, named roles, line heights, measure limits, and responsive values — as a complete design-system type layer. Use when someone asks "what fonts should we use", "build our type scale", "why does our typography feel inconsistent", or is establishing the typographic voice for a brand or product. Do NOT use for animated or motion typography — use kinetic-typography instead; for page-level emphasis, spacing, and layout decisions, use visual-hierarchy; for assembling the full brand book, use brand-guidelines.
+description: Chooses and pairs typefaces and builds a modular type scale - ratio, named roles, line heights, measure limits, and responsive values - as a complete design-system type layer. Use when someone asks "what fonts should we use", "build our type scale", "why does our typography feel inconsistent", or is establishing the typographic voice for a brand or product. Do NOT use for animated or motion typography - use kinetic-typography instead; for page-level emphasis, spacing, and layout decisions, use visual-hierarchy; for assembling the full brand book, use brand-guidelines.
 ---
 
 # Typography System
 
-Typography carries more of a brand's personality than any other design element because it is always present — and a good type system is invisible when it works, painful when it doesn't. The costly mistake is picking fonts before defining roles: teams end up with three typefaces, forty ad-hoc sizes, and no way to tell a heading from a label. Roles and a scale come first; fonts fill them.
+Typography carries more of a brand's personality than any other design element because it is always present - and a good type system is invisible when it works, painful when it doesn't. The costly mistake is picking fonts before defining roles: teams end up with three typefaces, forty ad-hoc sizes, and no way to tell a heading from a label. Roles and a scale come first; fonts fill them.
 
 ## Operating procedure
 
-Follow the order: roles constrain the font choice, the ratio constrains the scale, and line height and measure are set per style — reversing any of these produces a system that must be rebuilt.
+Follow the order: roles constrain the font choice, the ratio constrains the scale, and line height and measure are set per style - reversing any of these produces a system that must be rebuilt.
 
 ### Step 1: Gather inputs
 
 - Brand adjectives (3-5) and the product type: UI-heavy tool, editorial/content site, or display-heavy marketing. The product type picks the scale ratio later.
-- Target languages and scripts — glyph coverage eliminates typefaces early.
+- Target languages and scripts - glyph coverage eliminates typefaces early.
 - Platforms: web, native app, print. Each changes licensing and delivery constraints.
 - Font budget and any existing fonts under license. Label assumptions as assumptions.
 
 ### Step 2: Define roles before choosing fonts
 
-Roles: Display (hero headlines, campaign type), Heading (page titles, section headers), Body (long-form reading), UI (labels, captions, buttons), Mono (code, data). A brand needs two typefaces at most — one covering Display/Heading, one covering Body/UI. A third is a tax on every future designer. Strong pairings: one serif plus one sans-serif, or a distinctive display face with a neutral workhorse.
+Roles: Display (hero headlines, campaign type), Heading (page titles, section headers), Body (long-form reading), UI (labels, captions, buttons), Mono (code, data). A brand needs two typefaces at most - one covering Display/Heading, one covering Body/UI. A third is a tax on every future designer. Strong pairings: one serif plus one sans-serif, or a distinctive display face with a neutral workhorse.
 
 ### Step 3: Evaluate candidates on functional criteria
 
-Beyond personality, a candidate must pass: weight range of at least Regular, Medium, Bold plus italics; legibility at small sizes (check 12-13px on a real screen); glyph and language coverage for target markets; web and app licensing; acceptable file size for web delivery. Prefer variable fonts for web — fewer requests and fine-grained weight control.
+Beyond personality, a candidate must pass: weight range of at least Regular, Medium, Bold plus italics; legibility at small sizes (check 12-13px on a real screen); glyph and language coverage for target markets; web and app licensing; acceptable file size for web delivery. Prefer variable fonts for web - fewer requests and fine-grained weight control.
 
 ### Step 4: Pick the scale ratio and build the scale
 
 Use a modular scale from a 16px (1rem) base. Pick the ratio by product type:
 
-- 1.2 (Minor Third) — dense, data-heavy UIs where sizes must stay close together.
-- 1.25 (Major Third) — the default for UI-heavy products.
-- 1.333 (Perfect Fourth) — editorial products that need clear hierarchy in long reading.
-- 1.5 (Perfect Fifth) — display-heavy marketing layouts.
+- 1.2 (Minor Third) - dense, data-heavy UIs where sizes must stay close together.
+- 1.25 (Major Third) - the default for UI-heavy products.
+- 1.333 (Perfect Fourth) - editorial products that need clear hierarchy in long reading.
+- 1.5 (Perfect Fifth) - display-heavy marketing layouts.
 
 Name steps by role, never pixel size: body-sm, body-base, heading-md, display-lg. Pixel values change; role names stay stable.
 
@@ -41,7 +41,7 @@ Name steps by role, never pixel size: body-sm, body-base, heading-md, display-lg
 
 These are readability standards, not aesthetics:
 
-- Body: line height 1.4-1.6 (default 1.5); measure 45-75 characters, 60-75 ideal. Enforce measure with a max-width — it is the most neglected spec, and overlong lines destroy comprehension.
+- Body: line height 1.4-1.6 (default 1.5); measure 45-75 characters, 60-75 ideal. Enforce measure with a max-width - it is the most neglected spec, and overlong lines destroy comprehension.
 - Headings: line height 1.1-1.3.
 - UI labels: line height 1.2-1.4; never set type below 12px.
 
@@ -56,7 +56,7 @@ For each role, write one sentence on what it is for and one on what it is not fo
 ## Worked example
 
 ```
-TYPE SCALE — ratio 1.25 (Major Third), base 16px / 1rem
+TYPE SCALE - ratio 1.25 (Major Third), base 16px / 1rem
 Product: UI-heavy SaaS dashboard. Fonts: Inter (all roles), JetBrains Mono (code)
 
 Token        Size   Line-height  Weight  Mobile  Notes
@@ -80,11 +80,11 @@ Produce a type specification containing: the chosen typefaces with the functiona
 
 ## Do NOT
 
-- Do not choose fonts before roles — personality-first selection is how three-typeface systems happen.
+- Do not choose fonts before roles - personality-first selection is how three-typeface systems happen.
 - Do not add a third typeface; every future design decision pays for it.
 - Do not name styles by pixel size; renaming ripples through every component when the scale shifts.
 - Do not skip measure. Line height without a max-width still yields unreadable 120-character lines on wide screens.
-- Do not ship a scale without mobile values for Display and Heading steps — engineers will improvise them.
+- Do not ship a scale without mobile values for Display and Heading steps - engineers will improvise them.
 
 ## Quality bar
 

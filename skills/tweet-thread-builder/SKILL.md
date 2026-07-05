@@ -1,6 +1,6 @@
 ---
 name: Tweet Thread Builder
-description: Turn one idea into a tight tweet thread — a hook that earns the click, one beat per post, and momentum to a single CTA. Use when someone asks "turn this into a thread", "write a thread about my launch", "why did my thread flop", or "give me hook options for this". Do NOT use for LinkedIn-format posts — use linkedin-post-writer instead. Do NOT use for adapting one finished piece across many platforms — use content-repurposing instead.
+description: Turn one idea into a tight tweet thread - a hook that earns the click, one beat per post, and momentum to a single CTA. Use when someone asks "turn this into a thread", "write a thread about my launch", "why did my thread flop", or "give me hook options for this". Do NOT use for LinkedIn-format posts - use linkedin-post-writer instead. Do NOT use for adapting one finished piece across many platforms - use content-repurposing instead.
 ---
 
 # Tweet Thread Builder
@@ -11,17 +11,17 @@ Threads live or die on the first post: 90%+ of potential readers see only the ho
 
 ### Step 1: Gather inputs
 
-1. The single idea or story — one sentence. If the user gives several, pick the one with the most concrete specifics (numbers, names, before/after); park the rest.
+1. The single idea or story - one sentence. If the user gives several, pick the one with the most concrete specifics (numbers, names, before/after); park the rest.
 2. The payoff for the reader: what they know or can do after reading.
-3. Proof material: numbers, screenshots, examples. A thread without at least two concrete specifics is an opinion, not a thread — send the user back for material.
+3. Proof material: numbers, screenshots, examples. A thread without at least two concrete specifics is an opinion, not a thread - send the user back for material.
 4. The one CTA (default: follow; alternatives: a link, or "reply with your version").
 
 Label any number the user estimates as an estimate.
 
-### Step 2: Write the hook (post 1) — and an A/B pair
+### Step 2: Write the hook (post 1) - and an A/B pair
 
 - Promise a specific payoff: a number, a transformation, a contrarian take.
-- No preamble. The first line is the whole pitch. Keep the hook under 200 characters — dense hooks read as work.
+- No preamble. The first line is the whole pitch. Keep the hook under 200 characters - dense hooks read as work.
 - Proven patterns: "I did X for N days. Here's what happened." / "Everyone believes X. They're wrong." / "N lessons from [hard thing]:"
 
 Always draft two hooks with different mechanisms so the user can pick or test:
@@ -34,14 +34,14 @@ Same material, different bet: A sells the mystery of what was removed; B sells t
 ### Step 3: Outline the beats
 
 - One idea per post. If a post has two ideas, split it. If two posts share one idea, merge them.
-- 5-12 posts is the sweet spot. Under 5, make it a single tweet; over 12, cut — every post past 12 sheds readers faster than it adds value.
+- 5-12 posts is the sweet spot. Under 5, make it a single tweet; over 12, cut - every post past 12 sheds readers faster than it adds value.
 - Order the beats so each ends on a small open loop that the next post resolves; momentum is the structure.
 
 ### Step 4: Write the body posts
 
 - Make it concrete: examples, numbers, and specifics over abstractions.
 - Short lines and white space; threads are read on phones.
-- Front-load each post — the first line of every post is a mini-hook.
+- Front-load each post - the first line of every post is a mini-hook.
 
 ### Step 5: Write the close
 
@@ -63,7 +63,7 @@ The sentence, and why it worked:
 Nobody cares who you are in sentence one.
 They care whether you know THEM.
 
-3/ The new opener: "Saw you're hiring 3 SDRs — usually means outbound
+3/ The new opener: "Saw you're hiring 3 SDRs - usually means outbound
 is working but reporting is a mess."
 One observed fact + one inferred pain. That's it.
 
@@ -77,7 +77,7 @@ Under 60 words total. No deck attached.
 
 6/ Takeaway: your first sentence should be about them, not you.
 Steal the formula, run 50 sends, check your reply rate.
-Follow @[handle] — I share one outbound experiment a week.
+Follow @[handle] - I share one outbound experiment a week.
 ```
 
 Why it passes: 6 posts (in range), hook is 118 characters with two numbers and an open loop, every post carries exactly one idea, posts 1-5 each end pulling toward the next, and the close restates the takeaway with one CTA.
@@ -88,11 +88,11 @@ Produce a numbered, post-by-post thread draft containing: two hook variants labe
 
 ## Do NOT
 
-- Do not open with "A thread 🧵" and no substance — the hook must contain the promise, not announce the format.
+- Do not open with "A thread 🧵" and no substance - the hook must contain the promise, not announce the format.
 - Do not exceed one idea per post; splitting is free, cramming costs readers.
-- Do not stack CTAs (follow + link + reply) — each added ask cuts response to all of them.
+- Do not stack CTAs (follow + link + reply) - each added ask cuts response to all of them.
 - Do not pad to hit a post count; a tight 6 beats a padded 12 every time.
-- Do not write abstractions where the user has numbers — "grew a lot" when the material says "34%" is malpractice.
+- Do not write abstractions where the user has numbers - "grew a lot" when the material says "34%" is malpractice.
 
 ## Quality bar
 

@@ -1,11 +1,11 @@
 ---
 name: Funnel Analysis
-description: Builds conversion funnels from raw event data with drop-off attribution, segment comparison, and significance testing, and delivers a filled funnel table with a diagnosed bottleneck and next action. Use when someone asks "where are users dropping off", "why did checkout conversion fall this week", "build a signup-to-activation funnel", or "is mobile converting worse than desktop". Do NOT use for rewriting page copy or layout to lift a known weak step — use landing-page-cro instead; for decomposing active-user growth into new, retained, resurrected, and churned — use growth-accounting instead; for choosing which events to instrument and which product metrics to track — use product-analytics instead; for designing and reading a controlled experiment — use ab-test-analyzer instead.
+description: Builds conversion funnels from raw event data with drop-off attribution, segment comparison, and significance testing, and delivers a filled funnel table with a diagnosed bottleneck and next action. Use when someone asks "where are users dropping off", "why did checkout conversion fall this week", "build a signup-to-activation funnel", or "is mobile converting worse than desktop". Do NOT use for rewriting page copy or layout to lift a known weak step - use landing-page-cro instead; for decomposing active-user growth into new, retained, resurrected, and churned - use growth-accounting instead; for choosing which events to instrument and which product metrics to track - use product-analytics instead; for designing and reading a controlled experiment - use ab-test-analyzer instead.
 ---
 
 # Funnel Analysis
 
-A funnel tells you where money leaks out of a multi-step flow, but only if the definition is precise and the differences you report are statistically real. The costly mistake this skill prevents is shipping a "mobile checkout is broken" diagnosis built on an ambiguous funnel definition and a 40-user sample — teams reorganize roadmaps around noise. The output is a filled funnel table, one named bottleneck step, and the evidence that the gap is real.
+A funnel tells you where money leaks out of a multi-step flow, but only if the definition is precise and the differences you report are statistically real. The costly mistake this skill prevents is shipping a "mobile checkout is broken" diagnosis built on an ambiguous funnel definition and a 40-user sample - teams reorganize roadmaps around noise. The output is a filled funnel table, one named bottleneck step, and the evidence that the gap is real.
 
 ## Operating procedure
 
@@ -47,11 +47,11 @@ Exclude users whose window has not yet elapsed (right-censoring), or the newest 
 
 ### Step 3: Attribute the drop-off
 
-For each adjacent pair compute step conversion = stage_n / stage_n-1, and report overall conversion = final / first. Compare each step against a benchmark band, not against zero — the biggest raw drop is not automatically the biggest opportunity if that drop is normal for the industry. Defensible e-commerce reference bands: view -> cart 8-12%, cart -> checkout 40-60%, checkout -> payment 70-85%, payment -> purchase 80-90%, overall visit -> purchase 2-3%. SaaS signup -> activation commonly lands at 20-40%. The bottleneck is the step furthest below its band, not the smallest percentage.
+For each adjacent pair compute step conversion = stage_n / stage_n-1, and report overall conversion = final / first. Compare each step against a benchmark band, not against zero - the biggest raw drop is not automatically the biggest opportunity if that drop is normal for the industry. Defensible e-commerce reference bands: view -> cart 8-12%, cart -> checkout 40-60%, checkout -> payment 70-85%, payment -> purchase 80-90%, overall visit -> purchase 2-3%. SaaS signup -> activation commonly lands at 20-40%. The bottleneck is the step furthest below its band, not the smallest percentage.
 
 ### Step 4: Segment comparison
 
-Recompute the funnel per segment. A segment gap at one specific step points to a localized problem (a broken payment form on mobile); a uniform gap across all steps points to traffic quality, which is an acquisition problem, not a funnel problem — route that to paid-acquisition-audit or channel strategy work.
+Recompute the funnel per segment. A segment gap at one specific step points to a localized problem (a broken payment form on mobile); a uniform gap across all steps points to traffic quality, which is an acquisition problem, not a funnel problem - route that to paid-acquisition-audit or channel strategy work.
 
 ### Step 5: Test significance before diagnosing
 
@@ -62,18 +62,18 @@ from statsmodels.stats.proportion import proportions_ztest
 stat, p = proportions_ztest([conversions_a, conversions_b], [n_a, n_b])
 ```
 
-Sizing intuition: detecting a 2-percentage-point difference on a 20% baseline at alpha 0.05 and 80% power needs roughly 6,000-6,500 users per segment. Below roughly 1,000 users per segment, only very large gaps (10+ points) are detectable — say so explicitly rather than reporting point estimates as findings. When comparing many segments, control the false discovery rate with Benjamini-Hochberg. Report confidence intervals on each rate, not just point estimates.
+Sizing intuition: detecting a 2-percentage-point difference on a 20% baseline at alpha 0.05 and 80% power needs roughly 6,000-6,500 users per segment. Below roughly 1,000 users per segment, only very large gaps (10+ points) are detectable - say so explicitly rather than reporting point estimates as findings. When comparing many segments, control the false discovery rate with Benjamini-Hochberg. Report confidence intervals on each rate, not just point estimates.
 
 ### Step 6: Check time-to-convert and trend
 
-Beyond whether users convert, analyze how long each step takes. A rising median time at a step signals friction even when conversion looks flat. Track the funnel weekly: a step conversion drop of more than 10% relative week-over-week warrants investigation; a same-day drop of more than 20% relative is a release-bug signal — check the deploy log before the analytics.
+Beyond whether users convert, analyze how long each step takes. A rising median time at a step signals friction even when conversion looks flat. Track the funnel weekly: a step conversion drop of more than 10% relative week-over-week warrants investigation; a same-day drop of more than 20% relative is a release-bug signal - check the deploy log before the analytics.
 
 ## Worked artifact: filled funnel with diagnosis
 
 ```
 FUNNEL: e-commerce purchase, unique users, ordered, 1-day window, week of analysis
 Step              Users     Step conv   Benchmark    Verdict
-View product      48,200    —           —            —
+View product      48,200    -           -            -
 Add to cart        4,340    9.0%        8-12%        in band
 Begin checkout     2,120    48.8%       40-60%       in band
 Enter payment      1,020    48.1%       70-85%       RED FLAG (-22 pts below band)
@@ -82,7 +82,7 @@ Overall: 890 / 48,200 = 1.85%  (band 2-3%: below, explained by payment step)
 
 Segment split at "Enter payment":
   Desktop: 61.4% (n=1,180)   Mobile: 35.2% (n=940)
-  Two-proportion z-test: p < 0.001 — gap is real.
+  Two-proportion z-test: p < 0.001 - gap is real.
 
 DIAGNOSIS: payment-entry step on mobile is the bottleneck. Fixing mobile to
 desktop parity is worth ~246 extra purchases/week at current traffic.
@@ -95,7 +95,7 @@ Produce a funnel table containing: step names and definitions, user counts, step
 
 ## Do NOT
 
-- Do not present a funnel without writing down the window, ordering rule, and counting unit — two teams computing "the same funnel" differently is the most common source of dashboard wars.
+- Do not present a funnel without writing down the window, ordering rule, and counting unit - two teams computing "the same funnel" differently is the most common source of dashboard wars.
 - Do not diagnose from segments under ~1,000 users without a significance test; small-sample gaps reverse week to week.
 - Do not treat the largest raw drop as the opportunity; compare each step to its benchmark band.
 - Do not include users still inside the conversion window; right-censoring makes healthy funnels look broken.
@@ -107,4 +107,4 @@ Produce a funnel table containing: step names and definitions, user counts, step
 - Events were deduplicated and ordering enforced in the query.
 - Every reported segment gap carries a sample size and a p-value or confidence interval, with Benjamini-Hochberg applied when more than ~5 segments were compared.
 - Exactly one bottleneck is named, with the recoverable volume quantified.
-- The trend view exists — a single-snapshot funnel cannot distinguish a bug from a baseline.
+- The trend view exists - a single-snapshot funnel cannot distinguish a bug from a baseline.

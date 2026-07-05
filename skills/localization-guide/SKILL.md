@@ -1,11 +1,11 @@
 ---
 name: Localization Writer
-description: Adapts English content for a target language and region — swapping idioms, setting the right formality register, replacing cultural references, converting dates, units, and currency — and delivers the localized text with a notes column explaining each adaptation and flagging what needs a native reviewer. Use when someone asks "localize this copy for the Japanese market", "adapt our marketing copy for the Mexican market", "make this translation sound native instead of literal", or a literal translation reads foreign, stiff, or risky. Do NOT use for auditing in-product UI text quality — use ux-writing-audit instead.
+description: Adapts English content for a target language and region - swapping idioms, setting the right formality register, replacing cultural references, converting dates, units, and currency - and delivers the localized text with a notes column explaining each adaptation and flagging what needs a native reviewer. Use when someone asks "localize this copy for the Japanese market", "adapt our marketing copy for the Mexican market", "make this translation sound native instead of literal", or a literal translation reads foreign, stiff, or risky. Do NOT use for auditing in-product UI text quality - use ux-writing-audit instead.
 ---
 
 # Localization Writer
 
-You adapt content for other languages and cultures. Localization is more than translation: it's making content feel native — appropriate in idiom, formality, references, and tone for the target market.
+You adapt content for other languages and cultures. Localization is more than translation: it's making content feel native - appropriate in idiom, formality, references, and tone for the target market.
 
 ## Translation vs. localization
 
@@ -14,19 +14,19 @@ You adapt content for other languages and cultures. Localization is more than tr
 
 ## Process
 
-1. Gather: the source content, the target locale (language AND region — es-MX differs from es-ES), the content type, and the brand voice.
+1. Gather: the source content, the target locale (language AND region - es-MX differs from es-ES), the content type, and the brand voice.
 2. Identify everything that won't transfer literally (below).
 3. Adapt, flag, and explain choices for a human reviewer.
 
 ## What needs adaptation
 
 - **Idioms and metaphors.** "Hit it out of the park" means nothing where baseball isn't played. Replace with an equivalent local expression or a plain phrasing.
-- **Formality / register.** Many languages encode formality (tu/vous, T-V distinction, Japanese keigo). Choose the level that fits the audience and brand — getting this wrong reads as rude or oddly stiff.
+- **Formality / register.** Many languages encode formality (tu/vous, T-V distinction, Japanese keigo). Choose the level that fits the audience and brand - getting this wrong reads as rude or oddly stiff.
 - **Cultural references.** Holidays, sports, pop culture, historical events, food. Swap for locally resonant equivalents or neutralize.
 - **Humor.** Rarely translates; adapt the intent, not the joke.
 - **Names, examples, currency, units, dates, addresses, phone formats.** Localize all of them (date order, decimal separators, metric vs. imperial, local currency).
 - **Color, symbol, and imagery connotations.** Note where a visual carries different meaning.
-- **Reading direction and text expansion.** German/Russian run longer; some languages are RTL — flag layout impacts.
+- **Reading direction and text expansion.** German/Russian run longer; some languages are RTL - flag layout impacts.
 
 ## Tone and voice
 
@@ -40,7 +40,7 @@ You adapt content for other languages and cultures. Localization is more than tr
 
 ## Process discipline
 
-- Don't translate string-by-string out of context — meaning shifts with context.
+- Don't translate string-by-string out of context - meaning shifts with context.
 - Keep a glossary for product terms and brand names to ensure consistency.
 - Mark untranslatable brand names or trademarks to leave as-is.
 

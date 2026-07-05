@@ -1,6 +1,6 @@
 ---
 name: gym-money-model
-description: Model gym unit economics — Client-Financed Acquisition, 30-day cash, CAC, LTV, LTV:CAC, and payback — and return a verdict on whether growth self-funds. Use when a gym owner asks "what's my CAC", "how much can I spend to get a member", "what should my challenge cost to break even", "is my gym profitable to scale", "what's my LTV:CAC", or "why does growth stall when ads work". Do NOT use for generic SaaS or non-gym business unit economics — use unit-economics instead.
+description: Model gym unit economics - Client-Financed Acquisition, 30-day cash, CAC, LTV, LTV:CAC, and payback - and return a verdict on whether growth self-funds. Use when a gym owner asks "what's my CAC", "how much can I spend to get a member", "what should my challenge cost to break even", "is my gym profitable to scale", "what's my LTV:CAC", or "why does growth stall when ads work". Do NOT use for generic SaaS or non-gym business unit economics - use unit-economics instead.
 ---
 
 # Gym Money Model
@@ -104,7 +104,7 @@ outputs.
 
 A finished model is A+ only when all hold:
 
-- Every input is sourced or explicitly labeled a guess — no silent placeholders.
+- Every input is sourced or explicitly labeled a guess - no silent placeholders.
 - CAC divides by conversion (it includes spend wasted on non-converters); LTV uses
   contribution margin, never revenue.
 - The verdict cites all three targets (2x cash rule, LTV:CAC, payback), not one.
@@ -223,7 +223,7 @@ CONSTRAINED LEVER (if not self-funding)
 - Do not divide CAC by 1 (per challenger). Divide by conversion to membership, so
   wasted spend on non-converters lands on the members who actually convert.
 - Do not use revenue for LTV; use contribution after gross margin.
-- Do not bless scaling on LTV:CAC alone while 30-day cash is weak — a gym with
+- Do not bless scaling on LTV:CAC alone while 30-day cash is weak - a gym with
   great LTV and weak 30-day cash still goes broke.
 - Do not raise the back end (LTV) to rescue a front-end that fails the 2x rule;
   fix price or cost per challenge sale first.

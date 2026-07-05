@@ -1,42 +1,42 @@
 ---
 name: icp-persona-builder
-description: Turns a vague "who we sell to" into a weighted, filterable ICP scorecard — firmographics, technographics, and time-bound triggers expressed as literal Apollo or Sales Navigator filter values, built from closed-won and churned evidence, with hard disqualifiers and A/B/C account tiering — plus a buying-committee persona map covering economic buyer, champion, technical user, and blocker with each role's pains. Use when standing up outbound — FIRST, before any list-building or outreach — and someone asks "who is our ICP", "what filters do I put in Apollo", "we're targeting everyone and closing no one", or "score this account against our ICP". Do NOT use for pulling the actual prospect list — use prospect-list-builder instead — or for the messaging one-liner — use positioning-statement instead — or for end-user research personas — use user-persona instead.
+description: Turns a vague "who we sell to" into a weighted, filterable ICP scorecard - firmographics, technographics, and time-bound triggers expressed as literal Apollo or Sales Navigator filter values, built from closed-won and churned evidence, with hard disqualifiers and A/B/C account tiering - plus a buying-committee persona map covering economic buyer, champion, technical user, and blocker with each role's pains. Use when standing up outbound - FIRST, before any list-building or outreach - and someone asks "who is our ICP", "what filters do I put in Apollo", "we're targeting everyone and closing no one", or "score this account against our ICP". Do NOT use for pulling the actual prospect list - use prospect-list-builder instead - or for the messaging one-liner - use positioning-statement instead - or for end-user research personas - use user-persona instead.
 ---
 
 # Build Your ICP & Buyer Personas
 
-The core insight: an ICP is not a description, it is a **filter**. If you cannot type a criterion into Apollo, Sales Navigator, or a Clay table and get a finite list back, it is not part of your ICP — it is marketing prose. "Mid-market companies that value innovation" is useless. "US-based B2B SaaS, 50-500 employees, Series B+, using Salesforce + Segment, hiring SDRs" is a list you can build tomorrow. The most common trap is conflating the ICP (the *account* you target) with the persona (the *human* you email) and skipping the buying committee entirely — so reps email one champion who has no budget, or one economic buyer who has never felt the pain.
+The core insight: an ICP is not a description, it is a **filter**. If you cannot type a criterion into Apollo, Sales Navigator, or a Clay table and get a finite list back, it is not part of your ICP - it is marketing prose. "Mid-market companies that value innovation" is useless. "US-based B2B SaaS, 50-500 employees, Series B+, using Salesforce + Segment, hiring SDRs" is a list you can build tomorrow. The most common trap is conflating the ICP (the *account* you target) with the persona (the *human* you email) and skipping the buying committee entirely - so reps email one champion who has no budget, or one economic buyer who has never felt the pain.
 
 The second trap is building the ICP from aspiration instead of evidence. Your ICP is whoever already gets value and pays you, not whoever you wish would. Start from closed-won, not from the TAM slide. If you have fewer than ~10 closed deals, anchor on your best 3-5 customers by retention and expansion, and treat the result as a hypothesis to be falsified by [[buying-signal-tracker]] reply data.
 
 ## When to use this skill
 
 - You are standing up outbound and have no documented, filterable target definition.
-- Reps are spraying — pipeline is full of bad-fit deals that stall at procurement or "no budget."
+- Reps are spraying - pipeline is full of bad-fit deals that stall at procurement or "no budget."
 - Reply rates are fine but win rates are bad: usually a persona/committee problem, not a copy problem.
 - You're entering a new segment or launching a new product and need a fresh ICP hypothesis.
 - You need to tier a raw account list A/B/C before [[prospect-list-builder]] and [[outreach-sequence-designer]] burn effort on it.
 
 ## The workflow
 
-1. **Pull your evidence base first.** Export closed-won from the CRM. For each, record: industry, employee count, region, funding stage, the tools they ran, what triggered the deal, who signed, sales cycle length, and ACV. Also pull closed-LOST and churned — the disqualifiers hide there. Do NOT skip churned: a segment that buys fast and churns in 6 months is a *negative* ICP signal, not a win.
+1. **Pull your evidence base first.** Export closed-won from the CRM. For each, record: industry, employee count, region, funding stage, the tools they ran, what triggered the deal, who signed, sales cycle length, and ACV. Also pull closed-LOST and churned - the disqualifiers hide there. Do NOT skip churned: a segment that buys fast and churns in 6 months is a *negative* ICP signal, not a win.
 
-2. **Find the firmographic spine.** Look for the 3-5 attributes that separate won from lost. Express each as a literal filter value, not an adjective: `industry IN (B2B SaaS, fintech)`, `headcount 50-500`, `geo = US/CA`, `funding ≥ Series B`. If an attribute doesn't move win rate, cut it — every extra filter shrinks your list, so each one must earn its place.
+2. **Find the firmographic spine.** Look for the 3-5 attributes that separate won from lost. Express each as a literal filter value, not an adjective: `industry IN (B2B SaaS, fintech)`, `headcount 50-500`, `geo = US/CA`, `funding ≥ Series B`. If an attribute doesn't move win rate, cut it - every extra filter shrinks your list, so each one must earn its place.
 
-3. **Layer technographics and triggers — this is where most ICPs are lazy.** Technographics ("runs Salesforce", "uses Snowflake", "no observability vendor detected") are often the sharpest fit predictor because they imply the exact pain you solve. Triggers are *time-bound* conditions that say "now, not someday": new exec hire, funding round, a relevant job posting, a competitor mention, M&A. Triggers belong in the ICP because they convert a static list into a prioritized queue — hand them to [[buying-signal-tracker]] to monitor continuously.
+3. **Layer technographics and triggers - this is where most ICPs are lazy.** Technographics ("runs Salesforce", "uses Snowflake", "no observability vendor detected") are often the sharpest fit predictor because they imply the exact pain you solve. Triggers are *time-bound* conditions that say "now, not someday": new exec hire, funding round, a relevant job posting, a competitor mention, M&A. Triggers belong in the ICP because they convert a static list into a prioritized queue - hand them to [[buying-signal-tracker]] to monitor continuously.
 
 4. **Map the buying committee, not "the persona."** For each deal you typically need four roles: **economic buyer** (owns budget, signs), **champion** (feels the pain, sells internally for you), **technical/user** (lives in the problem daily), and **blocker** (security, procurement, legal, or a threatened incumbent owner). For each role capture: title patterns, the one pain they personally own, what they fear, and what they need to say yes. Reps who only know the champion lose at the economic-buyer stage.
 
-5. **Write per-persona pain in their words, tied to a trigger.** Bad: "improve efficiency." Good: "the VP Eng just got headcount frozen and is on the hook for uptime — every incident now costs a weekend." Pain + role + trigger is the raw material [[cold-email-craft]] and [[outreach-sequence-designer]] turn into a first line. If you can't state the pain in the persona's own vocabulary, you haven't talked to enough of them.
+5. **Write per-persona pain in their words, tied to a trigger.** Bad: "improve efficiency." Good: "the VP Eng just got headcount frozen and is on the hook for uptime - every incident now costs a weekend." Pain + role + trigger is the raw material [[cold-email-craft]] and [[outreach-sequence-designer]] turn into a first line. If you can't state the pain in the persona's own vocabulary, you haven't talked to enough of them.
 
 6. **Define hard disqualifiers explicitly.** A negative list is as valuable as the positive one and saves more rep time. Examples: "single-product, no platform team", "regulated industry we can't get through security", "under 50 employees (no budget owner)", "open-source-only culture". These become exclusion filters in [[prospect-list-builder]] and keep your [[prospecting-metrics]] honest.
 
-7. **Weight, score, and tier into A/B/C.** Assign weights to each criterion, score accounts, and bucket: **A** = strong fit + active trigger (work now, multithread), **B** = good fit, no trigger (nurture, wait for a signal), **C** = weak fit (do not prospect; let inbound find you). Re-tier quarterly against actual reply/win data — the ICP is a living hypothesis, not a one-time deck.
+7. **Weight, score, and tier into A/B/C.** Assign weights to each criterion, score accounts, and bucket: **A** = strong fit + active trigger (work now, multithread), **B** = good fit, no trigger (nurture, wait for a signal), **C** = weak fit (do not prospect; let inbound find you). Re-tier quarterly against actual reply/win data - the ICP is a living hypothesis, not a one-time deck.
 
 ## ICP scorecard template
 
 ```
-ICP SCORECARD — <product / segment>     Owner: ____   Last reviewed: ____
+ICP SCORECARD - <product / segment>     Owner: ____   Last reviewed: ____
 
 EVIDENCE BASE
   Closed-won analyzed: __    Best customers (retention/expansion): __________
@@ -73,7 +73,7 @@ TIERING
   C = fit <  __                       → do not prospect
 ```
 
-## Worked example — "Sentinel" (fictional incident-response SaaS)
+## Worked example - "Sentinel" (fictional incident-response SaaS)
 
 ```
 FIRMOGRAPHICS
@@ -99,9 +99,9 @@ HARD DISQUALIFIERS
 TIERING   A = fit ≥ 70 AND active trigger   B = fit ≥ 70 no trigger   C = fit < 70
 ```
 
-Account scored: *Acme Payments* — fintech (25) + 220 employees (20) + US (10) + Series C (10) + AWS & PagerDuty (15) + new Head of SRE 6 weeks ago (10) = **90, active trigger → Tier A. Multithread VP Eng + SRE Lead now.**
+Account scored: *Acme Payments* - fintech (25) + 220 employees (20) + US (10) + Series C (10) + AWS & PagerDuty (15) + new Head of SRE 6 weeks ago (10) = **90, active trigger → Tier A. Multithread VP Eng + SRE Lead now.**
 
-## Runnable artifact — score an account against weighted ICP
+## Runnable artifact - score an account against weighted ICP
 
 Save as `score-account.mjs`, edit the two objects, run `node score-account.mjs`. No dependencies.
 

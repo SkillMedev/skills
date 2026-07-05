@@ -1,19 +1,19 @@
 ---
 name: positioning-statement
-description: Use when defining or sharpening what a product IS before writing copy or planning a launch. Triggers on "how do I position this", "what category are we in", "who is this really for", "positioning statement", "we sound like everyone else", "nobody gets what we do", "frame the product", "April Dunford positioning". Runs competitive alternatives → unique attributes → the value they enable → best-fit segment → market frame, producing one tight defensible paragraph. Do NOT use for the actual page/headline wording — use [[messaging-hierarchy]] instead; for price points — use [[pricing-strategy]] or [[saas-pricing]].
+description: Use when defining or sharpening what a product IS before writing copy or planning a launch. Triggers on "how do I position this", "what category are we in", "who is this really for", "positioning statement", "we sound like everyone else", "nobody gets what we do", "frame the product", "April Dunford positioning". Runs competitive alternatives → unique attributes → the value they enable → best-fit segment → market frame, producing one tight defensible paragraph. Do NOT use for the actual page/headline wording - use [[messaging-hierarchy]] instead; for price points - use [[pricing-strategy]] or [[saas-pricing]].
 ---
 
 # Positioning Statement
 
 Positioning is the context you set so a buyer instantly understands what you are,
 why you are different, and why they should care. Get it wrong and every downstream
-asset — the headline, the deck, the launch — is fluent nonsense written about the
+asset - the headline, the deck, the launch - is fluent nonsense written about the
 wrong product for the wrong person. This is the first GTM step. Everything else
 ([[messaging-hierarchy]], [[launch-plan-sequencer]], [[launch-day-runbook]],
 [[plg-motion-designer]], [[sales-enablement-kit]]) is calibrated to its output, so do
 it first and do it honestly.
 
-The trap is positioning from ambition — the category you wish you led, the buyer
+The trap is positioning from ambition - the category you wish you led, the buyer
 you wish you had. Position from evidence instead: the alternatives real customers
 weigh, the attributes you actually have, and the segment that already loves you.
 This follows April Dunford's method (*Obviously Awesome*): build positioning bottom-up
@@ -24,37 +24,37 @@ from competitive alternatives, not top-down from a category you picked.
 Reach for it before writing any customer-facing copy or planning a launch, and
 re-run it whenever the product, the best-fit customer, or the competitive set has
 moved. If a founder says "we sound generic," "nobody gets what we do," or "what
-category are we even in," that is a positioning problem, not a copy problem — start here.
+category are we even in," that is a positioning problem, not a copy problem - start here.
 
-## The workflow — five components, in this order
+## The workflow - five components, in this order
 
 Run them in sequence; each later component is derived from the earlier ones. Do NOT
-jump to the market frame first — the category you can credibly claim is an *output*
+jump to the market frame first - the category you can credibly claim is an *output*
 of the value you deliver, not an input you assert.
 
 1. **Competitive alternatives.** List what a customer would *actually* do if you
-   did not exist — and be honest: the real alternative is usually a spreadsheet,
+   did not exist - and be honest: the real alternative is usually a spreadsheet,
    a manual process, a hire, or "do nothing," not the funded competitor you fear.
    These alternatives define the frame the buyer is already in. (For deep rival
-   teardowns, defer to the catalog's `competitive-intelligence` skill — here you
+   teardowns, defer to the catalog's `competitive-intelligence` skill - here you
    only need the alternatives a buyer weighs at the point of decision.)
 2. **Unique attributes.** List the features, capabilities, assets, or facts you
-   have that the alternatives do not. Attributes are objective and provable —
-   "reconciles in real time," "ships with 40 connectors," "SOC 2 from day one" —
+   have that the alternatives do not. Attributes are objective and provable -
+   "reconciles in real time," "ships with 40 connectors," "SOC 2 from day one" -
    not adjectives like "powerful" or "intuitive." If an alternative can claim it
    too, it is not unique; cut it.
 3. **Value (the so-what).** Translate each unique attribute into the value it
    *enables* for the customer. Attribute → value: "reconciles in real time" →
    "closes the books in a day instead of a week." Buyers do not buy attributes;
-   they buy the outcome the attribute makes possible. Cluster the values into 2–3
-   themes — these become the spine of [[messaging-hierarchy]].
-4. **Best-fit customer segment.** Identify who cares about that value *the most* —
+   they buy the outcome the attribute makes possible. Cluster the values into 2-3
+   themes - these become the spine of [[messaging-hierarchy]].
+4. **Best-fit customer segment.** Identify who cares about that value *the most* -
    the segment for whom your unique value is urgent, not nice-to-have. Describe them
    by characteristics you can target (role, company stage, trigger event), not a
    vague persona. Narrow beats broad: the tightest segment that loves you gives the
    sharpest positioning. A weak best-fit segment is the #1 silent positioning killer.
 5. **Market frame / category.** Choose the market context that makes your value
-   obvious to that segment — the frame of reference that tells the buyer what to
+   obvious to that segment - the frame of reference that tells the buyer what to
    compare you against and what to expect. You can lead a known category, fight for
    a slice of one, or (rarely, expensively) create a new one. Pick the frame that
    makes your unique value the *obvious* choice; the wrong frame makes your
@@ -67,7 +67,7 @@ taglines, and page copy are downstream in [[messaging-hierarchy]].
 ## The one-paragraph statement
 
 Assemble the five components into a single tight internal paragraph. This is an
-*internal alignment artifact*, not customer copy — it is the brief every later
+*internal alignment artifact*, not customer copy - it is the brief every later
 skill reads. Fill this template:
 
 ```
@@ -95,7 +95,7 @@ Note what the example does NOT do: no price, no "powerful/intuitive," no
 "for everyone," no invented category nobody searches for. Every clause traces to one
 of the five components.
 
-## Runnable artifact — positioning scorer
+## Runnable artifact - positioning scorer
 
 A self-contained Node script that scores a candidate positioning statement against
 the five components and the most common failure modes, so the founder gets a sharp,
@@ -103,7 +103,7 @@ repeatable check instead of a vibe. Save as `score-positioning.mjs` and run
 `node score-positioning.mjs`.
 
 ```js
-// score-positioning.mjs — score a positioning statement, Dunford-style.
+// score-positioning.mjs - score a positioning statement, Dunford-style.
 // No deps. Edit the `p` object, then: node score-positioning.mjs
 
 const p = {
@@ -173,10 +173,10 @@ Tight. Hand it to messaging-hierarchy.
 
 The positioning is done when:
 
-- Every clause in the paragraph traces back to one of the five components — no
+- Every clause in the paragraph traces back to one of the five components - no
   free-floating claims.
 - The competitive alternative is the one a real buyer would *actually* pick, often
-  "do nothing" or a spreadsheet — not the competitor that scares the founder.
+  "do nothing" or a spreadsheet - not the competitor that scares the founder.
 - Each unique attribute is provable and exclusive: if an alternative could honestly
   claim it too, it is cut.
 - Every attribute has a stated so-what value; no attribute is left as a feature.
@@ -192,7 +192,7 @@ The positioning is done when:
 
 - Do NOT write headlines, taglines, or page copy here. This produces the internal
   brief; the customer-facing words are [[messaging-hierarchy]]'s job.
-- Do NOT set price, tiers, or packaging — defer to [[pricing-strategy]] /
+- Do NOT set price, tiers, or packaging - defer to [[pricing-strategy]] /
   [[saas-pricing]]. Positioning is the frame, not the number.
 - Do NOT invent a brand-new category to "own" unless you have the budget and proof
   to educate a market into it. Creating a category is the most expensive play in
@@ -204,7 +204,7 @@ The positioning is done when:
 - Do NOT let adjectives ("powerful," "seamless," "intuitive") stand in for provable
   attributes. If you cannot demo it or cite it, it is not an attribute.
 - Do NOT proceed to [[launch-plan-sequencer]], [[launch-day-runbook]], or
-  [[sales-enablement-kit]] until the one-paragraph statement scores clean — a launch
+  [[sales-enablement-kit]] until the one-paragraph statement scores clean - a launch
   built on muddy positioning only amplifies the muddiness.
 
 ## Deliverable

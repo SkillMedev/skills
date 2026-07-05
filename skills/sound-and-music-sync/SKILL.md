@@ -1,6 +1,6 @@
 ---
 name: Sound and Music Sync
-description: Score a video like an editor: beat-match cuts to the music, land SFX on transitions, pace the voiceover so it breathes, source royalty-free tracks safely, and duck the music so the VO sits clearly on top. Use when adding music, sound effects, or voiceover to a video, when asked to "sync cuts to the beat", "the music is drowning out the voice", "add whooshes on the transitions", "where do I get royalty-free music", "mix the audio", or "the VO feels rushed". Do NOT use when wiring audio into the Remotion timeline mechanically (Audio/staticFile/render) — that is remotion-compose and remotion-render; do NOT use when choosing the shot order or scene beats — use video-storyboard instead; do NOT use when tuning the visual look (color grade, lighting, contrast) — use motion-color-and-light instead.
+description: Score a video like an editor: beat-match cuts to the music, land SFX on transitions, pace the voiceover so it breathes, source royalty-free tracks safely, and duck the music so the VO sits clearly on top. Use when adding music, sound effects, or voiceover to a video, when asked to "sync cuts to the beat", "the music is drowning out the voice", "add whooshes on the transitions", "where do I get royalty-free music", "mix the audio", or "the VO feels rushed". Do NOT use when wiring audio into the Remotion timeline mechanically (Audio/staticFile/render) - that is remotion-compose and remotion-render; do NOT use when choosing the shot order or scene beats - use video-storyboard instead; do NOT use when tuning the visual look (color grade, lighting, contrast) - use motion-color-and-light instead.
 ---
 
 # Sound and Music Sync
@@ -9,59 +9,59 @@ Sound is half the video and the half people forget. A mediocre animation cut to 
 beat with a clean voiceover reads as professional; a beautiful animation with cuts
 that float and a VO buried under the music reads as amateur. This is the audio
 taste layer. You decide where cuts land, where sound effects punctuate, how the
-voiceover breathes, and how the mix sits — then you hand the concrete numbers
+voiceover breathes, and how the mix sits - then you hand the concrete numbers
 (beat frames, SFX timestamps, duck levels) to **remotion-compose** to wire onto the
 timeline and **remotion-render** to export. You do not write the `<Audio>` JSX or
 run the renderer; you make the creative decisions that feed them.
 
 This pairs with the rest of the motion-video-direction pack: a **video-storyboard**
-scene list and **motion-design-principles** timing decisions are your input — you
+scene list and **motion-design-principles** timing decisions are your input - you
 score against beats that already exist. If text is animating to the audio, sync it
 with **kinetic-typography**; if the cut rhythm is carrying a product walkthrough,
 coordinate with **product-demo-director**; if you are cutting a vertical/social
 version, re-derive beats per platform with **social-video-formatter**. The audio
-mix is its own layer — leave the visual look (color grade, lighting, contrast) to
+mix is its own layer - leave the visual look (color grade, lighting, contrast) to
 **motion-color-and-light** and score against whatever it grades.
 
 ## Workflow
 
 Run these in order. Do not start placing SFX before the cuts are beat-locked, and
-do not finalize the mix before the VO timing is right — each step depends on the
+do not finalize the mix before the VO timing is right - each step depends on the
 one before.
 
 1. **Pick the track and lock the tempo.** Choose music that matches the video's
    energy and length, confirm its license (see references/royalty-free-sourcing),
    and get its BPM. Most royalty-free libraries list BPM; if not, tap it out or use
-   a detector. BPM is the spine of everything downstream — one beat lasts
+   a detector. BPM is the spine of everything downstream - one beat lasts
    `60 / BPM` seconds, and at the project fps that is `fps * 60 / BPM` frames.
 
 2. **Build the beat grid and snap cuts to it.** Convert beats to frame numbers and
    place every hard cut and major scene change on a beat (run `beat_grid.js`
-   below). Cut on the downbeat — beats 1, 5, 9 in 4/4 — for emphasis; cut on any
+   below). Cut on the downbeat - beats 1, 5, 9 in 4/4 - for emphasis; cut on any
    beat for routine transitions. A cut that lands two or three frames off the beat
    reads as "wrong" even to viewers who cannot name why. Hand the snapped frame
    list to remotion-compose as the `<Sequence from={...}>` boundaries.
 
 3. **Place sound effects on transitions, not over them.** SFX exist to make motion
    feel physical. The rule: the sound peaks the instant the motion peaks. A whoosh
-   *leads into* a swipe (start it ~3–5 frames before the cut so its tail lands on
+   *leads into* a swipe (start it ~3-5 frames before the cut so its tail lands on
    the cut); an impact/thud lands *on* the frame a card slams in; a click/pop lands
-   on the frame a UI element appears; a riser builds *across* the 10–20 frames
-   before a reveal and resolves on it. One SFX per transition — stacking them turns
+   on the frame a UI element appears; a riser builds *across* the 10-20 frames
+   before a reveal and resolves on it. One SFX per transition - stacking them turns
    punctuation into noise. See references/sfx-placement.
 
 4. **Pace the voiceover so it breathes.** VO sets the real pace of the video; the
    visuals serve it, not the reverse. Target a conversational ~150 words per
-   minute (≈2.5 words/second) — faster reads as rushed, slower as a hostage video.
-   Leave a beat of silence (8–15 frames) before a key line and after the CTA. Write
+   minute (≈2.5 words/second) - faster reads as rushed, slower as a hostage video.
+   Leave a beat of silence (8-15 frames) before a key line and after the CTA. Write
    for the ear: short sentences, one idea each, contractions. Never let a scene cut
-   mid-word — align scene boundaries to the gaps *between* sentences. Time the VO
+   mid-word - align scene boundaries to the gaps *between* sentences. Time the VO
    first, then stretch or compress scene durations to fit it (this becomes the
    `durationInFrames` remotion-compose uses).
 
 5. **Mix: duck the music so the VO sits on top.** This is the single most common
    audio failure. Music and full-volume VO compete in the same frequency range and
-   the words get lost. Duck the music to roughly 25–35% of its level *whenever the
+   the words get lost. Duck the music to roughly 25-35% of its level *whenever the
    VO is speaking*, then bring it back up in the gaps. Run `mix_levels.js` for
    concrete level and timing numbers. Target the VO around -3 to -6 dB (clear,
    never clipping), ducked music around -18 to -22 dB. Hand the duck envelope
@@ -69,7 +69,7 @@ one before.
    per-`<Audio>` `volume` callbacks.
 
 6. **Spot-check the export.** After remotion-render produces the MP4, listen on
-   laptop speakers and on phone speakers, not just good headphones — most viewers
+   laptop speakers and on phone speakers, not just good headphones - most viewers
    are on bad speakers. Confirm: every word of VO is intelligible over the music,
    no SFX clips or startles, cuts feel locked to the beat, and the loudest moment
    does not distort. If a word is lost, duck deeper in that span; if SFX startle,
@@ -79,13 +79,13 @@ one before.
 
 The audio is A+ only when all of these hold:
 
-- Every hard cut lands on a beat frame from the grid — none float between beats.
+- Every hard cut lands on a beat frame from the grid - none float between beats.
 - Every transition SFX peaks on the exact frame its motion peaks; risers resolve on
   the reveal, not before or after.
-- VO runs ~140–160 wpm with deliberate silence before key lines and after the CTA;
+- VO runs ~140-160 wpm with deliberate silence before key lines and after the CTA;
   no scene cuts mid-word.
-- The VO is fully intelligible over the music on phone speakers — verified, not
-  assumed — because the music ducks to ~30% under speech.
+- The VO is fully intelligible over the music on phone speakers - verified, not
+  assumed - because the music ducks to ~30% under speech.
 - Exactly one SFX per transition; the track loops or ends cleanly with no abrupt
   cutoff on the final frame.
 - Every audio asset's license permits the intended use (commercial / paid ads /
@@ -93,20 +93,20 @@ The audio is A+ only when all of these hold:
 
 ## Do NOT
 
-- Do not leave cuts floating off-beat to preserve a scene's "natural" length —
+- Do not leave cuts floating off-beat to preserve a scene's "natural" length -
   stretch or trim the scene to the nearest beat instead.
 - Do not run music at full level under the voiceover; un-ducked music is why VO
   sounds muddy. Duck it every time someone speaks.
 - Do not stack multiple SFX on one transition, or reuse the same whoosh on every
-  cut — vary them or the ear stops hearing them.
+  cut - vary them or the ear stops hearing them.
 - Do not write the `<Audio>` JSX, set `startFrom`/`volume` callbacks, or invoke the
-  renderer here — produce the numbers and hand them to remotion-compose /
+  renderer here - produce the numbers and hand them to remotion-compose /
   remotion-render.
 - Do not pull tracks from YouTube rips, "free" sites with no stated license, or a
-  client's Spotify — commercial use needs a real royalty-free or licensed source.
+  client's Spotify - commercial use needs a real royalty-free or licensed source.
 - Do not normalize the whole mix to be as loud as possible; leave headroom so the
   loudest impact does not clip.
-- Do not let the VO race to fit a fixed runtime — re-cut the visuals to the VO, not
+- Do not let the VO race to fit a fixed runtime - re-cut the visuals to the VO, not
   the VO to the visuals.
 
 ## Calculator: beat grid
@@ -163,8 +163,8 @@ Downbeat frames only: 0, 60, 120, 180, 240, 300, 360
 ```
 
 Read it: at 120 BPM and 30 fps a beat is exactly 15 frames. Put routine transitions
-on any listed frame and your hardest cuts — the intro-to-content cut, the CTA reveal
-— on a downbeat (0, 60, 120…). If a scene wants to run 70 frames, snap it to 75
+on any listed frame and your hardest cuts - the intro-to-content cut, the CTA reveal -
+on a downbeat (0, 60, 120…). If a scene wants to run 70 frames, snap it to 75
 (beat 6) rather than letting the cut float at 70. Those snapped numbers are exactly
 what remotion-compose drops into `<Sequence from={...}>`.
 
@@ -221,7 +221,7 @@ Duck music across these frame spans (pad 8f each side for the fade):
 ```
 
 Read it: the VO stays at full level (the loudest thing in the mix), music rides at
-0.8 in the gaps and ducks to 0.24 — about a third — wherever someone speaks, fading
+0.8 in the gaps and ducks to 0.24 - about a third - wherever someone speaks, fading
 over 8 frames so the dip is not a jarring jump. The frame spans are exactly the
 ranges remotion-compose feeds to the music `<Audio>` `volume` callback: full level
 outside the spans, `duckedLevel` inside, linear-ramped across the fade pad. That is
@@ -238,10 +238,10 @@ AUDIO CUE SHEET. [FILL: video name]. fps [FILL] / [FILL] BPM / [FILL]s total
 
 MUSIC
   Track:                 [FILL: title + source]
-  License:               [FILL: e.g. Epidemic Sound commercial / CC0] — attribution: [FILL: yes/no, text]
+  License:               [FILL: e.g. Epidemic Sound commercial / CC0] - attribution: [FILL: yes/no, text]
   Level (no speech):     [FILL: 0-1]    Ducked under VO: [FILL: 0-1] (~30%)
 
-BEAT GRID (from beat_grid.js) — cuts land here
+BEAT GRID (from beat_grid.js) - cuts land here
   Downbeat frames:       [FILL: 0, 60, 120, ...]
   Hard cuts on:          [FILL: which downbeats carry the big cuts]
 
@@ -257,7 +257,7 @@ VOICEOVER (~150 wpm; scenes fit the VO, not the reverse)
   [FILL line]                            [FILL]  [FILL] [FILL]
   (silence 8-15f before key line / after CTA)
 
-DUCK ENVELOPE (from mix_levels.js) — frame spans to lower music
+DUCK ENVELOPE (from mix_levels.js) - frame spans to lower music
   [FILL: 7-104, 112-233, ...]  fade [FILL]f in/out
 
 HANDOFF: remotion-compose wires <Audio> + volume callbacks; remotion-render exports.
@@ -265,7 +265,7 @@ HANDOFF: remotion-compose wires <Audio> + volume callbacks; remotion-render expo
 
 ## references/royalty-free-sourcing
 
-Commercial video needs music you are actually licensed to use — "I found it on
+Commercial video needs music you are actually licensed to use - "I found it on
 YouTube" is not a license and a client's Spotify is not either. Licensed/royalty-free
 sources, by use case:
 
@@ -274,15 +274,15 @@ sources, by use case:
   libraries, no per-video attribution. The default for paid work.
 - **Free with terms (check each track):** YouTube Audio Library (free, some tracks
   need attribution), Pixabay Music and Mixkit (free, commercial OK, no attribution),
-  Free Music Archive and ccMixter (Creative Commons — read the specific CC license,
+  Free Music Archive and ccMixter (Creative Commons - read the specific CC license,
   some forbid commercial use or require attribution).
 - **SFX specifically:** Pixabay and Mixkit (free), Epidemic/Artlist (bundled with
-  subscription), freesound.org (Creative Commons — verify each clip's license).
+  subscription), freesound.org (Creative Commons - verify each clip's license).
 
 License hygiene, always: confirm the license covers your exact use (personal vs.
 commercial vs. *paid advertising*, which is often a separate tier); record any
 required attribution text in the cue sheet; keep proof of license/download. CC0 and
-public-domain are the only "use freely anywhere" cases — everything else has terms.
+public-domain are the only "use freely anywhere" cases - everything else has terms.
 When in doubt, a paid subscription library is cheaper than a takedown or a claim.
 
 ## references/sfx-placement
@@ -290,21 +290,21 @@ When in doubt, a paid subscription library is cheaper than a takedown or a claim
 SFX make motion physical; placement is everything. The peak of the sound must hit
 the peak of the motion, or the brain registers a mismatch.
 
-- **Whoosh / swipe** — directional motion (a slide, a swipe transition). Start it
-  ~3–5 frames *before* the cut so its energy *leads into* the motion and the tail
+- **Whoosh / swipe** - directional motion (a slide, a swipe transition). Start it
+  ~3-5 frames *before* the cut so its energy *leads into* the motion and the tail
   resolves on the cut. A whoosh placed after the motion sounds like an echo.
-- **Impact / thud** — something arriving with weight (a card slamming in, a heavy
+- **Impact / thud** - something arriving with weight (a card slamming in, a heavy
   title drop). Land the transient on the exact frame the object stops. Pair with a
   tiny scale-overshoot in the motion so sound and picture punch together.
-- **Click / pop / tick** — small discrete UI events (a button, a checkmark, a tab).
+- **Click / pop / tick** - small discrete UI events (a button, a checkmark, a tab).
   Land on the frame the element appears. Keep them quiet; they punctuate, they do
   not announce.
-- **Riser / swell** — building to a reveal (the logo, the CTA, the "after" state).
-  Build across the 10–20 frames *before* the reveal and resolve its peak on the
+- **Riser / swell** - building to a reveal (the logo, the CTA, the "after" state).
+  Build across the 10-20 frames *before* the reveal and resolve its peak on the
   reveal frame. A riser that peaks early deflates the moment.
-- **Ambience / drone** — a continuous bed under a scene for mood. Low level, sits
-  under everything, no transient — different job from the punctuation SFX above.
+- **Ambience / drone** - a continuous bed under a scene for mood. Low level, sits
+  under everything, no transient - different job from the punctuation SFX above.
 
 Discipline: one SFX per transition. Vary the whooshes across cuts (pitch or sample)
 so the ear keeps noticing them. Mix SFX a touch under the VO and above the ducked
-music — they punctuate, they never compete with the words.
+music - they punctuate, they never compete with the words.

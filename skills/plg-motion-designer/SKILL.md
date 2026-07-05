@@ -1,6 +1,6 @@
 ---
 name: PLG Motion Designer
-description: Use when designing a product-led, self-serve activation motion for signups. Triggers on "design our PLG motion", "self-serve onboarding", "what is our aha moment", "define activation", "activation rate", "time-to-value", "onboarding funnel", "in-product nudges", "set activation milestones", "signup to value", "free-to-paid", "PQL". Defines the aha moment, the activation milestones to it, and the in-product nudges and metric gates between each step. Do NOT use for outbound/sales-led launch sequencing — use [[launch-plan-sequencer]] instead; for arming a human sales team with collateral, use [[sales-enablement-kit]] instead; for the page that captures the signup, use [[landing-page-copy]]; for pricing tiers and the paywall, use [[saas-pricing]] and [[pricing-strategy]].
+description: Use when designing a product-led, self-serve activation motion for signups. Triggers on "design our PLG motion", "self-serve onboarding", "what is our aha moment", "define activation", "activation rate", "time-to-value", "onboarding funnel", "in-product nudges", "set activation milestones", "signup to value", "free-to-paid", "PQL". Defines the aha moment, the activation milestones to it, and the in-product nudges and metric gates between each step. Do NOT use for outbound/sales-led launch sequencing - use [[launch-plan-sequencer]] instead; for arming a human sales team with collateral, use [[sales-enablement-kit]] instead; for the page that captures the signup, use [[landing-page-copy]]; for pricing tiers and the paywall, use [[saas-pricing]] and [[pricing-strategy]].
 ---
 
 # PLG Motion Designer
@@ -9,7 +9,7 @@ A product-led motion lives or dies on one number most teams never define: the
 percentage of signups who reach value before they churn in silence. You design
 the path from `signup → aha moment → activated` and instrument the gates between
 each step, so the product sells itself instead of waiting on a human. The most
-common failure is a vanity definition of activation — "created an account" — that
+common failure is a vanity definition of activation - "created an account" - that
 correlates with nothing. This skill fixes the definition first, then builds the
 motion around it.
 
@@ -23,7 +23,7 @@ a sales call. It owns the *in-product* journey; the acquisition page is
 [[launch-plan-sequencer]]. Run it before [[launch-day-runbook]] so the motion is
 live and measured when traffic hits.
 
-## Step 1 — Define the aha moment off behavior, not opinion
+## Step 1 - Define the aha moment off behavior, not opinion
 
 The aha moment is the *first* in-product action after which a user's odds of
 retaining jump sharply. Find it, do not guess it:
@@ -38,13 +38,13 @@ retaining jump sharply. Find it, do not guess it:
 
 A crisp aha definition reads: **"<count> of <core action> across <breadth> within
 <time window>."** If you cannot fill that template, you do not yet know your aha
-moment — and every downstream nudge is guesswork.
+moment - and every downstream nudge is guesswork.
 
-## Step 2 — Reverse-engineer activation milestones to it
+## Step 2 - Reverse-engineer activation milestones to it
 
 Activation is reaching the aha moment. Work backward and name the 3-5 *ordered*
 milestones a user must clear to get there. Each milestone is a discrete, logged
-event — the rungs of the ladder:
+event - the rungs of the ladder:
 
 ```
   M0  Signup            account created
@@ -58,28 +58,28 @@ Rules that keep the ladder honest:
 - Strip every step that is not on the critical path to value. Each extra step
   leaks users.
 - Order them; a milestone a user reaches *out of order* is mislabeled.
-- M2 is the empty-state killer — the single hardest drop, where a blank product
+- M2 is the empty-state killer - the single hardest drop, where a blank product
   meets a new user. Design it deliberately (templates, sample data, a guided
   first action).
 
-## Step 3 — Gate each step with a metric
+## Step 3 - Gate each step with a metric
 
 Every transition between milestones gets two numbers, and you do not move on
 until they are instrumented:
 
-- **Step conversion rate** — % who advance Mₙ → Mₙ₊₁. This localizes the leak.
-- **Time-to-value (TTV)** — median time from signup to M3 (aha). The headline
+- **Step conversion rate** - % who advance Mₙ → Mₙ₊₁. This localizes the leak.
+- **Time-to-value (TTV)** - median time from signup to M3 (aha). The headline
   speed metric; long TTV silently kills self-serve.
-- **Activation rate** — % of signups who reach M3 within the TTV window. The one
+- **Activation rate** - % of signups who reach M3 within the TTV window. The one
   number the whole motion optimizes.
 
-The biggest single drop in step conversion is your bottleneck — fix it before
+The biggest single drop in step conversion is your bottleneck - fix it before
 touching anything else. Optimizing a 90% step while a 30% step bleeds upstream is
 the classic waste.
 
-## Step 4 — Place in-product nudges only on the gaps
+## Step 4 - Place in-product nudges only on the gaps
 
-Nudges are interventions to lift a specific step's conversion — never decoration.
+Nudges are interventions to lift a specific step's conversion - never decoration.
 For each *leaking* step, pick the lightest nudge that moves it:
 
 | Leak | Nudge | Note |
@@ -94,13 +94,13 @@ Discipline: one nudge per leak, instrument its effect, keep it only if step
 conversion rises. Over-nudging (badges, popups, tours everywhere) trains users to
 dismiss everything and buries the one that matters.
 
-## Runnable artifact — activation funnel diagnostic
+## Runnable artifact - activation funnel diagnostic
 
 Drop your per-milestone counts in; it returns step conversion, where the funnel
 leaks worst, TTV, and the overall activation rate. Self-contained Python.
 
 ```python
-# activation_funnel.py  —  python3 activation_funnel.py
+# activation_funnel.py  -  python3 activation_funnel.py
 from statistics import median
 
 # Ordered milestones: signup is M0, aha is the activation gate.
@@ -142,9 +142,9 @@ biggest leak                          M0 -> M1  (62%)
 
 Read: 26% activation with the worst leak at the very first setup step (M0→M1) and
 a 28-hour TTV. The move is a Step-4 nudge on setup (inline checklist) and a hard
-look at why first value takes a day — not a new feature, not more signups.
+look at why first value takes a day - not a new feature, not more signups.
 
-## Fill-in template — the activation spec
+## Fill-in template - the activation spec
 
 ```
 Aha moment:    <count> of <core action> across <breadth> within <time window>
@@ -167,13 +167,13 @@ Current bottleneck: step ______ at ____%  →  intervention: ______
 - The aha moment fits the `<count> of <action> across <breadth> within <window>`
   template and is backed by a retention gap, not an opinion.
 - Every milestone is a discrete logged event, ordered, on the critical path to
-  value — no decorative steps.
+  value - no decorative steps.
 - Each transition has a step-conversion number and the whole motion has an
   activation rate and a median TTV. If a step is uninstrumented, the motion is
   not done.
 - Exactly one nudge sits on each *leaking* step, and each nudge has a measured
   before/after on that step's conversion.
-- The single biggest leak is named, and the recommended action targets it — not
+- The single biggest leak is named, and the recommended action targets it - not
   a healthier step.
 - M4/PQL hands cleanly to [[saas-pricing]] / [[pricing-strategy]] for conversion;
   this skill stops at activation.
@@ -186,12 +186,12 @@ Current bottleneck: step ______ at ____%  →  intervention: ______
   leak first.
 - Do NOT carpet the product in tours, badges, and popups. One nudge per leak,
   kept only if it moves the number.
-- Do NOT use this for sales-led or outbound launch sequencing — that is
+- Do NOT use this for sales-led or outbound launch sequencing - that is
   [[launch-plan-sequencer]] and [[launch-day-runbook]].
 - Do NOT use this to arm a human sales team with decks, one-pagers, or objection
-  handling — a PLG motion replaces the rep; for the sales-led path use
+  handling - a PLG motion replaces the rep; for the sales-led path use
   [[sales-enablement-kit]] instead.
-- Do NOT design the signup/acquisition page or the paywall here — that is
+- Do NOT design the signup/acquisition page or the paywall here - that is
   [[landing-page-copy]] and [[saas-pricing]] / [[pricing-strategy]].
 - Do NOT invent the aha-moment number to look good in a deck. An unbacked
   activation target sends the whole motion chasing the wrong behavior.

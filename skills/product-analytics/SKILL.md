@@ -1,6 +1,6 @@
 ---
 name: Product Analytics
-description: Stands up product analytics from decision questions backward — a north-star metric with an input-metric tree, an object-action event taxonomy with a governed tracking plan, and the priority analyses to build first: activation funnels, cohort retention curves, and feature adoption correlated with retention. Use when someone asks "what events should we track", "set up our analytics taxonomy", "where do users drop off before first value", or "what's our activation moment". Do NOT use for growth-accounting decompositions of MAU changes — use growth-accounting instead — or for deep funnel diagnosis on existing data — use funnel-analysis instead.
+description: Stands up product analytics from decision questions backward - a north-star metric with an input-metric tree, an object-action event taxonomy with a governed tracking plan, and the priority analyses to build first: activation funnels, cohort retention curves, and feature adoption correlated with retention. Use when someone asks "what events should we track", "set up our analytics taxonomy", "where do users drop off before first value", or "what's our activation moment". Do NOT use for growth-accounting decompositions of MAU changes - use growth-accounting instead - or for deep funnel diagnosis on existing data - use funnel-analysis instead.
 ---
 
 # Product Analytics
@@ -30,10 +30,10 @@ year cleaning data.
   `invite_sent`). Pick one convention and enforce it.
 - Define properties deliberately: each event carries the context you will
   segment by (plan, source, role).
-- Maintain a tracking plan — a single source of truth listing every event, its
+- Maintain a tracking plan - a single source of truth listing every event, its
   properties, and its owner. This is the contract between product, eng, and
   data.
-- Size it: an early-stage tracking plan should be roughly 20–50 events, not
+- Size it: an early-stage tracking plan should be roughly 20-50 events, not
   hundreds. If the plan exceeds ~100 events before product-market fit, it is
   tracking implementation details, not decisions.
 - Govern changes: new events go through review so the taxonomy does not rot.
@@ -41,7 +41,7 @@ year cleaning data.
 ## The North Star and Inputs
 
 - Pick one north-star metric that captures delivered value (e.g. weekly active
-  teams, queries run, documents shipped) — not a vanity count.
+  teams, queries run, documents shipped) - not a vanity count.
 - Decompose it into input metrics you can actually move (acquisition,
   activation, engagement, retention).
 
@@ -51,7 +51,7 @@ year cleaning data.
 Map the path to first value and measure conversion at each step. The biggest
 drop-off is your highest-leverage fix. Watch time-to-convert, not just rate:
 for a self-serve product, most activation that will ever happen happens in the
-first session or first day — a median time-to-first-value beyond a day is
+first session or first day - a median time-to-first-value beyond a day is
 itself the finding.
 
 ### Cohort Retention
@@ -61,22 +61,22 @@ curve decaying to zero means no product-market fit yet.
 
 How to read the curve:
 
-- Judge where it flattens, not the month-1 number — the asymptote is the
+- Judge where it flattens, not the month-1 number - the asymptote is the
   product's real retained base.
 - Consumer apps: roughly 40% day-1 / 20% day-7 / 10% day-30 is a good curve;
   well under that (say ~25/10/5) means the leak comes before the habit forms.
   A consumer curve flattening above ~20% is a strong signal.
 - B2B SaaS: retention is measured in weeks/months, not days; expect the curve
-  to flatten within the first 4–8 weeks, and monthly logo retention below ~95%
+  to flatten within the first 4-8 weeks, and monthly logo retention below ~95%
   (churn above ~5%/month) is a red flag for anything sold to businesses.
-- Compare newer cohorts against older ones — cohorts flattening higher over
+- Compare newer cohorts against older ones - cohorts flattening higher over
   time is the clearest evidence the product is improving.
 
 ### Activation
-Define the activation event — the action that predicts long-term retention
+Define the activation event - the action that predicts long-term retention
 (the "aha moment"). Find it by comparing what retained users did early versus
-churned users: take users still active at week 4+, contrast their first 1–7
-days of behavior against churned users' first 1–7 days, and look for the
+churned users: take users still active at week 4+, contrast their first 1-7
+days of behavior against churned users' first 1-7 days, and look for the
 early action with the biggest retention gap. Then optimize the funnel to it.
 
 ### Feature Adoption
@@ -85,7 +85,7 @@ adoption with retention to prioritize the roadmap.
 
 ## Avoid Vanity Metrics
 
-- Total signups, total pageviews, cumulative anything — they only go up and
+- Total signups, total pageviews, cumulative anything - they only go up and
   inform nothing.
 - Prefer rates and cohorts over totals; prefer leading indicators over lagging
   ones.
@@ -94,7 +94,7 @@ adoption with retention to prioritize the roadmap.
 
 - Choose one analytics tool as the source of truth; pipe to a warehouse for
   deep analysis.
-- Validate instrumentation regularly — silent tracking bugs corrupt every
+- Validate instrumentation regularly - silent tracking bugs corrupt every
   downstream decision.
 - Document metric definitions so "active user" means the same thing to everyone.
 

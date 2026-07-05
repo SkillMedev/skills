@@ -1,6 +1,6 @@
 ---
 name: Flutter Widget Architect
-description: Architects Flutter widget trees and Riverpod or Bloc state so rebuilds are scoped, build() stays pure, and const widgets skip recomposition. Use when someone asks "why is my Flutter screen janky", "should I use Riverpod or Bloc", "my whole page rebuilds when one field changes", or is building or refactoring Flutter screens, wiring StatelessWidget/StatefulWidget, Consumer, or BlocBuilder. Do NOT use for Android Jetpack Compose UI — use jetpack-compose-builder instead; do NOT use for React Native — use react-native-pro instead.
+description: Architects Flutter widget trees and Riverpod or Bloc state so rebuilds are scoped, build() stays pure, and const widgets skip recomposition. Use when someone asks "why is my Flutter screen janky", "should I use Riverpod or Bloc", "my whole page rebuilds when one field changes", or is building or refactoring Flutter screens, wiring StatelessWidget/StatefulWidget, Consumer, or BlocBuilder. Do NOT use for Android Jetpack Compose UI - use jetpack-compose-builder instead; do NOT use for React Native - use react-native-pro instead.
 ---
 
 # Flutter Widget Architect
@@ -16,17 +16,17 @@ Order matters: decompose before optimizing subscriptions, because `.select` on a
 Before restructuring a screen, establish:
 
 1. The screen or widget in question and where jank or excessive rebuilds appear (default: run DevTools rebuild tracking or `debugPrintRebuildDirtyWidgets` first and capture which widgets rebuild).
-2. Existing state management — Riverpod, Bloc, provider, setState, or a mix (a mix inside one feature is itself the finding).
+2. Existing state management - Riverpod, Bloc, provider, setState, or a mix (a mix inside one feature is itself the finding).
 3. Which state is local-ephemeral (a toggle, one text field) vs shared/async/tested.
-4. List sizes — anything that can exceed roughly 30 items must be lazy.
+4. List sizes - anything that can exceed roughly 30 items must be lazy.
 
 Label any performance claim not backed by DevTools as a guess.
 
 ### Step 2: Decompose into widget classes, not methods
 
-Split a deep build() into small `StatelessWidget`/`StatefulWidget` subclasses. Never extract subtrees into `_buildX()` helper methods — a helper always re-runs with its enclosing build(), while a separate `const` widget is skipped entirely when its inputs are unchanged. Mark `const` everywhere the analyzer allows; every const constructor is a subtree the framework never revisits.
+Split a deep build() into small `StatelessWidget`/`StatefulWidget` subclasses. Never extract subtrees into `_buildX()` helper methods - a helper always re-runs with its enclosing build(), while a separate `const` widget is skipped entirely when its inputs are unchanged. Mark `const` everywhere the analyzer allows; every const constructor is a subtree the framework never revisits.
 
-Bad — the header re-runs every time the counter changes, because it is just a method on the same build:
+Bad - the header re-runs every time the counter changes, because it is just a method on the same build:
 
 ```dart
 class ProfileScreen extends ConsumerWidget {
@@ -41,7 +41,7 @@ class ProfileScreen extends ConsumerWidget {
 }
 ```
 
-Good — the header is a const class; the framework short-circuits it, and only the Text depending on the counter rebuilds:
+Good - the header is a const class; the framework short-circuits it, and only the Text depending on the counter rebuilds:
 
 ```dart
 class ProfileScreen extends ConsumerWidget {
@@ -63,18 +63,18 @@ class _ProfileHeader extends StatelessWidget {
 
 ### Step 3: Keep build() pure
 
-build() must read state and return widgets — no network calls, timers, setState, or controller allocation. Create `AnimationController`, `TextEditingController`, `StreamSubscription`, and similar in `initState` or a provider, and dispose every one in `dispose`. A controller allocated in build() leaks one instance per rebuild.
+build() must read state and return widgets - no network calls, timers, setState, or controller allocation. Create `AnimationController`, `TextEditingController`, `StreamSubscription`, and similar in `initState` or a provider, and dispose every one in `dispose`. A controller allocated in build() leaks one instance per rebuild.
 
 ### Step 4: Pick one state tool and scope it
 
 - Riverpod for dependency-injected, testable state; use `autoDispose` for screen-scoped data so leaving the screen releases it.
 - Bloc for explicit event-to-state transitions over an auditable stream.
-- `StatefulWidget` + `setState` for purely local ephemeral UI state (a toggle, one text field) — do not reach for a global store.
+- `StatefulWidget` + `setState` for purely local ephemeral UI state (a toggle, one text field) - do not reach for a global store.
 - Never mix Riverpod and Bloc inside one feature; two sources of truth for one screen is a bug factory.
 
 ### Step 5: Watch the narrowest unit
 
-Subscribe to one field with `ref.watch(provider.select((s) => s.field))` or a Bloc `buildWhen`, never the whole model — watching the model rebuilds on every unrelated field change. Use `ref.read` for one-shot actions inside callbacks, never to react to changes.
+Subscribe to one field with `ref.watch(provider.select((s) => s.field))` or a Bloc `buildWhen`, never the whole model - watching the model rebuilds on every unrelated field change. Use `ref.read` for one-shot actions inside callbacks, never to react to changes.
 
 ### Step 6: Stop rebuilds at the boundary
 
@@ -94,8 +94,8 @@ Produce a restructured screen containing: widget-class decomposition with const 
 
 ## Do NOT
 
-- Do NOT extract subtrees into `_buildX()` helper methods that return `Widget` — they cannot be skipped, const classes can.
-- Do NOT do work in build() (I/O, timers, allocation, setState) — build() may run every frame.
+- Do NOT extract subtrees into `_buildX()` helper methods that return `Widget` - they cannot be skipped, const classes can.
+- Do NOT do work in build() (I/O, timers, allocation, setState) - build() may run every frame.
 - Do NOT `ref.watch` a whole model when you depend on one field; use `.select`/`buildWhen`.
 - Do NOT call `setState` on a large `State` to update one value; isolate it with `ValueListenableBuilder` or a scoped provider.
 - Do NOT leave a `ListView`/`Column` building every item or with unbounded height.
@@ -103,7 +103,7 @@ Produce a restructured screen containing: widget-class decomposition with const 
 
 ## Quality bar
 
-- The static shell does not rebuild when a single value changes — verified with `debugPrintRebuildDirtyWidgets` or DevTools rebuild tracking, not by inspection.
+- The static shell does not rebuild when a single value changes - verified with `debugPrintRebuildDirtyWidgets` or DevTools rebuild tracking, not by inspection.
 - Every controller, subscription, and `AnimationController` created is disposed; `flutter analyze` reports no dispose or `prefer_const_constructors` warnings.
 - Long or unbounded lists use a lazy builder, never a mapped `Column`/`ListView(children: [...])`.
 - State scope matches sharing: local state stays in `StatefulWidget`; shared/async/tested state lives in a provider or Bloc.

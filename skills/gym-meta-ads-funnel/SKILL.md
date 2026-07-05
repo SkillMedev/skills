@@ -1,6 +1,6 @@
 ---
 name: gym-meta-ads-funnel
-description: Write gym Meta (Facebook/Instagram) ad creative, structure the lead-to-consult funnel, set the budget, and read funnel costs against the challenge economics. Use when a gym owner asks to write Facebook/Instagram ads, says ads aren't converting or cost per lead is too high, asks what to spend on ads, or wants to build or scale a Meta ad funnel that fills a challenge or front-end offer. Do NOT use for general A/B creative-testing methodology — use ad-creative-testing instead; do NOT design the offer being sold or the consult close — use gym-transformation-challenge and closer-sales-script instead.
+description: Write gym Meta (Facebook/Instagram) ad creative, structure the lead-to-consult funnel, set the budget, and read funnel costs against the challenge economics. Use when a gym owner asks to write Facebook/Instagram ads, says ads aren't converting or cost per lead is too high, asks what to spend on ads, or wants to build or scale a Meta ad funnel that fills a challenge or front-end offer. Do NOT use for general A/B creative-testing methodology - use ad-creative-testing instead; do NOT design the offer being sold or the consult close - use gym-transformation-challenge and closer-sales-script instead.
 ---
 
 # Gym Meta Ads Funnel
@@ -16,7 +16,7 @@ Sell the challenge or front-end offer in the ad, route strangers into a short fu
    - Lead capture: a native Meta lead form (fast, low CPL, lower intent) or a landing page (higher intent, needs copy). Define the conversion event as the lead submission.
    - Automated booking: the instant a lead submits, fire a text plus a booking link for the intro consult.
    - Consult: the low-pressure intro where the challenge or membership is sold.
-   - Track the full path — ad to lead to booked to shown to sold — not just to lead.
+   - Track the full path - ad to lead to booked to shown to sold - not just to lead.
 
 3. **Write the creative as hook + angle stack.** Every ad is hook, problem, mechanism, proof, offer, call to action.
    - Hook: stop the scroll; call out the avatar and the pain ("Busy mom with no time to train?", "Down to your last 15 pounds and stuck?").
@@ -42,7 +42,7 @@ Sell the challenge or front-end offer in the ad, route strangers into a short fu
 ## Quality bar
 
 - The offer, price, and guarantee are fixed before any ad is written.
-- Every ad carries the full stack: hook, problem, mechanism, proof, offer, CTA — plus scarcity and urgency.
+- Every ad carries the full stack: hook, problem, mechanism, proof, offer, CTA - plus scarcity and urgency.
 - The funnel tracks ad to lead to booked to shown to sold; decisions are made on cost per sale against breakeven, never on CPL alone.
 - Scale and kill decisions wait for several days of stable signal, not one good or bad day.
 
@@ -50,7 +50,7 @@ Sell the challenge or front-end offer in the ad, route strangers into a short fu
 
 - Do not sell the gym, the equipment, or the trainers in the ad. Sell the challenge outcome.
 - Do not over-narrow targeting or stack interests; broad plus a local radius lets Meta optimize.
-- Do not judge ads by cost per lead alone — a cheap lead that never shows costs more than an expensive one that closes.
+- Do not judge ads by cost per lead alone - a cheap lead that never shows costs more than an expensive one that closes.
 - Do not raise budget in large jumps or kill a creative on a single bad day; both throw away learning.
 - Do not run ads against an undefined or weak offer expecting volume to fix it.
 
@@ -109,7 +109,7 @@ Breakeven cost per lead:    $151.60
 Verdict: target CPL is below breakeven. Front-end self-funds.
 ```
 
-Read it: $1,500 a month is $50 a day, which at a $25 cost per lead buys 60 leads and about 24 challengers, past the goal of 20. You only need $1,250 to hit 20, so there is room. Breakeven cost per lead is $151.60, so even if leads got six times more expensive the front-end would still cover itself — plenty of margin to test.
+Read it: $1,500 a month is $50 a day, which at a $25 cost per lead buys 60 leads and about 24 challengers, past the goal of 20. You only need $1,250 to hit 20, so there is room. Breakeven cost per lead is $151.60, so even if leads got six times more expensive the front-end would still cover itself - plenty of margin to test.
 
 ## Template: ad-script-pack
 

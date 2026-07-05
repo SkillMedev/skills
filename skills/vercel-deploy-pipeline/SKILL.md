@@ -1,12 +1,12 @@
 ---
 name: Vercel Deploy Pipeline
-description: Ship a Next.js app to Vercel the production way: promote a tested preview to production, instant-rollback a bad release, build once with --prebuilt, run a staged/canary rollout with Rolling Releases (GA), and wire the deploy into CI. Use when someone says "deploy to Vercel", "promote preview to production", "vercel promote", "roll back the deploy", "vercel rollback", "instant rollback", "canary release on Vercel", "rolling release", "--prebuilt build", "vercel deploy in GitHub Actions", or "set up CI for my Vercel project". Do NOT use to manage env vars or pull .env — use vercel-env-management instead; do NOT use to tune runtime/cold-start/ISR performance — use next-on-vercel-perf or vercel-edge-and-isr instead.
+description: Ship a Next.js app to Vercel the production way: promote a tested preview to production, instant-rollback a bad release, build once with --prebuilt, run a staged/canary rollout with Rolling Releases (GA), and wire the deploy into CI. Use when someone says "deploy to Vercel", "promote preview to production", "vercel promote", "roll back the deploy", "vercel rollback", "instant rollback", "canary release on Vercel", "rolling release", "--prebuilt build", "vercel deploy in GitHub Actions", or "set up CI for my Vercel project". Do NOT use to manage env vars or pull .env - use vercel-env-management instead; do NOT use to tune runtime/cold-start/ISR performance - use next-on-vercel-perf or vercel-edge-and-isr instead.
 ---
 
 # Vercel Deploy Pipeline
 
 You own the *ship* step of a curated "Next.js app on Vercel" workflow. This is not
-the official Vercel CLI plugin re-stated — it sequences the platform into one
+the official Vercel CLI plugin re-stated - it sequences the platform into one
 opinionated path: build a preview, prove it, promote the **same artifact** to
 production, and keep a one-command escape hatch. The governing rule is **promote,
 don't rebuild**: a deployment is immutable, so the bytes you tested in preview are
@@ -25,12 +25,12 @@ Components and runtime placement; **vercel-firewall-and-botid** owns WAF/BotID;
 
 - **Runtime:** Node.js 24 LTS is the default (18 is deprecated). Default function
   `maxDuration` is 300s on every plan. Default to **Fluid Compute** (full Node.js,
-  instance reuse for fewer cold starts) — Edge Functions are deprecated; do not
+  instance reuse for fewer cold starts) - Edge Functions are deprecated; do not
   reach for them.
 - **Config:** prefer `vercel.ts` (`import { ... } from '@vercel/config'`);
   `vercel.json` still works and is fine for CI-only settings.
 - **Deployments are immutable.** Promotion and rollback re-point the production
-  alias at an existing deployment — they never rebuild. That is the whole reason
+  alias at an existing deployment - they never rebuild. That is the whole reason
   rollback is instant.
 - **Rolling Releases is GA (Jun 2025):** staged/canary traffic shifting to a new
   production deployment, automatic (time-based) or manual-approval stages.
@@ -45,7 +45,7 @@ Every change goes through a preview first. From a feature branch:
 vercel deploy            # preview build + deploy; prints a unique preview URL
 ```
 
-Git-connected projects already do this on every push/PR — let the Git integration
+Git-connected projects already do this on every push/PR - let the Git integration
 build previews and reserve the CLI for promotion, rollback, and CI. Preview URLs
 are immutable and shareable; this URL is the artifact you will promote.
 
@@ -66,7 +66,7 @@ boring.
 ### 3. Promote the *same* deployment to production
 
 This is the heart of the pipeline. Re-point the production alias at the preview you
-just verified — no rebuild:
+just verified - no rebuild:
 
 ```bash
 vercel promote <preview-url> --yes        # --yes skips the confirm prompt (CI-safe)
@@ -81,7 +81,7 @@ released bytes equal the tested bytes.
 ### 4. Keep the instant-rollback escape hatch ready
 
 Because deployments are immutable, rollback is an alias re-point, not a revert
-commit — it restores service in seconds while you debug at leisure:
+commit - it restores service in seconds while you debug at leisure:
 
 ```bash
 vercel rollback                                   # roll back to the previous production deployment
@@ -129,7 +129,7 @@ vercel rolling-release configure --enable --advancement-type=manual-approval --s
 ```
 
 Then deploy to production and **start** the rolling release so the new deployment
-becomes a **canary** — it takes the first stage's traffic share while the previous
+becomes a **canary** - it takes the first stage's traffic share while the previous
 production serves the rest:
 
 ```bash
@@ -147,7 +147,7 @@ vercel rolling-release complete --dpl <canary-url>                        # prom
 vercel rolling-release abort --dpl <canary-url>                           # instant rollback: all traffic back to old prod
 ```
 
-A rolling release is just a *gated* promotion — same immutable-deployment model,
+A rolling release is just a *gated* promotion - same immutable-deployment model,
 same instant-undo. Aborting is step 4 applied to a canary. Watch the canary's error
 rate (`vercel rolling-release fetch` plus `vercel logs --environment production --level error --since 5m`) before advancing.
 
@@ -157,7 +157,7 @@ Encode steps 1-5 as a workflow so humans never hand-run a production deploy.
 Pattern: **PR → preview deploy + checks; merge to main → prebuilt production
 deploy**. See the runnable GitHub Actions template below. Store `VERCEL_TOKEN`,
 `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` as CI secrets;
-**runtime app env vars belong in Vercel and are pulled by `vercel pull` — manage
+**runtime app env vars belong in Vercel and are pulled by `vercel pull` - manage
 those with vercel-env-management, not in the workflow file.**
 
 ## Quality bar
@@ -182,17 +182,17 @@ A deploy pipeline is A+ only when all hold:
 ## Do NOT
 
 - Do NOT run a fresh `vercel deploy --prod` to "release" a change you already built and
-  tested in preview — promote the existing deployment so released bytes equal tested
+  tested in preview - promote the existing deployment so released bytes equal tested
   bytes.
 - Do NOT debug a broken production before rolling back. Run `vercel rollback` to
   restore service, *then* investigate.
 - Do NOT mismatch build/deploy targets: `vercel build` (preview) + `vercel deploy --prebuilt --prod`
   ships a preview build to production. Keep `--prod` on both or neither.
-- Do NOT bake runtime app secrets into the CI workflow or `vercel.json` — they live in
+- Do NOT bake runtime app secrets into the CI workflow or `vercel.json` - they live in
   Vercel and arrive via `vercel pull`. That is vercel-env-management's job.
 - Do NOT target deprecated Edge Functions or pin Node 18 for new functions; default
   to Fluid Compute on Node.js 24.
-- Do NOT hand-promote production from a laptop once CI exists — the workflow is the
+- Do NOT hand-promote production from a laptop once CI exists - the workflow is the
   source of truth; manual `promote`/`rollback` is the break-glass path.
 - Do NOT treat a rolling release as fire-and-forget: watch the canary's error rate
   before `approve`/`complete`, and `abort` the moment it regresses.
@@ -201,7 +201,7 @@ A deploy pipeline is A+ only when all hold:
 
 Self-contained Bash. Save as `promote-gate.sh`, run as
 `./promote-gate.sh <preview-url>`. It runs the step-2 checks and only prints the
-exact `vercel promote` command when the preview passes — so a human (or CI) never
+exact `vercel promote` command when the preview passes - so a human (or CI) never
 promotes an unproven deployment. Needs the Vercel CLI logged in (`vercel login`) and
 a linked project. No other dependencies.
 
@@ -224,7 +224,7 @@ fi
 echo "==> Scanning error logs"
 ERRS="$(vercel logs --deployment "$URL" --level error --limit 50 2>/dev/null | grep -c . || true)"
 if [ "${ERRS:-0}" -gt 0 ]; then
-  echo "FAIL: $ERRS error log line(s) on the preview — fix before promoting"; exit 1
+  echo "FAIL: $ERRS error log line(s) on the preview - fix before promoting"; exit 1
 fi
 
 echo "==> PASS. Promote the SAME deployment (no rebuild) with:"
@@ -243,7 +243,7 @@ $ ./promote-gate.sh https://acme-7gk2qz.vercel.app
 ```
 
 Read it: the preview was inspectable, its health route returned 2xx, and there were
-no error-level logs — so the gate emits the promote command for the *exact* URL it
+no error-level logs - so the gate emits the promote command for the *exact* URL it
 verified. A failing health check or any error line exits non-zero and prints no
 promote command, so CI stops and nothing reaches production.
 
@@ -252,7 +252,7 @@ promote command, so CI stops and nothing reaches production.
 Drop in `.github/workflows/deploy.yml`. PRs get a verified preview; merges to `main`
 get a **prebuilt** production deploy (build once, deploy that output). Set
 `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` as repo secrets. Runtime app env vars
-are NOT here — they live in Vercel and are fetched by `vercel pull` (see
+are NOT here - they live in Vercel and are fetched by `vercel pull` (see
 vercel-env-management).
 
 ```yaml
@@ -273,7 +273,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 24 }          # Node.js 24 LTS — matches the runtime default
+        with: { node-version: 24 }          # Node.js 24 LTS - matches the runtime default
       - run: npm i -g vercel@latest
       - run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
       - run: vercel build --token=${{ secrets.VERCEL_TOKEN }}

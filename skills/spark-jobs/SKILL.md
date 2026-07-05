@@ -1,11 +1,11 @@
 ---
 name: Spark & PySpark
-description: Writes and tunes PySpark jobs — join strategy and broadcast size limits, shuffle-partition sizing, skew diagnosis and salting, UDF avoidance, caching, and output file layout — with concrete size and skew thresholds. Use when someone asks "why is my Spark job slow", "should I broadcast this join", "one task takes forever while the rest finish", "my job OOMs during a join", or is writing a new PySpark ETL job. Do NOT use for Kafka topic, consumer-group, or streaming-pipeline design — use kafka-pipelines instead; do NOT use for single-machine dataframe work that fits in memory — use pandas-expert instead.
+description: Writes and tunes PySpark jobs - join strategy and broadcast size limits, shuffle-partition sizing, skew diagnosis and salting, UDF avoidance, caching, and output file layout - with concrete size and skew thresholds. Use when someone asks "why is my Spark job slow", "should I broadcast this join", "one task takes forever while the rest finish", "my job OOMs during a join", or is writing a new PySpark ETL job. Do NOT use for Kafka topic, consumer-group, or streaming-pipeline design - use kafka-pipelines instead; do NOT use for single-machine dataframe work that fits in memory - use pandas-expert instead.
 ---
 
 # Spark & PySpark
 
-Almost every slow Spark job is slow for one of three reasons: an avoidable shuffle, a skewed key, or rows leaking through Python one at a time. The costly mistake is tuning cluster size before reading the plan — paying for more executors to run the same wasteful DAG faster.
+Almost every slow Spark job is slow for one of three reasons: an avoidable shuffle, a skewed key, or rows leaking through Python one at a time. The costly mistake is tuning cluster size before reading the plan - paying for more executors to run the same wasteful DAG faster.
 
 ## Operating procedure
 
@@ -14,7 +14,7 @@ Almost every slow Spark job is slow for one of three reasons: an avoidable shuff
 1. The job code and, for a slow job, the Spark UI view of the slow stage (task duration distribution, shuffle read/write sizes) and `df.explain(True)` output.
 2. Input data size and format, and the sizes of both sides of every join.
 3. Cluster shape: executor count, cores, and memory.
-4. Whether the job is new authoring or a tuning pass — for tuning, diagnose from the plan before touching code.
+4. Whether the job is new authoring or a tuning pass - for tuning, diagnose from the plan before touching code.
 
 ### Step 2: Start from a sane session
 
@@ -31,7 +31,7 @@ spark = (
 )
 ```
 
-Enable Adaptive Query Execution (AQE); it coalesces shuffle partitions and switches join strategies at runtime. Then size `spark.sql.shuffle.partitions` deliberately: target 100–200 MB per shuffle partition, so partitions ≈ shuffle data size ÷ 128 MB, and at least 2–3x the total executor cores so no core idles.
+Enable Adaptive Query Execution (AQE); it coalesces shuffle partitions and switches join strategies at runtime. Then size `spark.sql.shuffle.partitions` deliberately: target 100-200 MB per shuffle partition, so partitions ≈ shuffle data size ÷ 128 MB, and at least 2-3x the total executor cores so no core idles.
 
 ### Step 3: Stay in the DataFrame API and out of Python
 
@@ -51,7 +51,7 @@ def normalize(s):
 
 ### Step 4: Pick the join strategy by size
 
-- Broadcast the smaller side when it fits in memory. Spark auto-broadcasts below `spark.sql.autoBroadcastJoinThreshold` (default 10 MB); explicitly broadcast tables up to a few hundred MB when executor memory allows, and treat ~1 GB as the practical ceiling — broadcast copies the table to every executor and OOMs the job when misjudged.
+- Broadcast the smaller side when it fits in memory. Spark auto-broadcasts below `spark.sql.autoBroadcastJoinThreshold` (default 10 MB); explicitly broadcast tables up to a few hundred MB when executor memory allows, and treat ~1 GB as the practical ceiling - broadcast copies the table to every executor and OOMs the job when misjudged.
 
 ```python
 from pyspark.sql.functions import broadcast
@@ -63,14 +63,14 @@ result = large.join(broadcast(small), "key")
 
 ### Step 5: Diagnose and fix skew
 
-Skew symptoms: the stage is done except for one or two tasks; max task duration exceeds ~3–5x the median; one shuffle-read partition is far larger than the rest in the Spark UI. AQE's skew-join handling splits a partition when it is both over 5x the median partition size and over 256 MB (the defaults) — verify it fired in the plan. When AQE cannot help (e.g. skewed aggregation), salt the hot keys: append a random suffix 0..N to the key on the big side, explode the small side across all N suffixes, join, then strip the salt. Choose N ≈ the skew factor (a key 20x the median gets N=20).
+Skew symptoms: the stage is done except for one or two tasks; max task duration exceeds ~3-5x the median; one shuffle-read partition is far larger than the rest in the Spark UI. AQE's skew-join handling splits a partition when it is both over 5x the median partition size and over 256 MB (the defaults) - verify it fired in the plan. When AQE cannot help (e.g. skewed aggregation), salt the hot keys: append a random suffix 0..N to the key on the big side, explode the small side across all N suffixes, join, then strip the salt. Choose N ≈ the skew factor (a key 20x the median gets N=20).
 
 ### Step 6: Control partitioning and output layout
 
 - `repartition(n, col)` does a full shuffle to balance data; use before wide writes.
 - `coalesce(n)` reduces partitions without a shuffle; use to avoid tiny output files.
-- Target output files of 128 MB–1 GB; thousands of small files punish every downstream reader.
-- Partition output only by low-cardinality columns (date, region — dozens to hundreds of values, never IDs):
+- Target output files of 128 MB-1 GB; thousands of small files punish every downstream reader.
+- Partition output only by low-cardinality columns (date, region - dozens to hundreds of values, never IDs):
 
 ```python
 df.write.partitionBy("dt").mode("overwrite").parquet("/data/out")
@@ -95,7 +95,7 @@ Re-run `df.explain(True)` and confirm the intended strategy appears (`BroadcastH
 
 ## Worked example: bad vs good join
 
-**Bad** — a 2 TB events table joined to a 200 MB dimension, full width, Python UDF for parsing:
+**Bad** - a 2 TB events table joined to a 200 MB dimension, full width, Python UDF for parsing:
 
 ```python
 result = (events.join(dims, "store_id")          # sort-merge: shuffles all 2 TB
@@ -105,7 +105,7 @@ result = (events.join(dims, "store_id")          # sort-merge: shuffles all 2 TB
 
 The plan shows an `Exchange` on both sides (2 TB shuffled), and the UDF blocks codegen.
 
-**Good** — filter and project first, broadcast the dimension, use a built-in:
+**Good** - filter and project first, broadcast the dimension, use a built-in:
 
 ```python
 result = (events
@@ -123,13 +123,13 @@ Produce the revised job code plus a tuning note stating: the join strategy per j
 
 ## Do NOT
 
-- Do NOT broadcast a table you have not sized — a misjudged broadcast OOMs every executor at once.
+- Do NOT broadcast a table you have not sized - a misjudged broadcast OOMs every executor at once.
 - Do NOT write a Python UDF before checking `pyspark.sql.functions`; nearly all string, date, and conditional logic has a built-in.
 - Do NOT `collect()` or `toPandas()` a large DataFrame; it funnels the cluster's data through one driver.
-- Do NOT partition output by a high-cardinality column — millions of directories, one row each.
+- Do NOT partition output by a high-cardinality column - millions of directories, one row each.
 - Do NOT throw executors at a job whose slow stage is one skewed task; more cores cannot split one partition.
 - Do NOT cache by reflex; cache only DataFrames reused downstream, and unpersist them.
 
 ## Quality bar
 
-A finished job passes only when: every join names its strategy and the size evidence for it; `spark.sql.shuffle.partitions` is derived from data size, not left at a habit value; the Spark UI shows no task above ~3x the median duration in shuffle stages (or the skew is explained and fixed); no scalar Python UDF survives where a built-in exists; output files land in the 128 MB–1 GB band; and the final `explain` confirms the intended plan.
+A finished job passes only when: every join names its strategy and the size evidence for it; `spark.sql.shuffle.partitions` is derived from data size, not left at a habit value; the Spark UI shows no task above ~3x the median duration in shuffle stages (or the skew is explained and fixed); no scalar Python UDF survives where a built-in exists; output files land in the 128 MB-1 GB band; and the final `explain` confirms the intended plan.

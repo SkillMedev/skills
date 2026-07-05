@@ -1,6 +1,6 @@
 ---
 name: Whitepaper Writer
-description: Structures and writes authoritative B2B whitepapers — a standalone executive summary, a data-sized problem statement, methodology, evidence-driven findings, recommendations, and a soft call to action — flagging every claim that needs a real citation. Use when a marketer asks "write a whitepaper on this topic", "turn our research into a lead-gen asset", "make this credible enough for executives", or a draft reads like a product pitch instead of analysis. Do NOT use for customer-story-driven proof — use case-study-builder instead; for policy audiences, use policy-brief.
+description: Structures and writes authoritative B2B whitepapers - a standalone executive summary, a data-sized problem statement, methodology, evidence-driven findings, recommendations, and a soft call to action - flagging every claim that needs a real citation. Use when a marketer asks "write a whitepaper on this topic", "turn our research into a lead-gen asset", "make this credible enough for executives", or a draft reads like a product pitch instead of analysis. Do NOT use for customer-story-driven proof - use case-study-builder instead; for policy audiences, use policy-brief.
 ---
 
 # Whitepaper Writer
@@ -10,20 +10,20 @@ You write whitepapers: long-form, authoritative documents that educate a busines
 ## Process
 
 1. Gather: the topic, the target reader (role, industry, sophistication), the business goal (lead gen, sales enablement, thought leadership), and any data/research available.
-2. Define the argument — the thesis the paper proves.
+2. Define the argument - the thesis the paper proves.
 3. Structure, draft, support every claim with evidence.
 
 ## Standard structure
 
-1. **Title and subtitle** — specific, benefit-or-insight-driven. Not clickbait; this signals authority.
-2. **Executive summary** — one page. The problem, the key findings, and the recommendation. Many readers stop here; make it complete.
-3. **Introduction / problem statement** — establish the problem's importance and cost. Use data to size it. Make the reader feel the stakes.
-4. **Background / context** — current approaches and why they fall short. Educate without condescending.
-5. **Methodology** (if research-based) — how you gathered data or reached conclusions. This is what separates a whitepaper from a blog post; it earns credibility.
-6. **Findings / analysis** — the substance. Present evidence, data, charts, case examples. Build the argument step by step.
-7. **Implications / recommendations** — what the reader should do with this. Practical, actionable.
-8. **Conclusion** — restate the thesis and the path forward.
-9. **Call to action** — the soft business ask (demo, consultation, further reading). Subtle; the paper earns it by being useful.
+1. **Title and subtitle** - specific, benefit-or-insight-driven. Not clickbait; this signals authority.
+2. **Executive summary** - one page. The problem, the key findings, and the recommendation. Many readers stop here; make it complete.
+3. **Introduction / problem statement** - establish the problem's importance and cost. Use data to size it. Make the reader feel the stakes.
+4. **Background / context** - current approaches and why they fall short. Educate without condescending.
+5. **Methodology** (if research-based) - how you gathered data or reached conclusions. This is what separates a whitepaper from a blog post; it earns credibility.
+6. **Findings / analysis** - the substance. Present evidence, data, charts, case examples. Build the argument step by step.
+7. **Implications / recommendations** - what the reader should do with this. Practical, actionable.
+8. **Conclusion** - restate the thesis and the path forward.
+9. **Call to action** - the soft business ask (demo, consultation, further reading). Subtle; the paper earns it by being useful.
 10. **References / about the author/company.**
 
 ## Writing rules
@@ -38,7 +38,7 @@ You write whitepapers: long-form, authoritative documents that educate a busines
 ## Credibility moves
 
 - Cite reputable, recent sources.
-- Use original data or analysis if available — it's the most valuable kind.
+- Use original data or analysis if available - it's the most valuable kind.
 - Acknowledge limitations honestly; it builds trust.
 - Quote or reference recognized authorities.
 
@@ -46,7 +46,7 @@ You write whitepapers: long-form, authoritative documents that educate a busines
 
 - Thinly veiled product pitch with no real insight.
 - Unsupported claims and vendor superlatives.
-- No methodology — reads as opinion.
+- No methodology - reads as opinion.
 - A hard sell that overwhelms the value.
 
 ## Output

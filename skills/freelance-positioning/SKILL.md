@@ -1,11 +1,11 @@
 ---
 name: freelance-positioning
-description: Selects a defensible freelance niche and writes a positioning statement using the vertical x problem x outcome procedure, then aligns portfolio proof to it. Use when a freelancer or consultant says "I take any work that pays", "how do I niche down", "what should I specialize in", "write my positioning statement", "my portfolio is all over the place", or "clients see me as a pair of hands, not an expert". Do NOT use for positioning a product or company in a market category — use positioning-statement instead.
+description: Selects a defensible freelance niche and writes a positioning statement using the vertical x problem x outcome procedure, then aligns portfolio proof to it. Use when a freelancer or consultant says "I take any work that pays", "how do I niche down", "what should I specialize in", "write my positioning statement", "my portfolio is all over the place", or "clients see me as a pair of hands, not an expert". Do NOT use for positioning a product or company in a market category - use positioning-statement instead.
 ---
 
 # Freelance Positioning
 
-A generalist freelancer competes on price against everyone; a positioned freelancer competes on relevance against almost no one. The costly mistake this skill prevents is staying broad out of fear: "I don't want to turn away work" keeps rates pinned at commodity levels because no client pays a premium for interchangeable. Install this skill first in the Freelancer / Consultant OS pack — the niche chosen here is the input to productized-service-designer, and the pricing in retainer-pricing-calculator only holds up if the positioning supports it.
+A generalist freelancer competes on price against everyone; a positioned freelancer competes on relevance against almost no one. The costly mistake this skill prevents is staying broad out of fear: "I don't want to turn away work" keeps rates pinned at commodity levels because no client pays a premium for interchangeable. Install this skill first in the Freelancer / Consultant OS pack - the niche chosen here is the input to productized-service-designer, and the pricing in retainer-pricing-calculator only holds up if the positioning supports it.
 
 Worked example throughout the pack: Maya, a freelance brand designer, currently earning $6,000 a month on hourly work at $75/hr, moving to productized retainers.
 
@@ -30,7 +30,7 @@ Build a three-column grid and generate candidate niches as combinations:
 - **Problem**: the expensive, recurring pain the freelancer already solves. Must be a problem the buyer already knows they have.
 - **Outcome**: the business result the buyer would pay for, stated in the buyer's words, not the craft's ("launch-ready brand system", not "logo and style guide").
 
-Score each candidate combination 1-5 on four axes: proof (can the freelancer point to past work here?), access (can they reach these buyers?), budget (do these buyers pay professional rates?), repeatability (does the work productize?). Pick the highest total. A candidate scoring under 3 on proof or budget is out regardless of total — passion without proof or buyers without budget both fail.
+Score each candidate combination 1-5 on four axes: proof (can the freelancer point to past work here?), access (can they reach these buyers?), budget (do these buyers pay professional rates?), repeatability (does the work productize?). Pick the highest total. A candidate scoring under 3 on proof or budget is out regardless of total - passion without proof or buyers without budget both fail.
 
 Maya's winning combination: **DTC food and beverage brands** (vertical) x **scattered, inconsistent visuals across packaging, social, and web** (problem) x **a launch-ready brand system so every channel looks like one company** (outcome). She had three past clients in the space, two with strong before/after results.
 
@@ -42,13 +42,13 @@ Use this formula, one sentence, no jargon:
 I help [VERTICAL] who struggle with [PROBLEM] get [OUTCOME], through [NAMED SERVICE or METHOD].
 ```
 
-Maya's: "I help DTC food and beverage brands who struggle with scattered, inconsistent visuals get a launch-ready brand system — so packaging, social, and web all look like one company — through a fixed-scope brand retainer."
+Maya's: "I help DTC food and beverage brands who struggle with scattered, inconsistent visuals get a launch-ready brand system - so packaging, social, and web all look like one company - through a fixed-scope brand retainer."
 
 Test the statement against three checks:
 
 - **The referral test**: could a past client repeat it accurately at a dinner party?
 - **The exclusion test**: does it clearly NOT apply to some buyers? A statement that excludes no one positions no one.
-- **The premium test**: does the outcome justify rates above the freelancer's current effective rate? (Maya's target after productizing is $136/hr effective — the statement must support that, and it does, because "launch-ready brand system" is a business outcome, not hours.)
+- **The premium test**: does the outcome justify rates above the freelancer's current effective rate? (Maya's target after productizing is $136/hr effective - the statement must support that, and it does, because "launch-ready brand system" is a business outcome, not hours.)
 
 ### Step 4: Align portfolio proof
 
@@ -56,7 +56,7 @@ Positioning without proof is a claim; proof without positioning is noise. Audit 
 
 1. Promote: move the 2-3 projects matching the niche to the top, rewritten as problem → work → measurable outcome case studies.
 2. Demote or cut: work outside the niche goes below the fold or off the site entirely. Off-niche work on page one silently re-broadens the positioning.
-3. Fill gaps: if the niche has fewer than 2 proof pieces, do one anchor project at a modest fee specifically to generate the case study — a deliberate investment, not a discount habit.
+3. Fill gaps: if the niche has fewer than 2 proof pieces, do one anchor project at a modest fee specifically to generate the case study - a deliberate investment, not a discount habit.
 
 Maya promoted her three food-and-beverage projects, rewrote each as a case study ("packaging refresh lifted shelf-test preference 22 percent"), and moved her one-off wedding invitations and real-estate flyers off the site.
 
@@ -77,7 +77,7 @@ A one-page positioning document containing: the scored niche grid, the final pos
 - Do not pick a vertical with no budget signal just because the freelancer likes it. Passion niches with broke buyers produce positioned poverty.
 - Do not keep off-niche work visible in the public portfolio "to look versatile". Versatile reads as interchangeable.
 - Do not skip the exclusion test. If the statement could belong to any freelancer in the field, it is a tagline, not positioning.
-- Do not treat positioning as permanent at first draft — but change it deliberately at review points, never reactively after one slow month.
+- Do not treat positioning as permanent at first draft - but change it deliberately at review points, never reactively after one slow month.
 
 ## Quality bar
 

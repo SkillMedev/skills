@@ -7,7 +7,7 @@ description: Reduces alert noise by making alerts actionable, symptom-based, and
 
 Every alert that fires without requiring human action trains engineers to ignore alerts. Alert fatigue kills real incidents. The goal: every page wakes someone up for a reason they cannot automate away.
 
-## The Audit — Run First
+## The Audit - Run First
 
 Before writing new alert rules, audit what you have.
 

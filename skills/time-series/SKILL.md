@@ -1,11 +1,11 @@
 ---
 name: Time Series Analysis
-description: Decomposes and forecasts time-indexed data with STL, ARIMA/SARIMA, and Prophet, validated by time-ordered backtests against a seasonal-naive baseline. Use when someone asks "forecast next quarter's demand", "is this series seasonal", "why is my ARIMA forecast flat", "how do I backtest a forecast", or has any metric indexed by time that needs prediction or decomposition. Do NOT use for explaining what a trend means for strategy — use trend-analysis instead; for estimating the causal impact of an intervention on a series use causal-inference; for translating a forecast into an ARR or MRR plan use revenue-modeling.
+description: Decomposes and forecasts time-indexed data with STL, ARIMA/SARIMA, and Prophet, validated by time-ordered backtests against a seasonal-naive baseline. Use when someone asks "forecast next quarter's demand", "is this series seasonal", "why is my ARIMA forecast flat", "how do I backtest a forecast", or has any metric indexed by time that needs prediction or decomposition. Do NOT use for explaining what a trend means for strategy - use trend-analysis instead; for estimating the causal impact of an intervention on a series use causal-inference; for translating a forecast into an ARR or MRR plan use revenue-modeling.
 ---
 
 # Time Series Analysis
 
-Time series work fails in two characteristic ways: validating on a random split (which leaks the future into training and produces accuracy numbers that evaporate in production), and shipping a model that never had to beat the dumbest possible baseline. The discipline below exists to prevent both — every forecast is backtested in time order and compared against seasonal-naive before anyone sees it.
+Time series work fails in two characteristic ways: validating on a random split (which leaks the future into training and produces accuracy numbers that evaporate in production), and shipping a model that never had to beat the dumbest possible baseline. The discipline below exists to prevent both - every forecast is backtested in time order and compared against seasonal-naive before anyone sees it.
 
 ## Operating procedure
 
@@ -14,7 +14,7 @@ Order matters: exploration decides the seasonal period, the period decides the d
 ### Step 1: gather inputs
 
 - The series itself, its frequency, and its business meaning. Reindex to a regular frequency before anything else (`series.asfreq("D")`); missing timestamps must become explicit NaNs, then be imputed or modeled, never silently skipped.
-- The forecast horizon and what decision it feeds. A 12-month forecast from 18 months of history is a guess — say so. Rules of thumb: require at least 2 full seasonal cycles of history (prefer 3+) before fitting a seasonal model, and keep the horizon under roughly 20% of history length or widen the caveats.
+- The forecast horizon and what decision it feeds. A 12-month forecast from 18 months of history is a guess - say so. Rules of thumb: require at least 2 full seasonal cycles of history (prefer 3+) before fitting a seasonal model, and keep the horizon under roughly 20% of history length or widen the caveats.
 - Known interventions: launches, price changes, outages. Mark them; a level shift modeled as trend poisons everything downstream. If the question is "what did the intervention cause", stop and use causal-inference.
 - The seasonal period, from the data's rhythm: 7 for daily data with weekly cycles, 12 for monthly, 52 for weekly, 24 for hourly-with-daily-cycle. Label a guessed period as a guess and verify it in Step 2.
 
@@ -38,7 +38,7 @@ from statsmodels.tsa.stattools import adfuller
 stat, pvalue, *_ = adfuller(series.dropna())
 ```
 
-p < 0.05 rejects the unit root — treat the series as stationary. Otherwise difference.
+p < 0.05 rejects the unit root - treat the series as stationary. Otherwise difference.
 
 ### Step 3: make the series stationary (for ARIMA)
 
@@ -63,7 +63,7 @@ forecast = fit.get_forecast(steps=12)
 ci = forecast.conf_int()
 ```
 
-`pmdarima.auto_arima` can search orders by AIC, but treat its winner as a candidate, not an answer — verify residuals (Step 6) before trusting it.
+`pmdarima.auto_arima` can search orders by AIC, but treat its winner as a candidate, not an answer - verify residuals (Step 6) before trusting it.
 
 Prophet, for business series with strong multiple seasonality and holiday effects:
 
@@ -77,7 +77,7 @@ fc = m.predict(m.make_future_dataframe(periods=90))
 
 Apply a log transform first when seasonal amplitude scales with the level (multiplicative seasonality), for either model family.
 
-### Step 5: validate in time order — never a random split
+### Step 5: validate in time order - never a random split
 
 Backtest with rolling or expanding windows that respect time:
 
@@ -86,13 +86,13 @@ from sklearn.model_selection import TimeSeriesSplit
 tscv = TimeSeriesSplit(n_splits=5)
 ```
 
-Report MAPE, MAE, and RMSE on held-out future windows only — in-sample fit is not evidence. Always fit the **seasonal-naive baseline** (predict the value from one season ago) through the same backtest. The acceptance threshold: the model's error must beat seasonal-naive (MASE < 1, or lower MAPE on the same folds). A sophisticated model that loses to naive ships the naive.
+Report MAPE, MAE, and RMSE on held-out future windows only - in-sample fit is not evidence. Always fit the **seasonal-naive baseline** (predict the value from one season ago) through the same backtest. The acceptance threshold: the model's error must beat seasonal-naive (MASE < 1, or lower MAPE on the same folds). A sophisticated model that loses to naive ships the naive.
 
 ### Step 6: diagnose residuals
 
 Residuals from a correct model are white noise:
 
-- Ljung-Box test: p > 0.05 means no remaining autocorrelation. p below that means structure is left — revisit orders or the seasonal period.
+- Ljung-Box test: p > 0.05 means no remaining autocorrelation. p below that means structure is left - revisit orders or the seasonal period.
 - Residual ACF plot: no bars beyond the significance band.
 - Residual histogram roughly normal **if** the prediction intervals will be quoted; heavy tails mean the intervals are too narrow and should be widened or bootstrapped.
 
@@ -102,7 +102,7 @@ Always show the confidence interval, and say plainly that uncertainty grows with
 
 ## Worked artifact: model-choice decision
 
-Monthly revenue, 36 points, clear December spike, variance growing with level. Decision trail: period = 12 (monthly with annual cycle, 3 full cycles available — enough). Log transform (multiplicative seasonality). ADF on log series p = 0.41 → difference; on differenced series p = 0.01 → proceed with d = 1, D = 1. ACF/PACF suggest (1,1,1)(0,1,1,12). Backtest on 5 expanding folds at horizon 6: SARIMA MAPE 7.2% vs seasonal-naive 11.8% — model earns its keep, ship with intervals from the log-scale fit back-transformed.
+Monthly revenue, 36 points, clear December spike, variance growing with level. Decision trail: period = 12 (monthly with annual cycle, 3 full cycles available - enough). Log transform (multiplicative seasonality). ADF on log series p = 0.41 → difference; on differenced series p = 0.01 → proceed with d = 1, D = 1. ACF/PACF suggest (1,1,1)(0,1,1,12). Backtest on 5 expanding folds at horizon 6: SARIMA MAPE 7.2% vs seasonal-naive 11.8% - model earns its keep, ship with intervals from the log-scale fit back-transformed.
 
 ## Deliverable
 

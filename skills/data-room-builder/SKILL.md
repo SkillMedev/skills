@@ -13,20 +13,20 @@ tight ship" and shortens the path to wired funds.
 ## When to use this skill
 
 Build it during [[fundraise-readiness-audit]] (you should be able to produce it
-in days — 3 to 5 working days is the standard for a seed-stage company with
+in days - 3 to 5 working days is the standard for a seed-stage company with
 clean books), and stage it for sharing once a term sheet is near. Confirmatory
 diligence runs against it; see [[fundraise-closing-mechanics]].
 
 ## Structure the room in tiers
 
-Share progressively — not everything goes out on the first call.
+Share progressively - not everything goes out on the first call.
 
-### Tier 1 — shared early (builds confidence)
+### Tier 1 - shared early (builds confidence)
 - Pitch deck and the one-page narrative memo.
 - Key metrics dashboard with definitions (so numbers are not disputed later).
 - Market sizing with assumptions ([[market-sizing]]).
 
-### Tier 2 — shared at serious interest / pre-term-sheet
+### Tier 2 - shared at serious interest / pre-term-sheet
 - **Financials**: historical P&L covering at least the trailing 24 months
   (monthly granularity), the model/projections ([[financial-planner]]),
   monthly burn and runway.
@@ -34,11 +34,11 @@ Share progressively — not everything goes out on the first call.
 - **Cap table**: fully-diluted, plus prior SAFEs/notes ([[cap-table-manager]]).
 - **Product**: roadmap, architecture overview, security posture.
 
-### Tier 3 — confirmatory diligence (post-term-sheet)
+### Tier 3 - confirmatory diligence (post-term-sheet)
 - **Corporate**: incorporation docs, board consents, prior financing docs.
 - **IP**: assignment agreements for every founder and contractor.
 - **Customers**: top contracts (any customer over ~10% of revenue gets extra
-  scrutiny — have those contracts and their renewal terms ready), churn
+  scrutiny - have those contracts and their renewal terms ready), churn
   detail, references.
 - **People**: org chart, key employee agreements, option grants.
 - **Legal**: any litigation, regulatory exposure, material contracts.
@@ -49,7 +49,7 @@ Share progressively — not everything goes out on the first call.
   your mouth must match to the decimal.
 - Label and date every file. A folder named "Final_v3_real" loses you trust.
 - Track who has access and what tier they are in; close access within a week
-  of a deal dying — a stale open room is a leak waiting to happen.
+  of a deal dying - a stale open room is a leak waiting to happen.
 - Keep an index document at the root so a partner can navigate without asking.
 - Respond to any diligence document request within 24-48 hours. Slower than
   that reads as "they don't have it" and stalls the deal clock; confirmatory
@@ -58,7 +58,7 @@ Share progressively — not everything goes out on the first call.
 
 ## Anti-patterns
 
-- Dumping everything on day one — it overwhelms and surfaces issues out of
+- Dumping everything on day one - it overwhelms and surfaces issues out of
   context.
 - A number in diligence that contradicts the deck. This is the single fastest
   way to lose a deal; reconcile before you share.

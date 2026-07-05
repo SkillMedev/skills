@@ -1,11 +1,11 @@
 ---
 name: Process Documentation
-description: Documents recurring processes as step-by-step SOPs with decision points, edge cases, and a named owner, so anyone can run the process correctly without asking. Use when someone asks "write an SOP for this", "document our onboarding process", "this only lives in one person's head", or wants to delegate a recurring task safely. Do NOT use for incident-response or on-call operational runbooks — use runbook-writer instead; for customer-facing product documentation, use help-documentation.
+description: Documents recurring processes as step-by-step SOPs with decision points, edge cases, and a named owner, so anyone can run the process correctly without asking. Use when someone asks "write an SOP for this", "document our onboarding process", "this only lives in one person's head", or wants to delegate a recurring task safely. Do NOT use for incident-response or on-call operational runbooks - use runbook-writer instead; for customer-facing product documentation, use help-documentation.
 ---
 
 # Process Documentation
 
-A Standard Operating Procedure lets anyone perform a recurring process correctly without asking. The costly failure it prevents is silent: the one person who knows the process leaves, gets sick, or goes on vacation, and the team discovers the "documented" process was actually tribal knowledge. Good SOPs reduce errors, enable delegation, and survive turnover — but only if they cover the branches, not just the happy path.
+A Standard Operating Procedure lets anyone perform a recurring process correctly without asking. The costly failure it prevents is silent: the one person who knows the process leaves, gets sick, or goes on vacation, and the team discovers the "documented" process was actually tribal knowledge. Good SOPs reduce errors, enable delegation, and survive turnover - but only if they cover the branches, not just the happy path.
 
 ## Operating procedure
 
@@ -26,9 +26,9 @@ If the process fails all three, capture it as a two-line checklist note and stop
 Collect from the process owner before drafting. Where they are unsure, record the answer and label it a guess to verify during validation:
 
 - Process name, trigger (the event or schedule that starts it), and frequency.
-- Who runs it today, and the least-experienced person who might run it later. Write for that person — no assumed tribal knowledge.
+- Who runs it today, and the least-experienced person who might run it later. Write for that person - no assumed tribal knowledge.
 - Prerequisites: access, permissions, tools, and inputs required before step 1.
-- The observable end state — "done when" — in one sentence.
+- The observable end state - "done when" - in one sentence.
 - The failure stories: every time this process has gone wrong and what fixed it. These become the edge-case section, which is where the SOP's real value lives.
 
 ### Step 3: Draft the happy path
@@ -38,7 +38,7 @@ Number the steps in execution order. Rules that separate a usable SOP from a wal
 - One action per step. If a step contains "and", split it.
 - Start each step with a verb: "Open...", "Verify...", "Send...".
 - Make results observable: every step that can fail silently gets an "Expected result: you should see X" line so the runner can self-check.
-- Keep the SOP to 5–15 steps. Under 5, it is probably a checklist item; over 15, split it into linked sub-SOPs, because runners lose their place.
+- Keep the SOP to 5-15 steps. Under 5, it is probably a checklist item; over 15, split it into linked sub-SOPs, because runners lose their place.
 - Link, don't embed, anything that changes (URLs, contact names, dashboards) so the SOP ages well.
 
 ### Step 4: Capture decision points and edge cases
@@ -51,7 +51,7 @@ The happy path is the easy part; people get stuck at the branches.
 
 ### Step 5: Validate with the stranger test
 
-Have someone who has never run the process follow the SOP start to finish without help. Every question they ask is a gap — fix the doc, not the runner. Do not publish an SOP that has not survived one full unassisted run.
+Have someone who has never run the process follow the SOP start to finish without help. Every question they ask is a gap - fix the doc, not the runner. Do not publish an SOP that has not survived one full unassisted run.
 
 ### Step 6: Assign ownership and a review cadence
 
@@ -67,7 +67,7 @@ Copy this and replace the [FILL] fields.
 Owner: [FILL: role]   Last updated: [FILL]   Frequency: [FILL: how often run]
 
 ## Purpose
-[FILL: one sentence — what this accomplishes and why it matters.]
+[FILL: one sentence - what this accomplishes and why it matters.]
 
 ## When to run this
 [FILL: the trigger event or schedule.]
@@ -77,7 +77,7 @@ Owner: [FILL: role]   Last updated: [FILL]   Frequency: [FILL: how often run]
 - [FILL: tools / inputs required]
 
 ## Steps
-1. [FILL: verb + object — exactly what to do.]
+1. [FILL: verb + object - exactly what to do.]
    - Expected result: [FILL: what the runner should see]
 2. ...
 
@@ -105,15 +105,15 @@ The bad version has three hidden actions, no observable result, and no branch fo
 
 ## Deliverable
 
-Produce a complete SOP document containing: header with owner, date, and frequency; purpose and trigger; prerequisites; 5–15 numbered verb-first steps with expected results; explicit if/then decision points; edge cases with fixes; an escalation contact; and a "done when" end state — validated by one unassisted stranger run.
+Produce a complete SOP document containing: header with owner, date, and frequency; purpose and trigger; prerequisites; 5-15 numbered verb-first steps with expected results; explicit if/then decision points; edge cases with fixes; an escalation contact; and a "done when" end state - validated by one unassisted stranger run.
 
 ## Do NOT
 
-- Do not write walls of prose instead of numbered steps — runners lose their place and skip actions.
-- Do not document only the happy path — the branches are where people get stuck and where errors cost money.
-- Do not publish without an owner and date — the doc rots invisibly and the first stale step destroys trust in the rest.
-- Do not over-document trivial processes — match detail to risk and frequency, or nobody maintains it.
-- Do not embed volatile details (URLs, names, prices) inline — link to the source of truth instead.
+- Do not write walls of prose instead of numbered steps - runners lose their place and skip actions.
+- Do not document only the happy path - the branches are where people get stuck and where errors cost money.
+- Do not publish without an owner and date - the doc rots invisibly and the first stale step destroys trust in the rest.
+- Do not over-document trivial processes - match detail to risk and frequency, or nobody maintains it.
+- Do not embed volatile details (URLs, names, prices) inline - link to the source of truth instead.
 
 ## Quality bar
 

@@ -1,6 +1,6 @@
 ---
 name: Vercel Env Management
-description: Manage environment variables across Vercel environments and keep local .env in sync — vercel env pull/add/rm/ls, per-environment values (development/preview/production + custom), sensitive secrets, OIDC tokens for keyless cloud access, and the NEXT_PUBLIC build-time inlining gotcha. Use when someone says "sync my .env", "vercel env pull", "set a secret on Vercel", "my env var is undefined in production", "different API key per environment", "why is my NEXT_PUBLIC var stale", or "connect to AWS/GCP without storing keys". Do NOT use when the task is the deploy/promote/rollback flow — use vercel-deploy-pipeline; for routing AI provider keys through one gateway — use vercel-ai-gateway; for runtime/region/caching config (ISR, Fluid Compute) — use vercel-edge-and-isr; for blocking bots or WAF rules — use vercel-firewall-and-botid; for bundle/runtime speed tuning — use next-on-vercel-perf.
+description: Manage environment variables across Vercel environments and keep local .env in sync - vercel env pull/add/rm/ls, per-environment values (development/preview/production + custom), sensitive secrets, OIDC tokens for keyless cloud access, and the NEXT_PUBLIC build-time inlining gotcha. Use when someone says "sync my .env", "vercel env pull", "set a secret on Vercel", "my env var is undefined in production", "different API key per environment", "why is my NEXT_PUBLIC var stale", or "connect to AWS/GCP without storing keys". Do NOT use when the task is the deploy/promote/rollback flow - use vercel-deploy-pipeline; for routing AI provider keys through one gateway - use vercel-ai-gateway; for runtime/region/caching config (ISR, Fluid Compute) - use vercel-edge-and-isr; for blocking bots or WAF rules - use vercel-firewall-and-botid; for bundle/runtime speed tuning - use next-on-vercel-perf.
 ---
 
 # Vercel Env Management
@@ -13,7 +13,7 @@ anywhere. Get this wrong and you ship a preview build talking to a production
 database, or a `NEXT_PUBLIC_` key that is stale because it was baked in at build.
 
 This is one step in the **vercel-platform** ship-a-Next.js-app workflow. It is
-deliberately *not* a transcription of the `vercel env` man page — it sequences the
+deliberately *not* a transcription of the `vercel env` man page - it sequences the
 commands into the order a real project needs them and flags the three mistakes
 that actually cost people an afternoon. Pair it with `vercel-deploy-pipeline`
 (which consumes these vars at build) and `vercel-ai-gateway` (which replaces a pile
@@ -27,17 +27,17 @@ undefined", "different value per environment", "my `NEXT_PUBLIC` var won't updat
 
 Vercel scopes every variable to one or more **environments**:
 
-- **development** — used by `vercel dev` and pulled into your local `.env.local`.
-- **preview** — every non-production deployment (every branch/PR). You can scope a
+- **development** - used by `vercel dev` and pulled into your local `.env.local`.
+- **preview** - every non-production deployment (every branch/PR). You can scope a
   preview value to a single git branch with `--git-branch`.
-- **production** — the deployment behind your production domain.
-- **custom environments** (e.g. `staging`) — named, long-lived targets you create
+- **production** - the deployment behind your production domain.
+- **custom environments** (e.g. `staging`) - named, long-lived targets you create
   in the dashboard; addressed by name everywhere a built-in environment is.
 
 The same *name* (`DATABASE_URL`) holds a *different value* per environment. That is
 the whole point: preview points at a branch database, production at the real one.
 
-## Step 1 — Link the project (once)
+## Step 1 - Link the project (once)
 
 Every `vercel env` command operates on the linked project. Link before anything
 else; it writes `.vercel/` (which is gitignored by the CLI):
@@ -46,7 +46,7 @@ else; it writes `.vercel/` (which is gitignored by the CLI):
 vercel link
 ```
 
-## Step 2 — Pull the development env into a local file
+## Step 2 - Pull the development env into a local file
 
 `vercel env pull` writes the **development** variables to `.env.local` by default
 (Next.js, Astro, SvelteKit, Nuxt all read `.env.local` locally):
@@ -57,8 +57,8 @@ vercel env pull .env.local      # explicit, same thing
 vercel env pull --yes           # overwrite without the confirm prompt (CI)
 ```
 
-To inspect what production or preview actually has — to debug an "it works locally
-but not in prod" gap — pull that environment into a throwaway file and diff:
+To inspect what production or preview actually has - to debug an "it works locally
+but not in prod" gap - pull that environment into a throwaway file and diff:
 
 ```bash
 vercel env pull .env.production.local --environment=production
@@ -69,9 +69,9 @@ vercel pull --environment=preview --git-branch=my-feature  # branch-scoped previ
 in CI before `vercel build`. For just the dotenv file locally, `vercel env pull` is
 the one you want.
 
-## Step 3 — Add a variable to the right environment(s)
+## Step 3 - Add a variable to the right environment(s)
 
-Never hand-edit a value into `.env.local` and expect it to deploy — that file is a
+Never hand-edit a value into `.env.local` and expect it to deploy - that file is a
 local cache and is gitignored. Add it to Vercel:
 
 ```bash
@@ -97,13 +97,13 @@ vercel env add API_TOKEN production --force      # replace existing value
 
 Mind the budget: Vercel caps the combined size of all env vars at 64 KB per
 deployment (Edge-runtime consumers are tighter, around 5 KB per variable). If you
-are pushing against that, the fix is fewer/leaner vars — move big blobs of config
+are pushing against that, the fix is fewer/leaner vars - move big blobs of config
 into Edge Config or a store, not into the environment.
 
 After adding or changing a var, **re-pull** so your local cache matches:
 `vercel env pull`.
 
-## Step 4 — List and remove
+## Step 4 - List and remove
 
 ```bash
 vercel env ls                       # all vars, which environments each targets
@@ -112,10 +112,10 @@ vercel env rm OLD_TOKEN production   # remove from one environment
 vercel env rm OLD_TOKEN --yes        # skip the confirm prompt
 ```
 
-Removing a var does **not** affect already-built deployments — it takes effect on
+Removing a var does **not** affect already-built deployments - it takes effect on
 the next build (see Step 6 for the redeploy rule).
 
-## Step 5 — Keyless cloud access with OIDC (stop storing cloud keys)
+## Step 5 - Keyless cloud access with OIDC (stop storing cloud keys)
 
 Do not put a long-lived AWS/GCP/Azure key in an env var if you can avoid it. With
 **Secure Backend Access** enabled, Vercel issues a short-lived `VERCEL_OIDC_TOKEN`
@@ -125,7 +125,7 @@ automatically. This is the recommended pattern for talking to a cloud provider
 from a Vercel Function.
 
 Pull the token for local dev like any other dev var. Note it is short-lived by
-design — a locally pulled `VERCEL_OIDC_TOKEN` is valid for about 12 hours, so a
+design - a locally pulled `VERCEL_OIDC_TOKEN` is valid for about 12 hours, so a
 morning `vercel env pull` is part of the routine, not a one-time setup:
 
 ```bash
@@ -133,7 +133,7 @@ vercel link
 vercel env pull        # brings down VERCEL_OIDC_TOKEN among the dev vars
 ```
 
-Exchange it for AWS credentials with the first-party provider — no `AWS_ACCESS_KEY_ID`
+Exchange it for AWS credentials with the first-party provider - no `AWS_ACCESS_KEY_ID`
 in your env at all:
 
 ```ts
@@ -149,7 +149,7 @@ const s3 = new S3Client({
 });
 ```
 
-(The AWS provider lives in `@vercel/oidc-aws-credentials-provider` —
+(The AWS provider lives in `@vercel/oidc-aws-credentials-provider` -
 `npm i @aws-sdk/client-s3 @vercel/oidc-aws-credentials-provider`. The older
 `@vercel/functions/oidc` import has been moved out.)
 
@@ -173,24 +173,24 @@ The cloud-side setup (an IAM role / workload-identity pool that trusts Vercel's
 OIDC issuer with your team+project as the subject) is one-time and lives in your
 cloud console, not here. Once it trusts Vercel, you delete the stored key.
 
-Aside: for AI providers specifically, you usually do **not** need any of this — the
+Aside: for AI providers specifically, you usually do **not** need any of this - the
 AI Gateway already accepts `VERCEL_OIDC_TOKEN` on Vercel and an `AI_GATEWAY_API_KEY`
 locally, so one credential covers every model. That belongs to `vercel-ai-gateway`.
 
-## Step 6 — The build-time inlining rule (NEXT_PUBLIC_*)
+## Step 6 - The build-time inlining rule (NEXT_PUBLIC_*)
 
 This is the single most common env surprise. **`NEXT_PUBLIC_`-prefixed variables
-are inlined into the client bundle at build time** — their values are literally
+are inlined into the client bundle at build time** - their values are literally
 string-replaced into the JavaScript when the build runs. Consequences:
 
 - Changing a `NEXT_PUBLIC_` value in the Vercel dashboard does **nothing** to a
   deployment that already built. You must **redeploy** to bake in the new value.
-- They are **public** — anything in a `NEXT_PUBLIC_` var ships to the browser. Never
+- They are **public** - anything in a `NEXT_PUBLIC_` var ships to the browser. Never
   prefix a secret. (Marking it `--sensitive` does not make a `NEXT_PUBLIC_` var
   private; the prefix wins.)
 - Server-only vars (no prefix) are read at **runtime** from
-  `process.env` inside Functions/Middleware, so updating them + redeploying — or in
-  some cases just a new deployment — picks up the change without a rebuild caveat.
+  `process.env` inside Functions/Middleware, so updating them + redeploying - or in
+  some cases just a new deployment - picks up the change without a rebuild caveat.
 
 When someone reports "I updated the env var but the site still shows the old
 value," 90% of the time it is a `NEXT_PUBLIC_` var and the fix is **redeploy**, not
@@ -203,7 +203,7 @@ An env setup is done right only when all hold:
 - `.env.local` (and any pulled `.env.*.local`) is gitignored and was produced by
   `vercel env pull`, never hand-authored as the source of truth.
 - Every variable that differs by stage is set in **each** environment it is needed
-  in — a value present only in production silently becomes `undefined` in preview.
+  in - a value present only in production silently becomes `undefined` in preview.
 - Every credential-shaped var is `--sensitive`; no secret carries a `NEXT_PUBLIC_`
   prefix.
 - Cloud access uses OIDC where the provider supports it; long-lived cloud keys are
@@ -217,18 +217,18 @@ An env setup is done right only when all hold:
   are gitignored for a reason; pulling them is fine, committing them is a leak.
 - Do NOT treat the local file as the source of truth. Edit on Vercel
   (`vercel env add`), then `vercel env pull` to refresh the cache.
-- Do NOT put a secret behind `NEXT_PUBLIC_` — it is shipped to every browser, and
+- Do NOT put a secret behind `NEXT_PUBLIC_` - it is shipped to every browser, and
   `--sensitive` cannot save it.
 - Do NOT expect a `NEXT_PUBLIC_` value change to take effect without a redeploy; it
   was inlined at build time.
-- Do NOT set one shared value across all environments and assume preview is safe —
+- Do NOT set one shared value across all environments and assume preview is safe -
   a preview build with a production `DATABASE_URL` writes to prod.
 - Do NOT paste long-lived AWS/GCP keys into env vars when OIDC + a trusted role
   does the same job with rotating short-lived credentials.
-- Do NOT own the deploy/promote step here — that is `vercel-deploy-pipeline`.
+- Do NOT own the deploy/promote step here - that is `vercel-deploy-pipeline`.
 - Do NOT configure runtime/region/ISR caching here (`vercel-edge-and-isr`), WAF /
   bot rules (`vercel-firewall-and-botid`), or bundle/runtime perf
-  (`next-on-vercel-perf`) — this skill stops at the variables themselves.
+  (`next-on-vercel-perf`) - this skill stops at the variables themselves.
 
 ## Verifier: lint your dotenv + Vercel env wiring
 
@@ -337,7 +337,7 @@ MISSING LOCALLY (set on Vercel + re-pull, or these are server-only prod vars):
 ```
 
 Read it: rename `NEXT_PUBLIC_STRIPE_KEY` to `STRIPE_SECRET_KEY`, re-add it as
-`--sensitive`, and read it only in a Function — never the client. Then
+`--sensitive`, and read it only in a Function - never the client. Then
 `vercel env add DATABASE_URL development` (and `preview`/`production`) and
 `vercel env pull` so the local cache is complete. A clean run is the gate before
 you hand off to `vercel-deploy-pipeline`.

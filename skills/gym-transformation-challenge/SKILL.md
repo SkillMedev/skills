@@ -1,6 +1,6 @@
 ---
 name: gym-transformation-challenge
-description: Designs a gym's 6-week transformation challenge as a self-funding front-end offer and the week-by-week ascension that converts challengers into recurring members. Use when a gym owner asks to "design a 6-week challenge", structure a "transformation challenge", build a "front-end offer to fill my gym", plan a challenge "run-of-show", or figure out "how do I convert challengers to members". Do NOT use when the request is about the paid ads, audiences, or lead forms that fill the challenge — use gym-meta-ads-funnel instead.
+description: Designs a gym's 6-week transformation challenge as a self-funding front-end offer and the week-by-week ascension that converts challengers into recurring members. Use when a gym owner asks to "design a 6-week challenge", structure a "transformation challenge", build a "front-end offer to fill my gym", plan a challenge "run-of-show", or figure out "how do I convert challengers to members". Do NOT use when the request is about the paid ads, audiences, or lead forms that fill the challenge - use gym-meta-ads-funnel instead.
 ---
 
 # Gym Transformation Challenge
@@ -13,7 +13,7 @@ Structure a time-bound (usually 6-week) front-end challenge that fills the gym a
 
 Decide and write down each element:
 
-- **Duration**: 6 weeks by default — long enough for a visible result, short enough to feel doable.
+- **Duration**: 6 weeks by default - long enough for a visible result, short enough to feel doable.
 - **Promise**: one specific, believable result. "Drop a dress size in 6 weeks" beats "get fit."
 - **Inclusions**: sessions per week, a done-for-you nutrition plan, weekly accountability check-ins, a start and finish body-composition scan, a private group. Each inclusion removes one obstacle the buyer would otherwise face.
 - **Price**: common range 199 to 599. The price must cover ad spend and fulfillment, leaving the back-end membership as the profit. (If you also run gym-money-model, set the price there so the challenge clears the cash rule; otherwise size it directly with Step 4.)
@@ -22,7 +22,7 @@ Decide and write down each element:
 
 The challenge is not the business; the membership is. Decide before launch how a challenger becomes a member.
 
-- **The conversion offer**: a member price and terms presented at the end of the challenge. Make staying easier than stopping — a member rate available only to challengers and only this week.
+- **The conversion offer**: a member price and terms presented at the end of the challenge. Make staying easier than stopping - a member rate available only to challengers and only this week.
 - **The timing**: present it in week 5, after the mid-challenge win and before the final week, when motivation peaks. Book a results review for every challenger and run the conversion conversation there.
 - **The bridge**: continuity of coach, group, and plan. Frame membership as keeping the result they just earned, not buying a new thing.
 
@@ -32,7 +32,7 @@ Fill the conversion-offer-sheet template for the exact offer presented to challe
 
 - **Pre-launch (week 0)**: fill the cohort, collect payment, send the welcome, book the first scan, add each challenger to the private group.
 - **Week 1**: onboarding, baseline scan, a first session designed to feel like a win, nutrition plan handed over, group introductions.
-- **Weeks 2–4**: deliver sessions, run weekly check-ins, keep attendance high, post early results publicly in the group, seed the idea of continuing past the challenge.
+- **Weeks 2-4**: deliver sessions, run weekly check-ins, keep attendance high, post early results publicly in the group, seed the idea of continuing past the challenge.
 - **Week 5**: per-challenger results review, present the membership conversion offer, book consults for the undecided. This is the conversion week.
 - **Week 6**: final scan, transformation celebration, close remaining conversions, collect before-and-after proof and testimonials for the next cohort.
 
@@ -50,7 +50,7 @@ Fill challenge-offer-sheet (the public offer), conversion-offer-sheet (the end-o
 
 A challenge is ready to launch only when:
 
-- The promise is one specific, measurable result with a deadline — not a vibe.
+- The promise is one specific, measurable result with a deadline - not a vibe.
 - The front-end nets at or above breakeven in challenge_pnl.js before a single membership converts. Growth must not depend on borrowing against future dues.
 - A dated, challenger-only member rate exists in writing before the cohort starts.
 - Every challenger has a booked week-5 results review, not an open invitation.
@@ -62,7 +62,7 @@ A challenge is ready to launch only when:
 - Do NOT design the conversion offer after the challenge starts. If the member rate and deadline aren't set before launch, conversion improvises and collapses.
 - Do NOT leave conversion to a group announcement. It happens in a one-to-one results review.
 - Do NOT extend the challenge to "give people more time." The deadline is the conversion mechanism.
-- Do NOT write the ad copy, audiences, or lead forms here — that is gym-meta-ads-funnel's job; this skill stops at the offer and run-of-show.
+- Do NOT write the ad copy, audiences, or lead forms here - that is gym-meta-ads-funnel's job; this skill stops at the offer and run-of-show.
 
 ## Calculator
 
@@ -196,4 +196,4 @@ The conversion mechanic: every challenger gets a one-to-one results review where
 
 A challenge is self-funding when up-front challenge revenue covers ad spend and fulfillment, leaving the back-end membership as profit. The four levers are fill count, challenge price, cost per lead (which sets ad spend through the show rate), and conversion to membership. Tune them in challenge_pnl.js.
 
-If the front-end runs at a loss (low price or high cost per lead), the back-end can still justify it — but only when conversion and LTV are strong and the gym has the cash to wait for dues. The safer design keeps the front-end at or above breakeven so growth never depends on borrowing against future revenue.
+If the front-end runs at a loss (low price or high cost per lead), the back-end can still justify it - but only when conversion and LTV are strong and the gym has the cash to wait for dues. The safer design keeps the front-end at or above breakeven so growth never depends on borrowing against future revenue.

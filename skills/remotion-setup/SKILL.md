@@ -1,6 +1,6 @@
 ---
 name: Remotion Setup
-description: Scaffolds a new Remotion video project wired for Claude Code Agent Skills — Node check, create-video scaffold, skills install, folder conventions, Google Fonts, and a smoke-test render. Use whenever someone wants to start making videos with Remotion and Claude, even just "make product videos with Claude."
+description: Scaffolds a new Remotion video project wired for Claude Code Agent Skills - Node check, create-video scaffold, skills install, folder conventions, Google Fonts, and a smoke-test render. Use whenever someone wants to start making videos with Remotion and Claude, even just "make product videos with Claude."
 ---
 # Remotion Setup
 
@@ -9,11 +9,11 @@ is "just prompt Claude." This is the one-time environment work. Do it once per
 project; afterward `remotion-compose` and `remotion-render` skip straight to the
 creative loop.
 
-Trigger eagerly. If the user says anything about *making videos with Claude* —
+Trigger eagerly. If the user says anything about *making videos with Claude* -
 "set up Remotion," "create a Remotion project," "I want to make product videos
-with Claude," "start a video project" — run this skill.
+with Claude," "start a video project" - run this skill.
 
-## Step 1 — Verify the toolchain
+## Step 1 - Verify the toolchain
 
 Remotion renders with headless Chromium, so check Node before scaffolding:
 
@@ -24,13 +24,13 @@ node --version   # need >= 16; prefer an active LTS release
 If Node is older than 16, stop and tell the user to upgrade (nvm: `nvm install --lts && nvm use --lts`).
 Also confirm `npx` is available (ships with npm 5.2+).
 
-## Step 2 — Scaffold the project
+## Step 2 - Scaffold the project
 
 ```bash
 npx create-video@latest
 ```
 
-This is interactive. Recommend the **Blank** (Hello World) template — it is the
+This is interactive. Recommend the **Blank** (Hello World) template - it is the
 cleanest base for product videos. The CLI asks for a project directory and a
 package manager; let the user pick, then `cd` into the new folder and install:
 
@@ -39,7 +39,7 @@ cd <project-name>
 npm install
 ```
 
-## Step 3 — Install the Remotion Agent Skills
+## Step 3 - Install the Remotion Agent Skills
 
 So Claude Code has Remotion's own skill context available in this repo:
 
@@ -49,9 +49,9 @@ npx remotion skills add remotion
 
 This drops Remotion's agent-skill files into the project. If the command is
 unavailable in the installed Remotion version, point the user at a newer
-`@remotion/cli` and continue — it is a convenience, not a hard dependency.
+`@remotion/cli` and continue - it is a convenience, not a hard dependency.
 
-## Step 4 — Establish folder conventions
+## Step 4 - Establish folder conventions
 
 Standardize the layout so later skills always know where things go:
 
@@ -59,9 +59,9 @@ Standardize the layout so later skills always know where things go:
 src/
   Root.tsx              # registers every <Composition> (the entry registry)
   index.ts              # registerRoot(RemotionRoot)
-  compositions/         # one .tsx file per video — remotion-compose writes here
+  compositions/         # one .tsx file per video - remotion-compose writes here
 public/
-  assets/               # images, logos, audio — referenced via staticFile()
+  assets/               # images, logos, audio - referenced via staticFile()
 ```
 
 Create the folders if the template did not:
@@ -99,11 +99,11 @@ registerRoot(RemotionRoot);
 ```
 
 Sensible defaults to register with: 30 fps and 1920x1080 for landscape product
-videos (1080x1920 for vertical social), and short durations — 90 frames at
+videos (1080x1920 for vertical social), and short durations - 90 frames at
 30 fps is 3 seconds, and most product demo videos land between 15 and 60
 seconds (450-1800 frames).
 
-## Step 5 — Load a Google font
+## Step 5 - Load a Google font
 
 Remotion has first-class Google Fonts so text renders deterministically. Install
 and load once:
@@ -120,10 +120,10 @@ const { fontFamily } = loadFont();
 ```
 
 `loadFont()` blocks the render until the font is ready, so on-screen text never
-flashes in an unstyled fallback. Pick the font that matches the brand — swap
+flashes in an unstyled fallback. Pick the font that matches the brand - swap
 `Inter` for `Poppins`, `Roboto`, etc.
 
-## Step 6 — Smoke-test composition
+## Step 6 - Smoke-test composition
 
 Write a trivial composition to prove the environment renders end to end:
 
@@ -155,14 +155,14 @@ Make sure it is registered in `src/Root.tsx` (Step 4), then render it:
 npx remotion render src/index.ts HelloWorld out/smoke-test.mp4
 ```
 
-The first render downloads headless Chromium (a few hundred MB — expect a one-time
+The first render downloads headless Chromium (a few hundred MB - expect a one-time
 wait of a few minutes on a normal connection); after that, this 90-frame smoke test
 should render in well under a minute. If `out/smoke-test.mp4` plays a fading-in
 title, the environment is good. If the render fails, it is almost always
 (a) Chromium download/permissions, (b) the composition not registered in
 `Root.tsx`, or (c) a Node version issue from Step 1.
 
-## Step 7 — Launch Remotion Studio for preview
+## Step 7 - Launch Remotion Studio for preview
 
 For the interactive preview (scrub the timeline, hot-reload on edits):
 
@@ -171,7 +171,7 @@ npx remotion studio
 ```
 
 This serves the Studio at **http://localhost:3000**. The `create-video` template
-also wires `npm run dev` to the same thing. Leave Studio running while iterating —
+also wires `npm run dev` to the same thing. Leave Studio running while iterating -
 edits to composition files hot-reload instantly.
 
 ## Deliverable
@@ -184,11 +184,11 @@ Nothing is "set up" until the smoke-test MP4 exists and plays.
 
 ## Do NOT
 
-- Do not skip the Node check and scaffold anyway — a sub-16 Node fails deep inside the Chromium render with a confusing error, not at install time.
+- Do not skip the Node check and scaffold anyway - a sub-16 Node fails deep inside the Chromium render with a confusing error, not at install time.
 - Do not declare setup done without rendering the smoke test; a project that compiles but has never produced an MP4 has not proven the Chromium pipeline works.
-- Do not put compositions or assets in ad-hoc locations — later skills (`remotion-compose`, `remotion-render`) rely on `src/compositions/` and `public/assets/` existing.
+- Do not put compositions or assets in ad-hoc locations - later skills (`remotion-compose`, `remotion-render`) rely on `src/compositions/` and `public/assets/` existing.
 - Do not reference assets by relative path or URL; use `staticFile()` from `public/`, or renders will work locally and break elsewhere.
-- Do not use system or CSS-imported fonts for on-screen text — without `loadFont()` blocking, text can render in a fallback font on the render machine.
+- Do not use system or CSS-imported fonts for on-screen text - without `loadFont()` blocking, text can render in a fallback font on the render machine.
 - Do not pick a feature-heavy template for product videos; the Blank template avoids carrying demo code the user must delete later.
 
 ## Quality bar
@@ -202,6 +202,6 @@ Nothing is "set up" until the smoke-test MP4 exists and plays.
 ## Handoff
 
 Once the smoke test renders and Studio is up, tell the user the project is ready
-and hand off: *"Setup is done. Describe the video you want — duration, scenes,
-brand colors — and I'll write the composition (`remotion-compose`), then render
+and hand off: *"Setup is done. Describe the video you want - duration, scenes,
+brand colors - and I'll write the composition (`remotion-compose`), then render
 and iterate (`remotion-render`)."*

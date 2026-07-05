@@ -1,6 +1,6 @@
 ---
 name: kpi-scoreboard-and-cadence
-description: Build a gym's KPI scoreboard, separate leading from lagging indicators, and set the daily/weekly/monthly meeting cadence that turns numbers into decisions. Use when a gym owner asks what KPIs to track, wants a scoreboard or numbers huddle, asks for a weekly meeting agenda, or wants to find the weakest stage of their lead-to-member funnel. Do NOT use to compute CAC, LTV, or the cash-flow money model — use gym-money-model instead; do NOT use to fix churn or the sales/booking conversion the scoreboard flags — use retention-and-churn-killer, objection-handling-and-speed-to-lead, or closer-sales-script instead.
+description: Build a gym's KPI scoreboard, separate leading from lagging indicators, and set the daily/weekly/monthly meeting cadence that turns numbers into decisions. Use when a gym owner asks what KPIs to track, wants a scoreboard or numbers huddle, asks for a weekly meeting agenda, or wants to find the weakest stage of their lead-to-member funnel. Do NOT use to compute CAC, LTV, or the cash-flow money model - use gym-money-model instead; do NOT use to fix churn or the sales/booking conversion the scoreboard flags - use retention-and-churn-killer, objection-handling-and-speed-to-lead, or closer-sales-script instead.
 ---
 
 # KPI Scoreboard and Cadence

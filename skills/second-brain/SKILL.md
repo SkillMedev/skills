@@ -1,6 +1,6 @@
 ---
 name: Second Brain
-description: Sets up a PARA-based second brain in any notes app (Notion, Obsidian, Apple Notes, Logseq) — Projects, Areas, Resources, Archives buckets, a frictionless universal capture inbox, weekly organizing, wiki-link and map-of-content linking, progressive summarization for recall, and maintenance rituals. Use when someone says "help me set up a second brain", "my notes are a mess and I can never find anything", "how do I organize Obsidian with PARA", or captures ideas but never uses them. Do NOT use for designing the underlying Notion database properties and relations — use notion-database instead — or for a task-management workflow — use gtd-system instead.
+description: Sets up a PARA-based second brain in any notes app (Notion, Obsidian, Apple Notes, Logseq) - Projects, Areas, Resources, Archives buckets, a frictionless universal capture inbox, weekly organizing, wiki-link and map-of-content linking, progressive summarization for recall, and maintenance rituals. Use when someone says "help me set up a second brain", "my notes are a mess and I can never find anything", "how do I organize Obsidian with PARA", or captures ideas but never uses them. Do NOT use for designing the underlying Notion database properties and relations - use notion-database instead - or for a task-management workflow - use gtd-system instead.
 ---
 
 # Second Brain
@@ -13,10 +13,10 @@ and act on. This skill sets one up using the PARA method in any notes app
 
 Organize every note into one of four top-level buckets, ordered by actionability:
 
-- **Projects** — short-term efforts with a goal and a deadline (e.g. "Ship Q3 launch").
-- **Areas** — ongoing responsibilities with a standard to maintain (e.g. "Health", "Finances").
-- **Resources** — topics of interest for future reference (e.g. "Prompt engineering").
-- **Archives** — inactive items from the other three buckets.
+- **Projects** - short-term efforts with a goal and a deadline (e.g. "Ship Q3 launch").
+- **Areas** - ongoing responsibilities with a standard to maintain (e.g. "Health", "Finances").
+- **Resources** - topics of interest for future reference (e.g. "Prompt engineering").
+- **Archives** - inactive items from the other three buckets.
 
 Rule: a note lives where you will next *act* on it, not where it topically "belongs".
 
@@ -26,7 +26,7 @@ Rule: a note lives where you will next *act* on it, not where it topically "belo
 
 Lower friction to near zero. Set up one universal inbox note or quick-capture
 shortcut. Capture anything: ideas, links, quotes, tasks. Do NOT organize at capture
-time — speed beats structure here.
+time - speed beats structure here.
 
 ### 2. Organize (weekly)
 
@@ -41,7 +41,7 @@ Once a week, empty the inbox. For each item:
 Connect notes so recall works by association, not folders:
 - Add 2-3 `[[wiki-links]]` or relations to related notes when you file something.
 - Maintain a few **index/MOC** (map of content) notes that link out to clusters.
-- Tag sparingly — links beat tags for retrieval.
+- Tag sparingly - links beat tags for retrieval.
 
 ### 4. Recall (Express)
 
@@ -76,13 +76,13 @@ Links: [[related-1]] [[related-2]]
 
 ## Anti-patterns to avoid
 
-- Over-tagging or building deep folder trees — PARA stays flat (4 levels max).
-- Collecting without expressing — capture is only valuable if you later create.
-- Organizing at capture time — it kills capture velocity.
+- Over-tagging or building deep folder trees - PARA stays flat (4 levels max).
+- Collecting without expressing - capture is only valuable if you later create.
+- Organizing at capture time - it kills capture velocity.
 
 ## Quality bar
 
-- Capturing a new thought takes seconds and zero decisions — one inbox, no
+- Capturing a new thought takes seconds and zero decisions - one inbox, no
   filing at capture time.
 - Every existing note lands in exactly one PARA bucket, placed by next action,
   not by topic.

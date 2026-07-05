@@ -1,11 +1,11 @@
 ---
 name: retainer-economics-calculator
-description: Compute per-client and agency-wide retainer profitability for a team-based agency — loaded delivery cost including account management time, gross margin per client, team utilization, and the fire-or-fix and sales-stop verdicts — with a runnable Node calculator. Use when an agency owner asks "which of my clients are actually profitable", "what's my real margin per retainer", "are we over capacity", "should we fire this client", or "can we take on another account". Do NOT use for pricing a solo freelancer's own retainer rate — use retainer-pricing-calculator instead.
+description: Compute per-client and agency-wide retainer profitability for a team-based agency - loaded delivery cost including account management time, gross margin per client, team utilization, and the fire-or-fix and sales-stop verdicts - with a runnable Node calculator. Use when an agency owner asks "which of my clients are actually profitable", "what's my real margin per retainer", "are we over capacity", "should we fire this client", or "can we take on another account". Do NOT use for pricing a solo freelancer's own retainer rate - use retainer-pricing-calculator instead.
 ---
 
 # Retainer Economics Calculator
 
-An agency can grow revenue every quarter and still starve, because two or three retainers quietly consume more delivery cost than they pay. The mistake this skill prevents is invisible unprofitability: treating account management time as free overhead, never loading labor cost, and only discovering the losing clients when the agency-wide margin collapses. Install this skill before the rest of the agency pack — it defines the margin thresholds that agency-positioning, agency-qbr-upsell, and client-churn-save all cite.
+An agency can grow revenue every quarter and still starve, because two or three retainers quietly consume more delivery cost than they pay. The mistake this skill prevents is invisible unprofitability: treating account management time as free overhead, never loading labor cost, and only discovering the losing clients when the agency-wide margin collapses. Install this skill before the rest of the agency pack - it defines the margin thresholds that agency-positioning, agency-qbr-upsell, and client-churn-save all cite.
 
 Work the example agency throughout: Northbeam Digital, an 8-person marketing agency with 11 retainer clients averaging $6,500/month ($71.5k MRR) and a 62 percent gross margin target.
 
@@ -15,11 +15,11 @@ Follow in order. Cost loading comes before any margin math, because margin compu
 
 ### Step 1: Build loaded hourly cost per role
 
-For each delivery role: loaded hourly cost = annual salary x 1.35 (payroll taxes plus benefits) / 1,800 deliverable hours per year. Use 1,800, not 2,080 — nobody delivers 40 billable-equivalent hours a week.
+For each delivery role: loaded hourly cost = annual salary x 1.35 (payroll taxes plus benefits) / 1,800 deliverable hours per year. Use 1,800, not 2,080 - nobody delivers 40 billable-equivalent hours a week.
 
 Northbeam's roles: strategist $71.25/hr (from $95k salary), specialist $60.00/hr ($80k), designer $56.25/hr ($75k), account manager $52.50/hr ($70k).
 
-The account manager rule: AM time spent on a specific client — status calls, reporting, email — is delivery cost for that client, not overhead. It is the single most common hidden cost in agency books, typically 8-14 hours per client per month.
+The account manager rule: AM time spent on a specific client - status calls, reporting, email - is delivery cost for that client, not overhead. It is the single most common hidden cost in agency books, typically 8-14 hours per client per month.
 
 ### Step 2: Gather monthly hours per client per role
 
@@ -31,7 +31,7 @@ Per-client gross margin = (retainer - loaded delivery cost) / retainer.
 
 - Target: at or above 50 percent per client. Below that, one client is eating the profit of another.
 - Agency-wide target: at or above 60 percent; Northbeam targets 62 percent. Agency-wide runs higher than the per-client floor because overhead (rent, tools, owner time, sales) still has to come out of gross margin.
-- Fire-or-fix threshold: any client below 30 percent margin for two consecutive months gets a decision this month — reprice, re-scope, or exit. Not "watch another month." Two months is the rule because one bad month can be a project spike; two is a pattern.
+- Fire-or-fix threshold: any client below 30 percent margin for two consecutive months gets a decision this month - reprice, re-scope, or exit. Not "watch another month." Two months is the rule because one bad month can be a project spike; two is a pattern.
 
 ### Step 4: Compute utilization and apply the sales stop rule
 
@@ -40,7 +40,7 @@ Team capacity = client-facing headcount x 120 deliverable hours/month (that is 1
 Utilization = committed client hours / capacity.
 
 - Healthy band: 60-85 percent. Below 60, the agency is overstaffed or undersold.
-- Sales stop rule: above 85 percent, stop signing new retainers until capacity is added or a fire-or-fix client exits. Selling into a full team converts new revenue directly into churn — quality slips on every account at once.
+- Sales stop rule: above 85 percent, stop signing new retainers until capacity is added or a fire-or-fix client exits. Selling into a full team converts new revenue directly into churn - quality slips on every account at once.
 
 ### Step 5: Run the calculator and decide
 
@@ -145,7 +145,7 @@ Committed hours:       531 of 840 (63.2% utilization)
 Sales verdict:         CAPACITY TO SELL
 ```
 
-Read it: nine of eleven clients are healthy, but Kettleworks at 24 percent is below the 30 percent fire-or-fix line (if last month looked the same, the decision is due now) and Delta Freight at 33 percent needs a fix plan. Those two clients alone drag Northbeam from its 62 percent target down to 55.7 percent. Utilization at 63.2 percent means there is room to sell — but only into on-niche work per agency-positioning, and only after the Kettleworks decision, or the new capacity gets eaten by the same leak.
+Read it: nine of eleven clients are healthy, but Kettleworks at 24 percent is below the 30 percent fire-or-fix line (if last month looked the same, the decision is due now) and Delta Freight at 33 percent needs a fix plan. Those two clients alone drag Northbeam from its 62 percent target down to 55.7 percent. Utilization at 63.2 percent means there is room to sell - but only into on-niche work per agency-positioning, and only after the Kettleworks decision, or the new capacity gets eaten by the same leak.
 
 ## Deliverable
 
@@ -153,10 +153,10 @@ A per-client margin table with a HEALTHY / FIX / FIRE-OR-FIX verdict on every re
 
 ## Do NOT
 
-- Do not book account management time as overhead — it is the most common way a "60 percent margin" client is actually at 40.
+- Do not book account management time as overhead - it is the most common way a "60 percent margin" client is actually at 40.
 - Do not use raw salary as hourly cost; load with the 1.35 multiplier and divide by 1,800 deliverable hours, not 2,080.
 - Do not average away the losers: agency-wide margin can look acceptable while two clients burn cash. The per-client table is the point.
-- Do not give a fire-or-fix client a third month of "monitoring" — two consecutive months below 30 percent triggers a decision, not a discussion.
+- Do not give a fire-or-fix client a third month of "monitoring" - two consecutive months below 30 percent triggers a decision, not a discussion.
 - Do not keep selling past 85 percent utilization; new revenue signed into a full team becomes churn across the whole book.
 
 ## Quality bar
@@ -164,8 +164,8 @@ A per-client margin table with a HEALTHY / FIX / FIRE-OR-FIX verdict on every re
 - Every hourly cost is loaded (x1.35, /1,800) and every untracked hours figure is labeled a guess.
 - AM hours appear as delivery cost on every client, no exceptions.
 - Every below-50-percent client has a named next move (reprice / re-scope / exit) and an owner.
-- The sheet states both verdicts — margin vs 62 percent and utilization vs 85 percent — not just one.
+- The sheet states both verdicts - margin vs 62 percent and utilization vs 85 percent - not just one.
 
 ## Escalation and neighbors
 
-This skill installs first in the agency pack; its thresholds (50 percent per-client floor, 30 percent fire-or-fix line, 62 percent agency target, 85 percent sales stop) are the numbers agency-positioning, agency-qbr-upsell, and client-churn-save cite. Deliver reprices at the QBR with agency-qbr-upsell; if a reprice conversation turns into a churn risk, use client-churn-save. Scoping a fix into a contract change is a statement-of-work-writer job. This is management math, not accounting — for tax treatment or financial statements, bring in the agency's accountant.
+This skill installs first in the agency pack; its thresholds (50 percent per-client floor, 30 percent fire-or-fix line, 62 percent agency target, 85 percent sales stop) are the numbers agency-positioning, agency-qbr-upsell, and client-churn-save cite. Deliver reprices at the QBR with agency-qbr-upsell; if a reprice conversation turns into a churn risk, use client-churn-save. Scoping a fix into a contract change is a statement-of-work-writer job. This is management math, not accounting - for tax treatment or financial statements, bring in the agency's accountant.

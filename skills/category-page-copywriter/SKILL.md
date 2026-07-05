@@ -1,6 +1,6 @@
 ---
 name: Category Page Copywriter
-description: Write the intro and lower-page copy for an ecommerce collection or category page so it ranks for a commercial query while pushing shoppers toward a product fast. Use when someone asks "write copy for my ecommerce category pages", "write the intro blurb for my collection page", or "write SEO copy for my collection page below the product grid" — the above-grid intro, the H1, and the supporting content under the grid. Do NOT use for standalone marketing or campaign landing pages — use landing-page-copy instead; do NOT use for a single product's description — use product-description-writer instead.
+description: Write the intro and lower-page copy for an ecommerce collection or category page so it ranks for a commercial query while pushing shoppers toward a product fast. Use when someone asks "write copy for my ecommerce category pages", "write the intro blurb for my collection page", or "write SEO copy for my collection page below the product grid" - the above-grid intro, the H1, and the supporting content under the grid. Do NOT use for standalone marketing or campaign landing pages - use landing-page-copy instead; do NOT use for a single product's description - use product-description-writer instead.
 ---
 
 # Category Page Copywriter
@@ -30,5 +30,5 @@ A category page has a harder job than a product page: it must rank for a broad c
 - Do NOT write a long intro that pushes the product grid below the fold.
 - Do NOT pad with keyword repetition or density tricks; semantic coverage beats density.
 - Do NOT overpromise selection ("hundreds of styles" when there are nine) or claim authority, awards, or rankings you cannot back.
-- Do NOT invest copy in a thin or duplicative category — thin pages rarely rank and overlapping pages cannibalize each other. Recommend merging or expanding the catalog first.
+- Do NOT invest copy in a thin or duplicative category - thin pages rarely rank and overlapping pages cannibalize each other. Recommend merging or expanding the catalog first.
 - Do NOT write standalone marketing/campaign landing-page copy (use landing-page-copy) or single-product descriptions (use product-description-writer).

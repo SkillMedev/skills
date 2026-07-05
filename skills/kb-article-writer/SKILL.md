@@ -1,6 +1,6 @@
 ---
 name: Knowledge Base Article Writer
-description: Turns a resolved support ticket into a clear, searchable knowledge-base or help center article. Use when someone asks "write a KB article from this resolved ticket", "turn these resolved tickets into help center articles", or "write an internal knowledge base article for our support agents" — converting ticket resolutions into self-service documentation that deflects future tickets. Do NOT use for writing user-facing how-to guides from scratch — use help-documentation instead.
+description: Turns a resolved support ticket into a clear, searchable knowledge-base or help center article. Use when someone asks "write a KB article from this resolved ticket", "turn these resolved tickets into help center articles", or "write an internal knowledge base article for our support agents" - converting ticket resolutions into self-service documentation that deflects future tickets. Do NOT use for writing user-facing how-to guides from scratch - use help-documentation instead.
 ---
 
 # Knowledge Base Article Writer
@@ -39,15 +39,15 @@ The bad version is titled in the team's internal vocabulary ("duplicate charge i
 
 ## Writing rules
 
-Write in second person ('you', not 'the user'). Use active voice. Keep sentences under 20 words. Screenshots or short screen recordings reduce confusion for procedural articles — include them where possible. Avoid mentioning specific version numbers or dates unless the content is truly version-specific; these make articles go stale.
+Write in second person ('you', not 'the user'). Use active voice. Keep sentences under 20 words. Screenshots or short screen recordings reduce confusion for procedural articles - include them where possible. Avoid mentioning specific version numbers or dates unless the content is truly version-specific; these make articles go stale.
 
 ## SEO and findability
 
-The article title and first paragraph must contain the keywords the customer would naturally use. Think about synonyms: a customer might search 'cancel subscription', 'end plan', 'stop billing', or 'delete account' for the same workflow — address each variant either in the title or in the first two sentences.
+The article title and first paragraph must contain the keywords the customer would naturally use. Think about synonyms: a customer might search 'cancel subscription', 'end plan', 'stop billing', or 'delete account' for the same workflow - address each variant either in the title or in the first two sentences.
 
 ## Review and freshness
 
-Set a review date of 90 days on every new article. Mark articles as 'needs review' when the underlying product or policy changes. Archive articles that have not received a visit in 180 days — they add noise to search results.
+Set a review date of 90 days on every new article. Mark articles as 'needs review' when the underlying product or policy changes. Archive articles that have not received a visit in 180 days - they add noise to search results.
 
 ## Deliverable
 
@@ -64,4 +64,4 @@ Produce one publish-ready article containing: a search-phrased title, a 2-3 sent
 ## What to avoid
 
 - Do not copy-paste the agent's reply verbatim; ticket language is written for one customer, not all customers.
-- Do not bury the answer — lead with the most common scenario, not the edge case.
+- Do not bury the answer - lead with the most common scenario, not the edge case.

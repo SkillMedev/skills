@@ -1,11 +1,11 @@
 ---
 name: Ghostwriter
-description: Analyzes an author's writing samples, builds an explicit quantified voice profile, and produces new content indistinguishable from the author's own hand. Use when someone asks "write this in my voice", "ghostwrite my newsletter", "make this sound like me", "draft the next chapter the way I would write it", or supplies writing samples plus a brief for a new piece. Do NOT use for drafting a persuasive opinion piece to pitch to a publication — use op-ed-writer instead. Do NOT use for LinkedIn-native posts where platform mechanics matter more than voice fidelity — use linkedin-post-writer instead.
+description: Analyzes an author's writing samples, builds an explicit quantified voice profile, and produces new content indistinguishable from the author's own hand. Use when someone asks "write this in my voice", "ghostwrite my newsletter", "make this sound like me", "draft the next chapter the way I would write it", or supplies writing samples plus a brief for a new piece. Do NOT use for drafting a persuasive opinion piece to pitch to a publication - use op-ed-writer instead. Do NOT use for LinkedIn-native posts where platform mechanics matter more than voice fidelity - use linkedin-post-writer instead.
 ---
 
 # Ghostwriter
 
-Write in someone else's voice so completely that the reader never senses a second hand. Success is invisibility. The most common and most expensive failure is defaulting to a clean, neutral, competent style — the author's quirks ARE the voice, and smoothing them out produces text the author's audience will instantly clock as "not them." Never write a word of the target piece before the voice profile is built and confirmed.
+Write in someone else's voice so completely that the reader never senses a second hand. Success is invisibility. The most common and most expensive failure is defaulting to a clean, neutral, competent style - the author's quirks ARE the voice, and smoothing them out produces text the author's audience will instantly clock as "not them." Never write a word of the target piece before the voice profile is built and confirmed.
 
 ## Operating procedure
 
@@ -18,9 +18,9 @@ Collect from the user:
 1. Samples: at least 5 genuine pieces by the author, ideally 300+ words each, in the same genre as the target piece (a newsletter voice is not a keynote voice). If fewer than 5 exist, proceed with what is available but mark the profile confidence LOW and label every extrapolation a guess.
 2. The brief: topic, audience, target length, purpose, and where it will appear.
 3. Red lines: claims, opinions, or topics the author would not put their name to.
-4. Reference points the author likes or hates ("more like my March essay, less like my LinkedIn stuff") — these resolve ambiguity faster than analysis.
+4. Reference points the author likes or hates ("more like my March essay, less like my LinkedIn stuff") - these resolve ambiguity faster than analysis.
 
-If samples are edited by someone else (published books, magazine features), ask for something raw — emails, drafts, transcripts — because editors sand off exactly the fingerprints being captured.
+If samples are edited by someone else (published books, magazine features), ask for something raw - emails, drafts, transcripts - because editors sand off exactly the fingerprints being captured.
 
 ### Step 2: Quantify sentence rhythm
 
@@ -37,9 +37,9 @@ Document explicitly:
 
 - Vocabulary register: plain vs. ornate; Latinate vs. Anglo-Saxon word choices; contractions or not; jargon tolerance; profanity.
 - Signature constructions: list at least 5 recurring words, phrases, or syntactic moves with a quoted example of each from the samples. These are the reusable fingerprints.
-- Punctuation habits: em dashes, semicolons, ellipses, parentheticals, Oxford comma — presence and frequency.
+- Punctuation habits: em dashes, semicolons, ellipses, parentheticals, Oxford comma - presence and frequency.
 - Person and stance: first or third person; hedging density (a cautious author must not suddenly sound certain); confident, ironic, earnest.
-- Rhetorical moves: rhetorical questions, lists, anecdotes, metaphors — and what kind of humor, if any.
+- Rhetorical moves: rhetorical questions, lists, anecdotes, metaphors - and what kind of humor, if any.
 - Formatting defaults: headers, bold, bullets, or flowing prose.
 
 ### Step 4: Fill the voice profile and confirm it
@@ -49,7 +49,7 @@ Complete the template below and show it to the user before drafting. This is the
 ### Step 5: Draft
 
 - Match rhythm first. If the profile says 14-word mean with 25% short sentences, hit those numbers.
-- Deploy signature constructions at natural density — roughly once per 150–200 words. Above that, the draft tips into parody.
+- Deploy signature constructions at natural density - roughly once per 150-200 words. Above that, the draft tips into parody.
 - Mirror the author's transitions between ideas and their hedging level.
 - Honor their formatting defaults even if a different structure seems "better."
 
@@ -65,7 +65,7 @@ Compare draft to profile, line by line:
 ## Voice profile template
 
 ```
-VOICE PROFILE — [FILL: author name]
+VOICE PROFILE - [FILL: author name]
 Samples analyzed: [FILL: count and titles]   Confidence: [FILL: HIGH / LOW]
 
 RHYTHM
@@ -81,11 +81,11 @@ REGISTER
   Stance:        [FILL: person, hedging level, dominant tone]
 
 SIGNATURE CONSTRUCTIONS (with quoted evidence)
-  1. [FILL] — "[FILL: quote from sample]"
-  2. [FILL] — "[FILL]"
-  3. [FILL] — "[FILL]"
-  4. [FILL] — "[FILL]"
-  5. [FILL] — "[FILL]"
+  1. [FILL] - "[FILL: quote from sample]"
+  2. [FILL] - "[FILL]"
+  3. [FILL] - "[FILL]"
+  4. [FILL] - "[FILL]"
+  5. [FILL] - "[FILL]"
 
 RHETORICAL MOVES: [FILL]
 FORMATTING DEFAULTS: [FILL]
@@ -106,7 +106,7 @@ Produce two artifacts: the completed voice profile (so the user can confirm or c
 
 ## Do NOT
 
-- Do NOT draft before the profile exists — analysis-free ghostwriting produces the model's house style with the author's byline.
+- Do NOT draft before the profile exists - analysis-free ghostwriting produces the model's house style with the author's byline.
 - Do NOT smooth out quirks, repair deliberate fragments, or over-polish a casual writer. The quirks are the product.
 - Do NOT overdose on signature phrases; past roughly one per 150 words, imitation becomes caricature.
 - Do NOT put factual claims, endorsements, or opinions in the author's mouth that they have not made or would not stand behind. Voice is borrowed; assertions are not. If the brief conflicts with the author's known views, flag it instead of writing it.
@@ -117,4 +117,4 @@ A draft ships only when: the sentence-length numbers match the profile within th
 
 ## Escalation and adjacent jobs
 
-If the piece is an opinion column being pitched under a publication's conventions, route to op-ed-writer. If it is a LinkedIn post where hook mechanics and platform format dominate, route to linkedin-post-writer. If the author asks for content making legal, medical, or financial claims under their name, flag that those claims need their explicit sign-off — never fabricate authority on their behalf.
+If the piece is an opinion column being pitched under a publication's conventions, route to op-ed-writer. If it is a LinkedIn post where hook mechanics and platform format dominate, route to linkedin-post-writer. If the author asks for content making legal, medical, or financial claims under their name, flag that those claims need their explicit sign-off - never fabricate authority on their behalf.

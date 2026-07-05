@@ -1,6 +1,6 @@
 ---
 name: Study System
-description: Converts a syllabus or topic list into an evidence-based study plan — material atomized into testable units, a spaced-repetition flashcard schedule with expanding intervals, active recall and Feynman-technique prompts instead of rereading, interleaved weekly sessions, and a practice-testing cadence with an error log. Use when someone says "help me study for this exam", "build me a study schedule", "I keep rereading and forgetting everything", or wants to learn a curriculum efficiently. Do NOT use for acquiring a spoken language specifically — use language-learning instead — or for building everyday habits — use habit-builder instead.
+description: Converts a syllabus or topic list into an evidence-based study plan - material atomized into testable units, a spaced-repetition flashcard schedule with expanding intervals, active recall and Feynman-technique prompts instead of rereading, interleaved weekly sessions, and a practice-testing cadence with an error log. Use when someone says "help me study for this exam", "build me a study schedule", "I keep rereading and forgetting everything", or wants to learn a curriculum efficiently. Do NOT use for acquiring a spoken language specifically - use language-learning instead - or for building everyday habits - use habit-builder instead.
 ---
 
 # Study System
@@ -50,20 +50,20 @@ Each week:
 
 ## Do NOT
 
-- Do NOT let rereading and highlighting count as study time — they produce
+- Do NOT let rereading and highlighting count as study time - they produce
   fluency illusion (the material feels familiar but cannot be retrieved).
   Retrieval attempts are the unit of study.
-- Do NOT block-practice one topic to exhaustion — 20 identical problems in a
+- Do NOT block-practice one topic to exhaustion - 20 identical problems in a
   row trains recognition of the problem type, not the choice of method the
   test demands. Interleave.
-- Do NOT write multi-fact cards — a card asking two things gets graded on the
+- Do NOT write multi-fact cards - a card asking two things gets graded on the
   easier half and the other fact silently rots. One atom per card.
-- Do NOT skip the error log after practice tests — restudying everything
+- Do NOT skip the error log after practice tests - restudying everything
   instead of the misses wastes the scarcest resource, and errors without a
   cause label (concept gap / careless / misread) can't be fixed.
-- Do NOT drill only the comfortable decks — time goes to the atoms with the
+- Do NOT drill only the comfortable decks - time goes to the atoms with the
   lowest recall rate, precisely because it feels worse.
-- Do NOT cram the night before as a substitute for the schedule — massed
+- Do NOT cram the night before as a substitute for the schedule - massed
   practice inflates next-day recall and collapses within a week; the intervals
   are the mechanism.
 

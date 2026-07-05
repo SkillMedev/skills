@@ -1,6 +1,6 @@
 ---
 name: hiring-a-players-and-sops
-description: Build a gym's role-outcome hiring funnel — scorecards, work-sample screening, A-player pay logic, hire-order sequencing — and turn the owner's work into handoff-ready SOPs. Use when a gym owner says "hire a coach", "find A-players", "first hire for my gym", "build an interview process", "document my processes", "write an SOP", or "get out of the day-to-day". Do NOT use when the user needs a generic, inclusive, legally-careful job posting for any company — use job-description-writer instead.
+description: Build a gym's role-outcome hiring funnel - scorecards, work-sample screening, A-player pay logic, hire-order sequencing - and turn the owner's work into handoff-ready SOPs. Use when a gym owner says "hire a coach", "find A-players", "first hire for my gym", "build an interview process", "document my processes", "write an SOP", or "get out of the day-to-day". Do NOT use when the user needs a generic, inclusive, legally-careful job posting for any company - use job-description-writer instead.
 ---
 
 # Hiring A-Players and SOPs
@@ -15,9 +15,9 @@ Pick the entry point: if the owner is drowning in operations, start at Step 5 (S
 
 A scaling single-location gym hires in this order:
 
-1. Sales setter or salesperson first — book and close so the owner stops being the only seller. Frees the most owner time and funds the next hire.
-2. Coach next — deliver sessions as the member base grows, protecting retention.
-3. Manager last — own the daily operation and the scoreboard so the owner can step out of the seat.
+1. Sales setter or salesperson first - book and close so the owner stops being the only seller. Frees the most owner time and funds the next hire.
+2. Coach next - deliver sessions as the member base grows, protecting retention.
+3. Manager last - own the daily operation and the scoreboard so the owner can step out of the seat.
 
 Name which role you are hiring now and why it is next.
 
@@ -31,17 +31,17 @@ A task list attracts task-doers; an outcome attracts people who want to win. Fil
 
 ### Step 3: Run a volume-based candidate funnel
 
-Hiring is a funnel like lead generation — more candidates at the top means a better hire at the bottom.
+Hiring is a funnel like lead generation - more candidates at the top means a better hire at the bottom.
 
 - Source widely: job boards, your member base, referrals, local networks. Aim for many applicants.
 - Screen fast: a short application plus one or two knockout questions.
-- Use a work sample: finalists do the actual work — a setter runs a mock booking call, a coach runs a real session, a manager fixes a broken process on paper. Work samples predict performance far better than interviews.
+- Use a work sample: finalists do the actual work - a setter runs a mock booking call, a coach runs a real session, a manager fixes a broken process on paper. Work samples predict performance far better than interviews.
 
 See references/hiring-funnel for sourcing and screening detail.
 
 ### Step 4: Pay top of market and decide on cost per result
 
-An A-player earns more in salary but costs less per result — more output, less management, longer tenure. Run `ab_player_cost.js`, then decide on cost per result, not on salary.
+An A-player earns more in salary but costs less per result - more output, less management, longer tenure. Run `ab_player_cost.js`, then decide on cost per result, not on salary.
 
 ### Step 5: Document work into SOPs with the four-step method
 
@@ -62,7 +62,7 @@ Fill the sop-template for each process, starting with the highest-frequency or h
 
 ## Do NOT
 
-- Do NOT write a generic, inclusive, EEO-careful job posting here — that is job-description-writer's job; this skill produces a gym-specific role scorecard tied to outcomes and pay.
+- Do NOT write a generic, inclusive, EEO-careful job posting here - that is job-description-writer's job; this skill produces a gym-specific role scorecard tied to outcomes and pay.
 - Do NOT hire out of sequence to fill a gap you could systematize with an SOP.
 - Do NOT pick the cheapest candidate to save salary; price the output, not the sticker.
 - Do NOT ship an SOP the author never watched someone else run.
@@ -116,7 +116,7 @@ To deliver 100 results:
   Savings with A-players: $30,000/yr
 ```
 
-Read it: the A-player earns more in salary yet costs $300 less per result and saves $30,000/yr to deliver the same output — before counting the management time and turnover the B-players add. Pay for output, not for the lowest sticker price.
+Read it: the A-player earns more in salary yet costs $300 less per result and saves $30,000/yr to deliver the same output - before counting the management time and turnover the B-players add. Pay for output, not for the lowest sticker price.
 
 ## Template: role-scorecard
 

@@ -1,15 +1,15 @@
 ---
 name: Pandas Expert
-description: Writes correct, vectorized pandas for cleaning, joining, reshaping, and aggregating tabular data, with validated joins and deliberate dtype and missing-data handling. Use when someone asks "why did my merge duplicate rows", "how do I clean this CSV in pandas", "my groupby numbers look wrong", "this apply is too slow", or is transforming a DataFrame for analysis or a pipeline. Do NOT use for first-pass profiling of an unfamiliar dataset — use eda-playbook instead; for data too large for one machine use spark-jobs; for answering business questions directly in SQL use sql-to-insights.
+description: Writes correct, vectorized pandas for cleaning, joining, reshaping, and aggregating tabular data, with validated joins and deliberate dtype and missing-data handling. Use when someone asks "why did my merge duplicate rows", "how do I clean this CSV in pandas", "my groupby numbers look wrong", "this apply is too slow", or is transforming a DataFrame for analysis or a pipeline. Do NOT use for first-pass profiling of an unfamiliar dataset - use eda-playbook instead; for data too large for one machine use spark-jobs; for answering business questions directly in SQL use sql-to-insights.
 ---
 
 # Pandas Expert
 
-Most pandas bugs are silent: a join that fans out rows, a dtype that upcast to object, a NaN that vanished from a sum. The output looks plausible and is wrong. This skill produces transformations that validate themselves — every join asserted, every coercion counted, every aggregate reconciled — so errors surface at the line that caused them instead of in a dashboard three weeks later.
+Most pandas bugs are silent: a join that fans out rows, a dtype that upcast to object, a NaN that vanished from a sum. The output looks plausible and is wrong. This skill produces transformations that validate themselves - every join asserted, every coercion counted, every aggregate reconciled - so errors surface at the line that caused them instead of in a dashboard three weeks later.
 
 ## Operating procedure
 
-Follow the steps in order. Types must be fixed before cleaning, cleaning before joining, joining before aggregating — each later step silently produces wrong numbers if an earlier one was skipped.
+Follow the steps in order. Types must be fixed before cleaning, cleaning before joining, joining before aggregating - each later step silently produces wrong numbers if an earlier one was skipped.
 
 ### Step 1: gather inputs
 
@@ -22,18 +22,18 @@ Before writing any transformation, establish:
 
 ### Step 2: inspect before touching
 
-Run `df.info()`, `df.describe()`, `df.isna().sum()`, and `df.nunique()` first. You are looking for: object columns that should be numeric or datetime, null counts, and cardinality. This is a two-minute sanity pass, not a full audit — for a genuinely unfamiliar dataset, run eda-playbook first.
+Run `df.info()`, `df.describe()`, `df.isna().sum()`, and `df.nunique()` first. You are looking for: object columns that should be numeric or datetime, null counts, and cardinality. This is a two-minute sanity pass, not a full audit - for a genuinely unfamiliar dataset, run eda-playbook first.
 
 ### Step 3: fix dtypes early
 
 - Parse dates with `pd.to_datetime`; pass `format=` when known (it is faster and catches malformed rows), `format="mixed"` only when formats genuinely vary.
 - Coerce numerics with `pd.to_numeric(col, errors="coerce")`, then **count and report** what failed: `col.isna().sum()`. Silent coercion is how "N/A" strings become invisible revenue holes.
-- Cast low-cardinality strings to `category` when distinct values are under roughly 50% of row count — it cuts memory and speeds groupbys.
+- Cast low-cardinality strings to `category` when distinct values are under roughly 50% of row count - it cuts memory and speeds groupbys.
 - Downcast large numeric columns (`pd.to_numeric(col, downcast="integer")`) when memory is tight.
 
 ### Step 4: handle missing data deliberately
 
-Choose drop, fill, or flag — and state which and why in a comment. If more than ~5% of a key column is null, stop and ask whether the nulls are structural (a pipeline branch) before imputing; that determination changes the right treatment entirely.
+Choose drop, fill, or flag - and state which and why in a comment. If more than ~5% of a key column is null, stop and ask whether the nulls are structural (a pipeline branch) before imputing; that determination changes the right treatment entirely.
 
 ### Step 5: join with validation, never on faith
 
@@ -45,7 +45,7 @@ Choose drop, fill, or flag — and state which and why in a comment. If more tha
 ### Step 6: reshape and aggregate
 
 - `pivot_table` for long→wide, `melt` for wide→long.
-- `groupby().agg()` with **named aggregations** — `agg(revenue=("amount", "sum"))` — so output columns are self-describing.
+- `groupby().agg()` with **named aggregations** - `agg(revenue=("amount", "sum"))` - so output columns are self-describing.
 - Remember `sum()` skips NaN silently; if a NaN-contaminated group should show as missing, use `min_count=1`.
 
 ### Step 7: verify the output
@@ -54,7 +54,7 @@ Reconcile at least one aggregate against the pre-transformation source (total ro
 
 ## Worked example
 
-Messy orders joined to a customer table with a duplicate key — the validation catches it:
+Messy orders joined to a customer table with a duplicate key - the validation catches it:
 
 ```python
 import pandas as pd
@@ -102,13 +102,13 @@ region  orders  revenue
  South       1    45.25
 ```
 
-Read it: the "N/A" string was counted, not swallowed; the duplicate C03 row raised at the merge line instead of inflating South's revenue; West shows 2 orders but only 120.50 revenue because the failed parse became NaN and `sum` skipped it — a fact the failure count already disclosed.
+Read it: the "N/A" string was counted, not swallowed; the duplicate C03 row raised at the merge line instead of inflating South's revenue; West shows 2 orders but only 120.50 revenue because the failed parse became NaN and `sum` skipped it - a fact the failure count already disclosed.
 
 ## Performance rules
 
-- Avoid `apply` over rows when a vectorized op, `np.where`, or `np.select` exists — vectorized versions are commonly 10-100x faster.
+- Avoid `apply` over rows when a vectorized op, `np.where`, or `np.select` exists - vectorized versions are commonly 10-100x faster.
 - Avoid chained indexing (`df[a][b] = ...`); use `.loc[rows, cols]` for all assignment.
-- Watch for silent upcasts to `object` dtype after concatenation or fillna — they destroy both speed and memory.
+- Watch for silent upcasts to `object` dtype after concatenation or fillna - they destroy both speed and memory.
 - Prefer `merge` over row-wise lookups; prefer `groupby().transform` over apply-per-group when the output is row-aligned.
 
 ## Deliverable
@@ -117,11 +117,11 @@ Produce a runnable, commented transformation script (or notebook cells) containi
 
 ## Do NOT
 
-- Do not merge without `validate=` — fan-out from duplicated keys is the single most common source of inflated metrics.
+- Do not merge without `validate=` - fan-out from duplicated keys is the single most common source of inflated metrics.
 - Do not use `errors="coerce"` without counting what was coerced; a clean-looking column can hide hundreds of destroyed values.
 - Do not use `apply` with a lambda for arithmetic a vectorized expression can do.
 - Do not mutate the input DataFrame in place inside a function; copy when in doubt.
-- Do not trust `sum()` on a column with NaN to mean "complete total" — it means "total of what parsed".
+- Do not trust `sum()` on a column with NaN to mean "complete total" - it means "total of what parsed".
 - Do not profile an unknown dataset with ad-hoc snippets; run eda-playbook and come back with its decision log.
 
 ## Quality bar

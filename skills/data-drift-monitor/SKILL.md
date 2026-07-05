@@ -1,11 +1,11 @@
 ---
 name: Data Drift Monitor
-description: Designs a production drift-monitoring plan for ML systems — statistical tests per feature type, PSI and KS alert thresholds, monitoring cadence, and evidence-based retraining triggers — including a runnable PSI calculator. Use when someone asks "how do I know if my model is drifting", "set up drift monitoring for this model", "should we retrain", or is investigating unexplained model performance degradation. Do NOT use for judging whether a model is good enough to ship in the first place — use model-evaluation-report instead; for tracking training runs use experiment-tracking; for documenting the model for consumers use model-card-writer.
+description: Designs a production drift-monitoring plan for ML systems - statistical tests per feature type, PSI and KS alert thresholds, monitoring cadence, and evidence-based retraining triggers - including a runnable PSI calculator. Use when someone asks "how do I know if my model is drifting", "set up drift monitoring for this model", "should we retrain", or is investigating unexplained model performance degradation. Do NOT use for judging whether a model is good enough to ship in the first place - use model-evaluation-report instead; for tracking training runs use experiment-tracking; for documenting the model for consumers use model-card-writer.
 ---
 
 # Data Drift Monitor
 
-Models trained on historical data degrade when the world changes. Drift monitoring is the early-warning system that distinguishes a model aging gracefully from one silently failing — and without thresholds tied to actions, it degenerates into dashboards nobody reads and alerts everybody mutes. This skill produces a monitoring plan where every alert has a named owner and a defined next step.
+Models trained on historical data degrade when the world changes. Drift monitoring is the early-warning system that distinguishes a model aging gracefully from one silently failing - and without thresholds tied to actions, it degenerates into dashboards nobody reads and alerts everybody mutes. This skill produces a monitoring plan where every alert has a named owner and a defined next step.
 
 ## Operating procedure
 
@@ -14,7 +14,7 @@ Work in order: drift types (Step 2) determine which tests apply (Step 3), and th
 ### Step 1: Gather inputs
 
 1. The model's top features by importance (at minimum the top 10) and their types (continuous vs categorical).
-2. Prediction volume and frequency — this sets monitoring cadence.
+2. Prediction volume and frequency - this sets monitoring cadence.
 3. Ground-truth label lag: how long after a prediction the true label arrives. If unknown, label the estimate a guess.
 4. The primary business metric the model serves and its current 30-day baseline.
 5. Retraining cost in engineering time and compute, so triggers can be calibrated against it.
@@ -26,14 +26,14 @@ Not all drift requires the same response.
 - Data drift (covariate shift): input feature distributions change; the model may still work if the feature-label relationship holds.
 - Concept drift: the feature-label relationship itself changes; requires retraining regardless of input distributions.
 - Label drift: the ground-truth label distribution shifts; matters for classification thresholds.
-- Upstream drift: schema changes or pipeline failures masquerading as real drift. Rule this out first on every alert — a column silently going all-null "drifts" spectacularly.
+- Upstream drift: schema changes or pipeline failures masquerading as real drift. Rule this out first on every alert - a column silently going all-null "drifts" spectacularly.
 
 ### Step 3: Match statistical tests to feature types
 
 - Continuous features: Population Stability Index (PSI) or Kolmogorov-Smirnov test.
 - Categorical features: chi-squared test or Jensen-Shannon divergence.
-- PSI interpretation: below 0.1 stable; 0.1 to 0.25 moderate — investigate; above 0.25 significant — act. Teams wanting a conservative action line trigger at 0.2.
-- Reference window: use a rolling reference (the last 30 days of training-representative data), not a fixed baseline frozen at training time — seasonality against a stale baseline manufactures false alarms.
+- PSI interpretation: below 0.1 stable; 0.1 to 0.25 moderate - investigate; above 0.25 significant - act. Teams wanting a conservative action line trigger at 0.2.
+- Reference window: use a rolling reference (the last 30 days of training-representative data), not a fixed baseline frozen at training time - seasonality against a stale baseline manufactures false alarms.
 
 ### Step 4: Set cadence and coverage
 
@@ -41,15 +41,15 @@ Monitoring everything at the same frequency is wasteful.
 
 - Always monitor the top 10 features by model importance at maximum frequency.
 - High-frequency inputs: daily. Low-frequency inputs: weekly.
-- Monitor the prediction (score) distribution itself daily — it is the cheapest single drift signal because it aggregates all inputs.
+- Monitor the prediction (score) distribution itself daily - it is the cheapest single drift signal because it aggregates all inputs.
 - Concept-drift checks run on the label-lag delay: if labels arrive 14 days late, today's concept-drift verdict describes two weeks ago. Say so on the dashboard.
 
 ### Step 5: Define alert thresholds and escalation
 
 Alerts with no action plan create alert fatigue.
 
-- Warning: PSI above 0.1 on any monitored feature, or KS p-value below 0.05 — investigate, do not retrain yet. Check upstream pipeline first.
-- Critical: PSI above 0.25 (or 0.2 conservative), or the primary business metric drops more than 5 percent from its 30-day baseline — initiate the retraining evaluation.
+- Warning: PSI above 0.1 on any monitored feature, or KS p-value below 0.05 - investigate, do not retrain yet. Check upstream pipeline first.
+- Critical: PSI above 0.25 (or 0.2 conservative), or the primary business metric drops more than 5 percent from its 30-day baseline - initiate the retraining evaluation.
 - Every alert routes to a named owner. Suppress alerts during known events (marketing pushes, holidays) with documented suppression windows, never silent mutes.
 
 ### Step 6: Gate retraining on evidence
@@ -92,7 +92,7 @@ session_count  PSI = 0.214  -> investigate
 spend_30d      PSI = 0.338  -> ACT
 ```
 
-Read it: age_days is noise. session_count crossed the 0.1 warning line — investigate upstream before touching the model. spend_30d exceeds 0.25 — open the retraining evaluation, starting with the upstream-drift rule-out.
+Read it: age_days is noise. session_count crossed the 0.1 warning line - investigate upstream before touching the model. spend_30d exceeds 0.25 - open the retraining evaluation, starting with the upstream-drift rule-out.
 
 ## Deliverable
 
@@ -100,9 +100,9 @@ Produce a monitoring plan containing: the monitored feature list with test and c
 
 ## Do NOT
 
-- Do not alert on drift without first ruling out upstream schema or pipeline failure — it is the most common cause and the cheapest fix.
+- Do not alert on drift without first ruling out upstream schema or pipeline failure - it is the most common cause and the cheapest fix.
 - Do not freeze the reference window at training time; seasonality will page you forever.
-- Do not retrain on a calendar schedule alone while ignoring evidence in either direction — it wastes compute when stable and reacts too slowly when not.
+- Do not retrain on a calendar schedule alone while ignoring evidence in either direction - it wastes compute when stable and reacts too slowly when not.
 - Do not treat a warning-level PSI as a retraining trigger; investigation and retraining are different responses with different costs.
 - Do not report concept-drift verdicts without stating the label lag; a "healthy" verdict on 14-day-old labels is not a statement about today.
 

@@ -1,6 +1,6 @@
 ---
 name: referral-and-affiliate-system
-description: Build a gym's member-referral engine and local affiliate, employee, and agency lead-getter system, with ask scripts, partnership terms, a volume projection, and a monthly cadence. Use when the owner says "get more referrals", "set up a referral program", "bring a friend", wants affiliate or local-business partners, asks "who else can send me leads", or wants coaches and staff to drive referrals. Do NOT use when the owner wants to generate leads through their own warm outreach, content, cold outreach, or paid ads — use core-four-lead-engine instead.
+description: Build a gym's member-referral engine and local affiliate, employee, and agency lead-getter system, with ask scripts, partnership terms, a volume projection, and a monthly cadence. Use when the owner says "get more referrals", "set up a referral program", "bring a friend", wants affiliate or local-business partners, asks "who else can send me leads", or wants coaches and staff to drive referrals. Do NOT use when the owner wants to generate leads through their own warm outreach, content, cold outreach, or paid ads - use core-four-lead-engine instead.
 ---
 
 # Referral and Affiliate System
@@ -20,7 +20,7 @@ Confirm the gym produces real member results before building any referral push. 
 Use the `referral-mechanics` reference below for ask scripts, timing, and incentive sizing.
 
 ### Step 3: Build local affiliate partnerships
-1. Pick targets: complementary local businesses that serve the same avatar without competing — physiotherapists, chiropractors, nutritionists and dietitians, corporate HR and wellness leads, running and sports clubs.
+1. Pick targets: complementary local businesses that serve the same avatar without competing - physiotherapists, chiropractors, nutritionists and dietitians, corporate HR and wellness leads, running and sports clubs.
 2. Set a clear value exchange: they refer clients to your challenge; you refer members to their service, run a joint event, or pay a referral fee per joined member.
 3. Track it: a unique code or link per partner, or a "who referred you" field at signup, so you know which partners produce and can double down.
 
@@ -46,9 +46,9 @@ Run `referral_projection.js` to estimate referred members per month from the mem
 ## Quality bar
 - Delivery is verified before any referral ask goes out.
 - Every incentive is dual-sided, and its cost is checked against member LTV from the projection.
-- Every affiliate and partner is tracked by a unique code, link, or signup field — no untracked "they said they'd send people."
+- Every affiliate and partner is tracked by a unique code, link, or signup field - no untracked "they said they'd send people."
 - Every recurring action (week-5 push, ask-at-win, weekly outreach, monthly review) has a named owner.
-- The owner's own outreach, content, and paid-ads channels are left to core-four-lead-engine — this skill only covers people who get leads for the gym.
+- The owner's own outreach, content, and paid-ads channels are left to core-four-lead-engine - this skill only covers people who get leads for the gym.
 
 ## Do NOT
 - Do not ask for referrals on a schedule detached from wins; a cold "tell your friends" ask converts poorly.
@@ -142,7 +142,7 @@ PARTNERSHIP TERMS
 
 The four kinds of people who get leads for the gym, with mechanics and incentive alignment:
 
-- Customers (referrals). Mechanics: members refer friends. Incentive: dual-sided reward, asked at a win. Highest trust, lowest cost — the first lead-getter every gym should build.
+- Customers (referrals). Mechanics: members refer friends. Incentive: dual-sided reward, asked at a win. Highest trust, lowest cost - the first lead-getter every gym should build.
 - Affiliates. Mechanics: complementary local businesses refer their clients. Incentive: reciprocal referrals, joint events, or a per-member fee. Works when both sides clearly gain and tracking is honest.
 - Agencies. Mechanics: a vendor runs a channel (usually paid ads) for you. Incentive: paid per result or retainer. Use only to scale a proven offer and funnel; align on cost per member, not on leads or impressions.
 - Employees. Mechanics: coaches and staff drive referrals and reactivations. Incentive: bonus tied to joined members. Reward joined members, not activity. Never outsource the consult or the member relationship.
@@ -152,5 +152,5 @@ Never outsource: the offer, the consult conversation, the member relationship, a
 ## Reference: referral-mechanics
 
 - Timing is the whole game. A referral asked at a peak result converts several times better than the same ask sent cold. Train coaches to ask the instant a member hits a win, in person, specifically: "Who do you know who would want this too?" A specific ask beats "tell your friends."
-- Dual-sided incentives. Reward the referrer and lower the friend's friction at once — a month free for the member, the member rate for the joining friend. Size the reward against member value: when a member is worth over a thousand dollars in contribution, a month of dues as a reward is cheap.
+- Dual-sided incentives. Reward the referrer and lower the friend's friction at once - a month free for the member, the member rate for the joining friend. Size the reward against member value: when a member is worth over a thousand dollars in contribution, a month of dues as a reward is cheap.
 - The buddy challenge. The strongest gym referral mechanic. In week 5 of every cohort, when results are visible, invite each challenger to bring a friend to the next cohort for a shared reward. The friend gets a built-in training partner, which raises attendance and retention for both.

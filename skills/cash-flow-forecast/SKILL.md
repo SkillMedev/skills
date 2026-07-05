@@ -9,7 +9,7 @@ A cash forecast is not a P&L on a different template. It tracks when cash actual
 
 ## Two Horizons, Two Approaches
 
-Run two forecasts in parallel. The 13-week forecast is a bottom-up, week-by-week view of actual cash in and out. It is operational. The 12-month forecast is a top-down driver-based model used for planning and runway. They should agree in the overlapping weeks — if they diverge, the 13-week is right and the 12-month needs recalibration.
+Run two forecasts in parallel. The 13-week forecast is a bottom-up, week-by-week view of actual cash in and out. It is operational. The 12-month forecast is a top-down driver-based model used for planning and runway. They should agree in the overlapping weeks - if they diverge, the 13-week is right and the 12-month needs recalibration.
 
 ## 13-Week Forecast Structure
 
@@ -17,7 +17,7 @@ For each week, project: collections from customers (use AR aging plus expected n
 
 ## 12-Month Forecast Structure
 
-Drive revenue collections from a bookings or ARR model. Drive COGS from a gross margin assumption. Drive opex from a headcount plan (compensation is usually 60 to 75% of opex) plus a non-headcount opex line per department. Capex from the asset plan. Working capital changes from DSO, DPO, and inventory turn assumptions. The 12-month model does not need weekly precision — monthly is sufficient.
+Drive revenue collections from a bookings or ARR model. Drive COGS from a gross margin assumption. Drive opex from a headcount plan (compensation is usually 60 to 75% of opex) plus a non-headcount opex line per department. Capex from the asset plan. Working capital changes from DSO, DPO, and inventory turn assumptions. The 12-month model does not need weekly precision - monthly is sufficient.
 
 ## Runway Calculation
 
@@ -29,15 +29,15 @@ Before assuming a fundraise, model the working capital levers: accelerate collec
 
 ## Worked example: forecasting collections
 
-Bad — flat percentage of revenue, no timing:
+Bad - flat percentage of revenue, no timing:
 
 > "October revenue is $400k; assume 90% collects, so book $360k of October collections."
 
 This ignores when invoices were issued and when customers actually pay, so the weekly cash line is fiction.
 
-Good — aging-based, timed to actual payment behavior:
+Good - aging-based, timed to actual payment behavior:
 
-> Open AR: $250k current, $120k at 31–60 days, $40k at 61–90 days. Historical collection: current pays in the invoice week +4 weeks on average (DSO 34), 31–60 bucket pays 85% over the next 6 weeks, 61–90 bucket pays 60% over 8 weeks. New October bookings of $400k invoice mid-month and follow the same DSO. Spread each bucket across the 13 weeks accordingly: week 1 collects $45k, week 2 $62k, week 3 $58k… and the model flags week 7, where a payroll run plus a quarterly tax payment drop ending cash to $310k — under the $350k minimum reserve — five weeks before it happens.
+> Open AR: $250k current, $120k at 31-60 days, $40k at 61-90 days. Historical collection: current pays in the invoice week +4 weeks on average (DSO 34), 31-60 bucket pays 85% over the next 6 weeks, 61-90 bucket pays 60% over 8 weeks. New October bookings of $400k invoice mid-month and follow the same DSO. Spread each bucket across the 13 weeks accordingly: week 1 collects $45k, week 2 $62k, week 3 $58k… and the model flags week 7, where a payroll run plus a quarterly tax payment drop ending cash to $310k - under the $350k minimum reserve - five weeks before it happens.
 
 The good version predicts a specific danger week; the bad version averages it away.
 
@@ -55,4 +55,4 @@ Produce a forecast workbook (or sheet set) containing: the 13-week tab with week
 
 ## Common Mistakes
 
-Do not use net income as a proxy for cash flow — revenue recognition timing and non-cash charges make this unreliable. Do not forecast collections as a flat percentage of revenue without aging-based validation. Do not show a single-scenario forecast to a board — it signals overconfidence. Do not compute burn from a single month — one good collections month hides the trend; use the trailing three-month average. Do not let the 12-month model override the 13-week view where they overlap — the bottom-up view is the one anchored to real invoices and pay dates.
+Do not use net income as a proxy for cash flow - revenue recognition timing and non-cash charges make this unreliable. Do not forecast collections as a flat percentage of revenue without aging-based validation. Do not show a single-scenario forecast to a board - it signals overconfidence. Do not compute burn from a single month - one good collections month hides the trend; use the trailing three-month average. Do not let the 12-month model override the 13-week view where they overlap - the bottom-up view is the one anchored to real invoices and pay dates.

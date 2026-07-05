@@ -1,25 +1,25 @@
 ---
 name: Help Documentation
-description: Writes user-facing help-center articles — verb-first how-to guides, symptom-organized troubleshooting pages, and FAQs — with one task per article, exact UI labels, and a stated success result. Use when someone asks "write a help article for...", "document how users reset their password", "turn these support tickets into a troubleshooting page", or "our help center articles are confusing, rewrite this one". Do NOT use for internal team procedures and SOPs — use process-doc instead; for on-call operational runbooks, use runbook-writer; for internal knowledge-base articles aimed at support agents, use kb-article-writer.
+description: Writes user-facing help-center articles - verb-first how-to guides, symptom-organized troubleshooting pages, and FAQs - with one task per article, exact UI labels, and a stated success result. Use when someone asks "write a help article for...", "document how users reset their password", "turn these support tickets into a troubleshooting page", or "our help center articles are confusing, rewrite this one". Do NOT use for internal team procedures and SOPs - use process-doc instead; for on-call operational runbooks, use runbook-writer; for internal knowledge-base articles aimed at support agents, use kb-article-writer.
 ---
 
 # Help Documentation
 
-The reader of a help article arrives stuck, impatient, and looking for one specific answer; the job is to get them unstuck fast. The costly failure this skill prevents is the feature tour — an article organized around what the product has instead of what the user is trying to do, which the stuck user scrolls, fails to match to their problem, and abandons for a support ticket.
+The reader of a help article arrives stuck, impatient, and looking for one specific answer; the job is to get them unstuck fast. The costly failure this skill prevents is the feature tour - an article organized around what the product has instead of what the user is trying to do, which the stuck user scrolls, fails to match to their problem, and abandons for a support ticket.
 
 ## Operating procedure
 
 ### Step 1: Gather inputs
 
 1. The task or problem the article addresses, in the user's words (required). One article = one task; if the request covers several tasks, split into linked articles now.
-2. The exact UI labels, menu paths, and screens involved (required — ask for screenshots or the live product; guessing labels produces instructions that fail on contact).
+2. The exact UI labels, menu paths, and screens involved (required - ask for screenshots or the live product; guessing labels produces instructions that fail on contact).
 3. Audience and prerequisites: what plan/role/permissions the reader needs.
 4. Platform or version differences that change the steps (default: none noted).
 5. The most common failure points, from support tickets if available.
 
 ### Step 2: Choose the article type
 
-This maps to the Diátaxis quadrants — pick one per article, never blend:
+This maps to the Diátaxis quadrants - pick one per article, never blend:
 
 - **How-to guide** (task-oriented; most common): the user has a goal and needs numbered steps.
 - **Troubleshooting** (problem-oriented): the user has a symptom and needs the fix.
@@ -34,16 +34,16 @@ Start with the verb and name the task exactly as users search: "Reset your passw
 
 How-to guide:
 1. One-sentence intro: what they will accomplish plus prerequisites.
-2. Numbered steps — one action per step, each starting with the verb, naming the exact button or menu label in bold, matching on-screen capitalization precisely. Ceiling: about 10 steps; past that, split the article.
+2. Numbered steps - one action per step, each starting with the verb, naming the exact button or menu label in bold, matching on-screen capitalization precisely. Ceiling: about 10 steps; past that, split the article.
 3. A note or tip at each known stuck point.
 4. Result statement: what success looks like ("You'll see a confirmation message").
 5. Next steps / related articles.
 
-Troubleshooting: organize by symptom — "If you see X..." then the fix; most common cause first; every fix ends in an action, and every dead end points to the next fix or to support.
+Troubleshooting: organize by symptom - "If you see X..." then the fix; most common cause first; every fix ends in an action, and every dead end points to the next fix or to support.
 
 ### Step 5: Mark visuals and accessibility
 
-Note where a screenshot helps and exactly what it should show; supply alt-text guidance for each. Never rely on color or position alone ("the red button on the right") — name the label. Spell out acronyms on first use; define any unavoidable jargon once.
+Note where a screenshot helps and exactly what it should show; supply alt-text guidance for each. Never rely on color or position alone ("the red button on the right") - name the label. Spell out acronyms on first use; define any unavoidable jargon once.
 
 ### Step 6: Run the stuck-user test
 
@@ -54,7 +54,7 @@ Follow the steps against the actual UI (or have the requester verify). Any step 
 Copy and replace the [FILL] fields.
 
 ```
-# [FILL: Verb] [FILL: object — the task as users search it]
+# [FILL: Verb] [FILL: object - the task as users search it]
 
 [FILL: One sentence: what you'll accomplish.] You need [FILL: prerequisite/role/plan].
 
@@ -62,7 +62,7 @@ Copy and replace the [FILL] fields.
 2. [FILL: Verb] **[FILL: exact UI label]**.
    > Tip: [FILL: note at the known stuck point]
 3. [FILL: Verb] **[FILL: exact UI label]**.
-   [Screenshot: [FILL: what it shows] — alt text: [FILL]]
+   [Screenshot: [FILL: what it shows] - alt text: [FILL]]
 
 **Result:** [FILL: what the user sees when it worked].
 
@@ -83,7 +83,7 @@ Produce the article with: a verb-led, keyword-front-loaded title; a one-sentence
 ## Do NOT
 
 - Do not document features instead of tasks; users search for what they want to DO.
-- Do not cram multiple actions into one step ("Click Settings, then Privacy, then toggle X") — scanning readers lose their place.
+- Do not cram multiple actions into one step ("Click Settings, then Privacy, then toggle X") - scanning readers lose their place.
 - Do not paraphrase UI labels; "the sharing menu" fails when the button says **Invite**.
 - Do not write walls of text; the stuck user scans for their step and bounces off paragraphs.
 - Do not assume knowledge the stuck user lacks; the person reading a reset-password article does not know where Settings is.

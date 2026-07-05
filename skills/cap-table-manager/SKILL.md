@@ -26,7 +26,7 @@ pool." Pair instrument mechanics with [[safe-vs-priced-round]].
 
 ### The option pool shuffle
 - Investors usually require the new option pool to be carved out of the
-  *pre-money* — so founders, not investors, bear its dilution.
+  *pre-money* - so founders, not investors, bear its dilution.
 - A "20% pool on a $10M post" can quietly cost founders several points. Model
   the pool inside the pre-money and negotiate its size to the actual hiring plan
   (see [[fundraise-team-hiring]]), not a round-number default.
@@ -49,7 +49,7 @@ pool." Pair instrument mechanics with [[safe-vs-priced-round]].
 
 - Keep founders meaningfully above 50% through seed if at all possible; the math
   gets unforgiving by Series A.
-- A round selling >25% is a yellow flag — too dilutive or underpriced.
+- A round selling >25% is a yellow flag - too dilutive or underpriced.
 - Watch liquidation preference and participation; they change *value* even when
   they don't change *percentage*. See [[term-sheet-negotiation]].
 

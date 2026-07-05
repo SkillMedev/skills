@@ -30,7 +30,7 @@ warm from [[investor-pipeline-crm]]. Understand each clause first with
 ## The terms that change VALUE
 
 - **Liquidation preference**: 1x non-participating is standard and founder-fair.
-  Resist participating preferred ("double dip") and multiples above 1x — they
+  Resist participating preferred ("double dip") and multiples above 1x - they
   pay investors twice and can gut founder/employee proceeds in a modest exit.
 - **Option pool**: a pool carved from pre-money is founder dilution disguised as
   a number. Size it to the real hiring plan ([[fundraise-team-hiring]]), not a

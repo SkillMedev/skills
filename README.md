@@ -1,6 +1,6 @@
 # Skill Me — the open skill catalog
 
-The canonical public home of every skill authored and hosted by [Skill&nbsp;Me](https://skillme.dev) — 470 portable `SKILL.md` files, MIT-licensed.
+The canonical public home of every skill authored and hosted by [Skill&nbsp;Me](https://skillme.dev) — 471 portable `SKILL.md` files, MIT-licensed.
 
 Every skill is plain-text instructions in the open SKILL.md format that runs in Claude (via the Skill Me MCP), Claude Code, Cursor, Gemini CLI, and Codex. Read exactly what a skill tells Claude before you install it.
 
@@ -238,6 +238,7 @@ Every skill is plain-text instructions in the open SKILL.md format that runs in 
 - **[Product Roadmap](skills/product-roadmap/SKILL.md)** — Turns product strategy into a themed Now/Next/Later roadmap with explicit trade-offs, confidence levels, and no committed dates beyond one quarter.
 - **[Research Synthesis](skills/research-synthesis/SKILL.md)** — Turns many sources into a decision-ready synthesis - atomic claims clustered into named themes, surfaced tensions between sources, gaps no source answers, and explicit so-what/now-what implications with confidence ratings.
 - **[Second Brain](skills/second-brain/SKILL.md)** — Sets up a PARA-based second brain in any notes app (Notion, Obsidian, Apple Notes, Logseq) - Projects, Areas, Resources, Archives buckets, a frictionless universal capture inbox, weekly organizing, wiki-link and map-of-content linking, progressive summarization for recall, and maintenance rituals.
+- **[Skill Me](skills/skillme/SKILL.md)** — Teaches Claude to use the Skill Me catalog itself - browse, install, and manage skills from any conversation.
 - **[Slide Deck Builder](skills/slide-deck-builder/SKILL.md)** — Structure a persuasive slide deck - narrative arc, one-idea-per-slide discipline, and headlines written as takeaways not labels.
 - **[Sprint Planning](skills/sprint-planning/SKILL.md)** — Facilitates sprint planning end to end - backlog refinement checks against a Definition of Ready, a one-sentence sprint goal, capacity math from velocity and PTO, story selection and team commitment, task breakdown, and flagged risks with owners.
 - **[Sprint Retro Facilitator](skills/sprint-retro-facilitator/SKILL.md)** — Structures and facilitates sprint retrospectives with a timeboxed agenda, format selection, anti-blame ground rules, and owned action items that actually close.

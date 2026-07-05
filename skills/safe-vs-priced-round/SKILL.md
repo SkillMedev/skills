@@ -6,7 +6,7 @@ description: Use when a founder is choosing how to structure a raise. Triggers o
 # SAFE vs Priced Round
 
 The instrument you raise on decides how much you dilute, when, and how much
-control you trade — often more than the headline valuation does. Founders who
+control you trade - often more than the headline valuation does. Founders who
 treat the SAFE as "free money now" get a nasty surprise at the priced round.
 This skill makes the choice deliberate.
 
@@ -24,7 +24,7 @@ dilution is real, not abstract.
   standard (Y Combinator post-money SAFE). Dominant at pre-seed and seed.
 - **Post-money SAFE**: the investor's percentage is fixed at signing; *founders*
   absorb the dilution of later SAFEs and the new-round pool. This is the common
-  form — know that you dilute around it.
+  form - know that you dilute around it.
 - **Pre-money SAFE** (older): SAFE holders dilute each other; murkier math.
 
 ### Convertible note
@@ -34,7 +34,7 @@ dilution is real, not abstract.
 
 ### Priced equity round
 - You sell shares at an agreed valuation now. Sets a real price, a board seat,
-  and full terms (preferences, protective provisions). More legal cost and time —
+  and full terms (preferences, protective provisions). More legal cost and time -
   typically several weeks to close and tens of thousands of dollars in combined
   legal fees, versus days and near-zero for a standard SAFE.
 - Standard at Series A; also common at larger seeds.
@@ -75,13 +75,13 @@ A founder raises three post-money SAFEs over 18 months, each feeling small:
 
 No shares have moved, so the cap table still "looks" clean. But 31.1% of the
 company is already spoken for. At the Series A the lead takes 20% and requires
-a 10% option pool — carved out pre-money, so it also comes from the founders.
+a 10% option pool - carved out pre-money, so it also comes from the founders.
 Fully converted, the founders wake up below 45% before the B, having believed
 they were "only giving up 10% at a time."
 
 The fix, applied in time: after the second SAFE (20% committed), the correct
 move was to price the third raise. A $1M-plus check with 20% already stacked is
-exactly the "stacked SAFEs are getting hard to model" trigger above — and a
+exactly the "stacked SAFEs are getting hard to model" trigger above - and a
 priced round would have set the pool with the investors sharing the dilution
 conversation openly, instead of it landing silently on the founders.
 
@@ -89,13 +89,13 @@ conversation openly, instead of it landing silently on the founders.
 
 - Raising on a cap so low it craters your ownership at conversion.
 - Treating SAFE money as non-dilutive because no shares moved yet.
-- Stacking SAFEs without modeling combined conversion — especially past the
+- Stacking SAFEs without modeling combined conversion - especially past the
   ~20-25% cumulative line.
 - A convertible note whose maturity hits before your next round.
 
 ## Quality bar
 
-- Every SAFE in the stack is converted in the model — none treated as "not real
+- Every SAFE in the stack is converted in the model - none treated as "not real
   dilution yet."
 - The fully-converted table includes the next round's option pool, carved where
   the term sheet actually carves it.

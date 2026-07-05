@@ -1,6 +1,6 @@
 ---
 name: Academic Essay
-description: Structures and drafts argumentative academic essays — a contestable thesis, claim-evidence-analysis body paragraphs, a fairly-engaged counterargument, and a synthesizing conclusion — marking every spot that needs a real citation instead of inventing sources. Use when a student or writer asks "help me outline my essay", "is my thesis strong enough", "structure my argument for this paper", or needs a draft refined for logic and formal register. Do NOT use for opinion pieces aimed at a general audience — use op-ed-writer instead; for surveying scholarly sources, use literature-review.
+description: Structures and drafts argumentative academic essays - a contestable thesis, claim-evidence-analysis body paragraphs, a fairly-engaged counterargument, and a synthesizing conclusion - marking every spot that needs a real citation instead of inventing sources. Use when a student or writer asks "help me outline my essay", "is my thesis strong enough", "structure my argument for this paper", or needs a draft refined for logic and formal register. Do NOT use for opinion pieces aimed at a general audience - use op-ed-writer instead; for surveying scholarly sources, use literature-review.
 ---
 
 # Academic Essay
@@ -9,7 +9,7 @@ You help structure and write argumentative academic essays. An academic essay ad
 
 ## Integrity note
 
-Support the writer's thinking — outline, structure, strengthen argument, improve clarity. Encourage the writer to do their own analysis and cite genuinely. Don't fabricate sources, quotes, or data; a fake citation is academic misconduct. Flag where real sources must be supplied.
+Support the writer's thinking - outline, structure, strengthen argument, improve clarity. Encourage the writer to do their own analysis and cite genuinely. Don't fabricate sources, quotes, or data; a fake citation is academic misconduct. Flag where real sources must be supplied.
 
 ## Process
 
@@ -25,15 +25,15 @@ Support the writer's thinking — outline, structure, strengthen argument, impro
 - Appears near the end of the introduction.
 
 ### Introduction
-- Open with context that frames the question's significance — no throat-clearing ("Since the dawn of time").
+- Open with context that frames the question's significance - no throat-clearing ("Since the dawn of time").
 - Narrow to the specific problem.
 - End with the thesis.
 
 ### Body paragraphs (one claim each)
 Use the claim-evidence-analysis pattern:
 1. **Topic sentence**: the paragraph's claim, advancing the thesis.
-2. **Evidence**: quotation, data, textual detail, or source — properly cited.
-3. **Analysis**: explain HOW the evidence supports the claim. This is where essays live or die — don't let evidence speak for itself.
+2. **Evidence**: quotation, data, textual detail, or source - properly cited.
+3. **Analysis**: explain HOW the evidence supports the claim. This is where essays live or die - don't let evidence speak for itself.
 4. **Link**: tie back to the thesis and transition forward.
 
 ### Counterargument
@@ -48,8 +48,8 @@ Use the claim-evidence-analysis pattern:
 - **Every claim is supported.** No assertion without evidence and analysis.
 - **Logical flow.** Each paragraph follows from the last; the argument builds.
 - **Formal register.** Third person typically; avoid contractions and casual phrasing unless the discipline allows first person.
-- **Precision.** Define key terms. Avoid vague words ("things," "society," "people") — specify.
-- **Hedge appropriately.** Academic writing qualifies claims ("suggests," "indicates") where certainty isn't warranted — but still takes a position.
+- **Precision.** Define key terms. Avoid vague words ("things," "society," "people") - specify.
+- **Hedge appropriately.** Academic writing qualifies claims ("suggests," "indicates") where certainty isn't warranted - but still takes a position.
 - **Cite consistently** in the required style (MLA, APA, Chicago). Match in-text citations to the reference list.
 
 ## Strengthening the argument
@@ -67,4 +67,4 @@ Use the claim-evidence-analysis pattern:
 
 ## Output
 
-Deliver the essay or outline with a clearly stated thesis and labeled sections. Mark every place a real citation is needed with [CITE] and the type of source required — never invent references.
+Deliver the essay or outline with a clearly stated thesis and labeled sections. Mark every place a real citation is needed with [CITE] and the type of source required - never invent references.

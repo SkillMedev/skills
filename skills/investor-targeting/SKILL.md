@@ -22,7 +22,7 @@ Score each prospective investor on:
 - **Stage fit**: do they lead/write checks at your stage and size? A Series B
   fund "being nice" at pre-seed wastes a meeting.
 - **Thesis fit**: do they actively invest in your space and "why now"? Read
-  their deals from the trailing 12-24 months and partner writing — a thesis
+  their deals from the trailing 12-24 months and partner writing - a thesis
   older than that may no longer reflect where the fund deploys.
 - **Portfolio fit**: relevant wins (credibility, help) but no direct competitor
   (conflict kills the deal and risks your data).
@@ -39,11 +39,11 @@ Score each prospective investor on:
 - **Strategics, accelerators, venture debt, revenue-based**: situational; know
   the strings before you pursue.
 
-Build the round as a *mix* — a lead plus angels who add signal and help.
+Build the round as a *mix* - a lead plus angels who add signal and help.
 
 ## Map the warm path
 
-Cold works, warm wins — warm introductions convert to first meetings at a
+Cold works, warm wins - warm introductions convert to first meetings at a
 multiple of the cold-email rate, so exhaust the warm map before writing a
 single cold note. For every target, find the strongest introduction path:
 
@@ -55,13 +55,13 @@ single cold note. For every target, find the strongest introduction path:
 ## Sequence the list
 
 - **Tier 3 (warm-ups)**: 3-5 lower-stakes meetings to sharpen the pitch first.
-- **Tier 2 (core targets)**: the bulk, run in a tight batch — first meetings
-  compressed into a 2-3 week window — to create a competitive window.
+- **Tier 2 (core targets)**: the bulk, run in a tight batch - first meetings
+  compressed into a 2-3 week window - to create a competitive window.
 - **Tier 1 (dream leads)**: approach once the pitch is sharp and you have signal.
 
 Never burn a Tier 1 cold on day one with an unrehearsed pitch. And calibrate
 expectations: at pre-seed and seed, plan for dozens of first meetings per term
-sheet — a 30-60 name list is a funnel input, not a formality.
+sheet - a 30-60 name list is a funnel input, not a formality.
 
 ## Anti-patterns
 
@@ -72,7 +72,7 @@ sheet — a 30-60 name list is a funnel input, not a formality.
 ## Quality bar
 
 - Every name on the list has a stage, thesis, and portfolio fit score with the
-  evidence (recent deals, partner writing) noted — no name survives on brand
+  evidence (recent deals, partner writing) noted - no name survives on brand
   alone.
 - Every target names the specific partner and the specific value they add.
 - Every Tier 1 and Tier 2 target has a warm-intro path and referrer identified,

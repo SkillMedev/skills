@@ -1,6 +1,6 @@
 ---
 name: Market Sizing
-description: Builds a defensible TAM/SAM/SOM market-sizing model with bottom-up and top-down triangulation and a low/base/high sensitivity range. Use when someone asks "how big is the market", "calculate my TAM", "size this opportunity", is preparing an investor deck market slide, or needs to defend a market number under diligence. Do NOT use for revenue projections of an existing business — use revenue-modeling instead.
+description: Builds a defensible TAM/SAM/SOM market-sizing model with bottom-up and top-down triangulation and a low/base/high sensitivity range. Use when someone asks "how big is the market", "calculate my TAM", "size this opportunity", is preparing an investor deck market slide, or needs to defend a market number under diligence. Do NOT use for revenue projections of an existing business - use revenue-modeling instead.
 ---
 
 # Market Sizing
@@ -27,7 +27,7 @@ analyst report.
 TAM = (number of potential customers) × (annual contract value)
 
 - Count customers from a real source: company databases, license counts,
-  industry registries — not a guess.
+  industry registries - not a guess.
 - Use your actual or expected ACV, not an aspirational one.
 - Segment the customer count by size; a mid-market customer and an enterprise
   pay very differently.
@@ -40,11 +40,11 @@ investor will probe.
 Cross-check with top-down: take a credible total-spend figure from analyst
 reports and narrow it by the addressable fraction. If bottom-up and top-down
 land within ~2x of each other, you have a defensible range. If they diverge
-wildly, your assumptions are wrong somewhere — find out where.
+wildly, your assumptions are wrong somewhere - find out where.
 
 ## SAM and SOM
 
-- SAM: apply realistic filters — the segments your product actually serves, the
+- SAM: apply realistic filters - the segments your product actually serves, the
   geographies you operate in, the buyers you can reach.
 - SOM: model market share capture over time against named competition. A 1-3%
   share of a large SAM in five years is more credible than 30% of a tiny one.
@@ -60,7 +60,7 @@ The number is worthless without the assumptions. Always present:
 
 ## Common Mistakes
 
-- "1% of a huge market" — lazy and instantly discounted.
+- "1% of a huge market" - lazy and instantly discounted.
 - Confusing market size with revenue opportunity for you specifically.
 - Citing a single analyst report as the whole case.
 - A SOM that implies implausible market share.

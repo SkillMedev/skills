@@ -1,23 +1,23 @@
 ---
 name: Messaging Hierarchy
-description: Use when turning a positioning statement into actual copy — building the value proposition, message pillars, proof points, and per-channel messaging that keep the website, ads, and sales deck all saying the same thing. Triggers on "write our value proposition", "message pillars", "messaging framework", "messaging house", "key messages", "proof points", "our website and sales say different things", "per-channel messaging", "on-message copy". Takes the positioning-statement as input and feeds landing-page-copy. Do NOT use when you have not yet fixed positioning — use positioning-statement first. Do NOT use when you need the actual hero/landing page words — use landing-page-copy. Do NOT use to sequence launch phases — use launch-plan-sequencer; for the hour-by-hour go-live — use launch-day-runbook; for the sales deck/talk track — use sales-enablement-kit; for the in-product activation flow — use plg-motion-designer.
+description: Use when turning a positioning statement into actual copy - building the value proposition, message pillars, proof points, and per-channel messaging that keep the website, ads, and sales deck all saying the same thing. Triggers on "write our value proposition", "message pillars", "messaging framework", "messaging house", "key messages", "proof points", "our website and sales say different things", "per-channel messaging", "on-message copy". Takes the positioning-statement as input and feeds landing-page-copy. Do NOT use when you have not yet fixed positioning - use positioning-statement first. Do NOT use when you need the actual hero/landing page words - use landing-page-copy. Do NOT use to sequence launch phases - use launch-plan-sequencer; for the hour-by-hour go-live - use launch-day-runbook; for the sales deck/talk track - use sales-enablement-kit; for the in-product activation flow - use plg-motion-designer.
 ---
 
 # Messaging Hierarchy
 
 Positioning is the strategy; messaging is the words. Most teams skip the layer in
-between and let every surface invent its own — so the website promises one thing,
+between and let every surface invent its own - so the website promises one thing,
 the ads a second, and the sales deck a third, and the buyer never hears the same
 story twice. This skill builds the **messaging hierarchy** (the "messaging
 house"): one value proposition on top, three message pillars holding it up, proof
-points under each pillar, and per-channel copy derived from — never inventing
-beyond — that structure. Build it once, and every channel says the same thing in
+points under each pillar, and per-channel copy derived from - never inventing
+beyond - that structure. Build it once, and every channel says the same thing in
 its own register.
 
 This skill takes the output of [[positioning-statement]] as its input and produces
 the brief that [[landing-page-copy]] turns into hero and page copy. It is the
 spine of the [[launch-plan-sequencer]] and the source the [[sales-enablement-kit]],
-[[plg-motion-designer]], and [[launch-day-runbook]] pull their language from — so
+[[plg-motion-designer]], and [[launch-day-runbook]] pull their language from - so
 the same promise survives from the strategy doc to the go-live announcement.
 
 ## When to use this skill
@@ -25,7 +25,7 @@ the same promise survives from the strategy doc to the go-live announcement.
 Reach for it the moment positioning is fixed and you need words, and whenever
 someone notices the website, ads, and sales aren't saying the same thing. If
 positioning itself is still wobbly (you can't name the audience, the alternative,
-or the one differentiator), stop and run [[positioning-statement]] first — a
+or the one differentiator), stop and run [[positioning-statement]] first - a
 messaging house on a cracked foundation just scales the confusion.
 
 ## The hierarchy, top to bottom
@@ -33,15 +33,15 @@ messaging house on a cracked foundation just scales the confusion.
 Everything below the value prop must *ladder up* to it. If a pillar doesn't
 support the value prop, or a proof point doesn't support its pillar, cut it.
 
-1. **Value proposition** — one sentence. The single promise to the single
+1. **Value proposition** - one sentence. The single promise to the single
    audience, in their words, that no chosen competitor can say as credibly.
-2. **Message pillars** — three (occasionally two or four) themes that *prove the
+2. **Message pillars** - three (occasionally two or four) themes that *prove the
    promise is true*. Each is a reason-to-believe, not a feature. "Faster" is a
    pillar; "webhooks" is not.
-3. **Proof points** — under each pillar, the concrete, checkable evidence:
+3. **Proof points** - under each pillar, the concrete, checkable evidence:
    metrics, capabilities, customer outcomes, integrations, certifications. This
-   is where features finally appear — in service of a pillar.
-4. **Per-channel copy** — the same hierarchy expressed in each surface's voice
+   is where features finally appear - in service of a pillar.
+4. **Per-channel copy** - the same hierarchy expressed in each surface's voice
    and length budget: a 6-word hero, a 90-character ad, a one-line sales opener.
 
 ## The ordered workflow
@@ -53,15 +53,15 @@ Work top-down. Do not write a single ad until the value prop and pillars are set
    use (the "instead of"), the one differentiator, and the category frame. If any
    is missing, get it before proceeding.
 2. **Draft the value proposition.** One sentence: *for [audience] who [need],
-   [product] is the [category] that [single differentiated benefit] — unlike
+   [product] is the [category] that [single differentiated benefit] - unlike
    [alternative].* Write it in the customer's language, not yours. Kill adjectives
    that any competitor could also claim ("powerful," "seamless," "intuitive").
 3. **Derive 3 message pillars.** Ask: "What three things must a skeptic believe
    for the value prop to be true?" Those are your pillars. Name each as a benefit
-   the buyer feels, not a feature you ship. Three is the target — two is thin,
+   the buyer feels, not a feature you ship. Three is the target - two is thin,
    five is a list nobody remembers.
-4. **Load proof points under each pillar.** 2–4 per pillar. Each must be
-   *checkable* — a number, a named capability, a customer result, a logo, a
+4. **Load proof points under each pillar.** 2-4 per pillar. Each must be
+   *checkable* - a number, a named capability, a customer result, a logo, a
    compliance fact. If you can't substantiate it, it's a claim, not a proof point;
    cut it or go get the evidence.
 5. **Run the ladder-up test.** For every proof point ask "which pillar?" and for
@@ -84,14 +84,14 @@ A messaging hierarchy is done when:
   semicolons stapling two promises together.
 - Every pillar is a **reason-to-believe the buyer cares about**, not a feature
   name, and there are **three** (two or four only with cause).
-- **Every proof point is checkable** — a number, capability, outcome, or fact a
+- **Every proof point is checkable** - a number, capability, outcome, or fact a
   buyer could verify. Nothing aspirational hiding as evidence.
 - The house is **fully connected**: no orphan pillar that doesn't support the
   value prop, no orphan proof point that doesn't support a pillar.
 - A teammate could **regenerate the hero, an ad, and a sales opener** from the
   one-pager alone and they'd all say the same thing in different lengths.
 - It uses the **customer's words**, validated against real call transcripts /
-  reviews / support tickets where possible — not internal jargon.
+  reviews / support tickets where possible - not internal jargon.
 - It **reuses the existing GTM skills** rather than re-deriving them: pricing
   language defers to [[pricing-strategy]] / [[saas-pricing]], competitor framing
   to [[competitive-intelligence]], overall plan to [[go-to-market-planner]].
@@ -114,7 +114,7 @@ A messaging hierarchy is done when:
   [[pricing-strategy]], [[saas-pricing]], [[competitive-intelligence]], and
   [[go-to-market-planner]] instead of duplicating them.
 
-## Runnable artifact — the consistency linter
+## Runnable artifact - the consistency linter
 
 This self-contained Python script holds the messaging house as data and checks the
 structure the eye misses: orphaned pillars/proof points, the wrong number of
@@ -124,7 +124,7 @@ word of channel copy.
 
 ```python
 #!/usr/bin/env python3
-"""messaging_lint.py — lint a messaging hierarchy for structural integrity.
+"""messaging_lint.py - lint a messaging hierarchy for structural integrity.
 Usage: python3 messaging_lint.py   (edit HOUSE below first)
 No dependencies. Pure stdlib.
 """
@@ -256,13 +256,13 @@ ERROR channel 'ads' carries unknown pillar 'Cheapest' (off-message).
 2 error(s), 0 warning(s). Fix errors before writing copy.
 ```
 
-## Fill-in template — the one-page messaging house
+## Fill-in template - the one-page messaging house
 
 Hand this completed page to [[landing-page-copy]] and [[sales-enablement-kit]] as
 the single source of truth.
 
 ```
-MESSAGING HOUSE — <Product>
+MESSAGING HOUSE - <Product>
 Inputs (from positioning-statement):
   Audience:        <who, specifically>
   Instead of:      <the alternative they'd otherwise use>
@@ -271,7 +271,7 @@ Inputs (from positioning-statement):
 
 VALUE PROPOSITION (one sentence):
   For <audience> who <need>, <product> is the <category> that
-  <single differentiated benefit> — unlike <alternative>.
+  <single differentiated benefit> - unlike <alternative>.
 
 PILLAR 1: <benefit the buyer feels>
   - proof: <checkable evidence>
@@ -300,7 +300,7 @@ Deferrals:
 ## Deliverable
 
 A one-page messaging house: the inputs from [[positioning-statement]], a
-one-sentence value proposition, three pillars each with 2–4 checkable proof
+one-sentence value proposition, three pillars each with 2-4 checkable proof
 points, and a per-channel projection that keeps website, ads, sales, PLG, and
-social on the same message in different lengths — linted for structural integrity
+social on the same message in different lengths - linted for structural integrity
 and ready to hand to [[landing-page-copy]] and [[sales-enablement-kit]].

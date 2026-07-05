@@ -1,11 +1,11 @@
 ---
 name: Board Management
-description: Runs a company board as an instrument — cadence, a no-surprises pre-wire, a board pack shipped days ahead, and meetings that end in decisions with owners. Use when someone asks "how do I prepare for my board meeting", "what goes in a board deck", "my board meetings feel like theater", "how often should we meet", or "how do I handle a difficult board member". Applies to venture-backed and private company boards; nonprofit and association boards follow different fiduciary and consensus norms, so adapt with care there. Do NOT use for writing the monthly investor update — use investor-update-writer instead — or for general internal meeting agendas — use meeting-agenda instead.
+description: Runs a company board as an instrument - cadence, a no-surprises pre-wire, a board pack shipped days ahead, and meetings that end in decisions with owners. Use when someone asks "how do I prepare for my board meeting", "what goes in a board deck", "my board meetings feel like theater", "how often should we meet", or "how do I handle a difficult board member". Applies to venture-backed and private company boards; nonprofit and association boards follow different fiduciary and consensus norms, so adapt with care there. Do NOT use for writing the monthly investor update - use investor-update-writer instead - or for general internal meeting agendas - use meeting-agenda instead.
 ---
 
 # Board Management
 
-A board meeting is not a status update; it is the highest-leverage governance and strategy session a CEO gets, and the costly failure mode is predictable — a pack built the night before, a meeting spent narrating slides, and a director surprised by bad news in the room. A surprised board member becomes a defensive board member, and defensiveness compounds across quarters. This skill turns the board into a working instrument: pre-wired, decision-oriented, and useful between meetings.
+A board meeting is not a status update; it is the highest-leverage governance and strategy session a CEO gets, and the costly failure mode is predictable - a pack built the night before, a meeting spent narrating slides, and a director surprised by bad news in the room. A surprised board member becomes a defensive board member, and defensiveness compounds across quarters. This skill turns the board into a working instrument: pre-wired, decision-oriented, and useful between meetings.
 
 ## Operating procedure
 
@@ -15,26 +15,26 @@ Follow the steps in order. The pre-wire (Step 4) must come after the pack is dra
 
 Collect these before drafting anything. If a number is a guess, label it a guess.
 
-1. Stage and cadence — current meeting frequency and stage of company. Default cadence: monthly for early stage, stretching to every 6-8 weeks as the company scales.
-2. Board composition — each member, their affiliation (founder, investor, independent), and any known tensions or dominant voices.
-3. Next meeting date — this anchors the whole timeline below.
+1. Stage and cadence - current meeting frequency and stage of company. Default cadence: monthly for early stage, stretching to every 6-8 weeks as the company scales.
+2. Board composition - each member, their affiliation (founder, investor, independent), and any known tensions or dominant voices.
+3. Next meeting date - this anchors the whole timeline below.
 4. The one decision or debate that matters most this quarter.
-5. Any bad news — a miss, a departure, a lawsuit, a down metric. This drives the pre-wire.
-6. The specific asks — intros, hiring help, decisions needed. A board with no asks is underused.
+5. Any bad news - a miss, a departure, a lawsuit, a down metric. This drives the pre-wire.
+6. The specific asks - intros, hiring help, decisions needed. A board with no asks is underused.
 
 ### Step 2: Build the board pack
 
 Structure the pack in exactly five sections, in this order:
 
-1. CEO summary (1 page) — the three things that matter, the one thing you need help with, candid lowlights included. Spin is the fastest way to lose a sophisticated board; they detect it instantly and discount everything else afterward.
-2. Metrics dashboard — the same KPIs every meeting so trends are visible: revenue, growth, burn, runway, and the north-star metric. Never rotate the metric set to flatter the quarter.
-3. Deep dive — one strategic topic, framed as a decision or a debate, never as a report.
-4. Financials and cash — runway stated plainly in months.
-5. Asks — specific, assignable requests.
+1. CEO summary (1 page) - the three things that matter, the one thing you need help with, candid lowlights included. Spin is the fastest way to lose a sophisticated board; they detect it instantly and discount everything else afterward.
+2. Metrics dashboard - the same KPIs every meeting so trends are visible: revenue, growth, burn, runway, and the north-star metric. Never rotate the metric set to flatter the quarter.
+3. Deep dive - one strategic topic, framed as a decision or a debate, never as a report.
+4. Financials and cash - runway stated plainly in months.
+5. Asks - specific, assignable requests.
 
 ### Step 3: Ship the pack on time
 
-Send the pack 3-5 days before the meeting. Treat 72 hours as the red line and 48 hours as the absolute floor — inside 48 hours, directors will not have read it, and the meeting reverts to narration. Pre-reading is what buys you a discussion meeting: plan to spend less than 20% of meeting time presenting.
+Send the pack 3-5 days before the meeting. Treat 72 hours as the red line and 48 hours as the absolute floor - inside 48 hours, directors will not have read it, and the meeting reverts to narration. Pre-reading is what buys you a discussion meeting: plan to spend less than 20% of meeting time presenting.
 
 ### Step 4: Pre-wire every material item
 
@@ -53,18 +53,18 @@ The golden rule is no surprises. Every material decision and every piece of bad 
 
 ### Step 6: Close the loop
 
-Within 48 hours after the meeting, send the decisions-and-owners memo. In non-meeting months, send a brief written update anyway — the no-surprises rule holds between meetings, not just before them.
+Within 48 hours after the meeting, send the decisions-and-owners memo. In non-meeting months, send a brief written update anyway - the no-surprises rule holds between meetings, not just before them.
 
 ## Advisory boards (distinct from governance)
 
-Advisors have no fiduciary duty; use them for domain depth and intros, not oversight. Structure with modest equity — 0.1-1% vesting over 1-2 years — tied to actual engagement, and hold them to specific deliverables on a cadence. Most advisory relationships decay silently without one.
+Advisors have no fiduciary duty; use them for domain depth and intros, not oversight. Structure with modest equity - 0.1-1% vesting over 1-2 years - tied to actual engagement, and hold them to specific deliverables on a cadence. Most advisory relationships decay silently without one.
 
 ## Board pack skeleton
 
 Copy this and replace the [FILL] fields.
 
 ```
-BOARD PACK — [FILL: company] — [FILL: meeting date]
+BOARD PACK - [FILL: company] - [FILL: meeting date]
 Sent: [FILL: date, must be >= 72h before meeting]
 
 1. CEO SUMMARY (1 page)
@@ -82,7 +82,7 @@ Sent: [FILL: date, must be >= 72h before meeting]
    Runway (months):    [FILL]
    North-star metric:  [FILL]
 
-3. DEEP DIVE — framed as a decision
+3. DEEP DIVE - framed as a decision
    Question before the board: [FILL: a decision, not a topic]
    Options considered: [FILL]
    Management recommendation: [FILL]
@@ -108,10 +108,10 @@ Produce a board-meeting kit: the filled board pack skeleton, the standing KPI da
 
 ## Do NOT
 
-- Do not build the deck the night before — the prep is where the thinking happens, and directors can tell.
+- Do not build the deck the night before - the prep is where the thinking happens, and directors can tell.
 - Do not surface bad news for the first time in the room; it converts an ally into an auditor.
 - Do not rotate the KPI set between meetings to flatter the quarter; trend visibility is the dashboard's entire job.
-- Do not present for more than 20% of the meeting — narrated slides are the signature of an unread pack.
+- Do not present for more than 20% of the meeting - narrated slides are the signature of an unread pack.
 - Do not skip the closed session to avoid awkwardness; its absence is more alarming than anything said inside it.
 - Do not treat the board as a judge to perform for. Founders who only present wins get less useful boards.
 

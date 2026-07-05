@@ -1,6 +1,6 @@
 ---
 name: Variant Copy Scaler
-description: Generates distinct, on-brand copy for every size, color, and bundle variant from a single master description, splitting a shared core from a thin per-variant layer so variant pages avoid thin or duplicate-content problems. Use when someone asks "write descriptions for all 12 colorways", "our variant pages are cannibalizing each other", "should each SKU get its own page", or when one product ships in many variants and needs per-variant PDP copy, or near-identical variant pages are creating duplicate-content or canonical problems. Do NOT use to write the single master or parent PDP description from specs — use product-description-writer instead; do NOT use for category or collection page copy — use category-page-copywriter instead.
+description: Generates distinct, on-brand copy for every size, color, and bundle variant from a single master description, splitting a shared core from a thin per-variant layer so variant pages avoid thin or duplicate-content problems. Use when someone asks "write descriptions for all 12 colorways", "our variant pages are cannibalizing each other", "should each SKU get its own page", or when one product ships in many variants and needs per-variant PDP copy, or near-identical variant pages are creating duplicate-content or canonical problems. Do NOT use to write the single master or parent PDP description from specs - use product-description-writer instead; do NOT use for category or collection page copy - use category-page-copywriter instead.
 ---
 
 # Variant Copy Scaler
@@ -24,8 +24,8 @@ Stop if the master or the matrix is missing.
 
 If the platform mints a separate indexable URL per variant, choose deliberately and state the decision explicitly in the output:
 
-- Rank variants individually — only when variants attract distinct search demand (people search "olive green linen curtains" separately from "white linen curtains") AND you will write materially unique copy per page.
-- Consolidate to the parent — set canonical tags on variant URLs pointing to the parent product. The default for most matrices.
+- Rank variants individually - only when variants attract distinct search demand (people search "olive green linen curtains" separately from "white linen curtains") AND you will write materially unique copy per page.
+- Consolidate to the parent - set canonical tags on variant URLs pointing to the parent product. The default for most matrices.
 
 ### Step 3: Apply the consolidation rule
 
@@ -45,54 +45,54 @@ Fill the template slots with genuinely variant-specific text. What changes per v
 
 - Color: name the actual hue honestly ("warm oatmeal, not bright white") plus one styling or pairing cue.
 - Size: state who it fits and the use case ("the 12oz suits a single espresso; the 20oz is for all-day desk sipping").
-- Bundle: show per-unit value math and the occasion ("the 3-pack works out to $14 per unit vs $19 alone — stock the whole entryway").
+- Bundle: show per-unit value math and the occasion ("the 3-pack works out to $14 per unit vs $19 alone - stock the whole entryway").
 
 ### Step 7: Render and verify
 
-Render each page and read variant layers side by side. If any two read as near-duplicates — a single swapped word — rewrite or fold those variants into consolidation.
+Render each page and read variant layers side by side. If any two read as near-duplicates - a single swapped word - rewrite or fold those variants into consolidation.
 
 ## Worked artifact: good/bad variant layer pair
 
 Master product: linen throw blanket, 6 colorways, separate URLs, decision = rank individually.
 
-Bad (swapped-word copy — this is the duplicate-content trap):
+Bad (swapped-word copy - this is the duplicate-content trap):
 
 > Our beautiful linen throw in **Sage** adds comfort to any room. Made of 100% linen. Machine washable.
 > Our beautiful linen throw in **Rust** adds comfort to any room. Made of 100% linen. Machine washable.
 
 Good (shared core + genuine variant layer):
 
-> [SHARED CORE — identical on both pages] Stonewashed 100% European flax linen, pre-softened so it drapes from day one. Machine washable cold; gets softer with every wash. Free 30-day returns.
+> [SHARED CORE - identical on both pages] Stonewashed 100% European flax linen, pre-softened so it drapes from day one. Machine washable cold; gets softer with every wash. Free 30-day returns.
 >
-> [SAGE layer] A muted gray-green that reads calmer than it photographs — closer to dried eucalyptus than mint. Pairs with warm woods and cream; the shade most buyers choose for bedrooms.
+> [SAGE layer] A muted gray-green that reads calmer than it photographs - closer to dried eucalyptus than mint. Pairs with warm woods and cream; the shade most buyers choose for bedrooms.
 >
-> [RUST layer] A deep burnt terracotta with brown undertones, not orange. The highest-contrast colorway — built for neutral sofas that need one bold layer.
+> [RUST layer] A deep burnt terracotta with brown undertones, not orange. The highest-contrast colorway - built for neutral sofas that need one bold layer.
 
 Template skeleton:
 
 ```
-[FILL: variant name] — [FILL: 1-sentence honest hue/size/bundle description]
+[FILL: variant name] - [FILL: 1-sentence honest hue/size/bundle description]
 [FILL: 1 pairing, fit, or per-unit-math cue]
-[SHARED CORE — paste verbatim]
+[SHARED CORE - paste verbatim]
 [FILL: 3 bullets, same order every variant: material/benefit, care, guarantee]
 ```
 
 ## Deliverable
 
-Produce: (1) the stated canonical/indexing decision, (2) the shared core block, (3) the fixed template, and (4) one variant layer per option in the matrix — or, if consolidation wins, a one-paragraph recommendation for a parent page with selector and the canonical setup.
+Produce: (1) the stated canonical/indexing decision, (2) the shared core block, (3) the fixed template, and (4) one variant layer per option in the matrix - or, if consolidation wins, a one-paragraph recommendation for a parent page with selector and the canonical setup.
 
 ## Do NOT
 
 - Do not swap one color or size word and call it new copy.
 - Do not publish multiple indexable variant URLs with near-identical text that compete and dilute authority.
 - Do not claim a benefit for one variant that is not true of it (a black fabric is not "slimming" by virtue of color).
-- Do not rewrite the brand story, materials, or core benefit per variant — those live in the shared core.
+- Do not rewrite the brand story, materials, or core benefit per variant - those live in the shared core.
 - Do not generate thin pages for an undifferentiated matrix; consolidate to a parent with a selector instead.
-- Do not leave the canonical decision implicit — state it, because copy and indexing must agree.
+- Do not leave the canonical decision implicit - state it, because copy and indexing must agree.
 
 ## Quality bar
 
-- Every variant page has materially distinct text in its variant layer — a reader could identify which variant it describes with the name removed.
+- Every variant page has materially distinct text in its variant layer - a reader could identify which variant it describes with the name removed.
 - Section order, bullet count, and voice are identical across all variants.
 - The canonical/indexing decision is stated and consistent with the copy produced.
 - Care, warranty, and shipping are identical across variants unless they genuinely differ.

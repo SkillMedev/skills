@@ -11,7 +11,7 @@ A webhook endpoint is an unauthenticated, internet-facing write path that an att
 ## Workflow
 
 1. **Capture the raw body.** Read the exact request bytes before any JSON parse or body-parsing middleware runs. A re-encoded body changes whitespace and ordering and silently breaks the HMAC. If the framework buffers/reserializes by default, disable it for this route.
-2. **Verify the signature.** Compute the HMAC over the raw bytes with the signing secret loaded from config. Compare with a constant-time equality function — never `==` or string compare. Support two active secrets so secret rotation does not drop traffic. Reject failures with 401 before doing any other work.
+2. **Verify the signature.** Compute the HMAC over the raw bytes with the signing secret loaded from config. Compare with a constant-time equality function - never `==` or string compare. Support two active secrets so secret rotation does not drop traffic. Reject failures with 401 before doing any other work.
 3. **Reject replays by timestamp.** Most providers sign a timestamp alongside the payload. Verify it is part of the signed material, then reject requests whose timestamp falls outside a tolerance window (commonly 5 minutes) to blunt captured-request replay.
 4. **Persist the raw event, then enqueue, then ack.** Synchronously do only the minimum: store the verified raw payload and its event ID durably, enqueue a background job, return 2xx. Return success only after the event is durably stored so a crash mid-processing causes safe redelivery rather than silent loss.
 5. **Process asynchronously and order-tolerantly.** Run all business logic in the background worker, not the request. Webhooks arrive out of order, so never assume sequence: act on the event's own version/timestamp, or refetch current state from the provider's API rather than mutating from a possibly-stale payload. For strict ordering, partition the queue by resource ID.
@@ -36,7 +36,7 @@ app.post("/webhooks/stripe", async (req, res) => {
 });
 ```
 
-Three failures: the HMAC is computed over a re-encoded body (verification breaks or, worse, gets disabled "temporarily"), `!==` is not constant-time, and the ack waits on business logic — so the sender times out, retries, and double-fulfills.
+Three failures: the HMAC is computed over a re-encoded body (verification breaks or, worse, gets disabled "temporarily"), `!==` is not constant-time, and the ack waits on business logic - so the sender times out, retries, and double-fulfills.
 
 **Good:**
 
@@ -73,15 +73,15 @@ Produce a hardened webhook receiver consisting of:
 1. **The route handler** implementing the verify → persist → enqueue → ack pipeline, with raw-body capture scoped to this route.
 2. **The verification module**: constant-time HMAC check over raw bytes, dual-secret rotation support, and timestamp-window replay rejection.
 3. **The background worker skeleton** that loads the stored raw event by ID, processes order-tolerantly, and routes poison events to a dead-letter queue.
-4. **A checklist of what was hardened** — each Quality bar item marked verified, plus any provider-specific notes (header names, tolerance window, retry policy).
+4. **A checklist of what was hardened** - each Quality bar item marked verified, plus any provider-specific notes (header names, tolerance window, retry policy).
 
 ## Do NOT
 
 - Do NOT parse JSON or run middleware before computing the HMAC over the raw body.
-- Do NOT compare signatures with `==` or ordinary string equality — use a constant-time compare.
+- Do NOT compare signatures with `==` or ordinary string equality - use a constant-time compare.
 - Do NOT run business logic, call other services, or block on slow DB work inside the request; slow acks trigger sender timeouts and a retry storm.
 - Do NOT return 2xx before the event is durably persisted or enqueued.
 - Do NOT trust the payload's field order or arrival order to imply event sequence.
 - Do NOT disable signature verification for any third-party webhook, even in staging or for local convenience.
-- Do NOT use when the call is an internal, mutually-authenticated service-to-service request over mTLS — that channel may not need application-layer HMAC.
-- Do NOT use this skill to design the dedup-key mechanism that makes downstream handlers idempotent (which event-ID column, where it lives, how effects key off it) — use idempotency-enforcer instead. This skill stores the raw event and acks; idempotency-enforcer owns deduplication semantics.
+- Do NOT use when the call is an internal, mutually-authenticated service-to-service request over mTLS - that channel may not need application-layer HMAC.
+- Do NOT use this skill to design the dedup-key mechanism that makes downstream handlers idempotent (which event-ID column, where it lives, how effects key off it) - use idempotency-enforcer instead. This skill stores the raw event and acks; idempotency-enforcer owns deduplication semantics.

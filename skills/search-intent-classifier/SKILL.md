@@ -1,11 +1,11 @@
 ---
 name: Search Intent Classifier
-description: Labels a keyword's dominant search intent (informational, commercial, transactional, or navigational) from the live SERP and prescribes the page type that can rank for it. Use when someone asks "classify these keywords by search intent", "should this keyword get a blog post or a landing page", "what is the search intent of this keyword", or is screening a keyword list for intent before producing content. Do NOT use for grouping keywords into topical clusters and mapping them to a site architecture — use keyword-cluster-builder instead; for building the recommended page, use comparison-page-builder, landing-page-copy, or seo-optimizer.
+description: Labels a keyword's dominant search intent (informational, commercial, transactional, or navigational) from the live SERP and prescribes the page type that can rank for it. Use when someone asks "classify these keywords by search intent", "should this keyword get a blog post or a landing page", "what is the search intent of this keyword", or is screening a keyword list for intent before producing content. Do NOT use for grouping keywords into topical clusters and mapping them to a site architecture - use keyword-cluster-builder instead; for building the recommended page, use comparison-page-builder, landing-page-copy, or seo-optimizer.
 ---
 
 # Search Intent Classifier
 
-Read a query and its live SERP, label the dominant intent, and prescribe the page format that can win. The costly mistake this prevents is building the wrong page type — a beautifully written landing page targeting an informational query will never rank, and no amount of on-page optimization fixes a format mismatch. Classify and recommend; do not build the page.
+Read a query and its live SERP, label the dominant intent, and prescribe the page format that can win. The costly mistake this prevents is building the wrong page type - a beautifully written landing page targeting an informational query will never rank, and no amount of on-page optimization fixes a format mismatch. Classify and recommend; do not build the page.
 
 ## Operating procedure
 
@@ -24,16 +24,16 @@ Collect before classifying:
 
 Apply the four-way taxonomy using both wording signals and SERP evidence. When they conflict, the SERP wins.
 
-- Informational — wording: "how", "what", "why", "guide", "ideas", "examples". SERP: long-form guides, People Also Ask, no shopping pack. Searcher wants to learn.
-- Commercial investigation — wording: "best", "vs", "review", "alternatives", "top". SERP: listicles and "best of" roundups. Searcher is comparing before buying.
-- Transactional — wording: "buy", "price", "coupon", "for sale", "near me". SERP: product and category pages, shopping packs, maps. Searcher wants to act now.
-- Navigational — wording: a brand or product name. SERP: dominated by that brand's own properties. Searcher wants a specific destination.
+- Informational - wording: "how", "what", "why", "guide", "ideas", "examples". SERP: long-form guides, People Also Ask, no shopping pack. Searcher wants to learn.
+- Commercial investigation - wording: "best", "vs", "review", "alternatives", "top". SERP: listicles and "best of" roundups. Searcher is comparing before buying.
+- Transactional - wording: "buy", "price", "coupon", "for sale", "near me". SERP: product and category pages, shopping packs, maps. Searcher wants to act now.
+- Navigational - wording: a brand or product name. SERP: dominated by that brand's own properties. Searcher wants a specific destination.
 
 Classification rules for hard cases:
 
-- If 7+ of the top 10 share one format, that intent is dominant — label it.
+- If 7+ of the top 10 share one format, that intent is dominant - label it.
 - If the top 10 is genuinely split (e.g. 5 guides, 5 product pages), label it hybrid; do not force a single intent.
-- A brand name plus a modifier ("hubspot pricing", "hubspot alternatives") is not navigational — the modifier carries the intent (transactional and commercial respectively).
+- A brand name plus a modifier ("hubspot pricing", "hubspot alternatives") is not navigational - the modifier carries the intent (transactional and commercial respectively).
 
 ### Step 3: Map intent to page type
 
@@ -63,7 +63,7 @@ cast iron vs stainless steel "vs"              6 guides / 4 comparisons    Hybri
                                                                             (comm-leaning)  ends in a recommendation
 ```
 
-Read the last row: wording says commercial, but a guide-heavy SERP means Google treats it as research-first — a pure comparison table would underperform a guide with a verdict.
+Read the last row: wording says commercial, but a guide-heavy SERP means Google treats it as research-first - a pure comparison table would underperform a guide with a verdict.
 
 ## Deliverable
 
@@ -72,10 +72,10 @@ Produce a classification table containing, per keyword: the dominant intent (or 
 ## Do NOT
 
 - Do not classify from the keyword string when a SERP check is possible; wording and SERP disagree often enough to matter.
-- Do not force a single intent onto a genuinely split SERP — hybrid is a valid, actionable label.
+- Do not force a single intent onto a genuinely split SERP - hybrid is a valid, actionable label.
 - Do not chase navigational queries for competitor brands; a site will not outrank a brand for its own name.
 - Do not build the recommended page. Comparison-table copy is comparison-page-builder; landing pages are landing-page-copy; rewriting existing content to rank is seo-optimizer.
-- Do not cluster or prioritize a keyword list by topic — that is keyword-cluster-builder; this skill labels intent per keyword.
+- Do not cluster or prioritize a keyword list by topic - that is keyword-cluster-builder; this skill labels intent per keyword.
 
 ## Quality bar
 

@@ -1,11 +1,11 @@
 ---
 name: Model Evaluation Report
-description: Produces a rigorous, honest evaluation report for an ML model — real baselines, business-matched metrics with confidence intervals, slice-level error analysis, calibration checks, and a go/no-go recommendation. Use when someone asks "is this model good enough to ship", "write up the eval for this model", "did we actually beat the old model", or before any model promotion, stakeholder demo, or retraining decision. Do NOT use for evaluating LLM or prompt outputs — use llm-evaluation instead; for analyzing randomized product experiments use ab-test-analyzer; for documenting a shipped model for consumers use model-card-writer.
+description: Produces a rigorous, honest evaluation report for an ML model - real baselines, business-matched metrics with confidence intervals, slice-level error analysis, calibration checks, and a go/no-go recommendation. Use when someone asks "is this model good enough to ship", "write up the eval for this model", "did we actually beat the old model", or before any model promotion, stakeholder demo, or retraining decision. Do NOT use for evaluating LLM or prompt outputs - use llm-evaluation instead; for analyzing randomized product experiments use ab-test-analyzer; for documenting a shipped model for consumers use model-card-writer.
 ---
 
 # Model Evaluation Report
 
-A model that beats a naive baseline on aggregate accuracy can still be worse than useless in production. Honest evaluation means choosing the right metric before looking at results, comparing against baselines that actually matter, and finding the slices where the model fails — because those slices are where the incident reports will come from.
+A model that beats a naive baseline on aggregate accuracy can still be worse than useless in production. Honest evaluation means choosing the right metric before looking at results, comparing against baselines that actually matter, and finding the slices where the model fails - because those slices are where the incident reports will come from.
 
 ## Operating procedure
 
@@ -54,13 +54,13 @@ Aggregate metrics hide the groups where the model fails.
 
 - Segment performance by every categorical feature, by buckets of key numeric features, and over time if the data spans it.
 - Flag any slice performing more than 10 percentage points below the overall metric.
-- Report slice sample sizes — a slice with 12 examples is noise, not a finding.
+- Report slice sample sizes - a slice with 12 examples is noise, not a finding.
 - Equity audit: check performance parity across demographic-correlated features whenever the data permits.
 
 ### Step 6: Check calibration (probabilistic classifiers)
 
 - Plot a reliability diagram and report Expected Calibration Error (ECE).
-- A well-discriminating but poorly calibrated model needs Platt scaling or isotonic regression before deployment — its probabilities will otherwise be misread as confidence.
+- A well-discriminating but poorly calibrated model needs Platt scaling or isotonic regression before deployment - its probabilities will otherwise be misread as confidence.
 
 ### Step 7: Write the report
 
@@ -73,21 +73,21 @@ EVALUATION: churn-classifier v3        DECISION: retention-offer targeting
 PRIMARY METRIC (fixed before results): PR-AUC on 30-day holdout (n = 8,412)
 
 Model                       PR-AUC (95% CI)        Recall @ P=0.60
-Majority class (floor)      0.11  (—)              0.00
-Rules v1 (incumbent)        0.34  (0.31–0.37)      0.22
-Candidate (GBT v3)          0.47  (0.44–0.50)      0.41
+Majority class (floor)      0.11  (-)              0.00
+Rules v1 (incumbent)        0.34  (0.31-0.37)      0.22
+Candidate (GBT v3)          0.47  (0.44-0.50)      0.41
 
 SLICES FLAGGED (>10pp below overall):
   tenure < 30 days     PR-AUC 0.29   n = 1,050   → known cold-start gap
   plan = enterprise    PR-AUC 0.35   n = 96      → sample too small to act on
 
-CALIBRATION: ECE 0.031 after isotonic regression (0.09 raw — do not deploy raw scores)
+CALIBRATION: ECE 0.031 after isotonic regression (0.09 raw - do not deploy raw scores)
 RECOMMENDATION: GO, gated on excluding tenure < 30 days from automated offers
   until the cold-start slice reaches parity or a fallback rule covers it.
 ```
 
 Bad recommendation: "Model achieves 91% accuracy, ship it." (Accuracy on an 11-percent-positive dataset; the floor is 89 percent.)
-Good recommendation: the block above — primary metric fixed in advance, incumbent beaten with non-overlapping intervals, failing slice named with a mitigation.
+Good recommendation: the block above - primary metric fixed in advance, incumbent beaten with non-overlapping intervals, failing slice named with a mitigation.
 
 ## Deliverable
 
@@ -95,11 +95,11 @@ Produce an evaluation report containing: the pre-registered primary metric and r
 
 ## Do NOT
 
-- Do not select or switch the primary metric after seeing results — that converts evaluation into leaderboard gaming.
+- Do not select or switch the primary metric after seeing results - that converts evaluation into leaderboard gaming.
 - Do not report accuracy as primary on imbalanced data; the majority-class floor makes it meaningless.
 - Do not compare against the floor baseline only; the incumbent is the bar that decides shipping.
 - Do not present point estimates without intervals; two models 0.5 points apart with overlapping CIs are tied.
-- Do not average away failing slices — a model 10 points worse on a protected or high-value group is a launch blocker, not a footnote.
+- Do not average away failing slices - a model 10 points worse on a protected or high-value group is a launch blocker, not a footnote.
 - Do not evaluate on data the model or its hyperparameters ever touched.
 
 ## Quality bar

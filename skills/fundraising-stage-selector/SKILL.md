@@ -5,7 +5,7 @@ description: Use when a founder is deciding whether and how to raise. Triggers o
 
 # Fundraising Stage Selector
 
-Every later step — deck, targeting, terms — is wrong if the stage is wrong. The
+Every later step - deck, targeting, terms - is wrong if the stage is wrong. The
 most common founder error is raising at the stage they wish they were at, not
 the one their evidence supports. This skill fixes the stage first.
 
@@ -21,7 +21,7 @@ Place the company by what is *proven*, not what is hoped:
 
 - **Pre-seed**: a team and an insight, maybe a prototype or design partners. You
   are selling the founder and the bet. Typical raise $250k-$1.5M.
-- **Seed**: a shipped product and the first signal of pull — early revenue,
+- **Seed**: a shipped product and the first signal of pull - early revenue,
   retention, or week-over-week usage growth. Typical raise $1.5M-$4M.
 - **Series A**: a working engine. Repeatable acquisition, real retention, and a
   metric that scales (often ~$1M+ ARR for SaaS, with strong growth/retention).
@@ -40,7 +40,7 @@ fundable milestone* plus margin:
 3. Raise milestone-cost x 1.5 (18-24 months of runway, never under 12).
 4. Sanity-check dilution: a healthy round sells 15-25%. If your target amount
    forces >25% at a realistic valuation, the amount is too big or the valuation
-   too low — fix one.
+   too low - fix one.
 
 ## Valuation envelope
 

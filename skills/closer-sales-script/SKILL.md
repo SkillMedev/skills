@@ -1,6 +1,6 @@
 ---
 name: closer-sales-script
-description: Produce and run a word-for-word gym intro-consult script using the CLOSER sequence (Clarify, Label, Overview, Sell, Explain, Reinforce) to take a booked lead to a paid membership. Use when a gym owner or coach asks for a sales script, says "how do I close the consult", "intro consult", "no-sweat consult", "CLOSER framework", "present the price", "I'm bad at selling memberships", or wants to prep for or review an intro consult. Do NOT use when the request is dissolving a specific objection, speeding up lead response, or building a follow-up cadence — use objection-handling-and-speed-to-lead instead; do NOT use to set the price or guarantee — use gym-pricing-and-guarantees instead.
+description: Produce and run a word-for-word gym intro-consult script using the CLOSER sequence (Clarify, Label, Overview, Sell, Explain, Reinforce) to take a booked lead to a paid membership. Use when a gym owner or coach asks for a sales script, says "how do I close the consult", "intro consult", "no-sweat consult", "CLOSER framework", "present the price", "I'm bad at selling memberships", or wants to prep for or review an intro consult. Do NOT use when the request is dissolving a specific objection, speeding up lead response, or building a follow-up cadence - use objection-handling-and-speed-to-lead instead; do NOT use to set the price or guarantee - use gym-pricing-and-guarantees instead.
 ---
 
 # CLOSER Sales Script
@@ -9,30 +9,30 @@ Run the booked intro consult as a structured conversation that ends in a paid me
 
 ## Workflow
 
-Run the six stages strictly in order, inside a 30-45 minute consult — long enough to build real desire, short enough that the decision happens in the room. Do not present price until Clarify, Label, Overview, and Sell are done — price before desire kills the sale.
+Run the six stages strictly in order, inside a 30-45 minute consult - long enough to build real desire, short enough that the decision happens in the room. Do not present price until Clarify, Label, Overview, and Sell are done - price before desire kills the sale.
 
-1. **Clarify why they came.** Open warm, then get the goal and the why behind it. Ask: "What made you book today?", "What do you want to change in the next few months?", "Why now — what's different about this moment?" Write down their exact words; you reuse them in every later stage. The prospect should be doing most of the talking here — if you are speaking more than about a third of the time in the first three stages, you are pitching, not clarifying.
+1. **Clarify why they came.** Open warm, then get the goal and the why behind it. Ask: "What made you book today?", "What do you want to change in the next few months?", "Why now - what's different about this moment?" Write down their exact words; you reuse them in every later stage. The prospect should be doing most of the talking here - if you are speaking more than about a third of the time in the first three stages, you are pitching, not clarifying.
 
 2. **Label the problem in their words.** Reflect it back until they confirm it: "So the real issue is [their words], is that right?" Get an explicit yes. Reflect their words; do not tell them what their problem is.
 
-3. **Overview past attempts and their cost.** Surface why the old way failed and what staying the same costs: "What have you tried? How did it go? What has that cost you — not just money, but how you feel?" This builds urgency; never use it to shame.
+3. **Overview past attempts and their cost.** Surface why the old way failed and what staying the same costs: "What have you tried? How did it go? What has that cost you - not just money, but how you feel?" This builds urgency; never use it to shame.
 
-4. **Sell the vacation, not the plane flight.** Sell the outcome and new life first, then attach the program to it: "Picture six weeks from now: [their dream outcome in their words]. Here's how we get you there — a coach who programs for you, a done-for-you plan, a small group that keeps you showing up, check-ins to catch problems early." Describe the destination, then the vehicle; keep features brief and tied to the outcome.
+4. **Sell the vacation, not the plane flight.** Sell the outcome and new life first, then attach the program to it: "Picture six weeks from now: [their dream outcome in their words]. Here's how we get you there - a coach who programs for you, a done-for-you plan, a small group that keeps you showing up, check-ins to catch problems early." Describe the destination, then the vehicle; keep features brief and tied to the outcome.
 
-5. **Explain — present price, then go silent.** Anchor the stacked value, then state the price plainly and with confidence, then stop. "The 6-week challenge is [price] and includes [stack]. If you do the work and don't get [result], we keep coaching you free." Then say nothing — hold the silence for as long as it takes, even a full 10+ seconds; the next person to speak loses ground. When an objection comes (money, time, spouse, "let me think about it"), hand off to objection-handling-and-speed-to-lead. Offer a payment plan before a discount: split the price, never cut it.
+5. **Explain - present price, then go silent.** Anchor the stacked value, then state the price plainly and with confidence, then stop. "The 6-week challenge is [price] and includes [stack]. If you do the work and don't get [result], we keep coaching you free." Then say nothing - hold the silence for as long as it takes, even a full 10+ seconds; the next person to speak loses ground. When an objection comes (money, time, spouse, "let me think about it"), hand off to objection-handling-and-speed-to-lead. Offer a payment plan before a discount: split the price, never cut it.
 
-6. **Reinforce the moment they say yes.** Confirm the decision and kill buyer's remorse: "You made the right call — people who start with a coach get there far faster." Lock the next step on the spot: collect payment, book session one, send the plan, grant group access. Momentum prevents cancellations. If they leave without paying, treat it as a no with homework — follow up within 24 hours or the close rate on that lead collapses.
+6. **Reinforce the moment they say yes.** Confirm the decision and kill buyer's remorse: "You made the right call - people who start with a coach get there far faster." Lock the next step on the spot: collect payment, book session one, send the plan, grant group access. Momentum prevents cancellations. If they leave without paying, treat it as a no with homework - follow up within 24 hours or the close rate on that lead collapses.
 
 ### Transitions that hold the structure
 
 - Clarify to Label: "Let me make sure I have this right."
-- Overview to Sell: "Here's the good news — this is fixable, and here's how."
+- Overview to Sell: "Here's the good news - this is fixable, and here's how."
 - Sell to price: "Let me show you exactly what that looks like and what it costs."
 - After yes: "Perfect. Let's get you started right now."
 
 ### Know your numbers
 
-Track close rate per coach per month. A well-run consult process closes 40-60% of shows; below 30% sustained means the script is being skipped or the leads are wrong — review recorded consults against the tracker before touching the offer. Same-day closes stick; "think about it" prospects who leave the building close at a fraction of the in-room rate, which is why Reinforce ends with payment collected, not a promise.
+Track close rate per coach per month. A well-run consult process closes 40-60% of shows; below 30% sustained means the script is being skipped or the leads are wrong - review recorded consults against the tracker before touching the offer. Same-day closes stick; "think about it" prospects who leave the building close at a fraction of the in-room rate, which is why Reinforce ends with payment collected, not a promise.
 
 ## Quality bar
 
@@ -45,7 +45,7 @@ Track close rate per coach per month. A well-run consult process closes 40-60% o
 ## Do NOT
 
 - Do not pitch features, plans, or price during Clarify, Label, or Overview.
-- Do not list sessions, macros, or programming as the product — sell the life, then connect the program.
+- Do not list sessions, macros, or programming as the product - sell the life, then connect the program.
 - Do not fill the silence after the price, justify the number unprompted, or apologize for it.
 - Do not discount at the first hesitation; offer a payment plan instead.
 - Do not end at "yes" without booking session one and collecting payment.
@@ -55,7 +55,7 @@ Track close rate per coach per month. A well-run consult process closes 40-60% o
 
 Produce a consult-ready sales kit containing:
 
-1. **The word-for-word script** (consult-script template below) with every [FILL] resolved for this gym — name, timeframe, price, stack, and guarantee line pulled from gym-pricing-and-guarantees — and the objection branch points marked.
+1. **The word-for-word script** (consult-script template below) with every [FILL] resolved for this gym - name, timeframe, price, stack, and guarantee line pulled from gym-pricing-and-guarantees - and the objection branch points marked.
 2. **The question bank** (discovery-questions template) trimmed to the questions this gym's coaches will actually use per stage.
 3. **The consult tracker** (consult-tracker template) ready to run live on every consult, plus the tracking habit: log every outcome and review close rate monthly per coach.
 
@@ -64,7 +64,7 @@ Produce a consult-ready sales kit containing:
 Word-for-word intro consult with branch points. Replace FILL fields with the gym's specifics; pull the price and guarantee line from gym-pricing-and-guarantees.
 
 ```
-GYM INTRO CONSULT — [FILL: gym name]
+GYM INTRO CONSULT - [FILL: gym name]
 
 CLARIFY
   "Great to meet you. What made you book today?"
@@ -137,7 +137,7 @@ REINFORCE
 Per-consult checklist to run live and review after.
 
 ```
-CONSULT TRACKER — Prospect: [FILL]   Date: [FILL]   Coach: [FILL]
+CONSULT TRACKER - Prospect: [FILL]   Date: [FILL]   Coach: [FILL]
   [ ] Clarified goal and why-now (noted their exact words)
   [ ] Labeled the problem, got a yes
   [ ] Overviewed past attempts and the cost

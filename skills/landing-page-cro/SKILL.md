@@ -1,11 +1,11 @@
 ---
 name: Landing Page CRO
-description: Improves an existing landing page's conversion rate through evidence-first CRO — audit heatmaps and recordings, write structured hypotheses, prioritize with ICE scoring, and run one-variable tests to statistical significance. Use when someone asks "why isn't my landing page converting", "audit this page before we scale spend", "which A/B test should we run first", or after a CVR drop or ahead of a paid-traffic push. Do NOT use for writing a new landing page from scratch — use landing-page-copy instead. Do NOT use for auditing the ad accounts sending the traffic — use paid-acquisition-audit instead. Do NOT use for reading the results of a finished experiment — use ab-test-analyzer instead.
+description: Improves an existing landing page's conversion rate through evidence-first CRO - audit heatmaps and recordings, write structured hypotheses, prioritize with ICE scoring, and run one-variable tests to statistical significance. Use when someone asks "why isn't my landing page converting", "audit this page before we scale spend", "which A/B test should we run first", or after a CVR drop or ahead of a paid-traffic push. Do NOT use for writing a new landing page from scratch - use landing-page-copy instead. Do NOT use for auditing the ad accounts sending the traffic - use paid-acquisition-audit instead. Do NOT use for reading the results of a finished experiment - use ab-test-analyzer instead.
 ---
 
 # Landing Page CRO
 
-Conversion rate optimization is not applying best practices — it is forming specific hypotheses from real user evidence, testing them, and iterating. The costly failure this skill prevents is the redesign roulette: shipping a batch of untested "improvements" that mixes winners with losers, moves nothing, and teaches nothing, while paid spend keeps landing on a leaky page.
+Conversion rate optimization is not applying best practices - it is forming specific hypotheses from real user evidence, testing them, and iterating. The costly failure this skill prevents is the redesign roulette: shipping a batch of untested "improvements" that mixes winners with losers, moves nothing, and teaches nothing, while paid spend keeps landing on a leaky page.
 
 ## Operating procedure
 
@@ -16,7 +16,7 @@ Order is strict: audit before hypotheses (a hypothesis without an observation is
 Collect before auditing. Label anything assumed as a guess.
 
 1. Page URL and its single conversion goal (form fill, purchase, signup). A page with two goals is already a finding.
-2. Current CVR and traffic: unique visitors per week and conversions per week — these decide the testing method in Step 5.
+2. Current CVR and traffic: unique visitors per week and conversions per week - these decide the testing method in Step 5.
 3. Traffic sources and the ads or emails sending them (needed for the message-match check in Step 2).
 4. Available tooling: heatmaps, session recordings, analytics funnel. Default: assume analytics only and flag the gap.
 5. Constraints: brand rules, dev bandwidth, deadline.
@@ -26,28 +26,28 @@ Collect before auditing. Label anything assumed as a guess.
 Collect two evidence types:
 
 - Quantitative: heatmaps, scroll maps, click maps, session recordings, funnel drop-off data. Spend at least one hour in session recordings before forming opinions.
-- Qualitative: user surveys, live-chat transcripts, sales call notes — objections in the users' own words.
+- Qualitative: user surveys, live-chat transcripts, sales call notes - objections in the users' own words.
 
 The audit must answer three questions: where are users leaving, what are they clicking that does not help them convert, and what objections repeat verbatim.
 
-Run the message-match check first — it is the single most common CRO failure: the ad makes a specific promise and the page delivers a generic brand statement. Every paid source must land on a page whose headline directly echoes the ad's offer. If one page serves multiple campaigns, prescribe dynamic text replacement or dedicated pages per major campaign theme before any other test.
+Run the message-match check first - it is the single most common CRO failure: the ad makes a specific promise and the page delivers a generic brand statement. Every paid source must land on a page whose headline directly echoes the ad's offer. If one page serves multiple campaigns, prescribe dynamic text replacement or dedicated pages per major campaign theme before any other test.
 
-Then audit the five highest-leverage elements, in order of typical impact: (1) headline — must match the ad's promise and speak to a specific pain; (2) primary CTA — text, position, contrast; (3) social proof — specificity beats volume; a named customer quote outperforms a star rating; (4) above-the-fold visual — must show the outcome, not the product; (5) form/checkout friction — every unnecessary field reduces conversion. Fix these before testing background colors or font sizes.
+Then audit the five highest-leverage elements, in order of typical impact: (1) headline - must match the ad's promise and speak to a specific pain; (2) primary CTA - text, position, contrast; (3) social proof - specificity beats volume; a named customer quote outperforms a star rating; (4) above-the-fold visual - must show the outcome, not the product; (5) form/checkout friction - every unnecessary field reduces conversion. Fix these before testing background colors or font sizes.
 
 ### Step 3: Write structured hypotheses
 
-Every hypothesis uses this exact format: "Because [observation from audit], changing [element] to [proposed change] will [expected measurable outcome] for [audience]." No observation means it is a guess and does not enter the backlog. Write hypotheses before mockups — the thinking matters more than the execution.
+Every hypothesis uses this exact format: "Because [observation from audit], changing [element] to [proposed change] will [expected measurable outcome] for [audience]." No observation means it is a guess and does not enter the backlog. Write hypotheses before mockups - the thinking matters more than the execution.
 
 ### Step 4: Prioritize with ICE
 
-Score each hypothesis 1-10 on Impact (how much it moves CVR if true), Confidence (strength of the evidence behind it), and Ease (speed to build and test), then multiply. Run the top score first. Run at most two simultaneous tests on the same page — more complicates interpretation. Change one variable per test; a test that changes headline and CTA together cannot attribute its own result.
+Score each hypothesis 1-10 on Impact (how much it moves CVR if true), Confidence (strength of the evidence behind it), and Ease (speed to build and test), then multiply. Run the top score first. Run at most two simultaneous tests on the same page - more complicates interpretation. Change one variable per test; a test that changes headline and CTA together cannot attribute its own result.
 
 ### Step 5: Test to significance
 
 - Standard: do not call a winner before 95% statistical significance with at least 100 conversions per variant.
 - Low traffic (roughly under 1,000 conversions per month): switch to Bayesian testing with a 90% probability-to-beat threshold, or test bigger swings (full section rewrites) where the effect size is detectable.
-- Never end a test early because one variant "looks better" — regression to the mean is real. Pre-commit the sample size or run duration before launch, and run at least one full business cycle (usually one to two weeks) so weekday/weekend mix is represented.
-- Document every outcome including losses in a test log — a failed hypothesis is still a learning, and an undocumented one gets re-run in six months.
+- Never end a test early because one variant "looks better" - regression to the mean is real. Pre-commit the sample size or run duration before launch, and run at least one full business cycle (usually one to two weeks) so weekday/weekend mix is represented.
+- Document every outcome including losses in a test log - a failed hypothesis is still a learning, and an undocumented one gets re-run in six months.
 
 ### Step 6: Ship, log, loop
 
@@ -81,11 +81,11 @@ Produce a CRO package containing: the audit findings (drop-off points, misleadin
 
 ## Do NOT
 
-- Do not test before auditing — hypotheses without observations are guesses, and testing guesses burns traffic.
+- Do not test before auditing - hypotheses without observations are guesses, and testing guesses burns traffic.
 - Do not change multiple variables in one test; the result becomes unattributable and the "learning" is noise.
-- Do not peek and stop early when a variant leads — early leads regress, and calling them ships losers.
+- Do not peek and stop early when a variant leads - early leads regress, and calling them ships losers.
 - Do not start with micro-elements (button shades, fonts) while the five high-leverage elements have unaddressed findings.
-- Do not run frequentist 95%/100-conversion tests on a low-traffic page — the test will never conclude; use Bayesian thresholds or bigger swings.
+- Do not run frequentist 95%/100-conversion tests on a low-traffic page - the test will never conclude; use Bayesian thresholds or bigger swings.
 - Do not skip documenting losing tests; undocumented losses get expensively re-run.
 
 ## Quality bar

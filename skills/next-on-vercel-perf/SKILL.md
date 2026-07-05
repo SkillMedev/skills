@@ -1,11 +1,11 @@
 ---
 name: Next on Vercel Performance
-description: Diagnose and fix Core Web Vitals and page performance of a Next.js app on Vercel — measurement-first. Use when an LCP/INP/CLS score is bad, a page "feels slow", Lighthouse/PageSpeed/Speed Insights is red, the JS bundle is too big, images or fonts are janky, or you want Vercel-specific caching/edge wins. Triggers: "improve Core Web Vitals", "fix LCP", "reduce INP", "stop layout shift", "my Next.js page is slow on Vercel", "shrink my bundle", "next/image optimization", "font is causing CLS", "cache this page". Do NOT use to set up the deploy pipeline or rollbacks — use vercel-deploy-pipeline; for ISR/cache-component semantics and edge runtime choice — use vercel-edge-and-isr; for env/secrets — use vercel-env-management; for model/provider routing — use vercel-ai-gateway; for WAF/bot defense — use vercel-firewall-and-botid.
+description: Diagnose and fix Core Web Vitals and page performance of a Next.js app on Vercel - measurement-first. Use when an LCP/INP/CLS score is bad, a page "feels slow", Lighthouse/PageSpeed/Speed Insights is red, the JS bundle is too big, images or fonts are janky, or you want Vercel-specific caching/edge wins. Triggers: "improve Core Web Vitals", "fix LCP", "reduce INP", "stop layout shift", "my Next.js page is slow on Vercel", "shrink my bundle", "next/image optimization", "font is causing CLS", "cache this page". Do NOT use to set up the deploy pipeline or rollbacks - use vercel-deploy-pipeline; for ISR/cache-component semantics and edge runtime choice - use vercel-edge-and-isr; for env/secrets - use vercel-env-management; for model/provider routing - use vercel-ai-gateway; for WAF/bot defense - use vercel-firewall-and-botid.
 ---
 
 # Next on Vercel Performance
 
-You make a Next.js app on Vercel measurably faster — by **measuring first**, fixing
+You make a Next.js app on Vercel measurably faster - by **measuring first**, fixing
 the one metric that is actually red, and verifying the number moved. Performance
 work without a number in front of you is guesswork; this skill refuses to guess.
 
@@ -13,18 +13,18 @@ Trigger eagerly on any signal that a page is slow or a vital is failing: "fix my
 LCP", "reduce INP", "stop the layout shift", "Lighthouse is red", "Speed Insights
 is bad", "my bundle is huge", "the page feels janky on mobile", "make this page
 faster on Vercel". Each Core Web Vital has a *different* root cause and a
-*different* fix — never apply an INP fix to an LCP problem. This skill is one stop
+*different* fix - never apply an INP fix to an LCP problem. This skill is one stop
 in the ship-a-Next.js-app-on-Vercel workflow: it assumes the app already deploys
 (vercel-deploy-pipeline) and that ISR / runtime choices live in
 vercel-edge-and-isr; here we tune what those produce.
 
 Platform facts this skill assumes (current as of 2026): Node.js 24 is the default
 runtime and Fluid Compute is the default compute model (full Node.js, instance
-reuse cuts cold starts) — Edge Functions are no longer recommended, so do NOT
+reuse cuts cold starts) - Edge Functions are no longer recommended, so do NOT
 reach for the edge runtime as a performance lever by default. Reserve runtime
 decisions for vercel-edge-and-isr.
 
-## Step 1 — Get a real measurement before touching code
+## Step 1 - Get a real measurement before touching code
 
 Do not open a component until you have a number. There are two measurement worlds
 and you need both:
@@ -39,7 +39,7 @@ vercel metrics
 ```
 
 - **Lab data (reproducible, one page):** run Lighthouse against a **production**
-  deployment (never `next dev` — dev is unoptimized and lies about every number):
+  deployment (never `next dev` - dev is unoptimized and lies about every number):
 
 ```bash
 npm i -g lighthouse
@@ -49,7 +49,7 @@ lighthouse https://your-app.vercel.app/the-slow-page \
 ```
 
 Write down the failing metric and its value (e.g. "mobile LCP 4.8s, target ≤2.5s").
-That number is your acceptance test. Field and lab disagree often — **trust field
+That number is your acceptance test. Field and lab disagree often - **trust field
 data for what to fix, use lab data to iterate quickly.**
 
 The 2026 thresholds (mobile, "good"):
@@ -60,7 +60,7 @@ The 2026 thresholds (mobile, "good"):
 | **INP** | ≤ 200ms | ≤ 500ms | > 500ms | Slowest interaction→paint (responsiveness) |
 | **CLS** | ≤ 0.1 | ≤ 0.25 | > 0.25 | Unexpected layout movement (visual stability) |
 
-## Step 2 — Route the failing metric to its root cause
+## Step 2 - Route the failing metric to its root cause
 
 Each vital has one dominant cause family. Diagnose, do not shotgun.
 
@@ -70,14 +70,14 @@ Each vital has one dominant cause family. Diagnose, do not shotgun.
   Step 5 (fonts), Step 6 (caching/TTFB).
 - **INP high →** main-thread blocked during interaction by too much JavaScript:
   oversized client bundles, heavy hydration, expensive event handlers. Go to
-  Step 4 (bundle) — this is almost always a "ship less JS" problem.
+  Step 4 (bundle) - this is almost always a "ship less JS" problem.
 - **CLS high →** elements without reserved space: images/embeds/ads without
   dimensions, fonts swapping metrics, content injected above the fold. Go to
   Step 3 (image `width`/`height`) and Step 5 (`next/font` + `size-adjust`).
 
 Run `vitals_triage.js` (below) with your numbers to get the ordered fix list.
 
-## Step 3 — Images: the #1 LCP and CLS lever
+## Step 3 - Images: the #1 LCP and CLS lever
 
 Most LCP and CLS wins are one image. Use `next/image`, which on Vercel runs the
 native Image Optimization API (on-demand resize, AVIF/WebP, lazy-load, cached at
@@ -92,7 +92,7 @@ import Image from 'next/image'
   alt="Product hero"
   width={1280}
   height={720}     // width+height reserve space → zero layout shift (CLS)
-  priority         // ONLY on the LCP image — preloads, skips lazy-loading
+  priority         // ONLY on the LCP image - preloads, skips lazy-loading
   sizes="(max-width: 768px) 100vw, 1280px"  // stops over-large downloads on mobile
   placeholder="blur"
 />
@@ -102,12 +102,12 @@ Rules that actually move the number:
 - **`priority` on the LCP image only.** It preloads. Putting it on everything
   re-creates the problem by preloading offscreen images.
 - **Always pass `width` and `height`** (or `fill` + a sized parent). This is the
-  single biggest CLS fix — the browser reserves the box before the bytes arrive.
+  single biggest CLS fix - the browser reserves the box before the bytes arrive.
 - **Set `sizes`** so mobile fetches a small variant, not the 1280px desktop file.
 - Prefer **AVIF then WebP**. Configure formats in `vercel.ts` (or `vercel.json`):
 
 ```typescript
-// vercel.ts — recommended config (import from '@vercel/config'); vercel.json still works
+// vercel.ts - recommended config (import from '@vercel/config'); vercel.json still works
 import type { VercelConfig } from '@vercel/config/v1'
 export const config: VercelConfig = {
   images: {
@@ -120,10 +120,10 @@ export const config: VercelConfig = {
 
 For remote images add `remotePatterns`. Store user uploads in **Vercel Blob**
 (public or private) rather than bundling them. Note: Vercel Postgres/KV are
-retired — use Marketplace storage (Neon Postgres, Upstash Redis) for data; this
+retired - use Marketplace storage (Neon Postgres, Upstash Redis) for data; this
 matters for LCP only insofar as a slow DB query delays TTFB (Step 6).
 
-## Step 4 — Bundle size: the #1 INP lever
+## Step 4 - Bundle size: the #1 INP lever
 
 INP is a JavaScript problem. Less client JS = a freer main thread = faster
 interactions. Measure before cutting:
@@ -131,7 +131,7 @@ interactions. Measure before cutting:
 ```bash
 # See exactly which routes ship how much First Load JS
 ANALYZE=true npm run build         # with @next/bundle-analyzer wired in next.config
-# or just read the build output table — the "First Load JS" column per route
+# or just read the build output table - the "First Load JS" column per route
 npm run build
 ```
 
@@ -152,15 +152,15 @@ const Chart = dynamic(() => import('./Chart'), { ssr: false, loading: () => <Ske
    namespace, or a 100KB date util is often the whole regression. Import single
    members, swap for lighter libs, or move the work server-side.
 4. **Server-render data; do not ship a client fetch + spinner** for content that
-   could be in the initial HTML — that also helps LCP.
+   could be in the initial HTML - that also helps LCP.
 
 Re-run the build and confirm First Load JS for the route dropped. That delta is
 your evidence.
 
-## Step 5 — Fonts: a quiet LCP + CLS tax
+## Step 5 - Fonts: a quiet LCP + CLS tax
 
 Web fonts cause CLS (swap reflow) and delay LCP (text waits on the font). Use
-`next/font` — it self-hosts the font at build time (no third-party request), and
+`next/font` - it self-hosts the font at build time (no third-party request), and
 auto-generates a fallback with `size-adjust` so the swap does not shift layout:
 
 ```tsx
@@ -174,11 +174,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 - Subset to the scripts you actually use; never ship the full multilingual file.
 - Self-hosting via `next/font` removes the render-blocking call to fonts.googleapis
-  and the FOUT shift — both an LCP and a CLS win in one change.
+  and the FOUT shift - both an LCP and a CLS win in one change.
 
-## Step 6 — Vercel caching: cut TTFB so LCP starts sooner
+## Step 6 - Vercel caching: cut TTFB so LCP starts sooner
 
-A slow LCP often starts with a slow TTFB — the function re-renders on every
+A slow LCP often starts with a slow TTFB - the function re-renders on every
 request. Serve from cache and the byte-zero arrives in milliseconds. Three layers,
 cheapest first:
 
@@ -186,15 +186,15 @@ cheapest first:
    on Next.js, SvelteKit, Nuxt, and Astro. On **Next.js 16 Cache Components**, mark
    cacheable work with **`'use cache'`** and tune lifetime/invalidation with
    `cacheLife`, `cacheTag`, and `updateTag` (these replace `unstable_cache`). The
-   semantics live in **vercel-edge-and-isr** — defer the depth there; here you only
+   semantics live in **vercel-edge-and-isr** - defer the depth there; here you only
    confirm the page is not needlessly dynamic.
 
-2. **CDN cache for dynamic responses** via the three-tier header — `Cache-Control`
+2. **CDN cache for dynamic responses** via the three-tier header - `Cache-Control`
    for the browser, `CDN-Cache-Control` for the Vercel edge, `Vercel-CDN-Cache-Control`
    to override both at Vercel only:
 
 ```ts
-// app/api/products/route.ts — fresh-feeling but edge-cached
+// app/api/products/route.ts - fresh-feeling but edge-cached
 export async function GET() {
   const data = await getProducts()
   return Response.json(data, {
@@ -214,7 +214,7 @@ export async function GET() {
    cold starts; help it by keeping the slow dependency (DB, AI call) off the
    critical render path or behind the cache above. If a page calls an LLM, route it
    through **vercel-ai-gateway** (GA, Aug 2025) so a slow provider can fail over
-   instead of stalling TTFB — use plain `provider/model` strings via the AI SDK, not
+   instead of stalling TTFB - use plain `provider/model` strings via the AI SDK, not
    provider-specific packages.
 
 ## Quality bar
@@ -224,7 +224,7 @@ A performance change is done only when all hold:
 - You captured a **before** number (field via Speed Insights / `vercel metrics`, or
   lab via Lighthouse on a **production** deploy) and an **after** number, and the
   after is better. No number, not done.
-- You fixed the metric that was actually red, routed through its real root cause —
+- You fixed the metric that was actually red, routed through its real root cause -
   not a generic "make it faster" pass.
 - The LCP image (and only it) has `priority`; every `next/image` has `width`/`height`
   or a sized `fill` parent; `sizes` is set for responsive images.
@@ -237,18 +237,18 @@ A performance change is done only when all hold:
 ## Do NOT
 
 - Do NOT measure or benchmark against `next dev`. Dev disables minification,
-  caching, and optimization — always test a production build / deployment.
+  caching, and optimization - always test a production build / deployment.
 - Do NOT optimize without a profile. "It feels slow" is not a target; an LCP number
   is. If you have no measurement, go back to Step 1.
 - Do NOT put `priority` on more than the LCP image, and never use a raw `<img>` for
   a vital image when `next/image` is available.
-- Do NOT ship images without `width`/`height` — that is the most common CLS cause.
+- Do NOT ship images without `width`/`height` - that is the most common CLS cause.
 - Do NOT reach for the **edge runtime** as a speed fix. Edge Functions are
   deprecated; default to Fluid Compute (Node.js 24) and let vercel-edge-and-isr own
   any runtime decision.
-- Do NOT cache-bust by disabling caching to "be safe" — a dynamic render on every
+- Do NOT cache-bust by disabling caching to "be safe" - a dynamic render on every
   request is usually the TTFB cause you are chasing.
-- Do NOT bolt on provider-specific AI SDKs for a slow model call — route through
+- Do NOT bolt on provider-specific AI SDKs for a slow model call - route through
   vercel-ai-gateway for fallbacks and observability.
 - Do NOT confuse the vitals: an INP fix (less JS) will not move LCP, and an LCP fix
   (image/cache) will not move INP. Diagnose first.
@@ -278,7 +278,7 @@ const T = {
 const fixes = {
   lcp: 'LCP: optimize the hero image (Step 3: next/image + priority + sizes), self-host fonts (Step 5), cut TTFB with cache/ISR (Step 6).',
   inp: 'INP: ship less client JS (Step 4: Server Components by default, push "use client" to leaves, next/dynamic heavy code, drop heavy deps).',
-  cls: 'CLS: reserve space — width/height on every image (Step 3), next/font with size-adjust fallback (Step 5), no above-fold injection.',
+  cls: 'CLS: reserve space - width/height on every image (Step 3), next/font with size-adjust fallback (Step 5), no above-fold injection.',
 }
 
 function classify(value, t) {
@@ -338,13 +338,13 @@ Core Web Vitals triage (mobile thresholds, 2026):
   CLS  0.21     NEEDS WORK
 Fix in this order (worst first):
   1. LCP: optimize the hero image (Step 3: next/image + priority + sizes), self-host fonts (Step 5), cut TTFB with cache/ISR (Step 6).
-  2. CLS: reserve space — width/height on every image (Step 3), next/font with size-adjust fallback (Step 5), no above-fold injection.
+  2. CLS: reserve space - width/height on every image (Step 3), next/font with size-adjust fallback (Step 5), no above-fold injection.
   3. INP: ship less client JS (Step 4: Server Components by default, push "use client" to leaves, next/dynamic heavy code, drop heavy deps).
 ```
 
 Read it: LCP is POOR and the furthest past "good", so the hero image and TTFB come
 first; CLS and INP are "needs work" and follow by severity. The script turns three
-raw numbers into an ordered, root-caused plan — and after each fix you re-measure
+raw numbers into an ordered, root-caused plan - and after each fix you re-measure
 (Step 1) and re-run it to confirm the status flipped to GOOD.
 
 ## Template: perf-audit-record

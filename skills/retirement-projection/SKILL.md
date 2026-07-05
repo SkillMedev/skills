@@ -1,31 +1,31 @@
 ---
 name: Retirement Projection
-description: Projects retirement readiness from savings rate, target nest egg, and compound growth — computes the required portfolio via safe-withdrawal-rate math, years to financial independence, and pension or Social Security offsets, with a runnable calculator. Use when someone asks "how much do I need to retire", "am I on track to retire at 60", "what does my savings rate get me", or "can I retire early". General financial education, not personalized investment advice. Do NOT use for choosing funds or setting an asset allocation — use investment-basics instead; do NOT use for a full financial plan with budgeting and insurance — use financial-planner instead.
+description: Projects retirement readiness from savings rate, target nest egg, and compound growth - computes the required portfolio via safe-withdrawal-rate math, years to financial independence, and pension or Social Security offsets, with a runnable calculator. Use when someone asks "how much do I need to retire", "am I on track to retire at 60", "what does my savings rate get me", or "can I retire early". General financial education, not personalized investment advice. Do NOT use for choosing funds or setting an asset allocation - use investment-basics instead; do NOT use for a full financial plan with budgeting and insurance - use financial-planner instead.
 ---
 
 # Retirement Projection
 
-Retirement planning is not about picking a magic number — it is about the relationship between savings rate, time, and withdrawal needs. Small differences in savings rate now create enormous differences in outcomes later, and the most common projection errors are the flattering ones: nominal returns instead of real, base withdrawal rates for 40-year retirements, and forgetting healthcare before government coverage kicks in.
+Retirement planning is not about picking a magic number - it is about the relationship between savings rate, time, and withdrawal needs. Small differences in savings rate now create enormous differences in outcomes later, and the most common projection errors are the flattering ones: nominal returns instead of real, base withdrawal rates for 40-year retirements, and forgetting healthcare before government coverage kicks in.
 
 This is general financial education, not personalized investment, tax, or legal advice. Projections rest on uncertain assumptions about returns, inflation, longevity, and taxes.
 
 ## Operating procedure
 
-Order matters: spending comes first because it drives the nest-egg target, and offsets must be subtracted before the withdrawal-rate division — applying them afterward double-counts.
+Order matters: spending comes first because it drives the nest-egg target, and offsets must be subtracted before the withdrawal-rate division - applying them afterward double-counts.
 
 ### Step 1: Gather inputs
 
 Collect, with defaults; label anything estimated as a guess:
 
-- Current age and intended retirement age (if unknown, solve for it — that is what the calculator does).
+- Current age and intended retirement age (if unknown, solve for it - that is what the calculator does).
 - Current invested assets and annual savings across all accounts.
-- Expected annual retirement spending in today's dollars. Default estimate: 70-80% of current pre-retirement income, reflecting lower work costs and ended savings contributions. Adjust up for planned travel and for healthcare before Medicare (or local) eligibility — the most significantly underestimated line item; adjust down for paid-off housing.
+- Expected annual retirement spending in today's dollars. Default estimate: 70-80% of current pre-retirement income, reflecting lower work costs and ended savings contributions. Adjust up for planned travel and for healthcare before Medicare (or local) eligibility - the most significantly underestimated line item; adjust down for paid-off housing.
 - Expected pension/Social Security income (use the official government estimator, not a guess).
 - Return assumption. Use a REAL (after-inflation) return of 4-5% for a diversified portfolio; using 8-10% nominal against today's-dollar spending is the classic error that overstates readiness by a decade.
 
 ### Step 2: Set the withdrawal rate
 
-The 4% rule: a portfolio historically sustains annual withdrawals of 4% of its starting value for at least 30 years with high probability. Divide spending by the rate to get the target nest egg. For retirements of 35-40 years — anyone retiring before ~60 — use 3.5% or 3%: early retirees face more years of sequence-of-returns risk (see below) and should hold the conservative end.
+The 4% rule: a portfolio historically sustains annual withdrawals of 4% of its starting value for at least 30 years with high probability. Divide spending by the rate to get the target nest egg. For retirements of 35-40 years - anyone retiring before ~60 - use 3.5% or 3%: early retirees face more years of sequence-of-returns risk (see below) and should hold the conservative end.
 
 ### Step 3: Subtract offsets before dividing
 
@@ -43,7 +43,7 @@ Savings rate is the lever that matters most because it works both sides: it grow
 
 ### Step 5: Stress-test for sequence-of-returns risk
 
-The average return is not the whole story: two retirees with identical average returns can have opposite outcomes depending on WHEN the bad years land. A 30% market drop in the first three years of withdrawals, while selling shares to eat, can permanently cripple a portfolio that would have survived the same drop in year 20 — withdrawals lock in the losses. Mitigations to present: hold the withdrawal rate at the conservative end (3-3.5%) for early retirement, keep 1-2 years of spending in cash/short-term bonds as a buffer, and plan spending flexibility (skip the inflation raise or cut 10% after a bad year). Re-run the calculator with realReturn at 3% as a pessimistic case and report both dates.
+The average return is not the whole story: two retirees with identical average returns can have opposite outcomes depending on WHEN the bad years land. A 30% market drop in the first three years of withdrawals, while selling shares to eat, can permanently cripple a portfolio that would have survived the same drop in year 20 - withdrawals lock in the losses. Mitigations to present: hold the withdrawal rate at the conservative end (3-3.5%) for early retirement, keep 1-2 years of spending in cash/short-term bonds as a buffer, and plan spending flexibility (skip the inflation raise or cut 10% after a bad year). Re-run the calculator with realReturn at 3% as a pessimistic case and report both dates.
 
 ## Calculator
 
@@ -100,7 +100,7 @@ age 55:  $1,111,979
 age 60:  $1,551,813
 ```
 
-Read it: $60,000 of spending at a 4% withdrawal rate requires $1,500,000. Saving $24,000/year from a $120,000 base at 5% real reaches it at age 60. Note the compounding shape — the last $400,000 arrives in the final five years. Pessimistic re-run at 3% real: ready at 65 instead of 60; report both ages so the user plans against the range, not the point estimate.
+Read it: $60,000 of spending at a 4% withdrawal rate requires $1,500,000. Saving $24,000/year from a $120,000 base at 5% real reaches it at age 60. Note the compounding shape - the last $400,000 arrives in the final five years. Pessimistic re-run at 3% real: ready at 65 instead of 60; report both ages so the user plans against the range, not the point estimate.
 
 ## Deliverable
 
@@ -108,7 +108,7 @@ Produce a projection summary containing: the spending estimate with its basis an
 
 ## Do NOT
 
-- Do not use nominal returns against today's-dollar spending — the projection must be entirely real or entirely nominal.
+- Do not use nominal returns against today's-dollar spending - the projection must be entirely real or entirely nominal.
 - Do not apply 4% to a 40-year early retirement; use 3-3.5% and say why.
 - Do not subtract Social Security after dividing by the withdrawal rate, and do not ignore the gap years before benefits start.
 - Do not omit pre-Medicare healthcare from the spending estimate.
@@ -124,4 +124,4 @@ Produce a projection summary containing: the spending estimate with its basis an
 
 ## Escalation
 
-Projections here use deterministic rules of thumb; a fee-only fiduciary financial planner can run Monte Carlo simulations, model individual tax treatment across account types, and handle pensions with complex options — worth the fee within ~10 years of a target retirement date. For choosing the portfolio that earns the assumed return, use investment-basics; for the broader plan around the projection, use financial-planner; for withdrawal-phase tax moves, see tax-optimization.
+Projections here use deterministic rules of thumb; a fee-only fiduciary financial planner can run Monte Carlo simulations, model individual tax treatment across account types, and handle pensions with complex options - worth the fee within ~10 years of a target retirement date. For choosing the portfolio that earns the assumed return, use investment-basics; for the broader plan around the projection, use financial-planner; for withdrawal-phase tax moves, see tax-optimization.

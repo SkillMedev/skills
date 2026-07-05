@@ -1,6 +1,6 @@
 ---
 name: Job Application Writer
-description: Tailors a resume and writes a cover letter for one specific job description — mirroring JD keywords for ATS parsing, reordering bullets by relevance, quantifying impact, and reporting which JD keywords matched and which are missing. Use when someone asks "tailor my resume to this job", "write a cover letter for this posting", "will my resume pass the ATS", or shares a job description alongside their resume. Do NOT use for writing or restructuring a resume without a target job — use resume-writer instead; for critique of an existing resume, use resume-reviewer.
+description: Tailors a resume and writes a cover letter for one specific job description - mirroring JD keywords for ATS parsing, reordering bullets by relevance, quantifying impact, and reporting which JD keywords matched and which are missing. Use when someone asks "tailor my resume to this job", "write a cover letter for this posting", "will my resume pass the ATS", or shares a job description alongside their resume. Do NOT use for writing or restructuring a resume without a target job - use resume-writer instead; for critique of an existing resume, use resume-reviewer.
 ---
 
 # Job Application Writer
@@ -16,7 +16,7 @@ You adapt a candidate's resume and write a cover letter targeted to one job desc
 
 ## Resume tailoring
 
-- **Mirror the JD's language.** If they say "stakeholder management," use that exact phrase where true — ATS matches strings, not synonyms.
+- **Mirror the JD's language.** If they say "stakeholder management," use that exact phrase where true - ATS matches strings, not synonyms.
 - **Reorder for relevance.** Put the most JD-relevant experience and bullets first within each role.
 - **Quantify every bullet possible.** Format: action verb + what + measurable result. "Cut deploy time 60% by automating the release pipeline." If no number exists, show scope or outcome.
 - **Match the title vocabulary.** If they hire a "Product Marketing Manager" and the candidate was a "Marketing Lead," note the equivalence in the summary.
@@ -24,14 +24,14 @@ You adapt a candidate's resume and write a cover letter targeted to one job desc
 ## ATS rules
 
 - Use standard section headings: Experience, Education, Skills.
-- No tables, text boxes, columns, headers/footers, or images — many parsers drop them.
+- No tables, text boxes, columns, headers/footers, or images - many parsers drop them.
 - Include a Skills section with the exact hard-skill keywords from the JD that the candidate genuinely has.
 - Use both the acronym and the spelled-out form once ("SEO (search engine optimization)").
 - Standard fonts, .docx or text-based PDF.
 
 ## Cover letter (3 short paragraphs)
 
-1. **Hook**: why this company/role specifically — a real reason, not flattery. Name a product, value, or recent news.
+1. **Hook**: why this company/role specifically - a real reason, not flattery. Name a product, value, or recent news.
 2. **Proof**: 1-2 of the most relevant accomplishments, with numbers, tied directly to the JD's top responsibilities.
 3. **Close**: what you'd bring and a confident, low-pressure call to talk.
 
@@ -45,7 +45,7 @@ Keep it under 250 words. No restating the resume line by line.
 ## Anti-patterns
 
 - Generic "I am a hard-working team player." Cut it.
-- Keyword stuffing that reads like spam — ATS flags density too.
+- Keyword stuffing that reads like spam - ATS flags density too.
 - One cover letter reused verbatim across companies.
 
 ## Output

@@ -1,6 +1,6 @@
 ---
 name: Networking System
-description: Builds a repeatable professional networking system — a tiered contact tracker, give-first outreach and reconnect scripts, a follow-up cadence by tier, and a weekly relationship-hour routine — so staying in touch stops depending on willpower. Use when someone says "help me network for my job search", "how do I reach out to someone I admire", "I'm bad at keeping in touch with contacts", or wants a lightweight personal CRM habit. Do NOT use for sales prospecting sequences — use outreach-sequence-designer instead; for personalizing recruiting outreach, use candidate-outreach-personalizer.
+description: Builds a repeatable professional networking system - a tiered contact tracker, give-first outreach and reconnect scripts, a follow-up cadence by tier, and a weekly relationship-hour routine - so staying in touch stops depending on willpower. Use when someone says "help me network for my job search", "how do I reach out to someone I admire", "I'm bad at keeping in touch with contacts", or wants a lightweight personal CRM habit. Do NOT use for sales prospecting sequences - use outreach-sequence-designer instead; for personalizing recruiting outreach, use candidate-outreach-personalizer.
 ---
 
 # Networking System

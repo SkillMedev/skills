@@ -1,20 +1,20 @@
 ---
 name: local-unit-economics
-description: Models the money engine of a local service business — cost per lead by channel, booking rate, show rate, close rate, average ticket, and repeat rate — computing CAC, first-90-day cash, LTV to CAC, and a self-funding verdict, with a runnable calculator. Use when an owner asks "what does a new customer actually cost me", "can I afford more ad spend", "is my marketing paying for itself", or "which lead channel should get the next dollar". Do NOT use for gyms — use gym-money-model instead. Do NOT use for SaaS or subscription software — use unit-economics instead.
+description: Models the money engine of a local service business - cost per lead by channel, booking rate, show rate, close rate, average ticket, and repeat rate - computing CAC, first-90-day cash, LTV to CAC, and a self-funding verdict, with a runnable calculator. Use when an owner asks "what does a new customer actually cost me", "can I afford more ad spend", "is my marketing paying for itself", or "which lead channel should get the next dollar". Do NOT use for gyms - use gym-money-model instead. Do NOT use for SaaS or subscription software - use unit-economics instead.
 ---
 
 # Local Unit Economics
 
-Install this skill first. Every other local-service growth skill —
+Install this skill first. Every other local-service growth skill -
 google-business-profile-optimizer, review-engine, local-seo-playbook,
-quote-follow-up-sequences, no-show-reduction, local-referral-engine — spends
+quote-follow-up-sequences, no-show-reduction, local-referral-engine - spends
 money or staff time, and this model is what says whether that spend pays for
 itself. The costly mistake it prevents is judging marketing by cost per lead
 instead of cost per acquired customer: a cheap lead that never books, shows, or
 closes is the most expensive lead there is.
 
 Work the example throughout: Summit Plumbing, a 4-tech residential plumbing
-company in a mid-size metro, average job $450, doing $75,000 a month — about
+company in a mid-size metro, average job $450, doing $75,000 a month - about
 167 jobs.
 
 ## Operating procedure
@@ -25,7 +25,7 @@ how many leads it takes to produce one paying customer.
 
 ### Step 1: Define the unit and gather the inputs
 
-The unit is one new customer — not one lead and not one job. Collect these,
+The unit is one new customer - not one lead and not one job. Collect these,
 per lead channel (Local Services Ads, paid search, GBP/organic, referral). If a
 number is a guess, label it a guess and refine next month.
 
@@ -52,8 +52,8 @@ rate, 2.2 jobs over three years.
 ### Step 2: Compute cost per acquired customer
 
 Lead-to-customer rate equals booking rate times show rate times close rate.
-CAC equals cost per lead divided by that rate. Divide — never use cost per
-lead as CAC — because the spend wasted on leads that never became customers
+CAC equals cost per lead divided by that rate. Divide - never use cost per
+lead as CAC - because the spend wasted on leads that never became customers
 lands on the ones who did.
 
 ### Step 3: Apply the 2x cash rule to the first job
@@ -83,7 +83,7 @@ constraint. Any fail: go to Step 6.
 
 ### Step 6: Diagnose the constrained lever, cheapest fix first
 
-1. Booking rate under 70 percent. Fix phone answering before anything else —
+1. Booking rate under 70 percent. Fix phone answering before anything else -
    answer live or call back within five minutes. Costs nothing in ad spend.
 2. No-show rate above the 10 percent red line (show rate under 90 percent).
    Go to no-show-reduction. Summit books roughly 300 appointments a month, so
@@ -91,7 +91,7 @@ constraint. Any fail: go to Step 6.
    percent recovers about 21 visits, roughly 14 jobs, roughly $6,100 a month
    in gross revenue.
 3. Written-estimate close rate under 50 percent. Go to
-   quote-follow-up-sequences — the leak is usually follow-up, not price.
+   quote-follow-up-sequences - the leak is usually follow-up, not price.
 4. Cost per lead high but funnel healthy. Build free prominence before buying
    more leads: google-business-profile-optimizer, review-engine, then
    local-seo-playbook.
@@ -107,7 +107,7 @@ CAC and payback, not cost per lead.
 
 Ask for: monthly spend and lead count per channel, booked appointments, no-show
 count, jobs won from those visits, average ticket, and margin. Defaults if
-unknown: booking 70 percent, show 88 percent, close 55 percent, margin 0.55 —
+unknown: booking 70 percent, show 88 percent, close 55 percent, margin 0.55 -
 all labeled as guesses until replaced with real counts.
 
 ## Calculator
@@ -172,8 +172,8 @@ Self-funding verdict:             SELF-FUNDING
 ```
 
 Read it: it takes about 2.4 leads to make one customer, so the $50 lead
-becomes a $119 customer. The first job collects $450 against that $119 —
-comfortably past the 2x cash rule — and lifetime contribution of $544.50
+becomes a $119 customer. The first job collects $450 against that $119 -
+comfortably past the 2x cash rule - and lifetime contribution of $544.50
 puts LTV to CAC at 4.57 to 1. Summit can scale this channel. But note the
 diagnosis in Step 6: the 86 percent show rate sits below the 90 percent line,
 and cutting no-shows to 7 percent with no-show-reduction would drop CAC from
@@ -212,7 +212,7 @@ CONSTRAINED LEVER (if not self-funding, or any funnel rate below floor)
 ## Deliverable
 
 A filled channel-economics-sheet per lead channel, the calculator output
-pasted in, a one-line verdict per channel, and — if any target fails — exactly
+pasted in, a one-line verdict per channel, and - if any target fails - exactly
 one named bottleneck with one action and the skill that fixes it.
 
 ## Do NOT
@@ -221,7 +221,7 @@ one named bottleneck with one action and the skill that fixes it.
   close belongs in the number.
 - Do not use revenue for LTV; use contribution after gross margin, or every
   channel looks affordable.
-- Do not blend all channels into one average — a great referral channel can
+- Do not blend all channels into one average - a great referral channel can
   hide a bleeding paid channel.
 - Do not scale spend on LTV alone while first-job cash misses the 2x rule; a
   business with strong LTV and weak near-term cash still runs out of money.
@@ -238,7 +238,7 @@ one named bottleneck with one action and the skill that fixes it.
 
 ## Escalation and routing
 
-This is operating math, not accounting or tax advice — margin and cash
+This is operating math, not accounting or tax advice - margin and cash
 questions with tax consequences go to the business's accountant. Route gym
 economics to gym-money-model and software or subscription economics to
 unit-economics. When the bottleneck is identified, hand off: booking problems

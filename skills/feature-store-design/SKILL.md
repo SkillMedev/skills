@@ -1,21 +1,21 @@
 ---
 name: Feature Store Design
-description: Designs a reusable, leakage-safe feature store — entity and naming contracts, point-in-time correct training joins, feature versioning, online/offline consistency with staleness SLOs, and governance. Use when someone asks "should we build a feature store", "how do I share features across models", "our model trains great but serves garbage", "how do I version a feature definition", or is diagnosing training-serving skew. Do NOT use for designing the feature transformations themselves — use ml-feature-engineering instead; for monitoring feature and prediction distributions after deployment — use data-drift-monitor instead; for general relational schema design — use database-schema instead.
+description: Designs a reusable, leakage-safe feature store - entity and naming contracts, point-in-time correct training joins, feature versioning, online/offline consistency with staleness SLOs, and governance. Use when someone asks "should we build a feature store", "how do I share features across models", "our model trains great but serves garbage", "how do I version a feature definition", or is diagnosing training-serving skew. Do NOT use for designing the feature transformations themselves - use ml-feature-engineering instead; for monitoring feature and prediction distributions after deployment - use data-drift-monitor instead; for general relational schema design - use database-schema instead.
 ---
 
 # Feature Store Design
 
-Feature stores exist to solve three problems at once: reuse across models, point-in-time correctness during training, and consistency between training and serving. A design that solves only one is incomplete — and the failure mode is expensive: silent label leakage that inflates offline metrics, or training-serving skew that makes a model score 0.85 offline and behave randomly in production.
+Feature stores exist to solve three problems at once: reuse across models, point-in-time correctness during training, and consistency between training and serving. A design that solves only one is incomplete - and the failure mode is expensive: silent label leakage that inflates offline metrics, or training-serving skew that makes a model score 0.85 offline and behave randomly in production.
 
 ## Operating procedure
 
 ### Step 1: Decide whether a feature store is warranted
 
-Collect: number of models in production or planned, how many features they would share, and whether any model serves online. Rule of thumb: below 2-3 models sharing features, a feature store is premature infrastructure — a documented feature pipeline with a catalog (see ml-feature-engineering) does the job. Build or adopt one when features are shared across 3+ models, when online serving needs the same values training used, or when point-in-time bugs have already burned the team. Label the decision and its inputs; revisit when the model count doubles.
+Collect: number of models in production or planned, how many features they would share, and whether any model serves online. Rule of thumb: below 2-3 models sharing features, a feature store is premature infrastructure - a documented feature pipeline with a catalog (see ml-feature-engineering) does the job. Build or adopt one when features are shared across 3+ models, when online serving needs the same values training used, or when point-in-time bugs have already burned the team. Label the decision and its inputs; revisit when the model count doubles.
 
 ### Step 2: Fix entity and naming contracts
 
-Consistent naming is load-bearing — it is the API contract for every downstream model.
+Consistent naming is load-bearing - it is the API contract for every downstream model.
 
 - Entity format: <entity-type>_id (e.g., user_id, item_id, session_id).
 - Feature format: <entity-type>__<source>__<transformation>__<window> (e.g., user__payments__sum__30d). The name alone should tell a reader what the value is without opening the code.
@@ -27,9 +27,9 @@ Consistent naming is load-bearing — it is the API contract for every downstrea
 The most common feature store bug is silent label leakage from future data.
 
 - Every feature retrieval accepts an as-of timestamp parameter. No API path may return "latest" to a training job.
-- Offline training joins use point-in-time correct (as-of) lookups — never a naive left join on entity ID, which grabs current values for historical labels.
+- Offline training joins use point-in-time correct (as-of) lookups - never a naive left join on entity ID, which grabs current values for historical labels.
 - Audit any feature derived from a slowly-changing dimension for the correct SCD type; an SCD1 (overwrite) source silently rewrites history and cannot produce correct training data for attributes that change.
-- Document the event-time vs processing-time distinction for every feature source, and build training joins on event time plus a realistic availability delay — a feature computed in a nightly batch was not available at 2pm the same day, even though its event time says it was.
+- Document the event-time vs processing-time distinction for every feature source, and build training joins on event time plus a realistic availability delay - a feature computed in a nightly batch was not available at 2pm the same day, even though its event time says it was.
 
 ### Step 4: Version features and plan backfills
 
@@ -42,12 +42,12 @@ Changing a feature definition without a new version is a breaking change.
 
 ### Step 5: Split online and offline stores with explicit SLOs
 
-The two stores have different consistency requirements — design them separately, then guard the seam.
+The two stores have different consistency requirements - design them separately, then guard the seam.
 
 - Offline store: append-only, partitioned by entity and date, optimized for bulk training retrieval.
 - Online store: low-latency key-value lookup serving the latest value only. Typical latency budget: p99 under 10-25 ms for a feature vector fetch inside a real-time scoring path.
-- Dual-write or materialization pipelines carry a lag monitor; divergence beyond the acceptable threshold triggers an alert. Set a staleness SLO per feature (e.g., 15-minute max lag for the online store), driven by how fast the underlying behavior changes — a 30-day spend aggregate tolerates hours; a session-based fraud feature does not.
-- Run a consistency check on a sample: fetch the same entity from both stores and compare. Sustained mismatch above ~0.5-1% of sampled reads is training-serving skew in the making — treat it as an incident, not noise.
+- Dual-write or materialization pipelines carry a lag monitor; divergence beyond the acceptable threshold triggers an alert. Set a staleness SLO per feature (e.g., 15-minute max lag for the online store), driven by how fast the underlying behavior changes - a 30-day spend aggregate tolerates hours; a session-based fraud feature does not.
+- Run a consistency check on a sample: fetch the same entity from both stores and compare. Sustained mismatch above ~0.5-1% of sampled reads is training-serving skew in the making - treat it as an incident, not noise.
 - Strongly prefer one transformation definition compiled to both batch and streaming paths; independently reimplemented logic in two languages is where skew is born.
 
 ### Step 6: Govern and make discoverable
@@ -60,7 +60,7 @@ A feature store no one can discover is a feature store no one reuses.
 
 ## Worked artifact: the join that leaks vs the join that does not
 
-Bad — naive join fetches current feature values for historical labels:
+Bad - naive join fetches current feature values for historical labels:
 
 ```sql
 select l.user_id, l.label, f.user__payments__sum__30d
@@ -68,7 +68,7 @@ from labels l
 left join features_latest f on f.user_id = l.user_id;  -- future data leaks in
 ```
 
-Good — as-of join returns the newest value at or before each label's timestamp:
+Good - as-of join returns the newest value at or before each label's timestamp:
 
 ```sql
 select l.user_id, l.label, f.user__payments__sum__30d

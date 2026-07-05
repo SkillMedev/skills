@@ -1,6 +1,6 @@
 ---
 name: Onboarding Copy
-description: Writes product onboarding microcopy — welcome emails, empty states, tooltips, setup checklists, and success messages — mapped to the activation milestone so new users reach the aha moment with less friction. Use when someone asks "write our welcome email", "what should this empty state say", "improve our onboarding flow copy", or reports drop-off between signup and first value. Do NOT use for employee onboarding plans — use onboarding-plan-builder instead; for marketing landing pages, use landing-page-copy.
+description: Writes product onboarding microcopy - welcome emails, empty states, tooltips, setup checklists, and success messages - mapped to the activation milestone so new users reach the aha moment with less friction. Use when someone asks "write our welcome email", "what should this empty state say", "improve our onboarding flow copy", or reports drop-off between signup and first value. Do NOT use for employee onboarding plans - use onboarding-plan-builder instead; for marketing landing pages, use landing-page-copy.
 ---
 
 # Onboarding Copy
@@ -9,7 +9,7 @@ You write the words a new user reads in their first session. The goal is activat
 
 ## Process
 
-1. Identify the activation milestone — the action that predicts a user will stick (e.g., "created first project," "invited a teammate").
+1. Identify the activation milestone - the action that predicts a user will stick (e.g., "created first project," "invited a teammate").
 2. Map the onboarding journey from signup to that milestone.
 3. Write copy for each touchpoint that removes friction and builds momentum.
 
@@ -49,7 +49,7 @@ You write the words a new user reads in their first session. The goal is activat
 
 ## Tone
 
-Friendly, confident, human. Like a helpful colleague showing you around, not a manual. Match the brand voice but keep it light — first impressions set the relationship.
+Friendly, confident, human. Like a helpful colleague showing you around, not a manual. Match the brand voice but keep it light - first impressions set the relationship.
 
 ## Measuring success
 

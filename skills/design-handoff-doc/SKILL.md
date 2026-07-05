@@ -27,14 +27,14 @@ For each component, document:
 - Any one-off overrides applied that deviate from the base component.
 - Whether the component is new, modified, or used as-is.
 
-Do not attach a full component API spec here — link to the design system documentation and annotate only the delta.
+Do not attach a full component API spec here - link to the design system documentation and annotate only the delta.
 
 ## Design Tokens
 
 List tokens in four groups: color, spacing, typography, shadow/elevation. For each:
 - Token name as it appears in the design system (e.g. 'color-surface-primary').
 - Where it is used in this feature (e.g. 'card background, modal overlay').
-- Flag any place where a raw value was used instead of a token — these are tech debt and must be resolved before implementation or explicitly accepted as exceptions.
+- Flag any place where a raw value was used instead of a token - these are tech debt and must be resolved before implementation or explicitly accepted as exceptions.
 
 ## Interaction States
 
@@ -59,7 +59,7 @@ Close the document with a checklist an engineer can use to self-QA before handin
 
 ## Deliverable
 
-Produce a single handoff document containing all eight sections in order — overview, design file link, component inventory, design tokens, interaction states, edge cases and constraints, out of scope, and open questions — closed by the 8-12 item acceptance checklist. It should be self-sufficient: an engineer with no prior context can implement from it without a walkthrough, and a designer can QA the build against it without re-opening the design file.
+Produce a single handoff document containing all eight sections in order - overview, design file link, component inventory, design tokens, interaction states, edge cases and constraints, out of scope, and open questions - closed by the 8-12 item acceptance checklist. It should be self-sufficient: an engineer with no prior context can implement from it without a walkthrough, and a designer can QA the build against it without re-opening the design file.
 
 ## Do NOT
 
@@ -67,7 +67,7 @@ Produce a single handoff document containing all eight sections in order — ove
 - **Do not document only the default state.** "Engineers will figure out hover and error" is how every button ships with no focus ring and every form fails silently. If a state isn't in the doc, assume it won't be built.
 - **Do not paste raw hex values or pixel numbers where a token exists.** Raw values fork the design system at implementation time; every one either maps to a token or is flagged as an accepted exception before the doc ships.
 - **Do not smuggle scope in through the design file.** If a screen appears in the file but not in the doc's component inventory, engineers either build it unplanned or skip it unannounced. The out-of-scope section exists to prevent both.
-- **Do not leave open questions implicit.** An undocumented ambiguity gets resolved by whoever hits it first — usually mid-sprint, usually wrong. Name each open question and who owns the answer.
+- **Do not leave open questions implicit.** An undocumented ambiguity gets resolved by whoever hits it first - usually mid-sprint, usually wrong. Name each open question and who owns the answer.
 - **Do not write the acceptance checklist as vibes.** "Looks polished" is not checkable. Every item must be binary pass/fail, verifiable by someone who didn't design the feature.
 
 ## Quality bar

@@ -1,11 +1,11 @@
 ---
 name: Web Performance
-description: Diagnoses and fixes Core Web Vitals — LCP, INP, and CLS — through an ordered audit procedure with concrete code-level changes for images, fonts, JavaScript, and third-party scripts. Use when someone asks "why is my page slow", "how do I fix my LCP", "we're failing Core Web Vitals", "improve my Lighthouse score", or wants a frontend performance audit before a launch or SEO push. Do NOT use for testing server capacity under concurrent traffic — use load-testing instead; for native mobile app performance, use mobile-perf-profiler; for Next.js-on-Vercel-specific tuning, use next-on-vercel-perf.
+description: Diagnoses and fixes Core Web Vitals - LCP, INP, and CLS - through an ordered audit procedure with concrete code-level changes for images, fonts, JavaScript, and third-party scripts. Use when someone asks "why is my page slow", "how do I fix my LCP", "we're failing Core Web Vitals", "improve my Lighthouse score", or wants a frontend performance audit before a launch or SEO push. Do NOT use for testing server capacity under concurrent traffic - use load-testing instead; for native mobile app performance, use mobile-perf-profiler; for Next.js-on-Vercel-specific tuning, use next-on-vercel-perf.
 ---
 
 # Web Performance
 
-Pages get optimized for the developer's laptop and fail for the median user on a mid-tier phone over 4G — that is the costly mistake this skill prevents. The outcome is passing Core Web Vitals at the 75th percentile of real users: LCP under 2.5s, INP under 200ms, CLS under 0.1. Everything below is ordered so measurement decides where effort goes, because intuition about performance is wrong more often than it is right.
+Pages get optimized for the developer's laptop and fail for the median user on a mid-tier phone over 4G - that is the costly mistake this skill prevents. The outcome is passing Core Web Vitals at the 75th percentile of real users: LCP under 2.5s, INP under 200ms, CLS under 0.1. Everything below is ordered so measurement decides where effort goes, because intuition about performance is wrong more often than it is right.
 
 ## Operating procedure
 
@@ -16,15 +16,15 @@ Run the audit in this order. Fixing before measuring wastes effort on metrics th
 - The URL(s) or page templates that matter commercially (home, landing, product, checkout). Default: the highest-traffic template.
 - Field data access: CrUX (public per-origin) or in-house RUM. If neither exists, note that lab data is a proxy and label conclusions accordingly.
 - Framework and rendering mode (SSR, SSG, SPA, islands), CDN in use, and the third-party tag list.
-- The audience's device and network profile. Default when unknown: mid-tier Android over 4G — never a desktop on fiber.
+- The audience's device and network profile. Default when unknown: mid-tier Android over 4G - never a desktop on fiber.
 
 ### Step 2: Read field data first
 
-Use field data (CrUX, RUM) for what users actually experience; lab data (Lighthouse, WebPageTest) only to debug. Read LCP, INP, and CLS at the 75th percentile. Passing bands: LCP under 2.5s, INP under 200ms, CLS under 0.1. Needs-improvement bands: LCP 2.5-4s, INP 200-500ms, CLS 0.1-0.25; anything beyond those is failing. The failing metric — not the loudest complaint — selects which playbook below to run.
+Use field data (CrUX, RUM) for what users actually experience; lab data (Lighthouse, WebPageTest) only to debug. Read LCP, INP, and CLS at the 75th percentile. Passing bands: LCP under 2.5s, INP under 200ms, CLS under 0.1. Needs-improvement bands: LCP 2.5-4s, INP 200-500ms, CLS 0.1-0.25; anything beyond those is failing. The failing metric - not the loudest complaint - selects which playbook below to run.
 
 ### Step 3: Reproduce in the lab under throttling
 
-Profile on a throttled mid-tier phone profile and 4G — not the development laptop. Identify the LCP element, the longest main-thread tasks, and the layout-shift sources before changing anything.
+Profile on a throttled mid-tier phone profile and 4G - not the development laptop. Identify the LCP element, the longest main-thread tasks, and the layout-shift sources before changing anything.
 
 ### Step 4: Run the playbook for the failing metric
 
@@ -35,7 +35,7 @@ LCP (target under 2.5s):
 - Preload it: link rel="preload" as="image" with fetchpriority="high".
 - Serve AVIF/WebP, correctly sized via srcset and sizes.
 - Eliminate render-blocking CSS/JS; inline critical CSS, defer the rest.
-- Use a CDN and long cache headers; reduce TTFB with server caching — TTFB above roughly 800ms makes 2.5s LCP nearly unreachable.
+- Use a CDN and long cache headers; reduce TTFB with server caching - TTFB above roughly 800ms makes 2.5s LCP nearly unreachable.
 
 CLS (target under 0.1):
 - Set explicit width/height (or aspect-ratio) on images, videos, and iframes.
@@ -51,7 +51,7 @@ INP (target under 200ms):
 
 ### Step 5: Apply the standing rules
 
-- Ship less JavaScript — it is the dominant cost. Code-split per route.
+- Ship less JavaScript - it is the dominant cost. Code-split per route.
 - Lazy-load below-the-fold images with loading="lazy" (never the LCP image).
 - Audit third parties; each tag adds main-thread cost and risk. Anything not paying for itself in revenue or insight gets removed, not deferred.
 - Re-measure after every change; do not trust intuition or ship batched changes that cannot be attributed.
@@ -62,14 +62,14 @@ Lab confirmation is necessary but not sufficient. Confirm the p75 field metric m
 
 ## Worked artifact: the hero image, bad vs good
 
-Bad — invisible to the preload scanner, unsized, blocking script:
+Bad - invisible to the preload scanner, unsized, blocking script:
 
 ```html
 <div class="hero" style="background-image:url(hero.jpg)"></div>
 <script src="analytics.js"></script>
 ```
 
-Good — discoverable, prioritized, sized, deferred:
+Good - discoverable, prioritized, sized, deferred:
 
 ```html
 <link rel="preload" as="image" href="hero.webp" fetchpriority="high">
@@ -91,11 +91,11 @@ Produce a performance audit containing: current p75 field values for LCP, INP, a
 
 ## Do NOT
 
-- Do not optimize from a Lighthouse score alone — lab data on a fast machine routinely passes while p75 field data fails.
+- Do not optimize from a Lighthouse score alone - lab data on a fast machine routinely passes while p75 field data fails.
 - Do not test on the development laptop; the median user is on a mid-tier phone over 4G.
-- Do not lazy-load the LCP image — it adds a full request-discovery delay to the one image that matters most.
+- Do not lazy-load the LCP image - it adds a full request-discovery delay to the one image that matters most.
 - Do not chase a perfect score on a metric already passing while another fails; the failing metric sets the agenda.
-- Do not ship five changes at once — attribution dies and regressions hide.
+- Do not ship five changes at once - attribution dies and regressions hide.
 - Do not add a third-party tag manager to "manage" performance; every tag is main-thread cost.
 
 ## Quality bar
