@@ -1,0 +1,91 @@
+---
+name: Eng Status Rollup
+description: Rolls up engineering team status into an exec-ready written update with exactly three sections — progress in outcomes, risks with likelihood and mitigation, and asks with owners and deadlines — scannable in under 90 seconds. Use when someone asks "write my weekly eng update", "summarize team status for leadership", "turn these standup notes into an exec update", or is prepping for a leadership sync. Do NOT use for updates to external or cross-functional stakeholders on a project — use stakeholder-update instead — for public incident communication — use status-page-update — or for monthly investor letters — use investor-update-writer instead.
+---
+
+# Eng Status Rollup
+
+Execs do not need a feature list. They need three answers: are we on track, what might go wrong, and what do you need from us? A rollup that buries those answers under activity logs trains leadership to skim it — and then the one week the update contains a real red flag, nobody reads it. Everything in this skill defends the 90-second scan.
+
+## Operating procedure
+
+### Step 1: gather inputs
+
+- The raw material: standup notes, sprint board, incident log, whatever exists for the period since the last update.
+- The last rollup sent, so claims stay consistent — a risk that silently disappears without a resolution line destroys credibility faster than the risk itself would have.
+- The audience (direct exec, VP group, company-wide) and the milestone or date the team is publicly committed to.
+- Anything the manager knows but hasn't written down; ask directly "what are you worried about this week?" — the real risk is usually in the answer, not the ticket system.
+
+If a claim is unverified ("I think the migration is on schedule"), label it as unconfirmed rather than rounding up to green.
+
+### Step 2: write Progress — outcomes, max 4 bullets
+
+Lead with outcomes, not activities. "Auth service is live for 20% of users" beats "we finished the auth service work." Translate internal metrics into milestone language — velocity numbers require context an exec doesn't have. If nothing shipped, say so in one sentence with the reason; a padded progress section reads as exactly what it is. Hard cap: 4 bullets. The fifth-most-important thing this week is, by definition, not exec-relevant.
+
+### Step 3: write Risks and Blockers
+
+Every risk gets four fields on one or two lines: description, likelihood (high / medium / low), impact if it materializes, and the current mitigation. Do not soft-pedal to look in control — the rollup's entire credibility budget is spent on raising real issues before they blow up. A status report with no risks is almost always missing something; if the week genuinely has none, write "No new risks; [previous risk] resolved by [what happened]" so the empty section is visibly deliberate. Any risk from last week's rollup must reappear as either still-open (with updated mitigation) or explicitly closed.
+
+### Step 4: write Asks — max 2
+
+An ask is a specific decision or resource, with a named decider and a response-needed-by date. "We need more headcount" is not an ask. "Approval to hire 1 senior backend engineer in Q3 to hold the platform migration date — decision needed from [name] by July 1" is an ask. More than 2 asks per update means prioritization hasn't happened yet — do it before sending, not in the exec's inbox. If there are no asks, write "No asks this week."
+
+### Step 5: decide on Looking Ahead
+
+Add a fourth section only when a significant decision point, launch, or external dependency lands in the next two weeks, and cap it at 2-3 bullets. Do not add it by default — a standing Looking Ahead section becomes the place where the real news hides in future-tense optimism.
+
+### Step 6: pressure-test and send
+
+Read it as the busiest recipient: scannable in under 90 seconds? If not, cut — don't compress. Replace jargon and undefined acronyms. Send in writing before any verbal sync so recipients arrive having read it; the meeting is for discussing the asks, not for narrating the update.
+
+## Template
+
+```
+ENG ROLLUP — [FILL: team] — week of [FILL: date]
+Status vs. [FILL: committed milestone]: ON TRACK / AT RISK / OFF TRACK
+
+PROGRESS (max 4)
+- [FILL: outcome, not activity — what changed for users/systems]
+- [FILL]
+- [FILL]
+
+RISKS & BLOCKERS
+- [FILL: risk one-liner] — likelihood: [FILL: H/M/L] — impact: [FILL: what breaks
+  or slips] — mitigation: [FILL: what we're doing about it now]
+- Carried from last week: [FILL: risk] — [FILL: still open + change / CLOSED: how]
+
+ASKS (max 2)
+- [FILL: specific decision or resource] — decider: [FILL: name] — needed by: [FILL: date]
+
+LOOKING AHEAD (only if a decision/launch/dependency lands within 2 weeks; max 3)
+- [FILL]
+```
+
+## Worked contrast
+
+Bad progress bullet: "Team continued working on the billing migration and made good progress; several PRs merged."
+
+Good progress bullet: "Billing migration: 40% of invoices now generated by the new system (target: 100% by Aug 15); zero discrepancies in reconciliation so far."
+
+The bad version reports effort and forces the exec to ask the follow-up. The good version reports position against the committed date and pre-answers the only question that matters.
+
+## Deliverable
+
+Produce a written rollup containing: a one-line status against the committed milestone, at most 4 outcome-phrased progress bullets, every risk with likelihood/impact/mitigation plus the disposition of last week's risks, at most 2 asks each with a decider and a date, and Looking Ahead only when the two-week trigger applies — the whole document readable in under 90 seconds.
+
+## Do NOT
+
+- Do not list activities ("worked on", "continued", "made progress") — every progress bullet states an outcome or a position against a date.
+- Do not omit the risks section or leave it vague to look in control; a no-risk rollup reads as a no-look rollup.
+- Do not let a previously reported risk vanish without an explicit close-out line.
+- Do not send more than 2 asks, and never send an ask without a named decider and a date — undated asks are FYIs, and FYIs get ignored.
+- Do not include velocity charts, story-point counts, or sprint burndowns; they demand context the reader doesn't have and invite the wrong conversation.
+- Do not deliver verbally first. The written version leads; the sync discusses it.
+
+## Quality bar
+
+- Scannable in under 90 seconds by someone with zero project context.
+- Every claim is either verified or labeled unconfirmed — no rounding up to green.
+- Section caps respected: 4 progress bullets, 2 asks, 3 Looking Ahead bullets.
+- Each risk has all four fields; each ask has a decider and a date.
+- No acronym or internal codename appears without a plain-language gloss.
