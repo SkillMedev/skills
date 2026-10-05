@@ -1,6 +1,6 @@
 # Skill Me — the open skill catalog
 
-The canonical public home of every skill authored and hosted by [Skill&nbsp;Me](https://skillme.dev/?utm_source=github&utm_medium=readme&utm_campaign=skills-mirror) — 471 portable `SKILL.md` files, MIT-licensed.
+The canonical public home of every skill authored and hosted by [Skill&nbsp;Me](https://skillme.dev/?utm_source=github&utm_medium=readme&utm_campaign=skills-mirror) — 475 portable `SKILL.md` files, MIT-licensed.
 
 Every skill is plain-text instructions in the open SKILL.md format that runs in Claude (via the Skill Me MCP), Claude Code, Cursor, Gemini CLI, and Codex. Read exactly what a skill does before you install it.
 
@@ -172,6 +172,7 @@ Browse all 2,500+ skills and packs at [skillme.dev](https://skillme.dev/browse?u
 - **[Status Page Update](skills/status-page-update/SKILL.md)** — Writes customer-facing incident status updates for each lifecycle stage - investigating, identified, monitoring, resolved - with cadence rules and plain-language templates.
 - **[Story Structure Architect](skills/story-structure-architect/SKILL.md)** — Use when plotting or outlining a novel or screenplay, structuring its acts/chapters/sequences, fixing a sagging middle or broken pacing, mapping a character arc onto plot beats, planting setups and their payoffs, or deciding scene order.
 - **[Student Feedback Writer](skills/student-feedback-writer/SKILL.md)** — Writes specific, growth-oriented feedback on student work using the Glow-Grow-Go structure - evidence from the actual work, one improvement priority, and a concrete next action - sized to the context from draft comments to progress reports.
+- **[Technical Blog Engine](skills/technical-blog-engine/SKILL.md)** — Long-form technical writing with clear structure, runnable examples, and narrative flow.
 - **[Technical Spec Writer](skills/technical-spec/SKILL.md)** — Writes engineering design docs and RFCs that align a team before code - TL;DR, background, goals and explicit non-goals, quantified requirements, a concrete end-to-end design with failure modes, alternatives considered, rollout plan, and open questions surfaced at the top for reviewers.
 - **[Terms of Service](skills/terms-of-service/SKILL.md)** — Drafts plain-English Terms of Service and Privacy Policies for SaaS products using a clause-by-clause checklist, flagging every business decision and lawyer-review item explicitly.
 - **[Thumbnail Concept](skills/thumbnail-concept/SKILL.md)** — Produces three distinct high-CTR YouTube thumbnail concepts per video - each a full spec with focal point, precise facial-expression direction, text overlay copy, color and background direction, and two paired title variants.
@@ -308,9 +309,12 @@ Browse all 2,500+ skills and packs at [skillme.dev](https://skillme.dev/browse?u
 - **[Captions From Transcript](skills/captions-from-transcript/SKILL.md)** — Produce an accurate, properly timed caption track (SRT or WebVTT) from a video's audio - transcribing or aligning to the voiceover script, timing cues to speech, and enforcing line-length and reading-speed rules so captions are readable and in sync.
 - **[Color Accessibility](skills/color-accessibility/SKILL.md)** — Audits and repairs color palettes against WCAG contrast thresholds - 4.5:1 for body text, 3:1 for large text and UI components, 7:1 for AAA - and makes them safe for color-blind users, delivering a verified pairing table.
 - **[Color Palette Builder](skills/color-palette-builder/SKILL.md)** — Builds an accessible brand color palette - one anchor color, role assignments, 9-step tonal scales, 60-30-10 distribution, and documented usage rules - ready for a developer to implement without guessing.
+- **[Component API Design](skills/component-api-design/SKILL.md)** — Designs React/Vue component APIs - props, composition, event handling, accessibility.
+- **[Dark Mode Design](skills/dark-mode-design/SKILL.md)** — Designs dark mode systems with proper elevation, surface hierarchy, and reduced contrast.
 - **[Design Critique](skills/design-critique/SKILL.md)** — Runs a structured design critique of a screen, flow, or component across three dimensions - jobs-to-be-done, clarity, and delight - and delivers a severity-ranked critique table with one prioritized recommendation.
 - **[Design Handoff Doc](skills/design-handoff-doc/SKILL.md)** — Writes a complete design handoff document covering components, design tokens, interaction states, and edge cases for engineering implementation.
 - **[Design QA Checklist](skills/design-qa-checklist/SKILL.md)** — Runs an ordered design QA pass over an implemented UI - layout, type, color, states, motion, content - against the design spec, with concrete tolerances and a filed defect list.
+- **[Design Token System](skills/design-token-system/SKILL.md)** — Creates multi-tier token systems: global → semantic → component, with dark mode variants.
 - **[Icon System](skills/icon-system/SKILL.md)** — Designs or audits an icon set so every glyph shares one grid, stroke weight, corner language, naming convention, and export pipeline, and delivers the written icon spec engineering builds against.
 - **[Kinetic Typography](skills/kinetic-typography/SKILL.md)** — Put text in motion the right way - title cards, animated captions, lower-thirds, callouts, and word-by-word reveals - with a reading-time-per-word budget so copy holds long enough to read, plus enter/exit timing, weight and size transitions, and type hierarchy in motion.
 - **[Logo Brief Writer](skills/logo-brief-writer/SKILL.md)** — Writes a complete creative brief for a logo or identity project - business context, a three-adjective personality axis, deliverables and constraints, competitive territory, rounds and timeline, and concrete success criteria.
