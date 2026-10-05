@@ -1,6 +1,8 @@
 ---
-name: Icon System
+name: icon-system
 description: Designs or audits an icon set so every glyph shares one grid, stroke weight, corner language, naming convention, and export pipeline, and delivers the written icon spec engineering builds against. Use when someone asks "our icons look inconsistent", "set up an icon grid", "how should we name icons", "audit this icon set", "prep our SVGs for handoff", or is commissioning new icons and needs the rules first. Do NOT use for a single logo mark - use logo-brief-writer instead; for delivering full design specs beyond icons, use design-handoff-doc.
+metadata:
+  title: "Icon System"
 ---
 
 # Icon System

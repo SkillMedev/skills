@@ -1,6 +1,8 @@
 ---
-name: Strength Training Plan
+name: strength-training-plan
 description: Use when someone starts lifting, hits a strength or hypertrophy plateau, restructures a lifting program, or wants to build strength or muscle - designing a progressive resistance program with splits, compound movement patterns, sets/reps, progressive overload, and deloads from barbells and dumbbells. General fitness guidance, not medical advice. Owns resistance/strength training only. Do NOT use to program high-intensity interval conditioning or circuits (use fitness-program), a steady-state aerobic-base or Zone 2 block (use zone-2-cardio-plan), or a mobility/flexibility routine (use mobility-routine).
+metadata:
+  title: "Strength Training Plan"
 ---
 
 # Strength Training Plan

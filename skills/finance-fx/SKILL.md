@@ -1,6 +1,8 @@
 ---
-name: Finance & FX Data
+name: finance-fx
 description: Use when a task needs live or historical money data - "convert USD to EUR", "current/past exchange rate", "FX rate on this date / over this range", or "current price of Bitcoin/Ethereum, market cap, 24h change". Frankfurter (ECB reference rates, no key) is the FX default; CoinGecko's free keyless tier covers crypto. Do NOT use for stock quotes or equities - no keyless stock API survives verification, say so instead of guessing; do NOT use for country economic indicators like GDP or inflation series - use government-open-data instead; if the request is a vague "I need live data", route through public-data-api-picker.
+metadata:
+  title: "Finance & FX Data"
 ---
 
 # Finance & FX Data

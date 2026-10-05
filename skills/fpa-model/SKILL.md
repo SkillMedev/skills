@@ -1,6 +1,8 @@
 ---
-name: FP&A Operating Model
+name: fpa-model
 description: Builds a driver-based FP&A operating model linking business inputs to P&L, balance sheet, and cash flow outputs. Use when building an annual plan, preparing investor materials, running scenario analysis, or stress-testing the business.
+metadata:
+  title: "FP&A Operating Model"
 ---
 
 # FP&A Operating Model

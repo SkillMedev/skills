@@ -1,6 +1,8 @@
 ---
-name: Salary Negotiation
+name: salary-negotiation
 description: Prepares and scripts salary and job-offer negotiations - market research, target/minimum/anchor numbers, BATNA strength, deflection and counter scripts, and total-compensation trades when base is capped. Use when someone asks "how do I negotiate my offer", "they asked my salary expectations, what do I say", "is this offer low", or "how do I counter without losing the offer". Do NOT use for writing resumes, cover letters, or managing the application pipeline - use job-application instead; for declining an offer gracefully, see offer-rejection-writer.
+metadata:
+  title: "Salary Negotiation"
 ---
 
 # Salary Negotiation

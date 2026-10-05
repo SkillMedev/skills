@@ -1,6 +1,8 @@
 ---
-name: ClickHouse Analytics
+name: clickhouse-analytics
 description: Designs ClickHouse schemas and queries for fast analytics - MergeTree engine selection, ORDER BY key design, partitioning, materialized views, and projections. Use when someone asks "why is my ClickHouse query slow", "how should I order my sorting key", "should I use a materialized view or projection", "how do I deduplicate events", or is modeling an event or metrics table for OLAP. Do NOT use for tuning row-store OLTP databases like Postgres or MySQL - use sql-query-optimizer instead; for general relational schema design use database-schema; for reading query plans on traditional databases use explain-plan-reader; for the streaming ingestion side use kafka-pipelines.
+metadata:
+  title: "ClickHouse Analytics"
 ---
 
 # ClickHouse Analytics

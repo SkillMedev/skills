@@ -1,6 +1,8 @@
 ---
-name: Design Critique
+name: design-critique
 description: Runs a structured design critique of a screen, flow, or component across three dimensions - jobs-to-be-done, clarity, and delight - and delivers a severity-ranked critique table with one prioritized recommendation. Use when someone asks "critique this design", "review this mockup before we build it", "this flow feels off but I can't say why", "which design debt matters", or a new design or redesign is up for review. Do NOT use for verifying a built implementation against its spec - use design-qa-checklist instead; for planning moderated usability sessions, use usability-test-plan.
+metadata:
+  title: "Design Critique"
 ---
 
 # Design Critique

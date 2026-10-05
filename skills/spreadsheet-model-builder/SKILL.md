@@ -1,6 +1,8 @@
 ---
-name: Spreadsheet Model Builder
+name: spreadsheet-model-builder
 description: Structures spreadsheet models a second analyst can audit - separated input/calc/output sheets, one-formula-per-row hygiene, built-in error checks, and a documented cover sheet. Use when someone asks "how should I structure this model", "clean up this spreadsheet before the board sees it", "why does my model break when I insert a column", or is building any forecast or calculator others will review. Do NOT use for the SaaS revenue logic itself - use revenue-modeling instead; for a full FP&A operating model use fpa-model; for personal or department budgets use budget-builder; for cash timing use cash-flow-forecast; for GAAP statement construction use financial-statement-builder.
+metadata:
+  title: "Spreadsheet Model Builder"
 ---
 
 # Spreadsheet Model Builder

@@ -1,6 +1,8 @@
 ---
-name: Mobile Offline Sync
+name: mobile-offline-sync
 description: Builds local-first mobile storage with an optimistic local store, durable mutation outbox, per-entity conflict-resolution rules, incremental pull, and idempotent background retry. Use when someone says "the app has to work offline", "how do I sync Room or SQLite or Realm with the server", "what happens when two devices edit the same record", or offline edits must reconcile with the server later. Do NOT use for paginating, caching, and refreshing read-heavy server lists - use pagination-and-sync-engineer instead; and do NOT build offline write support for strong-consistency operations like payments or inventory counts - disable those offline.
+metadata:
+  title: "Mobile Offline Sync"
 ---
 # Mobile Offline Sync
 

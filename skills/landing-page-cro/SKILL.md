@@ -1,6 +1,8 @@
 ---
-name: Landing Page CRO
+name: landing-page-cro
 description: Improves an existing landing page's conversion rate through evidence-first CRO - audit heatmaps and recordings, write structured hypotheses, prioritize with ICE scoring, and run one-variable tests to statistical significance. Use when someone asks "why isn't my landing page converting", "audit this page before we scale spend", "which A/B test should we run first", or after a CVR drop or ahead of a paid-traffic push. Do NOT use for writing a new landing page from scratch - use landing-page-copy instead. Do NOT use for auditing the ad accounts sending the traffic - use paid-acquisition-audit instead. Do NOT use for reading the results of a finished experiment - use ab-test-analyzer instead.
+metadata:
+  title: "Landing Page CRO"
 ---
 
 # Landing Page CRO

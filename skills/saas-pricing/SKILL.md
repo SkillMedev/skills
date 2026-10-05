@@ -1,6 +1,8 @@
 ---
-name: SaaS Pricing Model
+name: saas-pricing
 description: Designs a SaaS pricing model - the value metric, three-tier packaging with feature gates, list prices, annual discount, and a built-in expansion path targeting net revenue retention - delivered as a pricing page spec. Use when a founder asks "how should we price our SaaS", "per seat or usage-based", "what features go in each tier", or is building or overhauling a pricing page. Do NOT use for pricing strategy outside SaaS packaging - use pricing-strategy instead; for the upsell motion after pricing exists, use expansion-revenue.
+metadata:
+  title: "SaaS Pricing Model"
 ---
 
 # SaaS Pricing Model

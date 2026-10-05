@@ -1,6 +1,8 @@
 ---
-name: Load Testing
+name: load-testing
 description: Designs and interprets load tests - smoke, load, stress, soak, and spike - with realistic ramp profiles, percentile-based pass/fail thresholds, and a bottleneck-reading procedure, producing a runnable test plan. Use when someone asks "how many users can we handle", "how do I write a k6 or Gatling test", "will this survive the launch", "why did the site die at 500 users", or is preparing for a traffic event. Do NOT use for diagnosing frontend page-speed or Core Web Vitals - use web-performance instead - and do NOT use for tuning database connection pools found as the bottleneck - use connection-pool-tuner instead.
+metadata:
+  title: "Load Testing"
 ---
 
 # Load Testing

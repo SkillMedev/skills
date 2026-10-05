@@ -1,6 +1,8 @@
 ---
-name: Fundraising Narrative
+name: fundraising-narrative
 description: Builds the five-beat narrative spine - origin, insight, wedge, traction, vision - that answers why now, why you, and why this before any deck exists. Use when a founder says "help me craft my fundraising story", "investors don't get what we do", "what's our narrative for this round", or has metrics and a product but no story that survives a partner meeting. Do NOT use for turning the story into slides - use pitch-deck-builder instead; do NOT use for deciding stage, amount, or valuation - use fundraising-stage-selector instead.
+metadata:
+  title: "Fundraising Narrative"
 ---
 
 # Fundraising Narrative

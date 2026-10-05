@@ -1,6 +1,8 @@
 ---
-name: Getting Things Done
+name: gtd-system
 description: Runs the full Getting Things Done loop - capture, clarify, organize, reflect, engage - building a trusted system of context lists, a projects list with defined next actions, and a weekly review habit. Use when someone says "I'm overwhelmed and things are slipping through the cracks", "set up GTD for me", "help me do a brain dump and organize it", or "my to-do list is a mess". Do NOT use for just running the weekly review ritual itself - use weekly-review instead - or for clearing an email backlog - use inbox-zero.
+metadata:
+  title: "Getting Things Done"
 ---
 
 # Getting Things Done

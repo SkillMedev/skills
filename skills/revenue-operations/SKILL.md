@@ -1,6 +1,8 @@
 ---
-name: Revenue Operations
+name: revenue-operations
 description: Unifies marketing, sales, and customer success around one funnel with org-wide stage definitions, hand-off SLAs, a single source of truth, shared metrics, and a pipeline-weighted forecast. Use when someone asks "set up RevOps", "marketing and sales disagree on what an MQL is", "our forecast is always wrong", "deals fall through the cracks between teams", or "what should our pipeline coverage be". Do NOT use for diagnosing conversion drop-off inside a product or marketing funnel - use funnel-analysis instead - for building the revenue financial model - use revenue-modeling instead - or for outbound activity math per rep - use prospecting-metrics instead.
+metadata:
+  title: "Revenue Operations"
 ---
 
 # Revenue Operations

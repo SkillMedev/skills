@@ -1,6 +1,8 @@
 ---
-name: Month-End Close
+name: month-end-close
 description: Guides finance teams through a controlled month-end close - sub-ledger cutoffs, journal entries in dependency order, full balance-sheet reconciliation, flux analysis, and sign-off - targeting a locked close by business day 5-10. Use when someone asks "help me close the books", "build a close checklist", "our close takes three weeks, how do we shorten it", "what order do the journal entries go in", or is preparing for an audit. Do NOT use for constructing or interpreting the financial statements themselves - use financial-statement-builder instead - or for writing the budget-variance narrative that follows the close - use budget-vs-actual instead.
+metadata:
+  title: "Month-End Close"
 ---
 
 # Month-End Close

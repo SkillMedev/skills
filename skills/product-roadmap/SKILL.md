@@ -1,6 +1,8 @@
 ---
-name: Product Roadmap
+name: product-roadmap
 description: Turns product strategy into a themed Now/Next/Later roadmap with explicit trade-offs, confidence levels, and no committed dates beyond one quarter. Use when someone asks "build our product roadmap", "turn these priorities into a roadmap", "execs want committed ship dates for next year", or needs to communicate direction without over-promising. Do NOT use for company-wide annual operating plans - use annual-plan instead; for defining the goals a roadmap serves, use okr-builder; for scheduling work inside a sprint, use sprint-planning.
+metadata:
+  title: "Product Roadmap"
 ---
 
 # Product Roadmap

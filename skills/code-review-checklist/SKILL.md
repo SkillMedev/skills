@@ -1,6 +1,8 @@
 ---
-name: Code Review Checklist
+name: code-review-checklist
 description: Run a systematic multi-pass code review - correctness, design, security, performance, tests - and report findings ordered by severity with concrete, respectful suggestions. Use when someone asks "review this PR", "review this diff", "what's wrong with this change", or wants a pre-merge quality gate on a branch. Do NOT use for a security-only deep audit of a change - use secure-code-review instead - or for writing the ticket or tracking artifact that describes the change - use jira-ticket-writer instead.
+metadata:
+  title: "Code Review Checklist"
 ---
 
 # Code Review Checklist

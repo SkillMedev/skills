@@ -1,6 +1,8 @@
 ---
-name: Push Notification Copy
+name: push-notification-copy
 description: Writes push and in-app notification copy that survives lock-screen truncation, ties every send to a user-specific trigger, deep-links to the exact destination, and respects frequency caps. Use when someone asks "write a push notification for this event", "why is our push opt-out rate rising", "draft re-engagement push copy", or is planning lifecycle, transactional, or re-engagement notifications. Do NOT use for implementing the delivery pipeline, tokens, or notification infrastructure - use push-notification-wirer instead; for deciding which lifecycle stage should send push at all, start with lifecycle-journey-map.
+metadata:
+  title: "Push Notification Copy"
 ---
 
 # Push Notification Copy

@@ -1,6 +1,8 @@
 ---
-name: Regulatory Scanner
+name: regulatory-scan
 description: Maps which regulations apply to a product or business across every operating jurisdiction, translates them into concrete obligations, and produces a prioritized compliance-gap table. Use when someone asks "what regulations apply to my product", "are we GDPR or CCPA exposed", "run a compliance gap analysis", or is entering a new market or handling a new data type. Do NOT use for drafting the legal documents themselves - use terms-of-service instead. Do NOT use for assembling SOC 2 audit evidence - use soc2-evidence-helper instead. Do NOT use for patent landscape questions - use patent-prior-art instead.
+metadata:
+  title: "Regulatory Scanner"
 ---
 
 # Regulatory Scanner

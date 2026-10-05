@@ -1,6 +1,8 @@
 ---
-name: Onboarding Copy
+name: onboarding-copy
 description: Writes product onboarding microcopy - welcome emails, empty states, tooltips, setup checklists, and success messages - mapped to the activation milestone so new users reach the aha moment with less friction. Use when someone asks "write our welcome email", "what should this empty state say", "improve our onboarding flow copy", or reports drop-off between signup and first value. Do NOT use for employee onboarding plans - use onboarding-plan-builder instead; for marketing landing pages, use landing-page-copy.
+metadata:
+  title: "Onboarding Copy"
 ---
 
 # Onboarding Copy

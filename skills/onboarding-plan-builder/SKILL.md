@@ -1,6 +1,8 @@
 ---
-name: Onboarding Plan Builder
+name: onboarding-plan-builder
 description: Produces a 30/60/90-day onboarding plan for a specific role with phased milestones, first-week setup, observable success criteria, and ramp reviews. Use when a new hire has an accepted offer or start date, or when asked to write, draft, or improve a 30/60/90 / ramp / onboarding plan for a role. Do NOT use for the structure of ongoing recurring 1:1s - use 1on1-agenda instead.
+metadata:
+  title: "Onboarding Plan Builder"
 ---
 # Onboarding Plan Builder
 

@@ -1,6 +1,8 @@
 ---
-name: Government & Open Data
+name: government-open-data
 description: Use when a task needs official country-level statistics - "GDP / population / life expectancy / inflation / unemployment for country X over time", "compare indicator Y across countries", or EU-official figures ("Eurostat says…"). World Bank Indicators is the default (no key, every country, 1,400+ series back decades); Eurostat covers EU-official statistics. Do NOT use for a country's static facts like capital or currency - use geo-places instead; do NOT use for live FX rates or crypto - use finance-fx instead; if the request is a vague "I need live data", route through public-data-api-picker.
+metadata:
+  title: "Government & Open Data"
 ---
 
 # Government & Open Data

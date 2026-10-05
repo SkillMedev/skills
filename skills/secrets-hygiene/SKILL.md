@@ -1,6 +1,8 @@
 ---
-name: Secrets Hygiene
+name: secrets-hygiene
 description: Guides detection, emergency rotation, and prevention of leaked secrets and credentials across source code, git history, CI pipelines, logs, and infrastructure config. Use when someone says "I think I committed an API key", "a secret leaked", "scan the repo for credentials", "how should we store secrets", or is setting up secrets management for an application, CI/CD, or Kubernetes. Do NOT use for detecting or redacting personal data like names, emails, or SSNs - use pii-scrubber instead; for routine non-secret environment configuration on Vercel, use vercel-env-management.
+metadata:
+  title: "Secrets Hygiene"
 ---
 
 # Secrets Hygiene

@@ -1,6 +1,8 @@
 ---
-name: Nutrition Planner
+name: nutrition-planner
 description: Sets personal nutrition targets - protein at 1.6-2.2 g/kg, a calorie budget from goal and activity, fiber and hydration floors - and a repeatable meal structure with a review-and-adjust protocol for fat loss, muscle gain, or maintenance. Use when someone asks "how much protein should I eat", "set my macros for a cut", "why has my weight stalled", or "build me a sustainable diet framework". General wellness guidance, not medical advice. Do NOT use to produce a specific week of recipes with a shopping list and prep schedule - use meal-planner instead (this skill sets the targets; meal-planner cooks to them); for the broader multi-pillar health routine, use longevity-protocol.
+metadata:
+  title: "Nutrition Planner"
 ---
 
 # Nutrition Planner

@@ -1,6 +1,8 @@
 ---
-name: Next on Vercel Performance
-description: Diagnose and fix Core Web Vitals and page performance of a Next.js app on Vercel - measurement-first. Use when an LCP/INP/CLS score is bad, a page "feels slow", Lighthouse/PageSpeed/Speed Insights is red, the JS bundle is too big, images or fonts are janky, or you want Vercel-specific caching/edge wins. Triggers: "improve Core Web Vitals", "fix LCP", "reduce INP", "stop layout shift", "my Next.js page is slow on Vercel", "shrink my bundle", "next/image optimization", "font is causing CLS", "cache this page". Do NOT use to set up the deploy pipeline or rollbacks - use vercel-deploy-pipeline; for ISR/cache-component semantics and edge runtime choice - use vercel-edge-and-isr; for env/secrets - use vercel-env-management; for model/provider routing - use vercel-ai-gateway; for WAF/bot defense - use vercel-firewall-and-botid.
+name: next-on-vercel-perf
+description: "Diagnose and fix Core Web Vitals and page performance of a Next.js app on Vercel - measurement-first. Use when an LCP/INP/CLS score is bad, a page \"feels slow\", Lighthouse/PageSpeed/Speed Insights is red, the JS bundle is too big, images or fonts are janky, or you want Vercel-specific caching/edge wins. Triggers: \"improve Core Web Vitals\", \"fix LCP\", \"reduce INP\", \"stop layout shift\", \"my Next.js page is slow on Vercel\", \"shrink my bundle\", \"next/image optimization\", \"font is causing CLS\", \"cache this page\". Do NOT use to set up the deploy pipeline or rollbacks - use vercel-deploy-pipeline; for ISR/cache-component semantics and edge runtime choice - use vercel-edge-and-isr; for env/secrets - use vercel-env-management; for model/provider routing - use vercel-ai-gateway; for WAF/bot defense - use vercel-firewall-and-botid."
+metadata:
+  title: "Next on Vercel Performance"
 ---
 
 # Next on Vercel Performance

@@ -1,6 +1,8 @@
 ---
-name: Inbox Zero
+name: inbox-zero
 description: Processes any email backlog to zero using the 4Ds - Delete, Delegate, Defer, Do - with a mass-archive strategy for the obvious, a touch-each-email-once discipline, and a keep-it-clear system of batched processing windows, ruthless unsubscribing, filters, and a minimal folder setup. Use when someone says "I have 5,000 unread emails", "help me get to inbox zero", "email is eating my whole day", or treats their inbox as a to-do list. Do NOT use for drafting the reply emails themselves or prioritization rules for an ongoing support queue - use email-triage instead - or for protecting focus time around the email windows - use deep-work-planner instead.
+metadata:
+  title: "Inbox Zero"
 ---
 
 # Inbox Zero

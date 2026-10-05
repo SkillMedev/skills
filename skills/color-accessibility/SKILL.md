@@ -1,6 +1,8 @@
 ---
-name: Color Accessibility
+name: color-accessibility
 description: Audits and repairs color palettes against WCAG contrast thresholds - 4.5:1 for body text, 3:1 for large text and UI components, 7:1 for AAA - and makes them safe for color-blind users, delivering a verified pairing table. Use when someone asks "does this color pass contrast", "make my brand color accessible", "is this palette color-blind safe", "why did my contrast check fail", or is remediating color findings from an audit. Do NOT use to invent a brand palette from scratch - use color-palette-builder instead; for a full accessibility review beyond color, use accessibility-audit.
+metadata:
+  title: "Color Accessibility"
 ---
 
 # Color Accessibility

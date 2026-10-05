@@ -1,6 +1,8 @@
 ---
-name: Decision Making
+name: decision-making
 description: Runs a structured decision process for high-stakes choices - reversibility classification, weighted decision matrices, expected value with explicit probabilities, pre-mortems, second-order thinking, and 10/10/10 - and produces a documented recommendation plus a decision-journal entry. Use when someone asks "should I take this job or stay", "how do I decide between these two paths", "I keep going back and forth on a big decision", or "help me think through whether to relocate". Do NOT use for evaluating a specific large purchase like a house, car, or equipment - use big-purchase-decision instead.
+metadata:
+  title: "Decision Making"
 ---
 
 # Decision Making

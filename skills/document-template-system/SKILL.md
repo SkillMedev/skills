@@ -1,6 +1,8 @@
 ---
-name: Document Template System
+name: document-template-system
 description: Builds a maintained library of reusable document templates for a team - frequency-based selection, four-part template anatomy, style and naming conventions, and a quarterly maintenance protocol. Use when someone asks "set up document templates for my team", "our docs are all formatted differently", "create a standard template for status reports or proposals", or "how do we keep templates from going stale". Do NOT use for designing Notion databases and their properties - use notion-database instead. For writing one specific process document rather than a template system, use process-doc; for visual brand rules, use brand-guidelines.
+metadata:
+  title: "Document Template System"
 ---
 
 # Document Template System

@@ -1,6 +1,8 @@
 ---
-name: Vercel Firewall and BotID
+name: vercel-firewall-and-botid
 description: Harden a Vercel app at the platform edge - the Vercel WAF (custom rules, IP blocking, managed rulesets like OWASP CRS + bot_protection + ai_bots, rate limiting), Attack Challenge Mode, system bypass rules, automatic DDoS mitigation, and BotID bot verification on sensitive routes. Use when someone says "protect my Vercel app", "add a WAF rule", "rate limit my API", "block this IP / country / user-agent", "I'm getting DDoSed", "stop bots / scrapers / AI crawlers", "turn on Attack Mode", "verify human vs bot on checkout/signup/login", or "set up BotID". Do NOT use for app-level auth/session logic - that is application code; do NOT use for env vars or secrets - use vercel-env-management; do NOT use for the deploy/promote/rollback flow - use vercel-deploy-pipeline.
+metadata:
+  title: "Vercel Firewall and BotID"
 ---
 
 # Vercel Firewall and BotID

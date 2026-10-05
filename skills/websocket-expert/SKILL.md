@@ -1,6 +1,8 @@
 ---
-name: WebSocket Expert
+name: websocket-expert
 description: Builds resilient WebSocket systems - heartbeat and dead-connection detection, reconnect with exponential backoff and jitter, message queuing with sequence numbers and backpressure limits, auth on connect, and pub/sub backplanes for horizontal scale. Use when someone asks "my WebSocket connections keep dropping", "how do I handle reconnects", "how do I scale WebSockets across servers", "clients miss messages after reconnecting", or is building chat, live dashboards, or collaborative editing. Do NOT use for one-way server push where SSE would do, for webhook ingestion - use webhook-receiver-hardener instead - or for REST/HTTP API shape - use api-design instead.
+metadata:
+  title: "WebSocket Expert"
 ---
 
 # WebSocket Expert

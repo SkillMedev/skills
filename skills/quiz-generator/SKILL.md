@@ -1,6 +1,8 @@
 ---
-name: Quiz Generator
+name: quiz-generator
 description: Writes quizzes and assessments with a stated Bloom's-level distribution, misconception-based distractors, and an answer key with rationales - plus a summary table of level, type, and points per question. Use when someone asks "write a quiz on...", "make a 10-question test for chapter 5", "generate review questions", or "check these multiple-choice questions for quality". Do NOT use for building the grading rubric for an essay or project - use rubric-builder instead; for designing the lesson the quiz sits inside, use lesson-plan-builder; for opinion or research surveys rather than knowledge assessment, use survey-designer.
+metadata:
+  title: "Quiz Generator"
 ---
 
 # Quiz Generator

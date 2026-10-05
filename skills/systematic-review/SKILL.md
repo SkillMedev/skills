@@ -1,6 +1,8 @@
 ---
-name: Systematic Review
+name: systematic-review
 description: Runs a PRISMA-compliant systematic review from PICO question and pre-registered protocol through search strings, two-stage screening, risk-of-bias appraisal, and GRADE-rated synthesis. Use when someone asks "run a systematic review", "build my search strategy and inclusion criteria", "screen these studies against a protocol", or "meta-analyze the evidence on X". Do NOT use for a thematic narrative review of a field without a registered protocol and exhaustive search - use literature-review instead. Do NOT use for synthesizing mixed non-study sources into decision themes - use research-synthesis instead.
+metadata:
+  title: "Systematic Review"
 ---
 
 # Systematic Review

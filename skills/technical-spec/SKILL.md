@@ -1,6 +1,8 @@
 ---
-name: Technical Spec Writer
+name: technical-spec
 description: Writes engineering design docs and RFCs that align a team before code - TL;DR, background, goals and explicit non-goals, quantified requirements, a concrete end-to-end design with failure modes, alternatives considered, rollout plan, and open questions surfaced at the top for reviewers. Use when an engineer asks "write a design doc for this feature", "turn my approach into an RFC", "reviewers keep asking why didn't you just X", or a project needs alignment before implementation. Do NOT use for designing the API contract itself - use api-design instead; for user-facing product documentation, use help-documentation.
+metadata:
+  title: "Technical Spec Writer"
 ---
 
 # Technical Spec Writer

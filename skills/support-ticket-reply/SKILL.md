@@ -1,6 +1,8 @@
 ---
-name: Support Ticket Reply
+name: support-ticket-reply
 description: Drafts empathetic, accurate, action-first support replies structured to resolve the ticket in one touch - resolution first, context second, one unambiguous next step. Use when someone asks "help me reply to this customer", "draft a response to this ticket", "how do I tell a customer X", or is composing responses to customer issues, complaints, or feature requests. Do NOT use for emotionally charged conversations or refund decisions - use refund-deescalation instead; for building a reusable library of canned responses, use support-macro-library; for diagnosing why satisfaction scores are falling, use csat-root-cause.
+metadata:
+  title: "Support Ticket Reply"
 ---
 
 # Support Ticket Reply

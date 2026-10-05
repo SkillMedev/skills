@@ -1,6 +1,8 @@
 ---
-name: Circuit Breaker Builder
+name: circuit-breaker-builder
 description: Wraps flaky upstream dependencies in circuit breakers, aggressive timeouts, and per-dependency bulkheads so a slow or failing service degrades gracefully instead of cascading into a full outage. Use when a slow or unavailable upstream is stalling your threads, outbound calls hang with no timeout, one dependency's outage is taking down unrelated traffic, or you are integrating a network call that can realistically be slow or down. Do NOT use when the goal is staying under a provider's request quota or handling 429s - use rate-limit-handler instead; do NOT use to size a database connection pool - use connection-pool-tuner instead.
+metadata:
+  title: "Circuit Breaker Builder"
 ---
 # Circuit Breaker Builder
 

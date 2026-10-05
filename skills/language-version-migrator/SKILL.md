@@ -1,6 +1,8 @@
 ---
-name: Language Version Migrator
+name: language-version-migrator
 description: Ports a codebase across a breaking language or runtime version with compatibility shims, batched automated transforms, dual-runtime CI, and old-vs-new output diffing, ending in a flag-flip cutover with a rollback rule. Use when someone says "migrate us from Python 2 to 3", "we're jumping Node majors", "move to the next Java LTS", or any runtime upgrade where source must change to keep compiling or behaving correctly. Do NOT use for an application framework's major version (React, Rails, Spring) - use framework-upgrader instead; for proving a database schema or data migration is safe, use migration-safety-checker; and skip it entirely when the runtime change is purely operational (base image, CI matrix, deploy target) with no syntax or semantic breaks.
+metadata:
+  title: "Language Version Migrator"
 ---
 # Language Version Migrator
 

@@ -1,6 +1,8 @@
 ---
-name: Migration Safety Checker
+name: migration-safety-checker
 description: Rewrite a schema migration into independently deployable, zero-downtime steps that never take a long-held blocking lock on a live table. Use when you are about to run an ALTER TABLE, CREATE INDEX, add a constraint, rename a column, or change a column type against a production database with live traffic. Do NOT use for greenfield table/column design with no rows yet - use database-schema instead; do NOT use for broad correctness/integrity review of a migration - use review-db instead.
+metadata:
+  title: "Migration Safety Checker"
 ---
 # Migration Safety Checker
 

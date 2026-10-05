@@ -1,6 +1,8 @@
 ---
-name: Weekly Review
+name: weekly-review
 description: Runs a timeboxed weekly review - empty every inbox to a decision, audit every open commitment, and pick the 3-5 outcomes that define next week. Use when someone asks "walk me through a weekly review", "help me plan my week", "my task system feels stale and I don't trust it", or "I keep dropping commitments". Do NOT use for setting up the underlying capture-and-organize system itself - use gtd-system instead - or for tracking long-horizon personal goals with an accountability loop - use goals-accountability instead.
+metadata:
+  title: "Weekly Review"
 ---
 
 # Weekly Review

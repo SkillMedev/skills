@@ -1,6 +1,8 @@
 ---
-name: Support Macro Library
+name: support-macro-library
 description: Designs a reusable macro and canned-response library that stays human and on-brand. Use when building, auditing, or expanding a support team's template playbook.
+metadata:
+  title: "Support Macro Library"
 ---
 
 # Support Macro Library

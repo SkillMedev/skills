@@ -1,6 +1,8 @@
 ---
-name: Data Drift Monitor
+name: data-drift-monitor
 description: Designs a production drift-monitoring plan for ML systems - statistical tests per feature type, PSI and KS alert thresholds, monitoring cadence, and evidence-based retraining triggers - including a runnable PSI calculator. Use when someone asks "how do I know if my model is drifting", "set up drift monitoring for this model", "should we retrain", or is investigating unexplained model performance degradation. Do NOT use for judging whether a model is good enough to ship in the first place - use model-evaluation-report instead; for tracking training runs use experiment-tracking; for documenting the model for consumers use model-card-writer.
+metadata:
+  title: "Data Drift Monitor"
 ---
 
 # Data Drift Monitor

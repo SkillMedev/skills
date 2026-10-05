@@ -1,6 +1,8 @@
 ---
-name: Conditioning & HIIT Program
+name: fitness-program
 description: Use when someone asks to build a HIIT plan, interval-training block, metabolic conditioning or metcon, circuit training, work-capacity training, conditioning for fat loss, or high-intensity "get in shape" cardio (not easy steady-state). Builds a metabolic-conditioning block - interval and circuit work using EMOM, AMRAP, Tabata, and intervals - with format selection, work-to-rest ratios, weekly structure, and progression. General fitness guidance, not medical advice. This skill owns high-intensity interval conditioning only. Do NOT use to design a resistance/strength program for getting stronger or bigger (use Strength Training Plan), a steady-state aerobic-base or Zone 2 block (use Zone 2 Cardio Plan), or a mobility/flexibility routine (use Mobility Routine).
+metadata:
+  title: "Conditioning & HIIT Program"
 ---
 
 # Conditioning & HIIT Program

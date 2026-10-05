@@ -1,6 +1,8 @@
 ---
-name: Performance Review Writer
+name: performance-review-writer
 description: Writes fair, specific, evidence-based performance reviews and ratings. Use when drafting or preparing for calibration to reduce recency bias and vague praise or criticism.
+metadata:
+  title: "Performance Review Writer"
 ---
 
 # Performance Review Writer

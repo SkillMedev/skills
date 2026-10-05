@@ -1,6 +1,8 @@
 ---
-name: Expert Interview
+name: expert-interview
 description: Designs an expert-interview package - sourcing criteria for the right experts, a funneled discussion guide with timing, open-then-probe question design, laddering, and a neutral probe kit - that extracts honest insight without leading the witness. Use when someone asks "help me write questions for an expert call", "build a discussion guide", "prep me for this expert network interview", or is planning customer-development or domain-expert conversations. Do NOT use for designing a full data-collection study with sampling and hypotheses - use primary-research instead; for synthesizing findings after the interviews are done, use interview-synthesis instead; for desk research that involves no live conversation, use deep-research instead.
+metadata:
+  title: "Expert Interview"
 ---
 
 # Expert Interview

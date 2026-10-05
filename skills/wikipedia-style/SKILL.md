@@ -1,6 +1,8 @@
 ---
-name: Wikipedia Style Writer
+name: wikipedia-style
 description: Writes neutral, verifiable, encyclopedic prose following Wikipedia's core content policies and manual of style - NPOV, inline citations, notability-backed claims, and a strict ban on promotional language. Use when someone asks "write this like a Wikipedia article", "draft a Wikipedia page for this company or person", "make this neutral and encyclopedic", or "why does my article draft keep getting rejected". Do NOT use for persuasive or opinion writing - use op-ed-writer instead; for thesis-driven academic papers, use academic-essay; for verifying claims in existing text, use fact-checker.
+metadata:
+  title: "Wikipedia Style Writer"
 ---
 
 # Wikipedia Style Writer

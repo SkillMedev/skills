@@ -1,6 +1,8 @@
 ---
-name: Stress Management
+name: stress-management
 description: Builds a personalized one-page stress toolkit - mapped triggers, three rehearsed in-the-moment interventions, a recovery menu, and prevention habits - from a week of trigger tracking. Use when someone says "I'm constantly stressed", "I can't switch off after work", "help me deal with anxiety before meetings", or "I keep snapping at people". General wellness education, not medical or mental-health treatment. Do NOT use when the primary complaint is poor sleep - use sleep-optimizer instead; for building a single recurring habit, use habit-builder; for broader life direction and goals, use life-coach.
+metadata:
+  title: "Stress Management"
 ---
 
 # Stress Management

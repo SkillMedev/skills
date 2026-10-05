@@ -1,6 +1,8 @@
 ---
-name: Mutation Test Runner
+name: mutation-test-runner
 description: Runs mutation testing on already-covered code and turns each surviving mutant into a specific missing assertion, exposing tests that execute code but verify nothing. Use when line coverage is high yet a bug slipped through, when reviewing a critical module (pricing, permissions, auth, state machines) before release, or when you are asked to run Stryker, PIT, mutmut, or cosmic-ray. Do NOT use when the goal is to find which code paths are untested at all - use coverage-gap-finder instead.
+metadata:
+  title: "Mutation Test Runner"
 ---
 # Mutation Test Runner
 

@@ -1,6 +1,8 @@
 ---
-name: Revenue Modeling
+name: revenue-modeling
 description: Builds SaaS revenue models - a reconciling MRR/ARR bridge, cohort retention forecasting, a driver tree from leads to new ARR, and base/upside/downside scenarios. Use when someone asks "model my ARR for next year", "what will MRR be if churn doubles", "build a revenue forecast for the board", "why doesn't my MRR bridge tie out", or "what NRR do we need to hit our plan". Do NOT use for sizing the market opportunity - use market-sizing instead; for CAC, LTV, and payback analysis use unit-economics; for a full P&L or headcount-driven operating model use fpa-model; for cash timing and runway use cash-flow-forecast.
+metadata:
+  title: "Revenue Modeling"
 ---
 
 # Revenue Modeling

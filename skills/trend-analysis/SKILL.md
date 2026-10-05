@@ -1,6 +1,8 @@
 ---
-name: Trend Analysis
+name: trend-analysis
 description: Separates durable trends from noise using a baseline, seasonal decomposition, and a signal test requiring persistence, magnitude beyond 2 standard deviations, 3+ independent corroborating data points, and a plausible mechanism - then characterizes the trend's stage and forecasts trajectory with a confidence range. Use when someone asks "is this a real trend or a blip", "where is this metric or market heading", "should we bet on this shift", or must defend a forecast to stakeholders. Do NOT use for scouting what content formats are trending on Instagram - use instagram-trend-scout instead; for tracking brand mentions and sentiment shifts in news and social - use media-monitor instead.
+metadata:
+  title: "Trend Analysis"
 ---
 
 # Trend Analysis

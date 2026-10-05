@@ -1,6 +1,8 @@
 ---
-name: Feature Flags
+name: feature-flags
 description: Designs feature-flag systems and lifecycle policy - flag taxonomy (release, ops/kill-switch, experiment, permission), percentage rollouts with stable bucketing, safe defaults, and mandatory removal deadlines so flags don't rot into dead code. Use when someone asks "how should I roll this out behind a flag", "kill switch vs feature flag", "how do I do a percentage rollout", "we have hundreds of stale flags", or is wiring up LaunchDarkly or a homegrown flag service. Do NOT use for designing the A/B test analysis itself - use ab-test-analyzer instead - and do NOT use for CI/CD pipeline gating - use github-actions instead.
+metadata:
+  title: "Feature Flags"
 ---
 
 # Feature Flags

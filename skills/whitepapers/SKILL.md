@@ -1,6 +1,8 @@
 ---
-name: Whitepaper Writer
+name: whitepapers
 description: Structures and writes authoritative B2B whitepapers - a standalone executive summary, a data-sized problem statement, methodology, evidence-driven findings, recommendations, and a soft call to action - flagging every claim that needs a real citation. Use when a marketer asks "write a whitepaper on this topic", "turn our research into a lead-gen asset", "make this credible enough for executives", or a draft reads like a product pitch instead of analysis. Do NOT use for customer-story-driven proof - use case-study-builder instead; for policy audiences, use policy-brief.
+metadata:
+  title: "Whitepaper Writer"
 ---
 
 # Whitepaper Writer

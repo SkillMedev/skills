@@ -1,6 +1,8 @@
 ---
-name: Term Sheet Explainer
+name: term-sheet-explainer
 description: Decodes every clause of a VC term sheet into plain English, marks each term founder-favorable, market-standard, or investor-favorable, and flags deviations in priority order. Use when a founder asks "what does liquidation preference mean", "is this term sheet normal", "explain participating preferred", "what is the option pool shuffle", or receives a term sheet and needs to understand it before responding. Do NOT use for planning counters, trades, and negotiation strategy - use term-sheet-negotiation instead; do NOT use for choosing between a SAFE and a priced round - use safe-vs-priced-round instead.
+metadata:
+  title: "Term Sheet Explainer"
 ---
 
 # Term Sheet Explainer

@@ -1,6 +1,8 @@
 ---
-name: Deep Work Planner
+name: deep-work-planner
 description: Designs a daily schedule that protects deep work - classifies tasks as deep or shallow, places 2-4 focus blocks of 60-120 minutes at peak energy hours, batches shallow work into fixed windows, and defines each session with a goal, definition of done, distraction plan, and first action, plus startup/shutdown rituals and a weekly scorecard. Use when someone says "I can't get any focused work done", "plan my day around deep work", "how do I stop context switching", or wants to defend calendar time for demanding work. Do NOT use for processing an email backlog - use inbox-zero instead - or for a full task-capture system - use gtd-system instead.
+metadata:
+  title: "Deep Work Planner"
 ---
 
 # Deep Work Planner

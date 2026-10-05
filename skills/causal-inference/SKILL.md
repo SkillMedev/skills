@@ -1,6 +1,8 @@
 ---
-name: Causal Inference
+name: causal-inference
 description: Selects and executes a credible causal identification strategy - RCT, natural experiment, difference-in-differences, regression discontinuity, instrumental variables, or matching - ranked by assumption strength, with a confounder checklist, falsification tests, and a defensible effect estimate. Use when someone asks "did X actually cause Y", "how do I measure impact without an A/B test", "is this correlation causal", or needs to defend an effect estimate from observational data. Do NOT use for designing the data-collection study itself (sampling, instruments, power) - use primary-research instead; for reading out an already-run A/B test, use ab-test-analyzer instead.
+metadata:
+  title: "Causal Inference"
 ---
 
 # Causal Inference

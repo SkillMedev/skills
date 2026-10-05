@@ -1,6 +1,8 @@
 ---
-name: Email Deliverability
+name: email-deliverability
 description: Audits and protects sender reputation and inbox placement for permissioned marketing and lifecycle email - SPF, DKIM, and DMARC authentication, domain warmup, bounce and complaint thresholds, and engagement sunsetting - and delivers a scored deliverability audit checklist with a remediation order. Use when someone asks "why are my newsletters going to spam", "how do I set up SPF, DKIM, and DMARC", "is my bounce rate too high", "should I send marketing from a subdomain", or is launching a new sending domain or auditing an existing opted-in email program. Do NOT use for cold outbound infrastructure - lookalike sending domains, mailbox pools, per-mailbox volume caps - use cold-email-deliverability instead; do NOT use to write the emails themselves - use email-drip-builder or email-newsletter-pro instead.
+metadata:
+  title: "Email Deliverability"
 ---
 
 # Email Deliverability

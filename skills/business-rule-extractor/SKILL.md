@@ -1,6 +1,8 @@
 ---
-name: Business Rule Extractor
+name: business-rule-extractor
 description: Produces a documented inventory of the implicit business rules, edge cases, and bug-as-feature behaviors that tangled code encodes, with real input-to-output examples, so a rewrite preserves behavior. Use when you are about to rewrite, port, or replace legacy code whose only specification is the source, and you see policy buried in conditionals, magic numbers, hardcoded dates, or per-customer special cases. Do NOT use when you need an executable safety net before refactoring - use characterization-test-writer instead; do NOT use when you need to find service boundaries in a monolith - use monolith-decomposer instead.
+metadata:
+  title: "Business Rule Extractor"
 ---
 # Business Rule Extractor
 

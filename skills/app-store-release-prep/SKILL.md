@@ -1,6 +1,8 @@
 ---
-name: App Store Release Prep
+name: app-store-release-prep
 description: Produce a reproducible signing, versioning, and store-declaration pipeline so an iOS or Android build passes App Store Connect / Play Console submission. Use when building or uploading a distribution .ipa/.aab, fixing signing/provisioning-profile or entitlement errors, bumping CFBundleVersion/versionCode, filling App Privacy / Data safety forms or PrivacyInfo.xcprivacy, wiring Fastlane lanes, or diagnosing a store rejection. Do NOT use for general (non-mobile) release steps like changelogs, tagging, or backend deploys - use prepare-release instead; do NOT use for store listing titles, descriptions, or keywords - use app-store-copy instead.
+metadata:
+  title: "App Store Release Prep"
 ---
 # App Store Release Prep
 

@@ -1,7 +1,9 @@
 ---
-name: Screencast Capture
+name: screencast-capture
 description: Capture clean raw screen and camera footage for a tutorial or product demo - choosing the recorder (macOS Screenshot toolbar, QuickTime, OBS, Windows Game Bar), setting resolution / frame-rate / cursor / microphone, prepping a distraction-free stage, and recording in retakeable segments. Use when someone says "record my screen", "capture a screencast", "how do I record this demo", "what settings for screen recording", "set up OBS", "my recording looks blurry or laggy", "the cursor is hard to follow", or "record a tutorial walkthrough". Do NOT use to direct what happens on screen - cursor choreography, zoom/pan, callouts, screen-record-vs-recreate - that is product-demo-director; do NOT use to plan scenes or beat order before recording - that is video-storyboard; do NOT use to write what is spoken over the footage - that is narration-script; do NOT use to trim, cut, or export captured footage - that is downstream Remotion / editing.
 
+metadata:
+  title: "Screencast Capture"
 ---
 
 # Screencast Capture

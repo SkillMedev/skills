@@ -1,6 +1,8 @@
 ---
-name: Sprint Planning
+name: sprint-planning
 description: Facilitates sprint planning end to end - backlog refinement checks against a Definition of Ready, a one-sentence sprint goal, capacity math from velocity and PTO, story selection and team commitment, task breakdown, and flagged risks with owners. Use when a team asks "plan our next sprint", "how much should we commit to", "write a sprint goal", or keeps blowing sprint forecasts. Do NOT use for running the retrospective after the sprint ends - use sprint-retro-facilitator instead.
+metadata:
+  title: "Sprint Planning"
 ---
 
 # Sprint Planning

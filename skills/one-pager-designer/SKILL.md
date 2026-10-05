@@ -1,6 +1,8 @@
 ---
-name: One-Pager Designer
+name: one-pager-designer
 description: Writes a decision-driving one-pager - problem, evidence, impact, and a specific ask compressed into a single page readable in under three minutes. Use when someone asks "turn this into a one-pager", "write a brief for leadership", "I need a one-page pitch for this decision", or is preparing a document a busy reader must act on from one page. Do NOT use for a client-facing sales proposal with pricing and scope - use sales-proposal-writer instead; for condensing an existing long document use executive-summary; for multi-slide narratives use slide-deck-builder.
+metadata:
+  title: "One-Pager Designer"
 ---
 
 # One-Pager Designer

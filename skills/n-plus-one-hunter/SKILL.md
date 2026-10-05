@@ -1,6 +1,8 @@
 ---
-name: N+1 Query Hunter
+name: n-plus-one-hunter
 description: Detect ORM loop-of-queries (N+1) patterns from query logs and eliminate them with batched eager loading, keeping the N+1s that are cheap. Use when a list endpoint is slow, a request issues many near-identical SELECTs differing only by an id, query logs show repeated SELECTs in a loop, or a tool like the bullet gem flags an N+1 in ActiveRecord, Prisma, SQLAlchemy, or Hibernate.
+metadata:
+  title: "N+1 Query Hunter"
 ---
 # N+1 Query Hunter
 

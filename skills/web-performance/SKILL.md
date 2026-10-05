@@ -1,6 +1,8 @@
 ---
-name: Web Performance
+name: web-performance
 description: Diagnoses and fixes Core Web Vitals - LCP, INP, and CLS - through an ordered audit procedure with concrete code-level changes for images, fonts, JavaScript, and third-party scripts. Use when someone asks "why is my page slow", "how do I fix my LCP", "we're failing Core Web Vitals", "improve my Lighthouse score", or wants a frontend performance audit before a launch or SEO push. Do NOT use for testing server capacity under concurrent traffic - use load-testing instead; for native mobile app performance, use mobile-perf-profiler; for Next.js-on-Vercel-specific tuning, use next-on-vercel-perf.
+metadata:
+  title: "Web Performance"
 ---
 
 # Web Performance

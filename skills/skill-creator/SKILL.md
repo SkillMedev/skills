@@ -1,6 +1,8 @@
 ---
-name: Skill Creator
-description: Use when authoring a brand-new skill from scratch - turning a capability idea or a "make me a skill that…" request into a complete SKILL.md with a trigger-precise description and the full paid-quality anatomy: procedure, elicitation, thresholds, worked artifact, deliverable, Do NOT, quality bar. Triggers on "write a new SKILL.md from scratch", "turn this capability idea into a complete skill". Do NOT use to review or grade an existing skill (use skill-auditor), to convert an existing prompt (use prompt-to-skill), or for writing unrelated to skills.
+name: skill-creator
+description: "Use when authoring a brand-new skill from scratch - turning a capability idea or a \"make me a skill that…\" request into a complete SKILL.md with a trigger-precise description and the full paid-quality anatomy: procedure, elicitation, thresholds, worked artifact, deliverable, Do NOT, quality bar. Triggers on \"write a new SKILL.md from scratch\", \"turn this capability idea into a complete skill\". Do NOT use to review or grade an existing skill (use skill-auditor), to convert an existing prompt (use prompt-to-skill), or for writing unrelated to skills."
+metadata:
+  title: "Skill Creator"
 ---
 
 # Skill Creator

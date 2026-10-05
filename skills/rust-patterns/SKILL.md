@@ -1,6 +1,8 @@
 ---
-name: Rust Patterns
+name: rust-patterns
 description: Writes and reviews idiomatic Rust - ownership and borrowing decision rules for API signatures, lifetime avoidance strategies, thiserror vs anyhow error design, iterator-first style, and when Rc/RefCell/Arc/Mutex are actually justified - with good/bad code pairs. Use when someone asks "why won't this borrow check", "should this take &str or String", "thiserror or anyhow", "how do I share state between threads in Rust", or their code is a wall of clone() calls. Do NOT use for cross-language migration planning - use language-version-migrator instead - and do NOT use for generic API endpoint design - use api-design instead.
+metadata:
+  title: "Rust Patterns"
 ---
 
 # Rust Patterns

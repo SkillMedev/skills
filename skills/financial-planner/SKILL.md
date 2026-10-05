@@ -1,6 +1,8 @@
 ---
-name: Personal Financial Planner
+name: financial-planner
 description: Builds a complete personal financial plan - a prioritized order of operations across budgeting, emergency savings, debt payoff, and goals - from the user's actual numbers, then routes each piece to the right specialist skill. Use when someone asks "help me get my finances in order", "where should my money go first", "should I pay off debt or save", "am I doing okay financially", or "build me a financial plan". Do NOT use for constructing the monthly budget itself - use budget-builder instead; for sequencing multiple debts - use debt-payoff-planner; for sizing the cash cushion - use emergency-fund-planner; for investing fundamentals - use investment-basics; for retirement readiness math - use retirement-projection; for lowering a tax bill - use tax-optimization; for evaluating one large purchase - use big-purchase-decision.
+metadata:
+  title: "Personal Financial Planner"
 ---
 
 # Personal Financial Planner

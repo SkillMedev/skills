@@ -1,6 +1,8 @@
 ---
-name: Differentiated Instruction
+name: differentiated-instruction
 description: Adapts an existing lesson or unit for mixed readiness levels using tiered assignments, flexible grouping, and scaffolds that fade - without lowering the learning objective. Use when someone says "differentiate this lesson", "I have students at three levels in one class", "add scaffolds and extensions to this unit", or needs one lesson to reach struggling and advanced learners at once. Do NOT use for writing a lesson from scratch - use lesson-plan-builder instead; for sequencing units across a term or auditing standards coverage, use curriculum-mapper.
+metadata:
+  title: "Differentiated Instruction"
 ---
 
 # Differentiated Instruction

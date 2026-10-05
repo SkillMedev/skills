@@ -1,6 +1,8 @@
 ---
-name: LinkedIn Post Writer
+name: linkedin-post-writer
 description: Write LinkedIn posts built for the feed - a hook that survives the two-line truncation, scannable one-idea-per-line structure, a comment-bait close, and first-hour engagement moves. Use when someone asks "write a LinkedIn post about this", "punch up my LinkedIn hook", "why did my post get no reach", or "turn this win into a LinkedIn post". Do NOT use for Twitter/X threads - use tweet-thread-builder instead. Do NOT use for scheduling across a monthly calendar - use social-content-calendar instead.
+metadata:
+  title: "LinkedIn Post Writer"
 ---
 
 # LinkedIn Post Writer

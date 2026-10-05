@@ -1,6 +1,8 @@
 ---
-name: Paid Acquisition Audit
+name: paid-acquisition-audit
 description: Audits paid acquisition channels for wasted spend and untapped scaling headroom - computing break-even ROAS from gross margin, flagging creative fatigue and saturation, and producing a ranked action list with a dollar impact per item. Use when someone asks "where is my ad budget being wasted", "should I scale this campaign", "why did ROAS drop", or is preparing a budget review or planning to increase paid spend. Do NOT use for designing new creative experiments - use ad-creative-testing instead; for assigning cross-channel conversion credit, use marketing-attribution.
+metadata:
+  title: "Paid Acquisition Audit"
 ---
 
 # Paid Acquisition Audit

@@ -1,6 +1,8 @@
 ---
-name: Resume Writer
+name: resume-writer
 description: Builds an ATS-optimized resume from scratch or raw career notes, then exports a clean .docx. Use when someone needs to write or rebuild a resume.
+metadata:
+  title: "Resume Writer"
 ---
 # Resume Writer
 

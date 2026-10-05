@@ -1,6 +1,8 @@
 ---
-name: Jetpack Compose Builder
+name: jetpack-compose-builder
 description: Builds Android Jetpack Compose UI with hoisted state, unidirectional data flow, and recomposition-safe patterns backed by measured stability rules. Use when someone asks "build this screen in Compose", "where should this state live", "why does my LazyColumn stutter", or is writing Composable functions, ViewModel and StateFlow wiring, or fixing recomposition jank in Kotlin. Do NOT use when the screen targets Flutter - use flutter-widget-architect instead; for iOS declarative UI use swift-ui; for React Native screens use react-native-pro; and if jank persists after state fixes, profile with mobile-perf-profiler.
+metadata:
+  title: "Jetpack Compose Builder"
 ---
 # Jetpack Compose Builder
 

@@ -1,6 +1,8 @@
 ---
-name: M&A Analysis
+name: m-and-a-analysis
 description: Structures an acquisition case - one-line thesis, strategic-fit test, risk-haircut synergy bridge with cost synergies cut 20-30% and revenue synergies cut 50%+, valuation with a written walk-away price, and integration risk - into a screening scorecard and deal memo. Use when someone asks "should we buy this company", "evaluate this acquisition target", "are these synergy numbers real", "what would we pay for them", or is preparing a board memo on a deal. Do NOT use for building the diligence request list and workstream tracker once a deal is moving - use due-diligence-checklist instead; for assessing whether the combined business has a durable advantage, pair with competitive-moat.
+metadata:
+  title: "M&A Analysis"
 ---
 
 # M&A Analysis

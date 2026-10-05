@@ -1,6 +1,8 @@
 ---
-name: Skill Pack Curator
+name: skill-pack-curator
 description: Designs the membership and structure of a skill pack - persona, member selection, install sequence, cross-links, and what to add or cut. Use when someone asks "which skills should go in this skill pack", "design the membership of a new skill pack", "decide which skills to add or cut from a pack", or is turning a vertical (an industry or role) into a coherent bundle. Do NOT use to grade or rewrite a finished pack to a quality bar (use skill-auditor) - this designs composition.
+metadata:
+  title: "Skill Pack Curator"
 ---
 
 # Skill Pack Curator

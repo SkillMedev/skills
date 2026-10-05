@@ -1,6 +1,8 @@
 ---
-name: Find the Right Stock Photo
+name: stock-photo-finder
 description: Source the right stock photograph for a brief by picking the best library and crafting the search. Use when you need a real photo or image for a hero, blog post, ad, slide, mockup, social post, or thumbnail and you are not sure where to look or what to search, or when someone says "find me a photo of...", "where do I get images for this", "I need a hero image", or "good free stock photos for X". It covers free libraries (Unsplash, Pexels, Pixabay), curated and boutique sources (Stocksy, Stills, Death to Stock), broad paid catalogs (Adobe Stock, Shutterstock, iStock), and editorial archives (Getty, AP, Reuters). Do NOT use to decide whether a license actually permits your use or whether you need a release -> use image-license-rights; do NOT use to fetch images programmatically in code -> use stock-photo-api; do NOT use to art-direct a cohesive set or fix a cliched look -> use visual-asset-curation.
+metadata:
+  title: "Find the Right Stock Photo"
 ---
 
 # Find the Right Stock Photo

@@ -1,6 +1,8 @@
 ---
-name: Monorepo Expert
+name: monorepo-expert
 description: Structures and scales JavaScript/TypeScript monorepos with Turborepo, Nx, and pnpm workspaces - layout rules, task pipelines, remote caching, and affected-only CI so build times stay flat as the repo grows. Use when someone asks "should we use a monorepo", "how do I set up Turborepo or Nx", "our monorepo CI takes 40 minutes", "how do I share code between apps", or "why is the cache never hitting". Do NOT use for authoring the CI workflow files themselves - use github-actions instead - and do NOT use for deciding microservice boundaries, which is about runtime architecture, not repo layout - use microservices instead.
+metadata:
+  title: "Monorepo Expert"
 ---
 
 # Monorepo Expert

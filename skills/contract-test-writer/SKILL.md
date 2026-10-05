@@ -1,6 +1,8 @@
 ---
-name: Contract Test Writer
+name: contract-test-writer
 description: Writes consumer-driven contract tests at service and API boundaries - Pact consumer tests, provider verification, broker publishing, and can-i-deploy gates - so an incompatible change fails a build instead of breaking integrations in production. Use when someone asks "how do I stop the backend breaking my client", "set up Pact between these services", "a renamed field broke a consumer that unit tests passed", or two separately deployed services must stay in sync. Do NOT use for designing a new API contract from scratch or reviewing its design - use api-design instead; do NOT use for end-to-end user-journey tests - use e2e-scenario-author instead; do NOT use for calls inside a single deployable - write a unit test.
+metadata:
+  title: "Contract Test Writer"
 ---
 
 # Contract Test Writer

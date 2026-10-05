@@ -1,6 +1,8 @@
 ---
-name: Second Brain
+name: second-brain
 description: Sets up a PARA-based second brain in any notes app (Notion, Obsidian, Apple Notes, Logseq) - Projects, Areas, Resources, Archives buckets, a frictionless universal capture inbox, weekly organizing, wiki-link and map-of-content linking, progressive summarization for recall, and maintenance rituals. Use when someone says "help me set up a second brain", "my notes are a mess and I can never find anything", "how do I organize Obsidian with PARA", or captures ideas but never uses them. Do NOT use for designing the underlying Notion database properties and relations - use notion-database instead - or for a task-management workflow - use gtd-system instead.
+metadata:
+  title: "Second Brain"
 ---
 
 # Second Brain

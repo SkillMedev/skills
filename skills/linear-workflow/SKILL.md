@@ -1,6 +1,8 @@
 ---
-name: Linear Workflow
+name: linear-workflow
 description: Configures a Linear team end to end - team structure, minimal workflow states, cycles, a small label taxonomy, a daily triage rotation, and priority SLAs with breach views. Use when someone asks "set up Linear for my team", "how should we structure teams and labels in Linear", "our Linear backlog is a mess", or "how do we handle inbound bugs in Linear". Do NOT use for writing the tickets themselves - acceptance criteria, story points, Definition of Ready - use jira-ticket-writer instead (its ticket anatomy applies to Linear issues too). For deciding sprint scope and capacity, use sprint-planning.
+metadata:
+  title: "Linear Workflow"
 ---
 
 # Linear Workflow

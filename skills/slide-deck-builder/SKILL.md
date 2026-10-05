@@ -1,6 +1,8 @@
 ---
-name: Slide Deck Builder
+name: slide-deck-builder
 description: Structure a persuasive slide deck - narrative arc, one-idea-per-slide discipline, and headlines written as takeaways not labels. Use when building any presentation that must move an audience to a decision.
+metadata:
+  title: "Slide Deck Builder"
 ---
 
 # Slide Deck Builder

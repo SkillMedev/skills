@@ -1,6 +1,8 @@
 ---
-name: SwiftUI Expert
+name: swift-ui
 description: Builds clean, performant, accessible SwiftUI views with correct state ownership, scoped invalidation, and smooth list scrolling, and reviews existing SwiftUI code against a concrete frame-time and re-render budget. Use when someone asks "why does my SwiftUI list stutter", "should this be @State or @Observable", "my whole screen re-renders when one row changes", "how do I animate this transition", or wants a SwiftUI view built or refactored. Do NOT use for cross-platform React Native apps - use react-native-pro instead; do NOT use for Flutter widget trees - use flutter-widget-architect instead; do NOT use for Android Compose UIs - use jetpack-compose-builder instead.
+metadata:
+  title: "SwiftUI Expert"
 ---
 
 # SwiftUI Expert

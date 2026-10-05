@@ -1,6 +1,8 @@
 ---
-name: Skill Author
+name: skill-author
 description: The section-by-section anatomy standard every paid-quality SKILL.md must meet. Use when drafting or restructuring the BODY of a skill, deciding what sections it needs, or checking a draft against the house standard - "what sections does a skill need", "structure this SKILL.md", "is this skill body complete". Do NOT use for the end-to-end creation process from a raw idea (use skill-creator), grading a finished skill (use skill-auditor), or writing only the description field (use skill-description-writer).
+metadata:
+  title: "Skill Author"
 ---
 
 # Skill Author

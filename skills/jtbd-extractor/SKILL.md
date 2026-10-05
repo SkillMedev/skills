@@ -1,6 +1,8 @@
 ---
-name: JTBD Extractor
+name: jtbd-extractor
 description: Extracts Jobs To Be Done from qualitative research data - job stories in the "When I…, I want to…, so I can…" form, a forces-of-progress map (push, pull, anxiety, habit), and functional, emotional, and social dimensions, each backed by verbatim quotes. Use when someone says "extract the jobs from these interviews", "run a JTBD analysis on this diary study", "why do users switch to or from us", or has transcripts and wants solution-agnostic goals rather than feature requests. Do NOT use for clustering findings into themes across a study - use interview-synthesis instead; for building persona profiles from research, use user-persona; for planning the interviews themselves, use interview-guide-builder.
+metadata:
+  title: "JTBD Extractor"
 ---
 
 # JTBD Extractor

@@ -1,6 +1,8 @@
 ---
-name: Engagement Reply Drafter
+name: engagement-reply-drafter
 description: Drafts short, on-brand replies to public social comments and DMs, including graceful handling of praise, questions, complaints, and criticism. Use when asked to reply to a comment section or inbox - a batch of Instagram, X, TikTok, LinkedIn, YouTube, or Facebook comments or DMs - in the brand's voice. Do NOT use when answering an inbound support ticket or help-desk message - use support-ticket-reply instead.
+metadata:
+  title: "Engagement Reply Drafter"
 ---
 
 # Engagement Reply Drafter

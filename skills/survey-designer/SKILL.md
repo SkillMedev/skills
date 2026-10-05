@@ -1,6 +1,8 @@
 ---
-name: Survey Designer
+name: survey-designer
 description: Designs unbiased surveys - question types, Likert and frequency scales, screener-to-demographics flow, and a cognitive pilot plan - that produce trustworthy quantitative data. Use when someone says "write survey questions about X", "review my survey for bias", "how long should this questionnaire be", or wants to quantify attitudes, behaviors, or satisfaction. Do NOT use for full study design with hypotheses, sampling method, and power analysis - use primary-research instead; for qualitative interview scripts, use interview-guide-builder; for segment profiles built from the results, use user-persona.
+metadata:
+  title: "Survey Designer"
 ---
 
 # Survey Designer

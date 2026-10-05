@@ -1,6 +1,8 @@
 ---
-name: Moodboard Builder
+name: moodboard-builder
 description: Assembles a curated moodboard of 8 to 16 images plus a 150-300 word art direction statement that argues for one visual direction. Use when someone asks "build a moodboard", "set the visual direction for this brand", "get the team aligned on look and feel before design starts", or is presenting art direction to a client. Do NOT use for sourcing and licensing individual production images - use visual-asset-curation or stock-photo-finder instead; for codifying an already-approved identity into usage rules, use brand-guidelines.
+metadata:
+  title: "Moodboard Builder"
 ---
 
 # Moodboard Builder

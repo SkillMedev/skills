@@ -1,6 +1,8 @@
 ---
-name: Unit Economics
+name: unit-economics
 description: Compute CAC, contribution margin, LTV, LTV:CAC, and payback with honest definitions, a runnable calculator, and a verdict on whether each customer makes money. Use when someone asks "what's my CAC", "is my LTV:CAC healthy", "how long is my payback period", "can I afford to spend more on ads", or before scaling acquisition spend. Do NOT use for gym-specific front-end economics and Client-Financed Acquisition - use gym-money-model instead; for multi-year revenue projections and MRR bridges use revenue-modeling; for cohort-level retention and growth diagnosis use growth-accounting.
+metadata:
+  title: "Unit Economics"
 ---
 
 # Unit Economics

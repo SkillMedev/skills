@@ -1,6 +1,8 @@
 ---
-name: OKR Builder
+name: okr-builder
 description: Drafts a quarter's OKRs - an inspiring qualitative objective with 3-5 measurable key results, each with a baseline, target, and owner - plus the weekly confidence check-in and end-of-quarter grading cadence. Use when someone asks "help me write OKRs", "are these key results any good", "turn our goals into OKRs for next quarter", or "how do we score our OKRs". Do NOT use for building the full-year company plan that OKRs slot into - use annual-plan instead - or for personal goal-tracking with a check-in partner - use goals-accountability instead.
+metadata:
+  title: "OKR Builder"
 ---
 
 # OKR Builder

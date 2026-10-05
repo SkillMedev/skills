@@ -1,6 +1,8 @@
 ---
-name: Customer Analytics
+name: customer-analytics
 description: Turns transaction data into cohort retention, lifetime value, RFM segments, and churn predictions tied to concrete actions. Use when someone asks "what's our customer LTV", "build a cohort retention table", "which customers are about to churn", "how do repeat purchase rates look by cohort", or "who should we target with a win-back offer". Do NOT use for event-level product usage and feature adoption analysis - use product-analytics instead; for defining market segments for positioning and messaging - use segmentation-strategy instead; for designing the interventions that reduce churn once at-risk customers are identified - use churn-reduction instead; for step-by-step conversion drop-off - use funnel-analysis instead.
+metadata:
+  title: "Customer Analytics"
 ---
 
 # Customer Analytics

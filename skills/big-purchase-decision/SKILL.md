@@ -1,6 +1,8 @@
 ---
-name: Big Purchase Decision
+name: big-purchase-decision
 description: Evaluates a major purchase with total cost of ownership, opportunity cost, affordability red lines, and a cooling-off rule, producing a scored buy/wait/walk verdict. Use when someone asks "should I buy this car", "can I afford this", "is this purchase a good idea", or is about to finance anything with a monthly payment. Do NOT use for fitting an approved purchase into the monthly plan - use budget-builder instead; for whether the purchase should outrank debt payoff or savings - use financial-planner; for home-purchase retirement trade-offs - use retirement-projection.
+metadata:
+  title: "Big Purchase Decision"
 ---
 
 # Big Purchase Decision

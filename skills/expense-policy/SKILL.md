@@ -1,6 +1,8 @@
 ---
-name: Expense and Approval Policy
+name: expense-policy
 description: Drafts a clear, enforceable expense and approval policy - per-category spend limits, a dollar-tiered approval matrix, receipt and documentation rules, 30/90-day submission deadlines, and audit sampling. Use when someone says "write our expense policy", "who should approve what spend", "set reimbursement rules", or is onboarding a finance system or preparing for a compliance review. Do NOT use for building a departmental or personal budget - use budget-builder instead; do NOT use for the monthly close checklist - use month-end-close instead; do NOT use for general internal SOPs outside spend - use process-doc instead.
+metadata:
+  title: "Expense and Approval Policy"
 ---
 
 # Expense and Approval Policy

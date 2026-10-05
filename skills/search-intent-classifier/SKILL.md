@@ -1,6 +1,8 @@
 ---
-name: Search Intent Classifier
+name: search-intent-classifier
 description: Labels a keyword's dominant search intent (informational, commercial, transactional, or navigational) from the live SERP and prescribes the page type that can rank for it. Use when someone asks "classify these keywords by search intent", "should this keyword get a blog post or a landing page", "what is the search intent of this keyword", or is screening a keyword list for intent before producing content. Do NOT use for grouping keywords into topical clusters and mapping them to a site architecture - use keyword-cluster-builder instead; for building the recommended page, use comparison-page-builder, landing-page-copy, or seo-optimizer.
+metadata:
+  title: "Search Intent Classifier"
 ---
 
 # Search Intent Classifier

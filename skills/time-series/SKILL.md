@@ -1,6 +1,8 @@
 ---
-name: Time Series Analysis
+name: time-series
 description: Decomposes and forecasts time-indexed data with STL, ARIMA/SARIMA, and Prophet, validated by time-ordered backtests against a seasonal-naive baseline. Use when someone asks "forecast next quarter's demand", "is this series seasonal", "why is my ARIMA forecast flat", "how do I backtest a forecast", or has any metric indexed by time that needs prediction or decomposition. Do NOT use for explaining what a trend means for strategy - use trend-analysis instead; for estimating the causal impact of an intervention on a series use causal-inference; for translating a forecast into an ARR or MRR plan use revenue-modeling.
+metadata:
+  title: "Time Series Analysis"
 ---
 
 # Time Series Analysis

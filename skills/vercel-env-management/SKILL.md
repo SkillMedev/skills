@@ -1,6 +1,8 @@
 ---
-name: Vercel Env Management
+name: vercel-env-management
 description: Manage environment variables across Vercel environments and keep local .env in sync - vercel env pull/add/rm/ls, per-environment values (development/preview/production + custom), sensitive secrets, OIDC tokens for keyless cloud access, and the NEXT_PUBLIC build-time inlining gotcha. Use when someone says "sync my .env", "vercel env pull", "set a secret on Vercel", "my env var is undefined in production", "different API key per environment", "why is my NEXT_PUBLIC var stale", or "connect to AWS/GCP without storing keys". Do NOT use when the task is the deploy/promote/rollback flow - use vercel-deploy-pipeline; for routing AI provider keys through one gateway - use vercel-ai-gateway; for runtime/region/caching config (ISR, Fluid Compute) - use vercel-edge-and-isr; for blocking bots or WAF rules - use vercel-firewall-and-botid; for bundle/runtime speed tuning - use next-on-vercel-perf.
+metadata:
+  title: "Vercel Env Management"
 ---
 
 # Vercel Env Management

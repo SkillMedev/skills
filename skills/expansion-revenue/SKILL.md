@@ -1,6 +1,8 @@
 ---
-name: Expansion Revenue
+name: expansion-revenue
 description: Builds a systematic expansion playbook for existing SaaS customers - a catalog of usage triggers (limit approach, new team adoption, milestone hit) with routing rules, outcome-anchored upsell and cross-sell talk tracks, ownership and comp models, and metrics led by net revenue retention. Use when someone asks "how do we grow revenue from existing accounts", "build an upsell playbook", "our NRR is too low", or wants trigger-based expansion instead of reps guessing. Do NOT use for designing tiers and value metrics from scratch - use saas-pricing instead; for stopping customers from leaving, use churn-reduction.
+metadata:
+  title: "Expansion Revenue"
 ---
 
 # Expansion Revenue

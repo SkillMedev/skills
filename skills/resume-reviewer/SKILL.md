@@ -1,6 +1,8 @@
 ---
-name: Resume Reviewer
+name: resume-reviewer
 description: Critiques an existing resume against a scored rubric, rewrites the weakest bullets, runs a keyword gap analysis, and exports a .docx review. Use when someone wants honest feedback on a resume they already have.
+metadata:
+  title: "Resume Reviewer"
 ---
 # Resume Reviewer
 

@@ -1,6 +1,8 @@
 ---
-name: Fundraise Readiness Audit
+name: fundraise-readiness-audit
 description: Runs the audit an investor will run before a founder starts pitching - scoring metrics, story, team, and legal/financial hygiene red/yellow/green and returning a go, fix-first, or wait verdict with the milestones that turn each red gate green. Use when a founder asks "audit my fundraise readiness before I pitch", "run the audit an investor would run on my startup", "score my metrics, story, and team before I raise", "am I ready to start fundraising", or wants a fundraise checklist before any outreach at any stage. Do NOT use for Series A-specific metric benchmarks (ARR bar, NRR, payback) and building the Series A data room - use series-a-readiness. Do NOT use for choosing the stage, amount, and instrument of the raise - use fundraising-stage-selector. Do NOT use for writing the pitch story itself - use fundraising-narrative.
+metadata:
+  title: "Fundraise Readiness Audit"
 ---
 
 # Fundraise Readiness Audit

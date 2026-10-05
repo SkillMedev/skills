@@ -1,6 +1,8 @@
 ---
-name: Vercel Rendering and Caching
+name: vercel-edge-and-isr
 description: Choose a rendering, runtime, and caching strategy on Vercel - Fluid Compute as the default runtime (Edge Functions are deprecated), ISR/PPR, Next.js 16 Cache Components ('use cache', cacheLife, cacheTag, updateTag, revalidateTag), and the Vercel Runtime Cache API (getCache, expireTag, invalidateByTag) with tag-based invalidation. Use when someone asks "should this page be static or server rendered on Vercel", "how do I set up ISR in Next.js", "revalidate this page on demand", or "why is my Vercel page serving stale content" - including streaming vs PPR decisions, caching an API response across regions, and migrating off unstable_cache. Do NOT use to set env vars (use vercel-env-management), wire git/preview/promote deploys (use vercel-deploy-pipeline), route LLM calls (use vercel-ai-gateway), or block bots/rate-limit (use vercel-firewall-and-botid). For pure Core-Web-Vitals/bundle tuning, hand to next-on-vercel-perf.
+metadata:
+  title: "Vercel Rendering and Caching"
 ---
 
 # Vercel Rendering and Caching

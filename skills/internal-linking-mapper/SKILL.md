@@ -1,6 +1,8 @@
 ---
-name: Internal Linking Mapper
+name: internal-linking-mapper
 description: Maps internal links and anchor text between a new or updated page and an existing URL inventory to strengthen a topic cluster, producing a source/target/anchor link table plus a hub-and-spoke check. Use when someone asks "which pages should this article link to", "how do I internally link my new post", "is this page orphaned", or has a draft plus a sitemap, URL export, or pillar/cluster map and needs to decide the inbound links, outbound links, and anchors. Do NOT use to design the cluster or pillar architecture from a keyword export - use keyword-cluster-builder instead; do NOT use for on-page rewrites of titles, headings, or body copy - use seo-optimizer instead; do NOT use when a page is slipping in rankings and needs SERP-intent update actions - use content-refresh-auditor instead.
+metadata:
+  title: "Internal Linking Mapper"
 ---
 
 # Internal Linking Mapper

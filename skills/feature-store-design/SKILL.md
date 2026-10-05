@@ -1,6 +1,8 @@
 ---
-name: Feature Store Design
+name: feature-store-design
 description: Designs a reusable, leakage-safe feature store - entity and naming contracts, point-in-time correct training joins, feature versioning, online/offline consistency with staleness SLOs, and governance. Use when someone asks "should we build a feature store", "how do I share features across models", "our model trains great but serves garbage", "how do I version a feature definition", or is diagnosing training-serving skew. Do NOT use for designing the feature transformations themselves - use ml-feature-engineering instead; for monitoring feature and prediction distributions after deployment - use data-drift-monitor instead; for general relational schema design - use database-schema instead.
+metadata:
+  title: "Feature Store Design"
 ---
 
 # Feature Store Design

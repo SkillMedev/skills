@@ -1,6 +1,8 @@
 ---
-name: Side Project Launch
+name: side-project-launch
 description: Takes a side project from idea to shipped launch with behavior-based validation, a ruthlessly cut MVP, a hard timebox, and explicit kill criteria so nights-and-weekends effort never runs open-loop for months. Use when someone asks "how do I launch my side project", "should I keep building this", "how do I validate before building", "I've been building for months and haven't shipped", or "how do I know when to quit". Do NOT use for the Product Hunt assets and mechanics specifically - use product-hunt-launch instead - for orchestrating a multi-channel company launch calendar - use launch-plan-sequencer instead - or for running a launch day in real time - use launch-day-runbook instead.
+metadata:
+  title: "Side Project Launch"
 ---
 
 # Side Project Launch

@@ -1,6 +1,8 @@
 ---
-name: Redline Annotation
+name: redline-annotation
 description: Produces precise redline annotations - spacing, sizing, type, color, radius, z-order, and behavior notes in a consistent, scannable notation - that engineers can build from without asking questions. Use when someone asks "redline this screen", "spec this component", "annotate the spacing for handoff", or is preparing design files for development. Do NOT use for the overall handoff document with flows, edge cases, and acceptance criteria - use design-handoff-doc instead; for animation timing and easing, use motion-spec; for breakpoint behavior, use responsive-spec.
+metadata:
+  title: "Redline Annotation"
 ---
 
 # Redline Annotation

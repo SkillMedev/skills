@@ -1,6 +1,8 @@
 ---
-name: Student Feedback Writer
+name: student-feedback-writer
 description: Writes specific, growth-oriented feedback on student work using the Glow-Grow-Go structure - evidence from the actual work, one improvement priority, and a concrete next action - sized to the context from draft comments to progress reports. Use when someone asks "write feedback on this essay", "help me comment on these lab reports", "draft progress report narratives", or "make this comment more useful to the student". Do NOT use for feedback to colleagues or direct reports at work - use feedback-writer instead; for formal employee performance reviews, use performance-review-writer; for building the scoring rubric itself, use rubric-builder.
+metadata:
+  title: "Student Feedback Writer"
 ---
 
 # Student Feedback Writer

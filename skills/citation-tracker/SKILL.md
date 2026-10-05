@@ -1,6 +1,8 @@
 ---
-name: Citation Tracker
+name: citation-tracker
 description: Verifies that every citation is real, unretracted, and complete, rates source quality by evidence tier, and formats reference lists precisely in APA, MLA, Chicago, or IEEE. Use when someone asks "check my references", "format this bibliography in APA", "are these citations real", or "convert my reference list to IEEE". Do NOT use for checking whether the claims in the text are true - use fact-checker or claims-verifier instead. Do NOT use for writing the review itself - use literature-review or systematic-review instead.
+metadata:
+  title: "Citation Tracker"
 ---
 
 # Citation Tracker

@@ -1,6 +1,8 @@
 ---
-name: Changelog Generator
+name: changelog-generator
 description: Generate or update a repository CHANGELOG.md in Keep a Changelog format from git history - grouping commits since the last tag into Added/Changed/Deprecated/Removed/Fixed/Security, rewriting them as user-facing entries, and recommending the semantic version bump. Use when someone asks "generate a changelog from the git log", "update CHANGELOG.md for this release", "what version bump does this release need", or "turn these commits into release notes". Do NOT use for writing benefit-first product announcement changelogs for end users from release notes - use changelog-writer instead; this skill produces the versioned CHANGELOG.md file that lives in the repo.
+metadata:
+  title: "Changelog Generator"
 ---
 
 # Changelog Generator

@@ -1,6 +1,8 @@
 ---
-name: Pagination and Sync Engineer
+name: pagination-and-sync-engineer
 description: Designs correct cursor pagination and incremental delta sync against a mutating dataset - cursor contracts, updated_at watermarks, delete propagation, checkpointing, and idempotent reprocessing. Use when someone says "my sync is skipping rows", "should I use cursor or offset pagination", "design the pagination contract for this list endpoint", "keep a local copy of this API in sync", or has an offset/page=N loop against changing data. Do NOT use for generating a typed API client or SDK from a spec - use api-client-generator instead; do NOT use for on-device offline-first sync with conflict resolution between a mobile client and server - use mobile-offline-sync instead; this skill owns server-to-server paging and one-way replication correctness.
+metadata:
+  title: "Pagination and Sync Engineer"
 ---
 # Pagination and Sync Engineer
 

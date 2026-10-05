@@ -1,6 +1,8 @@
 ---
-name: Meal Planner
+name: meal-planner
 description: Builds a realistic weekly meal plan - protein anchors first, a batch-cook prep schedule, and a deduplicated grocery list grouped by store section - sized to household, budget, and weeknight time limits. Use when someone asks "plan my meals for the week", "make me a grocery list", "what should we eat this week", or "help me meal prep on Sunday". Do NOT use for setting calorie and macro targets or nutrition strategy - use nutrition-planner instead; this skill turns targets into cookable weeks.
+metadata:
+  title: "Meal Planner"
 ---
 
 # Meal Planner

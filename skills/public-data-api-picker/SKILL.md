@@ -1,6 +1,8 @@
 ---
-name: Public Data API Picker
+name: public-data-api-picker
 description: Use when a task needs real, live data but the domain is vague or unstated - "I need real data for X", "is there a free API for this?", "pull actual data into this demo", "no mock data, use a real source", or picking a data source before building. Routes to the right Live Data skill (weather-climate, geo-places, finance-fx, space-earth-science, government-open-data, test-placeholder-data, language-reference, fun-content), every one backed by keyless liveness-verified APIs. Do NOT use when the domain is already explicit - a request naming weather, FX, earthquakes, or fake users goes straight to that skill; do NOT use for designing your own API - use api-design instead.
+metadata:
+  title: "Public Data API Picker"
 ---
 
 # Public Data API Picker

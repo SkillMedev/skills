@@ -1,6 +1,8 @@
 ---
-name: Social Caption Writer
+name: social-caption-writer
 description: Write one platform-native caption from a topic and brand voice, with a front-loaded hook, native length, and a single earned CTA. Use when the user gives a topic (and optionally brand voice or a described image/video) and asks for an Instagram, LinkedIn, X/Twitter, or TikTok caption. Do NOT use when the user wants a dedicated standalone LinkedIn post - use linkedin-post-writer instead; or a multi-post X thread - use tweet-thread-builder instead; or to adapt one existing piece of content into versions for several channels - use cross-platform-reformatter instead.
+metadata:
+  title: "Social Caption Writer"
 ---
 # Social Caption Writer
 

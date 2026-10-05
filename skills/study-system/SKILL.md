@@ -1,6 +1,8 @@
 ---
-name: Study System
+name: study-system
 description: Converts a syllabus or topic list into an evidence-based study plan - material atomized into testable units, a spaced-repetition flashcard schedule with expanding intervals, active recall and Feynman-technique prompts instead of rereading, interleaved weekly sessions, and a practice-testing cadence with an error log. Use when someone says "help me study for this exam", "build me a study schedule", "I keep rereading and forgetting everything", or wants to learn a curriculum efficiently. Do NOT use for acquiring a spoken language specifically - use language-learning instead - or for building everyday habits - use habit-builder instead.
+metadata:
+  title: "Study System"
 ---
 
 # Study System

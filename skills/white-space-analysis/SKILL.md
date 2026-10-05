@@ -1,6 +1,8 @@
 ---
-name: White Space Analysis
+name: white-space-analysis
 description: Finds unmet market gaps by ranking jobs-to-be-done on importance versus satisfaction, overlaying them against current solutions and workarounds, and validating that each gap is real, winnable, and worth winning. Use when someone asks "where are the gaps in this market", "what's underserved here", "where should we play next", or is hunting for product, feature, or market-entry opportunities. Do NOT use for profiling competitors and building battle cards - use competitive-intelligence instead; for putting a dollar figure on an identified opportunity - use market-sizing instead; for extracting jobs-to-be-done from raw customer interviews - use jtbd-extractor instead.
+metadata:
+  title: "White Space Analysis"
 ---
 
 # White Space Analysis

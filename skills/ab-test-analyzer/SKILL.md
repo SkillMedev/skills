@@ -1,6 +1,8 @@
 ---
-name: A/B Test Analyzer
+name: ab-test-analyzer
 description: Analyzes an A/B experiment to a defensible verdict - sample-size and minimum-detectable-effect math, two-proportion significance testing with confidence intervals, and checks for the traps that fake a win (peeking, sample ratio mismatch, multiple comparisons). Use when someone asks "is this test significant", "did variant B win", "how long should I run this experiment", "what sample size do I need", or shows experiment results and asks whether to ship. Do NOT use for logging and organizing ML training runs - use experiment-tracking instead; for causal questions without a randomized experiment use causal-inference; for general funnel or metric investigation use funnel-analysis or product-analytics.
+metadata:
+  title: "A/B Test Analyzer"
 ---
 
 # A/B Test Analyzer

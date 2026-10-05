@@ -1,6 +1,8 @@
 ---
-name: Skill Tester
+name: skill-tester
 description: Empirically tests a skill with subagent scenarios to verify it fires on the right prompts, stays silent on the wrong ones, and performs its job when loaded. Use when validating a new or modified SKILL.md before publishing - "test this skill", "does this trigger correctly", "verify the skill works". Do NOT use to statically grade or rewrite skill quality (use skill-auditor) - this runs live behavioral tests.
+metadata:
+  title: "Skill Tester"
 ---
 
 # Skill Tester

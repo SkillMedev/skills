@@ -1,6 +1,8 @@
 ---
-name: Spark & PySpark
+name: spark-jobs
 description: Writes and tunes PySpark jobs - join strategy and broadcast size limits, shuffle-partition sizing, skew diagnosis and salting, UDF avoidance, caching, and output file layout - with concrete size and skew thresholds. Use when someone asks "why is my Spark job slow", "should I broadcast this join", "one task takes forever while the rest finish", "my job OOMs during a join", or is writing a new PySpark ETL job. Do NOT use for Kafka topic, consumer-group, or streaming-pipeline design - use kafka-pipelines instead; do NOT use for single-machine dataframe work that fits in memory - use pandas-expert instead.
+metadata:
+  title: "Spark & PySpark"
 ---
 
 # Spark & PySpark

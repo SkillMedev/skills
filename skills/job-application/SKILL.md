@@ -1,6 +1,8 @@
 ---
-name: Job Application Writer
+name: job-application
 description: Tailors a resume and writes a cover letter for one specific job description - mirroring JD keywords for ATS parsing, reordering bullets by relevance, quantifying impact, and reporting which JD keywords matched and which are missing. Use when someone asks "tailor my resume to this job", "write a cover letter for this posting", "will my resume pass the ATS", or shares a job description alongside their resume. Do NOT use for writing or restructuring a resume without a target job - use resume-writer instead; for critique of an existing resume, use resume-reviewer.
+metadata:
+  title: "Job Application Writer"
 ---
 
 # Job Application Writer

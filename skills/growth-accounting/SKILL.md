@@ -1,6 +1,8 @@
 ---
-name: Growth Accounting
+name: growth-accounting
 description: Decomposes active-user or revenue growth into new, retained, resurrected, expansion, contraction, and churned flows, reconciles the identity exactly, and reads the quick ratio to diagnose whether growth is an acquisition, retention, or resurrection problem. Use when someone asks "why did our MAU change", "our top line grew but I don't trust it", "what's our quick ratio", "build an MRR bridge", or "is our growth acquisition-driven or retention-driven". Do NOT use for forecasting future growth from loops and assumptions - use growth-model instead - for general event instrumentation and funnel metrics - use product-analytics instead - or for churn interventions themselves - use churn-reduction instead.
+metadata:
+  title: "Growth Accounting"
 ---
 
 # Growth Accounting

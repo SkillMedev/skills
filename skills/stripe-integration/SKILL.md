@@ -1,6 +1,8 @@
 ---
-name: Stripe Expert
+name: stripe-integration
 description: Implements Stripe payments, subscriptions, and webhooks so billing state stays correct - Checkout Sessions, signature-verified idempotent webhook handlers, dunning, and SCA handling. Use when someone asks "add Stripe subscriptions to my app", "why is my webhook signature verification failing", "my database says subscribed but Stripe says canceled", "how do I avoid double-charging on retries", or "how should I handle failed payments". Do NOT use for choosing price points, tiers, or packaging - use saas-pricing instead; for general-purpose webhook receiver hardening beyond Stripe, use webhook-receiver-hardener; for idempotency patterns outside payments, use idempotency-enforcer.
+metadata:
+  title: "Stripe Expert"
 ---
 
 # Stripe Expert

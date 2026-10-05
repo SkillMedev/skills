@@ -1,6 +1,8 @@
 ---
-name: Executive Summary
+name: executive-summary
 description: Compresses long reports, memos, and analyses into a decision-ready one-page summary (250-350 words) - bottom line up front, 3-5 evidence-backed key findings, a specific owned-and-dated recommendation, risks with mitigations, and the exact decision or resource being requested - plus a separate list of unverifiable claims to probe. Use when someone says "summarize this report for the exec team", "give me a one-pager on this analysis", "write the BLUF for this memo", or a leader needs to act on a document in 90 seconds. Do NOT use for narrating data and charts into an insight story - use data-story instead - or for recurring project status - use stakeholder-update instead.
+metadata:
+  title: "Executive Summary"
 ---
 
 # Executive Summary

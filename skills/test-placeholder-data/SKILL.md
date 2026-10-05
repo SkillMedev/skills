@@ -1,6 +1,8 @@
 ---
-name: Test & Placeholder Data APIs
+name: test-placeholder-data
 description: Use when building a demo, prototype, or tutorial that needs realistic remote data - "fake products/users/todos for this app", "an API I can hit while wiring up fetch", "placeholder images", "seed this UI with something that looks real", or teaching HTTP/CRUD against a live endpoint. DummyJSON is the default (rich e-commerce-shaped data, full fake CRUD, no key); JSONPlaceholder, RandomUser, and Lorem Picsum cover the rest. Do NOT use for generating local test fixtures or factories inside a test suite - use test-data-builder instead; do NOT use when the task needs real-world data (weather, prices, countries) - route through public-data-api-picker.
+metadata:
+  title: "Test & Placeholder Data APIs"
 ---
 
 # Test & Placeholder Data APIs

@@ -1,7 +1,9 @@
 ---
-name: Narration Script
+name: narration-script
 description: Write the spoken voiceover for a tutorial or demo - the actual words, phrased for the ear and synced one-instruction-per-action to what is on screen, with a pacing budget and a confident, jargon-checked tone. Use when someone says "write the voiceover", "script the narration", "what should I say over this", "VO script for my tutorial", "narrate this demo", "the script feels robotic", or "the narration is too wordy". Do NOT use to mix, time, duck, source, or beat-match the audio - VO leveling, SFX, music - that is sound-and-music-sync; do NOT use to decide which scenes exist or their order - that is video-storyboard; do NOT use to direct the on-screen actions themselves (cursor, zoom, callouts) - that is product-demo-director; do NOT use to turn spoken lines into animated on-screen text - that is kinetic-typography.
 
+metadata:
+  title: "Narration Script"
 ---
 
 # Narration Script

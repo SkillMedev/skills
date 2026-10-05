@@ -1,6 +1,8 @@
 ---
-name: Image License & Usage Rights
+name: image-license-rights
 description: Decides whether a specific image use is legally permitted, what the license obligates, and whether a model or property release is required - covering CC0 and Creative Commons variants, Unsplash/Pexels/Pixabay terms, royalty-free vs rights-managed, standard vs extended tiers, editorial-use-only, and AI-image caveats - and delivers a per-image license record. Use when someone asks "is this free for commercial use", "do I need to credit the photographer", "can I put this on merchandise", "what is royalty-free vs rights-managed", "is editorial-use-only a problem", or "do I need a model release", or is about to publish, advertise, or sell anything containing a stock image. Do NOT use to find or search for a photo - use stock-photo-finder instead; do NOT use to fetch images via an API with attribution rules - use stock-photo-api instead.
+metadata:
+  title: "Image License & Usage Rights"
 ---
 
 # Image License & Usage Rights

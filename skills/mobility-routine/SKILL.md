@@ -1,6 +1,8 @@
 ---
-name: Mobility Routine
+name: mobility-routine
 description: Builds a 10-15 minute daily floor-based mobility routine for desk workers, targeting the four zones sitting predictably stiffens - hips, thoracic spine, shoulders/neck, and ankles - with exact holds, reps, and a sequenced routine card. Use when someone says "I'm stiff from sitting all day", "my hips are tight", "fix my desk posture", or "build me a daily stretching routine". General movement guidance, not medical advice. Do NOT use for injury-prevention work attached to a training program - use injury-prehab instead; for a lifting program use strength-training-plan; for HIIT or conditioning use fitness-program.
+metadata:
+  title: "Mobility Routine"
 ---
 
 # Mobility Routine

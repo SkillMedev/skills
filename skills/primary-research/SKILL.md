@@ -1,6 +1,8 @@
 ---
-name: Primary Research Planner
+name: primary-research
 description: Designs a rigorous primary research protocol for collecting new data - research question, hypotheses, method selection, sampling with a power analysis, instrument design, a named control for every bias threat, and a pre-specified analysis plan. Use when someone asks "design a study to test this", "how many respondents do I need", "should this be a survey or interviews", or must produce defensible first-hand evidence rather than cite existing work. Do NOT use for synthesizing already-published sources - use deep-research or literature-review instead; for writing the discussion guide for a single expert conversation, use expert-interview instead; for detailed survey question wording and scale design, use survey-designer instead.
+metadata:
+  title: "Primary Research Planner"
 ---
 
 # Primary Research Planner

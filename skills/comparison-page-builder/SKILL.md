@@ -1,6 +1,8 @@
 ---
-name: Comparison Page Builder
+name: comparison-page-builder
 description: Builds an honest "X vs Y" or "best alternative to X" comparison page - scannable table plus use-case routing copy - for high-intent commercial searches. Use when someone asks "write a page comparing us to a competitor", "build an X vs Y comparison page", "create an alternative-to page", or wants a competitor comparison table and copy that names a rival and helps the reader choose. Do NOT use for a general marketing landing page - use landing-page-copy instead; for competitor research itself, use competitive-intelligence.
+metadata:
+  title: "Comparison Page Builder"
 ---
 # Comparison Page Builder
 

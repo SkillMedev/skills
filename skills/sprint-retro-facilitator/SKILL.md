@@ -1,6 +1,8 @@
 ---
-name: Sprint Retro Facilitator
+name: sprint-retro-facilitator
 description: Structures and facilitates sprint retrospectives with a timeboxed agenda, format selection, anti-blame ground rules, and owned action items that actually close. Use when someone asks "help me run our retro", "our retros produce the same actions every sprint", "what format should this retrospective use", or "how do I get the team to say what they're really thinking". Do NOT use for incident postmortems with a timeline and root-cause analysis - use postmortem-writer instead. For diagnosing chronic team dysfunction beyond one sprint, use team-health-check; for planning the next sprint's scope, use sprint-planning.
+metadata:
+  title: "Sprint Retro Facilitator"
 ---
 
 # Sprint Retro Facilitator

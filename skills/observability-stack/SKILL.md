@@ -1,6 +1,8 @@
 ---
-name: Observability Stack
+name: observability-stack
 description: Instruments systems with the three pillars - structured logs, RED/USE metrics, and distributed traces - correlated by one trace ID, with cardinality budgets and symptom-based alerts. Use when someone asks "how should I instrument this service", "what metrics should I emit", "why is my metrics bill exploding", "set up OpenTelemetry for my stack", or "we can't tell which service is slow". Do NOT use for tuning an existing noisy pager or alert thresholds - use alert-tuning instead; for defining SLO error-budget policy, use error-budget-policy; for the incident process when alerts fire, use sev-triage and postmortem-writer.
+metadata:
+  title: "Observability Stack"
 ---
 
 # Observability Stack

@@ -1,6 +1,8 @@
 ---
-name: Model Card Writer
+name: model-card-writer
 description: Produces a complete model card - intended use, training data provenance, evaluation results with slices, limitations, and usage guidance - for any model shared beyond its team or affecting people. Use when someone asks "write a model card", "document this model before release", "what should our model documentation include", or is preparing a model for deployment, handoff, or external publication. Do NOT use for producing the underlying evaluation numbers - use model-evaluation-report instead; for ongoing production monitoring plans use data-drift-monitor.
+metadata:
+  title: "Model Card Writer"
 ---
 
 # Model Card Writer

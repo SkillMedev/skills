@@ -1,6 +1,8 @@
 ---
-name: Meta Title Optimizer
+name: meta-title-optimizer
 description: Writes title tags and meta descriptions that survive SERP truncation, place the primary keyword early for relevance, and frame the snippet to win the click against competing results. Use when someone asks "write a title tag for this page", "why does this page rank but get no clicks", "is my title too long", "rewrite my meta description", or wants a snippet that stands out from the pattern on the results page. Do NOT use for broad on-page or technical SEO (headings, internal links, schema, crawlability, Core Web Vitals) - use seo-optimizer. Do NOT use for classifying what searchers want from a query - use search-intent-classifier. Do NOT use for finding what content the page itself is missing versus competitors - use serp-gap-analyzer.
+metadata:
+  title: "Meta Title Optimizer"
 ---
 
 # Meta Title Optimizer

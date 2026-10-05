@@ -1,6 +1,8 @@
 ---
-name: Series A Readiness
+name: series-a-readiness
 description: Audits whether a seed-stage company clears the Series A bar - benchmark metrics, narrative, team, and data room - and produces a red/yellow/green readiness scorecard with a 90-day gap-closing plan. Use when a founder asks "am I ready for Series A", "what metrics do I need to raise an A", "what goes in a Series A data room", "should I raise now or wait two quarters", or is deciding when to open an A process. Do NOT use for a general pre-pitch hygiene check at any stage - use fundraise-readiness-audit instead - or for choosing which round to raise at all - use fundraising-stage-selector instead.
+metadata:
+  title: "Series A Readiness"
 ---
 
 # Series A Readiness

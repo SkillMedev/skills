@@ -1,6 +1,8 @@
 ---
-name: Help Documentation
+name: help-documentation
 description: Writes user-facing help-center articles - verb-first how-to guides, symptom-organized troubleshooting pages, and FAQs - with one task per article, exact UI labels, and a stated success result. Use when someone asks "write a help article for...", "document how users reset their password", "turn these support tickets into a troubleshooting page", or "our help center articles are confusing, rewrite this one". Do NOT use for internal team procedures and SOPs - use process-doc instead; for on-call operational runbooks, use runbook-writer; for internal knowledge-base articles aimed at support agents, use kb-article-writer.
+metadata:
+  title: "Help Documentation"
 ---
 
 # Help Documentation

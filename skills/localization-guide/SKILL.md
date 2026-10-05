@@ -1,6 +1,8 @@
 ---
-name: Localization Writer
+name: localization-guide
 description: Adapts English content for a target language and region - swapping idioms, setting the right formality register, replacing cultural references, converting dates, units, and currency - and delivers the localized text with a notes column explaining each adaptation and flagging what needs a native reviewer. Use when someone asks "localize this copy for the Japanese market", "adapt our marketing copy for the Mexican market", "make this translation sound native instead of literal", or a literal translation reads foreign, stiff, or risky. Do NOT use for auditing in-product UI text quality - use ux-writing-audit instead.
+metadata:
+  title: "Localization Writer"
 ---
 
 # Localization Writer

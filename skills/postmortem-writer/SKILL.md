@@ -1,6 +1,8 @@
 ---
-name: Postmortem Writer
+name: postmortem-writer
 description: Writes blameless incident postmortems with a log-reconstructed timeline, multi-causal contributing factors, and owned, dated action items. Use when someone asks "write the postmortem for yesterday's outage", "run a blameless retro on this incident", "turn these incident notes into a postmortem doc", or after any SEV1 or SEV2 event. Do NOT use for customer-facing incident updates while the incident is live - use status-page-update instead; for transferring context at a shift change, use oncall-handoff; for classifying and running a live incident, use sev-triage.
+metadata:
+  title: "Postmortem Writer"
 ---
 
 # Postmortem Writer

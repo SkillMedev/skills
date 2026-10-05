@@ -1,6 +1,8 @@
 ---
-name: Review-to-FAQ Builder
+name: review-to-faq-builder
 description: Mines customer reviews and Q&A exports into a pre-purchase PDP FAQ and objection-handling block that answers shopper hesitation before it forms, ordered by conversion impact. Use when someone asks "turn these reviews into an FAQ", "shoppers keep asking the same questions before buying", "how do I address the negative reviews on the product page", or has a review or Q&A export and wants to write or rebuild a product page FAQ or cut returns from preventable surprises. Do NOT use to analyze support tickets or CSAT/NPS verbatims for quality root causes - use csat-root-cause instead; do NOT use to write the main product description - use product-description-writer instead.
+metadata:
+  title: "Review-to-FAQ Builder"
 ---
 
 # Review-to-FAQ Builder

@@ -1,6 +1,8 @@
 ---
-name: Strangler Fig Planner
+name: strangler-fig-planner
 description: Produces an incremental migration plan that runs a legacy and a new system side by side behind a routing seam, slicing and sequencing whole capabilities so the old system stays live until its last route is cut. Use when planning to replace or rebuild a large, business-critical system that must keep serving traffic throughout. Do NOT use when extracting a single service from a still-living monolith - use monolith-decomposer instead; for generic non-migration implementation planning, use the plan skill instead.
+metadata:
+  title: "Strangler Fig Planner"
 ---
 # Strangler Fig Planner
 Plan a route-by-route replacement of a live system: install a routing seam, migrate one vertical capability at a time, and delete the legacy trunk only after each slice has soaked at full traffic.

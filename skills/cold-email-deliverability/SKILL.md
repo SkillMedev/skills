@@ -1,6 +1,8 @@
 ---
-name: Cold Email Deliverability
+name: cold-email-deliverability
 description: Sets up and protects cold-outbound sending infrastructure - dedicated lookalike domains, SPF/DKIM/DMARC authentication, 2-4 week mailbox warm-up, 30-50 sends/day per-mailbox caps, and continuous bounce/complaint monitoring, with a runnable DNS audit script. Use when someone says "my emails are going to spam", "set up cold email infrastructure", "warm up a new domain", "configure SPF DKIM DMARC", "how many cold emails can I send per day", or "my domain got blacklisted". Do NOT use for protecting an opted-in marketing or transactional program on your primary domain - use email-deliverability instead; do NOT use for writing the email copy - use cold-email-craft instead; do NOT use for designing the multi-step cadence - use outreach-sequence-designer instead; do NOT use for sizing the list - use prospect-list-builder instead.
+metadata:
+  title: "Cold Email Deliverability"
 ---
 
 # Cold Email Deliverability

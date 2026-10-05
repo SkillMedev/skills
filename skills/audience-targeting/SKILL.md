@@ -1,6 +1,8 @@
 ---
-name: Audience Targeting
+name: audience-targeting
 description: Builds and refines audience and segment targeting for paid campaigns - first-party audience construction, lookalike expansion, exclusion lists, platform sizing floors, and saturation diagnosis - and delivers a filled targeting matrix per campaign. Use when someone asks "who should I target with these ads", "why is my ad set stuck in learning", "my CPMs keep rising but conversions are flat", "should I use a 1% or 5% lookalike", or is launching a campaign, diagnosing poor reach quality, or expanding into a new customer segment. Do NOT use for auditing an entire paid program's structure and spend efficiency - use paid-acquisition-audit instead; do NOT use for defining the ideal customer profile itself - use icp-persona-builder instead; do NOT use for market segmentation strategy outside paid media - use segmentation-strategy instead.
+metadata:
+  title: "Audience Targeting"
 ---
 
 # Audience Targeting

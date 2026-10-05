@@ -1,6 +1,8 @@
 ---
-name: Kinetic Typography
+name: kinetic-typography
 description: Put text in motion the right way - title cards, animated captions, lower-thirds, callouts, and word-by-word reveals - with a reading-time-per-word budget so copy holds long enough to read, plus enter/exit timing, weight and size transitions, and type hierarchy in motion. Use when someone asks to "animate this text", "make a title card", "animated captions/subtitles", "kinetic typography", "animate the headline", "lower-third", "word-by-word reveal", "text that pops in", or "how long should this line stay on screen". Do NOT use when the question is the cut, pacing, or easing curve of non-text motion - use motion-design-principles instead; do NOT use to plan which scenes or shots exist - use video-storyboard instead; do NOT use to resize or crop a caption track for a specific platform (9:16 TikTok, 1:1 feed) - use social-video-formatter instead; do NOT use for the color, contrast, or lighting of the type against its background - use motion-color-and-light instead.
+metadata:
+  title: "Kinetic Typography"
 ---
 
 # Kinetic Typography

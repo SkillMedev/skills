@@ -1,6 +1,8 @@
 ---
-name: Product Hunt Launch
-description: Crafts the Product Hunt launch package - ranked taglines, the card description, the first maker comment, reply templates - and sets the PH-specific mechanics: launch timing, hunter choice, and the first-hour momentum plan. Use when someone asks "write our Product Hunt tagline", "draft our maker comment", "when should we launch on Product Hunt", "do we need a hunter", or "how do we get momentum in the first hour". Do NOT use for running the whole launch day in real time across channels - use launch-day-runbook instead - for choosing the launch date and beat calendar across channels - use launch-plan-sequencer instead - or for a scrappy indie launch beyond PH - use side-project-launch instead.
+name: product-hunt-launch
+description: "Crafts the Product Hunt launch package - ranked taglines, the card description, the first maker comment, reply templates - and sets the PH-specific mechanics: launch timing, hunter choice, and the first-hour momentum plan. Use when someone asks \"write our Product Hunt tagline\", \"draft our maker comment\", \"when should we launch on Product Hunt\", \"do we need a hunter\", or \"how do we get momentum in the first hour\". Do NOT use for running the whole launch day in real time across channels - use launch-day-runbook instead - for choosing the launch date and beat calendar across channels - use launch-plan-sequencer instead - or for a scrappy indie launch beyond PH - use side-project-launch instead."
+metadata:
+  title: "Product Hunt Launch"
 ---
 
 # Product Hunt Launch

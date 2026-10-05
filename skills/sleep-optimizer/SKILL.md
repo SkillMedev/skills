@@ -1,6 +1,8 @@
 ---
-name: Sleep Optimizer
+name: sleep-optimizer
 description: Builds a personalized sleep protocol - a fixed wake time held within 30 minutes daily, a chronotype-aligned sleep window, a light-exposure plan, environment settings, evening input rules, and a scripted wind-down routine - from a baseline assessment. Use when someone says "I can't fall asleep", "I wake up at 3am every night", "fix my sleep schedule", or "I'm exhausted no matter how long I sleep". General wellness education, not medical advice - snoring with gasping, suspected apnea, or chronic insomnia route to a physician or sleep specialist. Do NOT use when racing thoughts and daytime stress are the primary complaint - use stress-management instead; for the broader multi-pillar health routine, use longevity-protocol.
+metadata:
+  title: "Sleep Optimizer"
 ---
 
 # Sleep Optimizer

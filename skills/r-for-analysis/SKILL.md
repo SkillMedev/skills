@@ -1,6 +1,8 @@
 ---
-name: R for Analysis
+name: r-for-analysis
 description: Writes idiomatic tidyverse R for data analysis - dplyr wrangling pipelines, tidyr reshaping, explicit joins, layered ggplot2 visualization, and broom-tidied statistical models - with reproducibility practices baked in. Use when someone asks "write this analysis in R", "how do I pivot this data frame", "fit a regression per group in R", or wants messy base-R scripts converted to clean pipe-based tidyverse code. Do NOT use for Python-based dataframe work - use pandas-expert instead; for interpreting results for stakeholders use sql-to-insights.
+metadata:
+  title: "R for Analysis"
 ---
 
 # R for Analysis

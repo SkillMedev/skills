@@ -1,6 +1,8 @@
 ---
-name: Longevity Protocol
+name: longevity-protocol
 description: Assembles an evidence-tiered weekly longevity routine across the four pillars with the strongest healthspan data - sleep, zone 2 aerobic work, strength training, and dietary pattern - plus stress and connection, delivered as a filled weekly template with honest evidence labels. Use when someone asks "build me a longevity routine", "what actually extends healthspan", "audit my health habits", or "is this supplement stack worth it". General wellness guidance, not medical advice. Do NOT use to program the individual pieces in depth - use zone-2-cardio-plan for the aerobic block, strength-training-plan for lifting, sleep-optimizer for sleep, nutrition-planner for macros; for HIIT/conditioning use fitness-program; for interpreting labs use bloodwork-explainer.
+metadata:
+  title: "Longevity Protocol"
 ---
 
 # Longevity Protocol

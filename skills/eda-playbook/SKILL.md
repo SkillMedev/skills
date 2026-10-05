@@ -1,6 +1,8 @@
 ---
-name: EDA Playbook
+name: eda-playbook
 description: Runs a structured exploratory data analysis on a new or suspect dataset - schema audit, target analysis, feature profiling, missingness patterns, and leakage checks - ending in a written decision log. Use when someone says "I just got this dataset, where do I start", "my model metrics look too good", "audit this data before we model it", or is debugging unexpected model behavior. Do NOT use for writing the transformation code itself - use pandas-expert instead; for ongoing production data monitoring use data-quality; for constructing model features after EDA use ml-feature-engineering; for answering a one-off business question from a database use sql-to-insights.
+metadata:
+  title: "EDA Playbook"
 ---
 
 # EDA Playbook

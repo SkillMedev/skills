@@ -1,6 +1,8 @@
 ---
-name: Demo Script
+name: demo-script
 description: Builds a product demo script around the buyer's discovered pain - a 60-second situation recap opening, three to four before/after "moments" mapped to the buyer's metric, and a close that ends before the slot does. Use when someone asks "help me script this demo", "how should I structure tomorrow's product walkthrough", "turn these discovery notes into a demo plan", or before any live or recorded demo. Do NOT use for staging and directing the demo environment, data, and rehearsal - use product-demo-director instead. Do NOT use when discovery hasn't happened yet - run discovery-call-prep first, because a demo without known pain is a feature tour.
+metadata:
+  title: "Demo Script"
 ---
 
 # Demo Script

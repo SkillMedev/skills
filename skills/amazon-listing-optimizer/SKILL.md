@@ -1,6 +1,8 @@
 ---
-name: Amazon Listing Optimizer
+name: amazon-listing-optimizer
 description: Writes an Amazon product title, five bullets, and backend search terms that obey Amazon's character, byte, and keyword rules while staying click-worthy in the search grid. Use when drafting or fixing a Seller Central listing, rewriting an Amazon title or bullet points, packing backend search terms, or recovering a listing flagged or suppressed for content. Do NOT use when writing on-site product-detail-page copy for your own storefront or marketing site - use product-description-writer instead.
+metadata:
+  title: "Amazon Listing Optimizer"
 ---
 # Amazon Listing Optimizer
 

@@ -1,7 +1,9 @@
 ---
-name: Captions From Transcript
+name: captions-from-transcript
 description: Produce an accurate, properly timed caption track (SRT or WebVTT) from a video's audio - transcribing or aligning to the voiceover script, timing cues to speech, and enforcing line-length and reading-speed rules so captions are readable and in sync. Use when someone says "generate captions", "make subtitles from the audio", "transcribe and caption this", "export an SRT or VTT", "the captions are out of sync", or "the subtitles flash by too fast to read". Do NOT use to burn-in, style, reframe, or position an existing caption track for a platform (9:16, brand styling, safe areas) - that is social-video-formatter; do NOT use to animate text word-by-word as a motion graphic - that is kinetic-typography; do NOT use to write the spoken script in the first place - that is narration-script.
 
+metadata:
+  title: "Captions From Transcript"
 ---
 
 # Captions From Transcript

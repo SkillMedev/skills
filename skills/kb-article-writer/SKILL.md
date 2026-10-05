@@ -1,6 +1,8 @@
 ---
-name: Knowledge Base Article Writer
+name: kb-article-writer
 description: Turns a resolved support ticket into a clear, searchable knowledge-base or help center article. Use when someone asks "write a KB article from this resolved ticket", "turn these resolved tickets into help center articles", or "write an internal knowledge base article for our support agents" - converting ticket resolutions into self-service documentation that deflects future tickets. Do NOT use for writing user-facing how-to guides from scratch - use help-documentation instead.
+metadata:
+  title: "Knowledge Base Article Writer"
 ---
 
 # Knowledge Base Article Writer

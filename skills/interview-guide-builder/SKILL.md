@@ -1,6 +1,8 @@
 ---
-name: Interview Guide Builder
+name: interview-guide-builder
 description: Writes a non-leading user-research discussion guide with warm-up flow, open core questions, an attached probe bank, time budgets, and a pre-field bias audit. Use when someone asks "write my interview guide", "what should I ask users in discovery interviews", "review my questions for leading language", or is preparing generative or evaluative user interviews. Do NOT use for hiring-loop questions with competencies and scoring anchors - use interview-question-kit instead. Do NOT use for sourcing deep domain knowledge from subject-matter experts with laddering - use expert-interview instead. To analyze the notes afterward, use interview-synthesis.
+metadata:
+  title: "Interview Guide Builder"
 ---
 
 # Interview Guide Builder

@@ -1,6 +1,8 @@
 ---
-name: GraphQL Schema
+name: graphql-schema
 description: Designs GraphQL schemas and resolvers that scale - domain-modeled types, Relay pagination, DataLoader batching to kill N+1, mutation payloads with typed user errors, and depth/complexity limits that stop abusive queries. Use when someone asks "how should I structure this GraphQL type", "my resolvers are hammering the database", "cursor or offset pagination", "how do I version a GraphQL API", or is designing or reviewing a schema or federation split. Do NOT use for REST or RPC endpoint design - use api-design instead; do NOT use for the underlying table design - use database-schema instead; for hunting existing N+1s in a codebase, use n-plus-one-hunter.
+metadata:
+  title: "GraphQL Schema"
 ---
 
 # GraphQL Schema

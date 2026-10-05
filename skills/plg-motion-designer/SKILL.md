@@ -1,6 +1,8 @@
 ---
-name: PLG Motion Designer
+name: plg-motion-designer
 description: Use when designing a product-led, self-serve activation motion for signups. Triggers on "design our PLG motion", "self-serve onboarding", "what is our aha moment", "define activation", "activation rate", "time-to-value", "onboarding funnel", "in-product nudges", "set activation milestones", "signup to value", "free-to-paid", "PQL". Defines the aha moment, the activation milestones to it, and the in-product nudges and metric gates between each step. Do NOT use for outbound/sales-led launch sequencing - use [[launch-plan-sequencer]] instead; for arming a human sales team with collateral, use [[sales-enablement-kit]] instead; for the page that captures the signup, use [[landing-page-copy]]; for pricing tiers and the paywall, use [[saas-pricing]] and [[pricing-strategy]].
+metadata:
+  title: "PLG Motion Designer"
 ---
 
 # PLG Motion Designer

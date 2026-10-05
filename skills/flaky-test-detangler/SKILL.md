@@ -1,6 +1,8 @@
 ---
-name: Flaky Test Detangler
+name: flaky-test-detangler
 description: Root-causes intermittently failing tests and eliminates the hidden dependency at its source instead of retrying around it. Use when a test passes locally but fails in CI, goes green on a CI re-run, fails roughly one run in ten, or is already tagged "flaky." Do NOT use when the task is to design the fake or stub that replaces a real dependency - use mock-stub-designer instead.
+metadata:
+  title: "Flaky Test Detangler"
 ---
 # Flaky Test Detangler
 

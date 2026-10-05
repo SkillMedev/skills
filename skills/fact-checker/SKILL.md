@@ -1,6 +1,8 @@
 ---
-name: Fact Checker
+name: fact-checker
 description: Verifies discrete factual claims against multiple independent sources and returns a calibrated verdict - Verified, Likely true, Likely false, Unverifiable, or False - with confidence and citations. Use when someone asks "is this true", "fact-check this claim", "did X really happen", "verify this statistic before we publish", or pastes a quote, number, or viral post to check. Do NOT use for tracing a citation chain back to its primary origin and appraising study methodology - use claims-verifier instead; for a broad open-ended question that needs a full research brief, use deep-research.
+metadata:
+  title: "Fact Checker"
 ---
 
 # Fact Checker

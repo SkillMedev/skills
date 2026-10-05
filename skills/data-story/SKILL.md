@@ -1,6 +1,8 @@
 ---
-name: Data Storyteller
+name: data-story
 description: Turns data and charts into a decision-driving narrative structured as headline finding, trend, implication, and recommended action - with finding-led chart titles, context for every number, annotation guidance, and honest flags on any conclusion the data cannot support. Use when someone says "turn these numbers into a story", "what's the takeaway from this data", "help me present these results to leadership", or has charts but no narrative. Do NOT use for compressing a long document into a one-pager - use executive-summary instead - or for running the analysis that produces the findings - use eda-playbook instead.
+metadata:
+  title: "Data Storyteller"
 ---
 
 # Data Storyteller

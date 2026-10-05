@@ -1,6 +1,8 @@
 ---
-name: Board Management
+name: board-management
 description: Runs a company board as an instrument - cadence, a no-surprises pre-wire, a board pack shipped days ahead, and meetings that end in decisions with owners. Use when someone asks "how do I prepare for my board meeting", "what goes in a board deck", "my board meetings feel like theater", "how often should we meet", or "how do I handle a difficult board member". Applies to venture-backed and private company boards; nonprofit and association boards follow different fiduciary and consensus norms, so adapt with care there. Do NOT use for writing the monthly investor update - use investor-update-writer instead - or for general internal meeting agendas - use meeting-agenda instead.
+metadata:
+  title: "Board Management"
 ---
 
 # Board Management

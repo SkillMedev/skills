@@ -1,6 +1,8 @@
 ---
-name: Lead Enrichment
+name: lead-enrichment
 description: Turns a raw or partial prospect list into a send-safe dataset by filling missing fields (work email, direct or mobile phone, title, firmographics, technographics) through a per-field provider waterfall, verifying every email, and stamping freshness. Use when someone says "enrich this list", "find the email for these people", "verify these emails before we send", "what do I do with catch-all domains", "this list is a year old, is it still good", "dedupe and clean this CSV", or "why is my bounce rate spiking". Do NOT use for selecting WHO to target and building the list itself - use prospect-list-builder. Do NOT use for tool-specific credit mechanics and filter syntax - use apollo-prospecting. Pair with cold-email-deliverability for the inbox-protection side of verification.
+metadata:
+  title: "Lead Enrichment"
 ---
 
 # Lead Enrichment

@@ -1,6 +1,8 @@
 ---
-name: SERP Gap Analyzer
+name: serp-gap-analyzer
 description: Compares a draft or outline against the pages already ranking for its target query and outputs the missing subtopics, entities, and questions as a prioritized gap table - each gap classified must-have, differentiator, or skip. Use when someone asks "compare my draft against the top ranking pages", "what is my draft missing compared to the pages that rank", "run a content gap analysis on my draft", or has a target query plus 3-5 ranking URLs and wants to close coverage gaps before publishing. Do NOT use for a page that already ranks and is decaying over time - use content-refresh-auditor. Do NOT use for rewriting sections into citable answer blocks for AI engines or featured snippets - use aeo-answer-blockifier. Do NOT use for grouping a keyword list into page-level topics - use keyword-cluster-builder.
+metadata:
+  title: "SERP Gap Analyzer"
 ---
 
 # SERP Gap Analyzer

@@ -1,6 +1,8 @@
 ---
-name: Claims Verifier
+name: claims-verifier
 description: Decomposes a claim into checkable propositions, traces each through the citation chain to its primary source, appraises the evidence for method and independence, and issues a verdict from Supported to Contradicted with confidence. Use when someone asks "is this claim actually backed by the study it cites", "verify the claims in this whitepaper", "trace this statistic to its source", or needs an evidentiary audit of research, marketing, or policy claims. Do NOT use for a quick true/false corroboration of a discrete factual statement - use fact-checker instead; for broad open-ended investigation of a topic, use deep-research instead.
+metadata:
+  title: "Claims Verifier"
 ---
 
 # Claims Verifier

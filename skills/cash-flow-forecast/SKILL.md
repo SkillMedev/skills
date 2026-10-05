@@ -1,6 +1,8 @@
 ---
-name: Cash Flow Forecast
+name: cash-flow-forecast
 description: Builds a rolling 13-week and 12-month cash flow forecast with runway view. Use when managing liquidity, planning for fundraising, preparing board materials, or stress-testing the business under downside scenarios.
+metadata:
+  title: "Cash Flow Forecast"
 ---
 
 # Cash Flow Forecast

@@ -1,6 +1,8 @@
 ---
-name: Annual Planning
+name: annual-plan
 description: Runs an annual planning cycle end to end - strategic reflection, 3-5 company priorities with explicit not-doing decisions, cascaded OKRs reconciled between top-down framing and bottom-up team plans, resource allocation with named trade-offs, a quarterly review cadence, and the CEO narrative memo. Use when a leader asks "run our annual planning", "set next year's company priorities", "our planning is just a budget exercise", or needs to turn a leadership offsite into a committed plan. Do NOT use for writing a single team's quarterly OKRs - use okr-builder instead; for a product-specific roadmap, use product-roadmap.
+metadata:
+  title: "Annual Planning"
 ---
 
 # Annual Planning

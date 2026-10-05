@@ -1,7 +1,9 @@
 ---
-name: Build on Agent-Native
+name: build-on-agent-native
 description: Build an application on Builder.io's open-source Agent-Native framework (@agent-native/core) - the model where the agent acts inside the app as a first-class peer to the UI, sharing one set of actions and one database with the interface. Covers the core primitives (actions as the single source of truth, SQL-backed shared state, real-time sync, context-awareness, agent-to-agent, automations, the skills convention), the CLI and cloneable-template workflow, and where to read version-matched docs. Use when someone says "build an agent-native app", "use the agent-native framework", "defineAction", "@agent-native/core", "clone an agent-native template", "make the agent a peer to my UI", or "an app where the agent and the UI call the same actions". Do NOT use for authoring generic Claude Agent Skills / SKILL.md files - that is skill-creator; do NOT use for building a standalone MCP server unrelated to this framework - that is the MCP-builder path; do NOT use for plain Next.js / React scaffolding with no agent runtime.
 
+metadata:
+  title: "Build on Agent-Native"
 ---
 
 # Build on Agent-Native

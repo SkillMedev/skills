@@ -1,6 +1,8 @@
 ---
-name: Literature Review
+name: literature-review
 description: Produces a thematic literature review that organizes a field into an argument - consensus, disputes, evidence quality, and the open gap the reader should care about. Use when someone asks "write my related-work section", "review the literature on X", "what does the research say about X", or "organize these papers into themes". Do NOT use for an exhaustive, protocol-registered review with formal inclusion criteria and risk-of-bias appraisal - use systematic-review instead. Do NOT use for synthesizing interviews or mixed non-academic sources into decision themes - use research-synthesis instead.
+metadata:
+  title: "Literature Review"
 ---
 
 # Literature Review

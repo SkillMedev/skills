@@ -1,6 +1,8 @@
 ---
-name: Idempotency Enforcer
+name: idempotency-enforcer
 description: Designs client-supplied idempotency keys, deduplication storage, and replay semantics so at-least-once delivery and client retries return the first result instead of double-charging or double-shipping. Use when someone asks "how do I stop duplicate charges on retry", "add an Idempotency-Key header to this endpoint", "the queue redelivered a job and we shipped twice", or before exposing any unsafe POST behind a retrying client or queue. Do NOT use for inbound third-party webhook handlers whose dedup is keyed on a provider event ID - use webhook-receiver-hardener instead and reference this skill only for the storage pattern; do NOT use for designing the client-side retry/backoff policy itself - use rate-limit-handler instead.
+metadata:
+  title: "Idempotency Enforcer"
 ---
 # Idempotency Enforcer
 

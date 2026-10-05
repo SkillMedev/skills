@@ -1,6 +1,8 @@
 ---
-name: Secure Code Review
+name: secure-code-review
 description: Reviews code for the security flaw classes that cause the most breaches - broken authorization and IDOR, injection, SSRF, mass assignment, and unsafe deserialization - and returns a short, focused findings list with concrete fixes. Use when someone asks "review this code for security issues", "is this endpoint safe", "check this PR for vulnerabilities", or is shipping auth logic, new API endpoints, file handling, or anything that touches untrusted input. Do NOT use for general code quality, style, or maintainability review - use code-review-checklist instead; for prioritizing findings a scanner already produced, use vulnerability-triage; for design-stage analysis before code exists, use threat-model-stride.
+metadata:
+  title: "Secure Code Review"
 ---
 
 # Secure Code Review

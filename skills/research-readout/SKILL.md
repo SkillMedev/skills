@@ -1,6 +1,8 @@
 ---
-name: Research Readout
+name: research-readout
 description: Turns synthesized research findings into a crisp stakeholder readout - so-what up front, 3-5 confidence-tagged findings each following the finding-evidence-implication rule, and owned recommendations. Use when someone says "present these research findings", "turn this study into a readout for leadership", "our research isn't landing with the product team", or needs a deck or brief that gets findings acted on. Do NOT use for building a narrative around quantitative metrics and charts - use data-story instead; for the upstream analysis that produces the findings, use interview-synthesis or research-synthesis; for slide craft itself, use slide-deck-builder.
+metadata:
+  title: "Research Readout"
 ---
 
 # Research Readout

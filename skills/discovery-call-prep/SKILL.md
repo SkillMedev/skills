@@ -1,6 +1,8 @@
 ---
-name: Discovery Call Prep
+name: discovery-call-prep
 description: Prepares a rep for a B2B discovery call - targeted company research, a falsifiable hypothesis stack, a layered question plan with MEDDICC and SPICED coverage, and explicit call goals, delivered as a filled prep sheet. Use when someone asks "help me prep for a discovery call", "what should I ask this prospect tomorrow", "build a question plan for my first call with this account", or before any first or second call with a prospect. Do NOT use for scripting the pitch and close of an already-qualified deal - use closer-sales-script instead. Do NOT use for building the outbound sequence that books the call - use outreach-sequence-designer instead.
+metadata:
+  title: "Discovery Call Prep"
 ---
 
 # Discovery Call Prep

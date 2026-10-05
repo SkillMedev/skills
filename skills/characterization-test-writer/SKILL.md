@@ -1,6 +1,8 @@
 ---
-name: Characterization Test Writer
+name: characterization-test-writer
 description: Writes pinning and characterization tests that lock in the current behavior of untested legacy code - bugs included - before a refactor, so any later behavior change trips an alarm. Use when someone says "I need a safety net before refactoring this", "this module has no tests and I have to change it", "capture what this function does today", or the correct behavior is simply whatever the code does now. Do NOT use for writing tests for new behavior built red-green - use tdd-expert instead; do NOT use to decide which code is worth testing or to rank coverage gaps - use coverage-gap-finder instead; do NOT use to verify existing assertions are strong - use mutation-test-runner instead.
+metadata:
+  title: "Characterization Test Writer"
 ---
 # Characterization Test Writer
 

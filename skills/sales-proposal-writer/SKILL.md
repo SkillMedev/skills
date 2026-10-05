@@ -1,6 +1,8 @@
 ---
-name: Sales Proposal Writer
+name: sales-proposal-writer
 description: Writes a B2B sales proposal or SOW that restates the buyer's problem in their own words, quantifies the cost of inaction, presents price as anchored options, and drives one dated next step. Use when someone asks "write a proposal for this client", "turn my discovery notes into a proposal", "how should I present pricing in this proposal", or when a deal needs a document to move from discovery to close. Do NOT use for a one-page internal decision brief - use one-pager-designer instead; for investor decks use pitch-deck-builder; for setting the underlying price model use pricing-strategy.
+metadata:
+  title: "Sales Proposal Writer"
 ---
 
 # Sales Proposal Writer

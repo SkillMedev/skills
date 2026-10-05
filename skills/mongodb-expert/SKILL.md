@@ -1,6 +1,8 @@
 ---
-name: MongoDB Expert
+name: mongodb-expert
 description: Designs MongoDB schemas, indexes, and aggregation pipelines that perform - embed-vs-reference decision rules, the 16MB document limit, ESR compound-index ordering, explain-plan verification, and operational settings for replica sets and sharding. Use when someone asks "should I embed or reference this", "why is my Mongo query slow", "design a MongoDB schema for X", "how do I structure this aggregation pipeline", or "what should my shard key be". Do NOT use for relational or SQL schema design - use database-schema instead; for tuning SQL queries use sql-query-optimizer; for Postgres-on-Supabase work use supabase-expert.
+metadata:
+  title: "MongoDB Expert"
 ---
 
 # MongoDB Expert

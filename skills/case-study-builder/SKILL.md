@@ -1,6 +1,8 @@
 ---
-name: Case Study Builder
+name: case-study-builder
 description: Turn a customer win into a credible case study - interview-driven raw material, a challenge-solution-results arc, and a quantified results section with real customer quotes. Use when someone asks "write a case study from this customer call", "turn this win into a customer story", "what should I ask the customer in the interview", or "make our results section stronger". Do NOT use for collecting short standalone quotes or review snippets - testimonial capture is upstream raw material for this skill. Do NOT use for packaging finished case studies into battlecards and sales collateral - use sales-enablement-kit instead.
+metadata:
+  title: "Case Study Builder"
 ---
 
 # Case Study Builder

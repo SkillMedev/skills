@@ -1,6 +1,8 @@
 ---
-name: Job Description Writer
+name: job-description-writer
 description: Draft an inclusive, role-relevant, level-calibrated job posting from a hiring manager's role brief. Use when an employer is writing or revising a job description, JD, or job posting - you have a role brief, leveling rubric, or comp band and need outcome-based requirements, plain compensation/logistics, and inclusive tone. Do NOT use when tailoring a candidate's resume or cover letter to a posting - use job-application instead.
+metadata:
+  title: "Job Description Writer"
 ---
 # Job Description Writer
 

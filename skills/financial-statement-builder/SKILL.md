@@ -1,6 +1,8 @@
 ---
-name: Financial Statement Builder
+name: financial-statement-builder
 description: Builds and interprets the income statement, balance sheet, and cash flow statement as one linked system - construction order, the three mechanical ties between statements, and the review checks that catch errors. Use when someone asks "build me a three-statement model", "why doesn't my balance sheet balance", "how does net income flow into the cash flow statement", "check this financial package for errors", or is explaining statements to stakeholders. Do NOT use for spreadsheet layout and formula hygiene - use spreadsheet-model-builder instead - for forward-looking 13-week or 12-month cash projections - use cash-flow-forecast instead - or for the monthly process that produces the trial balance - use month-end-close instead.
+metadata:
+  title: "Financial Statement Builder"
 ---
 
 # Financial Statement Builder

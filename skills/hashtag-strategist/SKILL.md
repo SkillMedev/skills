@@ -1,6 +1,8 @@
 ---
-name: Hashtag Strategist
+name: hashtag-strategist
 description: Builds a tiered hashtag and keyword set sized to the account's actual reach - mixing broad, niche, and branded tags per platform limits and screening out banned, spammy, or shadow-flagged tags. Use when someone asks "what hashtags should I use", "build me a hashtag set for this post", "audit my tag block", or is creating reusable tag sets per content pillar on Instagram, TikTok, LinkedIn, X, or YouTube. Do NOT use for writing the caption itself - use social-caption-writer instead. Do NOT use for clustering SEO search keywords by topic or intent - use keyword-cluster-builder instead.
+metadata:
+  title: "Hashtag Strategist"
 ---
 
 # Hashtag Strategist

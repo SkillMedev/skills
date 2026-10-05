@@ -1,6 +1,8 @@
 ---
-name: Mock Stub Designer
+name: mock-stub-designer
 description: Designs the minimal set of test doubles for a unit or integration test and decides, per dependency, whether to stub, fake, spy, mock, or exercise the real thing. Use when someone asks "should I mock this", "how do I test code that calls Stripe or S3 or the clock", "why do our tests pass while production is broken", or when a test touches an HTTP API, payment or email/SMS SDK, database, filesystem, system clock, or randomness. Do NOT use for fabricating valid domain fixture data (a User with defaults, an Order with line items) - use test-data-builder instead; for driving a red-green implementation loop, use tdd-expert.
+metadata:
+  title: "Mock Stub Designer"
 ---
 # Mock Stub Designer
 

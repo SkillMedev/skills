@@ -1,6 +1,8 @@
 ---
-name: SEO Optimizer
+name: seo-optimizer
 description: Audits and rewrites a page for organic search - title and meta lengths, heading hierarchy, intent match, internal links, schema markup, and Core Web Vitals - and returns a prioritized fix list. Use when someone asks "why isn't this page ranking", "audit my page for SEO", "rewrite my title and meta description", "does this need schema markup", or before publishing a page that must earn organic traffic. Do NOT use for grouping keywords into topical clusters across a site - use keyword-cluster-builder instead; do NOT use for planning a site-wide internal-link architecture - use internal-linking-mapper instead; do NOT use for restructuring content into AI-answer-ready blocks - use aeo-answer-blockifier instead; do NOT use for deep page-speed engineering - use web-performance instead.
+metadata:
+  title: "SEO Optimizer"
 ---
 
 # SEO Optimizer

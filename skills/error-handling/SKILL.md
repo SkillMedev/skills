@@ -1,6 +1,8 @@
 ---
-name: Error Handling
+name: error-handling
 description: Designs typed, observable, recoverable error handling - an explicit taxonomy of retryable vs terminal failures, Result types at boundaries, single-point logging, and retry policies with real backoff numbers. Use when someone asks "should I retry this error", "how do I structure error types", "why are my logs full of duplicate stack traces", "where do I put the try/catch", or is designing failure paths for an API, job, or client. Do NOT use for building the circuit breaker component itself - use circuit-breaker-builder instead; do NOT use for handling 429s against third-party APIs - use rate-limit-handler instead; do NOT use for writing user-facing error copy - use error-message-writer instead.
+metadata:
+  title: "Error Handling"
 ---
 
 # Error Handling

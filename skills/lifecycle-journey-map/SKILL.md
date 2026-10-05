@@ -1,6 +1,8 @@
 ---
-name: Lifecycle Journey Map
+name: lifecycle-journey-map
 description: Builds a customer lifecycle journey map with behavioral entry/exit criteria per stage, one goal and one signal per stage, message briefs, and dead-zone flags. Use when someone asks "map our customer lifecycle", "where are the gaps in our lifecycle emails", "what should we send at each stage", or is aligning a team on lifecycle messaging strategy. Do NOT use to write the actual email sequence - use email-drip-builder for onboarding drips, win-back-campaign for dormant users, or push-notification-copy for push messages; this skill produces the map those campaigns are built on.
+metadata:
+  title: "Lifecycle Journey Map"
 ---
 
 # Lifecycle Journey Map

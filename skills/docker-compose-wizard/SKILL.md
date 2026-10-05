@@ -1,6 +1,8 @@
 ---
-name: Docker Compose Wizard
+name: docker-compose-wizard
 description: Produces production-minded docker-compose configurations - pinned images, healthchecks with real intervals, health-gated startup ordering, named volumes, explicit networks, and env-file secrets - plus the matching .env.example. Use when someone asks "write a compose file for this stack", "why does my app start before the database is ready", "how do I add a healthcheck", "my compose setup works on my machine but not in CI", or is reviewing a docker-compose.yml before it ships. Do NOT use for orchestrating across multiple hosts or cluster workloads - use kubernetes-basics instead; for provisioning the underlying cloud infrastructure - use terraform-expert instead; for CI pipelines that build and push the images - use github-actions instead; for auditing how secrets are stored and rotated - use secrets-hygiene instead.
+metadata:
+  title: "Docker Compose Wizard"
 ---
 
 # Docker Compose Wizard

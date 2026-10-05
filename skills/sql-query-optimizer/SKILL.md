@@ -1,6 +1,8 @@
 ---
-name: SQL Query Optimizer
+name: sql-query-optimizer
 description: Diagnoses slow SQL from the execution plan, names the cost driver, and delivers the rewritten query plus index DDL with the expected plan change and write-side cost stated. The general entry point for slow-query work that routes deep cases to specialist skills. Use when someone asks "why is this query slow", "can you optimize this SQL", "what index do I need", "this endpoint got slow and it's the database", or pastes an EXPLAIN output. Do NOT use for deep index strategy across a whole schema - use index-advisor instead; for pure query-shape rewrites when indexes are already right - use query-rewriter instead; for ORM-driven repeated-query patterns - use n-plus-one-hunter instead; for line-by-line EXPLAIN interpretation training - use explain-plan-reader instead; for table partitioning decisions - use partition-planner instead.
+metadata:
+  title: "SQL Query Optimizer"
 ---
 
 # SQL Query Optimizer

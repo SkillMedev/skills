@@ -1,6 +1,8 @@
 ---
-name: UX Writing Audit
+name: ux-writing-audit
 description: Audits an existing corpus of product copy - buttons, labels, errors, empty states, toasts, tooltips - against clarity, consistency, voice, and actionability heuristics, and delivers a scored findings table with rewrites plus a reusable glossary. Use when someone asks "audit our product copy", "why does our UI text feel inconsistent", "review these error messages", "is it log in or sign in", or before a redesign or localization push. Do NOT use for writing new error messages from scratch - use error-message-writer instead; for first-run and activation flows, use onboarding-copy.
+metadata:
+  title: "UX Writing Audit"
 ---
 
 # UX Writing Audit

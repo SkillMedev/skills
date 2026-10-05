@@ -1,6 +1,8 @@
 ---
-name: Weather & Climate Data
+name: weather-climate
 description: Use when a task needs real weather data pulled live - "what's the forecast for X", "current temperature/wind here", "historical weather for this date range", "air quality / AQI right now", or "active US weather alerts" - and you should call a free keyless API instead of deliberating. Open-Meteo is the default (global forecast, history, air quality, no key); api.weather.gov covers official US alerts. Do NOT use for turning place names into coordinates, country facts, or postal codes - use geo-places instead; do NOT use for FX or crypto prices - use finance-fx instead; if the request is a vague "I need live data", route through public-data-api-picker.
+metadata:
+  title: "Weather & Climate Data"
 ---
 
 # Weather & Climate Data

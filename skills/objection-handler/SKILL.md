@@ -1,6 +1,8 @@
 ---
-name: Objection Handler
+name: objection-handler
 description: Diagnoses what is actually behind a B2B sales objection - price, timing, authority, need, competitor, or status quo - and supplies a calibrated, non-pushy response for each with reframe patterns and exact language. Use when someone asks "they said it's too expensive, what do I say", "how do I handle 'not right now'", "the buyer says they're fine with their current tool", or a rep needs a response framework mid-deal. Do NOT use for gym or local-fitness lead objections and speed-to-lead cadence - use objection-handling-and-speed-to-lead instead; for writing a full call script, use closer-sales-script.
+metadata:
+  title: "Objection Handler"
 ---
 
 # Objection Handler

@@ -1,6 +1,8 @@
 ---
-name: JD Bias Scrubber
+name: jd-bias-scrubber
 description: Audits a job description for exclusionary, gendered, age-coded, ableist, and pedigree-gatekeeping language and returns a findings table with neutral rewrites and severity. Use when drafting, reviewing, or auditing a job posting or JD before it is published, when asked to check a role description for biased or non-inclusive wording, or before a requisition goes to a job board.
+metadata:
+  title: "JD Bias Scrubber"
 ---
 # JD Bias Scrubber
 

@@ -1,6 +1,8 @@
 ---
-name: Error Message Writer
+name: error-message-writer
 description: Rewrites error messages to be specific, actionable, and blame-free - what happened, why it helps to know, and what to do next - with tone calibrated to severity and developer-facing detail kept separate from the user-facing text. Use when someone asks "rewrite this error message", "our app just says something went wrong", "make this validation message less hostile", or is auditing error states before launch. Do NOT use for reviewing all in-product copy beyond errors - use ux-writing-audit instead; for the copy users see during first-run setup, use onboarding-copy.
+metadata:
+  title: "Error Message Writer"
 ---
 
 # Error Message Writer

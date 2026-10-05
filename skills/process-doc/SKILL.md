@@ -1,6 +1,8 @@
 ---
-name: Process Documentation
+name: process-doc
 description: Documents recurring processes as step-by-step SOPs with decision points, edge cases, and a named owner, so anyone can run the process correctly without asking. Use when someone asks "write an SOP for this", "document our onboarding process", "this only lives in one person's head", or wants to delegate a recurring task safely. Do NOT use for incident-response or on-call operational runbooks - use runbook-writer instead; for customer-facing product documentation, use help-documentation.
+metadata:
+  title: "Process Documentation"
 ---
 
 # Process Documentation

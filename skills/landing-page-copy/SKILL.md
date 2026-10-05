@@ -1,6 +1,8 @@
 ---
-name: Landing Page Copy
+name: landing-page-copy
 description: Write landing-page copy section by section - hero, social proof, features-as-benefits, objections, CTA - leading with one promise and proving it down the page. Use when someone asks "write my landing page", "improve my hero headline", "what should the homepage say", "turn these features into benefits", or is shipping a new page for a launch or campaign. Do NOT use for testing and optimizing an existing page's conversion rate - use landing-page-cro instead; for the one-line claim itself use positioning-statement; for the full message ladder use messaging-hierarchy.
+metadata:
+  title: "Landing Page Copy"
 ---
 
 # Landing Page Copy

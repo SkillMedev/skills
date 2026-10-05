@@ -1,6 +1,8 @@
 ---
-name: Hiring Scorecard Builder
+name: hiring-scorecard
 description: Builds structured interview scorecards tied to role-specific signals to reduce bias and improve calibration. Use when opening a new role or auditing an existing interview loop for consistency.
+metadata:
+  title: "Hiring Scorecard Builder"
 ---
 
 # Hiring Scorecard Builder

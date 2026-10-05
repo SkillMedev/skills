@@ -1,6 +1,8 @@
 ---
-name: Investment Basics
+name: investment-basics
 description: Teaches personal investing fundamentals - readiness checks, asset allocation, diversification with low-cost index funds, fee awareness, tax-advantaged account ordering, and rebalancing - and produces a written starter plan. Use when someone asks "how do I start investing", "what should my stock/bond split be", "are index funds enough", or "should I invest or pay off debt first". General financial education, not personalized investment advice. Do NOT use for a full multi-goal financial plan with budgeting and insurance - use financial-planner instead; do NOT use for modeling when someone can retire - use retirement-projection instead; for building the cash cushion first, see emergency-fund-planner.
+metadata:
+  title: "Investment Basics"
 ---
 
 # Investment Basics

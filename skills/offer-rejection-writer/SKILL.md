@@ -1,6 +1,8 @@
 ---
-name: Offer and Rejection Writer
+name: offer-rejection-writer
 description: Drafts unambiguous candidate offer letters and respectful, legally-careful candidate rejection notes for a human to review and send. Use when you are asked to write, draft, or word an offer letter, an offer email, or a candidate rejection/decline note - or to soften, tighten, or de-risk an existing draft of one. Do NOT use when writing performance feedback for a current employee - use feedback-writer instead.
+metadata:
+  title: "Offer and Rejection Writer"
 ---
 Draft external candidate offer and rejection communications that are clear, warm, and legally careful; you draft, a human recruiter or hiring manager reviews and sends.
 

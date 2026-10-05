@@ -1,6 +1,8 @@
 ---
-name: Competitive Intelligence
+name: competitive-intelligence
 description: Map competitors across positioning, product, pricing, proof, and weaknesses, then turn the research into sales-ready battlecards with an update cadence. Use when someone asks "what are our competitors doing", "build a battlecard", "how do we compare to X", "why are we losing deals to X", or before a pricing or positioning decision. Do NOT use for designing long-term defensibility strategy - use competitive-moat instead; for a public comparison landing page use comparison-page-builder; for rep-facing objection scripts beyond the battlecard use objection-handler.
+metadata:
+  title: "Competitive Intelligence"
 ---
 
 # Competitive Intelligence

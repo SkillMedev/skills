@@ -1,6 +1,8 @@
 ---
-name: Funnel Analysis
+name: funnel-analysis
 description: Builds conversion funnels from raw event data with drop-off attribution, segment comparison, and significance testing, and delivers a filled funnel table with a diagnosed bottleneck and next action. Use when someone asks "where are users dropping off", "why did checkout conversion fall this week", "build a signup-to-activation funnel", or "is mobile converting worse than desktop". Do NOT use for rewriting page copy or layout to lift a known weak step - use landing-page-cro instead; for decomposing active-user growth into new, retained, resurrected, and churned - use growth-accounting instead; for choosing which events to instrument and which product metrics to track - use product-analytics instead; for designing and reading a controlled experiment - use ab-test-analyzer instead.
+metadata:
+  title: "Funnel Analysis"
 ---
 
 # Funnel Analysis

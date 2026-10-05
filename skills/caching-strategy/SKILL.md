@@ -1,6 +1,8 @@
 ---
-name: Caching Strategy
+name: caching-strategy
 description: Designs multi-layer caching - CDN, application, and database - choosing the pattern, TTL, and invalidation plan per data type, and produces a cache-decision table plus stampede protection. Use when someone asks "should I cache this", "Redis or CDN for this endpoint", "how do I invalidate this cache", "why is my cache hit rate so low", or is bolting Redis onto a slow service. Do NOT use for sizing or tuning database connection pools - use connection-pool-tuner instead - and do NOT use for frontend bundle, image, or Core Web Vitals work - use web-performance instead.
+metadata:
+  title: "Caching Strategy"
 ---
 
 # Caching Strategy

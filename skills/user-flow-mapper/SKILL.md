@@ -1,6 +1,8 @@
 ---
-name: User Flow Mapper
+name: user-flow-mapper
 description: Maps a feature's complete user flow in text notation - happy path first, then decision branches, error and empty states with recovery, edge cases, and re-engagement - and flags the top risks before design or build. Use when someone asks "map the user flow for onboarding", "what error states are we missing", "diagram the signup flow", or is scoping any multi-step feature. Do NOT use for screen-level interaction and component behavior specs - use prototype-spec instead; for cross-channel customer stages spanning weeks or months, use lifecycle-journey-map.
+metadata:
+  title: "User Flow Mapper"
 ---
 
 # User Flow Mapper

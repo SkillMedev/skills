@@ -1,6 +1,8 @@
 ---
-name: Show Notes Writer
+name: show-notes-writer
 description: Produces complete podcast show notes from a transcript or episode outline - a standalone summary block, timestamped chapters that name what happens, screenshot-worthy key takeaways, guest bio, curated links, and keyword placement for search. Use when someone says "write show notes for this episode", "turn this transcript into an episode description", "add chapters and timestamps", or "make this episode findable on Google". Do NOT use to fan the episode out into clips, quote cards, and social posts - use content-repurposing instead; do NOT use to write burned-in video captions from the transcript - use captions-from-transcript instead; do NOT use to pitch the show to other podcasts - use podcast-pitch instead.
+metadata:
+  title: "Show Notes Writer"
 ---
 
 # Show Notes Writer

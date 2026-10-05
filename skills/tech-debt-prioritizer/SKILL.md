@@ -1,6 +1,8 @@
 ---
-name: Tech Debt Prioritizer
+name: tech-debt-prioritizer
 description: Inventories tech debt and ranks it economically - scoring each item 1-3 on cost of delay (the interest rate) and leverage (the principal unblocked), multiplying into a priority index, and packaging the winners into a leadership proposal framed on business impact. Use when someone asks "which tech debt should we tackle first", "help me build a case for refactoring to leadership", "our backlog of debt is huge, where do we start", or is preparing quarterly planning. Do NOT use for finding and removing unused code - use dead-code-eliminator instead - for auditing third-party dependency risk - use dependency-risk-audit - or for planning the sprint the work lands in - use sprint-planning instead.
+metadata:
+  title: "Tech Debt Prioritizer"
 ---
 
 # Tech Debt Prioritizer

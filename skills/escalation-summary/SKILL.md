@@ -1,6 +1,8 @@
 ---
-name: Escalation Summary
+name: escalation-summary
 description: Writes a tight escalation summary to engineering or management with a one-line headline, quantified customer impact, repro steps, prior attempts, and a single clear ask. Use when someone says "I need to escalate this ticket", "write this up for engineering", "this bug needs eng eyes", or a support issue must leave the queue for specialist action. Do NOT use for replying to the customer - use support-ticket-reply instead; do NOT use for assigning incident severity and coordinating an active outage - use sev-triage instead; do NOT use for the after-the-fact incident writeup - use postmortem-writer instead.
+metadata:
+  title: "Escalation Summary"
 ---
 
 # Escalation Summary

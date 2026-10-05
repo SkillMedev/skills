@@ -1,6 +1,8 @@
 ---
-name: YouTube Script Writer
+name: youtube-script-writer
 description: Writes retention-engineered long-form YouTube scripts on a hook/body/payoff architecture - a first-30-seconds hook that survives the retention cliff, a beat-sheet body with mini-hooks and bridges, timed pattern interrupts, and a payoff that over-delivers - with B-roll and editing cues marked inline. Use when someone says "script my next video", "my retention graph dies at the start", "tighten this draft", or "outline a video on X". Do NOT use for the 3-second opener of TikTok, Reels, or Shorts - use video-hook-writer instead; do NOT use for spoken voiceover synced to on-screen tutorial actions - use narration-script instead; do NOT use for a sales demo built on a buyer's discovery notes - use demo-script instead; do NOT use to design the thumbnail and title - use thumbnail-concept instead.
+metadata:
+  title: "YouTube Script Writer"
 ---
 
 # YouTube Script Writer

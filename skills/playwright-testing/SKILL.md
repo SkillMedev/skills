@@ -1,6 +1,8 @@
 ---
-name: Playwright Testing
+name: playwright-testing
 description: Writes and reviews end-to-end Playwright tests that survive UI refactors and never fail on timing - resilient locators, web-first assertions, isolated state, and a flake policy with quarantine rules. Use when someone asks "write a Playwright test for this flow", "why is this e2e test flaky", "how do I wait for this element", "what selector should I use", or is setting up a Playwright suite and CI config. Do NOT use for consumer/provider contract tests of API boundaries - use contract-test-writer instead; for turning product requirements into an e2e scenario inventory before any code - use e2e-scenario-author instead; for systematically diagnosing an already-flaky suite - use flaky-test-detangler instead; for designing reusable test fixtures and factories - use test-data-builder instead.
+metadata:
+  title: "Playwright Testing"
 ---
 
 # Playwright Testing

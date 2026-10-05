@@ -1,6 +1,8 @@
 ---
-name: Test Data Builder
+name: test-data-builder
 description: Builds realistic domain fixtures, factories, and edge-case datasets with the builder pattern and valid defaults, so each test owns exactly the data it asserts on. Use when someone asks "how should I set up test data", "my fixtures broke half the suite", "make a factory for this model", "why is this test flaky only in CI", or a test needs domain objects, seed data, or boundary inputs. Do NOT use when a test needs to fake a network call, database client, clock, or third-party SDK - use mock-stub-designer instead; do NOT use for designing the assertions or test cases themselves - use tdd-expert instead.
+metadata:
+  title: "Test Data Builder"
 ---
 
 # Test Data Builder

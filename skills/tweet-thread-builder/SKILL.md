@@ -1,6 +1,8 @@
 ---
-name: Tweet Thread Builder
+name: tweet-thread-builder
 description: Turn one idea into a tight tweet thread - a hook that earns the click, one beat per post, and momentum to a single CTA. Use when someone asks "turn this into a thread", "write a thread about my launch", "why did my thread flop", or "give me hook options for this". Do NOT use for LinkedIn-format posts - use linkedin-post-writer instead. Do NOT use for adapting one finished piece across many platforms - use content-repurposing instead.
+metadata:
+  title: "Tweet Thread Builder"
 ---
 
 # Tweet Thread Builder

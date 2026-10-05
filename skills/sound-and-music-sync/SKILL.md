@@ -1,6 +1,8 @@
 ---
-name: Sound and Music Sync
-description: Score a video like an editor: beat-match cuts to the music, land SFX on transitions, pace the voiceover so it breathes, source royalty-free tracks safely, and duck the music so the VO sits clearly on top. Use when adding music, sound effects, or voiceover to a video, when asked to "sync cuts to the beat", "the music is drowning out the voice", "add whooshes on the transitions", "where do I get royalty-free music", "mix the audio", or "the VO feels rushed". Do NOT use when wiring audio into the Remotion timeline mechanically (Audio/staticFile/render) - that is remotion-compose and remotion-render; do NOT use when choosing the shot order or scene beats - use video-storyboard instead; do NOT use when tuning the visual look (color grade, lighting, contrast) - use motion-color-and-light instead.
+name: sound-and-music-sync
+description: "Score a video like an editor: beat-match cuts to the music, land SFX on transitions, pace the voiceover so it breathes, source royalty-free tracks safely, and duck the music so the VO sits clearly on top. Use when adding music, sound effects, or voiceover to a video, when asked to \"sync cuts to the beat\", \"the music is drowning out the voice\", \"add whooshes on the transitions\", \"where do I get royalty-free music\", \"mix the audio\", or \"the VO feels rushed\". Do NOT use when wiring audio into the Remotion timeline mechanically (Audio/staticFile/render) - that is remotion-compose and remotion-render; do NOT use when choosing the shot order or scene beats - use video-storyboard instead; do NOT use when tuning the visual look (color grade, lighting, contrast) - use motion-color-and-light instead."
+metadata:
+  title: "Sound and Music Sync"
 ---
 
 # Sound and Music Sync

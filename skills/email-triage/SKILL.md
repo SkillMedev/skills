@@ -1,6 +1,8 @@
 ---
-name: Email Triage
+name: email-triage
 description: Triages a batch of emails into delete, do-now, delegate, or defer decisions using the 2-minute rule, returning drafted replies, delegation forwards, and dated tasks. Use when someone says "help me get through my inbox", "triage these emails", "I have 200 unread messages, what needs a reply", or "turn this pile of email into a to-do list". Do NOT use for designing the ongoing system that keeps an inbox at zero - filters, folder setup, unsubscribe habits, daily routines - use inbox-zero instead.
+metadata:
+  title: "Email Triage"
 ---
 
 # Email Triage

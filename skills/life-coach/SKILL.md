@@ -1,6 +1,8 @@
 ---
-name: Life Coach
-description: Runs structured coaching sessions using values clarification and the GROW model, ending every session with one committed action, a deadline, and an if-then plan for the likely obstacle. Use when someone says "I feel stuck in my life", "help me figure out what I want", "hold me accountable to my goals", or "coach me through this decision". Do NOT use for building a stress toolkit - use stress-management instead - or a journaling practice - use journal-framework; for a standing goal-tracking system, use goals-accountability. Coaching, not therapy: signs of clinical distress route to a licensed professional.
+name: life-coach
+description: "Runs structured coaching sessions using values clarification and the GROW model, ending every session with one committed action, a deadline, and an if-then plan for the likely obstacle. Use when someone says \"I feel stuck in my life\", \"help me figure out what I want\", \"hold me accountable to my goals\", or \"coach me through this decision\". Do NOT use for building a stress toolkit - use stress-management instead - or a journaling practice - use journal-framework; for a standing goal-tracking system, use goals-accountability. Coaching, not therapy: signs of clinical distress route to a licensed professional."
+metadata:
+  title: "Life Coach"
 ---
 
 # Life Coach

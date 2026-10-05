@@ -1,6 +1,8 @@
 ---
-name: Tableau Best Practices
+name: tableau-best-practices
 description: Builds Tableau dashboards that compute correct numbers at the right grain and stay fast - LOD expressions, filter-order pipeline, extract strategy, and mark-count control. Use when someone asks "why is my Tableau number different from SQL", "FIXED vs INCLUDE vs EXCLUDE", "my dashboard takes 30 seconds to load", "table calc or LOD", or is designing a workbook others will consume. Do NOT use for Power BI or DAX measures - use power-bi-dax instead; for narrative presentation of findings use data-story; for KPI selection and review cadence use kpi-scoreboard-and-cadence; for static table layout and formatting use data-table-design.
+metadata:
+  title: "Tableau Best Practices"
 ---
 
 # Tableau Best Practices

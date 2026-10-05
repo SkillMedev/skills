@@ -1,6 +1,8 @@
 ---
-name: Rate Limit Handler
+name: rate-limit-handler
 description: Adds retry-with-backoff, Retry-After handling, and client-side throttling so a caller stays under an upstream API's rate limits instead of hammering it. Use when you call a rate-limited or quota-enforced third-party API, see 429 or 503 responses or Retry-After headers, or have a worker fleet that needs to share one upstream's quota. Do NOT use to fail fast when a dependency is down - use circuit-breaker-builder instead; do NOT use to scaffold the HTTP client itself - use api-client-generator instead.
+metadata:
+  title: "Rate Limit Handler"
 ---
 # Rate Limit Handler
 

@@ -1,6 +1,8 @@
 ---
-name: Model Evaluation Report
+name: model-evaluation-report
 description: Produces a rigorous, honest evaluation report for an ML model - real baselines, business-matched metrics with confidence intervals, slice-level error analysis, calibration checks, and a go/no-go recommendation. Use when someone asks "is this model good enough to ship", "write up the eval for this model", "did we actually beat the old model", or before any model promotion, stakeholder demo, or retraining decision. Do NOT use for evaluating LLM or prompt outputs - use llm-evaluation instead; for analyzing randomized product experiments use ab-test-analyzer; for documenting a shipped model for consumers use model-card-writer.
+metadata:
+  title: "Model Evaluation Report"
 ---
 
 # Model Evaluation Report

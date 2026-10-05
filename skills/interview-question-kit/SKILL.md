@@ -1,6 +1,8 @@
 ---
-name: Interview Question Kit
+name: interview-question-kit
 description: Generates a structured candidate-interview question set where every behavioral (STAR) and role-specific item maps to a defined competency and ships with strong/borderline/red-flag answer anchors plus delivery notes. Use when someone asks "write interview questions for this role", "build an interview loop", "turn this rubric into questions per interviewer", or is planning a hiring interview, building a question bank, or standardizing how a panel assesses candidates. Do NOT use to consolidate completed scorecards into a hire decision - use interview-debrief-synthesizer instead; do NOT use for user-research or customer discovery interviews - use interview-guide-builder instead; do NOT use to build the competency rubric or scorecard itself - use hiring-scorecard or screening-rubric-builder instead.
+metadata:
+  title: "Interview Question Kit"
 ---
 
 # Interview Question Kit

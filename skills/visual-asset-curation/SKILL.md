@@ -1,6 +1,8 @@
 ---
-name: Visual Asset Curation
+name: visual-asset-curation
 description: Art-direct a set of stock images so they look intentional and on-brand instead of like stock, and choose and sequence the final picks. Use when you have candidate images and need to decide which ones, in what order, and why a set "looks cheap" or "like stock", or when someone says "these don't feel cohesive", "make this look less like stock photos", "pick the best images for this page", or "why does this look generic". It covers spotting the stock-cliche tells, defining a visual system (palette, light, tone, angle), curating a set to consistency, choosing compositions that hold text overlays, and a color-grade pass to unify a mismatched set. Do NOT use to find or search for images -> use stock-photo-finder; do NOT use to check licensing or releases -> use image-license-rights; do NOT use to fetch images via an API -> use stock-photo-api.
+metadata:
+  title: "Visual Asset Curation"
 ---
 
 # Visual Asset Curation

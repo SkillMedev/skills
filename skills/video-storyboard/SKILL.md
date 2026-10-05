@@ -1,6 +1,8 @@
 ---
-name: Video Storyboard
+name: video-storyboard
 description: Plan a product demo, feature announcement, or launch video as a beat sheet and shot list BEFORE animating - hook in the first 3s, problem, reveal, proof, CTA - with target duration and pacing per scene type, output as a JSON scene plan that remotion-compose consumes directly. Use when someone says "storyboard my demo", "plan the video", "what scenes do I need", "plan my launch video", "map out the demo", or "break this feature into scenes" before any code. Do NOT use when the request is the animation mechanics - writing the .tsx, using interpolate/spring, registering the Composition - that is remotion-compose; do NOT use for the easing and choreography craft of a single scene - use motion-design-principles instead.
+metadata:
+  title: "Video Storyboard"
 ---
 
 # Video Storyboard

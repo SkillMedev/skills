@@ -1,6 +1,8 @@
 ---
-name: Lesson Plan Builder
+name: lesson-plan-builder
 description: Builds a complete single-lesson plan - measurable objective, timed four-part arc (hook, direct instruction, guided practice, closure), a formative check with a proceed/re-teach rule, and differentiation notes - clear enough that a substitute could run it. Use when someone asks "write a lesson plan for...", "plan a 50-minute class on photosynthesis", "how should I structure tomorrow's lesson", or "turn this standard into a lesson". Do NOT use for sequencing a multi-week unit or full course - use curriculum-mapper instead; for deep per-learner adaptation of an existing lesson, use differentiated-instruction; for writing the quiz itself, use quiz-generator.
+metadata:
+  title: "Lesson Plan Builder"
 ---
 
 # Lesson Plan Builder

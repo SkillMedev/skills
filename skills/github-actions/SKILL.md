@@ -1,6 +1,8 @@
 ---
-name: GitHub Actions
+name: github-actions
 description: Designs and hardens GitHub Actions CI/CD - pipelines that hit a sub-10-minute PR feedback budget through caching and parallelism, with least-privilege security and safe deploy gates. Use when someone asks "why is my CI so slow", "how do I cache node_modules properly", "set up a deploy workflow", "is pull_request_target safe here", or wants a workflow written or reviewed. Do NOT use for provisioning the cloud infrastructure the pipeline deploys to - use terraform-expert instead; do NOT use for Vercel-specific deploy flows - use vercel-deploy-pipeline instead; for secret storage policy beyond CI, use secrets-hygiene.
+metadata:
+  title: "GitHub Actions"
 ---
 
 # GitHub Actions

@@ -1,6 +1,8 @@
 ---
-name: Meeting Agenda Builder
+name: meeting-agenda
 description: Builds focused, time-boxed meeting agendas where every item has an owner, a timebox, and a named outcome, status updates are pushed to async, and the agenda ships 24 hours before the meeting. Use when someone asks "write an agenda for my planning meeting", "this meeting keeps running over", "how do I make this decision meeting productive", or "our recurring sync feels aimless". Do NOT use for recurring manager-report one-on-ones - use 1on1-agenda instead - or for turning meeting notes into action items - use meeting-notes-to-actions.
+metadata:
+  title: "Meeting Agenda Builder"
 ---
 
 # Meeting Agenda Builder

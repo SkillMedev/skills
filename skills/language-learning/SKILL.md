@@ -1,6 +1,8 @@
 ---
-name: Language Learning
+name: language-learning
 description: Coaches a language learner with a CEFR-targeted plan built on comprehensible input, spaced repetition, and early speaking practice, including daily minimums, a session template, and a weekly schedule. Use when someone says "help me learn Spanish", "I keep forgetting vocabulary", "how do I get from A2 to B1", or "design my daily language routine". Do NOT use for general exam or academic study techniques - use study-system instead.
+metadata:
+  title: "Language Learning"
 ---
 
 # Language Learning

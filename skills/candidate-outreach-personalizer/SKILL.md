@@ -1,6 +1,8 @@
 ---
-name: Candidate Outreach Personalizer
+name: candidate-outreach-personalizer
 description: Drafts short, honest recruiting outreach and InMail messages to a passive candidate, anchored on one researched, candidate-published professional fact, for a human recruiter to review and send. Use when someone asks "write an InMail to this engineer", "personalize this sourcing message", "draft outreach from this profile", or is contacting a passive candidate about a specific role. Do NOT use for sales or founder cold email to prospects - use cold-email-craft. Do NOT use for designing the multi-touch cadence, channel mix, and follow-up timing around the message - use outreach-sequence-designer. Do NOT use for writing the job description itself - use job-description-writer.
+metadata:
+  title: "Candidate Outreach Personalizer"
 ---
 
 # Candidate Outreach Personalizer

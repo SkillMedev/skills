@@ -1,6 +1,8 @@
 ---
-name: Vercel AI Gateway
+name: vercel-ai-gateway
 description: Route every LLM call through one unified API on Vercel - plain "provider/model" strings via the AI SDK, automatic provider routing and model fallbacks, observability and per-key cost tracking, and zero data retention. Use when you ask "how do I add an LLM to my Vercel app", "route OpenAI and Anthropic through one API", "add model failover / fallback", "track LLM cost and spend on Vercel", "set a budget per API key", "switch providers without changing code", "AI_GATEWAY_API_KEY", or "stop installing @ai-sdk/openai and @ai-sdk/anthropic separately". Do NOT use for general AI SDK app code (chat UI, tool calling, structured output) - that is the AI SDK itself; do NOT use for deploy config, env wiring, or edge/runtime choice - use vercel-deploy-pipeline, vercel-env-management, and vercel-edge-and-isr instead; do NOT use to rate-limit or block abusive AI traffic - use vercel-firewall-and-botid; and do NOT use for app-level latency/caching tuning of the route - use next-on-vercel-perf.
+metadata:
+  title: "Vercel AI Gateway"
 ---
 
 # Vercel AI Gateway

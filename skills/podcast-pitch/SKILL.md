@@ -1,6 +1,8 @@
 ---
-name: Podcast Pitch
+name: podcast-pitch
 description: Writes cold pitch emails that get a guest booked on podcasts - a specific subject line, an unfakeable personalized opener referencing a real episode, audience-first framing, brief credibility, two or three episode-ready talking angles, and a low-friction CTA, all under 150 words with a follow-up included. Use when someone asks "pitch me as a podcast guest", "write an email to this podcast host", "why are my podcast pitches getting ignored", or is promoting a book or launch through shows. Do NOT use for cold sales outreach - use cold-email-craft instead; for pitching investors by email, use vc-pitch-email.
+metadata:
+  title: "Podcast Pitch"
 ---
 
 # Podcast Pitch

@@ -1,6 +1,8 @@
 ---
-name: Skill Me
+name: skillme
 description: Use the Skill Me catalog from inside any conversation - discover, install, and manage Claude skills through the Skill Me MCP, and load installed skills automatically each session.
+metadata:
+  title: "Skill Me"
 ---
 
 # Skill Me
@@ -39,7 +41,7 @@ automatically in future conversations via `get_active_skills`.
 
 ## Managing
 
-- `list_installed` - show the user what they currently have on their shelf.
+- `list_installed` - show the user what they currently have installed.
 - `uninstall_skill` - remove a skill the user no longer wants.
 - `rate_skill` - when the user gives feedback ("this one's great" / "didn't
   help"), offer to record a 1-5 rating so the catalog stays useful.

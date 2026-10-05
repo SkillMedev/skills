@@ -1,6 +1,8 @@
 ---
-name: Competitive Moat Analysis
+name: competitive-moat
 description: Identifies which of the seven structural moats a business actually has, pressure-tests each claim against funded copycats and incumbent pivots, and delivers a moat scorecard with one moat to invest in deliberately. Use when someone asks "what's our moat", "is our product defensible", "a well-funded competitor just launched - what protects us", "investors keep asking about defensibility", or "which moat should we build first". Do NOT use for tracking what competitors are shipping and saying - use competitive-intelligence instead - or for finding unserved market segments - use white-space-analysis instead.
+metadata:
+  title: "Competitive Moat Analysis"
 ---
 
 # Competitive Moat Analysis

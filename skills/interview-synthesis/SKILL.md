@@ -1,6 +1,8 @@
 ---
-name: Interview Synthesis
+name: interview-synthesis
 description: Turns raw interview notes into themed, evidence-tagged insights via a two-pass affinity-mapping procedure, with frequency and confidence ratings and stakeholder-ready quotes. Use when someone asks "synthesize these interviews", "what themes came out of our research round", "turn these transcripts into findings", or has finished a qualitative round and needs actionable output. Do NOT use for synthesizing published papers or mixed documents - use research-synthesis instead. Do NOT use for building the personas themselves - use user-persona instead. Do NOT use for consolidating hiring-interview scorecards - use interview-debrief-synthesizer instead.
+metadata:
+  title: "Interview Synthesis"
 ---
 
 # Interview Synthesis

@@ -1,6 +1,8 @@
 ---
-name: Monolith Decomposer
+name: monolith-decomposer
 description: Finds and validates one bounded-context seam to extract from a monolith - gated on coupling-graph, co-change, data-ownership, and transaction-boundary evidence - and sequences an incremental strangler-fig extraction plan. Use when someone asks "where should we cut this monolith", "is this module ready to extract as a service", "plan the extraction of billing from the app", or is evaluating whether a candidate seam is clean. Do NOT use for designing the target service architecture, service communication, or greenfield service boundaries - use microservices instead; do NOT use to document the implicit business rules inside the code being moved - use business-rule-extractor instead. This skill decides where to cut and in what order.
+metadata:
+  title: "Monolith Decomposer"
 ---
 # Monolith Decomposer
 

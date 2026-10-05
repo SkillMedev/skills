@@ -1,6 +1,8 @@
 ---
-name: Partnership Strategy
+name: partnership-strategy
 description: Identifies, prioritizes, and structures business partnerships that produce measurable revenue - matching partnership type to goal, setting economics with real rev-share ranges, and enforcing a pilot-before-contract rule. Use when someone asks "should we partner with X", "how do we structure a reseller deal", "what rev share is normal", "our partnerships never produce anything", or "which partners should we prioritize". Do NOT use for choosing between partnerships and other distribution channels - use channel-strategy instead - or for the overall market-entry plan a partnership sits inside - use go-to-market-planner instead.
+metadata:
+  title: "Partnership Strategy"
 ---
 
 # Partnership Strategy

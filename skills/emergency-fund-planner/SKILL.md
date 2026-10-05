@@ -1,6 +1,8 @@
 ---
-name: Emergency Fund Planner
+name: emergency-fund-planner
 description: Sizes an emergency fund from essential expenses and household risk tier, picks the right account, and builds the funding and replenishment schedule. Use when someone asks "how much should I have in savings", "how big should my emergency fund be", "where should I keep my emergency fund", or "should I save or pay off debt first". Do NOT use for sequencing debt payoff itself - use debt-payoff-planner instead; for planned irregular expenses like car registration or gifts, those are sinking funds - use budget-builder; for the full save-vs-invest ordering - use financial-planner.
+metadata:
+  title: "Emergency Fund Planner"
 ---
 
 # Emergency Fund Planner

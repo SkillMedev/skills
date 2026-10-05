@@ -1,6 +1,8 @@
 ---
-name: Mutual Action Plan
+name: mutual-action-plan
 description: Builds a mutual action plan (MAP) with shared milestones, named owners, and buffer-padded dates that drives a qualified deal from verbal intent to signature and go-live. Use when someone asks "build a mutual action plan for this deal", "how do I keep this deal from stalling", "the buyer said yes but nothing is moving", or once a prospect is qualified and has expressed intent to move forward. Do NOT use for preparing the qualification call itself - use discovery-call-prep instead. Do NOT use for scripting the negotiation and close conversation - use closer-sales-script instead.
+metadata:
+  title: "Mutual Action Plan"
 ---
 
 # Mutual Action Plan

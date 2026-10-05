@@ -1,6 +1,8 @@
 ---
-name: Motion Spec
+name: motion-spec
 description: Specifies animation and motion precisely - duration, easing curve, trigger, and intent - for accurate engineer implementation. Use when handing off transitions, micro-interactions, or loading states.
+metadata:
+  title: "Motion Spec"
 ---
 
 # Motion Spec

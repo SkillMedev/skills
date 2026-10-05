@@ -1,6 +1,8 @@
 ---
-name: SQL to Insights
+name: sql-to-insights
 description: Turns SQL query results into a decision-ready business narrative - headline finding, drivers, recommendation - plus the right chart choice for the data shape. Use when someone asks "what does this data actually mean", "summarize these query results for the exec team", "what chart should I use for this", or pastes a result set and wants the so-what for a non-technical audience. Do NOT use to diagnose or speed up the query itself - use sql-query-optimizer instead; do NOT use to build a full multi-part narrative presentation around an analysis - use data-story instead; do NOT use for open-ended exploration of an unfamiliar dataset - use eda-playbook instead.
+metadata:
+  title: "SQL to Insights"
 ---
 
 # SQL to Insights

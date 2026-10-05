@@ -1,6 +1,8 @@
 ---
-name: Journal Framework
+name: journal-framework
 description: Designs a sustainable daily journaling practice - morning pages, gratitude, intention setting, evening reflection, and weekly review - matched to the user's goal, with copy-paste templates and a rotating prompt library. Use when someone asks "help me start journaling", "give me journal prompts", "I keep abandoning my journal", or "build me a morning pages routine". Do NOT use for building a general habit or streak system - use habit-builder instead; do NOT use for organizing notes and knowledge into a retrieval system - use second-brain instead; for structured end-of-week planning reviews, see weekly-review.
+metadata:
+  title: "Journal Framework"
 ---
 
 # Journal Framework

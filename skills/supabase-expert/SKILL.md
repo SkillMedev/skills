@@ -1,6 +1,8 @@
 ---
-name: Supabase Expert
+name: supabase-expert
 description: Builds secure Supabase apps - Row Level Security policies as the authorization layer, schema design against auth.users, Edge Functions for service-role work, realtime subscriptions, and versioned migrations. Use when someone asks "set up RLS for my tables", "is my Supabase app secure", "anyone can read my table with the anon key", "when do I need an Edge Function", or "why is my realtime subscription not receiving rows". Do NOT use for general Postgres schema design without Supabase - use database-schema instead; for tuning slow queries, use sql-query-optimizer; for Stripe billing inside a Supabase app, use stripe-integration.
+metadata:
+  title: "Supabase Expert"
 ---
 
 # Supabase Expert

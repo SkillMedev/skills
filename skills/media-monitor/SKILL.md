@@ -1,6 +1,8 @@
 ---
-name: Media Monitor
+name: media-monitor
 description: Turns raw brand mentions across news and social into an actionable comms picture - precise monitoring queries, grounded sentiment classification, numeric alert thresholds for narrative shifts, severity triage, and a daily digest a comms team can act on within minutes. Use when someone asks "set up brand monitoring", "are people talking about us and how", "is this negative story spreading", "design our mention alert thresholds", or "write our daily media digest". Do NOT use for spotting broader market or cultural trends beyond a tracked brand - use trend-analysis instead - or for gathering intelligence on competitors' moves - use competitive-intelligence instead.
+metadata:
+  title: "Media Monitor"
 ---
 
 # Media Monitor

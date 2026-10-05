@@ -1,6 +1,8 @@
 ---
-name: Responsive Spec
+name: responsive-spec
 description: Specifies responsive behavior across breakpoints - layout reflow, content priority, touch targets, and fluid-versus-stepped scaling rules - precisely enough for engineers to implement directly. Use when someone asks "how should this work on mobile", "spec the breakpoints", "write the responsive rules for this page", or is adapting a single-viewport design for multi-device use. Do NOT use for static measurements inside one frame - use redline-annotation instead; for the overall handoff package with flows and edge cases, use design-handoff-doc.
+metadata:
+  title: "Responsive Spec"
 ---
 
 # Responsive Spec

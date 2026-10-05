@@ -1,6 +1,8 @@
 ---
-name: Stock Photo APIs
+name: stock-photo-api
 description: Integrates the Unsplash, Pexels, and Pixabay APIs in code - auth, search endpoints, rate limits, attribution, hotlinking versus caching rules, and the compliance obligations that get apps deactivated when skipped. Use when someone says "integrate the Unsplash API", "pull images from Pexels in my app", "build an image picker on a stock photo API", "how do I trigger the Unsplash download endpoint", or is wiring stock imagery into a CMS, blog pipeline, or placeholder service. Do NOT use to choose a source by hand or write a search brief - use stock-photo-finder instead; do NOT use to decide whether a license permits a use or a release is needed - use image-license-rights instead; do NOT use to art-direct results - use visual-asset-curation instead.
+metadata:
+  title: "Stock Photo APIs"
 ---
 # Stock Photo APIs
 

@@ -1,6 +1,8 @@
 ---
-name: Design QA Checklist
+name: design-qa-checklist
 description: Runs an ordered design QA pass over an implemented UI - layout, type, color, states, motion, content - against the design spec, with concrete tolerances and a filed defect list. Use when someone asks "QA this build against the designs", "does the implementation match Figma", "is this ready for design sign-off", or before releasing a UI change. Do NOT use for critiquing the design itself - use design-critique instead; for a full WCAG conformance audit, use accessibility-audit; for writing the spec the build is checked against, use design-handoff-doc.
+metadata:
+  title: "Design QA Checklist"
 ---
 
 # Design QA Checklist

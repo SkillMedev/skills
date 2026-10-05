@@ -1,6 +1,8 @@
 ---
-name: Print Layout
+name: print-layout
 description: Prepares a design for commercial print - document setup with correct bleed and safe zones, CMYK color management, print typography, image resolution, and a full prepress checklist through PDF/X export and proofing. Use when someone asks "get this file print-ready", "what bleed do I need", "why did my printer reject this PDF", "will these colors print right", or is sending business cards, brochures, posters, or packaging to a print shop. Do NOT use for on-screen design deliverables or developer handoff - use design-handoff-doc instead.
+metadata:
+  title: "Print Layout"
 ---
 
 # Print Layout

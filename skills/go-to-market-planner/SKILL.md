@@ -1,6 +1,8 @@
 ---
-name: Go-To-Market Planner
+name: go-to-market-planner
 description: Build a sequenced go-to-market plan - beachhead ICP, positioning, one or two channels, and dated milestones - instead of a scattershot launch. Use when someone asks "how do I take this to market", "what's my GTM strategy", "which channel should I start with", "who should I sell to first", or is planning a new product or a new market entry. Do NOT use for the dated launch-week timeline and asset checklist - use launch-plan-sequencer instead; for Product Hunt copy and day-of tactics use product-hunt-launch; for deep persona research use icp-persona-builder.
+metadata:
+  title: "Go-To-Market Planner"
 ---
 
 # Go-To-Market Planner

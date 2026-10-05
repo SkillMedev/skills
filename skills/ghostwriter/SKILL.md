@@ -1,6 +1,8 @@
 ---
-name: Ghostwriter
+name: ghostwriter
 description: Analyzes an author's writing samples, builds an explicit quantified voice profile, and produces new content indistinguishable from the author's own hand. Use when someone asks "write this in my voice", "ghostwrite my newsletter", "make this sound like me", "draft the next chapter the way I would write it", or supplies writing samples plus a brief for a new piece. Do NOT use for drafting a persuasive opinion piece to pitch to a publication - use op-ed-writer instead. Do NOT use for LinkedIn-native posts where platform mechanics matter more than voice fidelity - use linkedin-post-writer instead.
+metadata:
+  title: "Ghostwriter"
 ---
 
 # Ghostwriter

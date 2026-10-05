@@ -1,6 +1,8 @@
 ---
-name: Data Table Design
+name: data-table-design
 description: Designs presentation tables that read correctly at a glance - numeric alignment, consistent precision, deliberate sort order, unit-labeled headers, and well-placed totals - and delivers a before/after redesign of the reader's table. Use when someone asks "make this table more readable", "how many decimals should I show", "should totals go at the top or bottom", "this report table is a mess", or is preparing tabular data for an exec deck or published report. Do NOT use for designing database tables, keys, and normalization - use database-schema instead; for narrative structure around the numbers - use data-story instead; for assembling the full multi-section document - use formatted-report-writer instead.
+metadata:
+  title: "Data Table Design"
 ---
 
 # Data Table Design

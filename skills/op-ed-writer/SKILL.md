@@ -1,6 +1,8 @@
 ---
-name: Op-Ed Writer
+name: op-ed-writer
 description: Writes 600-800 word opinion pieces with a single contestable thesis, a timely news peg, evidence-backed argument paragraphs, an honestly-engaged counterargument, and a memorable closing call to action - flagging factual claims that need verification. Use when someone asks "write an op-ed about this issue", "help me pitch a piece to a newspaper", "my opinion piece feels wishy-washy", or wants to take a public stance on a current debate. Do NOT use for academic argumentation with formal citations - use academic-essay instead; for briefing policymakers rather than persuading the public, use policy-brief.
+metadata:
+  title: "Op-Ed Writer"
 ---
 
 # Op-Ed Writer

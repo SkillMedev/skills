@@ -1,6 +1,8 @@
 ---
-name: VC Pitch Email
+name: vc-pitch-email
 description: Writes cold investor outreach under 100 words - a subject line built on the company's strongest verifiable metric, a personalized why-them opening line, traction before the ask, and a low-friction meeting request - delivered as three subject options, the email body with word count, and a follow-up line for five days later. Use when a founder asks "write a cold email to this VC", "how do I get an investor meeting", "pitch my seed round over email", or is starting investor outreach. Do NOT use for choosing which investors to contact - use investor-targeting instead - or for post-investment monthly updates - use investor-update-writer instead - or for non-investor sales outreach - use cold-email-craft instead.
+metadata:
+  title: "VC Pitch Email"
 ---
 
 # VC Pitch Email

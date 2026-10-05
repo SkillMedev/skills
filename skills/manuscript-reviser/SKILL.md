@@ -1,6 +1,8 @@
 ---
-name: Manuscript Reviser
+name: manuscript-reviser
 description: Use when revising fiction prose that ALREADY EXISTS - a second/third-draft pass on a chapter or scene, a continuity or POV-consistency check, fixing a scene that drags, cutting dead weight, or tightening overwritten prose at the line level. Do NOT use to draft a brand-new scene from nothing (use Fiction Scene Writer), to build or mimic an author's voice (use Ghostwriter), or for neutral encyclopedic prose (use Wikipedia Style Writer); to outline or re-architect the plot at the beat level, use Story Structure Architect.
+metadata:
+  title: "Manuscript Reviser"
 ---
 
 # Manuscript Reviser

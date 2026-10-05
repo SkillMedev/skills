@@ -1,6 +1,8 @@
 ---
-name: Remotion Setup
+name: remotion-setup
 description: Scaffolds a new Remotion video project wired for Claude Code Agent Skills - Node check, create-video scaffold, skills install, folder conventions, Google Fonts, and a smoke-test render. Use whenever someone wants to start making videos with Remotion and Claude, even just "make product videos with Claude."
+metadata:
+  title: "Remotion Setup"
 ---
 # Remotion Setup
 

@@ -1,6 +1,8 @@
 ---
-name: Dependency Risk Audit
+name: dependency-risk-audit
 description: Audits third-party dependencies for exploitable CVEs, abandonment, license exposure, and supply-chain hygiene, and delivers a ranked findings report with a remediation order. Use when someone asks "is this package safe to add", "audit our dependencies", "npm audit is screaming, what actually matters", "can we use this GPL library", or is preparing a security review or vendor questionnaire. Do NOT use for triaging vulnerabilities in first-party code or a full CVE queue - use vulnerability-triage instead; for reviewing the code you wrote for security flaws - use secure-code-review instead; for how secrets are stored and rotated - use secrets-hygiene instead; for assembling compliance evidence - use soc2-evidence-helper instead.
+metadata:
+  title: "Dependency Risk Audit"
 ---
 
 # Dependency Risk Audit

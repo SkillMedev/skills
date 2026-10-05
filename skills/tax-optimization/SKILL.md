@@ -1,6 +1,8 @@
 ---
-name: Tax Optimization
+name: tax-optimization
 description: Works through the legal tax-reduction sequence - tax-advantaged account priority, standard-vs-itemized decision math, tax-loss harvesting, income timing, and Roth-vs-traditional rules - and produces a personal tax checklist. Use when someone asks "how do I pay less in taxes", "should I itemize", "Roth or traditional", "what is tax-loss harvesting", or is doing year-end planning or reviewing withholding. Do NOT use for the broader ordering of savings and debt priorities - use financial-planner instead; for investing fundamentals beyond account tax treatment - use investment-basics; for projecting retirement account balances - use retirement-projection.
+metadata:
+  title: "Tax Optimization"
 ---
 
 # Tax Optimization

@@ -1,6 +1,8 @@
 ---
-name: Ad Creative Testing
+name: ad-creative-testing
 description: Designs a disciplined ad creative testing system with hooks, isolated variables, and statistical rigor. Use when setting up a testing pipeline or when creative performance is declining.
+metadata:
+  title: "Ad Creative Testing"
 ---
 
 # Ad Creative Testing

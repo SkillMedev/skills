@@ -1,6 +1,8 @@
 ---
-name: Feedback Writer
+name: feedback-writer
 description: Drafts specific, observable, kind workplace feedback using the SBI model - Situation, Behavior, Impact - for both praise and correction. Use when someone asks "help me give feedback to a teammate", "how do I tell my report they keep missing deadlines", "make this feedback less vague", or wants to reinforce a good behavior specifically. Do NOT use for formal performance review documents - use performance-review-writer instead; for feedback on student work, use student-feedback-writer; for mediating an active interpersonal dispute, use conflict-resolution.
+metadata:
+  title: "Feedback Writer"
 ---
 
 # Feedback Writer

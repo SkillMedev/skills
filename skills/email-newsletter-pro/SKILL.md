@@ -1,6 +1,8 @@
 ---
-name: Email Newsletter Pro
+name: email-newsletter-pro
 description: Write recurring email newsletters - subject lines that earn the open, preview text that extends them, a body structure readers finish, and cadence rules that keep the list healthy. Use when someone asks "write my newsletter", "give me subject line options", "why is my open rate dropping", "should I send weekly or monthly", or "help me structure this issue". Do NOT use for automated onboarding or behavior-triggered sequences - use email-drip-builder instead. Do NOT use for inbox placement and spam-folder problems - use email-deliverability instead.
+metadata:
+  title: "Email Newsletter Pro"
 ---
 
 # Email Newsletter Pro

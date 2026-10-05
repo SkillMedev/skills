@@ -1,6 +1,8 @@
 ---
-name: Animation System
+name: animation-system
 description: Builds a coherent UI motion system - a duration token scale, named easing curves, choreography rules, and a per-component mapping - so every transition in the product draws from one vocabulary instead of ad-hoc values. Use when someone asks "define our motion tokens", "our animations feel inconsistent", "what duration should this modal use", "set up easing standards", or is starting a design system and needs the motion layer. Do NOT use to spec the motion of one specific component or flow - use motion-spec instead; for animated type treatments, use kinetic-typography.
+metadata:
+  title: "Animation System"
 ---
 
 # Animation System

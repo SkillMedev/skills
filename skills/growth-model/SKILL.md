@@ -1,6 +1,8 @@
 ---
-name: Growth Model
+name: growth-model
 description: Builds a driver-based growth model - acquisition, activation, retention, monetization, and a loop factor - that projects users and revenue bottom-up, runs base/upside/downside scenarios, and names the one constraint to work on next. Use when someone asks "build me a growth model", "what should our user projection be", "which lever moves growth most", "model our viral loop", or wants projections driven by real inputs instead of a hockey-stick guess. Do NOT use for the SaaS MRR bridge, NRR, and revenue-forecasting mechanics - use revenue-modeling. Do NOT use for decomposing historical active-user change into new, retained, resurrected, and churned - use growth-accounting. Do NOT use for per-customer CAC/LTV math - use unit-economics.
+metadata:
+  title: "Growth Model"
 ---
 
 # Growth Model

@@ -1,6 +1,8 @@
 ---
-name: Index Advisor
+name: index-advisor
 description: Recommends, orders, and prunes indexes for a specific query or table - composite column order, selectivity rules, partial and covering indexes, duplicate/unused cleanup, and write-amplification tradeoffs. Use when a query is slow and EXPLAIN shows a Seq Scan or a sort, before adding a CREATE INDEX, or when auditing a table's index set for bloat or duplicates. Do NOT use to diagnose an unknown slow query from scratch - start with sql-query-optimizer; do NOT use when the query shape itself is the problem (function-wrapped predicates, leading wildcards, correlated subqueries) - use query-rewriter instead; do NOT use when the table is too large and needs partitioning or a time-series strategy - use partition-planner instead.
+metadata:
+  title: "Index Advisor"
 ---
 
 # Index Advisor

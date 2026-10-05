@@ -1,6 +1,8 @@
 ---
-name: E2E Scenario Author
+name: e2e-scenario-author
 description: Converts an acceptance criterion or user story into one maintainable Playwright or Cypress end-to-end test that reads like the journey it covers. Use when turning a Given/When/Then acceptance criterion or user story into a browser test, when asked to "write an E2E test for this AC", or when a feature's critical journey (login, checkout, signup) needs a single automated scenario. Do NOT use when writing general Playwright tests, configuring the runner, or fixing existing test flakiness - use playwright-testing or flaky-test-detangler instead.
+metadata:
+  title: "E2E Scenario Author"
 ---
 # E2E Scenario Author
 

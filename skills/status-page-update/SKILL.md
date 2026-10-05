@@ -1,6 +1,8 @@
 ---
-name: Status Page Update
+name: status-page-update
 description: Writes customer-facing incident status updates for each lifecycle stage - investigating, identified, monitoring, resolved - with cadence rules and plain-language templates. Use when someone asks "write a status page update", "what do we tell customers about this outage", "draft the resolved notice", or during an active incident needing customer communication. Do NOT use for the internal post-incident analysis - use postmortem-writer once the incident is closed; for deciding severity and internal escalation flow use sev-triage; for summarizing an incident upward to executives use escalation-summary.
+metadata:
+  title: "Status Page Update"
 ---
 
 # Status Page Update

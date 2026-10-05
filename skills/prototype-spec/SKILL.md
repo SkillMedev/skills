@@ -1,6 +1,8 @@
 ---
-name: Prototype Spec
+name: prototype-spec
 description: Turns a static design into a numbered, testable, dev-ready specification covering every state, interaction, breakpoint, motion detail, and edge case the mockup cannot show. Use when someone asks "write the spec for this screen", "engineering keeps asking what happens when", "document the interactions before handoff", "what states does this component need", or a build came back wrong because behavior was never written down. Do NOT use for the motion token details themselves - use motion-spec instead; for verifying a finished build against the spec, use design-qa-checklist.
+metadata:
+  title: "Prototype Spec"
 ---
 
 # Prototype Spec

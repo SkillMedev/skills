@@ -1,6 +1,8 @@
 ---
-name: 1:1 Agenda
+name: 1on1-agenda
 description: Structures recurring manager-report 1:1s with a rolling shared agenda that balances check-in, blockers, two-way feedback, and career growth instead of status updates. Use when someone asks "what should I cover in my 1:1s", "build me a 1:1 agenda template", "my 1:1s have turned into status meetings", or is setting up 1:1s with new reports. Do NOT use for general meeting agendas - use meeting-agenda instead; for writing a formal review document, use performance-review-writer; for drafting a specific piece of feedback, use feedback-writer.
+metadata:
+  title: "1:1 Agenda"
 ---
 
 # 1:1 Agenda

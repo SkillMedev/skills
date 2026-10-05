@@ -1,6 +1,8 @@
 ---
-name: Experiment Tracking
+name: experiment-tracking
 description: Sets up disciplined ML experiment tracking - run logging schemas, artifact versioning, naming conventions, and reproducibility standards - and produces the run-record template a team actually follows. Use when someone asks "how should we track our ML experiments", "why can't we reproduce this result", "how do I set up MLflow or W&B for the team", or is bootstrapping a new ML project. Do NOT use for analyzing product A/B tests - use ab-test-analyzer instead; for monitoring deployed models use data-drift-monitor; for judging whether a trained model is good enough to ship use model-evaluation-report.
+metadata:
+  title: "Experiment Tracking"
 ---
 
 # Experiment Tracking

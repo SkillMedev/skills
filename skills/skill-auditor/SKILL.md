@@ -1,6 +1,8 @@
 ---
-name: Skill Auditor
+name: skill-auditor
 description: Use when reviewing, grading, auditing, or improving a whole existing skill or pack - judging whether a skill is good, fixing one that misfires or won't activate, or driving one or many skills to a quality bar. Audits to an absolute A+ bar and hands back ship-ready SKILL.md rewrites, not a report the user must act on. Do NOT use when tightening only a description or trigger in isolation - use skill-description-writer instead; do NOT use when authoring a brand-new skill from scratch - use skill-creator instead.
+metadata:
+  title: "Skill Auditor"
 ---
 
 # Skill Auditor

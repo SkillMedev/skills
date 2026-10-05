@@ -1,6 +1,8 @@
 ---
-name: Webhook Receiver Hardener
+name: webhook-receiver-hardener
 description: Hardens an inbound webhook endpoint so it verifies the sender signature on the raw body, resists replays, and acknowledges fast by persisting-then-enqueueing before any processing. Use when building or reviewing a handler that receives webhooks from Stripe, GitHub, or any third party, when adding HMAC signature verification, or when a sender is replaying events or hammering you with retries after slow acks.
+metadata:
+  title: "Webhook Receiver Hardener"
 ---
 # Webhook Receiver Hardener
 

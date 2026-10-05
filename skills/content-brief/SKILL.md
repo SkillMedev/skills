@@ -1,6 +1,8 @@
 ---
-name: Content Brief
+name: content-brief
 description: Builds an SEO content brief a writer can execute without guesswork - primary and semantic keywords, search intent, recommended format matched to the SERP, title, H1, meta description, a full H2/H3 outline, word-count guidance derived from ranking pages, internal links with anchors, featured-snippet opportunities, CTA, and the content gap competitors miss. Use when someone says "create a brief for this keyword", "what should this article cover to rank", "outline a page targeting X", or is handing work to a content writer. Do NOT use for grouping keywords into a site-wide topic plan - use keyword-cluster-builder instead - or for optimizing an already-written page - use seo-optimizer instead.
+metadata:
+  title: "Content Brief"
 ---
 
 # Content Brief

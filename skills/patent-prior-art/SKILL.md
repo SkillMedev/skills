@@ -1,6 +1,8 @@
 ---
-name: Patent Prior Art
+name: patent-prior-art
 description: Runs a systematic prior-art search - feature decomposition into claim elements, CPC/IPC classification plus keyword vocabulary, patent databases AND non-patent literature, forward and backward citation walks - and maps results into claim charts with a novelty assessment and a documented search log. Use when someone asks "is my invention novel", "has anyone already patented this", "find prior art against this claim", or is deciding whether a filing or an invalidity argument is worth pursuing. This is research, not legal advice; filing and freedom-to-operate decisions require a patent attorney. Do NOT use for a general academic literature survey unrelated to patentability - use literature-review instead.
+metadata:
+  title: "Patent Prior Art"
 ---
 
 # Patent Prior Art

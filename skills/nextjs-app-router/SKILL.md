@@ -1,6 +1,8 @@
 ---
-name: Next.js App Router
+name: nextjs-app-router
 description: Builds and reviews Next.js App Router code - server/client component boundaries, data fetching, caching and revalidation choices, streaming with Suspense, and Server Action mutations - and delivers routes where every dynamic-vs-cached decision is explicit. Use when someone asks "should this be a client component", "why is my data stale", "where do I put use client", "how do I stream this page", or "how do server actions work". Do NOT use for Vercel-specific runtime and cost tuning of an already-built app - use next-on-vercel-perf instead; for edge middleware and ISR deployment topology - use vercel-edge-and-isr instead; for framework-agnostic Core Web Vitals work - use web-performance instead; for designing an application-wide cache layer beyond the framework - use caching-strategy instead.
+metadata:
+  title: "Next.js App Router"
 ---
 
 # Next.js App Router

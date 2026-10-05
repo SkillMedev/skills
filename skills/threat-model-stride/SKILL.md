@@ -1,6 +1,8 @@
 ---
-name: Threat Model STRIDE
+name: threat-model-stride
 description: Applies STRIDE threat modeling to a feature or system design and produces a prioritized threat table with concrete mitigations ranked by exploitability and impact. Use when someone asks "threat model this feature", "what could go wrong with this design", "is this integration safe to build", or is reviewing auth flows, new data stores, webhook receivers, file uploads, or external integrations before the code is written. Do NOT use for prioritizing scanner or pentest findings on already-shipped code - use vulnerability-triage instead; for line-by-line security review of written code, use secure-code-review.
+metadata:
+  title: "Threat Model STRIDE"
 ---
 
 # Threat Model STRIDE

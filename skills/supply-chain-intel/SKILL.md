@@ -1,6 +1,8 @@
 ---
-name: Supply Chain Intelligence
+name: supply-chain-intel
 description: Maps a product's supply chain across tiers, scores concentration risk - supplier, geographic, sub-tier, and logistics - and surfaces qualified alternatives with switching cost and qualification lead time for each critical node. Use when someone asks "where are our single points of failure", "map our supplier dependencies", "what happens if this supplier or region goes down", or is building a resilience, dual-sourcing, or nearshoring plan. Do NOT use for mapping competitors rather than suppliers - use competitive-intelligence instead; for quantifying the financial impact of a disruption scenario, pair with cash-flow-forecast.
+metadata:
+  title: "Supply Chain Intelligence"
 ---
 
 # Supply Chain Intelligence

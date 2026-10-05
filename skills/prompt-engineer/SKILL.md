@@ -1,6 +1,8 @@
 ---
-name: Prompt Engineer
+name: prompt-engineer
 description: Turns a vague request into a structured, reliable prompt - role, context, task, format, failure handling, and few-shot examples - that produces consistent output across real inputs. Use when someone asks "why does my prompt give inconsistent results", "write a prompt for this task", "the model keeps breaking my JSON", "how do I stop prompt injection from user input", or is building any LLM feature whose prompt was written ad hoc. Do NOT use for converting a working prompt into a reusable agent skill - use prompt-to-skill instead; do NOT use for measuring whether a prompt change improved quality - use llm-evaluation instead.
+metadata:
+  title: "Prompt Engineer"
 ---
 
 # Prompt Engineer

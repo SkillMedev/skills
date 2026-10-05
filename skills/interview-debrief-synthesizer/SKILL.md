@@ -1,6 +1,8 @@
 ---
-name: Interview Debrief Synthesizer
+name: interview-debrief-synthesizer
 description: Consolidates multiple interviewer scorecards into a calibrated hire/no-hire summary that foregrounds evidence, surfaces disagreement, and flags bias risks for a human panel. Use when you have collected scorecards or written feedback from a completed interview loop and need to run the debrief, calibrate divergent ratings, or produce a defensible decision write-up. Do NOT use when you are preparing questions or rubrics before interviews - use interview-question-kit instead.
+metadata:
+  title: "Interview Debrief Synthesizer"
 ---
 # Interview Debrief Synthesizer
 

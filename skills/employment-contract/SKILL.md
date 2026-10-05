@@ -1,6 +1,8 @@
 ---
-name: Employment Contract Review
+name: employment-contract
 description: Reviews an employment agreement clause by clause, flags deviations from market-standard terms - non-compete scope, IP assignment breadth, cause definitions, equity mechanics - and produces a review table with recommended asks, explicitly bounded as not legal advice. Use when someone asks "can you review my offer letter", "is this non-compete normal", "what does this IP assignment clause mean", "should I push back on this severance term", or has an employment agreement in hand before signing. Do NOT use for negotiating the compensation number itself - use salary-negotiation instead - or for drafting a company's terms of service or privacy policy - use terms-of-service instead.
+metadata:
+  title: "Employment Contract Review"
 ---
 
 # Employment Contract Review

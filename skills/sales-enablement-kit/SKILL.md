@@ -1,6 +1,8 @@
 ---
-name: Sales Enablement Kit
+name: sales-enablement-kit
 description: Use when equipping a sales motion with the full set of assets reps actually carry into deals, produced as one coherent kit - a one-pager, a competitive battlecard, a demo script outline, and an objection-handling matrix. Triggers on "build the sales enablement kit for our new product", "equip our sales reps with enablement assets", "put together the sales collateral for our launch". Do NOT use for a single standalone battlecard or a one-competitor deep-dive - use competitive-intelligence instead; do NOT use when the category frame (for whom, unlike what) is not yet fixed - use positioning-statement first; do NOT use when the value ladder and proof points are not settled - use messaging-hierarchy first; do NOT use to sequence the rollout calendar - use launch-plan-sequencer; do NOT use to brief the team and run the checklist on launch day - use launch-day-runbook; do NOT use for a self-serve / no-rep-in-the-room motion - use plg-motion-designer instead.
+metadata:
+  title: "Sales Enablement Kit"
 ---
 
 # Sales Enablement Kit

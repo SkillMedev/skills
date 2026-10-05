@@ -1,6 +1,8 @@
 ---
-name: Eng Status Rollup
+name: eng-status-rollup
 description: Rolls up engineering team status into an exec-ready written update with exactly three sections - progress in outcomes, risks with likelihood and mitigation, and asks with owners and deadlines - scannable in under 90 seconds. Use when someone asks "write my weekly eng update", "summarize team status for leadership", "turn these standup notes into an exec update", or is prepping for a leadership sync. Do NOT use for updates to external or cross-functional stakeholders on a project - use stakeholder-update instead - for public incident communication - use status-page-update - or for monthly investor letters - use investor-update-writer instead.
+metadata:
+  title: "Eng Status Rollup"
 ---
 
 # Eng Status Rollup

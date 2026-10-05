@@ -1,6 +1,8 @@
 ---
-name: Research Synthesis
+name: research-synthesis
 description: Turns many sources into a decision-ready synthesis - atomic claims clustered into named themes, surfaced tensions between sources, gaps no source answers, and explicit so-what/now-what implications with confidence ratings. Use when someone says "synthesize this research", "what do all these reports agree on", "pull the themes out of these articles", or has a pile of sources and needs conclusions rather than source-by-source summaries. Do NOT use for synthesizing user interview transcripts - use interview-synthesis instead; for a formal academic literature review, use literature-review.
+metadata:
+  title: "Research Synthesis"
 ---
 
 # Research Synthesis

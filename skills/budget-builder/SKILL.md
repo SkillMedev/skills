@@ -1,6 +1,8 @@
 ---
-name: Budget Builder
+name: budget-builder
 description: Builds a zero-based monthly budget from take-home income using the 50/30/20 framework with explicit adaptation rules and sinking funds for irregular expenses. Use when someone says "help me make a budget", "I don't know where my money goes", "my spending feels out of control", or after an income change or move. Do NOT use for choosing what to fund first across debt, savings, and investing - use financial-planner instead; for sequencing multiple debts - use debt-payoff-planner; for sizing the cash cushion - use emergency-fund-planner; for company or campaign budget variance reporting - use budget-vs-actual instead.
+metadata:
+  title: "Budget Builder"
 ---
 
 # Budget Builder

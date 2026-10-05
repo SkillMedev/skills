@@ -1,6 +1,8 @@
 ---
-name: Budget Pacing
+name: budget-pacing
 description: Paces and reallocates ad budget across channels through the month to hit both CAC and volume targets, with daily tolerance bands, a reallocation reserve, and escalation red lines. Use when someone asks "are we pacing to spend the budget", "we're overspending and it's only the 12th", "should I move budget from Meta to Google mid-month", "how do I spend the rest of the budget without wrecking CAC", or is managing live campaign spend at month start or month end. Do NOT use for explaining why last month's spend missed plan - use budget-vs-actual instead - or for auditing whether the channels themselves are worth funding - use paid-acquisition-audit instead.
+metadata:
+  title: "Budget Pacing"
 ---
 
 # Budget Pacing

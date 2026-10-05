@@ -1,6 +1,8 @@
 ---
-name: User Persona Builder
+name: user-persona
 description: Synthesizes interview notes, surveys, support tickets, and analytics into evidence-based user personas that drive design decisions, with every claim traced to source data. Use when someone asks "build personas from our research", "turn these interview notes into personas", "how many personas do we need", or "are our personas evidence-based". Do NOT use for sales-targeting ideal customer profiles with filterable firmographics and buying committees - use icp-persona-builder instead. Do NOT use for extracting jobs-to-be-done from research - use jtbd-extractor instead.
+metadata:
+  title: "User Persona Builder"
 ---
 
 # User Persona Builder

@@ -1,6 +1,8 @@
 ---
-name: Terraform Expert
+name: terraform-expert
 description: Writes safe, modular, idiomatic Terraform - remote state layout, module structure, plan-review discipline, version pinning, and blast-radius control. Use when someone asks "structure my Terraform repo", "how should I split state between environments", "terraform plan wants to destroy and recreate my database", "should I use count or for_each", or "how do I import existing infrastructure". Do NOT use for CI pipeline authoring in GitHub Actions - use github-actions instead; for Kubernetes manifests the infrastructure hosts, use kubernetes-basics; for managing app secrets outside IaC, use secrets-hygiene.
+metadata:
+  title: "Terraform Expert"
 ---
 
 # Terraform Expert

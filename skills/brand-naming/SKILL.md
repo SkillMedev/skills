@@ -1,6 +1,8 @@
 ---
-name: Brand Naming
+name: brand-naming
 description: Generates twenty-plus brand or product name candidates across five naming archetypes, scores them against weighted criteria without averaging, and runs linguistic and memorability safety checks. Use when someone asks "help me name my startup", "is this a good product name", "generate name ideas for this feature", or is auditing an existing name for distinctiveness, strategic fit, and risk. Not a substitute for professional trademark clearance. Do NOT use for crafting the positioning the name must express - use positioning-statement instead; for briefing the visual identity around a chosen name, use logo-brief-writer.
+metadata:
+  title: "Brand Naming"
 ---
 
 # Brand Naming

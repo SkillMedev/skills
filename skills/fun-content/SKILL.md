@@ -1,6 +1,8 @@
 ---
-name: Fun Content APIs
+name: fun-content
 description: Use when a task needs light entertainment content from a live API - "build a quiz/trivia game", "random dog picture", "cat fact", "advice of the day", "random fun fact" - for a demo, bot, party feature, or filler content slot. Open Trivia DB is the quiz default (its session-token mechanics are documented here); catfact.ninja, random.dog, Advice Slip, and Useless Facts cover the rest, all keyless. Do NOT use for placeholder users/products/images in a prototype - use test-placeholder-data instead; do NOT use for dictionary or encyclopedia lookups - use language-reference instead; if the request is a vague "I need live data", route through public-data-api-picker.
+metadata:
+  title: "Fun Content APIs"
 ---
 
 # Fun Content APIs

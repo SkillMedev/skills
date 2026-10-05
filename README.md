@@ -1,14 +1,17 @@
 # Skill Me — the open skill catalog
 
-The canonical public home of every skill authored and hosted by [Skill&nbsp;Me](https://skillme.dev) — 471 portable `SKILL.md` files, MIT-licensed.
+The canonical public home of every skill authored and hosted by [Skill&nbsp;Me](https://skillme.dev/?utm_source=github&utm_medium=readme&utm_campaign=skills-mirror) — 471 portable `SKILL.md` files, MIT-licensed.
 
-Every skill is plain-text instructions in the open SKILL.md format that runs in Claude (via the Skill Me MCP), Claude Code, Cursor, Gemini CLI, and Codex. Read exactly what a skill tells Claude before you install it.
+Every skill is plain-text instructions in the open SKILL.md format that runs in Claude (via the Skill Me MCP), Claude Code, Cursor, Gemini CLI, and Codex. Read exactly what a skill does before you install it.
 
 ## Install
 
-- **From the catalog:** [skillme.dev](https://skillme.dev) — browse, then install into Claude in one step.
+- **Claude, ChatGPT, Codex, Cursor (connector):** [connect Skill Me](https://skillme.dev/connect?utm_source=github&utm_medium=readme&utm_campaign=skills-mirror) once, then ask for any skill by name.
+- **One skill as files for Codex, Cursor, or Claude Code:** `npx @skillme/cli add <slug> --target all`
 - **With the skills CLI:** `npx skills add SkillMedev/skills` (or a per-pack repo — see [the org](https://github.com/SkillMedev)).
-- **Manually:** copy any `skills/<slug>/SKILL.md` into your Claude skills directory.
+- **Manually:** copy any `skills/<slug>/SKILL.md` into `.agents/skills/`, `.cursor/skills/`, or `.claude/skills/`.
+
+Browse all 2,500+ skills and packs at [skillme.dev](https://skillme.dev/browse?utm_source=github&utm_medium=readme&utm_campaign=skills-mirror).
 
 ## Skills by category
 
@@ -509,7 +512,7 @@ Every skill is plain-text instructions in the open SKILL.md format that runs in 
 
 ## Contributing
 
-Submit a new skill at [skillme.dev/submit](https://skillme.dev/submit) — every submission passes an automated safety check and a human review before listing.
+Submit a new skill at [skillme.dev/submit](https://skillme.dev/submit?utm_source=github&utm_medium=readme&utm_campaign=skills-mirror) — every submission passes an automated safety check and a human review before listing.
 
 ## License
 

@@ -1,6 +1,8 @@
 ---
-name: Launch Plan Sequencer
+name: launch-plan-sequencer
 description: Use when planning a product launch end-to-end and you need the full dated timeline. Triggers on "plan my launch", "launch plan", "how do I sequence a launch", "pre-launch checklist", "what happens before launch day", "launch timeline", "GTM launch plan", "coordinate a launch across channels", "who owns what for launch". Builds the pre-launch → launch-day → post-launch arc with a channel & asset checklist, owners, and dates. Do NOT use when you need the minute-by-minute run-of-show for the day itself - use launch-day-runbook instead. Do NOT use to write the core message - use positioning-statement and messaging-hierarchy. Do NOT use to design the self-serve adoption motion - use plg-motion-designer. Do NOT use to build the sales deck, battlecard, or demo script - use sales-enablement-kit.
+metadata:
+  title: "Launch Plan Sequencer"
 ---
 
 # Launch Plan Sequencer

@@ -1,6 +1,8 @@
 ---
-name: Flutter Widget Architect
+name: flutter-widget-architect
 description: Architects Flutter widget trees and Riverpod or Bloc state so rebuilds are scoped, build() stays pure, and const widgets skip recomposition. Use when someone asks "why is my Flutter screen janky", "should I use Riverpod or Bloc", "my whole page rebuilds when one field changes", or is building or refactoring Flutter screens, wiring StatelessWidget/StatefulWidget, Consumer, or BlocBuilder. Do NOT use for Android Jetpack Compose UI - use jetpack-compose-builder instead; do NOT use for React Native - use react-native-pro instead.
+metadata:
+  title: "Flutter Widget Architect"
 ---
 
 # Flutter Widget Architect

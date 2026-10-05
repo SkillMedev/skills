@@ -1,6 +1,8 @@
 ---
-name: API Client Generator
+name: api-client-generator
 description: Generates a typed API client from an OpenAPI/Swagger spec, with a hand-controlled transport wrapper for timeouts, auth, and typed errors. Use when integrating a REST API that ships an openapi.yaml/swagger.json, when generating or regenerating a client from a spec, or when a hand-written client keeps drifting from the upstream contract. Do NOT use when the task is the backoff/retry policy itself - use rate-limit-handler instead; do NOT use for cursor pagination or keeping a local copy in sync - use pagination-and-sync-engineer instead.
+metadata:
+  title: "API Client Generator"
 ---
 # API Client Generator
 

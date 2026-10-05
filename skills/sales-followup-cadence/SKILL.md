@@ -1,6 +1,8 @@
 ---
-name: Sales Follow-Up Cadence
+name: sales-followup-cadence
 description: Designs a post-meeting follow-up cadence for active deals - recap within 2 hours, value-add touches on a day 0/2/5/7 rhythm, channel switches when a deal goes quiet, and a clean breakup after 5-7 touches. Use when someone says "the prospect went dark after the demo", "how do I follow up without being annoying", "what should I send after the call", or a deal has stalled between meetings. Do NOT use for cold-prospect sequences before any meeting has happened - use outreach-sequence-designer instead; do NOT use for writing the cold email itself - use cold-email-craft instead; do NOT use for structuring the close with shared milestones - use mutual-action-plan instead.
+metadata:
+  title: "Sales Follow-Up Cadence"
 ---
 
 # Sales Follow-Up Cadence

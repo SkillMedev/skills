@@ -1,6 +1,8 @@
 ---
-name: Customer Success QBR
+name: customer-success-qbr
 description: Runs quarterly business reviews that prove delivered value, score account health, and open the expansion and renewal conversation - producing an agenda, a value-delivered slide format, a health-score definition, and an expansion script. Use when someone asks "how do I run a QBR", "prep my quarterly business review", "build a customer health score", "how do I bring up renewal in a QBR", or is preparing an executive business review for a key account. Do NOT use for designing the expansion motion and pricing itself - use expansion-revenue instead - or for rescuing an account already at risk of churning - use churn-reduction instead.
+metadata:
+  title: "Customer Success QBR"
 ---
 
 # Customer Success QBR

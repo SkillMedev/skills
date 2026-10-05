@@ -1,6 +1,8 @@
 ---
-name: TDD Expert
+name: tdd-expert
 description: Drive development with strict Red-Green-Refactor discipline - write one failing test, write the minimum code to pass it, refactor on green - including test-list planning and a worked kata cycle. Use when someone asks "write this test-first", "do TDD on this feature", "help me practice red-green-refactor", "write a failing test for this bug", or wants tests to drive a new module's design. Do NOT use for adding tests to existing untested legacy code before a refactor - use characterization-test-writer instead - or for designing shared fixtures and factories - use test-data-builder instead.
+metadata:
+  title: "TDD Expert"
 ---
 
 # TDD Expert

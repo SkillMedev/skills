@@ -1,6 +1,8 @@
 ---
-name: AEO Answer Blockifier
+name: aeo-answer-blockifier
 description: Rewrites a section or page into concise, self-contained answer blocks that AI answer engines and search snippets can lift and cite verbatim. Use when restructuring a blog post, FAQ, docs page, or landing copy to win a featured snippet or get quoted by AI Overviews, ChatGPT, or Perplexity, or when a draft buries its answer in setup. Do NOT use for keyword research, full-article drafting, or technical/crawlability SEO - use a dedicated SEO or copywriting skill instead.
+metadata:
+  title: "AEO Answer Blockifier"
 ---
 # AEO Answer Blockifier
 

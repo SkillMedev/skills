@@ -1,6 +1,8 @@
 ---
-name: REST API Design
+name: api-design
 description: Designs REST API surfaces - resource naming, HTTP method and status-code semantics, error shapes, pagination, and filtering - and delivers an endpoint spec a consumer can build against without asking questions. Use when someone asks "how should I name this endpoint", "what status code should this return", "should this be PUT or PATCH", "how do I paginate this list", or is reviewing an API before it ships to external consumers. Do NOT use for planning breaking-change rollouts and deprecation windows - use api-versioning-strategist instead; for GraphQL type and resolver design - use graphql-schema instead; for generating client SDKs from an existing spec - use api-client-generator instead; for designing inbound webhook endpoints - use webhook-receiver-hardener instead.
+metadata:
+  title: "REST API Design"
 ---
 
 # REST API Design

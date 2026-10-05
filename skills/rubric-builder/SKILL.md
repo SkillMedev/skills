@@ -1,6 +1,8 @@
 ---
-name: Rubric Builder
+name: rubric-builder
 description: Builds grading rubrics - analytic, holistic, or single-point - with criteria traced to learning objectives, 3-5 performance levels, observable behavior in every cell, and defensible weighting. Use when someone asks "make a rubric for this essay", "how should I grade this project", "turn these objectives into scoring criteria", or "my rubric feels vague, fix it". Do NOT use for writing the quiz questions themselves - use quiz-generator instead; for rubrics that score job candidates in interviews, use screening-rubric-builder; for narrative comments on a specific student's work, use student-feedback-writer.
+metadata:
+  title: "Rubric Builder"
 ---
 
 # Rubric Builder

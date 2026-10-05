@@ -1,6 +1,8 @@
 ---
-name: Email Drip Builder
+name: email-drip-builder
 description: Designs automated onboarding and activation drip sequences with behavior-gated sends, exit triggers on conversion, and per-email jobs and timing. Use when someone asks "build an onboarding email sequence", "design a drip campaign for new signups", "why isn't our onboarding flow activating users", or is extending an existing drip series. Do NOT use for recurring content newsletters - use email-newsletter-pro; for recovering abandoned checkouts use abandoned-cart-sequence; for re-engaging dormant users use win-back-campaign; for cold outreach to prospects use outreach-sequence-designer or cold-email-craft.
+metadata:
+  title: "Email Drip Builder"
 ---
 
 # Email Drip Builder

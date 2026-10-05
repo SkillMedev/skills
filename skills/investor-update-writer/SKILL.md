@@ -1,6 +1,8 @@
 ---
-name: Investor Update Writer
+name: investor-update-writer
 description: Drafts a monthly or quarterly investor update - TL;DR, consistent metric block (revenue, growth rate, burn, runway), highlights, honest lowlights, a specific ask, and next-period priorities - in a repeatable one-screen format. Use when someone asks "write my investor update", "what should go in my monthly update", "how do I tell investors about a bad month", or when a founder is due to report to their cap table. Do NOT use for updates to internal teams, executives, or non-investor stakeholders - use stakeholder-update instead. Do NOT use for crafting the fundraising story for new investors - use fundraising-narrative instead.
+metadata:
+  title: "Investor Update Writer"
 ---
 
 # Investor Update Writer

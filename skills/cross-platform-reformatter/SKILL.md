@@ -1,6 +1,8 @@
 ---
-name: Cross-Platform Reformatter
+name: cross-platform-reformatter
 description: Re-expresses one finished piece of content as the native-equivalent post on each target channel, holding the core idea constant while flexing length, structure, register, and conventions per platform. Use when you have a single written post, article, script, or message and need the same idea posted natively on LinkedIn, X, Instagram, TikTok, YouTube Shorts, or a newsletter. Do NOT use when fanning one long-form asset out into different asset types (clip, quote card, blog) - use content-repurposing instead; do NOT use when writing one fresh caption from a topic - use social-caption-writer instead.
+metadata:
+  title: "Cross-Platform Reformatter"
 ---
 # Cross-Platform Reformatter
 

@@ -1,6 +1,8 @@
 ---
-name: On-Call Handoff
+name: oncall-handoff
 description: Produces a complete on-call shift handoff note - shift summary, open incidents, watch items with paging thresholds, silenced alerts, in-flight changes, and escalation contacts - checked against a completeness checklist. Use when someone asks "write my on-call handoff", "what should I tell the next on-call", "my shift ends in an hour, help me hand over", or "make a handoff template for our rotation". Do NOT use for writing the incident postmortem after resolution - use postmortem-writer instead. For live severity assessment during an incident, use sev-triage; for external customer-facing incident comms, use status-page-update.
+metadata:
+  title: "On-Call Handoff"
 ---
 
 # On-Call Handoff

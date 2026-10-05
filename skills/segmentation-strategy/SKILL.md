@@ -1,6 +1,8 @@
 ---
-name: Segmentation Strategy
+name: segmentation-strategy
 description: Builds a behavioral segmentation system for lifecycle messaging - RFM-based segments, event-driven membership triggers, one next action per segment, size audits, and send-time suppression rules. Use when someone asks "how should I segment my users", "our emails get ignored, who should get what", "how do I message at-risk users differently", or is personalizing lifecycle campaigns to cut unsubscribes and lift click-through. Do NOT use for building ad-platform audiences - use audience-targeting instead; for narrative customer personas use user-persona or icp-persona-builder; for mapping the full lifecycle stages and journeys use lifecycle-journey-map.
+metadata:
+  title: "Segmentation Strategy"
 ---
 
 # Segmentation Strategy

@@ -1,6 +1,8 @@
 ---
-name: Marketing Attribution
+name: marketing-attribution
 description: Guides selection and honest application of a marketing attribution model, surfacing common measurement traps. Use when evaluating channel ROI, auditing tracking, or choosing between attribution models.
+metadata:
+  title: "Marketing Attribution"
 ---
 
 # Marketing Attribution

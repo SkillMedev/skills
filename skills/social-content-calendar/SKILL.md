@@ -1,6 +1,8 @@
 ---
-name: Social Content Calendar
+name: social-content-calendar
 description: Builds a 4-week multi-platform posting calendar for a brand or social team, balancing content pillars, per-channel cadence, and real key dates into a week-by-week grid. Use when the user asks to plan, build, or audit a social content calendar or posting schedule across multiple channels (LinkedIn, X, Instagram, TikTok, YouTube Shorts), assign content pillars and ratios, or map a month of posts to launches and events. Do NOT use when planning a solo creator's single-channel video or podcast cadence and theme rotation - use creator-content-calendar instead.
+metadata:
+  title: "Social Content Calendar"
 ---
 # Social Content Calendar
 

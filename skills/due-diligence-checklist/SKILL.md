@@ -1,6 +1,8 @@
 ---
-name: Due Diligence Checklist
+name: due-diligence-checklist
 description: Runs structured diligence on an investment or acquisition target across four workstreams - commercial, financial, technical, and legal - and produces a red-flag register split into deal-killers versus manageable risks with a go/no-go recommendation. Use when someone asks "what should I check before investing", "run diligence on this company", "is this deal clean", or is preparing to wire money into a startup or acquisition. Do NOT use for decoding the clauses of a term sheet - use term-sheet-explainer instead; for negotiating terms, use term-sheet-negotiation; for building the target's data room from the company side, use data-room-builder.
+metadata:
+  title: "Due Diligence Checklist"
 ---
 
 # Due Diligence Checklist

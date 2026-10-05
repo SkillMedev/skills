@@ -1,6 +1,8 @@
 ---
-name: Kubernetes Basics
+name: kubernetes-basics
 description: Writes production-ready Kubernetes manifests - Deployments with correct resource requests/limits, readiness/liveness/startup probes, PodDisruptionBudgets, safe rollouts, and graceful shutdown. Use when someone asks "write a Deployment for my service", "my pods keep getting OOMKilled", "why do I get 502s during deploys", "what should my resource limits be", or "why did my pod restart in a loop". Do NOT use for local multi-container development environments - use docker-compose-wizard instead; for CI/CD pipelines that deploy to the cluster, use github-actions; for the Terraform that provisions the cluster itself, use terraform-expert.
+metadata:
+  title: "Kubernetes Basics"
 ---
 
 # Kubernetes Basics

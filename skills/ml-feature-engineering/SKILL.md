@@ -1,6 +1,8 @@
 ---
-name: Feature Engineering
+name: ml-feature-engineering
 description: Designs ML features with leakage-safe pipelines, correct categorical encoding by cardinality, numeric transforms, and validation that a feature earns its place. Use when someone asks "how should I encode this high-cardinality column", "why does my model score great offline and fail in production", "what features should I build from this table", or "should I scale these inputs". Do NOT use for building the serving infrastructure that stores and versions features across models - use feature-store-design instead; for detecting when live feature distributions shift after deployment - use data-drift-monitor instead; for initial dataset exploration and profiling - use eda-playbook instead.
+metadata:
+  title: "Feature Engineering"
 ---
 
 # Feature Engineering

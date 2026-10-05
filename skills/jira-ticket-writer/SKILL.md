@@ -1,6 +1,8 @@
 ---
-name: Jira Ticket Writer
+name: jira-ticket-writer
 description: Writes ready-to-build Jira stories with user-story summaries, Given/When/Then acceptance criteria, subtasks, and story-point guidance, checked against INVEST and a Definition of Ready. Use when someone asks "write a Jira ticket for this", "turn these meeting notes into a story", "are these acceptance criteria testable", "should I split this story", or "how many points is this". Do NOT use for configuring Linear teams, cycles, labels, or triage workflows - use linear-workflow instead. For deciding what fits in the sprint, use sprint-planning.
+metadata:
+  title: "Jira Ticket Writer"
 ---
 
 # Jira Ticket Writer

@@ -1,6 +1,8 @@
 ---
-name: Stakeholder Update
+name: stakeholder-update
 description: Writes project stakeholder updates readable in under 60 seconds - honest RAG status, decisions made, explicit asks with owners and dates, next milestones - tiered to the audience. Use when someone asks "write my weekly project update", "how do I tell stakeholders we're at risk", "draft a status email for leadership", or "my updates get ignored, fix the format". Do NOT use for aggregating many teams' statuses into one engineering-wide report - use eng-status-rollup instead. For monthly investor letters with metrics and asks to VCs, use investor-update-writer; for customer-facing incident status, use status-page-update.
+metadata:
+  title: "Stakeholder Update"
 ---
 
 # Stakeholder Update

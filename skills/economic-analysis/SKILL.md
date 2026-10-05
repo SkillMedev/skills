@@ -1,6 +1,8 @@
 ---
-name: Economic Analysis
+name: economic-analysis
 description: Applies microeconomic frameworks - supply and demand, elasticity, marginal analysis, market structure, externalities - to a business decision and produces a recommendation with explicit assumptions and a sensitivity analysis showing which assumption flips the answer. Use when someone asks "what happens to revenue if we raise prices", "will profits in this market hold up", "how will competitors respond to this move", or needs the economic logic behind a pricing, entry, capacity, or regulation question. Do NOT use for setting a specific price point or packaging tiers - use pricing-strategy or saas-pricing instead; for putting a dollar figure on market size, use market-sizing instead.
+metadata:
+  title: "Economic Analysis"
 ---
 
 # Economic Analysis

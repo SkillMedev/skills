@@ -1,6 +1,8 @@
 ---
-name: Formatted Report Writer
+name: formatted-report-writer
 description: Produces long-form business and consulting reports with a standalone executive summary, three-level heading hierarchy, and skimmability rules that let a busy reader navigate in under two minutes. Use when someone asks "write up this analysis as a report", "structure my strategy brief", "turn these findings into a client deliverable", or "make this document skimmable for executives". Do NOT use for presenting user-research findings to a product team - use research-readout instead; for a one-paragraph-to-one-page condensation of an existing document, use executive-summary; for slide-based delivery, use slide-deck-builder; for academic papers, use academic-essay.
+metadata:
+  title: "Formatted Report Writer"
 ---
 
 # Formatted Report Writer

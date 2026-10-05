@@ -1,6 +1,8 @@
 ---
-name: EXPLAIN Plan Reader
+name: explain-plan-reader
 description: Read a captured EXPLAIN ANALYZE plan, name the single bottleneck node, and prescribe a targeted fix for it. Use when a specific query is slow and you have (or can capture) its execution plan from Postgres or MySQL and need to know WHICH node is burning the time and why.
+metadata:
+  title: "EXPLAIN Plan Reader"
 ---
 # EXPLAIN Plan Reader
 

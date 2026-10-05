@@ -1,6 +1,8 @@
 ---
-name: Notion Database Designer
+name: notion-database
 description: Designs Notion databases that scale - one entity per database, deliberate property types, two-way relations with rollups, audience-specific views, and row templates - with explicit decision rules for relation vs rollup vs formula. Use when someone asks "design a Notion database for my projects", "should this be a relation or a rollup", "my Notion workspace is a junk drawer", or "set up a tasks and projects system in Notion". Do NOT use for building a full personal knowledge-management method with capture and review habits - use second-brain instead. For SQL or application database schemas, use database-schema.
+metadata:
+  title: "Notion Database Designer"
 ---
 
 # Notion Database Designer

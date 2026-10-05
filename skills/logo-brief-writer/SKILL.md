@@ -1,6 +1,8 @@
 ---
-name: Logo Brief Writer
+name: logo-brief-writer
 description: Writes a complete creative brief for a logo or identity project - business context, a three-adjective personality axis, deliverables and constraints, competitive territory, rounds and timeline, and concrete success criteria. Use when someone asks "write a logo brief", "brief a designer for our rebrand", "what do I send the identity studio", or is kicking off a brand identity engagement. Do NOT use for generating the brand name itself - use brand-naming instead; for documenting the finished identity system's usage rules, use brand-guidelines; for briefing broader creative direction, use moodboard-builder.
+metadata:
+  title: "Logo Brief Writer"
 ---
 
 # Logo Brief Writer

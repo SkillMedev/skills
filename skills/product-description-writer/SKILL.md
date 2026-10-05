@@ -1,6 +1,8 @@
 ---
-name: Product Description Writer
+name: product-description-writer
 description: Writes the single on-site PDP master copy - a benefit-led, scannable product detail page in the brand's voice - from a raw spec sheet or feature list. Use when you have a spec list, feature bullets, or a bare template description for one product and need conversion copy for its on-site product detail page. Do NOT use for Amazon or marketplace listings - use amazon-listing-optimizer instead; do NOT use to spin one master into many size/color variants - use variant-copy-scaler instead.
+metadata:
+  title: "Product Description Writer"
 ---
 # Product Description Writer
 

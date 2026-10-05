@@ -1,6 +1,8 @@
 ---
-name: Language & Reference Data
+name: language-reference
 description: Use when a task needs dictionary or encyclopedia lookups from a live source - "define this word", "pronunciation / phonetics / synonyms of X", "get the Wikipedia summary of Y", "search Wikipedia for Z", or pulling a topic's intro paragraph and thumbnail into an app. Free Dictionary API covers words; Wikipedia's REST API covers topics; both keyless. Do NOT use for country facts or geography - use geo-places instead; do NOT use for trivia questions or random facts - use fun-content instead; if the request is a vague "I need live data", route through public-data-api-picker.
+metadata:
+  title: "Language & Reference Data"
 ---
 
 # Language & Reference Data

@@ -1,6 +1,8 @@
 ---
-name: SQL Query Rewriter
+name: query-rewriter
 description: Rewrites a structurally inefficient SQL query into a faster equivalent that returns identical results - correlated subqueries to joins or LATERAL, accidental cross joins to explicit ON predicates, OR-across-columns to UNION, SELECT * to projected columns, and deep OFFSET pagination to keyset. Use when a query is slow because of its shape rather than its indexes - EXPLAIN shows a Cartesian blowup, a per-row subquery, or OFFSET discarding tens of thousands of rows - and the indexes are already in place. Do NOT use when the fix is adding or reordering an index - use index-advisor instead; do NOT use to diagnose an unknown slow query from its plan - use sql-query-optimizer instead.
+metadata:
+  title: "SQL Query Rewriter"
 ---
 
 # SQL Query Rewriter

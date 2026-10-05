@@ -1,6 +1,8 @@
 ---
-name: Story Structure Architect
+name: story-structure-architect
 description: Use when plotting or outlining a novel or screenplay, structuring its acts/chapters/sequences, fixing a sagging middle or broken pacing, mapping a character arc onto plot beats, planting setups and their payoffs, or deciding scene order. Produces the macro architecture - arc, beat sheet, tension curve - not prose. Do NOT use to write the actual prose of a scene (use Fiction Scene Writer, which sits downstream of this), to establish or mimic a narrative VOICE (use Ghostwriter), or to write a non-fiction book proposal or pitch (use Book Proposal).
+metadata:
+  title: "Story Structure Architect"
 ---
 
 # Story Structure Architect

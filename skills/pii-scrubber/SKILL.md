@@ -1,6 +1,8 @@
 ---
-name: PII Scrubber
+name: pii-scrubber
 description: Detects and redacts personally identifiable information from text, logs, datasets, and LLM prompts using layered pattern, checksum, and NER detection, then picks the right redaction mode for each downstream use. Use when someone asks "scrub PII from these logs", "redact personal data before sending it to the LLM", "is this dataset safe to share", or is wiring up logging, analytics, or third-party exports that might carry user data. Do NOT use for leaked API keys, tokens, or credentials - use secrets-hygiene instead.
+metadata:
+  title: "PII Scrubber"
 ---
 
 # PII Scrubber

@@ -1,6 +1,8 @@
 ---
-name: Speech Writer
+name: speech-writer
 description: Writes full speeches for the ear - a narrative arc from hook to callback close, three story-anchored movements, two or three quotable lines built with antithesis and imagery, and pause and timing markers budgeted at roughly 130 words per minute. Use when someone asks "write my keynote", "draft a wedding toast", "I have 10 minutes on stage, write the speech", or has a talk drafted that reads fine but dies when spoken aloud. Do NOT use for a sermon or teaching outline with application points - use sermon-writer instead; for rehearsing an investor pitch, use pitch-practice-coach.
+metadata:
+  title: "Speech Writer"
 ---
 
 # Speech Writer

@@ -1,6 +1,8 @@
 ---
-name: Push Notification Wirer
+name: push-notification-wirer
 description: Wires native mobile push end to end on APNs and FCM - device-token lifecycle, permission priming and prompt timing, alert and silent payloads, the server send path, and tap routing in all app states. Use when someone says "add push to our app", "the notification never arrives", "how do I handle FCM token refresh", or is wiring the .p8 or service-account sender and handling notification taps. Do NOT use for writing the notification text and message strategy - use push-notification-copy instead; not for web/browser push (Web Push/VAPID), in-app banners, or platform notification dashboards; and hand navigation from a tapped payload into a specific screen to a deep-link router.
+metadata:
+  title: "Push Notification Wirer"
 ---
 # Push Notification Wirer
 

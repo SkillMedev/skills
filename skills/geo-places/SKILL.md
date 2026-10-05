@@ -1,6 +1,8 @@
 ---
-name: Geo & Places Data
-description: Use when a task needs live geographic lookups - "geocode this address", "what's at these coordinates" (reverse geocoding), "lat/lon for this city", "which country/state is this ZIP or postal code in", or "country facts: capital, currency, population, flag". Nominatim (OpenStreetMap) is the geocoding default; Zippopotam for postal codes; APICountries for country facts. All keyless. Do NOT use for weather at a location - use weather-climate instead; do NOT use for country-level statistics over time (GDP, population trends) - use government-open-data instead; if the request is a vague "I need live data", route through public-data-api-picker.
+name: geo-places
+description: "Use when a task needs live geographic lookups - \"geocode this address\", \"what's at these coordinates\" (reverse geocoding), \"lat/lon for this city\", \"which country/state is this ZIP or postal code in\", or \"country facts: capital, currency, population, flag\". Nominatim (OpenStreetMap) is the geocoding default; Zippopotam for postal codes; APICountries for country facts. All keyless. Do NOT use for weather at a location - use weather-climate instead; do NOT use for country-level statistics over time (GDP, population trends) - use government-open-data instead; if the request is a vague \"I need live data\", route through public-data-api-picker."
+metadata:
+  title: "Geo & Places Data"
 ---
 
 # Geo & Places Data

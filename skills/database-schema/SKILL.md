@@ -1,6 +1,8 @@
 ---
-name: Database Schema Designer
+name: database-schema
 description: Designs normalized, constrained, migration-friendly relational schemas - entity modeling, key and type selection, indexes derived from real query patterns, and safe forward/rollback migrations. Use when someone asks "design a schema for X", "should I normalize or denormalize this", "what should my primary key be", "how do I add this column without downtime", or "why is my unique constraint broken with soft deletes". Do NOT use for tuning a slow query on an existing schema - use sql-query-optimizer instead; for picking indexes from a live workload, use index-advisor; for sizing database connection pools, use connection-pool-tuner; for range/hash partitioning decisions, use partition-planner.
+metadata:
+  title: "Database Schema Designer"
 ---
 
 # Database Schema Designer

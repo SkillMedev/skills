@@ -1,6 +1,8 @@
 ---
-name: Alert Tuning
+name: alert-tuning
 description: Reduces alert noise by making alerts actionable, symptom-based, and tied to SLOs. Identifies and kills flappy, duplicate, and cause-based alerts. Use when alert fatigue is degrading on-call response quality.
+metadata:
+  title: "Alert Tuning"
 ---
 
 # Alert Tuning

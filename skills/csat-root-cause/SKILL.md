@@ -1,6 +1,8 @@
 ---
-name: CSAT Root Cause Analysis
+name: csat-root-cause
 description: Analyzes CSAT and NPS verbatims to surface root-cause themes and prioritize fixes by frequency and impact. Use when interpreting customer satisfaction data to inform product or process decisions.
+metadata:
+  title: "CSAT Root Cause Analysis"
 ---
 
 # CSAT Root Cause Analysis

@@ -1,6 +1,8 @@
 ---
-name: Remotion Render
+name: remotion-render
 description: Renders a Remotion composition to MP4 and runs the edit-and-re-render loop - CLI render commands, 1080p/4K/9:16 presets, concurrency tuning, codec selection, batch variants from a JSON data file, and Lambda for cloud rendering. Use when someone says "render this Remotion video", "export the composition to MP4", "the animation is too fast, fix and re-render", "batch render one video per customer", or "move rendering to Lambda". Do NOT use for authoring or restructuring scenes, animations, or components - use remotion-compose instead; do NOT use for project scaffolding and initial setup - use remotion-setup instead. This skill owns everything from a finished composition to a delivered file.
+metadata:
+  title: "Remotion Render"
 ---
 # Remotion Render
 

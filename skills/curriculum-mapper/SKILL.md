@@ -1,6 +1,8 @@
 ---
-name: Curriculum Mapper
+name: curriculum-mapper
 description: Maps a course's scope and sequence across a term or year - units, weeks, standards coverage with introduced/developed/mastered notation, and Bloom's-level progression - and flags gaps and redundancy. Use when someone asks "map my curriculum for the year", "build a scope and sequence for this course", "audit my course for standards gaps", or is deciding unit order for a semester. Do NOT use for planning a single lesson - use lesson-plan-builder instead; for adapting one lesson to mixed readiness levels in one classroom, use differentiated-instruction.
+metadata:
+  title: "Curriculum Mapper"
 ---
 
 # Curriculum Mapper

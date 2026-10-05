@@ -1,6 +1,8 @@
 ---
-name: Team Health Check
+name: team-health-check
 description: Assesses a team's health across three independent dimensions - delivery, morale, and clarity - using observable signals from the last 8 weeks, then maps each red or yellow signal to one manager action with a 2-week horizon. Use when a manager asks "is my team okay", "how do I tell if morale is slipping", "we keep missing sprints and I don't know why", or wants a quarterly team health review. Do NOT use for facilitating a single sprint retrospective - use sprint-retro-facilitator instead - for structuring individual 1:1s - use 1on1-agenda - or for defining how a new team works together - use team-charter instead.
+metadata:
+  title: "Team Health Check"
 ---
 
 # Team Health Check

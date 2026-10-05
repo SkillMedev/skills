@@ -1,6 +1,8 @@
 ---
-name: Framework Upgrader
+name: framework-upgrader
 description: Drives a major-version framework bump as a sequence of small, reversible, CI-gated PRs using official codemods and changelog diffing while keeping the app green. Use when bumping React, Rails, Spring Boot, Angular, or any framework across a major version with breaking API/config changes; do NOT use for language or runtime version jumps (Python 2 to 3, Node majors, Java LTS) - use language-version-migrator instead.
+metadata:
+  title: "Framework Upgrader"
 ---
 # Framework Upgrader
 

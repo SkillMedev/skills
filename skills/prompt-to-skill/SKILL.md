@@ -1,6 +1,8 @@
 ---
-name: Prompt to Skill
+name: prompt-to-skill
 description: Converts a prompt a user runs repeatedly into a reusable, paid-quality SKILL.md. Use when someone says "I keep pasting this prompt", "turn this prompt into a skill", "package this workflow", or has a recurring task pattern they want portable across projects and sessions. Do NOT use to author a skill from a capability idea with no existing prompt (use skill-creator) or to restructure an existing SKILL.md (use skill-author).
+metadata:
+  title: "Prompt to Skill"
 ---
 
 # Prompt to Skill

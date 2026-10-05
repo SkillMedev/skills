@@ -1,6 +1,8 @@
 ---
-name: Sermon / Speech Outline
+name: sermon-writer
 description: Structures sermons, lessons, and motivational talks around one central idea with the classic teaching shape - a hook, three parallel points each stated, explained, illustrated, and applied, a concrete application, and a bookend close - plus timing and emphasis notes. Use when someone asks "outline my sermon on this passage", "structure a talk with three points", "help me land the close of my message", or has a theme and needs it built into a deliverable outline. Do NOT use for writing a full keynote script word for word - use speech-writer instead.
+metadata:
+  title: "Sermon / Speech Outline"
 ---
 
 # Sermon / Speech Outline

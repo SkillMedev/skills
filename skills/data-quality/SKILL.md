@@ -1,6 +1,8 @@
 ---
-name: Data Quality Framework
+name: data-quality
 description: Designs layered data quality checks across completeness, validity, consistency, uniqueness, timeliness, and accuracy, with severity tiers, freshness SLAs, and anomaly baselines wired into dbt and CI. Use when someone asks "how do I stop bad data reaching dashboards", "set up dbt tests for this model", "our pipeline loaded duplicate rows again", "what data quality checks should this table have", or "how fresh does this source need to be". Do NOT use for detecting distribution drift in ML features and predictions - use data-drift-monitor instead; for one-off exploration and profiling of a new dataset - use eda-playbook instead; for infrastructure and application telemetry - use observability-stack instead; for removing personal data from datasets - use pii-scrubber instead.
+metadata:
+  title: "Data Quality Framework"
 ---
 
 # Data Quality Framework

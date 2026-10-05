@@ -1,6 +1,8 @@
 ---
-name: Space & Earth Science Data
+name: space-earth-science
 description: Use when a task needs live space or geophysical data - "recent earthquakes near X / above magnitude Y", "NASA picture of the day", "near-Earth asteroids this week", or "latest full-disk Earth image". USGS FDSN is the default for quakes (no key, GeoJSON); NASA's APIs cover astronomy (DEMO_KEY works, free key is instant). Do NOT use for weather, storms, or air quality - use weather-climate instead; do NOT use for maps/geocoding - use geo-places instead; if the request is a vague "I need live data", route through public-data-api-picker.
+metadata:
+  title: "Space & Earth Science Data"
 ---
 
 # Space & Earth Science Data

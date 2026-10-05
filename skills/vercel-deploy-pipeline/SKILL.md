@@ -1,6 +1,8 @@
 ---
-name: Vercel Deploy Pipeline
-description: Ship a Next.js app to Vercel the production way: promote a tested preview to production, instant-rollback a bad release, build once with --prebuilt, run a staged/canary rollout with Rolling Releases (GA), and wire the deploy into CI. Use when someone says "deploy to Vercel", "promote preview to production", "vercel promote", "roll back the deploy", "vercel rollback", "instant rollback", "canary release on Vercel", "rolling release", "--prebuilt build", "vercel deploy in GitHub Actions", or "set up CI for my Vercel project". Do NOT use to manage env vars or pull .env - use vercel-env-management instead; do NOT use to tune runtime/cold-start/ISR performance - use next-on-vercel-perf or vercel-edge-and-isr instead.
+name: vercel-deploy-pipeline
+description: "Ship a Next.js app to Vercel the production way: promote a tested preview to production, instant-rollback a bad release, build once with --prebuilt, run a staged/canary rollout with Rolling Releases (GA), and wire the deploy into CI. Use when someone says \"deploy to Vercel\", \"promote preview to production\", \"vercel promote\", \"roll back the deploy\", \"vercel rollback\", \"instant rollback\", \"canary release on Vercel\", \"rolling release\", \"--prebuilt build\", \"vercel deploy in GitHub Actions\", or \"set up CI for my Vercel project\". Do NOT use to manage env vars or pull .env - use vercel-env-management instead; do NOT use to tune runtime/cold-start/ISR performance - use next-on-vercel-perf or vercel-edge-and-isr instead."
+metadata:
+  title: "Vercel Deploy Pipeline"
 ---
 
 # Vercel Deploy Pipeline

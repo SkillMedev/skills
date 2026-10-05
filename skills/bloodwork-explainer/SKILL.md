@@ -1,6 +1,8 @@
 ---
-name: Bloodwork Explainer
+name: bloodwork-explainer
 description: Translates common lab panels - CBC, CMP, lipid panel, thyroid, hormones, HbA1c - into plain language, flags values against the lab's own reference ranges, and produces a prioritized question list to bring to a physician. Use when someone asks "what does my bloodwork mean", "is my ALT high", "explain my lipid panel", or "what should I ask my doctor about these results". General wellness education, not medical advice - it flags and explains, never diagnoses or prescribes. Do NOT use to summarize a medical chart or clinical document - use clinical-summary instead; for diet changes motivated by results, hand off to nutrition-planner.
+metadata:
+  title: "Bloodwork Explainer"
 ---
 
 # Bloodwork Explainer

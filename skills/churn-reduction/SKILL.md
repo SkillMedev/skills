@@ -1,6 +1,8 @@
 ---
-name: Churn Reduction
+name: churn-reduction
 description: Diagnoses SaaS churn root causes through cohort analysis and a seven-category taxonomy, then builds segmented intervention playbooks ranked by frequency, revenue at stake, and addressability - including save-offer economics. Use when someone asks "why is our churn so high", "build a churn reduction plan", "should we offer discounts to cancelling customers", or when NRR/GRR is slipping and the team needs a diagnosis before prescriptions. Do NOT use for gym or fitness-studio member retention - use retention-and-churn-killer instead. Do NOT use for re-acquiring customers who already left - use win-back-campaign instead. Do NOT use for growing existing accounts - use expansion-revenue instead.
+metadata:
+  title: "Churn Reduction"
 ---
 
 # Churn Reduction

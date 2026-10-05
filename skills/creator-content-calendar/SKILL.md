@@ -1,6 +1,8 @@
 ---
-name: Creator Content Calendar
+name: creator-content-calendar
 description: Designs a sustainable publishing system for a solo creator - 3-4 content pillars, a cadence set at the creator's consistent floor, a fixed pillar rotation, a 30-day idea bank, and a monthly audit loop - delivered as a weekly calendar skeleton. Use when someone says "help me plan my content", "I keep falling off my posting schedule", "I'm launching a channel, what should my cadence be", or "audit my stalled content strategy". Do NOT use for a brand or social team's multi-platform posting grid with per-channel cadences and campaign dates - use social-content-calendar instead; do NOT use to fan one finished pillar piece into derivatives - use content-repurposing instead; do NOT use to write the individual posts or scripts - use youtube-script-writer or linkedin-post-writer instead.
+metadata:
+  title: "Creator Content Calendar"
 ---
 
 # Creator Content Calendar

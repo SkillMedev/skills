@@ -1,6 +1,8 @@
 ---
-name: Dead Code Eliminator
+name: dead-code-eliminator
 description: Proves code is unreachable with converging evidence, then removes it and its tests, fixtures, and flags in reversible slices without breaking dynamic callers. Use when deleting suspected dead code, cleaning up after a migration or feature retirement, trimming a bloated module, or before estimating work on unfamiliar code. Do NOT use when you want to survey and rank an area's debt without committing to deletion - use find-tech-debt instead.
+metadata:
+  title: "Dead Code Eliminator"
 ---
 # Dead Code Eliminator
 

@@ -1,6 +1,8 @@
 ---
-name: Microservices Design
+name: microservices
 description: Designs microservice architectures - service boundaries from business capabilities and team ownership, sync vs async communication choices, saga and outbox patterns for consistency, and resilience defaults - producing a boundary map with an extraction verdict per candidate service. Use when someone asks "should this be its own service", "how do I split my monolith's domains", "sync or event-driven between these services", "how do I handle transactions across services", or is reviewing a distributed architecture. Do NOT use for planning the step-by-step migration off an existing monolith - use monolith-decomposer or strangler-fig-planner for the migration process; this skill owns the target architecture. Do NOT use for designing an individual REST contract - use api-design instead.
+metadata:
+  title: "Microservices Design"
 ---
 
 # Microservices Design

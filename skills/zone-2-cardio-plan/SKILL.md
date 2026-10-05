@@ -1,6 +1,8 @@
 ---
-name: Zone 2 Cardio Plan
+name: zone-2-cardio-plan
 description: Use when someone asks to build a steady-state cardio plan, train an aerobic base or Zone 2, structure easy or endurance weekly cardio, train by heart-rate zones, or improve resting heart rate, VO2, or endurance. Builds a heart-rate-zone aerobic training block with session structure, modality choice, and progression. General fitness guidance, not medical advice. Do NOT use to design a strength or lifting program (use Strength Training Plan), high-intensity interval conditioning, HIIT, or circuits (use Conditioning & HIIT Program), or a mobility/flexibility routine (use Mobility Routine).
+metadata:
+  title: "Zone 2 Cardio Plan"
 ---
 
 # Zone 2 Cardio Plan

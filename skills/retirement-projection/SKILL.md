@@ -1,6 +1,8 @@
 ---
-name: Retirement Projection
+name: retirement-projection
 description: Projects retirement readiness from savings rate, target nest egg, and compound growth - computes the required portfolio via safe-withdrawal-rate math, years to financial independence, and pension or Social Security offsets, with a runnable calculator. Use when someone asks "how much do I need to retire", "am I on track to retire at 60", "what does my savings rate get me", or "can I retire early". General financial education, not personalized investment advice. Do NOT use for choosing funds or setting an asset allocation - use investment-basics instead; do NOT use for a full financial plan with budgeting and insurance - use financial-planner instead.
+metadata:
+  title: "Retirement Projection"
 ---
 
 # Retirement Projection

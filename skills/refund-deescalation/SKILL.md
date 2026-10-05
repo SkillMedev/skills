@@ -1,6 +1,8 @@
 ---
-name: Refund and De-escalation
+name: refund-deescalation
 description: Handles angry customers and refund requests with a validate-own-act de-escalation sequence and a refund decision matrix that weighs refund cost against customer LTV and chargeback risk. Use when someone asks "this customer is furious, what do I say", "should I approve this refund", "how do I deny a refund without losing the customer", or a conversation is emotionally charged. Do NOT use for routine, non-charged ticket responses - use support-ticket-reply instead; for diagnosing systemic patterns behind falling satisfaction scores, use csat-root-cause.
+metadata:
+  title: "Refund and De-escalation"
 ---
 
 # Refund and De-escalation

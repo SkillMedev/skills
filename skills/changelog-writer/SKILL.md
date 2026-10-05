@@ -1,6 +1,8 @@
 ---
-name: User-Facing Changelog
+name: changelog-writer
 description: Translates raw engineering release notes - commits, tickets, PR titles - into a user-facing changelog grouped as New, Improved, and Fixed, with a highlights section on top, benefit-first phrasing in the user's vocabulary, bugs described by their symptoms, and internal-only churn cut and flagged. Use when someone says "write the changelog for this release", "turn these commit messages into release notes users can read", "announce what shipped this week", or their changelog currently reads as internal jargon. Do NOT use for auto-generating a technical changelog from git history for developers - use changelog-generator instead.
+metadata:
+  title: "User-Facing Changelog"
 ---
 
 # User-Facing Changelog

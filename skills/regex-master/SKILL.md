@@ -1,6 +1,8 @@
 ---
-name: Regex Master
+name: regex-master
 description: Authors, debugs, and hardens regular expressions - test-cases-first workflow, flavor-aware construction (JS, PCRE, Python re, RE2), catastrophic-backtracking detection and rewrites, and annotated verbose patterns with a verification table. Use when someone asks "write a regex for X", "why doesn't this regex match", "is this regex safe for user input", "explain what this pattern does", or a validation regex is hanging the server on certain inputs. Do NOT use for parsing HTML, JSON, or CSV - those need real parsers, not patterns - and do NOT use for full input-validation architecture or injection defenses - use secure-code-review instead.
+metadata:
+  title: "Regex Master"
 ---
 
 # Regex Master

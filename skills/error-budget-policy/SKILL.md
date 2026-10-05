@@ -1,6 +1,8 @@
 ---
-name: Error Budget Policy
+name: error-budget-policy
 description: Defines and applies an SLO error-budget policy that gates feature work versus reliability work based on remaining budget. Use when setting up SLOs or when high burn rate lacks a formal team response protocol.
+metadata:
+  title: "Error Budget Policy"
 ---
 
 # Error Budget Policy

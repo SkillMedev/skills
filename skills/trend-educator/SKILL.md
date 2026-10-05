@@ -1,6 +1,8 @@
 ---
-name: Trend Educator
+name: trend-educator
 description: Turns a raw Instagram trend-scout report into a plain-language briefing that teaches WHY each trend is working - the algorithm mechanics, audience psychology, and format dynamics behind it - and surfaces specific opportunity angles as a screenshot-ready trend card. Use when someone asks "explain these trends to me", "why is this format blowing up", "turn this trend report into a briefing", or has instagram-trend-scout output and needs to understand it before creating. Do NOT use to gather the trend data itself - use instagram-trend-scout instead; do NOT use to draft the actual post - use instagram-post-builder instead; do NOT use for statistical trend detection in business or product data - use trend-analysis instead.
+metadata:
+  title: "Trend Educator"
 ---
 
 # Trend Educator

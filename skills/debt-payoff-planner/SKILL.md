@@ -1,6 +1,8 @@
 ---
-name: Debt Payoff Planner
+name: debt-payoff-planner
 description: Builds a sequenced multi-debt payoff plan - avalanche or snowball chosen by explicit decision rules - with the rollover schedule, total-interest math, and a debt-free date. Use when someone asks "which debt do I pay first", "avalanche or snowball", "how do I get out of credit card debt", or "when will I be debt-free". Do NOT use for sizing the cash cushion that prevents new debt - use emergency-fund-planner instead; for building the monthly budget that produces the extra payment - use budget-builder; for the overall save-vs-invest-vs-payoff ordering - use financial-planner.
+metadata:
+  title: "Debt Payoff Planner"
 ---
 
 # Debt Payoff Planner

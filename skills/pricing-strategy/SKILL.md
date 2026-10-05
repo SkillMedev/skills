@@ -1,6 +1,8 @@
 ---
-name: Pricing Strategy
+name: pricing-strategy
 description: Set or revise pricing for any product by triangulating value, competition, and cost floor into a recommended structure, price points, and a test plan. Use when someone asks "what should I charge", "how do I price my product", "are we priced too low", "should we go usage-based or flat", or is preparing a repricing or a new-product launch. Do NOT use for designing SaaS tier ladders, value metrics, and expansion packaging in detail - use saas-pricing instead; for gym front-end offers and guarantees use gym-pricing-and-guarantees; for checking whether the resulting price produces healthy CAC payback use unit-economics.
+metadata:
+  title: "Pricing Strategy"
 ---
 
 # Pricing Strategy

@@ -1,6 +1,8 @@
 ---
-name: Color Palette Builder
+name: color-palette-builder
 description: Builds an accessible brand color palette - one anchor color, role assignments, 9-step tonal scales, 60-30-10 distribution, and documented usage rules - ready for a developer to implement without guessing. Use when someone asks "pick our brand colors", "build a color system for our app", "what shade should our buttons be", or is defining the color layer of a design system. Do NOT use for auditing or fixing contrast failures and color-blindness issues in an existing product - use color-accessibility instead; for assembling the full brand book around the palette, use brand-guidelines.
+metadata:
+  title: "Color Palette Builder"
 ---
 
 # Color Palette Builder

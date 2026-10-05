@@ -1,11 +1,13 @@
 ---
-name: Instagram Post Builder
+name: instagram-post-builder
 slug: instagram-post-builder
 description: Interactively builds a complete, copy-paste-ready Instagram post package - three hook variants using distinct patterns, a caption body, one clear CTA, a 15-20 hashtag set across reach tiers, alt text, and a visual direction with shot list or slide breakdown - through a one-question-at-a-time interview, optionally grounded in a trend-educator briefing. Use when someone says "write an Instagram post for my launch", "build the full post package for this reel", "put together a carousel with hooks and hashtags", or reaches the build stage after trend-educator. Do NOT use for finding what is trending - use instagram-trend-scout instead; for a single caption without the full package - use social-caption-writer; for planning a month of content - use social-content-calendar.
 version: 1.0.0
 stage: S3
 tags: [instagram, social-media, copywriting, captions, hashtags, content-creation]
 license: MIT
+metadata:
+  title: "Instagram Post Builder"
 ---
 
 # Instagram Post Builder

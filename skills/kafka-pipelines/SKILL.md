@@ -1,6 +1,8 @@
 ---
-name: Kafka Pipelines
+name: kafka-pipelines
 description: Designs Kafka streaming pipelines end to end - partition-count sizing math, key choice, consumer-group sizing, offset strategy, delivery semantics, poll tuning, and dead-letter handling - with production configs. Use when someone asks "how many partitions should this topic have", "my consumer group keeps rebalancing", "consumer lag keeps growing", "how do I handle poison messages", or is designing a new topic or event-driven pipeline. Do NOT use for Spark batch or PySpark job tuning - use spark-jobs instead; do NOT use for HTTP webhook ingestion reliability - use webhook-receiver-hardener instead.
+metadata:
+  title: "Kafka Pipelines"
 ---
 
 # Kafka Pipelines

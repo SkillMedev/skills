@@ -1,6 +1,8 @@
 ---
-name: Conflict Resolution
+name: conflict-resolution
 description: Facilitates workplace and interpersonal conflict resolution using Nonviolent Communication and interest-based negotiation, producing a mediation plan, de-escalation scripts, and a written agreement with a check-in date. Use when someone asks "how do I resolve a conflict with my coworker", "two of my reports are fighting", "help me have a hard conversation", or "how do I de-escalate an argument". Do NOT use for de-escalating angry customers demanding refunds - use refund-deescalation instead; for writing a team's standing conflict norms into a charter, use team-charter.
+metadata:
+  title: "Conflict Resolution"
 ---
 
 # Conflict Resolution

@@ -1,6 +1,8 @@
 ---
-name: Mobile Perf Profiler
+name: mobile-perf-profiler
 description: Diagnoses and fixes mobile jank, dropped frames, slow startup, and growing memory by capturing a trace or heap snapshot on a real device, isolating the single worst cost, fixing it, and re-measuring against the 16ms frame and cold-start budgets. Use when someone says "the app stutters when I scroll", "startup takes forever", "memory keeps climbing after navigating around", or the UI feels laggy on a real device. Do NOT use when the bottleneck is a website or web app (LCP, bundle size, slow endpoint or query) - use web-performance instead; for Compose recomposition fixes pair with jetpack-compose-builder; for Flutter widget architecture use flutter-widget-architect.
+metadata:
+  title: "Mobile Perf Profiler"
 ---
 # Mobile Perf Profiler
 

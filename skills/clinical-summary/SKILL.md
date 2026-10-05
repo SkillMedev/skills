@@ -1,6 +1,8 @@
 ---
-name: Clinical Summary
+name: clinical-summary
 description: Produces structured, faithful clinical summaries - either a patient-record summary with strict chronology, medication reconciliation, and expanded abbreviations, or a clinical-study summary with effect sizes, absolute risks, harms, and limitations. Use when someone asks "summarize this patient chart", "turn these notes into a discharge-style summary", "summarize this RCT for journal club", or "what did this trial actually show". This is clinical documentation support, not medical advice or diagnosis. Do NOT use for explaining lab results to a patient - use bloodwork-explainer instead; for synthesizing many studies into one evidence review, use systematic-review.
+metadata:
+  title: "Clinical Summary"
 ---
 
 # Clinical Summary

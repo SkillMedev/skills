@@ -1,6 +1,8 @@
 ---
-name: Screening Rubric Builder
+name: screening-rubric-builder
 description: Turn a job description into a weighted, anchored rubric for the pre-interview resume/CV screen so applicants are filtered against the same job-relevant criteria, in writing, before opinions form. Use when you have a JD and an applicant pile and need to decide who advances to interviews, set up a fair resume screen, or replace gut-feel resume sorting with a defensible filter. Do NOT use when building the interview-loop scorecard interviewers fill in during or after interviews - use hiring-scorecard instead.
+metadata:
+  title: "Screening Rubric Builder"
 ---
 
 # Screening Rubric Builder

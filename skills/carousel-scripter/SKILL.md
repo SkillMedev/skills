@@ -1,6 +1,8 @@
 ---
-name: Carousel Scripter
+name: carousel-scripter
 description: Scripts a multi-slide Instagram or LinkedIn carousel as a hook slide, one-idea-per-slide value frames, and a single-CTA closing slide, with per-slide copy and design direction. Use when the user asks to write, script, or outline a carousel, turn a post/idea/listicle into swipeable slides, or build an Instagram carousel or LinkedIn document (PDF) post.
+metadata:
+  title: "Carousel Scripter"
 ---
 # Carousel Scripter
 

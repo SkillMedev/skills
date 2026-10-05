@@ -1,6 +1,8 @@
 ---
-name: Product Analytics
-description: Stands up product analytics from decision questions backward - a north-star metric with an input-metric tree, an object-action event taxonomy with a governed tracking plan, and the priority analyses to build first: activation funnels, cohort retention curves, and feature adoption correlated with retention. Use when someone asks "what events should we track", "set up our analytics taxonomy", "where do users drop off before first value", or "what's our activation moment". Do NOT use for growth-accounting decompositions of MAU changes - use growth-accounting instead - or for deep funnel diagnosis on existing data - use funnel-analysis instead.
+name: product-analytics
+description: "Stands up product analytics from decision questions backward - a north-star metric with an input-metric tree, an object-action event taxonomy with a governed tracking plan, and the priority analyses to build first: activation funnels, cohort retention curves, and feature adoption correlated with retention. Use when someone asks \"what events should we track\", \"set up our analytics taxonomy\", \"where do users drop off before first value\", or \"what's our activation moment\". Do NOT use for growth-accounting decompositions of MAU changes - use growth-accounting instead - or for deep funnel diagnosis on existing data - use funnel-analysis instead."
+metadata:
+  title: "Product Analytics"
 ---
 
 # Product Analytics

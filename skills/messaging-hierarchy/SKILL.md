@@ -1,6 +1,8 @@
 ---
-name: Messaging Hierarchy
+name: messaging-hierarchy
 description: Use when turning a positioning statement into actual copy - building the value proposition, message pillars, proof points, and per-channel messaging that keep the website, ads, and sales deck all saying the same thing. Triggers on "write our value proposition", "message pillars", "messaging framework", "messaging house", "key messages", "proof points", "our website and sales say different things", "per-channel messaging", "on-message copy". Takes the positioning-statement as input and feeds landing-page-copy. Do NOT use when you have not yet fixed positioning - use positioning-statement first. Do NOT use when you need the actual hero/landing page words - use landing-page-copy. Do NOT use to sequence launch phases - use launch-plan-sequencer; for the hour-by-hour go-live - use launch-day-runbook; for the sales deck/talk track - use sales-enablement-kit; for the in-product activation flow - use plg-motion-designer.
+metadata:
+  title: "Messaging Hierarchy"
 ---
 
 # Messaging Hierarchy

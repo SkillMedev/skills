@@ -1,6 +1,8 @@
 ---
-name: Skill Description Writer
+name: skill-description-writer
 description: Writes the description field that makes a skill fire reliably - WHAT it does, WHEN to invoke it with quoted user phrasing, and what it is NOT for. Use when drafting or improving only the description or trigger of a SKILL.md or catalog entry - "this skill never fires", "fix this description", "write the frontmatter description". Do NOT use to author a whole skill (use skill-creator) or to grade/audit one (use skill-auditor).
+metadata:
+  title: "Skill Description Writer"
 ---
 
 # Skill Description Writer

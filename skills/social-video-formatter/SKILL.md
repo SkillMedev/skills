@@ -1,6 +1,8 @@
 ---
-name: Social Video Formatter
+name: social-video-formatter
 description: Reframe and export a finished video for social platforms - 9:16 ↔ 16:9 cropping, burned-in captions, a platform-native first frame, loop design, and per-platform specs (aspect, length, safe areas) for TikTok, Reels, Shorts, X, and LinkedIn. Use when someone says "make this vertical", "crop to 9:16", "format for TikTok/Reels/Shorts", "add captions/subtitles", "why is my video cut off on mobile", "resize for Instagram", or "export for social". Do NOT use when the question is about the storyboard or shot order before any video exists (use video-storyboard); the animation craft of how elements move (use motion-design-principles); animated word-by-word caption styling (use kinetic-typography); palette, contrast, or lighting (use motion-color-and-light); directing the product-demo content and screen choreography (use product-demo-director); or scoring, beat-syncing, or audio (use sound-and-music-sync) - this is the craft layer that decides WHAT to format for the feed, then hands a concrete spec to remotion-compose / remotion-render to author and export.
+metadata:
+  title: "Social Video Formatter"
 ---
 
 # Social Video Formatter

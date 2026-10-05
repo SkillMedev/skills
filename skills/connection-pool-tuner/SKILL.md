@@ -1,6 +1,8 @@
 ---
-name: Connection Pool Tuner
+name: connection-pool-tuner
 description: Diagnoses connection pool exhaustion from captured evidence and sets correct pool sizes and timeouts across app pools and PgBouncer. Use when someone says "we keep hitting database connection limit errors under load", "my API times out waiting for a connection from the pool", "the database shows hundreds of idle connections", or sees "too many clients", checkout/acquire timeouts, "idle in transaction" pile-up, or serverless functions storming the database on a traffic spike. Do NOT use when the problem is an unreliable external service (third-party API, downstream microservice) needing retries or fallbacks - use circuit-breaker-builder instead.
+metadata:
+  title: "Connection Pool Tuner"
 ---
 # Connection Pool Tuner
 

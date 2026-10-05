@@ -1,6 +1,8 @@
 ---
-name: Hiring Pipeline
+name: hiring-pipeline
 description: Designs an end-to-end hiring pipeline from job requisition through debrief and offer, with stage-by-stage conversion benchmarks, a reverse-funnel capacity plan, and time-to-fill targets. Use when someone asks "design our hiring process", "how many candidates do we need to make one hire", "our offers keep getting declined", "candidates are dropping out of our funnel", or "how long should hiring take". Do NOT use for writing the interview questions and rubrics for one loop - use interview-guide-builder instead - for writing the sourcing messages to candidates - use candidate-outreach-personalizer instead - for the scorecard artifact itself - use hiring-scorecard instead - or for the job post copy - use job-description-writer instead.
+metadata:
+  title: "Hiring Pipeline"
 ---
 
 # Hiring Pipeline

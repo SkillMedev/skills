@@ -1,6 +1,8 @@
 ---
-name: Fiction Scene Writer
+name: fiction-scene-writer
 description: Writes individual fiction scenes with goal-conflict-turn structure, sensory grounding, interiority, and subtext-driven dialogue - then notes the turn accomplished and one craft choice so the writer can learn from it. Use when someone asks "write this scene for my novel", "my dialogue feels flat", "make this moment more immersive", or has plot beats that need dramatizing on the page. Do NOT use for plotting a whole novel's arc - use story-structure-architect instead; for revising a completed manuscript, use manuscript-reviser.
+metadata:
+  title: "Fiction Scene Writer"
 ---
 
 # Fiction Scene Writer

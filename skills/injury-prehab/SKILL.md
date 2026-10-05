@@ -1,6 +1,8 @@
 ---
-name: Injury Prehab
-description: Designs targeted prehab routines - sets, reps, and weekly placement - that build resilience at the four most common failure zones: shoulders, knees, lower back, and hips, matched to the user's training program. Use when someone says "my shoulders feel beat up from bench", "how do I bulletproof my knees for running", "prevent lower back tweaks from deadlifts", or is starting a new training block. General movement guidance for injury PREVENTION, not medical advice or physical therapy - existing injuries and pain go to a licensed physio. Do NOT use for a general desk-worker flexibility routine - use mobility-routine instead; for the main resistance program itself, use strength-training-plan; for conditioning, use fitness-program.
+name: injury-prehab
+description: "Designs targeted prehab routines - sets, reps, and weekly placement - that build resilience at the four most common failure zones: shoulders, knees, lower back, and hips, matched to the user's training program. Use when someone says \"my shoulders feel beat up from bench\", \"how do I bulletproof my knees for running\", \"prevent lower back tweaks from deadlifts\", or is starting a new training block. General movement guidance for injury PREVENTION, not medical advice or physical therapy - existing injuries and pain go to a licensed physio. Do NOT use for a general desk-worker flexibility routine - use mobility-routine instead; for the main resistance program itself, use strength-training-plan; for conditioning, use fitness-program."
+metadata:
+  title: "Injury Prehab"
 ---
 
 # Injury Prehab

@@ -1,6 +1,8 @@
 ---
-name: Replication Lag Debugger
+name: replication-lag-debugger
 description: Diagnoses read-replica lag and the stale-read bugs it causes, then applies read-after-write consistency strategies to fix them. Use when someone says "users see stale data right after saving", "my read replica is lagging behind the primary", "data written a second ago is missing from the next request", when replica lag monitoring alerts or grows after a backfill, or when deciding which reads must hit the primary versus a replica.
+metadata:
+  title: "Replication Lag Debugger"
 ---
 # Replication Lag Debugger
 

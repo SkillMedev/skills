@@ -1,6 +1,8 @@
 ---
-name: Win-Back Campaign
+name: win-back-campaign
 description: Designs segmented win-back email sequences for dormant users - dormancy tiers, a three-beat sequence with a single proportional incentive, and a suppression rule - and measures success by re-activation, not opens. Use when someone says "our users went quiet", "design a win-back campaign", "how do I re-engage lapsed customers", "should we email people who haven't logged in for months", or lifecycle messaging has stopped landing with a lapsed segment. Do NOT use for recovering an unfinished checkout - use abandoned-cart-sequence instead. Do NOT use for diagnosing and fixing why active customers cancel - use churn-reduction instead. Do NOT use for building always-on onboarding or nurture flows - use email-drip-builder instead.
+metadata:
+  title: "Win-Back Campaign"
 ---
 
 # Win-Back Campaign

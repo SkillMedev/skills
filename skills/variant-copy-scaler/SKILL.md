@@ -1,6 +1,8 @@
 ---
-name: Variant Copy Scaler
+name: variant-copy-scaler
 description: Generates distinct, on-brand copy for every size, color, and bundle variant from a single master description, splitting a shared core from a thin per-variant layer so variant pages avoid thin or duplicate-content problems. Use when someone asks "write descriptions for all 12 colorways", "our variant pages are cannibalizing each other", "should each SKU get its own page", or when one product ships in many variants and needs per-variant PDP copy, or near-identical variant pages are creating duplicate-content or canonical problems. Do NOT use to write the single master or parent PDP description from specs - use product-description-writer instead; do NOT use for category or collection page copy - use category-page-copywriter instead.
+metadata:
+  title: "Variant Copy Scaler"
 ---
 
 # Variant Copy Scaler

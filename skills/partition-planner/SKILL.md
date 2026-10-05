@@ -1,6 +1,8 @@
 ---
-name: Table Partition Planner
+name: partition-planner
 description: Produces a partitioning or sharding plan for an oversized table - range/list/hash strategy, partition-key choice, composite-key and pruning constraints, and a verdict on whether to partition at all. Use when one table has grown past tens of millions of rows or hundreds of GB, vacuum/autovacuum on it runs for hours, retention deletes are giant DELETEs, or you are deciding between range/list/hash partitioning or sharding a hot table. Do NOT use when the goal is choosing indexes for specific slow queries - use index-advisor instead.
+metadata:
+  title: "Table Partition Planner"
 ---
 # Table Partition Planner
 

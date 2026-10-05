@@ -1,6 +1,8 @@
 ---
-name: Power BI DAX
+name: power-bi-dax
 description: Writes correct, fast DAX measures with proper filter context, time intelligence on a marked date table, and VertiPaq-friendly patterns, diagnosing slow visuals down to the storage-vs-formula engine split. Use when someone asks "why does my DAX measure return the wrong total", "write a YTD or year-over-year measure", "my Power BI report is slow", "CALCULATE isn't doing what I expect", or "measure vs calculated column". Do NOT use for Tableau calculated fields and dashboard design - use tableau-best-practices instead; for writing warehouse SQL and turning query results into findings - use sql-to-insights instead; for Excel or Google Sheets financial models - use spreadsheet-model-builder instead.
+metadata:
+  title: "Power BI DAX"
 ---
 
 # Power BI DAX

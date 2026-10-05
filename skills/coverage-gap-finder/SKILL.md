@@ -1,6 +1,8 @@
 ---
-name: Coverage Gap Finder
+name: coverage-gap-finder
 description: Produces a risk-ranked list of untested critical paths and branches from a real branch-coverage report crossed with git churn, naming the specific missing cases and the smallest test that buys the most safety. Use when someone says "we have 85% coverage but I don't trust it", "what should we test next", "audit the suite before this release", or "which coverage gaps actually matter". Do NOT use to prove existing assertions are strong - covered-but-unasserted lines are mutation-test-runner's job; do NOT use to pin the current behavior of legacy code before a refactor - use characterization-test-writer instead. This skill decides what to test and in what order, not how well a test asserts or how to lock down legacy.
+metadata:
+  title: "Coverage Gap Finder"
 ---
 # Coverage Gap Finder
 

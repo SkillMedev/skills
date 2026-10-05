@@ -1,6 +1,8 @@
 ---
-name: Agent Orchestration
+name: agent-orchestration
 description: Designs reliable multi-agent LLM systems - choosing a topology, writing handoff contracts between agents, deciding what runs in parallel vs series, and setting context, retry, and cost budgets that stop runaway loops. Use when someone asks "should I split this into multiple agents", "my agents keep looping", "how do I pass context between agents", "orchestrator vs pipeline vs router", or is architecting an agent workflow. Do NOT use for tuning a single prompt - use prompt-engineer instead; do NOT use for measuring agent output quality - use llm-evaluation instead; for making a product agent-operable end to end, use build-on-agent-native.
+metadata:
+  title: "Agent Orchestration"
 ---
 
 # Agent Orchestration

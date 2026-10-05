@@ -1,6 +1,8 @@
 ---
-name: Content Refresh Auditor
+name: content-refresh-auditor
 description: Produces a prioritized refresh plan for a decaying published page - a refresh/consolidate/retire verdict plus ordered update actions to recover or grow rankings. Use when an existing URL is losing traffic or rankings, during a periodic content-decay sweep, or when asked to "update", "refresh", or "revive" an old article. Do NOT use when planning coverage for a draft that is not yet published or ranking - use SERP Gap Analyzer instead.
+metadata:
+  title: "Content Refresh Auditor"
 ---
 # Content Refresh Auditor
 

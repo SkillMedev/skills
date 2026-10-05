@@ -1,6 +1,8 @@
 ---
-name: Python Async
+name: python-async
 description: Writes and reviews correct asyncio code - structured concurrency with TaskGroup, gather vs create_task decisions, cancellation and timeout handling, bridging blocking code with to_thread, and bounded parallelism - with good/bad pairs for the pitfalls that silently freeze the event loop. Use when someone asks "why is my async code slow", "gather or create_task", "how do I run these requests concurrently", "my FastAPI endpoint blocks everything", or is converting sync Python to asyncio. Do NOT use for general pandas or data-analysis performance - use pandas-expert instead - and do NOT use for API endpoint design itself - use api-design instead.
+metadata:
+  title: "Python Async"
 ---
 
 # Python Async

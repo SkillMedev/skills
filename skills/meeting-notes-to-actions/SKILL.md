@@ -1,6 +1,8 @@
 ---
-name: Meeting Notes to Actions
+name: meeting-notes-to-actions
 description: Converts raw meeting notes or transcripts into a four-part record - a 3-5 sentence summary, the decisions actually made, an action table with owner, verb-phrased action, due date, and status, and the open questions - without inventing owners, dates, or tasks. Use when someone pastes notes and asks "pull the action items out of this", "summarize this meeting", "who owns what from this transcript", or "what did we actually decide". Do NOT use for preparing the agenda before a meeting happens - use meeting-agenda instead - or for turning extracted actions into engineering tickets - use jira-ticket-writer instead.
+metadata:
+  title: "Meeting Notes to Actions"
 ---
 
 # Meeting Notes to Actions

@@ -1,6 +1,8 @@
 ---
-name: Runbook Writer
+name: runbook-writer
 description: Writes an operational runbook for a service covering symptoms, diagnostic checks, mitigations, and escalation paths. Use when shipping a new service or when an existing service lacks incident procedures.
+metadata:
+  title: "Runbook Writer"
 ---
 
 # Runbook Writer

@@ -1,6 +1,8 @@
 ---
-name: Channel Strategy
+name: channel-strategy
 description: Picks, sequences, and scales the distribution channels that fit a company's economics, producing a scored channel matrix and a 12-month sequencing plan. Use when someone asks "which marketing channel should we focus on", "should we do paid or content or outbound", "our growth is stalling across channels", "when do we add a second channel", or "is this channel worth scaling". Do NOT use for auditing an existing paid-ads account - use paid-acquisition-audit instead - for the full go-to-market plan around the channels - use go-to-market-planner instead - or for modeling how channels compound into a growth model - use growth-model instead.
+metadata:
+  title: "Channel Strategy"
 ---
 
 # Channel Strategy

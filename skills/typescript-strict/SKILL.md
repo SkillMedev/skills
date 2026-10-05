@@ -1,6 +1,8 @@
 ---
-name: TypeScript Strict Mode
+name: typescript-strict
 description: Write and review TypeScript as if strict mode plus the hardening flags (noUncheckedIndexedAccess, exactOptionalPropertyTypes) are enforced, and migrate loose codebases to full strictness flag by flag without breaking the build. Use when someone asks "how do I get rid of any", "turn on strict mode in an existing project", "is this type assertion safe", "why does tsc say possibly undefined", or when writing new TypeScript that must pass a strict compiler. Do NOT use for migrating between language or runtime versions - use language-version-migrator instead.
+metadata:
+  title: "TypeScript Strict Mode"
 ---
 
 # TypeScript Strict Mode

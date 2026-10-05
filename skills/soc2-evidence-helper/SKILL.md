@@ -1,6 +1,8 @@
 ---
-name: SOC 2 Evidence Helper
+name: soc2-evidence-helper
 description: Maps engineering controls to SOC 2 Trust Service Criteria, builds a continuous evidence-collection plan with cadences per control family, and produces the control-to-evidence table auditors work from. Use when someone asks "what evidence do we need for SOC 2", "map our controls to the Trust Service Criteria", "how do we prepare for Type II fieldwork", "the auditor asked for access reviews", or is closing findings or standing up a compliance program. Do NOT use for building an incident postmortem - use postmortem-writer instead; do NOT use for finding and prioritizing actual vulnerabilities - use vulnerability-triage instead; this skill organizes proof that controls operate, it does not implement the controls.
+metadata:
+  title: "SOC 2 Evidence Helper"
 ---
 # SOC 2 Evidence Helper
 

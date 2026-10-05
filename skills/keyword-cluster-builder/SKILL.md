@@ -1,6 +1,8 @@
 ---
-name: Keyword Cluster Builder
+name: keyword-cluster-builder
 description: Collapses a raw keyword list into topic clusters and a pillar/cluster page architecture with one primary keyword and a prioritized build order per cluster. Use when you have a keyword export (CSV/GSC/keyword-tool dump) and need a content plan that says which pages to build, not a flat list. Do NOT use when labeling individual queries by intent or recommending page types - use search-intent-classifier instead; do NOT use when choosing internal links or anchor text between pages - use internal-linking-mapper instead.
+metadata:
+  title: "Keyword Cluster Builder"
 ---
 # Keyword Cluster Builder
 

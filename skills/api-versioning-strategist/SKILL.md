@@ -1,6 +1,8 @@
 ---
-name: API Versioning Strategist
+name: api-versioning-strategist
 description: Produces an API version scheme (date-pinned header or URI), a breaking-vs-additive change policy, and a published deprecation/sunset timeline with translation shims. Use when removing or renaming a field or endpoint, tightening validation, cutting a "v2", binding a partner integration to a version, or planning how long an old version lives. Do NOT use when designing the resource shape, URLs, status codes, or pagination of a new endpoint - use REST API Design instead; this skill owns only the version scheme and deprecation path layered on top of that contract.
+metadata:
+  title: "API Versioning Strategist"
 ---
 # API Versioning Strategist
 

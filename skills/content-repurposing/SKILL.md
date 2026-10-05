@@ -1,6 +1,8 @@
 ---
-name: Content Repurposing
+name: content-repurposing
 description: Fans one long-form pillar asset (video, podcast episode, or article) out into 10+ platform-native atomic pieces with a derivation map - clips, quote cards, threads, LinkedIn posts, newsletter and blog sections - each recast in the target platform's register and sequenced over the week. Use when someone says "turn this video into clips", "repurpose this podcast episode", "get more mileage out of this article", or "build a distribution plan from one piece of content". Do NOT use to re-express one finished post as the native equivalent of the same asset on each channel - use cross-platform-reformatter instead; do NOT use to mechanically crop, caption, and export a finished video for social feeds - use social-video-formatter instead; do NOT use to design the ongoing pillar-and-cadence publishing system itself - use creator-content-calendar instead.
+metadata:
+  title: "Content Repurposing"
 ---
 
 # Content Repurposing

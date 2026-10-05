@@ -1,6 +1,8 @@
 ---
-name: Async Communication
+name: async-communication
 description: Converts sync meetings and vague pings into structured asynchronous messages - TL;DR up front, an explicit ask with owner and deadline, and a default-action line that keeps work moving if nobody replies - plus team response norms per channel. Use when someone asks "how do I say this without a meeting", "rewrite this message so people actually respond", "help my remote team stop living on calls", or "draft an async decision doc". Do NOT use for the recurring exec status update itself - use eng-status-rollup instead - for extracting actions from a meeting that already happened - use meeting-notes-to-actions instead - or for designing the meeting you do keep - use meeting-agenda instead.
+metadata:
+  title: "Async Communication"
 ---
 
 # Async Communication

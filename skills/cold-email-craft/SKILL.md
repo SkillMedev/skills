@@ -1,6 +1,8 @@
 ---
-name: Cold Email Craft
+name: cold-email-craft
 description: Write short, personalized B2B cold emails and follow-up copy - under 90 words, one ask, personalization in the first line - with good/bad contrast pairs to calibrate. Use when someone asks "write a cold email", "why is nobody replying to my outreach", "draft a follow-up sequence", "make this email shorter", or is starting founder-led outbound. Do NOT use for sending infrastructure, domains, SPF/DKIM/DMARC, warmup, or spam placement - use cold-email-deliverability instead; for multi-channel cadence architecture use outreach-sequence-designer; for building and verifying the list use prospect-list-builder.
+metadata:
+  title: "Cold Email Craft"
 ---
 
 # Cold Email Craft

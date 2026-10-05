@@ -1,6 +1,8 @@
 ---
-name: Usability Test Plan
+name: usability-test-plan
 description: Plans a usability study - research questions, realistic task scenarios with success criteria, metrics (completion rate, time on task, SEQ, SUS), a recruiting screener, and moderated vs. unmoderated guidance. Use when someone says "plan a usability test", "write task scenarios for our prototype", "how many participants do we need", or is about to put an interface or prototype in front of users. Do NOT use for open-ended discovery interview guides - use interview-guide-builder instead; for analyzing quantitative A/B experiments, use ab-test-analyzer.
+metadata:
+  title: "Usability Test Plan"
 ---
 
 # Usability Test Plan

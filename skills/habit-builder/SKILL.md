@@ -1,6 +1,8 @@
 ---
-name: Habit Builder
+name: habit-builder
 description: Turns a vague intention into a one-page habit plan - a specific implementation intention, a habit-stack anchor sentence, cue-craving-routine-reward loop mapping, environment design, a never-miss-twice tracking method, and weekly review questions. Use when someone says "help me build a habit", "I want to exercise more but can't stick with it", "why do my habits keep failing", or wants to break a bad habit by removing its cues. Do NOT use for goal-setting with an accountability structure - use goals-accountability instead; for a full training program, use fitness-program.
+metadata:
+  title: "Habit Builder"
 ---
 
 # Habit Builder

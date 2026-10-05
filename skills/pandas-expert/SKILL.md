@@ -1,6 +1,8 @@
 ---
-name: Pandas Expert
+name: pandas-expert
 description: Writes correct, vectorized pandas for cleaning, joining, reshaping, and aggregating tabular data, with validated joins and deliberate dtype and missing-data handling. Use when someone asks "why did my merge duplicate rows", "how do I clean this CSV in pandas", "my groupby numbers look wrong", "this apply is too slow", or is transforming a DataFrame for analysis or a pipeline. Do NOT use for first-pass profiling of an unfamiliar dataset - use eda-playbook instead; for data too large for one machine use spark-jobs; for answering business questions directly in SQL use sql-to-insights.
+metadata:
+  title: "Pandas Expert"
 ---
 
 # Pandas Expert

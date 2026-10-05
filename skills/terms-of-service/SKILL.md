@@ -1,6 +1,8 @@
 ---
-name: Terms of Service
+name: terms-of-service
 description: Drafts plain-English Terms of Service and Privacy Policies for SaaS products using a clause-by-clause checklist, flagging every business decision and lawyer-review item explicitly. Use when someone asks "write terms of service for my app", "I need a privacy policy", "draft my ToS", "what sections does a SaaS ToS need", or is preparing legal pages before launch. Do NOT use for employee offer letters, NDAs, or employment agreements - use employment-contract instead. Do NOT use for assessing which regulations apply to a product or market - use regulatory-scan instead.
+metadata:
+  title: "Terms of Service"
 ---
 
 # Terms of Service

@@ -1,6 +1,8 @@
 ---
-name: Goals & Accountability
+name: goals-accountability
 description: Turns vague intentions into SMART goals with both lagging targets and controllable leading indicators, then keeps them alive with a 10-minute weekly check-in template, an accountability structure (visible goals, public commitments, partner check-ins), and a quarterly reflection that converts the quarter into lessons. Use when someone says "help me set goals I'll actually stick to", "I set resolutions and abandon them by February", "build me a goal tracking system", or wants a weekly review cadence for personal targets. Do NOT use for company or team objective-setting - use okr-builder instead - or for building daily habits - use habit-builder instead.
+metadata:
+  title: "Goals & Accountability"
 ---
 
 # Goals & Accountability

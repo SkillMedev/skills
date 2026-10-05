@@ -1,6 +1,8 @@
 ---
-name: App Store Copy
+name: app-store-copy
 description: Writes App Store and Play Store listing copy to platform-specific rules - iOS name, subtitle, and hidden keyword field; Android title, short description, and keyword-woven full description - delivering every field with character counts, a ranked keyword list, and title options to A/B test. Use when someone asks "write our app store description", "optimize our ASO keywords", "why isn't our app ranking in the App Store", or is preparing a listing for launch. Do NOT use for optimizing Amazon product listings - use amazon-listing-optimizer instead; for release notes and submission prep, use app-store-release-prep.
+metadata:
+  title: "App Store Copy"
 ---
 
 # App Store Copy

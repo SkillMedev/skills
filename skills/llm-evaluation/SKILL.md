@@ -1,6 +1,8 @@
 ---
-name: LLM Evaluation
+name: llm-evaluation
 description: Builds evaluation harnesses for LLM products - golden datasets, deterministic checks, calibrated LLM-as-judge rubrics, and CI regression gates that turn "seems good" into a tracked number. Use when someone asks "how do I know this prompt change didn't break anything", "set up evals for my RAG pipeline", "is LLM-as-judge reliable", "why did quality drop after the model swap", or is shipping an LLM feature with no quality measurement. Do NOT use for classical ML model reporting (precision/recall, ROC curves, confusion matrices on trained classifiers) - use model-evaluation-report instead; do NOT use for analyzing online A/B experiments - use ab-test-analyzer instead.
+metadata:
+  title: "LLM Evaluation"
 ---
 
 # LLM Evaluation

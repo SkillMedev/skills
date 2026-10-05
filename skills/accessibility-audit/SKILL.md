@@ -1,6 +1,8 @@
 ---
-name: Accessibility Audit
+name: accessibility-audit
 description: Runs a full WCAG 2.2 accessibility audit of an interface - keyboard, screen reader, contrast and zoom, forms, and media, in a fixed pass order - and delivers a severity-triaged findings table with concrete fixes. Use when someone asks "is this page accessible", "run an a11y audit on this UI", "will this pass WCAG AA", "why can't a screen reader use this form", or is preparing for an accessibility review, procurement questionnaire, or VPAT. Do NOT use for color-and-contrast-only questions such as palette checks or colorblind-safe data visualization - use color-accessibility instead.
+metadata:
+  title: "Accessibility Audit"
 ---
 
 # Accessibility Audit

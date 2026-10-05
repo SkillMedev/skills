@@ -1,6 +1,8 @@
 ---
-name: Abandoned Cart Sequence
+name: abandoned-cart-sequence
 description: Drafts a margin-aware 3-email cart-recovery sequence that reminds, handles objections, then incentivizes only as a last touch. Use when a checkout is started but not completed and you need cart-recovery (abandoned-cart) emails, when wiring an abandoned-cart flow in Shopify, Klaviyo, or similar, or when asked to recover lost carts without overspending on discounts.
+metadata:
+  title: "Abandoned Cart Sequence"
 ---
 # Abandoned Cart Sequence
 

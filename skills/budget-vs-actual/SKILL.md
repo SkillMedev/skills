@@ -1,6 +1,8 @@
 ---
-name: Budget vs. Actual Variance Analysis
+name: budget-vs-actual
 description: Structures a budget-vs-actual variance analysis that isolates root causes - price/volume/mix decomposition, timing vs structural expense buckets, a materiality screen, and reforecast flags - instead of restating numbers. Use when someone asks "why did we miss budget", "write the variance commentary for the board deck", "explain this expense overrun", or is closing the month and owes narrative on the P&L. Do NOT use to build the budget or plan itself - use budget-builder instead; do NOT use for a full driver-based forecast model - use fpa-model instead; do NOT use for cash timing and runway questions - use cash-flow-forecast instead.
+metadata:
+  title: "Budget vs. Actual Variance Analysis"
 ---
 
 # Budget vs. Actual Variance Analysis

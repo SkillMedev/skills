@@ -1,6 +1,8 @@
 ---
-name: Social Hook Generator
+name: social-hook-generator
 description: Generates 10 labeled opening lines for a written social post, one per hook archetype, so the writer can test instead of guess. Use when drafting or rewriting the first line of a LinkedIn post, X post or thread, Instagram caption, or newsletter intro. Do NOT use when the hook is the spoken or on-screen opener of a short-form video (TikTok, Reels, Shorts) - use video-hook-writer instead.
+metadata:
+  title: "Social Hook Generator"
 ---
 # Social Hook Generator
 

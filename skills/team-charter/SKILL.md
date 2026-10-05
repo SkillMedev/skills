@@ -1,6 +1,8 @@
 ---
-name: Team Charter
+name: team-charter
 description: Creates a team charter covering mission, roles via RACI, decision rights, working norms, communication protocols, and a conflict protocol, built in a facilitated workshop and delivered as a fill-in template. Use when someone says "my new team needs a charter", "we keep stepping on each other's toes", "who decides what on this team", or "write our team's working agreement". Do NOT use for diagnosing dysfunction in an existing team - use team-health-check instead - or for setting the team's goals and key results - use okr-builder.
+metadata:
+  title: "Team Charter"
 ---
 
 # Team Charter

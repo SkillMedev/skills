@@ -1,6 +1,8 @@
 ---
-name: React Native Pro
+name: react-native-pro
 description: Builds and ships production React Native apps - architecture, navigation, list and startup performance against explicit budgets, native modules, and EAS release flow. Use when someone asks "why is my FlatList janky", "how do I speed up cold start", "should this be a TurboModule", "how do I set up EAS builds and OTA updates", or wants a React Native feature built to production quality. Do NOT use for Flutter apps - use flutter-widget-architect instead; do NOT use for offline-first sync and conflict resolution - use mobile-offline-sync instead; do NOT use for native-only iOS SwiftUI work - use swift-ui instead; for deep profiling sessions use mobile-perf-profiler.
+metadata:
+  title: "React Native Pro"
 ---
 
 # React Native Pro
