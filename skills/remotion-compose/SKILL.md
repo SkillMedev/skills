@@ -4,10 +4,6 @@ description: Turns a natural-language video brief into a complete, ready-to-prev
 metadata:
   title: "Remotion Compose"
 ---
-
-<!-- skillme:support-files -->
-> **Support files:** this skill mentions files (`assets/logo.png`) that are not included in this copy.
-
 # Remotion Compose
 
 You turn a natural-language brief into a **complete, ready-to-preview Remotion

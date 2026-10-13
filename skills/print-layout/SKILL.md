@@ -29,8 +29,8 @@ Follow the steps in order - color and type decisions depend on the document setu
 
 ### Step 2: Manage color
 
-- Work in **CMYK** for offset and digital print, not RGB - screen colors won't all reproduce on press. Convert and review before delivery; expect vivid blues, greens, and oranges to dull, and check them individually after conversion.
-- Assign the correct **ICC profile** for the press and paper - ask the printer (e.g., US Web Coated SWOP for US web offset, FOGRA39 for European coated stock).
+- Follow the printer's agreed **color workflow**. PDF/X-1a requires CMYK and/or spot colors; PDF/X-4 can retain ICC-profiled RGB/Lab content and live transparency when the printer supports that workflow. Default to converting to CMYK when the spec is unknown or names PDF/X-1a - the safest choice when nothing is confirmed - and label the file pending printer confirmation. Keep color-managed RGB/Lab unconverted only when the printer confirms a PDF/X-4 color-managed workflow. After any conversion, review out-of-gamut colors individually - vivid blues, greens, and oranges dull first.
+- Obtain the correct **ICC output-intent profile** for the press and paper from the printer. Assigning a profile changes how existing color values are interpreted; converting to a profile changes those values. Choose the required operation deliberately, and preserve source profiles when retaining color-managed RGB/Lab content. US Web Coated SWOP (US web offset) and FOGRA39 (European coated stock) are common examples, not universal defaults.
 - Use **spot/Pantone** colors only when specified; each costs an extra plate.
 - **Rich black** for large dark areas (e.g., C60 M40 Y40 K100); **pure K100** for small text and thin rules, so misregistration cannot blur them.
 
@@ -55,7 +55,7 @@ PREPRESS CHECKLIST - [FILL: job name] / [FILL: printer]
 Trim size:                        [FILL]           Verified: [ ]
 Bleed 3mm/0.125in on all edge-touching elements:   [ ]
 No critical content outside safe zone (3-5mm):     [ ]
-Color mode CMYK, RGB elements converted:           [ ]
+Color spaces per printer spec (default CMYK):      [ ]
 ICC profile attached:             [FILL: profile]  [ ]
 Rich black on large areas / K100 on small text:    [ ]
 Fonts embedded or outlined:                        [ ]
@@ -85,7 +85,7 @@ Watch overprint especially: white text accidentally set to overprint vanishes on
 
 **Bad handoff:** an RGB PDF at trim size with no bleed, text 1mm from the edge, fonts not embedded, exported "High Quality Print". Result: prepress rejection, or worse, a run with white slivers at the edges and substituted fonts.
 
-**Good handoff:** a PDF/X-4 with 0.125in bleed on all sides, safe zone respected, CMYK with FOGRA39 output intent, fonts embedded, 300 DPI images at placed size, crop marks on - plus the completed checklist in the delivery email so prepress can verify in one pass.
+**Good handoff:** a PDF/X-4 with 0.125in bleed on all sides, safe zone respected, color matching the printer's spec (here, CMYK with their FOGRA39 output intent), fonts embedded, 300 DPI images at placed size, crop marks on - plus the completed checklist in the delivery email so prepress can verify in one pass.
 
 ## Deliverable
 
@@ -101,8 +101,14 @@ Produce the print-ready PDF/X file plus the completed prepress checklist confirm
 
 ## Quality bar
 
-Every checklist line checked or explicitly waived by the printer; bleed present on every edge-touching element; no RGB objects remaining; effective image resolution ≥ 300 DPI at placed size (150 for large-format); ink coverage under the stated limit; the export matches the printer's named PDF/X standard.
+Every checklist line checked or explicitly waived by the printer; bleed present on every edge-touching element; no RGB or Lab objects remaining unless the printer agreed a color-managed PDF/X-4 workflow, and even then no untagged RGB (every RGB object keeps its source ICC profile); effective image resolution ≥ 300 DPI at placed size (150 for large-format); ink coverage under the stated limit; the export matches the printer's named PDF/X standard.
 
 ## Escalation
 
 When the printer's spec conflicts with these defaults, the printer wins - they know their press. For screen-bound deliverables and developer handoff, route to design-handoff-doc; for type-system decisions before layout, pair with typography-system.
+
+## references/color-management
+
+- Adobe Illustrator help, "Create Adobe PDF files" (helpx.adobe.com/illustrator/using/creating-pdf-files.html): PDF/X-1a serves a CMYK workflow; PDF/X-4 serves a color-managed workflow that keeps transparency live.
+- Adobe Acrobat help, "Color conversion and ink management" (helpx.adobe.com/acrobat/using/color-conversion-ink-management-acrobat.html): converting changes the color values in the file; the output intent describes the press condition the file targets.
+- Confirm the printer's required preset and profile rather than treating any PDF/X preset as a universal press specification.
