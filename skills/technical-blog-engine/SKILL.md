@@ -1,6 +1,6 @@
 ---
 name: technical-blog-engine
-description: Write technical posts that teach - a sharp hook, a logical build, and code the reader can actually run.
+description: Write technical posts that teach - a sharp hook, a logical build, and code the reader can actually run. Use when drafting or editing a technical blog post, tutorial or engineering write-up.
 metadata:
   title: "Technical Blog Engine"
 ---

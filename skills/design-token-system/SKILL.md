@@ -1,6 +1,6 @@
 ---
 name: design-token-system
-description: Build a three-tier token architecture (global, semantic, component) with theming.
+description: Build a three-tier token architecture (global, semantic, component) with theming. Use when setting up design tokens, adding themes or dark mode to a design system, or untangling hard-coded colors and spacing.
 metadata:
   title: "Design Token System"
 ---

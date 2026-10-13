@@ -1,6 +1,6 @@
 ---
 name: dark-mode-design
-description: Build a dark theme with correct elevation, surface hierarchy, and contrast.
+description: Build a dark theme with correct elevation, surface hierarchy, and contrast. Use when adding dark mode to a product, or when an existing dark theme looks flat, muddy or hard to read.
 metadata:
   title: "Dark Mode Design"
 ---

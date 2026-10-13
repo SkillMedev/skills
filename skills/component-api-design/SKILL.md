@@ -1,6 +1,6 @@
 ---
 name: component-api-design
-description: Design clean, composable React/Vue component APIs with accessibility built in.
+description: Design clean, composable React/Vue component APIs with accessibility built in. Use when designing or reviewing a component's props, composition, events or accessibility, or when a component API has grown hard to use.
 metadata:
   title: "Component API Design"
 ---
