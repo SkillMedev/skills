@@ -71,14 +71,18 @@ Bad: "npm audit shows 23 vulnerabilities (3 critical). Ran npm audit fix. 14 rem
 Good:
 
 ```
-FINDING: lodash 4.17.15 - prototype pollution (CVSS 7.4), fixed in 4.17.21
-Reachability: HIGH - merge() called on request bodies in api/params.ts
-Fix: semver-compatible bump; no API changes between 4.17.15 → 4.17.21
+FINDING: lodash 4.17.15 - prototype pollution, CVE-2020-8203 (CVSS 7.4; set/pick/zipObjectDeep
+with user-supplied paths, fixed in 4.17.19) and command injection via template, CVE-2021-23337
+(CVSS 7.2, fixed in 4.17.21)
+Reachability: HIGH - set() called with keys taken from request bodies in api/params.ts
+Fix: semver-compatible bump to 4.17.21 clears both; no API changes between 4.17.15 → 4.17.21
 Rank: 1 (exploitable, fix available). Action: upgrade before release.
 
-FINDING: minimist 1.2.5 (via dev-only mocha) - CVSS 5.6
-Reachability: NONE at runtime (devDependency, not bundled)
-Rank: 5. Action: bump in hygiene sprint; written reason recorded.
+FINDING: minimist 1.2.5 (via dev-only mocha) - prototype pollution, CVE-2021-44906
+(CVSS 9.8, fixed in 1.2.6)
+Reachability: NONE at runtime (devDependency, not bundled, never parses untrusted argv)
+Rank: 5 despite the 9.8 - severity is not reachability. Action: bump in hygiene sprint;
+written reason recorded.
 ```
 
 Every finding names reachability with evidence, the fix path, and its rank.

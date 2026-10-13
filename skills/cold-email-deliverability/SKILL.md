@@ -67,6 +67,12 @@ LIST & CONTENT
 [ ] First touch: plain text, <= 1 link, no images, no spam-trigger words
 [ ] Custom tracking domain configured, or open-tracking OFF
 [ ] Real plain-text unsubscribe / opt-out present
+[ ] Legal basis checked per recipient country (not legal advice; confirm with counsel):
+    US CAN-SPAM - accurate From/subject, a valid physical postal address, opt-outs
+    honored within 10 business days. EU/UK - GDPR lawful basis (usually a documented
+    legitimate-interest assessment) plus national e-privacy rules, which vary for B2B
+    email (some countries require prior consent). Canada CASL - consent (express or
+    implied) required before sending.
 
 MONITORING
 [ ] Google Postmaster Tools enrolled for each sending domain
@@ -121,16 +127,22 @@ async function txt(name) {
   }
 }
 
-// Count SPF DNS lookups (include/a/mx/ptr/exists/redirect) one level deep.
+// Count SPF DNS lookups (include/a/mx/ptr/exists and redirect=), following
+// include: and redirect= targets. `all`, `ip4:` and `ip6:` cost no lookup.
 async function countSpfLookups(record, seen = new Set(), depth = 0) {
   if (depth > 5) return 0; // guard runaway recursion
   let count = 0;
   for (const term of record.split(/\s+/)) {
-    const m = term.match(/^(include|a|mx|ptr|exists|redirect)[:=]?(.*)$/i);
+    // Optional qualifier (+ - ~ ?), then a mechanism name that ends the term or
+    // is followed by ':' or '/', so a bare `all` never matches the `a` mechanism.
+    const m =
+      term.match(/^[+\-~?]?(include|a|mx|ptr|exists)(?=$|[:\/])(?::([^\/\s]+))?/i) ||
+      term.match(/^(redirect)=(\S+)$/i);
     if (!m) continue;
     count++;
+    const kind = m[1].toLowerCase();
     const target = m[2];
-    if (m[1].toLowerCase() === 'include' && target && !seen.has(target)) {
+    if ((kind === 'include' || kind === 'redirect') && target && !seen.has(target)) {
       seen.add(target);
       const [nested] = (await txt(target)).filter(r => /^v=spf1/i.test(r));
       if (nested) count += await countSpfLookups(nested, seen, depth + 1);

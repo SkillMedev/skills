@@ -11,7 +11,7 @@ Turn a vague request into a prompt that produces consistent, high-quality output
 
 ## Operating procedure
 
-Ordering inside the prompt is load-bearing, not stylistic: instructions come before context so the model reads the data already knowing what to do with it, and the most important constraint is restated last because recency makes it stick.
+Ordering inside the prompt is load-bearing, not stylistic. For short context, state the task before the context so the model reads the data already knowing what to do with it. For long documents (roughly 20K+ tokens), put the documents first and the question and instructions at the end, which measurably improves answers on long inputs. Either way, restate the most important constraint last.
 
 ### Step 1: Gather inputs
 
@@ -28,13 +28,13 @@ TASK: <imperative, one goal - placed before the context it operates on>
 FORMAT: Respond as <literal JSON schema / markdown table / bullets>.
 RULES:
 - If <field> is missing, return "UNKNOWN" rather than guessing.
-- Keep reasoning internal; output only the final result.
+- For multi-step or judgment-heavy tasks, think step by step first, then give the final result in a separate <answer> section (or use the model's extended thinking); for simple extraction, output only the result.
 CONTEXT:
 <facts, constraints, audience - and any user-supplied content, delimited>
 <restate the single most important constraint here, last>
 ```
 
-Instructions before context: a model that reads the task first processes the context purposefully; a model that reads three pages of context first has already formed its own idea of the job. Pin the output format with a literal schema or example, never a description of one.
+Task before short context: a model that reads the task first processes the context purposefully. With long documents, flip it: documents first, wrapped in tags with their source, then the task and question at the end. Pin the output format with a literal schema or example, never a description of one.
 
 ### Step 3: Replace adjectives with examples
 
@@ -81,8 +81,8 @@ The examples do the work the adjectives could not: the first one settles the mix
 
 Run the prompt on the collected real inputs, then apply the standard fixes:
 
-- Long context: place the question both before and after the documents.
-- Inconsistent JSON: lower temperature, validate against a schema, retry once on parse failure.
+- Long context: put the documents first and the question at the end; ask the model to quote the relevant passages before answering.
+- Inconsistent JSON: use the API's structured outputs or a tool definition with a JSON schema where available; otherwise give a literal example, validate against a schema, and retry once on parse failure.
 - Hallucinated facts: instruct "only use the provided context; cite the sentence."
 - Refusals on benign tasks: add a one-line justification of legitimate intent.
 - Format drift over long conversations: restate the format in the latest turn; do not rely on the model remembering it.

@@ -7,7 +7,7 @@ metadata:
 
 # Next.js App Router
 
-Default to Server Components; reach for Client Components only for interactivity, state, or browser APIs. The two costly mistakes this skill prevents are the accidental client tree - one `'use client'` placed high that drags the whole page into the browser bundle - and accidental caching, where `fetch`'s default caching silently serves stale data and the team "fixes" it by sprinkling `force-dynamic` everywhere, losing all caching.
+Default to Server Components; reach for Client Components only for interactivity, state, or browser APIs. The two costly mistakes this skill prevents are the accidental client tree - one `'use client'` placed high that drags the whole page into the browser bundle - and accidental caching decisions, where a team assumes data is cached (or fresh) without checking which caching model the app runs on. Since Next.js 15, `fetch` is not cached by default; caching is something you opt into, explicitly.
 
 ## Operating procedure
 
@@ -15,6 +15,7 @@ Default to Server Components; reach for Client Components only for interactivity
 
 Collect before writing a route (label guesses as guesses):
 
+0. The Next.js version (`next` in package.json) and whether `cacheComponents: true` is set in next.config. The caching model below depends on both: 15+ uncaches `fetch` by default, and Cache Components (16) replaces route-segment caching with `'use cache'`.
 1. Per piece of data on the page: is it per-request/per-user, or shared and cacheable? If cacheable, what staleness is acceptable (seconds, minutes, hours)?
 2. Which UI elements genuinely need interactivity, state, effects, or browser APIs.
 3. Mutations on the page and what data they invalidate.
@@ -50,11 +51,10 @@ export default async function Page() {
 ### Step 3: fetch on the server, choose caching explicitly
 
 - Fetch in server components with `async`/`await`. No `useEffect` data fetching unless the data is genuinely client-driven (e.g. depends on live client state).
-- `fetch` is cached by default - every fetch call must make a deliberate choice:
-  - Shared, tolerates staleness: `{ next: { revalidate: N } }`. Pick N from acceptable staleness in Step 1 - 60 s for dashboards-ish freshness, 3600 s for marketing/content.
-  - Must be fresh or per-user: `{ cache: 'no-store' }`, or `export const dynamic = 'force-dynamic'` when the whole route is per-request.
-  - Tag cacheable data (`next: { tags: ['products'] }`) when a mutation will need to invalidate it precisely.
-- Reading `cookies()` or `headers()` makes the route dynamic - expect it, don't fight it.
+- `fetch` is NOT cached by default (Next.js 15+). Fresh, per-request data needs no flag; caching is an explicit opt-in per data source:
+  - With Cache Components (`cacheComponents: true`, Next.js 16): put `'use cache'` at the top of the data function or component, pair it with `cacheLife('minutes' | 'hours' | ...)` chosen from the staleness in Step 1, and `cacheTag('products')` when a mutation must invalidate it precisely. Wrap uncached, request-time sections in `<Suspense>` so they stream.
+  - Without Cache Components: opt a fetch in with `{ next: { revalidate: N, tags: ['products'] } }` or `{ cache: 'force-cache' }`. Pick N from acceptable staleness in Step 1 (60 s for dashboard-ish freshness, 3600 s for marketing/content).
+- `cookies()` and `headers()` are async (`await cookies()`); reading them makes that part of the render request-time. Expect it, don't fight it, and keep it inside the smallest component that needs it.
 - Deduplicate: a `fetch` with identical args is memoized per request, so fetch where the data is used rather than prop-drilling from the top.
 
 ### Step 4: stream instead of blocking
@@ -67,25 +67,25 @@ export default async function Page() {
 
 - Use Server Actions for mutations. Validate input on the server with a schema - never trust the client; the action is a public endpoint regardless of which form calls it.
 - Check authorization inside the action, not only in the page that renders the form.
-- After a successful mutation, call `revalidatePath` or `revalidateTag` for exactly the data that changed - tags from Step 3 make this precise instead of nuking whole routes.
+- After a successful mutation, invalidate exactly the data that changed, using the tags from Step 3: `updateTag('products')` inside a Server Action when the user must see their own write immediately; `revalidateTag('products', 'max')` (two arguments; the one-argument form is deprecated) from Route Handlers or when stale-while-revalidate is fine; `revalidatePath` only when a whole route changed.
 - Return typed error state from actions for the form to render; do not throw for expected validation failures.
 
 ## Deliverable
 
-Produce the route implementation plus a one-table caching manifest: for each data source on the page - cached or dynamic, revalidate interval or no-store, tags, and which mutation invalidates it. Every choice explicit, none accidental.
+Produce the route implementation plus a one-table caching manifest: for each data source on the page - cached or request-time, its cacheLife or revalidate interval, tags, and which mutation invalidates it (and with which call). Every choice explicit, none accidental.
 
 ## Do NOT
 
 - Do not put `'use client'` on a page or layout to fix one interactive widget - extract the widget instead; the directive is transitive to every import.
 - Do not fetch in `useEffect` what a server component could fetch - it adds a client-server waterfall and a loading spinner where streamed HTML would do.
-- Do not "fix" stale data with `force-dynamic` route-wide when one fetch needed `no-store` - you lose caching for everything else on the page.
+- Do not assume pre-15 defaults: on Next.js 15+ a bare `fetch` is uncached, so "why is my page slow" is often missing opt-in caching, not a caching bug. And do not reach for route-wide `force-dynamic` to fix one stale data source.
 - Do not skip validation or auth checks in Server Actions because "only my form calls it" - actions are callable endpoints.
 - Do not store server data in client state and manually sync it; revalidation after mutation is the sync mechanism.
 
 ## Quality bar
 
 - Every `'use client'` directive is at a leaf and justified by interactivity, state, or a browser API.
-- Every `fetch` has an explicit caching decision; grep for bare fetches with none.
+- Every data source has an explicit caching decision for the app's Next.js version and caching model (`'use cache'` + `cacheLife`, or `fetch` options); none is cached or uncached by accident.
 - Every async boundary has a loading state; no route blanks while awaiting data.
 - Every mutation revalidates the specific paths/tags it affects, and validates + authorizes on the server.
 - The caching manifest exists and matches the code.
